@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent scroll bounce when navigating to anchor sections with animations */
+/* Extra margin compensates for sticky header + animation layout shifts */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Ensure smooth scroll even with layout changes from animations */
+* {
+  scroll-padding-top: 5rem;
+}

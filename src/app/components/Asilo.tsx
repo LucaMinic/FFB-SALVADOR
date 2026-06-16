@@ -1,0 +1,66 @@
+import { Button } from './Button';
+import asiloChildrenImage from '../../imports/3.jpeg';
+import childrenMealImage from '../../imports/17.jpeg';
+import { AnimatedSection, AnimatedImage } from './AnimatedSection';
+import { useT } from '../context/LanguageContext';
+
+export function Asilo() {
+  const t = useT();
+
+  return (
+    <section id="asilo" className="py-24 bg-gradient-to-b from-white to-[var(--beige)]">
+      <div className="max-w-7xl mx-auto px-6">
+        <AnimatedSection>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
+              {t({ pt: 'A Creche', it: "L'Asilo" })}
+            </h2>
+
+            <h3 className="mb-8 text-3xl text-gray-700 font-light">{t({ pt: 'Um lugar para crescer todos os dias', it: 'Un luogo dove crescere ogni giorno' })}</h3>
+
+            <p className="text-2xl text-gray-800 leading-relaxed max-w-3xl mx-auto mb-6">
+              {t({
+                pt: 'Nossa creche acolhe até 120 crianças, dos 4 meses aos 5 anos, oferecendo um ambiente seguro, educativo e completamente gratuito.',
+                it: 'Il nostro asilo accoglie fino a 120 bambini, dai 4 mesi ai 5 anni, offrendo un ambiente sicuro, educativo e completamente gratuito.'
+              })}
+            </p>
+
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              {t({
+                pt: 'Todos os dias as crianças recebem cinco refeições, cuidado, educação e atenção. Esse serviço também permite às famílias, especialmente às mães, trabalhar e construir um futuro mais estável.',
+                it: 'Ogni giorno i bambini ricevono cinque pasti, cura, educazione e attenzione. Questo servizio permette anche alle famiglie, soprattutto alle madri, di lavorare e costruire un futuro più stabile.'
+              })}
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <AnimatedImage>
+            <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
+              <img
+                src={asiloChildrenImage}
+                alt={t({ pt: 'Crianças da creche', it: "Bambini dell'asilo" })}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+          </AnimatedImage>
+          <AnimatedImage delay={0.15}>
+            <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
+              <img
+                src={childrenMealImage}
+                alt={t({ pt: 'Atividade de culinária', it: 'Attività di cucina' })}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+          </AnimatedImage>
+        </div>
+
+        <AnimatedSection delay={0.3}>
+          <div className="text-center">
+            <Button variant="secondary" to="/asilo">{t({ pt: 'Conheça a creche', it: "Scopri l'asilo" })}</Button>
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  );
+}
