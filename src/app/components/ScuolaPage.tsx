@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Lightbox } from './Lightbox';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
@@ -565,26 +564,6 @@ export function ScuolaPage() {
               {t({ pt: 'A construção da escola será contada passo a passo. Nesta seção serão atualizados vídeos, imagens e notícias do canteiro, para mostrar concretamente a evolução do projeto.', it: 'La costruzione della scuola sarà raccontata passo dopo passo. In questa sezione verranno aggiornati video, immagini e notizie dal cantiere, per mostrare concretamente l\'evoluzione del progetto.' })}
             </p>
           </AnimatedSection>
-
-          <div className="space-y-6 max-w-4xl mx-auto mb-12">
-            {[
-              { title: t({ pt: 'Projeto arquitetônico', it: 'Progetto architettonico' }), status: t({ pt: 'concluído', it: 'completato' }), color: 'bg-[var(--soft-green)]' },
-              { title: t({ pt: 'Estudo do terreno e marcações', it: 'Studio del terreno e tracciature' }), status: t({ pt: 'iniciado', it: 'avviato' }), color: 'bg-[var(--warm-orange)]' },
-              { title: t({ pt: 'Preparação do canteiro', it: 'Preparazione del cantiere' }), status: t({ pt: 'em andamento / a atualizar', it: 'in corso / da aggiornare' }), color: 'bg-[var(--warm-orange-light)]' },
-              { title: t({ pt: 'Construção dos blocos', it: 'Costruzione dei blocchi' }), status: t({ pt: 'próxima fase', it: 'prossima fase' }), color: 'bg-gray-300' },
-              { title: t({ pt: 'Conclusão dos espaços educativos', it: 'Completamento degli spazi educativi' }), status: t({ pt: 'fase futura', it: 'futura fase' }), color: 'bg-gray-200' }
-            ].map((item, index) => (
-              <AnimatedSection key={item.title} delay={index * 0.1}>
-                <div className="flex gap-4 items-center">
-                  <div className={`flex-shrink-0 w-4 h-4 rounded-full ${item.color}`}></div>
-                  <div className="flex-1 bg-[var(--beige)] rounded-2xl p-6 shadow-lg">
-                    <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-2">{item.title}</h3>
-                    <p className="text-gray-600 capitalize">{item.status}</p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
 
           <AnimatedSection>
             <div className="text-center">
