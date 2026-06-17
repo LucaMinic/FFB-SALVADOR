@@ -567,7 +567,7 @@ export function ScuolaPage() {
 
           <AnimatedSection>
             <div className="text-center">
-              <Button variant="secondary">{t({ pt: 'Acompanhe as atualizações', it: 'Segui gli aggiornamenti' })}</Button>
+              <Button variant="secondary" to="/avanzamento-lavori">{t({ pt: 'Acompanhe as atualizações', it: 'Segui gli aggiornamenti' })}</Button>
             </div>
           </AnimatedSection>
         </div>
