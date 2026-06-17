@@ -5,11 +5,25 @@ import { Instagram, ChevronDown } from 'lucide-react';
 import logo from '../../imports/logo_ok.png';
 import { useT } from '../context/LanguageContext';
 
+interface SubMenuItem {
+  label: string;
+  href: string;
+  isRoute?: boolean;
+  submenu?: SubMenuItem[];
+}
+
+interface MenuItem {
+  label: string;
+  href: string;
+  isRoute?: boolean;
+  submenu?: SubMenuItem[];
+}
+
 export function Footer() {
   const t = useT();
   const [openSubmenus, setOpenSubmenus] = useState<Set<string>>(new Set());
 
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     { label: t({ pt: 'Política de Privacidade', it: 'Privacy Policy' }), href: '/privacy-policy', isRoute: true },
     { label: t({ pt: 'Política de Cookies', it: 'Cookie Policy' }), href: '/cookie-policy', isRoute: true },
     { label: t({ pt: 'Início', it: 'Home' }), href: '/', isRoute: true },
@@ -29,9 +43,22 @@ export function Footer() {
       isRoute: true,
       submenu: [
         { label: t({ pt: 'O Centro', it: 'Il Centro' }), href: '/il-centro', isRoute: true },
-        { label: t({ pt: 'Creche', it: 'Asilo' }), href: '/asilo', isRoute: true },
-        { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true },
-        { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }), href: '/progetto-scuola', isRoute: true },
+        {
+          label: t({ pt: 'Creche', it: 'Asilo' }),
+          href: '/asilo',
+          isRoute: true,
+          submenu: [
+            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true }
+          ]
+        },
+        {
+          label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }),
+          href: '/progetto-scuola',
+          isRoute: true,
+          submenu: [
+            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true }
+          ]
+        },
         { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
         { label: t({ pt: 'Iniciativas', it: 'Iniziative' }), href: '/iniziative', isRoute: true }
       ]
@@ -95,7 +122,7 @@ export function Footer() {
                     </button>
                     {openSubmenus.has(item.label) && (
                       <div className="ml-4 mt-2 flex flex-col gap-2">
-                        {item.submenu.map((subitem) =>
+                        {item.submenu.map((subitem: SubMenuItem) =>
                           subitem.submenu ? (
                             <div key={subitem.href}>
                               <button
@@ -115,7 +142,7 @@ export function Footer() {
                               </button>
                               {openSubmenus.has(`${item.label}__${subitem.label}`) && (
                                 <div className="ml-4 mt-1 flex flex-col gap-2">
-                                  {subitem.submenu.map((nested) =>
+                                  {subitem.submenu.map((nested: SubMenuItem) =>
                                     nested.isRoute ? (
                                       <Link
                                         key={nested.href}
