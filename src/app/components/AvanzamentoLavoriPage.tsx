@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { Lightbox } from './Lightbox';
 import cantiere1 from '../../imports/1-1.jpeg';
 import cantiere2 from '../../imports/4-5.jpeg';
 import cantiere3 from '../../imports/5-3.jpeg';
@@ -103,6 +105,16 @@ const statusConfig: Record<EntryStatus, { dot: string; badge: string; label: Bil
 
 export function AvanzamentoLavoriPage() {
   const t = useT();
+
+  const [lightboxImages, setLightboxImages] = useState<string[]>([]);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  const openLightbox = (srcs: string[], index: number) => {
+    setLightboxImages(srcs);
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
 
   return (
     <div className="bg-white">
@@ -246,18 +258,19 @@ export function AvanzamentoLavoriPage() {
                               </div>
                             ))}
 
-                            {/* Images – responsive grid */}
+                            {/* Images – responsive grid, click to open lightbox */}
                             {images.length > 0 && (
                               <div className={`grid gap-4 ${imageColClass}`}>
                                 {images.map((m, i) => (
                                   <div
                                     key={i}
-                                    className="rounded-2xl overflow-hidden shadow-md aspect-[4/3]"
+                                    className="rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer group"
+                                    onClick={() => openLightbox(images.map(img => img.src), i)}
                                   >
                                     <img
                                       src={m.src}
                                       alt={m.alt || `${t(entry.title)} – ${i + 1}`}
-                                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
                                   </div>
                                 ))}
@@ -316,6 +329,16 @@ export function AvanzamentoLavoriPage() {
         </div>
       </section>
 
+      {lightboxOpen && (
+        <Lightbox
+          images={lightboxImages}
+          currentIndex={lightboxIndex}
+          onClose={() => setLightboxOpen(false)}
+          onNext={() => setLightboxIndex(prev => (prev + 1) % lightboxImages.length)}
+          onPrev={() => setLightboxIndex(prev => (prev - 1 + lightboxImages.length) % lightboxImages.length)}
+          alt={t({ it: 'Foto cantiere', pt: 'Foto da obra' })}
+        />
+      )}
     </div>
   );
 }
