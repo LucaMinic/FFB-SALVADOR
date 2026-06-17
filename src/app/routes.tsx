@@ -28,6 +28,7 @@ import { RicordiNarrazioniPage } from "./components/RicordiNarrazioniPage";
 import { IntervistaAlCentroPage } from "./components/IntervistaAlCentroPage";
 import { DieciAnniCrechePage } from "./components/DieciAnniCrechePage";
 import { VisitaPresidentePage } from "./components/VisitaPresidentePage";
+import { AvanzamentoLavoriPage } from "./components/AvanzamentoLavoriPage";
 import { RootLayout } from "./layouts/RootLayout";
 
 export const router = createBrowserRouter([
@@ -64,6 +65,7 @@ export const router = createBrowserRouter([
       { path: "documentari-racconti/posa-prima-pietra", Component: PosaPrimaPietraPage },
       { path: "documentari-racconti/auto-idea-tutti", Component: AutoIdeaTuttiPage },
       { path: "documentari-racconti/ricordi-narrazioni", Component: RicordiNarrazioniPage },
+      { path: "avanzamento-lavori", Component: AvanzamentoLavoriPage },
       { path: "*", Component: HomePage },
     ],
   },

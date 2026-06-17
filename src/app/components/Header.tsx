@@ -112,7 +112,14 @@ export function Header() {
             { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }), href: '/progetto-scuola', isRoute: true },
+        {
+          label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }),
+          href: '/progetto-scuola',
+          isRoute: true,
+          submenu: [
+            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true },
+          ]
+        },
         { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
         { label: t({ pt: 'Iniciativas', it: 'Iniziative' }), href: '/iniziative', isRoute: true }
       ]
