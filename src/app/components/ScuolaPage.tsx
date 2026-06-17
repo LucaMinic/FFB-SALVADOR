@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { GalleriaSlider } from './GalleriaSlider';
 import { Lightbox } from './Lightbox';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
@@ -19,11 +18,6 @@ import render6 from '../../imports/foto_sito_06_pagina_7.jpg';
 import render7 from '../../imports/foto_sito_07_pagina_8.jpg';
 import render8 from '../../imports/foto_sito_08_pagina_8.jpg';
 import render9 from '../../imports/foto_sito_09_pagina_9.jpg';
-import cantiere1 from '../../imports/1-1.jpeg';
-import cantiere2 from '../../imports/4-5.jpeg';
-import cantiere3 from '../../imports/5-3.jpeg';
-import cantiereVideo1 from '../../imports/2.mp4';
-import cantiereVideo2 from '../../imports/3.mp4';
 
 export function ScuolaPage() {
   const t = useT();
@@ -591,20 +585,6 @@ export function ScuolaPage() {
               </AnimatedSection>
             ))}
           </div>
-
-          <AnimatedSection>
-            <GalleriaSlider
-              items={[
-                { type: 'image', src: cantiere1, alt: 'Cantiere fase 1' },
-                { type: 'image', src: cantiere2, alt: 'Cantiere fase 2' },
-                { type: 'image', src: cantiere3, alt: 'Cantiere fase 3' },
-                { type: 'video', src: cantiereVideo1, alt: 'Video cantiere 1' },
-                { type: 'video', src: cantiereVideo2, alt: 'Video cantiere 2' }
-              ]}
-              autoplay={true}
-              autoplayInterval={5000}
-            />
-          </AnimatedSection>
 
           <AnimatedSection>
             <div className="text-center">
