@@ -194,7 +194,7 @@ export function CosaPuoiFareTuPage() {
                   it: 'Accompagna concretamente il percorso educativo di un bambino aiutandolo a crescere in un ambiente stabile e accogliente.'
                 })}
               </p>
-              <Button to="/contatti">
+              <Button to="/dona-ora#sostegno-distanza">
                 {t({ pt: 'Descubra o apoio à distância', it: 'Scopri il sostegno a distanza' })}
               </Button>
             </AnimatedSection>

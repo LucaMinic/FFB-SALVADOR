@@ -1,18 +1,31 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown, Copy, Check } from 'lucide-react';
+import { AnimatedSection, AnimatedImage } from './AnimatedSection';
+import { ChevronDown, Copy, Check, FileText } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/19.jpeg';
 import centroImg from '../../imports/13-2.jpeg';
 import scuolaRender from '../../imports/immagine_compressa_leggera.jpg';
 import finalCtaImg from '../../imports/21.jpeg';
+import impactImg from '../../imports/15-1.jpeg';
 
 export function DonaOraPage() {
   const t = useT();
-  const [copiedIban1, setCopiedIban1] = useState(false);
-  const [copiedIban2, setCopiedIban2] = useState(false);
+  const [copiedIbanIntesa, setCopiedIbanIntesa] = useState(false);
+  const [copiedIbanBper, setCopiedIbanBper] = useState(false);
+  const [copiedIbanBrasile, setCopiedIbanBrasile] = useState(false);
+  const [copiedIbanSostegnoIt, setCopiedIbanSostegnoIt] = useState(false);
+  const [copiedIbanSostegnoBr, setCopiedIbanSostegnoBr] = useState(false);
   const [copiedCf, setCopiedCf] = useState(false);
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    const el = document.getElementById(hash);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, []);
 
   const copyToClipboard = (text: string, setCopied: (val: boolean) => void) => {
     navigator.clipboard.writeText(text);
@@ -46,7 +59,7 @@ export function DonaOraPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex justify-center">
-              <Button variant="primary" href="#perche-donare" className="text-lg px-8 py-4">
+              <Button variant="primary" href="#come-donare" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora' })}
               </Button>
             </div>
@@ -54,6 +67,302 @@ export function DonaOraPage() {
 
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
             <ChevronDown className="w-8 h-8 text-white/80" />
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4 - COME DONARE */}
+      <section id="come-donare" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-10">
+              {t({ pt: 'Como doar', it: 'Come donare' })}
+            </h2>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <a
+                href="#doni-brasile"
+                className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
+              >
+                🇧🇷 <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se doni dal Brasile — clicca qui' })}</span>
+              </a>
+              <a
+                href="#doni-italia"
+                className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
+              >
+                🇮🇹 <span>{t({ pt: 'Se você doa da Itália — clique aqui', it: "Se doni dall'Italia — clicca qui" })}</span>
+              </a>
+            </div>
+          </AnimatedSection>
+
+          <div className="space-y-8">
+            {/* Bonifico bancario */}
+            <AnimatedSection>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--deep-blue)]/10">
+                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-6">
+                  {t({ pt: 'Apoie o Projeto Brasile', it: 'Sostieni il Progetto Brasile' })}
+                </h3>
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  {t({
+                    pt: 'A tua doação contribui concretamente para a vida quotidiana do Centro e das crianças que nele vivem. Escolhe como queres apoiar esta missão.',
+                    it: 'La tua donazione contribuisce concretamente alla vita quotidiana del Centro e dei bambini che lo abitano. Scegli come vuoi sostenere questa missione.'
+                  })}
+                </p>
+
+                <div className="space-y-8">
+                  {/* Se doni dal Brasile */}
+                  <div id="doni-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
+                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
+                      {t({ pt: 'Se você doa do Brasil', it: 'Se doni dal Brasile' })}
+                    </h4>
+                    <div className="space-y-4">
+                      <div className="bg-white p-6 rounded-xl border border-gray-200">
+                        <p className="text-sm text-gray-600 mb-2">IBAN:</p>
+                        <div className="flex items-center gap-3">
+                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
+                            [INSERT IBAN BRASILE]
+                          </code>
+                          <button
+                            onClick={() => copyToClipboard('[INSERT IBAN BRASILE]', setCopiedIbanBrasile)}
+                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
+                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                          >
+                            {copiedIbanBrasile ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Se doni dall'Italia */}
+                  <div id="doni-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
+                    <h4 className="text-xl text-[var(--deep-blue)] mb-5">
+                      {t({ pt: 'Se você doa da Itália', it: "Se doni dall'Italia" })}
+                    </h4>
+                    <div className="space-y-5">
+                      <div className="bg-[var(--deep-blue)]/5 rounded-xl px-5 py-4">
+                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Beneficiário:', it: 'Beneficiario:' })}</p>
+                        <p className="text-[var(--deep-blue)] font-semibold text-lg leading-snug">
+                          Fraternità Francescana di Betania Fondazione ETS
+                        </p>
+                      </div>
+                      <div className="bg-white p-6 rounded-xl border border-gray-200">
+                        <div className="flex items-center gap-2 mb-4">
+                          <span className="bg-[var(--deep-blue)] text-white text-sm font-medium px-3 py-1 rounded-full">
+                            {t({ pt: 'Opção 1', it: 'Opzione 1' })}
+                          </span>
+                          <span className="text-gray-600 text-sm font-medium">INTESA SANPAOLO S.P.A</span>
+                        </div>
+                        <p className="text-sm text-gray-500 mb-2">IBAN:</p>
+                        <div className="flex items-center gap-3">
+                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all tracking-wide">
+                            IT48O0306909606100000106797
+                          </code>
+                          <button
+                            onClick={() => copyToClipboard('IT48O0306909606100000106797', setCopiedIbanIntesa)}
+                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
+                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                          >
+                            {copiedIbanIntesa ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                          </button>
+                        </div>
+                        <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 mt-4 leading-relaxed">
+                          ⚠️ {t({ pt: 'Atenção ao 5º e 6º caractere: são uma O (de Otranto) e um 0 (número).', it: 'Attenzione al quinto e sesto carattere: sono una O (di Otranto) e uno 0 (numero).' })}
+                        </p>
+                      </div>
+                      <div className="bg-white p-6 rounded-xl border border-gray-200">
+                        <div className="flex items-center gap-2 mb-4">
+                          <span className="bg-[var(--deep-blue)] text-white text-sm font-medium px-3 py-1 rounded-full">
+                            {t({ pt: 'Opção 2', it: 'Opzione 2' })}
+                          </span>
+                          <span className="text-gray-600 text-sm font-medium">
+                            {t({ pt: "Banco Popular da Emília Romanha (filial de Molfetta)", it: "Banca Popolare dell'Emilia Romagna (filiale di Molfetta)" })}
+                          </span>
+                        </div>
+                        <p className="text-sm text-gray-500 mb-2">IBAN:</p>
+                        <div className="flex items-center gap-3">
+                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all tracking-wide">
+                            IT75F0538741562000002260111
+                          </code>
+                          <button
+                            onClick={() => copyToClipboard('IT75F0538741562000002260111', setCopiedIbanBper)}
+                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
+                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                          >
+                            {copiedIbanBper ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                          </button>
+                        </div>
+                      </div>
+                      <div className="bg-[var(--deep-blue)]/5 border border-[var(--deep-blue)]/15 rounded-xl px-5 py-4">
+                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Motivo da transferência:', it: 'Causale:' })}</p>
+                        <p className="text-[var(--deep-blue)] font-medium italic text-base">
+                          {t({ pt: 'Doação liberal para o Projeto Brasil', it: 'Erogazione liberale per il Progetto Brasile' })}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* 5x1000 */}
+            <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+                <AnimatedSection delay={0.1} className="py-12 px-10 md:py-16 md:px-16 flex flex-col justify-center items-center text-center">
+                  <div className="flex items-center gap-3 mb-6">
+                    <FileText className="w-10 h-10 text-white flex-shrink-0" />
+                    <h3 className="text-2xl md:text-3xl text-white">
+                      {t({ pt: 'Doe o seu 5x1000', it: 'Dona il tuo 5x1000' })}
+                    </h3>
+                  </div>
+                  <p className="text-lg leading-relaxed mb-8 opacity-95">
+                    {t({
+                      pt: 'Um gesto simples que pode contribuir concretamente para os projetos educativos e sociais da Fraternidade Franciscana de Betânia.',
+                      it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fraternità Francescana di Betania.'
+                    })}
+                  </p>
+                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mb-2">
+                    <p className="text-base mb-2 opacity-90">{t({ pt: 'Código fiscal:', it: 'Codice fiscale:' })}</p>
+                    <div className="flex items-center gap-3">
+                      <code className="flex-1 text-2xl md:text-3xl font-mono tracking-wider">
+                        93346130722
+                      </code>
+                      <button
+                        onClick={() => copyToClipboard('93346130722', setCopiedCf)}
+                        className="flex-shrink-0 p-3 bg-white/30 hover:bg-white/50 text-white rounded-lg transition-all"
+                        aria-label={t({ pt: 'Copiar código fiscal', it: 'Copia codice fiscale' })}
+                      >
+                        {copiedCf ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                      </button>
+                    </div>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedImage delay={0.2}>
+                  <div className="group overflow-hidden h-72 lg:h-full min-h-[280px]">
+                    <img
+                      src={impactImg}
+                      alt={t({ pt: 'Crianças do Centro', it: 'Bambini del Centro' })}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                </AnimatedImage>
+              </div>
+            </div>
+
+            {/* Sostegno a distanza - cappello introduttivo */}
+            <div id="sostegno-distanza" className="scroll-mt-24"></div>
+            <AnimatedSection delay={0.25}>
+              <div className="text-center max-w-3xl mx-auto pt-4 pb-2">
+                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-4">
+                  {t({ pt: 'Uma escolha concreta de proximidade', it: 'Una scelta concreta di vicinanza' })}
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  {t({
+                    pt: 'O sostegno a distanza é uma forma direta e pessoal de acompanhar uma criança do asilo. Com a tua contribuição, ajudas a garantir educação, cuidado e nutrição todos os dias — um vínculo real entre te e uma criança que cresce.',
+                    it: "Il sostegno a distanza è un modo diretto e personale di accompagnare un bambino dell'asilo. Con il tuo contributo aiuti a garantirgli educazione, cura e nutrimento ogni giorno — un legame reale tra te e un bambino che cresce."
+                  })}
+                </p>
+              </div>
+            </AnimatedSection>
+
+            {/* Sostegno a distanza */}
+            <AnimatedSection delay={0.3}>
+              <div className="bg-gradient-to-br from-[var(--soft-green)]/10 to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--soft-green)]/30">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-4xl">🤝</span>
+                  <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)]">
+                    {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza' })}
+                  </h3>
+                </div>
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                  {t({
+                    pt: 'Adote à distância uma criança do asilo que a Fraternidade Franciscana de Betânia gerencia no Brasil.',
+                    it: "Sostieni a distanza un bambino dell'asilo che la Fraternità Francescana di Betania gestisce in Brasile."
+                  })}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                  <a
+                    href="#sostegno-brasile"
+                    className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:brightness-90 transition-all"
+                  >
+                    🇧🇷 <span>{t({ pt: 'Sostieni dal Brasile — clicca qui', it: 'Sostieni dal Brasile — clicca qui' })}</span>
+                  </a>
+                  <a
+                    href="#sostegno-italia"
+                    className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:bg-blue-800 transition-all"
+                  >
+                    🇮🇹 <span>{t({ pt: "Sostieni dall'Italia — clicca qui", it: "Sostieni dall'Italia — clicca qui" })}</span>
+                  </a>
+                </div>
+                <div className="space-y-8">
+                  <div id="sostegno-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
+                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
+                      {t({ pt: 'Se você doa do Brasil', it: 'Se sostieni dal Brasile' })}
+                    </h4>
+                    <div className="bg-white p-6 rounded-xl border border-gray-200">
+                      <p className="text-sm text-gray-600 mb-2">IBAN:</p>
+                      <div className="flex items-center gap-3">
+                        <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
+                          [INSERT IBAN BRASILE SOSTEGNO]
+                        </code>
+                        <button
+                          onClick={() => copyToClipboard('[INSERT IBAN BRASILE SOSTEGNO]', setCopiedIbanSostegnoBr)}
+                          className="flex-shrink-0 p-3 bg-[var(--soft-green)] text-white rounded-lg hover:brightness-90 transition-all"
+                          aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                        >
+                          {copiedIbanSostegnoBr ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="sostegno-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
+                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
+                      {t({ pt: "Se você doa da Itália", it: "Se sostieni dall'Italia" })}
+                    </h4>
+                    <div className="space-y-5">
+                      <div className="bg-[var(--deep-blue)]/5 rounded-xl px-5 py-4">
+                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Beneficiário:', it: 'Beneficiario:' })}</p>
+                        <p className="text-[var(--deep-blue)] font-semibold text-lg leading-snug">
+                          Fraternità Francescana di Betania Fondazione ETS
+                        </p>
+                      </div>
+                      <div className="bg-white p-6 rounded-xl border border-gray-200">
+                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Banco:', it: 'Banca:' })}</p>
+                        <p className="text-[var(--deep-blue)] font-medium mb-4">INTESA SANPAOLO S.P.A</p>
+                        <p className="text-sm text-gray-500 mb-2">IBAN:</p>
+                        <div className="flex items-center gap-3">
+                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all tracking-wide">
+                            IT44X0306909606100000150294
+                          </code>
+                          <button
+                            onClick={() => copyToClipboard('IT44X0306909606100000150294', setCopiedIbanSostegnoIt)}
+                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
+                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                          >
+                            {copiedIbanSostegnoIt ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                          </button>
+                        </div>
+                      </div>
+                      <div className="bg-[var(--deep-blue)]/5 border border-[var(--deep-blue)]/15 rounded-xl px-5 py-4">
+                        <p className="text-sm text-gray-500 mb-2">{t({ pt: 'Motivo da transferência:', it: 'Causale:' })}</p>
+                        <p className="text-[var(--deep-blue)] font-medium italic text-base mb-3">
+                          {t({ pt: 'Adoção à distância — Nome e Sobrenome (do doador)', it: 'Sostegno a distanza — nome e cognome (del donatore)' })}
+                        </p>
+                        <p className="text-sm text-gray-500 leading-relaxed">
+                          {t({
+                            pt: 'Substitua "Nome e Sobrenome" pelo seu nome e sobrenome completos.',
+                            it: 'Sostituire "nome e cognome" con il proprio nome e cognome per esteso.'
+                          })}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -138,191 +447,6 @@ export function DonaOraPage() {
           </div>
         </div>
       </section>
-
-      {/* SECTION 4 - COME DONARE */}
-      <section id="come-donare" className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Como doar', it: 'Come donare' })}
-            </h2>
-          </AnimatedSection>
-
-          <div className="space-y-8">
-            {/* Bonifico bancario */}
-            <AnimatedSection>
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--deep-blue)]/10">
-                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Transferência bancária', it: 'Bonifico bancario' })}
-                </h3>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  {t({ pt: 'Você pode apoiar o projeto através de transferência bancária.', it: 'Puoi sostenere il progetto tramite bonifico bancario.' })}
-                </p>
-
-                <div className="space-y-8">
-                  <div>
-                    <p className="text-gray-600 mb-2">{t({ pt: 'A favor de:', it: 'Intestazione:' })}</p>
-                    <p className="text-xl text-[var(--deep-blue)] mb-6">
-                      Fundação Betânia Onlus
-                    </p>
-                  </div>
-
-                  {/* Se doni dall'Italia */}
-                  <div className="border-l-4 border-[var(--deep-blue)] pl-6">
-                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
-                      {t({ pt: 'Se você doa da Itália', it: "Se doni dall'Italia" })}
-                    </h4>
-
-                    <div className="space-y-4">
-                      <div className="bg-white p-6 rounded-xl border border-gray-200">
-                        <p className="text-sm text-gray-600 mb-2">IBAN Intesa Sanpaolo:</p>
-                        <div className="flex items-center gap-3">
-                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
-                            [INSERT IBAN ITALIA]
-                          </code>
-                          <button
-                            onClick={() => copyToClipboard('[INSERT IBAN ITALIA]', setCopiedIban1)}
-                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
-                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
-                          >
-                            {copiedIban1 ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Se doni dal Brasile */}
-                  <div className="border-l-4 border-[var(--warm-orange)] pl-6">
-                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
-                      {t({ pt: 'Se você doa do Brasil', it: 'Se doni dal Brasile' })}
-                    </h4>
-
-                    <div className="space-y-4">
-                      <div className="bg-white p-6 rounded-xl border border-gray-200">
-                        <p className="text-sm text-gray-600 mb-2">IBAN:</p>
-                        <div className="flex items-center gap-3">
-                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
-                            [INSERT IBAN BRASILE]
-                          </code>
-                          <button
-                            onClick={() => copyToClipboard('[INSERT IBAN BRASILE]', setCopiedIban2)}
-                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
-                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
-                          >
-                            {copiedIban2 ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            {/* 5x1000 */}
-            <AnimatedSection delay={0.2}>
-              <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--warm-orange)]/30">
-                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Doe o seu 5x1000', it: 'Dona il tuo 5x1000' })}
-                </h3>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  {t({ pt: 'Insira o código fiscal da Fundação na sua declaração de renda.', it: 'Inserisci il codice fiscale della Fondazione nella tua dichiarazione dei redditi.' })}
-                </p>
-
-                <div className="bg-white p-6 rounded-xl border-2 border-[var(--warm-orange)]">
-                  <p className="text-sm text-gray-600 mb-2">{t({ pt: 'Código fiscal:', it: 'Codice fiscale:' })}</p>
-                  <div className="flex items-center gap-3">
-                    <code className="flex-1 text-2xl md:text-3xl font-mono text-[var(--deep-blue)] tracking-wider">
-                      93346130722
-                    </code>
-                    <button
-                      onClick={() => copyToClipboard('93346130722', setCopiedCf)}
-                      className="flex-shrink-0 p-3 bg-[var(--warm-orange)] text-white rounded-lg hover:bg-orange-600 transition-all"
-                      aria-label={t({ pt: 'Copiar código fiscal', it: 'Copia codice fiscale' })}
-                    >
-                      {copiedCf ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5 - UN PROGETTO REALE */}
-      <section className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={centroImg}
-                  alt="Centro Nossa Senhora Aparecida"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div>
-                <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Uma obra concreta, todos os dias', it: "Un'opera concreta, ogni giorno" })}
-                </h2>
-                <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                  <p>
-                    {t({ pt: 'O Centro Nossa Senhora Aparecida não é um projeto temporário.', it: 'Il Centro Nossa Senhora Aparecida non è un progetto temporaneo.' })}
-                  </p>
-                  <p>
-                    {t({ pt: 'É uma presença cotidiana em Salvador de Bahia, construída ao longo do tempo pela Fundação Betania ONLUS e pela Fraternidade Franciscana de Betânia.', it: 'È una presenza quotidiana a Salvador de Bahia, costruita nel tempo dalla Fundação Betania ONLUS e dalla Fraternità Francescana di Betania.' })}
-                  </p>
-                  <p>
-                    {t({ pt: 'Cada doação sustenta atividades reais, pessoas reais e um percurso educativo que continua todos os dias.', it: 'Ogni donazione sostiene attività reali, persone reali e un percorso educativo che continua ogni giorno.' })}
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 6 - LA NUOVA SCUOLA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <div>
-                <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Ajude-nos a construir a nova escola', it: 'Aiutaci a costruire la nuova scuola' })}
-                </h2>
-                <div className="space-y-4 text-lg text-gray-700 leading-relaxed mb-8">
-                  <p>
-                    {t({ pt: 'A nova escola permitirá acompanhar as crianças também após a creche, oferecendo um percurso educativo completo dos 6 aos 18 anos.', it: "La nuova scuola permetterà di accompagnare i bambini anche dopo l'asilo, offrendo un percorso educativo completo dai 6 ai 18 anni." })}
-                  </p>
-                  <p>
-                    {t({ pt: 'A construção já começou.', it: 'La costruzione è già iniziata.' })}
-                  </p>
-                </div>
-                <Button variant="primary" to="/progetto-scuola" className="text-lg px-8 py-3">
-                  {t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola' })}
-                </Button>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={scuolaRender}
-                  alt={t({ pt: 'Render da nova escola', it: 'Render della nuova scuola' })}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 7 - TRASPARENZA */}
       <section className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -342,41 +466,6 @@ export function DonaOraPage() {
             <Button variant="secondary" to="/trasparenza" className="text-lg px-8 py-3">
               {t({ pt: 'Ir à seção transparência', it: 'Vai alla sezione trasparenza' })}
             </Button>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* SECTION 8 - IMPATTO */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Todos os dias, concretamente', it: 'Ogni giorno, concretamente' })}
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {[
-              { number: '100+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti' }) },
-              { number: '5', label: t({ pt: 'refeições cotidianas', it: 'pasti quotidiani' }) },
-              { number: '365', label: t({ pt: 'dias de presença educativa', it: 'giorni di presenza educativa' }) },
-              { number: '1', label: t({ pt: 'projeto escola em construção', it: 'progetto scuola in costruzione' }) }
-            ].map((item, index) => (
-              <AnimatedSection key={index} delay={0.1 * index}>
-                <div className="text-center p-8 bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl shadow-lg">
-                  <div className="text-5xl md:text-6xl text-[var(--deep-blue)] mb-4">
-                    {item.number}
-                  </div>
-                  <p className="text-lg text-gray-700">{item.label}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={0.4}>
-            <p className="text-xl text-gray-600 text-center italic">
-              {t({ pt: 'Cada número representa rostos, histórias e relações reais.', it: 'Ogni numero rappresenta volti, storie e relazioni reali.' })}
-            </p>
           </AnimatedSection>
         </div>
       </section>
