@@ -25,6 +25,7 @@ try {
   run(`git checkout --orphan ${BRANCH}`);
   cpSync(distDir, tmpDir, { recursive: true });
   writeFileSync(join(tmpDir, '.nojekyll'), '');
+  cpSync(join(tmpDir, 'index.html'), join(tmpDir, '404.html'));
   run('git add .');
   run('git commit -m "Deploy to GitHub Pages"');
   run(`git push "${remote}" ${BRANCH} --force`);

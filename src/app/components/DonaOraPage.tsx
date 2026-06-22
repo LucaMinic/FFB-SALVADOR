@@ -97,7 +97,7 @@ export function DonaOraPage() {
             <AnimatedSection>
               <div className="bg-gradient-to-br from-[var(--beige)] to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--deep-blue)]/10">
                 <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Apoie o Projeto Brasile', it: 'Sostieni il Progetto Brasile' })}
+                  {t({ pt: 'Apoie o Projeto', it: 'Sostieni il Progetto' })}
                 </h3>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   {t({
