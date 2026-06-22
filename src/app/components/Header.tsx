@@ -138,6 +138,7 @@ export function Header() {
       href: '#sostieni',
       submenu: [
         { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
+        { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza' }), href: '/sostegno-a-distanza', isRoute: true },
         { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }), href: '/cosa-puoi-fare-tu', isRoute: true },
         { label: t({ pt: 'Benfeitores', it: 'Benefattori' }), href: '/benefattori', isRoute: true }
       ]

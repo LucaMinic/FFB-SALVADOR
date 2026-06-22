@@ -1,21 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { AnimatedSection, AnimatedImage } from './AnimatedSection';
+import { AnimatedSection } from './AnimatedSection';
 import { ChevronDown, Copy, Check, FileText } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/19.jpeg';
-import centroImg from '../../imports/13-2.jpeg';
-import scuolaRender from '../../imports/immagine_compressa_leggera.jpg';
 import finalCtaImg from '../../imports/21.jpeg';
-import impactImg from '../../imports/15-1.jpeg';
 
 export function DonaOraPage() {
   const t = useT();
   const [copiedIbanIntesa, setCopiedIbanIntesa] = useState(false);
   const [copiedIbanBper, setCopiedIbanBper] = useState(false);
   const [copiedIbanBrasile, setCopiedIbanBrasile] = useState(false);
-  const [copiedIbanSostegnoIt, setCopiedIbanSostegnoIt] = useState(false);
-  const [copiedIbanSostegnoBr, setCopiedIbanSostegnoBr] = useState(false);
   const [copiedCf, setCopiedCf] = useState(false);
 
   useEffect(() => {
@@ -208,159 +203,56 @@ export function DonaOraPage() {
             </AnimatedSection>
 
             {/* 5x1000 */}
-            <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch">
-                <AnimatedSection delay={0.1} className="py-12 px-10 md:py-16 md:px-16 flex flex-col justify-center items-center text-center">
-                  <div className="flex items-center gap-3 mb-6">
-                    <FileText className="w-10 h-10 text-white flex-shrink-0" />
-                    <h3 className="text-2xl md:text-3xl text-white">
-                      {t({ pt: 'Doe o seu 5x1000', it: 'Dona il tuo 5x1000' })}
-                    </h3>
-                  </div>
-                  <p className="text-lg leading-relaxed mb-8 opacity-95">
-                    {t({
-                      pt: 'Um gesto simples que pode contribuir concretamente para os projetos educativos e sociais da Fraternidade Franciscana de Betânia.',
-                      it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fraternità Francescana di Betania.'
-                    })}
-                  </p>
-                  <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mb-2">
-                    <p className="text-base mb-2 opacity-90">{t({ pt: 'Código fiscal:', it: 'Codice fiscale:' })}</p>
-                    <div className="flex items-center gap-3">
-                      <code className="flex-1 text-2xl md:text-3xl font-mono tracking-wider">
-                        93346130722
-                      </code>
-                      <button
-                        onClick={() => copyToClipboard('93346130722', setCopiedCf)}
-                        className="flex-shrink-0 p-3 bg-white/30 hover:bg-white/50 text-white rounded-lg transition-all"
-                        aria-label={t({ pt: 'Copiar código fiscal', it: 'Copia codice fiscale' })}
-                      >
-                        {copiedCf ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                      </button>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                <AnimatedImage delay={0.2}>
-                  <div className="group overflow-hidden h-72 lg:h-full min-h-[280px]">
-                    <img
-                      src={impactImg}
-                      alt={t({ pt: 'Crianças do Centro', it: 'Bambini del Centro' })}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                </AnimatedImage>
-              </div>
-            </div>
-
-            {/* Sostegno a distanza - cappello introduttivo */}
-            <div id="sostegno-distanza" className="scroll-mt-24"></div>
-            <AnimatedSection delay={0.25}>
-              <div className="text-center max-w-3xl mx-auto pt-4 pb-2">
-                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Uma escolha concreta de proximidade', it: 'Una scelta concreta di vicinanza' })}
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+            <AnimatedSection delay={0.1}>
+              <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl shadow-xl py-14 px-8 md:py-20 md:px-16 flex flex-col items-center text-center">
+                <div className="flex items-center justify-center gap-3 mb-5">
+                  <FileText className="w-10 h-10 text-white flex-shrink-0" />
+                  <h3 className="text-2xl md:text-3xl text-white">
+                    {t({ pt: 'Doe o seu 5x1000', it: 'Dona il tuo 5x1000' })}
+                  </h3>
+                </div>
+                <p className="text-lg leading-relaxed mb-10 opacity-95 max-w-2xl">
                   {t({
-                    pt: 'O sostegno a distanza é uma forma direta e pessoal de acompanhar uma criança do asilo. Com a tua contribuição, ajudas a garantir educação, cuidado e nutrição todos os dias — um vínculo real entre te e uma criança que cresce.',
-                    it: "Il sostegno a distanza è un modo diretto e personale di accompagnare un bambino dell'asilo. Con il tuo contributo aiuti a garantirgli educazione, cura e nutrimento ogni giorno — un legame reale tra te e un bambino che cresce."
+                    pt: 'Um gesto simples que pode contribuir concretamente para os projetos educativos e sociais da Fraternidade Franciscana de Betânia.',
+                    it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fraternità Francescana di Betania.'
                   })}
                 </p>
+                <div className="bg-white/20 backdrop-blur-sm rounded-2xl px-10 py-8">
+                  <p className="text-base mb-3 opacity-90 tracking-wide uppercase text-sm">
+                    {t({ pt: 'Código fiscal:', it: 'Codice fiscale:' })}
+                  </p>
+                  <div className="flex items-center justify-center gap-4">
+                    <code className="text-3xl md:text-4xl font-mono tracking-widest">
+                      93346130722
+                    </code>
+                    <button
+                      onClick={() => copyToClipboard('93346130722', setCopiedCf)}
+                      className="flex-shrink-0 p-3 bg-white/30 hover:bg-white/50 text-white rounded-lg transition-all"
+                      aria-label={t({ pt: 'Copiar código fiscal', it: 'Copia codice fiscale' })}
+                    >
+                      {copiedCf ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                    </button>
+                  </div>
+                </div>
               </div>
             </AnimatedSection>
 
-            {/* Sostegno a distanza */}
-            <AnimatedSection delay={0.3}>
-              <div className="bg-gradient-to-br from-[var(--soft-green)]/10 to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--soft-green)]/30">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-4xl">🤝</span>
-                  <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)]">
-                    {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza' })}
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            {/* Rimanda alla pagina dedicata */}
+            <AnimatedSection delay={0.25}>
+              <div className="bg-gradient-to-br from-[var(--soft-green)]/10 to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--soft-green)]/30 text-center">
+                <span className="text-5xl mb-5 block">🤝</span>
+                <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-4">
+                  {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza' })}
+                </h3>
+                <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto">
                   {t({
-                    pt: 'Adote à distância uma criança do asilo que a Fraternidade Franciscana de Betânia gerencia no Brasil.',
-                    it: "Sostieni a distanza un bambino dell'asilo che la Fraternità Francescana di Betania gestisce in Brasile."
+                    pt: 'Acompanha concretamente o percurso educativo de uma criança da creche, ajudando-a a crescer em um ambiente estável e acolhedor.',
+                    it: "Accompagna concretamente il percorso educativo di un bambino dell'asilo, aiutandolo a crescere in un ambiente stabile e accogliente."
                   })}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                  <a
-                    href="#sostegno-brasile"
-                    className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:brightness-90 transition-all"
-                  >
-                    🇧🇷 <span>{t({ pt: 'Sostieni dal Brasile — clicca qui', it: 'Sostieni dal Brasile — clicca qui' })}</span>
-                  </a>
-                  <a
-                    href="#sostegno-italia"
-                    className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:bg-blue-800 transition-all"
-                  >
-                    🇮🇹 <span>{t({ pt: "Sostieni dall'Italia — clicca qui", it: "Sostieni dall'Italia — clicca qui" })}</span>
-                  </a>
-                </div>
-                <div className="space-y-8">
-                  <div id="sostegno-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
-                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
-                      {t({ pt: 'Se você doa do Brasil', it: 'Se sostieni dal Brasile' })}
-                    </h4>
-                    <div className="bg-white p-6 rounded-xl border border-gray-200">
-                      <p className="text-sm text-gray-600 mb-2">IBAN:</p>
-                      <div className="flex items-center gap-3">
-                        <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
-                          [INSERT IBAN BRASILE SOSTEGNO]
-                        </code>
-                        <button
-                          onClick={() => copyToClipboard('[INSERT IBAN BRASILE SOSTEGNO]', setCopiedIbanSostegnoBr)}
-                          className="flex-shrink-0 p-3 bg-[var(--soft-green)] text-white rounded-lg hover:brightness-90 transition-all"
-                          aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
-                        >
-                          {copiedIbanSostegnoBr ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="sostegno-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
-                    <h4 className="text-xl text-[var(--deep-blue)] mb-4">
-                      {t({ pt: "Se você doa da Itália", it: "Se sostieni dall'Italia" })}
-                    </h4>
-                    <div className="space-y-5">
-                      <div className="bg-[var(--deep-blue)]/5 rounded-xl px-5 py-4">
-                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Beneficiário:', it: 'Beneficiario:' })}</p>
-                        <p className="text-[var(--deep-blue)] font-semibold text-lg leading-snug">
-                          Fraternità Francescana di Betania Fondazione ETS
-                        </p>
-                      </div>
-                      <div className="bg-white p-6 rounded-xl border border-gray-200">
-                        <p className="text-sm text-gray-500 mb-1">{t({ pt: 'Banco:', it: 'Banca:' })}</p>
-                        <p className="text-[var(--deep-blue)] font-medium mb-4">INTESA SANPAOLO S.P.A</p>
-                        <p className="text-sm text-gray-500 mb-2">IBAN:</p>
-                        <div className="flex items-center gap-3">
-                          <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all tracking-wide">
-                            IT44X0306909606100000150294
-                          </code>
-                          <button
-                            onClick={() => copyToClipboard('IT44X0306909606100000150294', setCopiedIbanSostegnoIt)}
-                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
-                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
-                          >
-                            {copiedIbanSostegnoIt ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                          </button>
-                        </div>
-                      </div>
-                      <div className="bg-[var(--deep-blue)]/5 border border-[var(--deep-blue)]/15 rounded-xl px-5 py-4">
-                        <p className="text-sm text-gray-500 mb-2">{t({ pt: 'Motivo da transferência:', it: 'Causale:' })}</p>
-                        <p className="text-[var(--deep-blue)] font-medium italic text-base mb-3">
-                          {t({ pt: 'Adoção à distância — Nome e Sobrenome (do doador)', it: 'Sostegno a distanza — nome e cognome (del donatore)' })}
-                        </p>
-                        <p className="text-sm text-gray-500 leading-relaxed">
-                          {t({
-                            pt: 'Substitua "Nome e Sobrenome" pelo seu nome e sobrenome completos.',
-                            it: 'Sostituire "nome e cognome" con il proprio nome e cognome per esteso.'
-                          })}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Button variant="primary" to="/sostegno-a-distanza" className="text-lg px-8 py-4">
+                  {t({ pt: 'Scopri il sostegno a distanza', it: 'Scopri il sostegno a distanza' })}
+                </Button>
               </div>
             </AnimatedSection>
           </div>

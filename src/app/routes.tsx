@@ -29,6 +29,7 @@ import { IntervistaAlCentroPage } from "./components/IntervistaAlCentroPage";
 import { DieciAnniCrechePage } from "./components/DieciAnniCrechePage";
 import { VisitaPresidentePage } from "./components/VisitaPresidentePage";
 import { AvanzamentoLavoriPage } from "./components/AvanzamentoLavoriPage";
+import { SostegnoADistanzaPage } from "./components/SostegnoADistanzaPage";
 import { RootLayout } from "./layouts/RootLayout";
 
 export const router = createBrowserRouter([
@@ -66,6 +67,7 @@ export const router = createBrowserRouter([
       { path: "documentari-racconti/auto-idea-tutti", Component: AutoIdeaTuttiPage },
       { path: "documentari-racconti/ricordi-narrazioni", Component: RicordiNarrazioniPage },
       { path: "avanzamento-lavori", Component: AvanzamentoLavoriPage },
+      { path: "sostegno-a-distanza", Component: SostegnoADistanzaPage },
       { path: "*", Component: HomePage },
     ],
   },
