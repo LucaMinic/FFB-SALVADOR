@@ -68,17 +68,19 @@ export function Header() {
       const isTopLevel = !key.includes('__');
 
       if (newSet.has(key)) {
-        // Close the clicked menu
         newSet.delete(key);
+        Array.from(newSet).forEach(k => {
+          if (k.startsWith(key + '__')) newSet.delete(k);
+        });
       } else {
-        // If it's a top-level menu, close all other top-level menus first
         if (isTopLevel) {
-          // Keep only nested submenus, remove all top-level menus
-          const nestedMenus = Array.from(prev).filter(k => k.includes('__'));
           newSet.clear();
-          nestedMenus.forEach(k => newSet.add(k));
+        } else {
+          const prefix = key.split('__')[0];
+          Array.from(newSet).forEach(k => {
+            if (k.includes('__') && k.startsWith(prefix + '__')) newSet.delete(k);
+          });
         }
-        // Open the clicked menu
         newSet.add(key);
       }
 

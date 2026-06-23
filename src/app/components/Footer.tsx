@@ -30,11 +30,17 @@ export function Footer() {
 
       if (newSet.has(key)) {
         newSet.delete(key);
+        Array.from(newSet).forEach(k => {
+          if (k.startsWith(key + '__')) newSet.delete(k);
+        });
       } else {
         if (isTopLevel) {
-          const nestedMenus = Array.from(prev).filter(k => k.includes('__'));
           newSet.clear();
-          nestedMenus.forEach(k => newSet.add(k));
+        } else {
+          const prefix = key.split('__')[0];
+          Array.from(newSet).forEach(k => {
+            if (k.includes('__') && k.startsWith(prefix + '__')) newSet.delete(k);
+          });
         }
         newSet.add(key);
       }
