@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/bambino_al_centro.jpeg';
+import heroImg from '../../imports/11-1.jpeg';
 import img1 from '../../imports/3-1.jpeg';
 import img2 from '../../imports/11-2.jpeg';
 import img3 from '../../imports/13-4.jpeg';

@@ -110,6 +110,7 @@ export function Header() {
           isRoute: true,
           submenu: [
             { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' }), href: '/nossa-metodologia', isRoute: true },
             { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true },
             { label: t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' }), href: '/approccio-reggio-emilia', isRoute: true },
             { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true }

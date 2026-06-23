@@ -32,6 +32,7 @@ import { AvanzamentoLavoriPage } from "./components/AvanzamentoLavoriPage";
 import { SostegnoADistanzaPage } from "./components/SostegnoADistanzaPage";
 import { ApproccioReggioEmiliaPage } from "./components/ApproccioReggioEmiliaPage";
 import { AtelierPage } from "./components/AtelierPage";
+import { NossaMetodologiaPage } from "./components/NossaMetodologiaPage";
 import { RootLayout } from "./layouts/RootLayout";
 
 export const router = createBrowserRouter([
@@ -72,6 +73,7 @@ export const router = createBrowserRouter([
       { path: "sostegno-a-distanza", Component: SostegnoADistanzaPage },
       { path: "approccio-reggio-emilia", Component: ApproccioReggioEmiliaPage },
       { path: "atelier", Component: AtelierPage },
+      { path: "nossa-metodologia", Component: NossaMetodologiaPage },
       { path: "*", Component: HomePage },
     ],
   },
