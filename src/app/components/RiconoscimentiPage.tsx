@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { Award, Globe, GraduationCap, ChevronDown } from 'lucide-react';
@@ -10,6 +12,17 @@ import emblemItaly from '../../imports/Emblem_of_Italy.png';
 
 export function RiconoscimentiPage() {
   const t = useT();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, [hash]);
+
   return (
     <div className="bg-white">
       {/* SECTION 1 - HERO */}
@@ -279,7 +292,181 @@ export function RiconoscimentiPage() {
         </div>
       </section>
 
-      {/* SECTION 7 - CTA FINALE */}
+      {/* SECTION 7 - RASSEGNA STAMPA E TESTIMONIANZE */}
+      <section id="rassegna-stampa" className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white scroll-mt-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Imprensa e testemunhos', it: 'Rassegna stampa e testimonianze' })}
+            </h2>
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                {t({
+                  pt: 'Ao longo dos anos, a missão da Fraternidade Franciscana de Betânia e do Centro Nossa Senhora Aparecida foi narrada também por realidades externas que escolheram aprofundar o trabalho realizado ao lado das crianças, famílias e comunidades mais vulneráveis de Salvador da Bahia.',
+                  it: 'Nel corso degli anni, la missione della Fraternità Francescana di Betania e del Centro Nossa Senhora Aparecida è stata raccontata anche da realtà esterne che hanno scelto di approfondire il lavoro svolto accanto ai bambini, alle famiglie e alle comunità più vulnerabili di Salvador de Bahia.'
+                })}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {t({
+                  pt: 'Estes testemunhos representam um olhar externo sobre a nossa experiência e sobre o caminho partilhado que continua todos os dias.',
+                  it: 'Queste testimonianze rappresentano uno sguardo esterno sulla nostra esperienza e sul cammino condiviso che continua ogni giorno.'
+                })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="p-8 md:p-10">
+                  <div className="mb-4">
+                    <span className="inline-block px-4 py-1.5 bg-[var(--deep-blue)]/10 text-[var(--deep-blue)] text-sm font-semibold rounded-full uppercase tracking-wide">
+                      Interris
+                    </span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-[var(--deep-blue)] mb-4">
+                    {t({
+                      pt: 'A fraternidade ajuda os pobres entre os mais pobres',
+                      it: 'La fraternità aiuta i poveri tra i più poveri'
+                    })}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    {t({
+                      pt: 'A revista Interris dedicou um aprofundamento à missão da Fraternidade Franciscana de Betânia no Brasil, narrando o trabalho realizado ao lado das comunidades mais vulneráveis de Salvador da Bahia e o compromisso quotidiano em favor das crianças e famílias acolhidas pelo Centro Nossa Senhora Aparecida.',
+                      it: "La rivista Interris ha dedicato un approfondimento alla missione della Fraternità Francescana di Betania in Brasile, raccontando il lavoro svolto accanto alle comunità più vulnerabili di Salvador de Bahia e l'impegno quotidiano a favore dei bambini e delle famiglie accolte dal Centro Nossa Senhora Aparecida."
+                    })}
+                  </p>
+                  <a
+                    href="https://www.interris.it/la-voce-degli-ultimi/fraternita-aiuta-poveri-tra-piu-poveri/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--deep-blue)] text-white font-semibold rounded-xl hover:bg-[#4d6374] transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    {t({
+                      pt: 'Leia a matéria no Interris',
+                      it: "Leggi l'articolo su Interris"
+                    })}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="p-8 md:p-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="inline-block px-4 py-1.5 bg-[var(--warm-orange)]/10 text-[var(--warm-orange)] text-sm font-semibold rounded-full uppercase tracking-wide">
+                      Sky TG24
+                    </span>
+                    <span className="text-sm text-gray-400">16 set 2022</span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-[var(--deep-blue)] mb-4">
+                    {t({
+                      pt: 'Salvador de Bahia, inaugurado o primeiro convento da Fraternidade Franciscana de Betânia',
+                      it: 'Salvador de Bahia, inaugurato il primo convento della Fraternità Francescana di Betania'
+                    })}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    {t({
+                      pt: 'Sky TG24 narrou a inauguração do primeiro convento da Fraternidade em São Cristóvão, um dos bairros mais pobres de Salvador, projetado pelo estúdio romano Mixtura com arquitetura sustentável: ventilação natural, painéis fotovoltaicos e captação de água da chuva.',
+                      it: "Sky TG24 ha raccontato l'inaugurazione del primo convento della Fraternità a São Cristóvão, uno dei quartieri più poveri di Salvador, progettato dallo studio romano Mixtura con architettura sostenibile: ventilazione naturale, pannelli fotovoltaici e raccolta dell'acqua piovana."
+                    })}
+                  </p>
+                  <a
+                    href="https://tg24.sky.it/lifestyle/2022/09/16/favelas-brasile-progetto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--warm-orange)] text-white font-semibold rounded-xl hover:bg-[var(--warm-orange-light)] transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    {t({
+                      pt: 'Leia a matéria no Sky TG24',
+                      it: "Leggi l'articolo su Sky TG24"
+                    })}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+              <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="p-8 md:p-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="inline-block px-4 py-1.5 bg-[var(--soft-green)]/10 text-[var(--soft-green)] text-sm font-semibold rounded-full uppercase tracking-wide">
+                      Diocesi di Molfetta
+                    </span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-[var(--deep-blue)] mb-4">
+                    {t({
+                      pt: 'Viagem pastoral do Bispo ao Brasil: o relato dos últimos dias',
+                      it: 'Viaggio pastorale del Vescovo in Brasile: il racconto degli ultimi giorni'
+                    })}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    {t({
+                      pt: 'A Diocese de Molfetta narrou a visita pastoral do Bispo Domenico a Salvador da Bahia, que incluiu um encontro com a Fraternidade Franciscana de Betânia e uma celebração em honra do fundador padre Pancrazio, reconhecido como artífice da missão brasileira da comunidade.',
+                      it: "La Diocesi di Molfetta ha narrato la visita pastorale del Vescovo Domenico a Salvador de Bahia, che ha incluso un incontro con la Fraternità Francescana di Betania e una celebrazione in onore del fondatore padre Pancrazio, riconosciuto come artefice della missione brasiliana della comunità."
+                    })}
+                  </p>
+                  <a
+                    href="https://www.diocesimolfetta.it/news/viaggio-pastorale-del-vescovo-in-brasile-il-racconto-degli-ultimi-giorni/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--soft-green)] text-white font-semibold rounded-xl hover:brightness-90 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    {t({
+                      pt: 'Leia a matéria',
+                      it: "Leggi l'articolo"
+                    })}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
+                <div className="p-8 md:p-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="inline-block px-4 py-1.5 bg-[var(--beige)]/60 text-[var(--deep-blue)] text-sm font-semibold rounded-full uppercase tracking-wide">
+                      Corriere della Sera
+                    </span>
+                    <span className="text-sm text-gray-400">16 lug 2024</span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-[var(--deep-blue)] mb-4">
+                    {t({
+                      pt: 'Mattarella visita a Fraternidade Franciscana de Salvador de Bahia, onde os meninos de rua são salvos',
+                      it: 'Mattarella in visita alla Fraternità Francescana di Salvador de Bahia, dove i meninos de rua vengono salvati'
+                    })}
+                  </h3>
+                  <p className="text-base text-gray-600 leading-relaxed mb-6">
+                    {t({
+                      pt: 'O Corriere della Sera narrou a visita do Presidente da República Italiana Sergio Mattarella à Fraternidade Franciscana de Betânia em Salvador da Bahia, destacando a missão de acolhimento das crianças de rua e o trabalho quotidiano da comunidade ao lado das famílias mais vulneráveis.',
+                      it: "Il Corriere della Sera ha raccontato la visita del Presidente della Repubblica Italiana Sergio Mattarella alla Fraternità Francescana di Betania a Salvador de Bahia, mettendo in luce la missione di accoglienza dei bambini di strada e il lavoro quotidiano della comunità accanto alle famiglie più vulnerabili."
+                    })}
+                  </p>
+                  <a
+                    href="https://www.corriere.it/esteri/24_luglio_16/mattarella-in-visista-alla-fraternita-francescana-di-salvador-de-bahia-dove-i-meninos-de-rua-vengono-salvati-d2292d5f-6014-4180-a7e3-4dd2bc1c4xlk.shtml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--deep-blue)] text-white font-semibold rounded-xl hover:bg-[#4d6374] transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    {t({
+                      pt: 'Leia a matéria no Corriere della Sera',
+                      it: "Leggi l'articolo sul Corriere della Sera"
+                    })}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* SECTION 8 - CTA FINALE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img

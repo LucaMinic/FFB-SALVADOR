@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:tg24.sky.it)",
+      "WebFetch(domain:www.diocesimolfetta.it)",
+      "WebFetch(domain:www.corriere.it)"
+    ]
+  }
+}

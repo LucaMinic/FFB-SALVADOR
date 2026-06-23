@@ -7,6 +7,8 @@ import heroImg from '../../imports/11.jpeg';
 import childrenImg from '../../imports/15-1.jpeg';
 import familyImg from '../../imports/12.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';
+import flagBrasil from '../../imports/brasil.png';
+import flagItalia from '../../imports/italia.png';
 
 export function SostegnoADistanzaPage() {
   const t = useT();
@@ -228,15 +230,17 @@ export function SostegnoADistanzaPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
                 href="#sostegno-brasile"
-                className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
+                className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
               >
-                🇧🇷 <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se sostieni dal Brasile — clicca qui' })}</span>
+                <img src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
+                <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se sostieni dal Brasile — clicca qui' })}</span>
               </a>
               <a
                 href="#sostegno-italia"
-                className="flex items-center justify-center gap-3 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
+                className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
               >
-                🇮🇹 <span>{t({ pt: "Se você doa da Itália — clique aqui", it: "Se sostieni dall'Italia — clicca qui" })}</span>
+                <img src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
+                <span>{t({ pt: "Se você doa da Itália — clique aqui", it: "Se sostieni dall'Italia — clicca qui" })}</span>
               </a>
             </div>
           </AnimatedSection>
@@ -253,7 +257,8 @@ export function SostegnoADistanzaPage() {
               <div className="space-y-8">
                 {/* Dal Brasile */}
                 <div id="sostegno-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
-                  <h4 className="text-xl text-[var(--deep-blue)] mb-4">
+                  <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
+                    <img src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
                     {t({ pt: 'Se você doa do Brasil', it: 'Se sostieni dal Brasile' })}
                   </h4>
                   <div className="bg-white p-6 rounded-xl border border-gray-200">
@@ -275,7 +280,8 @@ export function SostegnoADistanzaPage() {
 
                 {/* Dall'Italia */}
                 <div id="sostegno-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
-                  <h4 className="text-xl text-[var(--deep-blue)] mb-4">
+                  <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
+                    <img src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
                     {t({ pt: 'Se você doa da Itália', it: "Se sostieni dall'Italia" })}
                   </h4>
                   <div className="space-y-5">
