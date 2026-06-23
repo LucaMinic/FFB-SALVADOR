@@ -37,8 +37,8 @@ export function ApproccioReggioEmiliaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/asilo">
-                {t({ pt: 'Conoscer a Creche', it: "Scopri l'Asilo" })}
+              <Button variant="primary" to="/dona-ora">
+                {t({ pt: 'Doar agora', it: 'Dona ora' })}
               </Button>
               <a
                 href="#scopri"

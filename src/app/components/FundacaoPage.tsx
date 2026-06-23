@@ -86,37 +86,6 @@ export function FundacaoPage() {
         </div>
       </section>
 
-      {/* SECTION 3 - IL CENTRO SUL TERRITORIO */}
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-4xl mx-auto px-6">
-          <AnimatedSection>
-            <div className="bg-white rounded-3xl p-12 shadow-lg text-center">
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Uma presença concreta no território', it: 'Una presenza concreta sul territorio' })}
-              </h2>
-              <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                {t({ pt: 'As atividades da Fundação Betania ONLUS tomam forma concreta no:', it: 'Le attività della Fundação Betania ONLUS prendono forma concreta nel:' })}
-              </p>
-              <p className="text-2xl font-semibold text-[var(--deep-blue)] mb-6">
-                Centro Nossa Senhora Aparecida
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                {t({ pt: 'É aqui que cada dia se realizam acolhimento, educação e acompanhamento.', it: 'È qui che ogni giorno si realizzano accoglienza, educazione e accompagnamento.' })}
-                <br />
-                {t({ pt: 'O Centro representa a presença viva da fundação no território e o lugar em que a missão se torna experiência concreta.', it: 'Il Centro rappresenta la presenza viva della fondazione nel territorio e il luogo in cui la missione diventa esperienza concreta.' })}
-              </p>
-              <Button variant="secondary" to="/#il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}</Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginBottom: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="var(--beige)" />
-      </svg>
-
       {/* SECTION 4 - FINALITÀ */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6">
@@ -264,6 +233,37 @@ export function FundacaoPage() {
           </div>
         </div>
       </section>
+
+      {/* SECTION 3 - IL CENTRO SUL TERRITORIO */}
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+      </svg>
+      <section className="py-20 bg-[var(--beige)]">
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimatedSection>
+            <div className="bg-white rounded-3xl p-12 shadow-lg text-center">
+              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
+                {t({ pt: 'Uma presença concreta no território', it: 'Una presenza concreta sul territorio' })}
+              </h2>
+              <p className="text-xl text-gray-700 leading-relaxed mb-6">
+                {t({ pt: 'As atividades da Fundação Betania ONLUS tomam forma concreta no:', it: 'Le attività della Fundação Betania ONLUS prendono forma concreta nel:' })}
+              </p>
+              <p className="text-2xl font-semibold text-[var(--deep-blue)] mb-6">
+                Centro Nossa Senhora Aparecida
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                {t({ pt: 'É aqui que cada dia se realizam acolhimento, educação e acompanhamento.', it: 'È qui che ogni giorno si realizzano accoglienza, educazione e accompagnamento.' })}
+                <br />
+                {t({ pt: 'O Centro representa a presença viva da fundação no território e o lugar em que a missão se torna experiência concreta.', it: 'Il Centro rappresenta la presenza viva della fondazione nel territorio e il luogo in cui la missione diventa esperienza concreta.' })}
+              </p>
+              <Button variant="secondary" to="/#il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}</Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginBottom: '-1px' }}>
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="var(--beige)" />
+      </svg>
 
       {/* SECTION 8 - LEGAME CON LA FRATERNITÀ */}
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>

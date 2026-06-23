@@ -8,6 +8,7 @@ import centroImg from '../../imports/8-3.jpeg';
 import giornataImg1 from '../../imports/15-2.jpeg';
 import giornataImg2 from '../../imports/17-2.jpeg';
 import documentariImg from '../../imports/FFBcreche.2025-1.png';
+import iniziativeImg from '../../imports/21.jpeg';
 
 export function CentroPage() {
   const t = useT();
@@ -339,11 +340,54 @@ export function CentroPage() {
         </div>
       </section>
 
+      {/* SECTION 9 - INIZIATIVE */}
+      <section className="py-24 bg-[var(--beige)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <AnimatedSection delay={0.2}>
+              <div className="space-y-6">
+                <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] font-bold">
+                  {t({ pt: 'Iniciativas', it: 'Iniziative' })}
+                </h2>
+                <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                  <p>
+                    {t({
+                      pt: 'Ao longo do tempo, o Centro Nossa Senhora Aparecida promove iniciativas concretas para apoiar as crianças e as famílias mais vulneráveis.',
+                      it: 'Nel tempo, il Centro Nossa Senhora Aparecida promuove iniziative concrete per sostenere i bambini e le famiglie più vulnerabili.'
+                    })}
+                  </p>
+                  <p>
+                    {t({
+                      pt: 'Cada iniciativa nasce de uma necessidade real, de um nome, de um rosto. É uma forma de transformar a solidariedade em presença, de fazer com que cada contribuição se torne parte de uma história de crescimento.',
+                      it: 'Ogni iniziativa nasce da un bisogno reale, da un nome, da un volto. È un modo di trasformare la solidarietà in presenza, di fare in modo che ogni contributo diventi parte di una storia di crescita.'
+                    })}
+                  </p>
+                </div>
+                <div className="pt-4">
+                  <Button to="/iniziative" variant="primary">
+                    {t({ pt: 'Descubra as Iniciativas', it: 'Scopri le Iniziative' })}
+                  </Button>
+                </div>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection>
+              <div className="rounded-3xl overflow-hidden shadow-xl">
+                <img
+                  src={iniziativeImg}
+                  alt={t({ pt: 'Iniciativas', it: 'Iniziative' })}
+                  className="w-full h-full min-h-[400px] object-cover"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
       </svg>
 
-      {/* SECTION 9 - CTA FINALE */}
+      {/* SECTION 10 - CTA FINALE */}
       <section className="py-20 bg-[var(--beige)]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>

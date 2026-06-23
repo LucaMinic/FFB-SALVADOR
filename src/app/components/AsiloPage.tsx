@@ -425,6 +425,11 @@ export function AsiloPage() {
                   {t({ pt: 'O apoio pode tornar-se também muito concreto: cerca de 15 famílias recebem ajudas alimentares e, quando necessário, um acompanhamento mais específico.', it: 'Il sostegno può diventare anche molto concreto: circa 15 famiglie ricevono aiuti alimentari e, quando necessario, un accompagnamento più specifico.' })}
                 </p>
               </div>
+              <div className="mt-8">
+                <Button variant="primary" to="/accompagnamento-famiglie">
+                  {t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie' })}
+                </Button>
+              </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
@@ -517,6 +522,13 @@ export function AsiloPage() {
               </AnimatedSection>
             ))}
           </div>
+          <AnimatedSection>
+            <div className="flex justify-center mt-10">
+              <Button variant="primary" to="/nossa-metodologia">
+                {t({ pt: 'Descobrir a nossa metodologia', it: 'Scopri la nostra metodologia' })}
+              </Button>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
@@ -565,6 +577,13 @@ export function AsiloPage() {
               <cite className="text-white/90 text-lg not-italic">— Loris Malaguzzi</cite>
             </div>
           </AnimatedSection>
+          <AnimatedSection>
+            <div className="flex justify-center mt-10">
+              <Button variant="primary" to="/approccio-reggio-emilia">
+                {t({ pt: 'Descobrir a abordagem Reggio Emilia', it: "Scopri l'approccio Reggio Emilia" })}
+              </Button>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -598,6 +617,11 @@ export function AsiloPage() {
                 <p>
                   {t({ pt: 'Não se oferece à criança algo já pronto: criam-se condições para que possa descobrir, experimentar e tornar-se protagonista da sua própria aprendizagem.', it: 'Non si offre al bambino qualcosa di già pronto: si creano condizioni perché possa scoprire, sperimentare e diventare protagonista del proprio apprendimento.' })}
                 </p>
+              </div>
+              <div className="mt-8">
+                <Button variant="primary" to="/atelier">
+                  {t({ pt: 'Descobrir o Ateliê', it: "Scopri l'Atelier" })}
+                </Button>
               </div>
             </AnimatedSection>
           </div>
@@ -711,6 +735,11 @@ export function AsiloPage() {
               <p>
                 {t({ pt: 'Educar significa também acompanhar o crescimento humano e espiritual, criando um ambiente em que cuidado, relação e atenção à pessoa se tornam experiência quotidiana.', it: 'Educare significa anche accompagnare la crescita umana e spirituale, creando un ambiente in cui cura, relazione e attenzione alla persona diventano esperienza quotidiana.' })}
               </p>
+            </div>
+            <div className="flex justify-center mt-10">
+              <Button variant="primary" to="/la-fraternita">
+                {t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania' })}
+              </Button>
             </div>
           </AnimatedSection>
         </div>

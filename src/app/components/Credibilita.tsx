@@ -68,10 +68,10 @@ export function Credibilita() {
 
         <AnimatedSection delay={0.3}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 flex-wrap">
-            <Button variant="secondary" to="/eventi-speciali">{t({ pt: 'Conheça a visita do Presidente da República Italiana', it: 'Scopri la visita del Presidente della Repubblica Italiana' })}</Button>
+            <Button variant="secondary" to="/eventi-speciali">{t({ pt: 'Scopri gli eventi speciali', it: 'Scopri gli eventi speciali' })}</Button>
           </div>
           <div className="flex justify-center mt-4">
-            <Button variant="primary" to="/riconoscimenti-istituzionali">{t({ pt: 'Conheça todos os reconhecimentos institucionais', it: 'Scopri tutti i riconoscimenti istituzionali' })}</Button>
+            <Button variant="primary" to="/riconoscimenti-istituzionali">{t({ pt: 'Conheça os reconhecimentos institucionais', it: 'Scopri i riconoscimenti istituzionali' })}</Button>
           </div>
         </AnimatedSection>
       </div>

@@ -69,8 +69,8 @@ export function TrasparenzaPage() {
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora' })}
               </Button>
-              <Button variant="secondary" href="#documenti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Baixar o balanço social', it: 'Scarica il bilancio sociale' })}
+              <Button variant="secondary" href="#responsabilita" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+                {t({ pt: 'Scopri di più', it: 'Scopri di più' })}
               </Button>
             </div>
           </AnimatedSection>
@@ -82,7 +82,7 @@ export function TrasparenzaPage() {
       </section>
 
       {/* SECTION 2 - INTRO */}
-      <section className="py-20 bg-white">
+      <section id="responsabilita" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-10">
