@@ -109,15 +109,29 @@ export function Header() {
           href: '/asilo',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true }
+            { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true },
+            { label: t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' }), href: '/approccio-reggio-emilia', isRoute: true },
+            { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true }
           ]
         },
         {
-          label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }),
+          label: t({ pt: 'A escola', it: 'La scuola' }),
           href: '/progetto-scuola',
           isRoute: true,
           submenu: [
+            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }), href: '/progetto-scuola', isRoute: true },
             { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true }
+          ]
+        },
+        {
+          label: t({ pt: 'Nossos pilares', it: 'I nostri pilastri' }),
+          href: '#i-nostri-pilastri',
+          submenu: [
+            { label: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana' }), href: '/accoglienza-quotidiana', isRoute: true },
+            { label: t({ pt: 'Educação', it: 'Educazione' }), href: '/educazione', isRoute: true },
+            { label: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione' }), href: '/cura-e-nutrizione', isRoute: true },
+            { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie' }), href: '/accompagnamento-famiglie', isRoute: true }
           ]
         },
         { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
@@ -137,9 +151,15 @@ export function Header() {
       label: t({ pt: 'Apoie', it: 'Sostieni' }),
       href: '#sostieni',
       submenu: [
-        { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
-        { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza' }), href: '/sostegno-a-distanza', isRoute: true },
-        { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }), href: '/cosa-puoi-fare-tu', isRoute: true },
+        {
+          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }),
+          href: '/cosa-puoi-fare-tu',
+          isRoute: true,
+          submenu: [
+            { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
+            { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza' }), href: '/sostegno-a-distanza', isRoute: true }
+          ]
+        },
         { label: t({ pt: 'Benfeitores', it: 'Benefattori' }), href: '/benefattori', isRoute: true }
       ]
     },

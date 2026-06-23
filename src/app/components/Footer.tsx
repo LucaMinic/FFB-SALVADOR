@@ -23,9 +23,27 @@ export function Footer() {
   const t = useT();
   const [openSubmenus, setOpenSubmenus] = useState<Set<string>>(new Set());
 
+  const toggleSubmenu = (key: string) => {
+    setOpenSubmenus(prev => {
+      const newSet = new Set(prev);
+      const isTopLevel = !key.includes('__');
+
+      if (newSet.has(key)) {
+        newSet.delete(key);
+      } else {
+        if (isTopLevel) {
+          const nestedMenus = Array.from(prev).filter(k => k.includes('__'));
+          newSet.clear();
+          nestedMenus.forEach(k => newSet.add(k));
+        }
+        newSet.add(key);
+      }
+
+      return newSet;
+    });
+  };
+
   const menuItems: MenuItem[] = [
-    { label: t({ pt: 'Política de Privacidade', it: 'Privacy Policy' }), href: '/privacy-policy', isRoute: true },
-    { label: t({ pt: 'Política de Cookies', it: 'Cookie Policy' }), href: '/cookie-policy', isRoute: true },
     { label: t({ pt: 'Início', it: 'Home' }), href: '/', isRoute: true },
     {
       label: t({ pt: 'Fundação', it: 'La Fundação' }),
@@ -48,15 +66,29 @@ export function Footer() {
           href: '/asilo',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true }
+            { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true },
+            { label: t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' }), href: '/approccio-reggio-emilia', isRoute: true },
+            { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true }
           ]
         },
         {
-          label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }),
+          label: t({ pt: 'A escola', it: 'La scuola' }),
           href: '/progetto-scuola',
           isRoute: true,
           submenu: [
+            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }), href: '/progetto-scuola', isRoute: true },
             { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true }
+          ]
+        },
+        {
+          label: t({ pt: 'Nossos pilares', it: 'I nostri pilastri' }),
+          href: '#i-nostri-pilastri',
+          submenu: [
+            { label: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana' }), href: '/accoglienza-quotidiana', isRoute: true },
+            { label: t({ pt: 'Educação', it: 'Educazione' }), href: '/educazione', isRoute: true },
+            { label: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione' }), href: '/cura-e-nutrizione', isRoute: true },
+            { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie' }), href: '/accompagnamento-famiglie', isRoute: true }
           ]
         },
         { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
@@ -76,8 +108,15 @@ export function Footer() {
       label: t({ pt: 'Apoie', it: 'Sostieni' }),
       href: '#sostieni',
       submenu: [
-        { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
-        { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }), href: '/cosa-puoi-fare-tu', isRoute: true },
+        {
+          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }),
+          href: '/cosa-puoi-fare-tu',
+          isRoute: true,
+          submenu: [
+            { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
+            { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza' }), href: '/sostegno-a-distanza', isRoute: true }
+          ]
+        },
         { label: t({ pt: 'Benfeitores', it: 'Benefattori' }), href: '/benefattori', isRoute: true }
       ]
     },
@@ -100,21 +139,11 @@ export function Footer() {
           <div>
             <h3 className="mb-4">Menu</h3>
             <nav className="flex flex-col gap-2">
-              {menuItems.map((item) => {
-                return item.submenu ? (
+              {menuItems.map((item) =>
+                item.submenu ? (
                   <div key={item.label}>
                     <button
-                      onClick={() => {
-                        setOpenSubmenus(prev => {
-                          const newSet = new Set(prev);
-                          if (newSet.has(item.label)) {
-                            newSet.delete(item.label);
-                          } else {
-                            newSet.add(item.label);
-                          }
-                          return newSet;
-                        });
-                      }}
+                      onClick={() => toggleSubmenu(item.label)}
                       className="w-full text-left text-gray-300 hover:text-white transition-colors text-sm flex items-center justify-between"
                     >
                       {item.label}
@@ -124,17 +153,9 @@ export function Footer() {
                       <div className="ml-4 mt-2 flex flex-col gap-2">
                         {item.submenu.map((subitem: SubMenuItem) =>
                           subitem.submenu ? (
-                            <div key={subitem.href}>
+                            <div key={subitem.label}>
                               <button
-                                onClick={() => {
-                                  setOpenSubmenus(prev => {
-                                    const newSet = new Set(prev);
-                                    const key = `${item.label}__${subitem.label}`;
-                                    if (newSet.has(key)) newSet.delete(key);
-                                    else newSet.add(key);
-                                    return newSet;
-                                  });
-                                }}
+                                onClick={() => toggleSubmenu(`${item.label}__${subitem.label}`)}
                                 className="w-full text-left text-gray-400 hover:text-white transition-colors text-sm flex items-center justify-between"
                               >
                                 {subitem.label}
@@ -193,8 +214,8 @@ export function Footer() {
                   >
                     {item.label}
                   </a>
-                );
-              })}
+                )
+              )}
             </nav>
           </div>
 
@@ -240,9 +261,18 @@ export function Footer() {
           <p className="text-xs text-gray-400 mb-2">
             CNPJ 21.610.717/0001-25
           </p>
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-400 mb-3">
             © 2026 Fundação Betania ONLUS. Todos os direitos reservados.
           </p>
+          <div className="flex justify-center gap-4">
+            <Link to="/privacy-policy" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+              {t({ pt: 'Política de Privacidade', it: 'Privacy Policy' })}
+            </Link>
+            <span className="text-xs text-gray-600">·</span>
+            <Link to="/cookie-policy" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+              {t({ pt: 'Política de Cookies', it: 'Cookie Policy' })}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
