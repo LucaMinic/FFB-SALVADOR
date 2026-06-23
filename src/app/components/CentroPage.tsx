@@ -1,6 +1,5 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/15-2.jpeg';

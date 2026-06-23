@@ -1,6 +1,5 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ChevronDown, Instagram } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import Slider from 'react-slick';
