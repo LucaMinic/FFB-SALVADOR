@@ -68,7 +68,7 @@ export function Hero() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[280px] md:h-[550px] lg:h-[650px] object-contain md:object-cover"
+                className="w-full h-[280px] md:h-[550px] lg:h-[650px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent hidden md:flex items-center">
                 <div className="max-w-7xl mx-auto px-6 w-full">
