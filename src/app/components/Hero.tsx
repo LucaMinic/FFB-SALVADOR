@@ -138,7 +138,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
             <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora' })}</Button>
-            <Button variant="secondary" to="/la-fundacao">{t({ pt: 'Conheça a Fundação', it: 'Scopri la Fundação' })}</Button>
+            <Button variant="secondary" href="#impatto">{t({ pt: 'Conheça a Fundação', it: 'Scopri la Fundação' })}</Button>
           </div>
 
           <div className="mt-6 md:mt-12 mb-4 md:mb-8 flex justify-center items-center">

@@ -20,7 +20,7 @@ export function Impatto() {
   ];
 
   return (
-    <section className="pt-8 md:pt-16 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section id="impatto" className="pt-8 md:pt-16 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-12">

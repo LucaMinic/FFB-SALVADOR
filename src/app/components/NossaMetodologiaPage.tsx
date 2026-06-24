@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+﻿import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -262,6 +262,75 @@ export function NossaMetodologiaPage() {
                 </div>
               </AnimatedSection>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CURRICULUM BNCC */}
+      <section className="bg-[var(--beige)] py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
+              {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza" })}
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4 text-center max-w-3xl mx-auto">
+              {t({
+                pt: 'O currículo do Centro Nossa Senhora Aparecida é baseado nos direitos de aprendizagem e nos campos de experiência propostos pela BNCC. Os eixos principais são: interação, brincadeira, experiência, relação e exploração.',
+                it: "Il curriculum del Centro Nossa Senhora Aparecida è basato sui diritti di apprendimento e sui campi di esperienza proposti dalla BNCC. Gli assi principali sono: interazione, gioco, esperienza, relazione ed esplorazione.",
+              })}
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {[
+              t({ pt: 'O eu, o outro e o nós', it: "Il sé, l'altro e il noi" }),
+              t({ pt: 'Corpo, gestos e movimentos', it: 'Corpo, gesti e movimenti' }),
+              t({ pt: 'Traços, sons, cores e formas', it: 'Tratti, suoni, colori e forme' }),
+              t({ pt: 'Escuta, palavra, pensamento e imaginação', it: 'Ascolto, parola, pensiero e immaginazione' }),
+              t({ pt: 'Espaços, tempos, quantidades, relações e transformações', it: 'Spazi, tempi, quantità, relazioni e trasformazioni' })
+            ].map((item, index) => (
+              <AnimatedSection key={item} delay={index * 0.1}>
+                <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white rounded-2xl p-8 text-center shadow-lg h-full flex items-center justify-center">
+                  <p className="text-lg font-medium">{item}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TEMI TRASVERSALI */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
+              {t({ pt: 'Educar para a vida', it: 'Educare alla vita' })}
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+              {t({
+                pt: 'O trabalho educativo aborda também temas transversais importantes para o crescimento das crianças e para a construção de uma comunidade mais justa e consciente.',
+                it: 'Il lavoro educativo affronta anche temi trasversali importanti per la crescita dei bambini e per la costruzione di una comunità più giusta e consapevole.',
+              })}
+            </p>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg">
+              <ul className="space-y-4 text-lg text-gray-700">
+                {[
+                  t({ pt: 'educação étnica e racial', it: 'educazione etnica e razziale' }),
+                  t({ pt: 'educação inclusiva', it: 'educazione inclusiva' }),
+                  t({ pt: 'atenção ao género na primeira infância', it: 'attenzione al genere nella prima infanzia' }),
+                  t({ pt: 'prevenção da violência', it: 'prevenzione della violenza' }),
+                  t({ pt: 'educação ambiental', it: 'educazione ambientale' })
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3">
+                    <span className="inline-block w-3 h-3 rounded-full bg-[var(--soft-green)] flex-shrink-0"></span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
