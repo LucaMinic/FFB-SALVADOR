@@ -136,13 +136,8 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
-            <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora' })}</Button>
-            <Button variant="secondary" href="#impatto">{t({ pt: 'Conheça a Fundação', it: 'Scopri la Fundação' })}</Button>
-          </div>
-
-          <div className="mt-6 md:mt-12 mb-4 md:mb-8 flex justify-center items-center">
-            <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-16 md:h-24 lg:h-32 w-auto" />
+          <div className="mt-10 md:mt-14 mb-6 md:mb-10 flex justify-center items-center">
+            <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-24 md:h-36 lg:h-44 w-auto" />
           </div>
         </div>
       </div>
