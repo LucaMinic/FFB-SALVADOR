@@ -3,7 +3,22 @@
     "allow": [
       "WebFetch(domain:tg24.sky.it)",
       "WebFetch(domain:www.diocesimolfetta.it)",
-      "WebFetch(domain:www.corriere.it)"
+      "WebFetch(domain:www.corriere.it)",
+      "Bash(pip show *)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(python3 --version 2>&1)",
+      "PowerShell(py --version 2>&1)",
+      "Read(//c//**)",
+      "PowerShell(head 30)",
+      "PowerShell(node --version 2>&1)",
+      "PowerShell(npm --version 2>&1)",
+      "PowerShell(winget --version 2>&1)",
+      "PowerShell(scoop --version 2>&1)",
+      "PowerShell(winget install Python.Python.3.12 --silent --accept-package-agreements --accept-source-agreements 2>&1)",
+      "PowerShell($py = \\(Get-ChildItem \"C:\\\\Users\\\\Utente\\\\AppData\\\\Local\\\\Programs\\\\Python\" -Recurse -Filter \"python.exe\" -ErrorAction SilentlyContinue | Select-Object -First 1\\).FullName; if \\(-not $py\\) { $py = \\(where.exe python\\) }; Write-Host \"Python: $py\"; & \"$py\" --version)",
+      "PowerShell($py = \"C:\\\\Users\\\\Utente\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\"; & \"$py\" -m pip install reportlab Pillow requests --quiet 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\Utente\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe\" \"C:\\\\Users\\\\Utente\\\\Desktop\\\\AGENZIA\\\\RESTAINUP\\\\GITHUB\\\\FFB-SALVADOR\\\\_print\\\\brochure\\\\genera_brochure_asilo_landscape.py\" 2>&1)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\Utente\\\\Desktop\\\\AGENZIA\\\\RESTAINUP\\\\GITHUB\\\\FFB-SALVADOR\\\\_print\\\\brochure\\\\brochure_asilo_cnsa_landscape.pdf\")"
     ]
   }
 }

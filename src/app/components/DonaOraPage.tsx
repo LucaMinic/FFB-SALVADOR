@@ -7,6 +7,7 @@ import heroImg from '../../imports/19.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';
 import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
+import qrPix from '../../imports/qr-pix.png.jpeg';
 
 export function DonaOraPage() {
   const t = useT();
@@ -118,19 +119,36 @@ export function DonaOraPage() {
                       {t({ pt: 'Se você doa do Brasil', it: 'Se doni dal Brasile' })}
                     </h4>
                     <div className="space-y-4">
+                      {/* PIX */}
                       <div className="bg-white p-6 rounded-xl border border-gray-200">
-                        <p className="text-sm text-gray-600 mb-2">IBAN:</p>
+                        <p className="text-sm text-gray-600 mb-2 font-semibold uppercase tracking-wide">PIX</p>
                         <div className="flex items-center gap-3">
                           <code className="flex-1 text-base md:text-lg font-mono text-[var(--deep-blue)] break-all">
-                            [INSERT IBAN BRASILE]
+                            21610717/0001-25 (CNPJ)
                           </code>
                           <button
-                            onClick={() => copyToClipboard('[INSERT IBAN BRASILE]', setCopiedIbanBrasile)}
-                            className="flex-shrink-0 p-3 bg-[var(--deep-blue)] text-white rounded-lg hover:bg-blue-700 transition-all"
-                            aria-label={t({ pt: 'Copiar IBAN', it: 'Copia IBAN' })}
+                            onClick={() => copyToClipboard('21610717/0001-25', setCopiedIbanBrasile)}
+                            className="flex-shrink-0 p-3 bg-[var(--soft-green)] text-white rounded-lg hover:opacity-90 transition-all"
+                            aria-label={t({ pt: 'Copiar chave PIX', it: 'Copia chiave PIX' })}
                           >
                             {copiedIbanBrasile ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
                           </button>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-3">Fundação Betânia Onlus</p>
+                        <div className="mt-4 flex justify-center">
+                          <img src={qrPix} alt="QR Code PIX" className="w-40 h-40 object-contain rounded-lg border border-gray-200 p-2 bg-white" />
+                        </div>
+                      </div>
+                      {/* Dados bancários */}
+                      <div className="bg-[var(--soft-green)]/8 p-6 rounded-xl border border-[var(--soft-green)]/30">
+                        <p className="text-sm text-gray-600 mb-3 font-semibold uppercase tracking-wide">
+                          {t({ pt: 'Dados bancários', it: 'Dati bancari' })}
+                        </p>
+                        <div className="space-y-1 text-[var(--deep-blue)]">
+                          <p className="font-bold text-base">ITAÚ</p>
+                          <p className="text-sm text-gray-700">{t({ pt: 'Agência', it: 'Agenzia' })}: <span className="font-mono font-semibold">7421</span></p>
+                          <p className="text-sm text-gray-700">C/C: <span className="font-mono font-semibold">30014-1</span></p>
+                          <p className="text-sm text-gray-700 mt-2">Fundação Betânia ONLUS</p>
                         </div>
                       </div>
                     </div>

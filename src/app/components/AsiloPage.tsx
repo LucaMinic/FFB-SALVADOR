@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown, Instagram } from 'lucide-react';
+import { ChevronDown, Instagram, Heart, Globe, Users, Award } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -43,8 +43,8 @@ export function AsiloPage() {
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
               {t({
-                pt: 'Um lugar seguro para crescer, aprender e se sentir acolhido.',
-                it: 'Un luogo sicuro dove crescere, imparare e sentirsi accolti.'
+                pt: 'ACOLHENDO E TRANSFORMANDO FUTUROS',
+                it: 'Accogliere oggi, costruire il futuro.'
               })}
             </p>
           </AnimatedSection>
@@ -71,11 +71,26 @@ export function AsiloPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-4">
+                  {t({ pt: 'A Creche', it: "L'asilo" })}
+                </h2>
                 <p>
-                  {t({ pt: 'A Creche do Centro Nossa Senhora Aparecida é uma creche privada, comunitária e filantrópica, criada para acolher crianças em situação de vulnerabilidade social e acompanhá-las no crescimento.', it: "L'asilo del Centro Nossa Senhora Aparecida è una creche privata, comunitaria e filantropica, nata per accogliere bambini in situazione di vulnerabilità sociale e accompagnarli nella crescita." })}
+                  {t({
+                    pt: 'A creche é um espaço de acolhimento, cuidado e educação das crianças e também de apoio às famílias. Atendemos diariamente 120 crianças de 6 meses a 6 anos, em período integral, das 7h30 às 17h. Ofertamos educação infantil, cinco refeições por dia, além de cuidados com higiene, saúde e o desenvolvimento das crianças.',
+                    it: "L'asilo è uno spazio di accoglienza, cura ed educazione dei bambini e anche di sostegno alle famiglie. Accogliamo ogni giorno 120 bambini da 6 mesi a 6 anni, a tempo pieno, dalle 7h30 alle 17h. Offriamo educazione infantile, cinque pasti al giorno, oltre alle cure per l'igiene, la salute e lo sviluppo dei bambini."
+                  })}
                 </p>
                 <p>
-                  {t({ pt: 'Cada dia oferece educação, cuidado, nutrição e relação num ambiente seguro, humano e profundamente atento às necessidades de cada criança.', it: 'Ogni giorno offre educazione, cura, nutrizione e relazione in un ambiente sicuro, umano e profondamente attento ai bisogni di ogni bambino.' })}
+                  {t({
+                    pt: 'Estamos inseridos em uma comunidade formada, em sua maioria, por famílias trabalhadoras informais, que vivem diferentes situações de vulnerabilidade social. Por isso, a creche tem um papel muito importante: garantir um espaço seguro, acolhedor e cheio de oportunidades de aprendizagem, onde cada criança seja respeitada e valorizada.',
+                    it: "Siamo inseriti in una comunità composta, in maggioranza, da famiglie lavoratrici informali, che vivono diverse situazioni di vulnerabilità sociale. Per questo, l'asilo ha un ruolo molto importante: garantire uno spazio sicuro, accogliente e ricco di opportunità di apprendimento, dove ogni bambino sia rispettato e valorizzato."
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Um dos pontos importantes do nosso trabalho é a alimentação, oferecida em cinco refeições diárias, pensadas com cuidado para atender às necessidades das crianças ao longo do dia. São elas: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar. Essas refeições são planejadas para garantir uma alimentação equilibrada, nutritiva e saudável, contribuindo para o crescimento, o desenvolvimento e o bem-estar das crianças. Além disso, os momentos das refeições também são educativos, ajudando as crianças a criarem bons hábitos alimentares, aprenderem sobre autonomia, convivência e cuidado com o próprio corpo.',
+                    it: "Uno degli aspetti importanti del nostro lavoro è l'alimentazione, offerta in cinque pasti giornalieri, pensati con cura per rispondere alle esigenze dei bambini nel corso della giornata. Questi sono: colazione, merenda del mattino, pranzo, merenda del pomeriggio e cena. I pasti sono pianificati per garantire un'alimentazione equilibrata, nutriente e sana, contribuendo alla crescita, allo sviluppo e al benessere dei bambini. Inoltre, i momenti dei pasti sono anche educativi, aiutando i bambini a costruire buone abitudini alimentari, ad imparare sull'autonomia, la convivenza e la cura del proprio corpo."
+                  })}
                 </p>
               </div>
             </AnimatedSection>
@@ -97,6 +112,78 @@ export function AsiloPage() {
         </div>
       </section>
 
+      {/* SECTION MISSIONE E VALORI */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+
+          {/* Missione — card hero con immagine */}
+          <AnimatedSection>
+            <div className="relative rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center">
+              <img src={comunitaImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-[var(--deep-blue)]/72" />
+              <div className="relative z-10 px-8 md:px-16 py-12 max-w-3xl">
+                <h2 className="text-3xl md:text-5xl text-white mb-5">
+                  {t({ pt: 'Nossa Missão', it: 'La nostra missione' })}
+                </h2>
+                <p className="text-white/90 text-lg leading-relaxed">
+                  {t({
+                    pt: 'Promover o desenvolvimento integral de crianças em situação de vulnerabilidade social, oferecendo oportunidades de aprendizagem, cuidado, proteção, formação humana e espiritual. Buscamos contribuir para que cada criança construa seu projeto de vida com dignidade, autonomia, esperança e oportunidades, fortalecendo vínculos familiares e comunitários, preparando-se para um futuro mais justo, participativo e promissor.',
+                    it: 'Promuovere lo sviluppo integrale di bambini in situazione di vulnerabilità sociale, offrendo opportunità di apprendimento, cura, protezione, formazione umana e spirituale. Cerchiamo di contribuire affinché ogni bambino costruisca il proprio progetto di vita con dignità, autonomia, speranza e opportunità, rafforzando i legami familiari e comunitari, preparandosi a un futuro più giusto, partecipativo e promettente.'
+                  })}
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Valori — 4 card con foto */}
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Nossos Valores', it: 'I nostri valori' })}
+            </h2>
+          </AnimatedSection>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: Heart,
+                color: 'var(--deep-blue)',
+                title: t({ pt: 'Dignidade Humana', it: 'Dignità Umana' }),
+                desc: t({ pt: 'Promover o respeito, o cuidado e o desenvolvimento integral de cada criança e família.', it: 'Promuovere il rispetto, la cura e lo sviluppo integrale di ogni bambino e famiglia.' })
+              },
+              {
+                icon: Globe,
+                color: 'var(--soft-green)',
+                title: t({ pt: 'Bem Comum', it: 'Bene Comune' }),
+                desc: t({ pt: 'Atuar para a construção de uma sociedade mais justa, inclusiva e solidária.', it: 'Agire per la costruzione di una società più giusta, inclusiva e solidale.' })
+              },
+              {
+                icon: Users,
+                color: 'var(--warm-orange)',
+                title: t({ pt: 'Fraternidade e Solidariedade', it: 'Fraternità e Solidarietà' }),
+                desc: t({ pt: 'Cultivar relações de acolhimento, respeito e compromisso com o próximo.', it: 'Coltivare relazioni di accoglienza, rispetto e impegno verso il prossimo.' })
+              },
+              {
+                icon: Award,
+                color: 'var(--warm-red)',
+                title: t({ pt: 'Valorização das Pessoas', it: 'Valorizzazione delle Persone' }),
+                desc: t({ pt: 'Reconhecer e fortalecer o trabalho de todos que contribuem para o cuidado e a proteção das crianças.', it: 'Riconoscere e rafforzare il lavoro di tutti coloro che contribuiscono alla cura e alla protezione dei bambini.' })
+              }
+            ].map((value, i) => (
+              <AnimatedSection key={i} delay={i * 0.1}>
+                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
+                  <div className="h-40 flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: value.color }}>
+                    <value.icon className="w-16 h-16 text-white" strokeWidth={1.5} />
+                  </div>
+                  <div className="p-5 bg-white flex-1" style={{ borderTop: `4px solid ${value.color}` }}>
+                    <p className="font-semibold text-base mb-2" style={{ color: value.color }}>{value.title}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{value.desc}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2 - CHI SIAMO */}
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
@@ -105,7 +192,7 @@ export function AsiloPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Uma creche comunitária e filantrópica', it: 'Una creche comunitaria e filantropica' })}
+              {t({ pt: 'Uma creche comunitária e filantrópica', it: 'Un asilo comunitario e filantropico' })}
             </h2>
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
               <p>
@@ -122,7 +209,7 @@ export function AsiloPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
-              t({ pt: 'Creche privada', it: 'Creche privata' }),
+              t({ pt: 'Creche privada', it: 'Asilo privato' }),
               t({ pt: 'Comunitária', it: 'Comunitaria' }),
               t({ pt: 'Filantrópica', it: 'Filantropica' }),
               t({ pt: 'Conveniada com o Município', it: 'Convenzionata con il Municipio' }),
@@ -154,7 +241,7 @@ export function AsiloPage() {
             <AnimatedSection>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  {t({ pt: 'A creche oferece um serviço de educação da primeira infância para crianças de 0 a 5 anos, em tempo integral, das 7h30 às 17h30.', it: 'La creche offre un servizio di educazione della prima infanzia per bambini da 0 a 5 anni, a tempo pieno, dalle 7.30 alle 17.30.' })}
+                  {t({ pt: 'A creche oferece um serviço de educação da primeira infância para crianças de 0 a 5 anos, em tempo integral, das 7h30 às 17h30.', it: "L'asilo offre un servizio di educazione della prima infanzia per bambini da 0 a 5 anni, a tempo pieno, dalle 7.30 alle 17.30." })}
                 </p>
                 <p>
                   {t({ pt: 'Cada dia as crianças recebem cinco refeições: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar.', it: 'Ogni giorno i bambini ricevono cinque pasti: colazione, merenda della mattina, pranzo, merenda del pomeriggio e cena.' })}
@@ -245,7 +332,7 @@ export function AsiloPage() {
             </h2>
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
               <p>
-                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: 'Oggi la creche vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali.' })}
+                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: "Oggi l'asilo vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali." })}
               </p>
               <p>
                 {t({ pt: 'A gestão pedagógica é partilhada por uma equipe que coordena a formação, organiza as atividades e avalia o trabalho realizado.', it: 'La gestione pedagogica è condivisa da una équipe che coordina la formazione, organizza le attività e valuta il lavoro svolto.' })}
@@ -369,7 +456,7 @@ export function AsiloPage() {
               {
                 step: '1',
                 title: t({ pt: 'Primeira conversa', it: 'Primo colloquio' }),
-                desc: t({ pt: 'Na creche, com coleta dos dados e do pedido de inscrição', it: 'Alla creche, con raccolta dei dati e della richiesta di inserimento' })
+                desc: t({ pt: 'Na creche, com coleta dos dados e do pedido de inscrição', it: "All'asilo, con raccolta dei dati e della richiesta di inserimento" })
               },
               {
                 step: '2',
@@ -409,7 +496,7 @@ export function AsiloPage() {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  {t({ pt: 'A creche atribui grande importância ao diálogo com as famílias, acolhendo e respeitando culturas, histórias e estruturas familiares diversas.', it: 'La creche attribuisce grande importanza al dialogo con le famiglie, accogliendo e rispettando culture, storie e strutture familiari diverse.' })}
+                  {t({ pt: 'A creche atribui grande importância ao diálogo com as famílias, acolhendo e respeitando culturas, histórias e estruturas familiares diversas.', it: "L'asilo attribuisce grande importanza al dialogo con le famiglie, accogliendo e rispettando culture, storie e strutture familiari diverse." })}
                 </p>
                 <p>
                   {t({ pt: 'O apoio pode tornar-se também muito concreto: cerca de 15 famílias recebem ajudas alimentares e, quando necessário, um acompanhamento mais específico.', it: 'Il sostegno può diventare anche molto concreto: circa 15 famiglie ricevono aiuti alimentari e, quando necessario, un accompagnamento più specifico.' })}
@@ -571,7 +658,7 @@ export function AsiloPage() {
                 {t({ pt: 'Dentro da Creche', it: "All'interno dell'Asilo" })}
               </p>
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' })}
+                {t({ pt: 'Laboratórios', it: 'Laboratori' })}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-2xl mx-auto">
                 {t({
@@ -586,7 +673,7 @@ export function AsiloPage() {
                 })}
               </p>
               <Button to="/progetti-pedagogici">
-                {t({ pt: 'Descubra os projetos pedagógicos', it: 'Scopri i progetti pedagogici' })}
+                {t({ pt: 'Descubra os laboratórios', it: 'Scopri i laboratori' })}
               </Button>
             </div>
           </AnimatedSection>
@@ -607,7 +694,7 @@ export function AsiloPage() {
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 {t({
                   pt: 'Compartilhamos imagens, atividades e momentos do cotidiano da creche do Centro Nossa Senhora Aparecida. Siga-nos para acompanhar de perto a vida das crianças, os percursos educativos e o dia a dia da creche.',
-                  it: "Attraverso immagini, attività e momenti quotidiani raccontiamo la vita dell'asilo del Centro Nossa Senhora Aparecida. Seguici per scoprire da vicino i bambini, i percorsi educativi e la vita quotidiana della creche."
+                  it: "Attraverso immagini, attività e momenti quotidiani raccontiamo la vita dell'asilo del Centro Nossa Senhora Aparecida. Seguici per scoprire da vicino i bambini, i percorsi educativi e la vita quotidiana dell'asilo."
                 })}
               </p>
             </div>

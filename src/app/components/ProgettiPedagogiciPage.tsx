@@ -48,7 +48,7 @@ export function ProgettiPedagogiciPage() {
               Centro Nossa Senhora Aparecida
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' })}
+              {t({ pt: 'Laboratórios', it: 'Laboratori' })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({

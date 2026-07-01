@@ -33,6 +33,10 @@ import { SostegnoADistanzaPage } from "./components/SostegnoADistanzaPage";
 import { ApproccioReggioEmiliaPage } from "./components/ApproccioReggioEmiliaPage";
 import { AtelierPage } from "./components/AtelierPage";
 import { NossaMetodologiaPage } from "./components/NossaMetodologiaPage";
+import { ProjetosPermanentesPage } from "./components/ProjetosPermanentesPage";
+import { MostrasPedagogicasPage } from "./components/MostrasPedagogicasPage";
+import { AlimentacaoSaudavelPage } from "./components/AlimentacaoSaudavelPage";
+import { RelatoriosPage } from "./components/RelatoriosPage";
 import { RootLayout } from "./layouts/RootLayout";
 
 export const router = createBrowserRouter([
@@ -74,6 +78,10 @@ export const router = createBrowserRouter([
       { path: "approccio-reggio-emilia", Component: ApproccioReggioEmiliaPage },
       { path: "atelier", Component: AtelierPage },
       { path: "nossa-metodologia", Component: NossaMetodologiaPage },
+      { path: "projetos-permanentes", Component: ProjetosPermanentesPage },
+      { path: "mostras-pedagogicas", Component: MostrasPedagogicasPage },
+      { path: "alimentacao-saudavel", Component: AlimentacaoSaudavelPage },
+      { path: "relatorios", Component: RelatoriosPage },
       { path: "*", Component: HomePage },
     ],
   },

@@ -113,9 +113,11 @@ export function Header() {
           submenu: [
             { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
             { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' }), href: '/nossa-metodologia', isRoute: true },
-            { label: t({ pt: 'Projetos pedagógicos', it: 'Progetti pedagogici' }), href: '/progetti-pedagogici', isRoute: true },
-            { label: t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' }), href: '/approccio-reggio-emilia', isRoute: true },
-            { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true }
+            { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti' }), href: '/projetos-permanentes', isRoute: true },
+            { label: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana' }), href: '/alimentacao-saudavel', isRoute: true },
+            { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true },
+            { label: t({ pt: 'Relatórios', it: 'Relazioni' }), href: '/relatorios', isRoute: true },
+            { label: t({ pt: 'Laboratórios', it: 'Laboratori' }), href: '/progetti-pedagogici', isRoute: true },
           ]
         },
         {
