@@ -18,14 +18,14 @@ export function Asilo() {
 
             <h3 className="mb-8 text-3xl text-gray-700 font-light">{t({ pt: 'Um lugar para crescer todos os dias', it: 'Un luogo dove crescere ogni giorno' })}</h3>
 
-            <p className="text-2xl text-gray-800 leading-relaxed max-w-3xl mx-auto mb-6">
+            <p className="text-lg text-gray-800 leading-relaxed max-w-3xl mx-auto mb-6">
               {t({
                 pt: 'Nossa creche acolhe até 120 crianças, dos 4 meses aos 5 anos, oferecendo um ambiente seguro, educativo e completamente gratuito.',
                 it: 'Il nostro asilo accoglie fino a 120 bambini, dai 4 mesi ai 5 anni, offrendo un ambiente sicuro, educativo e completamente gratuito.'
               })}
             </p>
 
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               {t({
                 pt: 'Todos os dias as crianças recebem cinco refeições, cuidado, educação e atenção. Esse serviço também permite às famílias, especialmente às mães, trabalhar e construir um futuro mais estável.',
                 it: 'Ogni giorno i bambini ricevono cinque pasti, cura, educazione e attenzione. Questo servizio permette anche alle famiglie, soprattutto alle madri, di lavorare e costruire un futuro più stabile.'

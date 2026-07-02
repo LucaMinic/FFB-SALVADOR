@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import heroImg from '../../imports/3-4.jpeg';
 import famiglieImg from '../../imports/2-2.jpeg';
+import pastiImg from '../../imports/nuove/r4bis.png';
 import educazioneImg from '../../imports/11-2.jpeg';
 import comunitaImg from '../../imports/13-4.jpeg';
 import metodologiaImg from '../../imports/9-1.jpeg';
@@ -84,20 +85,14 @@ export function AsiloPage() {
                 </h2>
                 <p>
                   {t({
-                    pt: 'A creche é um espaço de acolhimento, cuidado e educação das crianças e também de apoio às famílias. Atendemos diariamente 120 crianças de 6 meses a 6 anos, em período integral, das 7h30 às 17h. Ofertamos educação infantil, cinco refeições por dia, além de cuidados com higiene, saúde e o desenvolvimento das crianças.',
-                    it: "L'asilo è uno spazio di accoglienza, cura ed educazione dei bambini e anche di sostegno alle famiglie. Accogliamo ogni giorno 120 bambini da 6 mesi a 6 anni, a tempo pieno, dalle 7h30 alle 17h. Offriamo educazione infantile, cinque pasti al giorno, oltre alle cure per l'igiene, la salute e lo sviluppo dei bambini."
+                    pt: 'A creche é um espaço de acolhimento, cuidado e educação das crianças e também de apoio às famílias. Atendemos diariamente 120 crianças de 5 meses a 6 anos, em período integral, das 7h30 às 17h. Ofertamos educação infantil, cinco refeições por dia, além de cuidados com higiene, saúde e o desenvolvimento das crianças.',
+                    it: "L'asilo è uno spazio di accoglienza, cura ed educazione dei bambini e anche di sostegno alle famiglie. Accogliamo ogni giorno 120 bambini da 5 mesi a 6 anni, a tempo pieno, dalle 7h30 alle 17h. Offriamo educazione infantile, cinque pasti al giorno, oltre alle cure per l'igiene, la salute e lo sviluppo dei bambini."
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Estamos inseridos em uma comunidade formada, em sua maioria, por famílias trabalhadoras informais, que vivem diferentes situações de vulnerabilidade social. Por isso, a creche tem um papel muito importante: garantir um espaço seguro, acolhedor e cheio de oportunidades de aprendizagem, onde cada criança seja respeitada e valorizada.',
                     it: "Siamo inseriti in una comunità composta, in maggioranza, da famiglie lavoratrici informali, che vivono diverse situazioni di vulnerabilità sociale. Per questo, l'asilo ha un ruolo molto importante: garantire uno spazio sicuro, accogliente e ricco di opportunità di apprendimento, dove ogni bambino sia rispettato e valorizzato."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Um dos pontos importantes do nosso trabalho é a alimentação, oferecida em cinco refeições diárias, pensadas com cuidado para atender às necessidades das crianças ao longo do dia. São elas: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar. Essas refeições são planejadas para garantir uma alimentação equilibrada, nutritiva e saudável, contribuindo para o crescimento, o desenvolvimento e o bem-estar das crianças. Além disso, os momentos das refeições também são educativos, ajudando as crianças a criarem bons hábitos alimentares, aprenderem sobre autonomia, convivência e cuidado com o próprio corpo.',
-                    it: "Uno degli aspetti importanti del nostro lavoro è l'alimentazione, offerta in cinque pasti giornalieri, pensati con cura per rispondere alle esigenze dei bambini nel corso della giornata. Questi sono: colazione, merenda del mattino, pranzo, merenda del pomeriggio e cena. I pasti sono pianificati per garantire un'alimentazione equilibrata, nutriente e sana, contribuendo alla crescita, allo sviluppo e al benessere dei bambini. Inoltre, i momenti dei pasti sono anche educativi, aiutando i bambini a costruire buone abitudini alimentari, ad imparare sull'autonomia, la convivenza e la cura del proprio corpo."
                   })}
                 </p>
               </div>
@@ -114,6 +109,28 @@ export function AsiloPage() {
                     allowFullScreen
                   ></iframe>
                 </div>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
+            <AnimatedSection>
+              <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={pastiImg}
+                  alt={t({ pt: 'Refeições na creche', it: "I pasti all'asilo" })}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <div className="order-1 md:order-2 space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  {t({
+                    pt: 'Um dos pontos importantes do nosso trabalho é a alimentação, oferecida em cinco refeições diárias, pensadas com cuidado para atender às necessidades das crianças ao longo do dia. São elas: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar. Essas refeições são planejadas para garantir uma alimentação equilibrada, nutritiva e saudável, contribuindo para o crescimento, o desenvolvimento e o bem-estar das crianças. Além disso, os momentos das refeições também são educativos, ajudando as crianças a criarem bons hábitos alimentares, aprenderem sobre autonomia, convivência e cuidado com o próprio corpo.',
+                    it: "Uno degli aspetti importanti del nostro lavoro è l'alimentazione, offerta in cinque pasti giornalieri, pensati con cura per rispondere alle esigenze dei bambini nel corso della giornata. Questi sono: colazione, merenda del mattino, pranzo, merenda del pomeriggio e cena. I pasti sono pianificati per garantire un'alimentazione equilibrata, nutriente e sana, contribuendo alla crescita, allo sviluppo e al benessere dei bambini. Inoltre, i momenti dei pasti sono anche educativi, aiutando i bambini a costruire buone abitudini alimentari, ad imparare sull'autonomia, la convivenza e la cura del proprio corpo."
+                  })}
+                </p>
               </div>
             </AnimatedSection>
           </div>
@@ -607,7 +624,7 @@ export function AsiloPage() {
             <AnimatedSection>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  {t({ pt: 'A creche oferece um serviço de educação da primeira infância para crianças de 0 a 5 anos, em tempo integral, das 7h30 às 17h30.', it: "L'asilo offre un servizio di educazione della prima infanzia per bambini da 0 a 5 anni, a tempo pieno, dalle 7.30 alle 17.30." })}
+                  {t({ pt: 'A creche oferece um serviço de educação da primeira infância para crianças de 5 meses a 6 anos, em tempo integral, das 7h30 às 17h.', it: "L'asilo offre un servizio di educazione della prima infanzia per bambini da 5 mesi a 6 anni, a tempo pieno, dalle 7.30 alle 17." })}
                 </p>
                 <p>
                   {t({ pt: 'Cada dia as crianças recebem cinco refeições: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar.', it: 'Ogni giorno i bambini ricevono cinque pasti: colazione, merenda della mattina, pranzo, merenda del pomeriggio e cena.' })}
@@ -630,14 +647,14 @@ export function AsiloPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { number: '100+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti' }) },
+              { number: '120+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti' }) },
               { number: '5', label: t({ pt: 'refeições por dia', it: 'pasti al giorno' }) },
-              { number: '7.30–17.30', label: t({ pt: 'tempo integral', it: 'tempo pieno' }) },
+              { number: '7.30–17', label: t({ pt: 'tempo integral', it: 'tempo pieno' }) },
               { number: '100%', label: t({ pt: 'gratuito', it: 'gratuito' }) }
             ].map((item, index) => (
               <AnimatedSection key={item.label} delay={index * 0.1}>
                 <div className="bg-[var(--beige)] rounded-2xl p-8 text-center shadow-lg">
-                  <div className={`${item.number === '7.30–17.30' ? 'text-2xl' : 'text-4xl'} font-bold text-[var(--deep-blue)] mb-2`}>{item.number}</div>
+                  <div className={`${item.number === '7.30–17' ? 'text-2xl' : 'text-4xl'} font-bold text-[var(--deep-blue)] mb-2`}>{item.number}</div>
                   <div className="text-sm text-gray-600">{item.label}</div>
                 </div>
               </AnimatedSection>
@@ -658,7 +675,7 @@ export function AsiloPage() {
             </h2>
             <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12 text-center">
               <p>
-                {t({ pt: 'A Creche acolhe cerca de 100 crianças, dos 5 meses aos 6 anos, divididas em grupos educativos de acordo com a idade.', it: "L'asilo accoglie circa 100 bambini, dai 5 mesi ai 6 anni, suddivisi in gruppi educativi in base all'età." })}
+                {t({ pt: 'A Creche acolhe cerca de 120 crianças, dos 5 meses aos 6 anos, divididas em grupos educativos de acordo com a idade.', it: "L'asilo accoglie circa 120 bambini, dai 5 mesi ai 6 anni, suddivisi in gruppi educativi in base all'età." })}
               </p>
               <p className="mt-4">
                 {t({ pt: 'Em 2021 foi ativado também o Grupo 0, o berçário, dedicado às crianças mais pequenas.', it: 'Dal 2021 è stato attivato anche il Gruppo 0, il berçário, dedicato ai bambini più piccoli.' })}

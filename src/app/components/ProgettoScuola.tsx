@@ -22,7 +22,7 @@ export function ProgettoScuola() {
 
             <h3 className="mb-8 text-3xl drop-shadow-lg font-light">{t({ pt: 'Construímos uma escola, construímos um futuro', it: 'Costruiamo una scuola, costruiamo un futuro' })}</h3>
 
-            <p className="text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto drop-shadow-md">
               {t({
                 pt: 'O projeto da escola nasce para oferecer um percurso educativo completo, gratuito e em tempo integral, acompanhando as crianças dos 6 aos 18 anos em seu crescimento humano, educativo e relacional.',
                 it: 'Il progetto della scuola nasce per offrire un percorso educativo completo, gratuito e a tempo pieno, accompagnando i bambini dai 6 ai 18 anni nella loro crescita umana, educativa e relazionale.'

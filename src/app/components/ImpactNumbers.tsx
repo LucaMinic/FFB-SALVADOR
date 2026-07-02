@@ -98,7 +98,7 @@ export function ImpactNumbers() {
 
   const items = [
     {
-      number: '100+',
+      number: '120+',
       label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa' })
     },
     {

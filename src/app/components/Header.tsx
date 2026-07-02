@@ -114,8 +114,6 @@ export function Header() {
             { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
             { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' }), href: '/nossa-metodologia', isRoute: true },
             { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti' }), href: '/projetos-permanentes', isRoute: true },
-            { label: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana' }), href: '/alimentacao-saudavel', isRoute: true },
-            { label: t({ pt: 'Ateliê', it: 'Atelier' }), href: '/atelier', isRoute: true },
             { label: t({ pt: 'Relatórios', it: 'Relazioni' }), href: '/relatorios', isRoute: true },
             { label: t({ pt: 'Laboratórios', it: 'Laboratori' }), href: '/progetti-pedagogici', isRoute: true },
           ]
@@ -129,18 +127,7 @@ export function Header() {
             { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true }
           ]
         },
-        {
-          label: t({ pt: 'Nossos pilares', it: 'I nostri pilastri' }),
-          href: '#i-nostri-pilastri',
-          submenu: [
-            { label: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana' }), href: '/accoglienza-quotidiana', isRoute: true },
-            { label: t({ pt: 'Educação', it: 'Educazione' }), href: '/educazione', isRoute: true },
-            { label: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione' }), href: '/cura-e-nutrizione', isRoute: true },
-            { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie' }), href: '/accompagnamento-famiglie', isRoute: true }
-          ]
-        },
         { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
-        { label: t({ pt: 'Iniciativas', it: 'Iniziative' }), href: '/iniziative', isRoute: true }
       ]
     },
     {

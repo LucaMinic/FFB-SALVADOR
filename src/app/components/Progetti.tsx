@@ -29,7 +29,7 @@ export function Progetti() {
               {t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' })}
             </h2>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-10 font-light">
+            <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: 'Através de documentários, testemunhos e relatos, a vida do Centro Nossa Senhora Aparecida prende forma em histórias autênticas. Memórias, encontros e percursos que contam quem somos e o que vivemos cada dia.',
                 it: 'Attraverso documentari, testimonianze e racconti, la vita del Centro Nossa Senhora Aparecida prende forma in storie autentiche. Memorie, incontri e percorsi che raccontano chi siamo e ciò che viviamo ogni giorno.'

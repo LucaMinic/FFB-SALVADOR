@@ -25,21 +25,21 @@ export function FundacaoIntro() {
               {t({ pt: 'Fundação Betania ONLUS', it: 'Fundação Betania ONLUS' })}
             </h2>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-6 font-light">
+            <p className="text-base md:text-xl text-gray-800 leading-relaxed mb-6 font-light">
               {t({
                 pt: 'A Fundação Betania ONLUS nasceu do desejo de transformar a proximidade, a educação e o cuidado em uma presença concreta ao lado das pessoas mais vulneráveis.',
                 it: 'La Fundação Betania ONLUS è nata dal desiderio di trasformare la prossimità, l\'educazione e la cura in una presenza concreta accanto alle persone più vulnerabili.'
               })}
             </p>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-6 font-light">
+            <p className="text-base md:text-xl text-gray-800 leading-relaxed mb-6 font-light">
               {t({
                 pt: 'Em Salvador da Bahia, esse compromisso se torna realidade através do Centro Nossa Senhora Aparecida, um lugar onde crianças e famílias encontram acolhimento, oportunidades de crescimento e relações que geram esperança.',
                 it: 'A Salvador de Bahia, questo impegno diventa realtà attraverso il Centro Nossa Senhora Aparecida, un luogo dove bambini e famiglie trovano accoglienza, opportunità di crescita e relazioni che generano speranza.'
               })}
             </p>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-10 font-light">
+            <p className="text-base md:text-xl text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: 'Uma obra inspirada pela experiência da Fraternidade Franciscana de Betânia e sustentada diariamente por uma rede de pessoas que acreditam no valor da educação, da presença e da partilha.',
                 it: 'Un\'opera ispirata dall\'esperienza della Fraternità Francescana di Betania e sostenuta ogni giorno da una rete di persone che credono nel valore dell\'educazione, della presenza e della condivisione.'

@@ -18,14 +18,14 @@ export function FraternitaIntro() {
               })}
             </h2>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-10 font-light">
+            <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: "Na origem da experiência da Fundação Betania ONLUS e do Centro Nossa Senhora Aparecida está a Fraternità Francescana di Betania.",
                 it: "Alla radice dell'esperienza della Fundação Betania ONLUS e del Centro Nossa Senhora Aparecida c'è la Fraternità Francescana di Betania."
               })}
             </p>
 
-            <p className="text-2xl text-gray-800 leading-relaxed mb-10 font-light">
+            <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: 'Por meio da presença missionária, da partilha da vida cotidiana e do serviço às comunidades mais vulneráveis, a Fraternità acompanha há anos um caminho humano, educativo e espiritual que continua a gerar acolhimento, relação e esperança.',
                 it: 'Attraverso la presenza missionaria, la condivisione della vita quotidiana e il servizio alle comunità più vulnerabili, la Fraternità accompagna da anni un cammino umano, educativo e spirituale che continua a generare accoglienza, relazione e speranza.'
