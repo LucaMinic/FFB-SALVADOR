@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
@@ -13,6 +15,16 @@ import reggioImg from '../../imports/3-1.jpeg';
 
 export function NossaMetodologiaPage() {
   const t = useT();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, [hash]);
 
   return (
     <main>
@@ -264,7 +276,7 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION MOSTRAS PEDAGÓGICAS */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
+      <section id="mostras-pedagogicas" className="bg-[var(--beige)] py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8 text-center">

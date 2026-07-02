@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown, Instagram, Heart, Globe, Users, Award } from 'lucide-react';
+import { ChevronDown, Instagram, Heart, Globe, Users, Award, Sparkles, HeartHandshake, Apple, PlayCircle, Home } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -9,6 +9,14 @@ import heroImg from '../../imports/3-4.jpeg';
 import famiglieImg from '../../imports/2-2.jpeg';
 import educazioneImg from '../../imports/11-2.jpeg';
 import comunitaImg from '../../imports/13-4.jpeg';
+import metodologiaImg from '../../imports/9-1.jpeg';
+import formacaoContImg from '../../imports/17-1.jpeg';
+import atelieImg from '../../imports/8-2.jpeg';
+import alimentacaoProjImg from '../../imports/9-1.jpeg';
+import hortaImg from '../../imports/12.jpeg';
+import formacaoReligiosaImg from '../../imports/21-1.jpeg';
+import relatorioImg1 from '../../imports/4-1.jpeg';
+import mostrasImg from '../../imports/4-3.jpeg';
 import instagramPost1 from '../../imports/3-4.jpeg';
 import instagramPost2 from '../../imports/4-1.jpeg';
 import instagramPost3 from '../../imports/5-4.jpeg';
@@ -112,8 +120,12 @@ export function AsiloPage() {
         </div>
       </section>
 
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+      </svg>
+
       {/* SECTION MISSIONE E VALORI */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[var(--beige)]">
         <div className="max-w-6xl mx-auto px-6">
 
           {/* Missione — card hero con immagine */}
@@ -184,46 +196,400 @@ export function AsiloPage() {
         </div>
       </section>
 
-      {/* SECTION 2 - CHI SIAMO */}
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
-      <section className="py-20 bg-[var(--beige)]">
+
+      {/* SECTION 2 - LA NOSTRA METODOLOGIA (panoramica) */}
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <AnimatedSection>
+              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
+                {t({ pt: 'A criança no centro', it: 'Il bambino al centro' })}
+              </p>
+              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
+                {t({ pt: 'Nossa metodologia educativa', it: 'La nostra metodologia educativa' })}
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  {t({
+                    pt: 'Cada dia na creche nasce de uma visão precisa do desenvolvimento infantil: uma abordagem sócio-interacionista, inspirada no Reggio Emilia Approach e nas Pedagogias Participativas, na qual a criança é protagonista da sua própria aprendizagem.',
+                    it: "Ogni giornata all'asilo nasce da una visione precisa dello sviluppo infantile: un approccio socio-interazionista, ispirato al Reggio Emilia Approach e alle Pedagogie Partecipative, in cui il bambino è protagonista del proprio apprendimento."
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Brincadeira, relação, escuta e ambiente tornam-se os instrumentos quotidianos com que acompanhamos cada criança na descoberta de si mesma e do mundo, dentro de um currículo fundado nos campos de experiência da BNCC.',
+                    it: "Gioco, relazione, ascolto e ambiente diventano gli strumenti quotidiani con cui accompagniamo ogni bambino nella scoperta di sé e del mondo, all'interno di un curriculum fondato sui campi di esperienza della BNCC."
+                  })}
+                </p>
+              </div>
+              <div className="mt-8">
+                <Button variant="primary" to="/nossa-metodologia">
+                  {t({ pt: 'Descubra nossa metodologia', it: 'Scopri la nostra metodologia' })}
+                </Button>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={metodologiaImg}
+                  alt={t({ pt: 'Ambiente educativo da creche', it: "Ambiente educativo dell'asilo" })}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Uma creche comunitária e filantrópica', it: 'Un asilo comunitario e filantropico' })}
-            </h2>
-            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
-              <p>
-                {t({ pt: 'A Creche é uma realidade privada, comunitária e filantrópica, dirigida à comunidade local de Salvador da Bahia.', it: "L'asilo è una realtà privata, comunitaria e filantropica, rivolta alla comunità locale di Salvador de Bahia." })}
-              </p>
-              <p>
-                {t({ pt: 'Desde 2016 está conveniada com o Município de Salvador através da SMED, a Secretaria Municipal de Educação. Esta convênio permite sustentar economicamente parte do serviço, mantendo porém a identidade educativa e missionária do Centro.', it: 'Dal 2016 è convenzionato con il Municipio di Salvador attraverso la SMED, la Segreteria Municipale dell\'Educazione. Questa convenzione permette di sostenere economicamente parte del servizio, mantenendo però l\'identità educativa e missionaria del Centro.' })}
-              </p>
-              <p>
-                {t({ pt: 'O serviço permanece completamente gratuito para as famílias.', it: 'Il servizio resta completamente gratuito per le famiglie.' })}
-              </p>
-            </div>
+            <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Nossos pilares', it: 'I nostri pilastri' })}
+            </h3>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
-              t({ pt: 'Creche privada', it: 'Asilo privato' }),
-              t({ pt: 'Comunitária', it: 'Comunitaria' }),
-              t({ pt: 'Filantrópica', it: 'Filantropica' }),
-              t({ pt: 'Conveniada com o Município', it: 'Convenzionata con il Municipio' }),
-              t({ pt: 'Serviço gratuito', it: 'Servizio gratuito' })
-            ].map((item, index) => (
-              <AnimatedSection key={item} delay={index * 0.1}>
-                <div className="bg-white rounded-2xl p-6 text-center shadow-lg">
-                  <p className="text-base font-medium text-[var(--deep-blue)]">{item}</p>
+              {
+                icon: Sparkles,
+                color: 'var(--deep-blue)',
+                title: t({ pt: 'Criança Protagonista', it: 'Bambino Protagonista' })
+              },
+              {
+                icon: HeartHandshake,
+                color: 'var(--soft-green)',
+                title: t({ pt: 'Relações de Cuidado, Afeto e Pertencimento', it: 'Relazioni di Cura, Affetto e Appartenenza' })
+              },
+              {
+                icon: Apple,
+                color: 'var(--warm-orange)',
+                title: t({ pt: 'Alimentação Saudável e Bem-Estar', it: 'Alimentazione Sana e Benessere' })
+              },
+              {
+                icon: PlayCircle,
+                color: 'var(--warm-red)',
+                title: t({ pt: 'Aprendizagem pela Experiência e pelo Brincar', it: "Apprendimento attraverso l'Esperienza e il Gioco" })
+              },
+              {
+                icon: Home,
+                color: 'var(--warm-orange-light)',
+                title: t({ pt: 'Ambiente que Educa', it: 'Ambiente che Educa' })
+              }
+            ].map((item, i) => (
+              <AnimatedSection key={i} delay={i * 0.1}>
+                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
+                  <div className="h-40 flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: item.color }}>
+                    <item.icon className="w-16 h-16 text-white" strokeWidth={1.5} />
+                  </div>
+                  <div className="p-5 bg-white flex-1 flex items-center justify-center" style={{ borderTop: `4px solid ${item.color}` }}>
+                    <p className="font-semibold text-base text-center" style={{ color: item.color }}>{item.title}</p>
+                  </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
         </div>
       </section>
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+      </svg>
+
+      {/* SECTION 2A - MOSTRE PEDAGOGICHE */}
+      <section className="py-20 bg-[var(--beige)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection>
+              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
+                {t({ pt: 'Um ano de descobertas partilhadas', it: 'Un anno di scoperte condivise' })}
+              </p>
+              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
+                {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche' })}
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  {t({
+                    pt: 'As Mostras Pedagógicas são momentos importantes da nossa proposta educativa: através de fotos, registros e projetos desenvolvidos pelas crianças, tornamos visível o percurso de aprendizagem de cada grupo, partilhando-o com as famílias e a comunidade.',
+                    it: 'Le Mostre Pedagogiche sono momenti importanti della nostra proposta educativa: attraverso foto, documentazioni e progetti realizzati dai bambini, rendiamo visibile il percorso di apprendimento di ogni gruppo, condividendolo con le famiglie e la comunità.'
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Mais do que apresentar resultados, revelam os processos vividos pelas crianças — como aprendem, investigam, criam e brincam — fortalecendo a parceria entre a creche e as famílias e tornando-se uma preciosa ferramenta de documentação e celebração das aprendizagens.',
+                    it: 'Più che mostrare risultati, rivelano i processi vissuti dai bambini — come imparano, investigano, creano e giocano — rafforzando la collaborazione tra asilo e famiglie e diventando un prezioso strumento di documentazione e celebrazione degli apprendimenti.'
+                  })}
+                </p>
+              </div>
+              <div className="mt-8">
+                <Button variant="primary" to="/nossa-metodologia#mostras-pedagogicas">
+                  {t({ pt: 'Descubra as Mostras Pedagógicas', it: 'Scopri le Mostre Pedagogiche' })}
+                </Button>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={mostrasImg}
+                  alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica' })}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
+      </svg>
+
+      {/* SECTION 2B - PROGETTI PERMANENTI */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
+              {t({ pt: 'Durante todo o ano letivo', it: "Durante tutto l'anno scolastico" })}
+            </p>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6 text-center">
+              {t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti' })}
+            </h2>
+            <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center mb-14">
+              {t({
+                pt: 'Alguns projetos acompanham as crianças ao longo de todo o ano letivo e se entrelaçam com a vida quotidiana da creche, fortalecendo a curiosidade, a autonomia e o protagonismo de cada criança.',
+                it: "Alcuni progetti attraversano l'intero anno scolastico e si intrecciano con la vita quotidiana dell'asilo, rafforzando la curiosità, l'autonomia e il protagonismo di ogni bambino."
+              })}
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {[
+              {
+                img: atelieImg,
+                color: 'var(--warm-orange)',
+                title: t({ pt: 'Ateliê', it: 'Atelier' }),
+                desc: t({ pt: 'Criatividade, exploração e múltiplas linguagens através dos materiais.', it: 'Creatività, esplorazione e linguaggi multipli attraverso i materiali.' })
+              },
+              {
+                img: alimentacaoProjImg,
+                color: 'var(--soft-green)',
+                title: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana' }),
+                desc: t({ pt: 'Refeições como momentos de aprendizagem, convivência e autonomia.', it: 'Pasti come momenti di apprendimento, convivenza e autonomia.' })
+              },
+              {
+                img: hortaImg,
+                color: 'var(--warm-red)',
+                title: t({ pt: 'Horta', it: 'Orto' }),
+                desc: t({ pt: 'Contato direto com a natureza, o plantio e o cuidado com a vida.', it: 'Contatto diretto con la natura, la semina e la cura della vita.' })
+              },
+              {
+                img: formacaoReligiosaImg,
+                color: 'var(--deep-blue)',
+                title: t({ pt: 'Formação Religiosa', it: 'Formazione Religiosa' }),
+                desc: t({ pt: 'Valores humanos e cristãos cultivados no quotidiano.', it: 'Valori umani e cristiani coltivati nel quotidiano.' })
+              }
+            ].map((project, i) => (
+              <AnimatedSection key={i} delay={i * 0.1}>
+                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
+                  <div className="relative h-36 flex-shrink-0 overflow-hidden">
+                    <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+                    <div className="absolute inset-0" style={{ backgroundColor: `${project.color}33` }} />
+                  </div>
+                  <div className="p-5 bg-[var(--beige)] flex-1" style={{ borderTop: `4px solid ${project.color}` }}>
+                    <p className="font-semibold text-base mb-2" style={{ color: project.color }}>{project.title}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{project.desc}</p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection delay={0.2}>
+            <div className="text-center">
+              <Button variant="primary" to="/projetos-permanentes">
+                {t({ pt: 'Descubra todos os projetos permanentes', it: 'Scopri tutti i progetti permanenti' })}
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+      </svg>
+
+      {/* SECTION 2C - RELATÓRIOS */}
+      <section className="py-20 bg-[var(--beige)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
+              {t({ pt: 'Documentação transparente', it: 'Documentazione trasparente' })}
+            </p>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6 text-center">
+              {t({ pt: 'Relatórios', it: 'Relazioni' })}
+            </h2>
+            <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center mb-14">
+              {t({
+                pt: 'Publicamos periodicamente relatórios pedagógicos que contam as propostas, as descobertas e os avanços das crianças: um registro vivo e transparente do trabalho quotidiano realizado na creche.',
+                it: 'Pubblichiamo periodicamente relazioni pedagogiche che raccontano le proposte, le scoperte e i progressi dei bambini: un registro vivo e trasparente del lavoro quotidiano svolto nell\'asilo.'
+              })}
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-12">
+              <img
+                src={relatorioImg1}
+                alt={t({ pt: 'Relatórios', it: 'Relazioni' })}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="text-center">
+              <Button variant="primary" to="/relatorios">
+                {t({ pt: 'Veja todos os relatórios', it: 'Scopri tutte le relazioni' })}
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
+      </svg>
+
+      {/* SECTION - PROGETTI PEDAGOGICI */}
+      <section className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimatedSection>
+            <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.07)] p-10 md:p-14 text-center">
+              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
+                {t({ pt: 'Dentro da Creche', it: "All'interno dell'Asilo" })}
+              </p>
+              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
+                {t({ pt: 'Laboratórios', it: 'Laboratori' })}
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-2xl mx-auto">
+                {t({
+                  pt: 'A vida quotidiana da Creche é animada por percursos educativos pensados para acompanhar cada criança na descoberta de si mesma e do mundo.',
+                  it: "La vita quotidiana dell'Asilo è animata da percorsi educativi pensati per accompagnare ogni bambino nella scoperta di sé e del mondo."
+                })}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-2xl mx-auto">
+                {t({
+                  pt: 'Jogo, criatividade, expressão, relação: os projetos pedagógicos nascem da convicção de que cada criança aprende melhor quando se sente valorizada, livre e acompanhada.',
+                  it: 'Gioco, creatività, espressione, relazione: i progetti pedagogici nascono dalla convinzione che ogni bambino apprenda meglio quando si sente valorizzato, libero e accompagnato.'
+                })}
+              </p>
+              <Button to="/progetti-pedagogici">
+                {t({ pt: 'Descubra os laboratórios', it: 'Scopri i laboratori' })}
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+      </svg>
+
+      {/* SECTION 5 - CHI ANIMA L'ASILO */}
+      <section className="py-20 bg-[var(--beige)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Uma comunidade educativa', it: 'Una comunità educativa' })}
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
+              <p>
+                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: "Oggi l'asilo vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali." })}
+              </p>
+              <p>
+                {t({ pt: 'A gestão pedagógica é partilhada por uma equipe que coordena a formação, organiza as atividades e avalia o trabalho realizado.', it: 'La gestione pedagogica è condivisa da una équipe che coordina la formazione, organizza le attività e valuta il lavoro svolto.' })}
+              </p>
+              <p>
+                {t({ pt: 'Cada turma tem uma professora formada em pedagogia e uma auxiliar de turma. Ao lado delas trabalham pessoas dedicadas à cozinha, à secretaria, ao cuidado dos espaços e ao apoio quotidiano.', it: "Ogni classe ha una professoressa laureata in pedagogia e un'ausiliare di classe. Accanto a loro lavorano persone dedicate alla cucina, alla segreteria, alla cura degli spazi e al supporto quotidiano." })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+            {[
+              t({ pt: 'Diretora', it: 'Direttrice' }),
+              t({ pt: 'Equipe pedagógica', it: 'Équipe pedagogica' }),
+              t({ pt: 'Atelierista', it: 'Atelierista' }),
+              t({ pt: 'Professoras', it: 'Professoresse' }),
+              t({ pt: 'Auxiliares de turma', it: 'Ausiliarie di classe' }),
+              t({ pt: 'Cozinha e serviços gerais', it: 'Cucina e servizi generali' })
+            ].map((item, index) => (
+              <AnimatedSection key={item} delay={index * 0.1}>
+                <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl p-6 text-center shadow-lg">
+                  <p className="text-lg font-medium">{item}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-16">
+              <img
+                src={comunitaImg}
+                alt="Uma comunidade educativa"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </AnimatedSection>
+
+          {/* FORMAÇÃO CONTINUADA DOS PROFESSORES */}
+          <AnimatedSection>
+            <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
+            <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-10 text-center">
+              {t({ pt: 'Formação continuada dos nossos professores', it: 'Formazione continua dei nostri insegnanti' })}
+            </h3>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection delay={0.1}>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  {t({
+                    pt: 'Entendemos que a formação continuada do professor é muito importante para o trabalho que realizamos na creche. Por isso, promovemos esse processo de forma permanente, garantindo momentos de estudo, reflexão e troca de experiências entre a equipe.',
+                    it: "Riteniamo che la formazione continua degli insegnanti sia fondamentale per il lavoro che svolgiamo nell'asilo. Per questo, promuoviamo questo processo in modo permanente, garantendo momenti di studio, riflessione e scambio di esperienze tra il team."
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Uma vez por mês, realizamos a formação continuada dos nossos professores, entendendo que o educador precisa estar sempre em processo de aprendizagem. Esses encontros fortalecem a prática pedagógica e ajudam a qualificar ainda mais o trabalho realizado com as crianças.',
+                    it: "Una volta al mese realizziamo la formazione continua dei nostri insegnanti, ritenendo che l'educatore abbia sempre bisogno di essere in un processo di apprendimento. Questi incontri rafforzano la pratica pedagogica e contribuiscono a qualificare ulteriormente il lavoro svolto con i bambini."
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Valorizamos um professor atento às necessidades de cada criança, que respeite seus tempos, suas formas de aprender e suas diferentes maneiras de se expressar.',
+                    it: "Valorizziamo un insegnante attento ai bisogni di ogni bambino, che rispetti i suoi tempi, le sue modalità di apprendimento e i suoi diversi modi di esprimersi."
+                  })}
+                </p>
+                <p>
+                  {t({
+                    pt: 'Além disso, incentivamos que os professores se encantem, sejam criativos, que planejem experiências significativas, com intencionalidade que despertam a curiosidade e favorecem a investigação, o brincar e a expressão das crianças. Dessa forma, a formação continuada contribui para um trabalho mais sensível, humano e comprometido com o desenvolvimento integral das crianças.',
+                    it: "Incoraggiamo inoltre gli insegnanti a entusiasmarsi, a essere creativi, a pianificare esperienze significative, con intenzionalità che risveglia la curiosità e favorisce l'esplorazione, il gioco e l'espressione dei bambini. In questo modo, la formazione continua contribuisce a un lavoro più sensibile, umano e impegnato nello sviluppo integrale dei bambini."
+                  })}
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={formacaoContImg}
+                  alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti' })}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
@@ -323,60 +689,8 @@ export function AsiloPage() {
         <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
 
-      {/* SECTION 5 - CHI ANIMA L'ASILO */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Uma comunidade educativa', it: 'Una comunità educativa' })}
-            </h2>
-            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
-              <p>
-                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: "Oggi l'asilo vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali." })}
-              </p>
-              <p>
-                {t({ pt: 'A gestão pedagógica é partilhada por uma equipe que coordena a formação, organiza as atividades e avalia o trabalho realizado.', it: 'La gestione pedagogica è condivisa da una équipe che coordina la formazione, organizza le attività e valuta il lavoro svolto.' })}
-              </p>
-              <p>
-                {t({ pt: 'Cada turma tem uma professora formada em pedagogia e uma auxiliar de turma. Ao lado delas trabalham pessoas dedicadas à cozinha, à secretaria, ao cuidado dos espaços e ao apoio quotidiano.', it: "Ogni classe ha una professoressa laureata in pedagogia e un'ausiliare di classe. Accanto a loro lavorano persone dedicate alla cucina, alla segreteria, alla cura degli spazi e al supporto quotidiano." })}
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            {[
-              t({ pt: 'Diretora', it: 'Direttrice' }),
-              t({ pt: 'Equipe pedagógica', it: 'Équipe pedagogica' }),
-              t({ pt: 'Atelierista', it: 'Atelierista' }),
-              t({ pt: 'Professoras', it: 'Professoresse' }),
-              t({ pt: 'Auxiliares de turma', it: 'Ausiliarie di classe' }),
-              t({ pt: 'Cozinha e serviços gerais', it: 'Cucina e servizi generali' })
-            ].map((item, index) => (
-              <AnimatedSection key={item} delay={index * 0.1}>
-                <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl p-6 text-center shadow-lg">
-                  <p className="text-lg font-medium">{item}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection>
-            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={comunitaImg}
-                alt="Uma comunidade educativa"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* SECTION 6 - CRITERI DI ACCOGLIENZA */}
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-      <section className="py-20 bg-[var(--beige)]">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
@@ -393,7 +707,7 @@ export function AsiloPage() {
           </AnimatedSection>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg">
               <p className="text-gray-700 mb-4 font-semibold">{t({ pt: 'Entre as situações consideradas:', it: 'Tra le situazioni considerate:' })}</p>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start">
@@ -434,11 +748,11 @@ export function AsiloPage() {
         </div>
       </section>
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
       </svg>
 
       {/* SECTION 7 - COME AVVIENE L'ISCRIZIONE */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[var(--beige)]">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
@@ -470,7 +784,7 @@ export function AsiloPage() {
               }
             ].map((item, index) => (
               <AnimatedSection key={item.step} delay={index * 0.1}>
-                <div className="bg-[var(--beige)] rounded-2xl p-8 text-center shadow-lg h-full">
+                <div className="bg-white rounded-2xl p-8 text-center shadow-lg h-full">
                   <div className="w-16 h-16 rounded-full bg-[var(--deep-blue)] text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     {item.step}
                   </div>
@@ -485,9 +799,9 @@ export function AsiloPage() {
 
       {/* SECTION 8 - RELAZIONE CON LE FAMIGLIE */}
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
-      <section className="py-20 bg-[var(--beige)]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
@@ -518,165 +832,6 @@ export function AsiloPage() {
               </div>
             </AnimatedSection>
           </div>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* APPROCCIO EDUCATIVO */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Como educamos', it: 'Come educhiamo' })}
-            </h2>
-            <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center mb-12">
-              {t({
-                pt: 'O Centro baseia a sua prática pedagógica numa abordagem sócio-interacionista e inspira-se no Reggio Emilia Approach. A criança é protagonista da sua própria aprendizagem: brincadeira, escuta, relação e descoberta são os pilares de cada dia.',
-                it: "Il Centro basa la propria pratica pedagogica su un approccio socio-interazionista e si ispira al Reggio Emilia Approach. Il bambino è protagonista del proprio apprendimento: gioco, ascolto, relazione e scoperta sono i pilastri di ogni giornata."
-              })}
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedSection delay={0.1}>
-              <div className="bg-[var(--beige)] rounded-2xl p-8 flex flex-col h-full shadow-lg">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-3">
-                  {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' })}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6 flex-1">
-                  {t({
-                    pt: 'Abordagem sócio-interacionista, pedagogias participativas, currículo baseado na BNCC e atenção ao desenvolvimento integral da criança.',
-                    it: "Approccio socio-interazionista, pedagogie partecipative, curriculum basato sulla BNCC e attenzione allo sviluppo integrale del bambino."
-                  })}
-                </p>
-                <Button variant="primary" to="/nossa-metodologia">
-                  {t({ pt: 'Descobrir', it: 'Scopri' })}
-                </Button>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="bg-[var(--beige)] rounded-2xl p-8 flex flex-col h-full shadow-lg">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-3">
-                  {t({ pt: 'Abordagem Reggio Emilia', it: 'Reggio Emilia Approach' })}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6 flex-1">
-                  {t({
-                    pt: 'Uma grande fonte de inspiração: a criança como protagonista, o ambiente como terceiro educador, o ateliê e a documentação educativa.',
-                    it: "Una grande fonte di ispirazione: il bambino come protagonista, l'ambiente come terzo educatore, l'atelier e la documentazione educativa."
-                  })}
-                </p>
-                <Button variant="primary" to="/approccio-reggio-emilia">
-                  {t({ pt: 'Descobrir', it: 'Scopri' })}
-                </Button>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.3}>
-              <div className="bg-[var(--beige)] rounded-2xl p-8 flex flex-col h-full shadow-lg">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-3">
-                  {t({ pt: 'Ateliê e contextos investigativos', it: 'Atelier e contesti investigativi' })}
-                </h3>
-                <p className="text-gray-700 leading-relaxed mb-6 flex-1">
-                  {t({
-                    pt: 'Um espaço de escuta, criatividade e relação onde as crianças exploram, observam e se tornam protagonistas da sua própria aprendizagem.',
-                    it: "Uno spazio di ascolto, creatività e relazione dove i bambini esplorano, osservano e diventano protagonisti del proprio apprendimento."
-                  })}
-                </p>
-                <Button variant="primary" to="/atelier">
-                  {t({ pt: 'Descobrir', it: 'Scopri' })}
-                </Button>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 15 - IDENTITÀ CRISTIANA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Educar com um olhar cristão', it: 'Educare con uno sguardo cristiano' })}
-            </h2>
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed text-center">
-              <p>
-                {t({ pt: 'O Centro Nossa Senhora Aparecida vive também a sua identidade confessional católica.', it: 'Il Centro Nossa Senhora Aparecida vive anche la propria identità confessionale cattolica.' })}
-              </p>
-              <p>
-                {t({ pt: 'O estilo educativo nasce do carisma da Fraternidade Franciscana de Betânia e une método e espiritualidade.', it: 'Lo stile educativo nasce dal carisma della Fraternità Francescana di Betania e unisce metodo e spiritualità.' })}
-              </p>
-              <p>
-                {t({ pt: 'Educar significa também acompanhar o crescimento humano e espiritual, criando um ambiente em que cuidado, relação e atenção à pessoa se tornam experiência quotidiana.', it: 'Educare significa anche accompagnare la crescita umana e spirituale, creando un ambiente in cui cura, relazione e attenzione alla persona diventano esperienza quotidiana.' })}
-              </p>
-            </div>
-            <div className="flex justify-center mt-10">
-              <Button variant="primary" to="/la-fraternita">
-                {t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania' })}
-              </Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* SECTION 16 - DAL PRESENTE AL FUTURO */}
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-4xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Do presente da creche ao futuro da escola', it: "Dal presente dell'asilo al futuro della scuola" })}
-            </h2>
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed mb-10 text-center">
-              <p>
-                {t({ pt: 'A Creche é o presente concreto do Centro Nossa Senhora Aparecida.', it: "L'asilo è il presente concreto del Centro Nossa Senhora Aparecida." })}
-              </p>
-              <p>
-                {t({ pt: 'Desta experiência nasce o desejo de continuar a acompanhar as crianças também após a primeira infância, através do projeto escola.', it: "Da questa esperienza nasce il desiderio di continuare ad accompagnare i bambini anche dopo la prima infanzia, attraverso il progetto scuola." })}
-              </p>
-            </div>
-            <div className="text-center">
-              <Button variant="secondary" to="/progetto-scuola">{t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola' })}</Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION - PROGETTI PEDAGOGICI */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <AnimatedSection>
-            <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.07)] p-10 md:p-14 text-center">
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
-                {t({ pt: 'Dentro da Creche', it: "All'interno dell'Asilo" })}
-              </p>
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Laboratórios', it: 'Laboratori' })}
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-2xl mx-auto">
-                {t({
-                  pt: 'A vida quotidiana da Creche é animada por percursos educativos pensados para acompanhar cada criança na descoberta de si mesma e do mundo.',
-                  it: "La vita quotidiana dell'Asilo è animata da percorsi educativi pensati per accompagnare ogni bambino nella scoperta di sé e del mondo."
-                })}
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-2xl mx-auto">
-                {t({
-                  pt: 'Jogo, criatividade, expressão, relação: os projetos pedagógicos nascem da convicção de que cada criança aprende melhor quando se sente valorizada, livre e acompanhada.',
-                  it: 'Gioco, creatività, espressione, relazione: i progetti pedagogici nascono dalla convinzione che ogni bambino apprenda meglio quando si sente valorizzato, libero e accompagnato.'
-                })}
-              </p>
-              <Button to="/progetti-pedagogici">
-                {t({ pt: 'Descubra os laboratórios', it: 'Scopri i laboratori' })}
-              </Button>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
 
