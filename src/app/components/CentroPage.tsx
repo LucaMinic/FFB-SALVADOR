@@ -2,12 +2,12 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/15-2.jpeg';
+import heroImg from '../../imports/centro-convento-aereo.jpeg';
 import centroImg from '../../imports/8-3.jpeg';
-import giornataImg1 from '../../imports/15-2.jpeg';
-import giornataImg2 from '../../imports/17-2.jpeg';
-import documentariImg from '../../imports/FFBcreche.2025-1.png';
-import iniziativeImg from '../../imports/21.jpeg';
+import giornataImg1 from '../../imports/centro-giornata-relazione.jpeg';
+import giornataImg2 from '../../imports/centro-giornata-brincadeira.jpeg';
+import documentariImg from '../../imports/centro-documentari-racconti.jpeg';
+import iniziativeImg from '../../imports/2.jpeg';
 
 export function CentroPage() {
   const t = useT();

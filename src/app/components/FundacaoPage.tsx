@@ -3,9 +3,10 @@ import { AnimatedSection } from './AnimatedSection';
 import { ImpactNumbers } from './ImpactNumbers';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/8-2.jpeg';
-import chiSiamoImg from '../../imports/8-2.jpeg';
+import heroImg from '../../imports/fundacao-hero-fraternita.jpeg';
+import chiSiamoImg from '../../imports/fundacao-gruppo-comunita.jpeg';
 import mappaItaliaImg from '../../imports/mappa_Italia_mondo.png';
+import fraternitaLegameImg from '../../imports/fundacao-fraternita-legame.jpeg';
 
 export function FundacaoPage() {
   const t = useT();
@@ -278,6 +279,13 @@ export function FundacaoPage() {
             <p className="text-2xl text-gray-700 mb-8 text-center font-light">
               {t({ pt: 'Um vínculo que garante continuidade', it: 'Un legame che garantisce continuità' })}
             </p>
+            <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
+              <img
+                src={fraternitaLegameImg}
+                alt={t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania' })}
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <div className="bg-white rounded-2xl p-10 shadow-md">
               <p className="text-xl text-gray-700 leading-relaxed mb-8 text-center">
                 {t({ pt: 'A Fundação está estreitamente ligada à Fraternidade Franciscana de Betânia.', it: 'La Fundação è strettamente legata alla Fraternità Francescana di Betania.' })}

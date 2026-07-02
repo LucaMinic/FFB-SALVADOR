@@ -2,8 +2,8 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ChevronDown, FileText, Download } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/13-2.jpeg';
-import emotionalImg from '../../imports/21.jpeg';
+import heroImg from '../../imports/foto_sito_06_pagina_7.jpg';
+import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
 
 export function TrasparenzaPage() {
   const t = useT();
