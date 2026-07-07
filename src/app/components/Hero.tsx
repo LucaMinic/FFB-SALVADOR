@@ -8,7 +8,8 @@ import heroImage2 from '../../imports/14-1.jpeg';
 import heroImage3 from '../../imports/34.jpeg';
 import heroImage4 from '../../imports/9-1.jpeg';
 import heroImage5 from '../../imports/32.jpeg';
-import logoHero from '../../imports/logo-2.png';
+import logoHero from '../../imports/nuove/LOGO stretto.png';
+import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
 
 export function Hero() {
@@ -114,37 +115,42 @@ export function Hero() {
         </div>
 
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
-          <div className="mb-6 md:mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-[var(--deep-blue)] font-bold leading-tight text-center tracking-tight">
-              Fundação Betania ONLUS
-            </h1>
-          </div>
+          <AnimatedSection>
+            <div className="mb-6 md:mb-12">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl text-[var(--deep-blue)] font-bold leading-tight text-center tracking-tight">
+                Fundação Betania ONLUS
+              </h1>
+            </div>
+          </AnimatedSection>
 
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg md:text-2xl lg:text-3xl mb-4 md:mb-8 text-gray-800 leading-relaxed">
-              {t({
-                pt: 'Aqui em Salvador da Bahia, através do Centro Nossa Senhora Aparecida, acolhemos e acompanhamos diariamente crianças e famílias em situação de vulnerabilidade.',
-                it: 'A Salvador de Bahia, attraverso il Centro Nossa Senhora Aparecida, accogliamo e accompagniamo ogni giorno bambini e famiglie in difficoltà.'
-              })}
-            </p>
+          <AnimatedSection delay={0.15}>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg md:text-2xl lg:text-3xl mb-4 md:mb-8 text-gray-800 leading-relaxed">
+                {t({
+                  pt: 'Aqui em Salvador da Bahia, através do Centro Nossa Senhora Aparecida, acolhemos e acompanhamos diariamente crianças e famílias em situação de vulnerabilidade.',
+                  it: 'A Salvador de Bahia, attraverso il Centro Nossa Senhora Aparecida, accogliamo e accompagniamo ogni giorno bambini e famiglie in difficoltà.'
+                })}
+              </p>
 
-            <p className="text-base md:text-xl mb-6 md:mb-10 max-w-3xl mx-auto text-gray-700 leading-relaxed">
-              {t({
-                pt: 'Todos os dias partilhamos a vida com quem mais precisa, oferecendo cuidado, educação e uma oportunidade concreta de futuro.',
-                it: 'Ogni giorno condividiamo la vita con chi ha più bisogno, offrendo cura, educazione e una possibilità concreta di futuro.'
-              })}
-            </p>
-          </div>
+              <p className="text-base md:text-xl mb-6 md:mb-10 max-w-3xl mx-auto text-gray-700 leading-relaxed">
+                {t({
+                  pt: 'Todos os dias partilhamos a vida com quem mais precisa, oferecendo cuidado, educação e uma oportunidade concreta de futuro.',
+                  it: 'Ogni giorno condividiamo la vita con chi ha più bisogno, offrendo cura, educazione e una possibilità concreta di futuro.'
+                })}
+              </p>
+            </div>
+          </AnimatedSection>
 
-          <div className="mt-10 md:mt-14 mb-2 md:mb-4 flex justify-center items-center">
-            <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-24 md:h-36 lg:h-44 w-auto" />
-          </div>
+          <AnimatedSection delay={0.3}>
+            <div className="mt-10 md:mt-14 mb-8 md:mb-10 pt-8 md:pt-10 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-16 md:h-20 w-auto" />
+              <span className="text-xl md:text-2xl text-[var(--deep-blue)] font-semibold tracking-tight">
+                Centro Nossa Senhora Aparecida
+              </span>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
-
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-0 md:h-24" style={{ display: 'block' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
     </section>
   );
 }

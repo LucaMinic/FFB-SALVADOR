@@ -1,12 +1,10 @@
-import dailyLifeImage from '../../imports/4-1.jpeg';
+import dailyLifeImage from '../../imports/nuove/gruppo classe.png';
 import educationImage from '../../imports/scuola.png';
-import accoglienzaImg from '../../imports/33.jpeg';
+import accoglienzaImg from '../../imports/nuove/2P9A9067.jpg';
 import educazioneImg from '../../imports/3-1.jpeg';
 import curaImg from '../../imports/16-3.jpeg';
 import accompagnamentoImg from '../../imports/2.jpeg';
-import introImg from '../../imports/nuove/17.jpeg';
 import padrePancrazioImg from '../../imports/nuove/padre Pancrazio2.jfif';
-import logoCentro from '../../imports/LOGO_stretto.png';
 import { AnimatedSection } from './AnimatedSection';
 import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
@@ -22,64 +20,30 @@ export function Impatto() {
   ];
 
   return (
-    <section id="impatto" className="pt-2 md:pt-4 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section id="impatto" className="pt-8 md:pt-12 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
-          <div className="max-w-2xl mx-auto mb-12">
-            <img
-              src={introImg}
-              alt=""
-              className="w-full rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] object-cover h-64 md:h-80"
-            />
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-4">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl text-[var(--deep-blue)]">
               {t({ pt: 'Acolher, educar, acompanhar', it: 'Accogliere, educare, accompagnare' })}
             </h1>
           </div>
         </AnimatedSection>
 
         <AnimatedSection>
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <p className="text-2xl text-gray-800 leading-relaxed">
-              {t({
-                pt: 'Acolhemos crianças em situação de vulnerabilidade, oferecendo a elas um lugar seguro para crescer, aprender e se sentir amadas.',
-                it: 'Accogliamo bambini in situazioni di vulnerabilità, offrendo loro un luogo sicuro dove crescere, imparare e sentirsi amati.'
-              })}
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 mt-2">
-            <img
-              src={logoCentro}
-              alt="Logo Centro Nossa Senhora Aparecida"
-              className="h-16 md:h-20 w-auto flex-shrink-0"
-            />
-            <span className="text-2xl md:text-3xl text-[var(--deep-blue)] font-semibold text-center sm:text-left leading-tight">
-              Centro Nossa Senhora Aparecida
-            </span>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <div className="max-w-3xl mx-auto text-center mb-10">
+          <div className="max-w-2xl mx-auto text-center mb-16 pt-10 border-t border-gray-200">
             <img
               src={padrePancrazioImg}
               alt="Padre Pancrazio"
-              className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover mx-auto mb-6 shadow-lg ring-4 ring-white"
+              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto mb-5 shadow-lg ring-4 ring-white"
             />
-            <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed italic mb-4">
+            <blockquote className="text-xl md:text-2xl text-gray-800 leading-relaxed italic mb-3">
               {t({
                 pt: '«Quando compreendi que rezar é amar, então tudo se tornou oração, tudo se tornou amor»',
                 it: '«Quando ho compreso che pregare è amare, allora tutto è diventato preghiera, tutto è diventato amore»'
               })}
             </blockquote>
-            <p className="text-base md:text-lg text-[var(--deep-blue)] font-semibold tracking-wide">
+            <p className="text-sm md:text-base text-[var(--deep-blue)] font-semibold tracking-wide">
               — Padre Pancrazio
             </p>
           </div>
