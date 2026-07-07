@@ -2,11 +2,11 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/33.jpeg';
-import img1 from '../../imports/2.jpeg';
-import img2 from '../../imports/16-3.jpeg';
-import img3 from '../../imports/14.jpeg';
-import img4 from '../../imports/9-1.jpeg';
+import heroImg from '../../imports/nuove/2P9A2750.jpg';
+import img1 from '../../imports/nuove/2P9A9150.jpg';
+import img2 from '../../imports/nuove/2P9A9067.jpg';
+import img3 from '../../imports/2.jpeg';
+import img4 from '../../imports/nuove/2P9A9486.jpg';
 
 export function AccoglienzaQuotidianaPage() {
   const t = useT();

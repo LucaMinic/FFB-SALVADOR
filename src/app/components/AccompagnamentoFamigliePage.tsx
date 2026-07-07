@@ -3,9 +3,9 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import heroImg from '../../imports/2.jpeg';
-import img1 from '../../imports/14.jpeg';
-import img2 from '../../imports/9-1.jpeg';
-import img3 from '../../imports/32.jpeg';
+import img1 from '../../imports/nuove/2P9A9116.jpg';
+import img2 from '../../imports/nuove/1.jpeg';
+import img3 from '../../imports/nuove/r6bis.png';
 import img4 from '../../imports/34.jpeg';
 
 export function AccompagnamentoFamigliePage() {
