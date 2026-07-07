@@ -4,10 +4,10 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import heroImg from '../../imports/13-1.jpeg';
-import atelieImg from '../../imports/8-2.jpeg';
-import alimentacaoImg from '../../imports/9-1.jpeg';
-import hortaImg from '../../imports/12.jpeg';
-import formacaoImg from '../../imports/21-1.jpeg';
+import atelieImg from '../../imports/nuove/FOTO VIDEO/asilo/6.jpeg';
+import alimentacaoImg from '../../imports/nuove/r4.png';
+import hortaImg from '../../imports/10.jpeg';
+import formacaoImg from '../../imports/nuove/FOTO VIDEO/asilo/20.jpeg';
 
 export function ProjetosPermanentesPage() {
   const t = useT();

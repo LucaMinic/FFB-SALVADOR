@@ -3,8 +3,8 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { MapPin, Mail, Phone, FileText, Copy, Check, ChevronDown, Instagram } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/19.jpeg';
-import finalCtaImg from '../../imports/21.jpeg';
+import heroImg from '../../imports/nuove/2P9A2725.jpg';
+import finalCtaImg from '../../imports/nuove/2P9A2229.jpg';
 
 export function ContattiPage() {
   const t = useT();
@@ -95,8 +95,8 @@ export function ContattiPage() {
                   {t({ pt: 'Salvador de Bahia (Brasil)', it: 'Salvador de Bahia (Brasile)' })}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Rod BA 526 n.1672<br />
-                  Bairro Sao Cristovao 41510
+                  Travessa Acalanto nº 1.672, Jardim das Margaridas<br />
+                  CEP 41.502-135 · Salvador/BA · Brasil
                 </p>
                 <div className="rounded-xl overflow-hidden w-full">
                   <iframe

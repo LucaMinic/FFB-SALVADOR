@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import { Link } from 'react-router';
-import heroImg from '../../imports/14.jpeg';
+import heroImg from '../../imports/nuove/_DSF1736.jpg';
 import autoImg from '../../imports/Patricia.jpg';
 import ricordiImg from '../../imports/narrazioni_africane_ok.jpg';
 

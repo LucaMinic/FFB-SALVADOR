@@ -10,13 +10,13 @@ import famiglieImg from '../../imports/2-2.jpeg';
 import pastiImg from '../../imports/nuove/r4bis.png';
 import educazioneImg from '../../imports/11-2.jpeg';
 import comunitaImg from '../../imports/13-4.jpeg';
-import metodologiaImg from '../../imports/9-1.jpeg';
+import missioneImg from '../../imports/nuove/IMG_5464.JPG';
+import metodologiaImg from '../../imports/7.jpeg';
 import formacaoContImg from '../../imports/17-1.jpeg';
-import atelieImg from '../../imports/8-2.jpeg';
-import alimentacaoProjImg from '../../imports/9-1.jpeg';
-import hortaImg from '../../imports/12.jpeg';
+import atelieImg from '../../imports/6-1.jpeg';
+import alimentacaoProjImg from '../../imports/nuove/r4.png';
+import hortaImg from '../../imports/10.jpeg';
 import formacaoReligiosaImg from '../../imports/21-1.jpeg';
-import relatorioImg1 from '../../imports/4-1.jpeg';
 import mostrasImg from '../../imports/4-3.jpeg';
 import instagramPost1 from '../../imports/3-4.jpeg';
 import instagramPost2 from '../../imports/4-1.jpeg';
@@ -148,7 +148,7 @@ export function AsiloPage() {
           {/* Missione — card hero con immagine */}
           <AnimatedSection>
             <div className="relative rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center">
-              <img src={comunitaImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={missioneImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-[var(--deep-blue)]/72" />
               <div className="relative z-10 px-8 md:px-16 py-12 max-w-3xl">
                 <h2 className="text-3xl md:text-5xl text-white mb-5">
@@ -452,12 +452,73 @@ export function AsiloPage() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-12">
-              <img
-                src={relatorioImg1}
-                alt={t({ pt: 'Relatórios', it: 'Relazioni' })}
-                className="w-full h-auto object-cover"
-              />
+            <div className="max-w-3xl mx-auto rounded-2xl shadow-lg mb-12 bg-white p-6 md:p-10">
+              <svg
+                viewBox="0 0 860 300"
+                className="w-full h-auto"
+                role="img"
+                aria-label={t({ pt: 'Relatórios pedagógicos periódicos: propostas, descobertas, avanços e registro transparente', it: 'Relazioni pedagogiche periodiche: proposte, scoperte, progressi e registro trasparente' })}
+              >
+                <line x1="90" y1="260" x2="770" y2="260" stroke="#cdd2c4" strokeWidth="2" strokeDasharray="4 7" />
+
+                {[
+                  { x: 50, color: 'var(--deep-blue)', tint: 'var(--deep-blue)', label: t({ pt: 'Propostas', it: 'Proposte' }), icon: 'bulb' },
+                  { x: 250, color: 'var(--soft-green)', tint: 'var(--soft-green)', label: t({ pt: 'Descobertas', it: 'Scoperte' }), icon: 'search' },
+                  { x: 450, color: 'var(--warm-orange)', tint: 'var(--warm-orange)', label: t({ pt: 'Avanços', it: 'Progressi' }), icon: 'bars' },
+                  { x: 650, color: 'var(--warm-red)', tint: 'var(--warm-red)', label: t({ pt: 'Registro', it: 'Registro' }), icon: 'doc' },
+                ].map((c, i) => (
+                  <g key={i}>
+                    <line x1={c.x + 80} y1="220" x2={c.x + 80} y2="258" stroke="#cdd2c4" strokeWidth="2" />
+                    <circle cx={c.x + 80} cy="260" r="5" fill="#fff" stroke={c.color} strokeWidth="2.5" />
+
+                    <clipPath id={`card-clip-${i}`}>
+                      <rect x={c.x} y="40" width="160" height="180" rx="16" />
+                    </clipPath>
+                    <rect x={c.x} y="40" width="160" height="180" rx="16" fill="#ffffff" stroke="#e8ddd3" strokeWidth="2" />
+                    <g clipPath={`url(#card-clip-${i})`}>
+                      <rect x={c.x} y="40" width="160" height="8" fill={c.color} />
+                    </g>
+
+                    <circle cx={c.x + 80} cy="92" r="26" fill={c.tint} fillOpacity="0.12" />
+
+                    {c.icon === 'bulb' && (
+                      <g stroke={c.color} strokeWidth="3" strokeLinecap="round" fill="none">
+                        <circle cx={c.x + 80} cy="86" r="13" fill={c.tint} fillOpacity="0.18" />
+                        <rect x={c.x + 74} y="97" width="12" height="6" rx="2" fill={c.color} stroke="none" />
+                        <line x1={c.x + 68} y1="74" x2={c.x + 64} y2="69" />
+                        <line x1={c.x + 80} y1="70" x2={c.x + 80} y2="64" />
+                        <line x1={c.x + 92} y1="74" x2={c.x + 96} y2="69" />
+                      </g>
+                    )}
+                    {c.icon === 'search' && (
+                      <g stroke={c.color} strokeWidth="3" strokeLinecap="round" fill="none">
+                        <circle cx={c.x + 76} cy="84" r="12" />
+                        <line x1={c.x + 85} y1="93" x2={c.x + 94} y2="102" strokeWidth="4" />
+                        <line x1={c.x + 94} y1="67" x2={c.x + 94} y2="77" strokeWidth="2" />
+                        <line x1={c.x + 89} y1="72" x2={c.x + 99} y2="72" strokeWidth="2" />
+                      </g>
+                    )}
+                    {c.icon === 'bars' && (
+                      <g fill={c.color}>
+                        <rect x={c.x + 64} y="92" width="10" height="14" rx="2" />
+                        <rect x={c.x + 76} y="82" width="10" height="24" rx="2" />
+                        <rect x={c.x + 88} y="72" width="10" height="34" rx="2" />
+                      </g>
+                    )}
+                    {c.icon === 'doc' && (
+                      <g>
+                        <rect x={c.x + 68} y="68" width="24" height="32" rx="3" fill={c.tint} fillOpacity="0.18" stroke={c.color} strokeWidth="2.5" />
+                        <polyline points={`${c.x + 73},86 ${c.x + 78},91 ${c.x + 87},78`} fill="none" stroke={c.color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                      </g>
+                    )}
+
+                    <text x={c.x + 80} y="140" textAnchor="middle" fontSize="15" fontWeight="700" fill={c.color}>{c.label}</text>
+                    <rect x={c.x + 24} y="156" width="112" height="6" rx="3" fill="#e8ddd3" />
+                    <rect x={c.x + 24} y="170" width="90" height="6" rx="3" fill="#e8ddd3" />
+                    <rect x={c.x + 24} y="184" width="68" height="6" rx="3" fill="#e8ddd3" />
+                  </g>
+                ))}
+              </svg>
             </div>
           </AnimatedSection>
 

@@ -4,14 +4,13 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/11.jpeg';
+import heroImg from '../../imports/nuove/_DSF1797.jpg';
 import img1 from '../../imports/4-1.jpeg';
-import img2 from '../../imports/2.jpeg';
-import img3 from '../../imports/16-3.jpeg';
-import img4 from '../../imports/9-1.jpeg';
-import mostrasImg from '../../imports/4-3.jpeg';
+import img2 from '../../imports/nuove/_DSF1859.jpg';
+import img4 from '../../imports/1.jpeg';
+import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
 import formacaoContImg from '../../imports/17-1.jpeg';
-import reggioImg from '../../imports/3-1.jpeg';
+import reggioImg from '../../imports/nuove/_DSF1797.jpg';
 
 export function NossaMetodologiaPage() {
   const t = useT();
@@ -232,9 +231,6 @@ export function NossaMetodologiaPage() {
                   </p>
                   <cite className="text-[var(--deep-blue)] font-semibold text-sm not-italic mt-2 block">— Loris Malaguzzi</cite>
                 </blockquote>
-                <Button variant="primary" to="/approccio-reggio-emilia">
-                  {t({ pt: 'Descubra a abordagem completa', it: "Scopri l'approccio completo" })}
-                </Button>
               </div>
             </AnimatedSection>
           </div>
@@ -421,11 +417,37 @@ export function NossaMetodologiaPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
-                src={img3}
-                alt={t({ pt: 'Desenvolvimento infantil integral', it: 'Sviluppo infantile integrale' })}
-                className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
-              />
+              <div className="w-full h-80 lg:h-96 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] bg-white flex items-center justify-center p-6">
+                <svg
+                  viewBox="0 0 500 380"
+                  className="w-full h-full max-w-md"
+                  role="img"
+                  aria-label={t({ pt: 'O desenvolvimento acontece na interação entre a criança, o outro e o mundo', it: 'Lo sviluppo avviene nell\'interazione tra il bambino, l\'altro e il mondo' })}
+                >
+                  <g style={{ mixBlendMode: 'multiply' }}>
+                    <circle cx="250" cy="150" r="108" fill="var(--deep-blue)" fillOpacity="0.5" stroke="var(--deep-blue)" strokeWidth="2" />
+                    <circle cx="180" cy="255" r="108" fill="var(--soft-green)" fillOpacity="0.5" stroke="var(--soft-green)" strokeWidth="2" />
+                    <circle cx="320" cy="255" r="108" fill="var(--warm-orange)" fillOpacity="0.5" stroke="var(--warm-orange)" strokeWidth="2" />
+                  </g>
+
+                  <text x="250" y="90" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--deep-blue)">
+                    {t({ pt: 'Criança', it: 'Bambino' })}
+                  </text>
+                  <text x="95" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--soft-green)">
+                    {t({ pt: 'O outro', it: "L'altro" })}
+                  </text>
+                  <text x="405" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--warm-red)">
+                    {t({ pt: 'O mundo', it: 'Il mondo' })}
+                  </text>
+
+                  <text x="250" y="219" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
+                    {t({ pt: 'Desenvolvimento', it: 'Sviluppo' })}
+                  </text>
+                  <text x="250" y="238" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
+                    {t({ pt: 'integral', it: 'integrale' })}
+                  </text>
+                </svg>
+              </div>
             </AnimatedSection>
           </div>
         </div>
@@ -549,10 +571,7 @@ export function NossaMetodologiaPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/approccio-reggio-emilia">
-                {t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' })}
-              </Button>
-              <Button variant="secondary" to="/atelier">
+              <Button variant="primary" to="/atelier">
                 {t({ pt: 'O Ateliê', it: "L'Atelier" })}
               </Button>
             </div>

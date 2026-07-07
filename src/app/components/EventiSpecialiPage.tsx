@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { Lightbox } from './Lightbox';
-import { ChevronDown, Calendar, MapPin } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/21-4.jpeg';
 import presidentImg from '../../imports/16-5.jpeg';
@@ -24,8 +24,7 @@ import gallery15 from '../../imports/20.jpeg';
 import gallery16 from '../../imports/28-1.jpeg';
 import gallery17 from '../../imports/10-2.jpeg';
 import gallery18 from '../../imports/3-5.jpeg';
-import emotionalImg from '../../imports/19-1.jpeg';
-import finalCtaImg from '../../imports/13-5.jpeg';
+import finalCtaImg from '../../imports/nuove/30.jpeg';
 
 export function EventiSpecialiPage() {
   const t = useT();
@@ -54,34 +53,6 @@ export function EventiSpecialiPage() {
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
   };
-
-  const futureEvents = [
-    {
-      title: t({ pt: 'Encontros institucionais', it: 'Incontri istituzionali' }),
-      description: t({ pt: 'Momentos de diálogo com representantes institucionais locais e internacionais', it: 'Momenti di dialogo con rappresentanti istituzionali locali e internazionali' }),
-      icon: MapPin
-    },
-    {
-      title: t({ pt: 'Visitas oficiais', it: 'Visite ufficiali' }),
-      description: t({ pt: 'Visitas de delegações que escolhem conhecer de perto o Centro', it: 'Visite di delegazioni che scelgono di conoscere da vicino il Centro' }),
-      icon: Calendar
-    },
-    {
-      title: t({ pt: 'Eventos educativos', it: 'Eventi educativi' }),
-      description: t({ pt: 'Celebrações e momentos significativos da vida educativa do Centro', it: 'Celebrazioni e momenti significativi della vita educativa del Centro' }),
-      icon: Calendar
-    },
-    {
-      title: t({ pt: 'Momentos comunitários', it: 'Momenti comunitari' }),
-      description: t({ pt: 'Encontros que reforçam o vínculo com as famílias e o território', it: 'Incontri che rafforzano il legame con le famiglie e il territorio' }),
-      icon: MapPin
-    },
-    {
-      title: t({ pt: 'Apresentações do projeto escola', it: 'Presentazioni del progetto scuola' }),
-      description: t({ pt: 'Eventos dedicados à partilha do novo projeto educativo', it: 'Eventi dedicati alla condivisione del nuovo progetto educativo' }),
-      icon: Calendar
-    }
-  ];
 
   return (
     <div className="bg-white">
@@ -253,68 +224,6 @@ export function EventiSpecialiPage() {
               alt={t({ pt: 'Visita do Presidente', it: 'Visita del Presidente' })}
             />
           )}
-        </div>
-      </section>
-
-      {/* SECTION 5 - IL SIGNIFICATO DI QUESTI EVENTI */}
-      <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={emotionalImg}
-            alt={t({ pt: 'Uma presença que gera relações', it: 'Una presenza che genera relazioni' })}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl mb-8">
-              {t({ pt: 'Uma presença que gera relações', it: 'Una presenza che genera relazioni' })}
-            </h2>
-          </AnimatedSection>
-          <AnimatedSection delay={0.2}>
-            <div className="space-y-6 text-xl leading-relaxed">
-              <p>
-                {t({ pt: 'Os eventos especiais vividos pelo Centro não são simples ocasiões institucionais.', it: 'Gli eventi speciali vissuti dal Centro non sono semplici occasioni istituzionali.' })}
-              </p>
-              <p>
-                {t({ pt: "São momentos que ajudam a dar voz e visibilidade a uma realidade construída todos os dias através da educação, da fraternidade e da proximidade concreta às pessoas.", it: "Sono momenti che aiutano a dare voce e visibilità a una realtà costruita ogni giorno attraverso l'educazione, la fraternità e la vicinanza concreta alle persone." })}
-              </p>
-              <p>
-                {t({ pt: 'Cada encontro reforça o vínculo entre o Centro, o território e todas as pessoas que escolhem apoiar o seu caminho.', it: 'Ogni incontro rafforza il legame tra il Centro, il territorio e tutte le persone che scelgono di sostenerne il cammino.' })}
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* SECTION 6 - FUTURI EVENTI */}
-      <section className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Outros momentos do caminho', it: 'Altri momenti del cammino' })}
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {futureEvents.map((event, index) => (
-              <AnimatedSection key={index} delay={0.1 * (index % 3)}>
-                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[var(--deep-blue)] to-blue-400 rounded-full flex items-center justify-center mb-6">
-                    <event.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                    {event.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed flex-1">
-                    {event.description}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 

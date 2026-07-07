@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import { useRef } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import heroImage1 from '../../imports/14.jpeg';
+import heroImage1 from '../../imports/nuove/IMG_2360.JPG';
 import heroImage2 from '../../imports/14-1.jpeg';
 import heroImage3 from '../../imports/34.jpeg';
 import heroImage4 from '../../imports/9-1.jpeg';

@@ -231,9 +231,9 @@ export function Footer() {
           <div>
             <h3 className="mb-4">{t({ pt: 'Contatos', it: 'Contatti' })}</h3>
             <p className="text-sm text-gray-300 mb-4">
-              Rod BA 526 n.1672<br />
-              Bairro Sao Cristovao 41510<br />
-              Salvador - Bahia
+              Travessa Acalanto nº 1.672<br />
+              Jardim das Margaridas · CEP 41.502-135<br />
+              Salvador/BA · Brasil
             </p>
             <p className="text-sm text-gray-300 mb-4">
               <a href="mailto:salvador@ffbetania.net" className="hover:text-white transition-colors">

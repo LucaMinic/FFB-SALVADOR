@@ -657,67 +657,6 @@ export function ScuolaPage() {
           </AnimatedSection>
         </div>
       </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION 15 - DONAZIONI */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-12 text-center">
-              {t({ pt: 'Ajude-nos a construir esta escola', it: 'Aiutaci a costruire questa scuola' })}
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-16 text-center">
-              {t({ pt: 'Pode contribuir para a realização da escola através de uma doação ou destinando o seu 5x1000 à Fondazione Betania ONLUS.', it: 'Puoi contribuire alla realizzazione della scuola attraverso una donazione o destinando il tuo 5x1000 alla Fondazione Betania ONLUS.' })}
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <AnimatedSection>
-              <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg h-full">
-                <h3 className="text-2xl font-bold text-[var(--deep-blue)] mb-6">{t({ pt: 'Transferência bancária', it: 'Bonifico bancario' })}</h3>
-                <div className="space-y-4 text-gray-700">
-                  <div>
-                    <p className="font-semibold mb-1">{t({ pt: 'Beneficiário:', it: 'Intestazione:' })}</p>
-                    <p>FONDAZIONE BETANIA ONLUS</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1">IBAN Intesa Sanpaolo:</p>
-                    <p className="font-mono text-sm">IT48 O030 6909 6061 0000 1067 97</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-1">IBAN BPER:</p>
-                    <p className="font-mono text-sm">IT75 F053 8741 5620 0000 2260 111</p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection delay={0.2}>
-              <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg h-full">
-                <h3 className="text-2xl font-bold text-[var(--deep-blue)] mb-6">5x1000</h3>
-                <div className="space-y-4 text-gray-700">
-                  <p>
-                    {t({ pt: 'Destinar o 5x1000 à Fondazione Betania ONLUS é um gesto que não custa nada mas ajuda a construir futuro.', it: 'Destinare il 5x1000 alla Fondazione Betania ONLUS è un gesto che non costa nulla ma aiuta a costruire futuro.' })}
-                  </p>
-                  <div>
-                    <p className="font-semibold mb-1">{t({ pt: 'Código fiscal:', it: 'Codice fiscale:' })}</p>
-                    <p className="font-mono text-2xl font-bold text-[var(--deep-blue)]">93346130722</p>
-                  </div>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <AnimatedSection>
-            <div className="text-center">
-              <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora' })}</Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {lightboxOpen && (
         <Lightbox
           images={renderImages}

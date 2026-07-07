@@ -30,7 +30,6 @@ import { DieciAnniCrechePage } from "./components/DieciAnniCrechePage";
 import { VisitaPresidentePage } from "./components/VisitaPresidentePage";
 import { AvanzamentoLavoriPage } from "./components/AvanzamentoLavoriPage";
 import { SostegnoADistanzaPage } from "./components/SostegnoADistanzaPage";
-import { ApproccioReggioEmiliaPage } from "./components/ApproccioReggioEmiliaPage";
 import { AtelierPage } from "./components/AtelierPage";
 import { NossaMetodologiaPage } from "./components/NossaMetodologiaPage";
 import { ProjetosPermanentesPage } from "./components/ProjetosPermanentesPage";
@@ -75,7 +74,6 @@ export const router = createBrowserRouter([
       { path: "documentari-racconti/ricordi-narrazioni", Component: RicordiNarrazioniPage },
       { path: "avanzamento-lavori", Component: AvanzamentoLavoriPage },
       { path: "sostegno-a-distanza", Component: SostegnoADistanzaPage },
-      { path: "approccio-reggio-emilia", Component: ApproccioReggioEmiliaPage },
       { path: "atelier", Component: AtelierPage },
       { path: "nossa-metodologia", Component: NossaMetodologiaPage },
       { path: "projetos-permanentes", Component: ProjetosPermanentesPage },

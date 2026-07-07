@@ -3,7 +3,7 @@ import { AnimatedSection } from './AnimatedSection';
 import { ImpactNumbers } from './ImpactNumbers';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/fundacao-hero-fraternita.jpeg';
+import heroImg from '../../imports/nuove/33.jpeg';
 import chiSiamoImg from '../../imports/fundacao-gruppo-comunita.jpeg';
 import mappaItaliaImg from '../../imports/mappa_Italia_mondo.png';
 import fraternitaLegameImg from '../../imports/fundacao-fraternita-legame.jpeg';

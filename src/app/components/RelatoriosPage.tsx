@@ -2,13 +2,14 @@ import { ChevronDown, Download, FileText } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/16-1.jpeg';
-import img1 from '../../imports/4-1.jpeg';
-import img2 from '../../imports/2.jpeg';
-import img3 from '../../imports/16-3.jpeg';
-import img4 from '../../imports/9-1.jpeg';
-import img5 from '../../imports/4-3.jpeg';
-import img6 from '../../imports/12.jpeg';
+import heroImg from '../../imports/nuove/r6bis.png';
+import img1 from '../../imports/nuove/r1b.png';
+import img2 from '../../imports/nuove/r2bis.png';
+import img3 from '../../imports/nuove/r3.png';
+import img4 from '../../imports/nuove/r4bis.png';
+import img5 from '../../imports/nuove/r5bis.png';
+import img6 from '../../imports/nuove/r6.png';
+import img7 from '../../imports/nuove/r2.png';
 
 export function RelatoriosPage() {
   const t = useT();
@@ -82,7 +83,7 @@ export function RelatoriosPage() {
       color: 'var(--soft-green)',
     },
     {
-      img: img3,
+      img: img7,
       category: t({ pt: 'Relatório Anual · 2025', it: 'Relazione Annuale · 2025' }),
       title: t({ pt: 'Relatório Anual — Está na mesa, está no prato, vai para o corpo', it: 'Relazione Annuale — È in tavola, è nel piatto, va nel corpo' }),
       description: t({

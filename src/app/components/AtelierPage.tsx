@@ -266,10 +266,7 @@ export function AtelierPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/approccio-reggio-emilia">
-                {t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' })}
-              </Button>
-              <Button variant="secondary" to="/asilo">
+              <Button variant="primary" to="/asilo">
                 {t({ pt: 'Voltar à Creche', it: "Torna all'Asilo" })}
               </Button>
             </div>
