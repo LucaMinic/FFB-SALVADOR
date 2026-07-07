@@ -5,7 +5,7 @@ import { Button } from './Button';
 import heroImg from '../../imports/2.jpeg';
 import img1 from '../../imports/nuove/2P9A9116.jpg';
 import img2 from '../../imports/nuove/1.jpeg';
-import img3 from '../../imports/nuove/r6bis.png';
+import img3 from '../../imports/nuove/r6bis.jpg';
 import img4 from '../../imports/34.jpeg';
 
 export function AccompagnamentoFamigliePage() {

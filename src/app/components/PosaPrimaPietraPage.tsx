@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
 import { Link } from 'react-router';
-import heroImg from '../../imports/converted-3.png';
+import heroImg from '../../imports/converted-3.jpg';
 import videoPrimaPietra from '../../imports/video_prima_pietra.mp4';
 import finalCtaImg from '../../imports/21.jpeg';
 

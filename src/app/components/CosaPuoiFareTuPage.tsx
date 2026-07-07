@@ -3,7 +3,7 @@ import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Heart, Users, FileText, Building2, Share2 } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/14.jpeg';
-import donationImg from '../../imports/FFBcreche.2025.png';
+import donationImg from '../../imports/FFBcreche.2025.jpg';
 import supportImg from '../../imports/11.jpeg';
 import impactImg from '../../imports/15-1.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';

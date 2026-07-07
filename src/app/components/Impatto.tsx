@@ -1,5 +1,5 @@
-import dailyLifeImage from '../../imports/nuove/gruppo classe.png';
-import educationImage from '../../imports/scuola.png';
+import dailyLifeImage from '../../imports/nuove/gruppo classe.jpg';
+import educationImage from '../../imports/scuola.webp';
 import accoglienzaImg from '../../imports/nuove/2P9A9067.jpg';
 import educazioneImg from '../../imports/3-1.jpeg';
 import curaImg from '../../imports/16-3.jpeg';

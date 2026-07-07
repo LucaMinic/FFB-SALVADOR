@@ -2,14 +2,14 @@ import { ChevronDown, Download, FileText } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/nuove/r6bis.png';
-import img1 from '../../imports/nuove/r1b.png';
-import img2 from '../../imports/nuove/r2bis.png';
-import img3 from '../../imports/nuove/r3.png';
-import img4 from '../../imports/nuove/r4bis.png';
-import img5 from '../../imports/nuove/r5bis.png';
-import img6 from '../../imports/nuove/r6.png';
-import img7 from '../../imports/nuove/r2.png';
+import heroImg from '../../imports/nuove/r6bis.jpg';
+import img1 from '../../imports/nuove/r1b.jpg';
+import img2 from '../../imports/nuove/r2bis.jpg';
+import img3 from '../../imports/nuove/r3.jpg';
+import img4 from '../../imports/nuove/r4bis.jpg';
+import img5 from '../../imports/nuove/r5bis.jpg';
+import img6 from '../../imports/nuove/r6.jpg';
+import img7 from '../../imports/nuove/r2.jpg';
 
 export function RelatoriosPage() {
   const t = useT();

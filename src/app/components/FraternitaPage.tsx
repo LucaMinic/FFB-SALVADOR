@@ -2,10 +2,10 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/foto_convertita.png';
+import heroImg from '../../imports/foto_convertita.jpg';
 import padrePancrazioImg from '../../imports/PadrePancrazio.jpg';
-import fotoConveritaImg from '../../imports/foto_convertita.png';
-import mappaFraternitaImg from '../../imports/mappa_ottimizzata_web.png';
+import fotoConveritaImg from '../../imports/foto_convertita.jpg';
+import mappaFraternitaImg from '../../imports/mappa_ottimizzata_web.jpg';
 
 export function FraternitaPage() {
   const t = useT();

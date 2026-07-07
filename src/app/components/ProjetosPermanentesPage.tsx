@@ -5,7 +5,7 @@ import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import heroImg from '../../imports/13-1.jpeg';
 import atelieImg from '../../imports/nuove/FOTO VIDEO/asilo/6.jpeg';
-import alimentacaoImg from '../../imports/nuove/r4.png';
+import alimentacaoImg from '../../imports/nuove/r4.jpg';
 import hortaImg from '../../imports/10.jpeg';
 import formacaoImg from '../../imports/nuove/FOTO VIDEO/asilo/20.jpeg';
 

@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import schoolProjectVideo from '../../imports/video_progetto_scuola_nossa.mp4';
-import foundationCeremonyImage from '../../imports/converted.png';
+import foundationCeremonyImage from '../../imports/converted.jpg';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
 

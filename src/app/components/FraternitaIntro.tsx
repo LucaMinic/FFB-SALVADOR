@@ -1,5 +1,5 @@
 import { Button } from './Button';
-import fraternitaImg from '../../imports/foto_convertita.png';
+import fraternitaImg from '../../imports/foto_convertita.jpg';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
 

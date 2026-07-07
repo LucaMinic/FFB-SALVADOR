@@ -3,8 +3,8 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import heroImg from '../../imports/16-3.jpeg';
-import img1 from '../../imports/nuove/r3.png';
-import img2 from '../../imports/nuove/r4.png';
+import img1 from '../../imports/nuove/r3.jpg';
+import img2 from '../../imports/nuove/r4.jpg';
 import img3 from '../../imports/15-1.jpeg';
 import img4 from '../../imports/11.jpeg';
 

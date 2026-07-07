@@ -4,9 +4,9 @@ import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import { Link } from 'react-router';
 import heroImg from '../../imports/nuove/10.jpeg';
-import primaPietraImg from '../../imports/converted-3.png';
+import primaPietraImg from '../../imports/converted-3.jpg';
 
-import intervistaImg from '../../imports/Suor_Mariangela.png';
+import intervistaImg from '../../imports/Suor_Mariangela.jpg';
 import dieciAnniImg from '../../imports/33.jpeg';
 import visitaPresidenteImg from '../../imports/21.jpeg';
 

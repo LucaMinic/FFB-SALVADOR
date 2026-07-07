@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import { Link } from 'react-router';
-import heroImg from '../../imports/Suor_Mariangela.png';
+import heroImg from '../../imports/Suor_Mariangela.jpg';
 import finalCtaImg from '../../imports/14.jpeg';
 
 export function IntervistaAlCentroPage() {

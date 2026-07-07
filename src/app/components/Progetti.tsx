@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
-import progettiImage from '../../imports/FFBcreche.2025.png';
+import progettiImage from '../../imports/FFBcreche.2025.jpg';
 import { useT } from '../context/LanguageContext';
 
 export function Progetti() {

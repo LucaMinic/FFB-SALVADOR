@@ -6,7 +6,7 @@ import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/nuove/_DSF1945.jpg';
 import childrenImg from '../../imports/nuove/2P9A9067.jpg';
 import familyImg from '../../imports/nuove/17.jpeg';
-import finalCtaImg from '../../imports/nuove/R1.png';
+import finalCtaImg from '../../imports/nuove/R1.jpg';
 import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
 import qrPix from '../../imports/qr-pix.png.jpeg';
