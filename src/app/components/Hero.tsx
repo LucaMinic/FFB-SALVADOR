@@ -136,7 +136,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="mt-10 md:mt-14 mb-6 md:mb-10 flex justify-center items-center">
+          <div className="mt-10 md:mt-14 mb-2 md:mb-4 flex justify-center items-center">
             <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-24 md:h-36 lg:h-44 w-auto" />
           </div>
         </div>

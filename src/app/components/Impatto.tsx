@@ -4,6 +4,8 @@ import accoglienzaImg from '../../imports/33.jpeg';
 import educazioneImg from '../../imports/3-1.jpeg';
 import curaImg from '../../imports/16-3.jpeg';
 import accompagnamentoImg from '../../imports/2.jpeg';
+import introImg from '../../imports/nuove/17.jpeg';
+import padrePancrazioImg from '../../imports/nuove/padre Pancrazio2.jfif';
 import logoCentro from '../../imports/LOGO_stretto.png';
 import { AnimatedSection } from './AnimatedSection';
 import { Link } from 'react-router';
@@ -20,8 +22,18 @@ export function Impatto() {
   ];
 
   return (
-    <section id="impatto" className="pt-8 md:pt-16 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section id="impatto" className="pt-2 md:pt-4 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
+        <AnimatedSection>
+          <div className="max-w-2xl mx-auto mb-12">
+            <img
+              src={introImg}
+              alt=""
+              className="w-full rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] object-cover h-64 md:h-80"
+            />
+          </div>
+        </AnimatedSection>
+
         <AnimatedSection>
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-4">
@@ -56,6 +68,11 @@ export function Impatto() {
 
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center mb-10">
+            <img
+              src={padrePancrazioImg}
+              alt="Padre Pancrazio"
+              className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover mx-auto mb-6 shadow-lg ring-4 ring-white"
+            />
             <blockquote className="text-2xl md:text-3xl text-gray-800 leading-relaxed italic mb-4">
               {t({
                 pt: '«Quando compreendi que rezar é amar, então tudo se tornou oração, tudo se tornou amor»',
