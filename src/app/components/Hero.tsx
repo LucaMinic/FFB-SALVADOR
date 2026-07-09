@@ -36,27 +36,32 @@ export function Hero() {
     {
       src: heroImage1,
       alt: t({ pt: 'Crianças da missão', it: 'Bambini della missione' }),
-      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.' })
+      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.' }),
+      focus: 'center 75%'
     },
     {
       src: heroImage2,
       alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale' }),
-      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.' })
+      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.' }),
+      focus: 'center 40%'
     },
     {
       src: heroImage3,
       alt: t({ pt: 'Crianças sorrindo', it: 'Bambini sorridenti' }),
-      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.' })
+      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.' }),
+      focus: 'center 35%'
     },
     {
       src: heroImage4,
       alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale' }),
-      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.' })
+      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.' }),
+      focus: 'center 35%'
     },
     {
       src: heroImage5,
       alt: t({ pt: 'A fraternidade', it: 'La fraternità' }),
-      text: ''
+      text: '',
+      focus: 'center 25%'
     },
   ];
 
@@ -69,7 +74,8 @@ export function Hero() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[280px] md:h-[550px] lg:h-[650px] object-cover"
+                className="w-full h-[280px] md:h-[550px] lg:h-[clamp(650px,34vw,850px)] object-cover"
+                style={{ objectPosition: image.focus }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent hidden md:flex items-center">
                 <div className="max-w-7xl mx-auto px-6 w-full">
