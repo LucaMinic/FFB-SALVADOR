@@ -74,7 +74,7 @@ export function Hero() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[280px] md:h-[550px] lg:h-[clamp(650px,34vw,850px)] object-cover"
+                className="w-full h-[380px] md:h-[650px] lg:h-[clamp(750px,40vw,950px)] object-cover"
                 style={{ objectPosition: image.focus }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent hidden md:flex items-center">
