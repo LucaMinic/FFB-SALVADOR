@@ -43,12 +43,12 @@ export function Impatto() {
               <div className="overflow-hidden">
                 <img
                   src={educationImage}
-                  alt={t({ pt: 'Escola', it: 'Scuola' })}
+                  alt={t({ pt: 'Projeto Escola', it: 'Progetto Scuola' })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white p-8 text-center">
-                <p className="text-2xl font-medium mb-2">{t({ pt: 'Escola', it: 'Scuola' })}</p>
+                <p className="text-2xl font-medium mb-2">{t({ pt: 'Projeto Escola', it: 'Progetto Scuola' })}</p>
                 <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più' })}</p>
               </div>
             </a>
