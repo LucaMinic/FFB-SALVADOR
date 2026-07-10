@@ -85,5 +85,5 @@ export const router = createBrowserRouter([
       { path: "*", Component: HomePage },
     ],
   },
-]);
+], { basename: import.meta.env.BASE_URL });
 

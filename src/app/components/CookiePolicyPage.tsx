@@ -1,6 +1,7 @@
 import { AnimatedSection } from './AnimatedSection';
 import { Cookie, Info, Shield, Settings } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
+import { Link } from 'react-router';
 
 export function CookiePolicyPage() {
   const t = useT();
@@ -381,12 +382,12 @@ export function CookiePolicyPage() {
                   it: 'Per maggiori informazioni sul trattamento dei dati personali, consultare la nostra'
                 })}
               </p>
-              <a
-                href="/privacy-policy"
+              <Link
+                to="/privacy-policy"
                 className="inline-block px-8 py-3 bg-white text-[var(--deep-blue)] rounded-xl font-medium hover:bg-gray-100 transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </AnimatedSection>
         </div>

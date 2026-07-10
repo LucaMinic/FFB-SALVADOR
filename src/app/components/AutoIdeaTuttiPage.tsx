@@ -11,7 +11,7 @@ export function AutoIdeaTuttiPage() {
   const t = useT();
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -147,6 +147,6 @@ export function AutoIdeaTuttiPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

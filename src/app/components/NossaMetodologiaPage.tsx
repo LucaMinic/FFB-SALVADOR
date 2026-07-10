@@ -26,7 +26,7 @@ export function NossaMetodologiaPage() {
   }, [hash]);
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -578,6 +578,6 @@ export function NossaMetodologiaPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

@@ -92,7 +92,7 @@ export function AlimentacaoSaudavelPage() {
   ];
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -332,6 +332,6 @@ export function AlimentacaoSaudavelPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

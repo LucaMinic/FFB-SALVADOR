@@ -57,7 +57,7 @@ export function DocumentariPage() {
   ];
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -185,6 +185,6 @@ export function DocumentariPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

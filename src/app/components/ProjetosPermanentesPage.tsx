@@ -56,7 +56,7 @@ export function ProjetosPermanentesPage() {
   ];
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -168,6 +168,6 @@ export function ProjetosPermanentesPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

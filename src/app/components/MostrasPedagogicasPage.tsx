@@ -9,7 +9,7 @@ export function MostrasPedagogicasPage() {
   const t = useT();
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -116,6 +116,6 @@ export function MostrasPedagogicasPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/centro-convento-aereo.jpeg';
 import centroImg from '../../imports/8-3.jpeg';
@@ -237,12 +238,12 @@ export function CentroPage() {
                 <p className="text-lg mb-6 opacity-95 leading-relaxed">
                   {t({ pt: 'Um serviço educativo para a primeira infância, ativo cada dia.', it: 'Un servizio educativo per la prima infanzia, attivo ogni giorno.' })}
                 </p>
-                <a
-                  href="/asilo"
+                <Link
+                  to="/asilo"
                   className="inline-block px-8 py-3 bg-white text-[var(--soft-green)] rounded-xl font-medium hover:shadow-lg transition-all"
                 >
                   {t({ pt: 'Conheça a creche', it: "Scopri l'asilo" })}
-                </a>
+                </Link>
               </div>
             </AnimatedSection>
 
@@ -252,12 +253,12 @@ export function CentroPage() {
                 <p className="text-lg mb-6 opacity-95 leading-relaxed">
                   {t({ pt: 'Um percurso em desenvolvimento para acompanhar as crianças também nos anos seguintes.', it: 'Un percorso in sviluppo per accompagnare i bambini anche negli anni successivi.' })}
                 </p>
-                <a
-                  href="/progetto-scuola"
+                <Link
+                  to="/progetto-scuola"
                   className="inline-block px-8 py-3 bg-white text-[var(--warm-orange)] rounded-xl font-medium hover:shadow-lg transition-all"
                 >
                   {t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola' })}
-                </a>
+                </Link>
               </div>
             </AnimatedSection>
           </div>
