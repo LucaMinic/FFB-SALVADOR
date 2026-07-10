@@ -10,7 +10,7 @@ export function Donazione() {
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--deep-blue)" />
       </svg>
-      <section className="py-28 bg-gradient-to-br from-[var(--deep-blue)] via-[#2c5f7f] to-[#234a61] text-white">
+      <section className="py-20 lg:py-24 bg-gradient-to-br from-[var(--deep-blue)] via-[#2c5f7f] to-[#234a61] text-white">
       <AnimatedSection>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="mb-8 text-4xl drop-shadow-lg">{t({ pt: 'Ajude-nos a construir um futuro', it: 'Aiutaci a costruire un futuro' })}</h2>

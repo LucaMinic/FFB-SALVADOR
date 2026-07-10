@@ -66,7 +66,7 @@ export function Instagram() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">

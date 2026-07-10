@@ -6,7 +6,7 @@ export function RassegnaStampa() {
   const t = useT();
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 lg:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-14">

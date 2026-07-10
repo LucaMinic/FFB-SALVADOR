@@ -112,7 +112,7 @@ export function ImpactNumbers() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[var(--beige)] to-white">
+    <section className="py-14 lg:py-16 bg-gradient-to-b from-[var(--beige)] to-white">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">

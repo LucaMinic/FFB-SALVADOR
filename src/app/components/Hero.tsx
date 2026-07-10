@@ -148,9 +148,9 @@ export function Hero() {
           </AnimatedSection>
 
           <AnimatedSection delay={0.3}>
-            <div className="mt-10 md:mt-14 mb-8 md:mb-10 pt-8 md:pt-10 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-16 md:h-20 w-auto" />
-              <span className="text-xl md:text-2xl text-[var(--deep-blue)] font-semibold tracking-tight">
+            <div className="mt-4 md:mt-6 mb-8 md:mb-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-20 md:h-28 w-auto" />
+              <span className="text-2xl md:text-3xl text-[var(--deep-blue)] font-semibold tracking-tight">
                 Centro Nossa Senhora Aparecida
               </span>
             </div>

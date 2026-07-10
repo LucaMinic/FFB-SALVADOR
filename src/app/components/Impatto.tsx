@@ -20,36 +20,9 @@ export function Impatto() {
   ];
 
   return (
-    <section id="impatto" className="pt-8 md:pt-12 pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section id="impatto" className="pt-6 md:pt-8 pb-16 md:pb-20 lg:pb-24 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
-        <AnimatedSection>
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl text-[var(--deep-blue)]">
-              {t({ pt: 'Acolher, educar, acompanhar', it: 'Accogliere, educare, accompagnare' })}
-            </h1>
-          </div>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <div className="max-w-2xl mx-auto text-center mb-16 pt-10 border-t border-gray-200">
-            <img
-              src={padrePancrazioImg}
-              alt="Padre Pancrazio"
-              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto mb-5 shadow-lg ring-4 ring-white"
-            />
-            <blockquote className="text-xl md:text-2xl text-gray-800 leading-relaxed italic mb-3">
-              {t({
-                pt: '«Quando compreendi que rezar é amar, então tudo se tornou oração, tudo se tornou amor»',
-                it: '«Quando ho compreso che pregare è amare, allora tutto è diventato preghiera, tutto è diventato amore»'
-              })}
-            </blockquote>
-            <p className="text-sm md:text-base text-[var(--deep-blue)] font-semibold tracking-wide">
-              — Padre Pancrazio
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           <AnimatedSection delay={0}>
             <Link to="/asilo" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
@@ -83,7 +56,26 @@ export function Impatto() {
         </div>
 
         <AnimatedSection>
-          <div className="text-center mb-10">
+          <div className="max-w-2xl mx-auto text-center mb-12 pt-8 border-t border-gray-200">
+            <img
+              src={padrePancrazioImg}
+              alt="Padre Pancrazio"
+              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto mb-5 shadow-lg ring-4 ring-white"
+            />
+            <blockquote className="text-xl md:text-2xl text-gray-800 leading-relaxed italic mb-3">
+              {t({
+                pt: '«Quando compreendi que rezar é amar, então tudo se tornou oração, tudo se tornou amor»',
+                it: '«Quando ho compreso che pregare è amare, allora tutto è diventato preghiera, tutto è diventato amore»'
+              })}
+            </blockquote>
+            <p className="text-sm md:text-base text-[var(--deep-blue)] font-semibold tracking-wide">
+              — Padre Pancrazio
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] font-bold tracking-tight mb-3">
               {t({ pt: 'Nossos pilares', it: 'I nostri pilastri' })}
             </h2>

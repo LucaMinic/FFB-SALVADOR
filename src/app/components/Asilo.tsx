@@ -8,7 +8,7 @@ export function Asilo() {
   const t = useT();
 
   return (
-    <section id="asilo" className="py-24 bg-gradient-to-b from-white to-[var(--beige)]">
+    <section id="asilo" className="py-16 lg:py-20 bg-gradient-to-b from-white to-[var(--beige)]">
       <div className="max-w-7xl mx-auto px-6">
         <AnimatedSection>
           <div className="text-center mb-16">
