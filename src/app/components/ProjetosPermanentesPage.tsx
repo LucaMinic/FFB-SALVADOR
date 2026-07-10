@@ -36,7 +36,7 @@ export function ProjetosPermanentesPage() {
     {
       img: hortaImg,
       color: 'var(--warm-red)',
-      link: '/nossa-metodologia',
+      link: null,
       title: t({ pt: 'Horta', it: 'Orto' }),
       desc: t({
         pt: 'A horta possibilita o contato direto com a natureza e os ciclos da vida. Por meio do plantio, do cuidado e da colheita, as crianças aprendem sobre responsabilidade, sustentabilidade, alimentação saudável e respeito ao meio ambiente.',
@@ -134,13 +134,15 @@ export function ProjetosPermanentesPage() {
                       {project.title}
                     </h3>
                     <p className="text-gray-600 text-base leading-relaxed flex-1 mb-6">{project.desc}</p>
-                    <Link
-                      to={project.link}
-                      className="inline-block self-start px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
-                      style={{ backgroundColor: project.color }}
-                    >
-                      {t({ pt: 'Saiba mais', it: 'Scopri di più' })}
-                    </Link>
+                    {project.link && (
+                      <Link
+                        to={project.link}
+                        className="inline-block self-start px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
+                        style={{ backgroundColor: project.color }}
+                      >
+                        {t({ pt: 'Saiba mais', it: 'Scopri di più' })}
+                      </Link>
+                    )}
                   </div>
                 </div>
               </AnimatedSection>
