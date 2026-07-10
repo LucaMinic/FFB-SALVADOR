@@ -36,6 +36,7 @@ import { ProjetosPermanentesPage } from "./components/ProjetosPermanentesPage";
 import { MostrasPedagogicasPage } from "./components/MostrasPedagogicasPage";
 import { AlimentacaoSaudavelPage } from "./components/AlimentacaoSaudavelPage";
 import { RelatoriosPage } from "./components/RelatoriosPage";
+import { RelatorioAreaPage } from "./components/RelatorioAreaPage";
 import { RootLayout } from "./layouts/RootLayout";
 
 export const router = createBrowserRouter([
@@ -80,6 +81,7 @@ export const router = createBrowserRouter([
       { path: "mostras-pedagogicas", Component: MostrasPedagogicasPage },
       { path: "alimentacao-saudavel", Component: AlimentacaoSaudavelPage },
       { path: "relatorios", Component: RelatoriosPage },
+      { path: "relatorios/:area", Component: RelatorioAreaPage },
       { path: "*", Component: HomePage },
     ],
   },

@@ -1,102 +1,16 @@
-import { ChevronDown, Download, FileText } from 'lucide-react';
+import { ChevronDown, FileText, ArrowRight } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { Link } from 'react-router';
 import heroImg from '../../imports/nuove/r6bis.jpg';
-import img1 from '../../imports/nuove/r1b.jpg';
-import img2 from '../../imports/nuove/r2bis.jpg';
-import img3 from '../../imports/nuove/r3.jpg';
-import img4 from '../../imports/nuove/r4bis.jpg';
-import img5 from '../../imports/nuove/r5bis.jpg';
-import img6 from '../../imports/nuove/r6.jpg';
-import img7 from '../../imports/nuove/r2.jpg';
+import { relatorioAreas } from '../data/relatoriosData';
 
 export function RelatoriosPage() {
   const t = useT();
-  const base = import.meta.env.BASE_URL;
-
-  const reports = [
-    {
-      img: img1,
-      category: t({ pt: 'Relatório bimestral · Fev/Mar 2026', it: 'Relazione bimestrale · Feb/Mar 2026' }),
-      title: t({ pt: '1ª Campanha Educação Nutricional 2026 — Alimentação Equilibrada', it: '1ª Campagna Educazione Nutrizionale 2026 — Alimentazione Equilibrata' }),
-      description: t({
-        pt: 'Registro das propostas realizadas no período de fevereiro e março de 2026: oficina de manipulação de frutas, degustação de pitaia e experiência de self-service no refeitório. Autora: Joseilma Passos.',
-        it: 'Registro delle proposte realizzate nel periodo di febbraio e marzo 2026: laboratorio di manipolazione di frutta, degustazione di pitaia ed esperienza self-service in refettorio. Autrice: Joseilma Passos.',
-      }),
-      href: `${base}relatorios/relatorio-1-campanha-nutricional-2026.pdf`,
-      color: 'var(--deep-blue)',
-    },
-    {
-      img: img2,
-      category: t({ pt: 'Relatório bimestral · Abr/Mai 2025', it: 'Relazione bimestrale · Apr/Mag 2025' }),
-      title: t({ pt: '2º Bimestre — Incentivo ao consumo de Legumes, Verduras e Frutas', it: '2° Bimestre — Incentivo al consumo di Ortaggi, Verdure e Frutta' }),
-      description: t({
-        pt: 'Oficinas de preparo de saladas e sanduíches naturais, investigação brincante com melancia e abacate, plantio de hortaliças e palestra com nutricionistas para as famílias. Autora: Joseilma Passos.',
-        it: 'Laboratori di preparazione di insalate e panini naturali, esplorazione ludica di anguria e avocado, semina di ortaggi e incontro con nutrizioniste per le famiglie. Autrice: Joseilma Passos.',
-      }),
-      href: `${base}relatorios/relatorio-2-bimestre-legumes-verduras-frutas.pdf`,
-      color: 'var(--soft-green)',
-    },
-    {
-      img: img3,
-      category: t({ pt: 'Relatório bimestral · 3ª Campanha', it: 'Relazione bimestrale · 3ª Campagna' }),
-      title: t({ pt: '3ª Campanha Educação Nutricional — Açúcares, Sal e Gorduras', it: '3ª Campagna Educazione Nutrizionale — Zuccheri, Sale e Grassi' }),
-      description: t({
-        pt: 'Oficinas de culinária saudável: beijinho de batata-doce, doce de abóbora, iogurte com frutas, guacamole e molho de ervas. Visita do dentista em parceria com o posto de saúde local. Retomada do cultivo de ervas aromáticas na horta.',
-        it: 'Laboratori di cucina sana: dolcetto di patata dolce, marmellata di zucca, yogurt con frutta, guacamole e salsa alle erbe. Visita del dentista in collaborazione con il centro di salute locale. Ripresa della coltivazione di erbe aromatiche nell\'orto.',
-      }),
-      href: `${base}relatorios/relatorio-3-campanha-acucares-sal-gorduras.pdf`,
-      color: 'var(--warm-orange)',
-    },
-    {
-      img: img4,
-      category: t({ pt: 'Relatório bimestral · 4ª Campanha · Nov 2025', it: 'Relazione bimestrale · 4ª Campagna · Nov 2025' }),
-      title: t({ pt: '4ª Campanha Educação Nutricional — Energia, Carboidratos, Óleos e Gorduras', it: '4ª Campagna Educazione Nutrizionale — Energia, Carboidrati, Oli e Grassi' }),
-      description: t({
-        pt: 'Construção da pirâmide alimentar, brincadeira de self-service, leitura de rótulos no mercadinho, alimentos ricos em ferro e oficina de barrinha de cereal natural. Autora: Joseilma Passos.',
-        it: 'Costruzione della piramide alimentare, gioco di self-service, lettura delle etichette al mini-mercato, alimenti ricchi di ferro e laboratorio di barrette di cereali naturali. Autrice: Joseilma Passos.',
-      }),
-      href: `${base}relatorios/relatorio-4-campanha-energia-carboidratos-oleos-gorduras.pdf`,
-      color: 'var(--warm-red)',
-    },
-    {
-      img: img5,
-      category: t({ pt: 'Relatório bimestral · 5ª Campanha · Dez 2025', it: 'Relazione bimestrale · 5ª Campagna · Dic 2025' }),
-      title: t({ pt: '5ª Campanha Educação Nutricional — Proteínas e Minerais', it: '5ª Campagna Educazione Nutrizionale — Proteine e Minerali' }),
-      description: t({
-        pt: 'Proposta "De onde vem o leite?", biscoitinho de aveia com banana, "Quem nos fornece o ovo?" com cenário de fazendinha, classificação na pirâmide alimentar e piquenique coletivo de encerramento do ano. Autora: Joseilma Passos.',
-        it: 'Proposta "Da dove viene il latte?", biscottini di avena con banana, "Chi ci fornisce l\'uovo?" con scenario di fattoria, classificazione nella piramide alimentare e picnic collettivo di chiusura dell\'anno. Autrice: Joseilma Passos.',
-      }),
-      href: `${base}relatorios/relatorio-5-campanha-proteinas-minerais.pdf`,
-      color: 'var(--deep-blue)',
-    },
-    {
-      img: img6,
-      category: t({ pt: '6ª Campanha · Mai 2026', it: '6ª Campagna · Mag 2026' }),
-      title: t({ pt: '6ª Campanha — Aproveitamento Integral dos Alimentos', it: '6ª Campagna — Utilizzo Integrale degli Alimenti' }),
-      description: t({
-        pt: 'Oficina de novos sabores (maxixe, caqui, pinha, jiló), brincadeiras de aproveitamento integral, palestra sobre aleitamento materno e workshop de iogurte natural com frutas para as famílias. Autora: Joseilma Passos.',
-        it: 'Laboratorio di nuovi sapori (maxixe, cachi, frutto del custode, giló), giochi di utilizzo integrale, conferenza sull\'allattamento materno e workshop di yogurt naturale con frutta per le famiglie. Autrice: Joseilma Passos.',
-      }),
-      href: `${base}relatorios/relatorio-6-campanha-aproveitamento-integral.pdf`,
-      color: 'var(--soft-green)',
-    },
-    {
-      img: img7,
-      category: t({ pt: 'Relatório Anual · 2025', it: 'Relazione Annuale · 2025' }),
-      title: t({ pt: 'Relatório Anual — Está na mesa, está no prato, vai para o corpo', it: 'Relazione Annuale — È in tavola, è nel piatto, va nel corpo' }),
-      description: t({
-        pt: 'Relatório do projeto de intervenção anual 2025: self-service para mapeamento dos hábitos alimentares, experimentação de folhas verdes, história cantada "Sopa do Nenê" com os bebês, e investigação da beterraba e limão com preparo coletivo do suco.',
-        it: 'Relazione del progetto di intervento annuale 2025: self-service per la mappatura delle abitudini alimentari, esplorazione di foglie verdi, storia cantata "Sopa do Nenê" con i lattanti, e investigazione di barbabietola e limone con preparazione collettiva del succo.',
-      }),
-      href: `${base}relatorios/relatorio-7-alimentacao-saudavel-2025.pdf`,
-      color: 'var(--warm-orange)',
-    },
-  ];
 
   return (
-    <main>
+    <>
       {/* HERO */}
       <section
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
@@ -145,61 +59,53 @@ export function RelatoriosPage() {
             <div className="text-center mb-20">
               <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Documentos disponíveis', it: 'Documenti disponibili' })}
+                {t({ pt: 'Áreas de trabalho', it: 'Aree di lavoro' })}
               </h2>
               <p className="text-gray-600 text-xl leading-relaxed max-w-3xl mx-auto">
                 {t({
-                  pt: 'Cada relatório é um registro cuidadoso das propostas, das descobertas e do desenvolvimento das crianças. Faça o download e conheça em profundidade o trabalho realizado.',
-                  it: "Ogni relazione è un registro attento delle proposte, delle scoperte e dello sviluppo dei bambini. Scarica e conosci in profondità il lavoro svolto.",
+                  pt: 'Escolha uma área para conhecer os relatórios e o registro cuidadoso das propostas, das descobertas e do desenvolvimento das crianças.',
+                  it: 'Scegli un\'area per scoprire le relazioni e il registro attento delle proposte, delle scoperte e dello sviluppo dei bambini.',
                 })}
               </p>
             </div>
           </AnimatedSection>
 
-          {/* GRID RELATORIOS */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {reports.map((report, index) => (
-              <AnimatedSection key={index} delay={index * 0.08}>
-                <div className="bg-white rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-[0_16px_48px_rgba(0,0,0,0.13)] transition-shadow duration-300">
-                  {/* Preview image */}
-                  <div className="relative h-52 overflow-hidden">
+          {/* GRID AREE */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {relatorioAreas.map((area, index) => (
+              <AnimatedSection key={area.slug} delay={index * 0.1}>
+                <Link
+                  to={`/relatorios/${area.slug}`}
+                  className="group block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.13)] hover:-translate-y-2 transition-all duration-500 bg-white border border-gray-100"
+                >
+                  <div className="relative h-72 overflow-hidden">
                     <img
-                      src={report.img}
-                      alt={report.title}
-                      className="w-full h-full object-cover"
+                      src={area.cardImage}
+                      alt={t(area.name)}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                     <span
-                      className="absolute bottom-4 left-4 text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
-                      style={{ backgroundColor: report.color }}
+                      className="absolute top-5 left-5 text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full"
+                      style={{ backgroundColor: area.color }}
                     >
-                      {report.category}
+                      {t({
+                        pt: `${area.reports.length} relatório${area.reports.length > 1 ? 's' : ''}`,
+                        it: `${area.reports.length} relazion${area.reports.length > 1 ? 'i' : 'e'}`,
+                      })}
                     </span>
+                    <div className="absolute bottom-0 left-0 right-0 p-7">
+                      <h3 className="text-2xl font-bold text-white mb-1">{t(area.name)}</h3>
+                      <p className="text-white/85 text-sm leading-relaxed">{t(area.tagline)}</p>
+                    </div>
                   </div>
-
-                  {/* Content */}
-                  <div className="p-7 flex flex-col flex-1 gap-4">
-                    <div
-                      className="w-10 h-1 rounded-full"
-                      style={{ backgroundColor: report.color }}
-                    />
-                    <h3 className="text-lg font-bold text-[var(--deep-blue)] leading-snug">
-                      {report.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed flex-1">
-                      {report.description}
-                    </p>
-                    <a
-                      href={report.href}
-                      download
-                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-opacity hover:opacity-90 mt-2"
-                      style={{ backgroundColor: report.color }}
-                    >
-                      <Download className="w-4 h-4" />
-                      {t({ pt: 'Download relatório completo', it: 'Scarica la relazione completa' })}
-                    </a>
+                  <div className="px-7 py-5 flex items-center justify-between">
+                    <span className="font-semibold" style={{ color: area.color }}>
+                      {t({ pt: 'Ver relatórios', it: 'Vedi le relazioni' })}
+                    </span>
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" style={{ color: area.color }} />
                   </div>
-                </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>
@@ -231,6 +137,6 @@ export function RelatoriosPage() {
           </AnimatedSection>
         </div>
       </section>
-    </main>
+    </>
   );
 }
