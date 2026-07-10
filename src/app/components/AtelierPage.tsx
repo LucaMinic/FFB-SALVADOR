@@ -2,11 +2,11 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/7-2.jpeg';
-import img1 from '../../imports/5-1.jpeg';
-import img2 from '../../imports/8-2.jpeg';
-import img3 from '../../imports/3-1.jpeg';
-import img4 from '../../imports/13-4.jpeg';
+import heroImg from '../../imports/nuove/ambiente.png';
+import img1 from '../../imports/nuove/_DSF1797.jpg';
+import img2 from '../../imports/7-2.jpeg';
+import img3 from '../../imports/nuove/_DSF1859.jpg';
+import img4 from '../../imports/nuove/_DSF1790.jpg';
 
 export function AtelierPage() {
   const t = useT();

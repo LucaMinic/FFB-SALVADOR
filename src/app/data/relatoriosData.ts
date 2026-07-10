@@ -5,7 +5,7 @@ import img4 from '../../imports/nuove/r4bis.jpg';
 import img5 from '../../imports/nuove/r5bis.jpg';
 import img6 from '../../imports/nuove/r6.jpg';
 import img7 from '../../imports/nuove/r2.jpg';
-import areaAlimentacaoImg from '../../imports/nuove/r6bis.jpg';
+import areaAlimentacaoImg from '../../imports/nuove/r4bis.jpg';
 import africaImg from '../../imports/nuove/africa01ok.png';
 import transporteImg from '../../imports/nuove/meios-transporte.jpg';
 import miudoImg from '../../imports/nuove/RELATORIO PEQUENOS AMINAIS2.jpeg';

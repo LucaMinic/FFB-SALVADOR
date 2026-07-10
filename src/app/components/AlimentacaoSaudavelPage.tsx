@@ -2,8 +2,8 @@ import { ChevronDown, Leaf, Clock, Users, Target } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/9-1.jpeg';
-import hortaImg from '../../imports/12.jpeg';
+import heroImg from '../../imports/nuove/r4bis.jpg';
+import hortaImg from '../../imports/nuove/r4.jpg';
 
 export function AlimentacaoSaudavelPage() {
   const t = useT();
