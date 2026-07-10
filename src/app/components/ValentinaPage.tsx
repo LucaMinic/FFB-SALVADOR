@@ -1,5 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
+import { ShareButtons } from './ShareButtons';
 import { ChevronDown, Calendar } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/19.jpeg';
@@ -12,7 +13,7 @@ export function ValentinaPage() {
   return (
     <div className="bg-white">
       {/* SECTION 1 - HERO */}
-      <section className="relative h-[90vh] min-h-[700px] flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center overflow-hidden py-24" style={{ minHeight: 'clamp(700px, 90vh, 100vh)' }}>
         <div className="absolute inset-0">
           <img
             src={heroImg}
@@ -48,8 +49,14 @@ export function ValentinaPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <AnimatedSection delay={0.5}>
+            <ShareButtons
+              title={t({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina' })}
+              variant="dark"
+              className="mt-10"
+            />
+          </AnimatedSection>
+          <div className="flex justify-center mt-10 animate-bounce">
             <ChevronDown className="w-8 h-8 text-white/80" />
           </div>
         </div>

@@ -2,6 +2,7 @@ import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
 import { Link } from 'react-router';
 import heroImg from '../../imports/narrazioni_africane_ok.jpg';
 import videoRicordi from '../../imports/Ricordi_e_narrazioni_africane.mp4';
@@ -55,6 +56,13 @@ export function RicordiNarrazioniPage() {
                 {t({ pt: 'Assista ao relato', it: 'Guarda il racconto' })}
               </a>
             </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane' })}
+              variant="dark"
+              className="mt-6"
+            />
           </AnimatedSection>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">

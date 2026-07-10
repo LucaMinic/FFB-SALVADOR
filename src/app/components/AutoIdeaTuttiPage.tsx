@@ -2,6 +2,7 @@ import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
 import { Link } from 'react-router';
 import heroImg from '../../imports/Patricia.jpg';
 import videoAuto from '../../imports/Auto_un_idea_di_tutti.mp4';
@@ -55,6 +56,13 @@ export function AutoIdeaTuttiPage() {
                 {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario' })}
               </a>
             </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti" })}
+              variant="dark"
+              className="mt-6"
+            />
           </AnimatedSection>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">

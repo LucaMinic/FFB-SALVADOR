@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { Lightbox } from './Lightbox';
+import { ShareButtons } from './ShareButtons';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/21-4.jpeg';
@@ -57,7 +58,7 @@ export function EventiSpecialiPage() {
   return (
     <div className="bg-white">
       {/* SECTION 1 - HERO */}
-      <section className="relative h-[90vh] min-h-[700px] flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center overflow-hidden py-24" style={{ minHeight: 'clamp(700px, 90vh, 100vh)' }}>
         <div className="absolute inset-0">
           <img
             src={heroImg}
@@ -88,8 +89,14 @@ export function EventiSpecialiPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'Eventos Especiais', it: 'Eventi Speciali' })}
+              variant="dark"
+              className="mt-10"
+            />
+          </AnimatedSection>
+          <div className="flex justify-center mt-10 animate-bounce">
             <ChevronDown className="w-8 h-8 text-white/80" />
           </div>
         </div>

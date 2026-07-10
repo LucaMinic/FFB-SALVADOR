@@ -2,6 +2,7 @@ import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
 import { Link } from 'react-router';
 import heroImg from '../../imports/Suor_Mariangela.jpg';
 import finalCtaImg from '../../imports/14.jpeg';
@@ -54,6 +55,13 @@ export function IntervistaAlCentroPage() {
                 {t({ pt: 'Assista à entrevista', it: "Guarda l'intervista" })}
               </a>
             </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro' })}
+              variant="dark"
+              className="mt-6"
+            />
           </AnimatedSection>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">

@@ -2,6 +2,7 @@ import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
 import { Link } from 'react-router';
 import heroImg from '../../imports/21.jpeg';
 import finalCtaImg from '../../imports/14.jpeg';
@@ -57,6 +58,13 @@ export function VisitaPresidentePage() {
                 {t({ pt: 'Assista ao vídeo', it: 'Guarda il video' })}
               </a>
             </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'A visita do Presidente da República Italiana', it: 'La visita del Presidente della Repubblica Italiana' })}
+              variant="dark"
+              className="mt-6"
+            />
           </AnimatedSection>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">

@@ -2,6 +2,7 @@ import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
 import { Link } from 'react-router';
 import heroImg from '../../imports/converted-3.jpg';
 import videoPrimaPietra from '../../imports/video_prima_pietra.mp4';
@@ -55,6 +56,13 @@ export function PosaPrimaPietraPage() {
                 {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario' })}
               </a>
             </div>
+          </AnimatedSection>
+          <AnimatedSection delay={0.4}>
+            <ShareButtons
+              title={t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra' })}
+              variant="dark"
+              className="mt-6"
+            />
           </AnimatedSection>
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
