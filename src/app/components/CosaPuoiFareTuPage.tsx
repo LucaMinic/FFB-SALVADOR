@@ -95,7 +95,7 @@ export function CosaPuoiFareTuPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedImage>
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition-all duration-500">
-                <img
+                <img loading="lazy"
                   src={donationImg}
                   alt={t({ pt: 'Doação', it: 'Donazione' })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
@@ -156,7 +156,7 @@ export function CosaPuoiFareTuPage() {
 
             <AnimatedImage delay={0.2}>
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
-                <img
+                <img loading="lazy"
                   src={impactImg}
                   alt={t({ pt: '5x1000', it: '5x1000' })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
@@ -173,7 +173,7 @@ export function CosaPuoiFareTuPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedImage>
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition-all duration-500">
-                <img
+                <img loading="lazy"
                   src={supportImg}
                   alt={t({ pt: 'Apoio à distância', it: 'Sostegno a distanza' })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
@@ -331,7 +331,7 @@ export function CosaPuoiFareTuPage() {
       {/* SECTION 5 - QUOTE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={impactImg}
             alt={t({ pt: 'Centro', it: 'Centro' })}
             className="w-full h-full object-cover"
@@ -381,7 +381,7 @@ export function CosaPuoiFareTuPage() {
       {/* SECTION 7 - FINAL CTA */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt={t({ pt: 'Faça parte desta história', it: 'Diventa parte di questa storia' })}
             className="w-full h-full object-cover"

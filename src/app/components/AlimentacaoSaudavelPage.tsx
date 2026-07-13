@@ -200,7 +200,7 @@ export function AlimentacaoSaudavelPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={hortaImg}
                 alt={t({ pt: 'Horta e alimentação saudável', it: 'Orto e alimentazione sana' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-[520px]"

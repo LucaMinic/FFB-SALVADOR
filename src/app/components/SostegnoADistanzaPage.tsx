@@ -97,7 +97,7 @@ export function SostegnoADistanzaPage() {
 
             <AnimatedImage delay={0.2}>
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.12)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition-all duration-500">
-                <img
+                <img loading="lazy"
                   src={childrenImg}
                   alt={t({ pt: 'Crianças do Centro', it: 'Bambini del Centro' })}
                   className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
@@ -162,7 +162,7 @@ export function SostegnoADistanzaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedImage>
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-all duration-500">
-                <img
+                <img loading="lazy"
                   src={familyImg}
                   alt={t({ pt: 'Família no Centro', it: 'Famiglia al Centro' })}
                   className="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
@@ -233,14 +233,14 @@ export function SostegnoADistanzaPage() {
                 href="#sostegno-brasile"
                 className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
               >
-                <img src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
+                <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
                 <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se sostieni dal Brasile — clicca qui' })}</span>
               </a>
               <a
                 href="#sostegno-italia"
                 className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
               >
-                <img src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
+                <img loading="lazy" src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
                 <span>{t({ pt: "Se você doa da Itália — clique aqui", it: "Se sostieni dall'Italia — clicca qui" })}</span>
               </a>
             </div>
@@ -259,7 +259,7 @@ export function SostegnoADistanzaPage() {
                 {/* Dal Brasile */}
                 <div id="sostegno-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
                   <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
-                    <img src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
+                    <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
                     {t({ pt: 'Se você doa do Brasil', it: 'Se sostieni dal Brasile' })}
                   </h4>
                   <div className="space-y-4">
@@ -280,7 +280,7 @@ export function SostegnoADistanzaPage() {
                       </div>
                       <p className="text-sm text-gray-500 mt-3">Fundação Betânia Onlus</p>
                       <div className="mt-4 flex justify-center">
-                        <img src={qrPix} alt="QR Code PIX" className="w-40 h-40 object-contain rounded-lg border border-gray-200 p-2 bg-white" />
+                        <img loading="lazy" src={qrPix} alt="QR Code PIX" className="w-40 h-40 object-contain rounded-lg border border-gray-200 p-2 bg-white" />
                       </div>
                     </div>
                     {/* Dados bancários */}
@@ -301,7 +301,7 @@ export function SostegnoADistanzaPage() {
                 {/* Dall'Italia */}
                 <div id="sostegno-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
                   <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
-                    <img src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
+                    <img loading="lazy" src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
                     {t({ pt: 'Se você doa da Itália', it: "Se sostieni dall'Italia" })}
                   </h4>
                   <div className="space-y-5">
@@ -400,7 +400,7 @@ export function SostegnoADistanzaPage() {
       {/* FINAL CTA */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt="Centro Nossa Senhora Aparecida"
             className="w-full h-full object-cover"

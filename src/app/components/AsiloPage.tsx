@@ -116,7 +116,7 @@ export function AsiloPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
             <AnimatedSection>
               <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={pastiImg}
                   alt={t({ pt: 'Refeições na creche', it: "I pasti all'asilo" })}
                   className="w-full h-auto object-cover"
@@ -148,7 +148,7 @@ export function AsiloPage() {
           {/* Missione — card hero con immagine */}
           <AnimatedSection>
             <div className="relative rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center">
-              <img src={missioneImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+              <img loading="lazy" src={missioneImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-[var(--deep-blue)]/72" />
               <div className="relative z-10 px-8 md:px-16 py-12 max-w-3xl">
                 <h2 className="text-3xl md:text-5xl text-white mb-5">
@@ -250,7 +250,7 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={metodologiaImg}
                   alt={t({ pt: 'Ambiente educativo da creche', it: "Ambiente educativo dell'asilo" })}
                   className="w-full h-auto object-cover"
@@ -344,7 +344,7 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={mostrasImg}
                   alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica' })}
                   className="w-full h-auto object-cover"
@@ -407,7 +407,7 @@ export function AsiloPage() {
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
                   <div className="relative h-36 flex-shrink-0 overflow-hidden">
-                    <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+                    <img loading="lazy" src={project.img} alt={project.title} className="w-full h-full object-cover" />
                     <div className="absolute inset-0" style={{ backgroundColor: `${project.color}33` }} />
                   </div>
                   <div className="p-5 bg-[var(--beige)] flex-1" style={{ borderTop: `4px solid ${project.color}` }}>
@@ -610,7 +610,7 @@ export function AsiloPage() {
 
           <AnimatedSection>
             <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-16">
-              <img
+              <img loading="lazy"
                 src={comunitaImg}
                 alt="Uma comunidade educativa"
                 className="w-full h-auto object-cover"
@@ -657,7 +657,7 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={formacaoContImg}
                   alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti' })}
                   className="w-full h-auto object-cover"
@@ -697,7 +697,7 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={educazioneImg}
                   alt="Educazione a tempo pieno"
                   className="w-full h-auto object-cover"
@@ -902,7 +902,7 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={famiglieImg}
                   alt="Famiglie e asilo"
                   className="w-full h-auto"
@@ -981,7 +981,7 @@ export function AsiloPage() {
               ].map((post, index) => (
                 <div key={index} className="px-2">
                   <div className="group aspect-square overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-300">
-                    <img
+                    <img loading="lazy"
                       src={post}
                       alt={t({ pt: `Post Instagram ${index + 1}`, it: `Post Instagram ${index + 1}` })}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

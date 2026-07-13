@@ -69,7 +69,7 @@ export function FraternitaPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={padrePancrazioImg}
                   alt="Padre Pancrazio Nicola Gaudioso, fondatore della Fraternità"
                   className="w-full h-96 object-cover"
@@ -102,7 +102,7 @@ export function FraternitaPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={fotoConveritaImg}
                   alt="La Fraternità Francescana di Betania"
                   className="w-full h-96 object-cover"
@@ -248,7 +248,7 @@ export function FraternitaPage() {
               {t({ pt: 'A Fraternidade está presente na Itália, Europa e Brasil, adaptando a sua presença às necessidades dos territórios.', it: 'La Fraternità è presente in Italia, Europa e Brasile, adattando la propria presenza alle esigenze dei territori.' })}
             </p>
             <div className="rounded-2xl overflow-hidden shadow-lg max-w-3xl mx-auto mb-10">
-              <img
+              <img loading="lazy"
                 src={mappaFraternitaImg}
                 alt="Presenza della Fraternità nel mondo"
                 className="w-full h-auto object-cover"

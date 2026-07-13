@@ -39,7 +39,7 @@ export function FraternitaIntro() {
 
           <AnimatedImage direction="right">
             <div className="rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.15)] transition-all duration-500 overflow-hidden">
-              <img
+              <img loading="lazy"
                 src={fraternitaImg}
                 alt="Fraternità Francescana di Betania"
                 className="w-full h-96 object-cover"

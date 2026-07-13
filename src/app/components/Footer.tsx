@@ -138,7 +138,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
             <Link to="/">
-              <img src={logo} alt="Fundação Betânia Onlus" className="h-14 w-auto mb-6" />
+              <img loading="lazy" src={logo} alt="Fundação Betânia Onlus" className="h-14 w-auto mb-6" />
             </Link>
             <p className="text-sm text-gray-300">
               Fundação Betânia Onlus

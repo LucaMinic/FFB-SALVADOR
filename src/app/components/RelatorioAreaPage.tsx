@@ -73,7 +73,7 @@ export function RelatorioAreaPage() {
                 <div className="bg-white rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-[0_16px_48px_rgba(0,0,0,0.13)] transition-shadow duration-300">
                   {/* Preview image */}
                   <div className="relative h-52 overflow-hidden">
-                    <img
+                    <img loading="lazy"
                       src={report.img}
                       alt={t(report.title)}
                       className="w-full h-full object-cover"

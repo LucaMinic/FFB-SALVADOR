@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/nuove/ambiente.png';
+import heroImg from '../../imports/nuove/ambiente.jpg';
 import img1 from '../../imports/nuove/_DSF1797.jpg';
 import img2 from '../../imports/7-2.jpeg';
 import img3 from '../../imports/nuove/_DSF1859.jpg';
@@ -78,7 +78,7 @@ export function AtelierPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={img1}
                 alt={t({ pt: 'Ateliê criativo', it: 'Atelier creativo' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -93,7 +93,7 @@ export function AtelierPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img2}
                 alt={t({ pt: 'A atelierista', it: "L'atelierista" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -146,7 +146,7 @@ export function AtelierPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={img3}
                 alt={t({ pt: 'Materiais no ateliê', it: "Materiali nell'atelier" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -161,7 +161,7 @@ export function AtelierPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img4}
                 alt={t({ pt: 'Contextos investigativos', it: 'Contesti investigativi' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"

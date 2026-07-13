@@ -74,7 +74,7 @@ export function Lightbox({ images, currentIndex, onClose, onNext, onPrev, alt = 
         className="relative max-w-[95vw] max-h-[95vh] flex items-center justify-center"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <img loading="lazy"
           src={images[currentIndex]}
           alt={alt}
           className="max-w-full max-h-[95vh] w-auto h-auto object-contain rounded-lg shadow-2xl"

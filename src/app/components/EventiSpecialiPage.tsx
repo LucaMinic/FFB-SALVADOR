@@ -129,7 +129,7 @@ export function EventiSpecialiPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
             <AnimatedSection>
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <img loading="lazy"
                   src={presidentImg}
                   alt={t({ pt: 'Visita do Presidente da República Italiana', it: 'Visita del Presidente della Repubblica Italiana' })}
                   className="w-full h-auto object-cover"
@@ -200,7 +200,7 @@ export function EventiSpecialiPage() {
               <AnimatedSection key={index} delay={0.1 * (index % 3)}>
                 <div className="group cursor-pointer" onClick={() => openLightbox(index)}>
                   <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all relative">
-                    <img
+                    <img loading="lazy"
                       src={img}
                       alt={t({ pt: `Visita do Presidente - Foto ${index + 1}`, it: `Visita del Presidente - Foto ${index + 1}` })}
                       className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
@@ -237,7 +237,7 @@ export function EventiSpecialiPage() {
       {/* SECTION 7 - CTA FINALE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt={t({ pt: 'Cada encontro torna-se parte da história do Centro', it: 'Ogni incontro diventa parte della storia del Centro' })}
             className="w-full h-full object-cover"

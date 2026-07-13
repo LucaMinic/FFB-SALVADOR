@@ -123,7 +123,7 @@ export function ProjetosPermanentesPage() {
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="bg-white rounded-3xl overflow-hidden shadow-lg h-full flex flex-col">
                   <div className="relative h-56 flex-shrink-0 overflow-hidden">
-                    <img src={project.img} alt={project.title} className="w-full h-full object-cover" />
+                    <img loading="lazy" src={project.img} alt={project.title} className="w-full h-full object-cover" />
                     <div className="absolute inset-0" style={{ backgroundColor: `${project.color}33` }} />
                   </div>
                   <div className="p-8 flex-1 flex flex-col" style={{ borderTop: `4px solid ${project.color}` }}>

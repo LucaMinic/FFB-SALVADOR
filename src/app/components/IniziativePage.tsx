@@ -104,7 +104,7 @@ export function IniziativePage() {
                         controls
                       />
                     ) : (
-                      <img
+                      <img loading="lazy"
                         src={initiative.image}
                         alt={initiative.title}
                         className="w-full h-full object-cover"

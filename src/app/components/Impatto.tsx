@@ -26,7 +26,7 @@ export function Impatto() {
           <AnimatedSection delay={0}>
             <Link to="/asilo" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={dailyLifeImage}
                   alt={t({ pt: 'Creche', it: 'Asilo' })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
@@ -41,7 +41,7 @@ export function Impatto() {
           <AnimatedSection delay={0.15}>
             <Link to="/progetto-scuola" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={educationImage}
                   alt={t({ pt: 'Projeto Escola', it: 'Progetto Scuola' })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
@@ -57,7 +57,7 @@ export function Impatto() {
 
         <AnimatedSection>
           <div className="max-w-2xl mx-auto text-center mb-12 pt-8 border-t border-gray-200">
-            <img
+            <img loading="lazy"
               src={padrePancrazioImg}
               alt="Padre Pancrazio"
               className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover mx-auto mb-5 shadow-lg ring-4 ring-white"
@@ -93,7 +93,7 @@ export function Impatto() {
             <AnimatedSection key={point.text} delay={index * 0.1}>
               <Link id={point.href.slice(1)} to={point.href} className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
                 <div className="overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={point.image}
                     alt={point.text}
                     className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"

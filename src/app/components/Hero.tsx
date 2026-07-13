@@ -26,6 +26,7 @@ export function Hero() {
     autoplaySpeed: 5000,
     fade: true,
     arrows: false,
+    lazyLoad: 'progressive' as const,
   };
 
   const handleSlideClick = () => {

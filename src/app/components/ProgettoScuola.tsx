@@ -46,7 +46,7 @@ export function ProgettoScuola() {
           </AnimatedImage>
           <AnimatedImage delay={0.15}>
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
-              <img
+              <img loading="lazy"
                 src={foundationCeremonyImage}
                 alt={t({ pt: 'Cerimônia de fundação', it: 'Cerimonia di fondazione' })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"

@@ -127,7 +127,7 @@ export function NossaMetodologiaPage() {
 
           {/* Immagine grande centrata */}
           <AnimatedSection delay={0.3}>
-            <img
+            <img loading="lazy"
               src={img1}
               alt={t({ pt: 'Crianças em interação', it: 'Bambini in interazione' })}
               className="w-full rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.13)] object-cover h-80 md:h-[480px]"
@@ -199,7 +199,7 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1}>
-              <img
+              <img loading="lazy"
                 src={reggioImg}
                 alt={t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -242,7 +242,7 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img2}
                 alt={t({ pt: 'Pedagogias participativas', it: 'Pedagogie partecipative' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -310,7 +310,7 @@ export function NossaMetodologiaPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={mostrasImg}
                 alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -369,7 +369,7 @@ export function NossaMetodologiaPage() {
           </div>
 
           <AnimatedSection delay={0.3}>
-            <img
+            <img loading="lazy"
               src={formacaoContImg}
               alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti' })}
               className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover"
@@ -458,7 +458,7 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img4}
                 alt={t({ pt: 'Ambiente educativo', it: 'Ambiente educativo' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"

@@ -72,7 +72,7 @@ export function CentroPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={centroImg}
                   alt="Centro Nossa Senhora Aparecida"
                   className="w-full h-96 object-cover"
@@ -150,7 +150,7 @@ export function CentroPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <AnimatedSection>
               <div className="rounded-3xl overflow-hidden shadow-xl h-full">
-                <img
+                <img loading="lazy"
                   src={giornataImg1}
                   alt="Una giornata al Centro"
                   className="w-full h-full min-h-[400px] object-cover"
@@ -190,7 +190,7 @@ export function CentroPage() {
             </div>
             <AnimatedSection delay={0.2}>
               <div className="rounded-3xl overflow-hidden shadow-xl h-full">
-                <img
+                <img loading="lazy"
                   src={giornataImg2}
                   alt="Momenti condivisi"
                   className="w-full h-full min-h-[400px] object-cover"
@@ -303,7 +303,7 @@ export function CentroPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="rounded-3xl overflow-hidden shadow-xl">
-                <img
+                <img loading="lazy"
                   src={documentariImg}
                   alt={t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' })}
                   className="w-full h-full min-h-[400px] object-cover"
@@ -372,7 +372,7 @@ export function CentroPage() {
             </AnimatedSection>
             <AnimatedSection>
               <div className="rounded-3xl overflow-hidden shadow-xl">
-                <img
+                <img loading="lazy"
                   src={iniziativeImg}
                   alt={t({ pt: 'Iniciativas', it: 'Iniziative' })}
                   className="w-full h-full min-h-[400px] object-cover"

@@ -267,7 +267,7 @@ export function AvanzamentoLavoriPage() {
                                     className="rounded-2xl overflow-hidden shadow-md aspect-[4/3] cursor-pointer group"
                                     onClick={() => openLightbox(images.map(img => img.src), i)}
                                   >
-                                    <img
+                                    <img loading="lazy"
                                       src={m.src}
                                       alt={m.alt || `${t(entry.title)} – ${i + 1}`}
                                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

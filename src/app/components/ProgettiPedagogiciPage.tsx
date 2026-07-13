@@ -110,7 +110,7 @@ export function ProgettiPedagogiciPage() {
                   className="group block bg-white rounded-3xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:-translate-y-2"
                 >
                   <div className="relative overflow-hidden aspect-[4/5]">
-                    <img
+                    <img loading="lazy"
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

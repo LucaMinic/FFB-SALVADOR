@@ -79,7 +79,7 @@ export function EducazionePage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={img1}
                 alt={t({ pt: 'Educação no Centro', it: 'Educazione al Centro' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -94,7 +94,7 @@ export function EducazionePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img2}
                 alt={t({ pt: 'Atividades educativas', it: 'Attività educative' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -147,7 +147,7 @@ export function EducazionePage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img
+              <img loading="lazy"
                 src={img3}
                 alt={t({ pt: 'Educadores', it: 'Educatori' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
@@ -162,7 +162,7 @@ export function EducazionePage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img
+              <img loading="lazy"
                 src={img4}
                 alt={t({ pt: 'Futuro através da educação', it: 'Futuro attraverso l\'educazione' })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"

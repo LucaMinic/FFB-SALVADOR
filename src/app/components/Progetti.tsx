@@ -16,7 +16,7 @@ export function Progetti() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <AnimatedImage>
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
-              <img
+              <img loading="lazy"
                 src={progettiImage}
                 alt={t({ pt: 'Os nossos projetos', it: 'I nostri progetti' })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"

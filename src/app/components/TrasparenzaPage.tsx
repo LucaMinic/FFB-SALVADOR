@@ -242,7 +242,7 @@ export function TrasparenzaPage() {
       {/* SECTION 7 - UN IMPEGNO QUOTIDIANO */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={emotionalImg}
             alt={t({ pt: 'Um compromisso cotidiano', it: 'Un impegno quotidiano' })}
             className="w-full h-full object-cover"

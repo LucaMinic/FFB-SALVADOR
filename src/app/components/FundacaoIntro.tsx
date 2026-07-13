@@ -12,7 +12,7 @@ export function FundacaoIntro() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <AnimatedImage>
             <div className="rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.15)] transition-all duration-500 overflow-hidden">
-              <img
+              <img loading="lazy"
                 src={fundacaoImg}
                 alt={t({ pt: 'Criança no Centro Nossa Senhora Aparecida', it: 'Bambino al Centro Nossa Senhora Aparecida' })}
                 className="w-full h-96 object-cover"

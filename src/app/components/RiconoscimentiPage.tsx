@@ -100,7 +100,7 @@ export function RiconoscimentiPage() {
               <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[var(--deep-blue)] h-full">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-20 h-20 flex items-center justify-center flex-shrink-0 bg-white rounded-lg">
-                    <img src={emblemItaly} alt={t({ pt: 'Emblema da República Italiana', it: 'Emblema della Repubblica Italiana' })} className="w-full h-full object-contain" />
+                    <img loading="lazy" src={emblemItaly} alt={t({ pt: 'Emblema da República Italiana', it: 'Emblema della Repubblica Italiana' })} className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
                     {t({ pt: 'Presidência da República Italiana', it: 'Presidenza della Repubblica Italiana' })}
@@ -117,7 +117,7 @@ export function RiconoscimentiPage() {
               <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[var(--soft-green)] h-full">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-20 h-20 flex items-center justify-center flex-shrink-0 bg-white rounded-lg">
-                    <img src={municipioLogo} alt={t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia' })} className="w-full h-full object-contain" />
+                    <img loading="lazy" src={municipioLogo} alt={t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia' })} className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
                     {t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia' })}
@@ -206,7 +206,7 @@ export function RiconoscimentiPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <img loading="lazy"
                   src={educativaImg}
                   alt={t({ pt: 'Projeto educativo', it: 'Progetto educativo' })}
                   className="w-full h-auto object-cover"
@@ -469,7 +469,7 @@ export function RiconoscimentiPage() {
       {/* SECTION 8 - CTA FINALE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt="Centro Nossa Senhora Aparecida"
             className="w-full h-full object-cover"

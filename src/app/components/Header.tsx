@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
@@ -59,8 +59,33 @@ function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Set<string>>(new Set());
+  const [desktopOpenMenu, setDesktopOpenMenu] = useState<string | null>(null);
+  const [desktopOpenNested, setDesktopOpenNested] = useState<string | null>(null);
+  const desktopNavRef = useRef<HTMLElement>(null);
   const location = useLocation();
   const t = useT();
+
+  const closeDesktopMenus = () => {
+    setDesktopOpenMenu(null);
+    setDesktopOpenNested(null);
+  };
+
+  // Tablets/touch devices have no real hover state, so the dropdown must also
+  // open/close on tap; this closes it when tapping anywhere outside the nav.
+  useEffect(() => {
+    if (!desktopOpenMenu) return;
+    const handlePointerDown = (e: PointerEvent) => {
+      if (desktopNavRef.current && !desktopNavRef.current.contains(e.target as Node)) {
+        closeDesktopMenus();
+      }
+    };
+    document.addEventListener('pointerdown', handlePointerDown);
+    return () => document.removeEventListener('pointerdown', handlePointerDown);
+  }, [desktopOpenMenu]);
+
+  useEffect(() => {
+    closeDesktopMenus();
+  }, [location.pathname]);
 
   const toggleSubmenu = (key: string) => {
     setOpenSubmenus(prev => {
@@ -178,41 +203,69 @@ export function Header() {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex gap-6 items-center">
+            <nav ref={desktopNavRef} className="hidden lg:flex gap-6 items-center">
               {menuItems.map((item) => {
                 const active = isSubmenuActive(item);
+                const isMenuOpen = desktopOpenMenu === item.label;
                 return item.submenu ? (
                   <div key={item.label} className="relative group">
-                    <button className={`transition-colors font-semibold flex items-center gap-1 ${
-                      active || (item.isRoute && location.pathname === item.href)
-                        ? 'text-[var(--deep-blue)]'
-                        : 'text-gray-700 hover:text-[var(--deep-blue)]'
-                    }`}>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setDesktopOpenMenu((prev) => {
+                          if (prev === item.label) {
+                            setDesktopOpenNested(null);
+                            return null;
+                          }
+                          setDesktopOpenNested(null);
+                          return item.label;
+                        })
+                      }
+                      aria-expanded={isMenuOpen}
+                      className={`transition-colors font-semibold flex items-center gap-1 ${
+                        active || (item.isRoute && location.pathname === item.href)
+                          ? 'text-[var(--deep-blue)]'
+                          : 'text-gray-700 hover:text-[var(--deep-blue)]'
+                      }`}>
                       {item.label}
                       <ChevronDown className="w-4 h-4" />
                     </button>
-                    <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[210px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      {item.submenu.map((subitem) =>
-                        subitem.submenu ? (
+                    <div className={`absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[210px] transition-all duration-200 z-50 group-hover:opacity-100 group-hover:visible ${
+                      isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                    }`}>
+                      {item.submenu.map((subitem) => {
+                        const isNestedOpen = desktopOpenNested === subitem.href;
+                        return subitem.submenu ? (
                           /* Item with nested flyout */
                           <div key={subitem.href} className="relative group/nested">
-                            <div className={`flex items-center justify-between px-4 py-2 transition-colors font-semibold cursor-pointer ${
+                            <div className={`flex items-center justify-between px-4 py-2 transition-colors font-semibold ${
                               location.pathname === subitem.href || subitem.submenu.some(n => location.pathname === n.href)
                                 ? 'text-[var(--deep-blue)] bg-gray-50'
                                 : 'text-gray-700 hover:text-[var(--deep-blue)] hover:bg-gray-50'
                             }`}>
-                              <Link to={subitem.href} className="flex-1">
+                              <Link to={subitem.href} className="flex-1" onClick={closeDesktopMenus}>
                                 {subitem.label}
                               </Link>
-                              <ChevronRight className="w-3.5 h-3.5 ml-2 flex-shrink-0" />
+                              <button
+                                type="button"
+                                onClick={() => setDesktopOpenNested((prev) => (prev === subitem.href ? null : subitem.href))}
+                                aria-expanded={isNestedOpen}
+                                aria-label={subitem.label}
+                                className="p-1 -m-1 flex-shrink-0"
+                              >
+                                <ChevronRight className="w-3.5 h-3.5 ml-2" />
+                              </button>
                             </div>
                             {/* Flyout nested submenu */}
-                            <div className="absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg py-2 min-w-[190px] opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50">
+                            <div className={`absolute left-full top-0 ml-1 bg-white shadow-lg rounded-lg py-2 min-w-[190px] transition-all duration-200 z-50 group-hover/nested:opacity-100 group-hover/nested:visible ${
+                              isNestedOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+                            }`}>
                               {subitem.submenu.map((nested) =>
                                 nested.isRoute ? (
                                   <Link
                                     key={nested.href}
                                     to={nested.href}
+                                    onClick={closeDesktopMenus}
                                     className={`block px-4 py-2 transition-colors font-semibold ${
                                       location.pathname === nested.href
                                         ? 'text-[var(--deep-blue)] bg-gray-50'
@@ -229,6 +282,7 @@ export function Header() {
                           <Link
                             key={subitem.href}
                             to={subitem.href}
+                            onClick={closeDesktopMenus}
                             className={`block px-4 py-2 transition-colors font-semibold ${
                               location.pathname === subitem.href
                                 ? 'text-[var(--deep-blue)] bg-gray-50'
@@ -241,12 +295,13 @@ export function Header() {
                           <a
                             key={subitem.href}
                             href={subitem.href}
+                            onClick={closeDesktopMenus}
                             className="block px-4 py-2 text-gray-700 hover:text-[var(--deep-blue)] hover:bg-gray-50 transition-colors font-semibold"
                           >
                             {subitem.label}
                           </a>
-                        )
-                      )}
+                        );
+                      })}
                     </div>
                   </div>
                 ) : item.isRoute ? (

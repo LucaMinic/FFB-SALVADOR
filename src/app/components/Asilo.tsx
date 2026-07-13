@@ -37,7 +37,7 @@ export function Asilo() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <AnimatedImage>
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
-              <img
+              <img loading="lazy"
                 src={asiloChildrenImage}
                 alt={t({ pt: 'Crianças da creche', it: "Bambini dell'asilo" })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
@@ -46,7 +46,7 @@ export function Asilo() {
           </AnimatedImage>
           <AnimatedImage delay={0.15}>
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
-              <img
+              <img loading="lazy"
                 src={childrenMealImage}
                 alt={t({ pt: 'Atividade de culinária', it: 'Attività di cucina' })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"

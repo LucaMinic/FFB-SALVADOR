@@ -79,7 +79,7 @@ export function RelatoriosPage() {
                   className="group block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.13)] hover:-translate-y-2 transition-all duration-500 bg-white border border-gray-100"
                 >
                   <div className="relative h-72 overflow-hidden">
-                    <img
+                    <img loading="lazy"
                       src={area.cardImage}
                       alt={t(area.name)}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

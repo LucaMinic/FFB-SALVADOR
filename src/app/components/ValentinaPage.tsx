@@ -68,7 +68,7 @@ export function ValentinaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <img loading="lazy"
                   src={storyImg}
                   alt={t({ pt: 'Valentina e a sua família', it: 'Valentina e la sua famiglia' })}
                   className="w-full h-auto object-cover"
@@ -328,7 +328,7 @@ export function ValentinaPage() {
       {/* SECTION 7 - GRAZIE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt={t({ pt: 'Obrigado', it: 'Grazie' })}
             className="w-full h-full object-cover"

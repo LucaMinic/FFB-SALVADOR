@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/nuove/33.jpeg';
 import chiSiamoImg from '../../imports/fundacao-gruppo-comunita.jpeg';
-import mappaItaliaImg from '../../imports/mappa_Italia_mondo.png';
+import mappaItaliaImg from '../../imports/mappa_Italia_mondo.jpg';
 import fraternitaLegameImg from '../../imports/fundacao-fraternita-legame.jpeg';
 
 export function FundacaoPage() {
@@ -76,7 +76,7 @@ export function FundacaoPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <img loading="lazy"
                   src={chiSiamoImg}
                   alt="La Fundação Betania"
                   className="w-full h-96 object-cover"
@@ -200,7 +200,7 @@ export function FundacaoPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center">
-                <img
+                <img loading="lazy"
                   src={mappaItaliaImg}
                   alt="Italia e Brasile"
                   className="w-full h-auto object-contain"
@@ -280,7 +280,7 @@ export function FundacaoPage() {
               {t({ pt: 'Um vínculo que garante continuidade', it: 'Un legame che garantisce continuità' })}
             </p>
             <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
-              <img
+              <img loading="lazy"
                 src={fraternitaLegameImg}
                 alt={t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania' })}
                 className="w-full h-auto object-cover"

@@ -90,7 +90,7 @@ export function Instagram() {
             {posts.map((post, index) => (
               <div key={index} className="px-2">
                 <div className="group aspect-square overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-300">
-                  <img
+                  <img loading="lazy"
                     src={post}
                     alt={t({ pt: `Post Instagram ${index + 1}`, it: `Post Instagram ${index + 1}` })}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

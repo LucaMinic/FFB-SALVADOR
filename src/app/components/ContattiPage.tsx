@@ -219,7 +219,7 @@ export function ContattiPage() {
       {/* SECTION 4 - CTA FINALE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt="Centro Nossa Senhora Aparecida"
             className="w-full h-full object-cover"

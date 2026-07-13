@@ -84,14 +84,14 @@ export function DonaOraPage() {
                 href="#doni-brasile"
                 className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
               >
-                <img src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
+                <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
                 <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se doni dal Brasile — clicca qui' })}</span>
               </a>
               <a
                 href="#doni-italia"
                 className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
               >
-                <img src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
+                <img loading="lazy" src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
                 <span>{t({ pt: 'Se você doa da Itália — clique aqui', it: "Se doni dall'Italia — clicca qui" })}</span>
               </a>
             </div>
@@ -115,7 +115,7 @@ export function DonaOraPage() {
                   {/* Se doni dal Brasile */}
                   <div id="doni-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
                     <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
-                      <img src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
+                      <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
                       {t({ pt: 'Se você doa do Brasil', it: 'Se doni dal Brasile' })}
                     </h4>
                     <div className="space-y-4">
@@ -136,7 +136,7 @@ export function DonaOraPage() {
                         </div>
                         <p className="text-sm text-gray-500 mt-3">Fundação Betânia Onlus</p>
                         <div className="mt-4 flex justify-center">
-                          <img src={qrPix} alt="QR Code PIX" className="w-40 h-40 object-contain rounded-lg border border-gray-200 p-2 bg-white" />
+                          <img loading="lazy" src={qrPix} alt="QR Code PIX" className="w-40 h-40 object-contain rounded-lg border border-gray-200 p-2 bg-white" />
                         </div>
                       </div>
                       {/* Dados bancários */}
@@ -157,7 +157,7 @@ export function DonaOraPage() {
                   {/* Se doni dall'Italia */}
                   <div id="doni-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
                     <h4 className="text-xl text-[var(--deep-blue)] mb-5 flex items-center gap-3">
-                      <img src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
+                      <img loading="lazy" src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
                       {t({ pt: 'Se você doa da Itália', it: "Se doni dall'Italia" })}
                     </h4>
                     <div className="space-y-5">
@@ -453,7 +453,7 @@ export function DonaOraPage() {
       {/* SECTION 10 - CTA FINALE */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy"
             src={finalCtaImg}
             alt="Centro Nossa Senhora Aparecida"
             className="w-full h-full object-cover"

@@ -309,7 +309,7 @@ export function ScuolaPage() {
 
           <AnimatedSection delay={0.2}>
             <div className="rounded-3xl overflow-hidden shadow-2xl mb-12">
-              <img
+              <img loading="lazy"
                 src={renderVillaggio}
                 alt="Render architettonico del villaggio educativo"
                 className="w-full h-auto object-cover"
@@ -538,7 +538,7 @@ export function ScuolaPage() {
                   className="rounded-2xl overflow-hidden shadow-lg cursor-pointer transition-transform hover:scale-105"
                   onClick={() => openLightbox(index)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={imgSrc}
                     alt={`Render scuola ${index + 1}`}
                     className="w-full h-full object-cover aspect-[4/3]"
