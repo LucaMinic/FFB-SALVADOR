@@ -1,4 +1,5 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -197,14 +198,13 @@ export function AccompagnamentoFamigliePage() {
                 it: 'Grazie al tuo sostegno, il Centro può continuare a offrire ascolto, accompagnamento e speranza concreta a ogni famiglia che bussa alla nostra porta.',
               })}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doe agora', it: 'Dona ora' })}
-              </Button>
-              <Button variant="secondary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
-              </Button>
-            </div>
+            <Link
+              to="/#accompagnamento-famiglie"
+              className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              {t({ pt: 'Voltar', it: 'Indietro' })}
+            </Link>
           </AnimatedSection>
         </div>
       </section>

@@ -1,4 +1,5 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -197,9 +198,13 @@ export function AccoglienzaQuotidianaPage() {
                 it: 'Grazie al sostegno di tanti amici e benefattori, il Centro continua a essere una presenza concreta accanto ai bambini e alle famiglie di Salvador de Bahia.',
               })}
             </p>
-            <Button variant="primary" to="/dona-ora">
-              {t({ pt: 'Doe agora', it: 'Dona ora' })}
-            </Button>
+            <Link
+              to="/#accoglienza-quotidiana"
+              className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              {t({ pt: 'Voltar', it: 'Indietro' })}
+            </Link>
           </AnimatedSection>
         </div>
       </section>

@@ -39,7 +39,7 @@ export function Impatto() {
             </Link>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
-            <a href="#il-progetto-scuola" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
+            <Link to="/progetto-scuola" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
                 <img
                   src={educationImage}
@@ -51,7 +51,7 @@ export function Impatto() {
                 <p className="text-2xl font-medium mb-2">{t({ pt: 'Projeto Escola', it: 'Progetto Scuola' })}</p>
                 <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più' })}</p>
               </div>
-            </a>
+            </Link>
           </AnimatedSection>
         </div>
 
@@ -91,7 +91,7 @@ export function Impatto() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {points.map((point, index) => (
             <AnimatedSection key={point.text} delay={index * 0.1}>
-              <Link to={point.href} className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
+              <Link id={point.href.slice(1)} to={point.href} className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
                 <div className="overflow-hidden">
                   <img
                     src={point.image}
