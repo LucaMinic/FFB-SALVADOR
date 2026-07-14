@@ -37,8 +37,8 @@ export function AtelierPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/asilo">
-                {t({ pt: 'Conhecer a Creche', it: "Scopri l'Asilo" })}
+              <Button variant="primary" to="/dona-ora">
+                {t({ pt: 'Doe agora', it: 'Dona ora' })}
               </Button>
               <a
                 href="#scopri"
