@@ -5,9 +5,10 @@ interface AnimatedSectionProps {
   children: ReactNode;
   delay?: number;
   direction?: 'up' | 'down' | 'left' | 'right';
+  immediate?: boolean;
 }
 
-export function AnimatedSection({ children, delay = 0, direction = 'up' }: AnimatedSectionProps) {
+export function AnimatedSection({ children, delay = 0, direction = 'up', immediate = false }: AnimatedSectionProps) {
   const directionOffset = {
     up: { y: 60 },
     down: { y: -60 },
@@ -15,18 +16,20 @@ export function AnimatedSection({ children, delay = 0, direction = 'up' }: Anima
     right: { x: -60 }
   };
 
+  const revealProps = immediate
+    ? { animate: { opacity: 1, y: 0, x: 0 } }
+    : {
+        whileInView: { opacity: 1, y: 0, x: 0 },
+        viewport: { once: true, margin: "-100px" }
+      };
+
   return (
     <motion.div
       initial={{
         opacity: 0,
         ...directionOffset[direction]
       }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        x: 0
-      }}
-      viewport={{ once: true, margin: "-100px" }}
+      {...revealProps}
       transition={{
         duration: 0.8,
         delay,

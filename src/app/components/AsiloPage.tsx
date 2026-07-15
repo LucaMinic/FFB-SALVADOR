@@ -308,6 +308,68 @@ export function AsiloPage() {
         </div>
       </section>
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="#ffffff" />
+      </svg>
+
+      {/* SECTION 6 - CRITERI DI ACCOGLIENZA */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Acolher quem mais precisa', it: 'Criteri di selezione' })}
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-8 text-center">
+              <p>
+                {t({ pt: 'O critério principal para o acolhimento das crianças é a vulnerabilidade social.', it: 'Il criterio principale per l\'accoglienza dei bambini è la vulnerabilità sociale.' })}
+              </p>
+              <p>
+                {t({ pt: 'A Creche nasce para acolher crianças que, por razões diversas, vivem condições capazes de comprometer o seu desenvolvimento físico, psicológico, emocional ou relacional.', it: "L'asilo nasce per accogliere bambini che, per ragioni diverse, vivono condizioni capaci di compromettere il loro sviluppo fisico, psicologico, emotivo o relazionale." })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg">
+              <p className="text-gray-700 mb-4 font-semibold">{t({ pt: 'Entre as situações consideradas:', it: 'Tra le situazioni considerate:' })}</p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'pobreza material', it: 'povertà materiale' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'contextos familiares problemáticos', it: 'contesti familiari problematici' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'risco de maus-tratos, violência ou negligência', it: 'rischio di maltrattamento, violenza o trascuratezza' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'presença de um único genitor que precisa trabalhar', it: 'presenza di un solo genitore che ha necessità di lavorare' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'desnutrição', it: 'denutrizione' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'necessidades educativas especiais', it: 'bisogni educativi speciali' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'atrasos cognitivos ou dificuldades comportamentais', it: 'ritardi cognitivi o difficoltà comportamentali' })}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
+                  <span>{t({ pt: 'transtornos do espectro autista', it: 'disturbi dello spettro autistico' })}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
       </svg>
 
@@ -764,69 +826,7 @@ export function AsiloPage() {
         </div>
       </section>
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION 6 - CRITERI DI ACCOGLIENZA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Acolher quem mais precisa', it: 'Accogliere chi ha più bisogno' })}
-            </h2>
-            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-8 text-center">
-              <p>
-                {t({ pt: 'O critério principal para o acolhimento das crianças é a vulnerabilidade social.', it: 'Il criterio principale per l\'accoglienza dei bambini è la vulnerabilità sociale.' })}
-              </p>
-              <p>
-                {t({ pt: 'A Creche nasce para acolher crianças que, por razões diversas, vivem condições capazes de comprometer o seu desenvolvimento físico, psicológico, emocional ou relacional.', it: "L'asilo nasce per accogliere bambini che, per ragioni diverse, vivono condizioni capaci di compromettere il loro sviluppo fisico, psicologico, emotivo o relazionale." })}
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg">
-              <p className="text-gray-700 mb-4 font-semibold">{t({ pt: 'Entre as situações consideradas:', it: 'Tra le situazioni considerate:' })}</p>
-              <ul className="space-y-2 text-gray-700">
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'pobreza material', it: 'povertà materiale' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'contextos familiares problemáticos', it: 'contesti familiari problematici' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'risco de maus-tratos, violência ou negligência', it: 'rischio di maltrattamento, violenza o trascuratezza' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'presença de um único genitor que precisa trabalhar', it: 'presenza di un solo genitore che ha necessità di lavorare' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'desnutrição', it: 'denutrizione' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'necessidades educativas especiais', it: 'bisogni educativi speciali' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'atrasos cognitivos ou dificuldades comportamentais', it: 'ritardi cognitivi o difficoltà comportamentali' })}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="inline-block w-2 h-2 rounded-full bg-[var(--deep-blue)] mt-2 mr-3 flex-shrink-0"></span>
-                  <span>{t({ pt: 'transtornos do espectro autista', it: 'disturbi dello spettro autistico' })}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="var(--beige)" />
       </svg>
 
       {/* SECTION 7 - COME AVVIENE L'ISCRIZIONE */}

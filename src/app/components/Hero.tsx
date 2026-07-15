@@ -122,7 +122,7 @@ export function Hero() {
         </div>
 
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
-          <AnimatedSection>
+          <AnimatedSection immediate>
             <div className="mb-6 md:mb-12">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-[var(--deep-blue)] font-bold leading-tight text-center tracking-tight">
                 Fundação Betania ONLUS
@@ -130,7 +130,7 @@ export function Hero() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={0.15}>
+          <AnimatedSection delay={0.15} immediate>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg md:text-2xl lg:text-3xl mb-4 md:mb-8 text-gray-800 leading-relaxed">
                 {t({
