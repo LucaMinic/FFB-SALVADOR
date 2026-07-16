@@ -1,12 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useLocation } from 'react-router';
 import { Button } from './Button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Menu, ChevronDown, ChevronRight } from 'lucide-react';
 import logo from '../../imports/logo_fundacao-2.png';
 import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
-import { useLanguage, useT } from '../context/LanguageContext';
+import { useLanguage, useT, type Lang } from '../context/LanguageContext';
 
 function FlagGermania({ className }: { className?: string }) {
   return (
@@ -17,6 +18,12 @@ function FlagGermania({ className }: { className?: string }) {
     </svg>
   );
 }
+
+const LANGUAGE_OPTIONS: { code: Lang; label: string; render: (className: string) => ReactNode }[] = [
+  { code: 'pt', label: 'Português (Brasil)', render: (className) => <img src={flagBrasil} alt="Português (Brasil)" className={className} /> },
+  { code: 'it', label: 'Italiano', render: (className) => <img src={flagItalia} alt="Italiano" className={className} /> },
+  { code: 'de', label: 'Deutsch', render: (className) => <FlagGermania className={className} /> },
+];
 
 interface SubMenuItem {
   label: string;
@@ -34,48 +41,38 @@ interface MenuItem {
 
 function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
   const { lang, setLang } = useLanguage();
+  const t = useT();
+  const current = LANGUAGE_OPTIONS.find((option) => option.code === lang) ?? LANGUAGE_OPTIONS[0];
+
   return (
-    <div className={`flex items-center gap-1 ${compact ? '' : 'ml-1'}`}>
-      <button
-        onClick={() => setLang('pt')}
-        className={`flex items-center justify-center rounded transition-all duration-200 ${
-          lang === 'pt'
-            ? 'ring-2 ring-[var(--deep-blue)] ring-offset-1 opacity-100 shadow-sm'
-            : 'opacity-35 hover:opacity-65'
-        }`}
-        aria-pressed={lang === 'pt'}
-        aria-label="Português (Brasil)"
-        title="Português (Brasil)"
-      >
-        <img src={flagBrasil} alt="Português (Brasil)" className="w-7 h-auto rounded-sm" />
-      </button>
-      <button
-        onClick={() => setLang('it')}
-        className={`flex items-center justify-center rounded transition-all duration-200 ${
-          lang === 'it'
-            ? 'ring-2 ring-[var(--deep-blue)] ring-offset-1 opacity-100 shadow-sm'
-            : 'opacity-35 hover:opacity-65'
-        }`}
-        aria-pressed={lang === 'it'}
-        aria-label="Italiano"
-        title="Italiano"
-      >
-        <img src={flagItalia} alt="Italiano" className="w-7 h-auto rounded-sm" />
-      </button>
-      <button
-        onClick={() => setLang('de')}
-        className={`flex items-center justify-center rounded transition-all duration-200 ${
-          lang === 'de'
-            ? 'ring-2 ring-[var(--deep-blue)] ring-offset-1 opacity-100 shadow-sm'
-            : 'opacity-35 hover:opacity-65'
-        }`}
-        aria-pressed={lang === 'de'}
-        aria-label="Deutsch"
-        title="Deutsch"
-      >
-        <FlagGermania className="w-7 h-auto rounded-sm" />
-      </button>
-    </div>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          type="button"
+          className={`flex items-center gap-1.5 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors ${
+            compact ? 'pl-1.5 pr-2 py-1' : 'pl-2 pr-2.5 py-1.5'
+          }`}
+          aria-label={t({ pt: 'Selecionar idioma', it: 'Seleziona lingua', de: 'Sprache auswählen' })}
+        >
+          {current.render('w-6 h-auto rounded-sm flex-shrink-0')}
+          <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align={compact ? 'start' : 'end'} className="min-w-[190px]">
+        {LANGUAGE_OPTIONS.map((option) => (
+          <DropdownMenuItem
+            key={option.code}
+            onSelect={() => setLang(option.code)}
+            className="gap-2"
+          >
+            {option.render('w-6 h-auto rounded-sm flex-shrink-0')}
+            <span className={option.code === lang ? 'font-semibold text-[var(--deep-blue)]' : 'text-gray-700'}>
+              {option.label}
+            </span>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
 
@@ -217,16 +214,16 @@ export function Header() {
 
   return (
     <header className="bg-white/80 backdrop-blur-xl border-b border-gray-200/50 sticky top-0 z-50 shadow-[0_2px_20px_rgba(0,0,0,0.04)]">
-      <div className="max-w-7xl mx-auto px-6 py-5 lg:py-6">
+      <div className="max-w-7xl mx-auto px-6 py-5 xl:py-6">
         <div className="flex items-center justify-between gap-3">
           {/* Logo */}
-          <div className="flex items-center gap-12 flex-shrink-0">
+          <div className="flex items-center gap-8 flex-shrink-0">
             <Link to="/">
-              <img src={logo} alt="Fundação Betânia Onlus" className="h-16 lg:h-20 w-auto" />
+              <img src={logo} alt="Fundação Betânia Onlus" className="h-16 xl:h-20 w-auto" />
             </Link>
 
             {/* Desktop nav */}
-            <nav ref={desktopNavRef} className="hidden lg:flex gap-6 items-center">
+            <nav ref={desktopNavRef} className="hidden xl:flex gap-4 items-center">
               {menuItems.map((item) => {
                 const active = isSubmenuActive(item);
                 const isMenuOpen = desktopOpenMenu === item.label;
@@ -353,7 +350,7 @@ export function Header() {
           </div>
 
           {/* Desktop right side: language switcher + Dona ora */}
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+          <div className="hidden xl:flex items-center gap-3 flex-shrink-0">
             <LanguageSwitcher />
             <Link to="/dona-ora" className="px-5 py-2.5 bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white text-base font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
@@ -361,7 +358,7 @@ export function Header() {
           </div>
 
           {/* Mobile: Dona ora button */}
-          <div className="flex-shrink-0 lg:hidden">
+          <div className="flex-shrink-0 xl:hidden">
             <Link to="/dona-ora" className="px-5 py-2.5 bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white text-base font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
@@ -372,7 +369,7 @@ export function Header() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <button
-                  className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                  className="xl:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
                   aria-label={t({ pt: 'Abrir menu', it: 'Apri menu', de: "Menü öffnen" })}
                 >
                   <Menu className="w-6 h-6 text-gray-700" />
