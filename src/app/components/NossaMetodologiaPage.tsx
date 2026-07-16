@@ -37,28 +37,29 @@ export function NossaMetodologiaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: "Asilo del Centro Nossa Senhora Aparecida" })}
+              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: "Asilo del Centro Nossa Senhora Aparecida", de: "Kita des Centro Nossa Senhora Aparecida" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' })}
+              {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'A criança como protagonista do seu processo de aprendizagem — interação, brincadeira, experiência e relação como fundamentos de um desenvolvimento integral.',
                 it: "Il bambino come protagonista del proprio processo di apprendimento — interazione, gioco, esperienza e relazione come fondamenti di uno sviluppo integrale.",
+                de: "Das Kind als Protagonist seines eigenen Lernprozesses — Interaktion, Spiel, Erfahrung und Beziehung als Grundlagen einer ganzheitlichen Entwicklung.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
               <a
                 href="#scopri"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Saiba mais', it: 'Scopri di più' })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
               </a>
             </div>
           </AnimatedSection>
@@ -75,7 +76,7 @@ export function NossaMetodologiaPage() {
           {/* Titolo */}
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-12 text-center">
-              {t({ pt: 'Uma proposta sociointeracionista', it: 'Una proposta socio-interazionista' })}
+              {t({ pt: 'Uma proposta sociointeracionista', it: 'Una proposta socio-interazionista', de: "Ein sozio-interaktionistischer Ansatz" })}
             </h2>
           </AnimatedSection>
 
@@ -87,18 +88,21 @@ export function NossaMetodologiaPage() {
                   {t({
                     pt: 'Nossa metodologia é baseada em uma proposta sociointeracionista, que reconhece a criança como protagonista do seu processo de aprendizagem.',
                     it: 'La nostra metodologia si basa su una proposta socio-interazionista, che riconosce il bambino come protagonista del proprio processo di apprendimento.',
+                    de: "Unsere Methodik basiert auf einem sozio-interaktionistischen Ansatz, der das Kind als Protagonisten seines eigenen Lernprozesses anerkennt.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Acreditamos que as crianças aprendem por meio das interações, das brincadeiras, das experiências e das relações que constroem com os colegas, os professores e o ambiente ao seu redor.',
                     it: "Crediamo che i bambini imparino attraverso le interazioni, i giochi, le esperienze e le relazioni che costruiscono con i compagni, gli insegnanti e l'ambiente circostante.",
+                    de: "Wir glauben, dass Kinder durch Interaktionen, Spiele, Erfahrungen und Beziehungen lernen, die sie mit Gleichaltrigen, Lehrkräften und ihrer Umgebung aufbauen.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Nossa metodologia é inspirada nas Pedagogias Participativas e na abordagem de Reggio Emília, pois valorizam a criança como protagonista da aprendizagem e garantem que as crianças aprendem por meio das brincadeiras, das experiências, das interações e das descobertas que fazem no dia a dia.',
                     it: "La nostra metodologia è ispirata alle Pedagogie Partecipative e all'approccio di Reggio Emilia, che valorizzano il bambino come protagonista dell'apprendimento e garantiscono che i bambini imparino attraverso il gioco, le esperienze, le interazioni e le scoperte del quotidiano.",
+                    de: "Unsere Methodik ist von den partizipativen Pädagogiken und dem Reggio-Emilia-Ansatz inspiriert, die das Kind als Protagonisten des Lernens würdigen und sicherstellen, dass Kinder durch Spiel, Erfahrungen, Interaktionen und alltägliche Entdeckungen lernen.",
                   })}
                 </p>
               </div>
@@ -107,18 +111,21 @@ export function NossaMetodologiaPage() {
                   {t({
                     pt: 'Por isso, escutamos com atenção seus interesses, ideias e necessidades, planejando propostas que respeitam o tempo e a singularidade de cada criança. Valorizamos diferentes formas de expressão, como o desenho, a pintura, a música, o movimento, a fala e o brincar.',
                     it: "Per questo, ascoltiamo con attenzione i loro interessi, le idee e i bisogni, pianificando proposte che rispettano i tempi e la singolarità di ogni bambino. Valorizziamo diverse forme di espressione, come il disegno, la pittura, la musica, il movimento, la parola e il gioco.",
+                    de: "Deshalb hören wir aufmerksam auf ihre Interessen, Ideen und Bedürfnisse und planen Angebote, die das Tempo und die Einzigartigkeit jedes Kindes respektieren. Wir schätzen verschiedene Ausdrucksformen wie Zeichnen, Malen, Musik, Bewegung, Sprache und Spiel.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Também entendemos que os espaços educam. Por isso, organizamos ambientes acolhedores e ricos em possibilidades de exploração e aprendizagem. Os contextos investigativos e o ateliê são espaços importantes para que as crianças pesquisem, criem, experimentem e construam conhecimentos de forma significativa.',
                     it: "Comprendiamo anche che gli spazi educano. Per questo, organizziamo ambienti accoglienti e ricchi di possibilità di esplorazione e apprendimento. I contesti investigativi e l'atelier sono spazi importanti affinché i bambini ricerchino, creino, sperimentino e costruiscano conoscenze in modo significativo.",
+                    de: "Wir verstehen auch, dass Räume erziehen. Deshalb gestalten wir einladende Umgebungen, die reich an Möglichkeiten zum Erforschen und Lernen sind. Die Forschungskontexte und das Atelier sind wichtige Räume, in denen Kinder forschen, schaffen, experimentieren und auf sinnvolle Weise Wissen aufbauen können.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Com essa proposta educativa, buscamos oferecer experiências que fortaleçam a autonomia, a criatividade, a participação e o desenvolvimento integral das crianças, contribuindo para que construam um futuro com mais oportunidades, dignidade e esperança.',
                     it: "Con questa proposta educativa, cerchiamo di offrire esperienze che rafforzino l'autonomia, la creatività, la partecipazione e lo sviluppo integrale dei bambini, contribuendo affinché costruiscano un futuro con più opportunità, dignità e speranza.",
+                    de: "Mit diesem pädagogischen Ansatz möchten wir Erfahrungen bieten, die die Autonomie, Kreativität, Teilhabe und ganzheitliche Entwicklung der Kinder stärken und dazu beitragen, dass sie sich eine Zukunft mit mehr Chancen, Würde und Hoffnung aufbauen können.",
                   })}
                 </p>
               </div>
@@ -129,7 +136,7 @@ export function NossaMetodologiaPage() {
           <AnimatedSection delay={0.3}>
             <img loading="lazy"
               src={img1}
-              alt={t({ pt: 'Crianças em interação', it: 'Bambini in interazione' })}
+              alt={t({ pt: 'Crianças em interação', it: 'Bambini in interazione', de: "Kinder in Interaktion" })}
               className="w-full rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.13)] object-cover h-80 md:h-[480px]"
             />
           </AnimatedSection>
@@ -143,12 +150,13 @@ export function NossaMetodologiaPage() {
           <AnimatedSection delay={0.1}>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-4">
-                {t({ pt: 'Os pilares da nossa metodologia', it: 'I pilastri della nostra metodologia' })}
+                {t({ pt: 'Os pilares da nossa metodologia', it: 'I pilastri della nostra metodologia', de: "Die Grundpfeiler unserer Methodik" })}
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
                 {t({
                   pt: 'Cada elemento do nosso trabalho nasce de uma visão integrada do desenvolvimento da criança.',
                   it: 'Ogni elemento del nostro lavoro nasce da una visione integrata dello sviluppo del bambino.',
+                  de: "Jedes Element unserer Arbeit entsteht aus einem ganzheitlichen Verständnis der kindlichen Entwicklung.",
                 })}
               </p>
             </div>
@@ -158,28 +166,28 @@ export function NossaMetodologiaPage() {
             {[
               {
                 icon: '👧',
-                title: t({ pt: 'Criança Protagonista', it: 'Bambino Protagonista' }),
-                desc: t({ pt: 'Reconhecemos a criança como sujeito ativo de sua aprendizagem, capaz de pensar, criar, investigar e construir conhecimentos a partir de suas experiências.', it: 'Riconosciamo il bambino come soggetto attivo del proprio apprendimento, capace di pensare, creare, investigare e costruire conoscenze a partire dalle proprie esperienze.' })
+                title: t({ pt: 'Criança Protagonista', it: 'Bambino Protagonista', de: "Kind als Protagonist" }),
+                desc: t({ pt: 'Reconhecemos a criança como sujeito ativo de sua aprendizagem, capaz de pensar, criar, investigar e construir conhecimentos a partir de suas experiências.', it: 'Riconosciamo il bambino come soggetto attivo del proprio apprendimento, capace di pensare, creare, investigare e costruire conoscenze a partire dalle proprie esperienze.', de: "Wir erkennen das Kind als aktives Subjekt seines eigenen Lernens an, das fähig ist, zu denken, zu schaffen, zu forschen und ausgehend von eigenen Erfahrungen Wissen aufzubauen." })
               },
               {
                 icon: '💛',
-                title: t({ pt: 'Relações de Cuidado, Afeto e Pertencimento', it: 'Relazioni di Cura, Affetto e Appartenenza' }),
-                desc: t({ pt: 'Promovemos vínculos seguros e acolhedores, fortalecendo a confiança, a convivência, o respeito e o sentimento de pertencimento.', it: 'Promuoviamo legami sicuri e accoglienti, rafforzando la fiducia, la convivenza, il rispetto e il senso di appartenenza.' })
+                title: t({ pt: 'Relações de Cuidado, Afeto e Pertencimento', it: 'Relazioni di Cura, Affetto e Appartenenza', de: "Beziehungen von Fürsorge, Zuneigung und Zugehörigkeit" }),
+                desc: t({ pt: 'Promovemos vínculos seguros e acolhedores, fortalecendo a confiança, a convivência, o respeito e o sentimento de pertencimento.', it: 'Promuoviamo legami sicuri e accoglienti, rafforzando la fiducia, la convivenza, il rispetto e il senso di appartenenza.', de: "Wir fördern sichere und einladende Bindungen und stärken so Vertrauen, Miteinander, Respekt und Zugehörigkeitsgefühl." })
               },
               {
                 icon: '🥗',
-                title: t({ pt: 'Alimentação Saudável e Bem-Estar', it: 'Alimentazione Sana e Benessere' }),
-                desc: t({ pt: 'Entendemos a alimentação saudável como parte fundamental do desenvolvimento integral das crianças. Incentivamos hábitos alimentares saudáveis, momentos de partilha e experiências que promovam o cuidado consigo, com o outro e com a vida.', it: "Consideriamo l'alimentazione sana come parte fondamentale dello sviluppo integrale dei bambini. Incoraggiamo abitudini alimentari sane, momenti di condivisione ed esperienze che promuovano la cura di sé, dell'altro e della vita." })
+                title: t({ pt: 'Alimentação Saudável e Bem-Estar', it: 'Alimentazione Sana e Benessere', de: "Gesunde Ernährung und Wohlbefinden" }),
+                desc: t({ pt: 'Entendemos a alimentação saudável como parte fundamental do desenvolvimento integral das crianças. Incentivamos hábitos alimentares saudáveis, momentos de partilha e experiências que promovam o cuidado consigo, com o outro e com a vida.', it: "Consideriamo l'alimentazione sana come parte fondamentale dello sviluppo integrale dei bambini. Incoraggiamo abitudini alimentari sane, momenti di condivisione ed esperienze che promuovano la cura di sé, dell'altro e della vita.", de: "Wir betrachten gesunde Ernährung als grundlegenden Bestandteil der ganzheitlichen Entwicklung der Kinder. Wir fördern gesunde Essgewohnheiten, gemeinsame Momente und Erfahrungen, die die Fürsorge für sich selbst, für andere und für das Leben stärken." })
               },
               {
                 icon: '🎯',
-                title: t({ pt: 'Aprendizagem pela Experiência e pelo Brincar', it: "Apprendimento attraverso l'Esperienza e il Gioco" }),
-                desc: t({ pt: 'Acreditamos que as crianças aprendem explorando, brincando, investigando, experimentando e interagindo com o mundo ao seu redor.', it: 'Crediamo che i bambini imparino esplorando, giocando, investigando, sperimentando e interagendo con il mondo che li circonda.' })
+                title: t({ pt: 'Aprendizagem pela Experiência e pelo Brincar', it: "Apprendimento attraverso l'Esperienza e il Gioco", de: "Lernen durch Erfahrung und Spiel" }),
+                desc: t({ pt: 'Acreditamos que as crianças aprendem explorando, brincando, investigando, experimentando e interagindo com o mundo ao seu redor.', it: 'Crediamo che i bambini imparino esplorando, giocando, investigando, sperimentando e interagendo con il mondo che li circonda.', de: "Wir glauben, dass Kinder lernen, indem sie erkunden, spielen, forschen, experimentieren und mit der Welt um sie herum in Beziehung treten." })
               },
               {
                 icon: '🏡',
-                title: t({ pt: 'Ambiente que Educa', it: 'Ambiente che Educa' }),
-                desc: t({ pt: 'Organizamos espaços acolhedores, inspiradores e desafiadores, que favorecem a autonomia, a curiosidade, as descobertas e as aprendizagens significativas.', it: "Organizziamo spazi accoglienti, ispiratori e stimolanti, che favoriscono l'autonomia, la curiosità, le scoperte e gli apprendimenti significativi." })
+                title: t({ pt: 'Ambiente que Educa', it: 'Ambiente che Educa', de: "Die erziehende Umgebung" }),
+                desc: t({ pt: 'Organizamos espaços acolhedores, inspiradores e desafiadores, que favorecem a autonomia, a curiosidade, as descobertas e as aprendizagens significativas.', it: "Organizziamo spazi accoglienti, ispiratori e stimolanti, che favoriscono l'autonomia, la curiosità, le scoperte e gli apprendimenti significativi.", de: "Wir gestalten einladende, inspirierende und anregende Räume, die Autonomie, Neugier, Entdeckungen und bedeutungsvolles Lernen fördern." })
               }
             ].map((item, index) => (
               <AnimatedSection key={index} delay={index * 0.08}>
@@ -201,28 +209,30 @@ export function NossaMetodologiaPage() {
             <AnimatedSection delay={0.1}>
               <img loading="lazy"
                 src={reggioImg}
-                alt={t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' })}
+                alt={t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia', de: "Reggio-Emilia-Ansatz" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div>
                 <p className="text-[var(--warm-orange)] uppercase tracking-widest text-sm font-semibold mb-4">
-                  {t({ pt: 'Nossa inspiração', it: 'La nostra ispirazione' })}
+                  {t({ pt: 'Nossa inspiração', it: 'La nostra ispirazione', de: "Unsere Inspiration" })}
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia' })}
+                  {t({ pt: 'Abordagem Reggio Emilia', it: 'Approccio Reggio Emilia', de: "Reggio-Emilia-Ansatz" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'O Reggio Emilia Approach é uma filosofia educativa nascida em Itália nos anos 60, criada por Loris Malaguzzi e desenvolvida pelas comunidades de Reggio Emilia. Hoje é reconhecido internacionalmente como um dos modelos mais inovadores de educação da primeira infância.',
                     it: "Il Reggio Emilia Approach è una filosofia educativa nata in Italia negli anni '60, sviluppata da Loris Malaguzzi e dalle comunità di Reggio Emilia. Oggi è riconosciuto a livello internazionale come uno dei modelli più innovativi di educazione della prima infanzia.",
+                    de: "Der Reggio-Emilia-Ansatz ist eine pädagogische Philosophie, die in den 1960er Jahren in Italien entstand und von Loris Malaguzzi sowie den Gemeinden von Reggio Emilia entwickelt wurde. Heute gilt er international als eines der innovativsten Modelle der frühkindlichen Bildung.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed mb-10">
                   {t({
                     pt: 'O Centro Nossa Senhora Aparecida não se define uma escola Reggio Emilia, mas desde 2018 esta abordagem é uma fonte de inspiração profunda que orienta o trabalho educativo quotidiano.',
                     it: 'Il Centro Nossa Senhora Aparecida non si definisce una scuola Reggio Emilia, ma dal 2018 questo approccio è una fonte di ispirazione profonda che orienta il lavoro educativo quotidiano.',
+                    de: "Das Centro Nossa Senhora Aparecida versteht sich nicht als Reggio-Emilia-Schule, doch seit 2018 ist dieser Ansatz eine tiefe Inspirationsquelle, die die tägliche pädagogische Arbeit leitet.",
                   })}
                 </p>
                 <blockquote className="border-l-4 border-[var(--soft-green)] pl-6 mb-10">
@@ -244,25 +254,27 @@ export function NossaMetodologiaPage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img2}
-                alt={t({ pt: 'Pedagogias participativas', it: 'Pedagogie partecipative' })}
+                alt={t({ pt: 'Pedagogias participativas', it: 'Pedagogie partecipative', de: "Partizipative Pädagogiken" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Pedagogias participativas', it: 'Pedagogie partecipative' })}
+                  {t({ pt: 'Pedagogias participativas', it: 'Pedagogie partecipative', de: "Partizipative Pädagogiken" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'Nossa prática também é inspirada nas Pedagogias Participativas, que incentivam a escuta sensível, o respeito à infância e a participação das crianças no planejamento e desenvolvimento das atividades.',
                     it: "La nostra pratica è anche ispirata alle Pedagogie Partecipative, che incoraggiano l'ascolto sensibile, il rispetto dell'infanzia e la partecipazione dei bambini nella pianificazione e nello sviluppo delle attività.",
+                    de: "Unsere Praxis ist auch von den partizipativen Pädagogiken inspiriert, die einfühlsames Zuhören, den Respekt vor der Kindheit und die Beteiligung der Kinder an der Planung und Gestaltung der Aktivitäten fördern.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
                     pt: 'A criança não é um destinatário passivo: é escutada, valorizada e convidada a participar ativamente na construção das próprias experiências educativas.',
                     it: 'Il bambino non è un destinatario passivo: è ascoltato, valorizzato e invitato a partecipare attivamente alla costruzione delle proprie esperienze educative.',
+                    de: "Das Kind ist kein passiver Empfänger: Es wird angehört, wertgeschätzt und eingeladen, aktiv an der Gestaltung seiner eigenen Bildungserfahrungen mitzuwirken.",
                   })}
                 </p>
               </div>
@@ -276,12 +288,13 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche' })}
+              {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche', de: "Pädagogische Ausstellungen" })}
             </h2>
             <p className="text-gray-600 text-xl leading-relaxed text-center max-w-3xl mx-auto mb-16">
               {t({
                 pt: 'As Mostras Pedagógicas são momentos importantes em nossa proposta educativa, pois permitem compartilhar com as famílias e a comunidade as experiências, as descobertas e as aprendizagens vividas pelas crianças ao longo do ano.',
                 it: "Le Mostre Pedagogiche sono momenti importanti nella nostra proposta educativa, poiché permettono di condividere con le famiglie e la comunità le esperienze, le scoperte e gli apprendimenti vissuti dai bambini nel corso dell'anno.",
+                de: "Die Pädagogischen Ausstellungen sind wichtige Momente in unserem pädagogischen Konzept, da sie es ermöglichen, die Erfahrungen, Entdeckungen und Lernprozesse der Kinder im Laufe des Jahres mit den Familien und der Gemeinschaft zu teilen.",
               })}
             </p>
           </AnimatedSection>
@@ -293,18 +306,21 @@ export function NossaMetodologiaPage() {
                   {t({
                     pt: 'Por meio de fotos, registros, produções, falas e projetos desenvolvidos pelas crianças, tornamos visível o percurso de aprendizagem de cada grupo, valorizando seus esforços, conquistas, curiosidades e formas de pensar.',
                     it: 'Attraverso foto, documentazioni, produzioni, parole e progetti sviluppati dai bambini, rendiamo visibile il percorso di apprendimento di ogni gruppo, valorizzando i loro sforzi, i traguardi, le curiosità e le modalità di pensiero.',
+                    de: "Durch Fotos, Dokumentationen, Werke, Aussagen und Projekte der Kinder machen wir den Lernweg jeder Gruppe sichtbar und würdigen ihre Anstrengungen, Erfolge, Neugier und Denkweisen.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Mais do que apresentar resultados, as mostras revelam os processos vividos pelas crianças, mostrando como aprendem, investigam, criam, brincam e constroem conhecimentos no dia a dia. Também fortalecem a parceria entre a creche e as famílias, que passam a conhecer e valorizar ainda mais as experiências que fazem parte da infância de seus filhos.',
                     it: "Più che presentare risultati, le mostre rivelano i processi vissuti dai bambini, mostrando come imparano, investigano, creano, giocano e costruiscono conoscenze nel quotidiano. Rafforzano anche la partnership tra l'asilo e le famiglie, che vengono a conoscere e valorizzare ancora di più le esperienze che fanno parte dell'infanzia dei loro figli.",
+                    de: "Mehr als Ergebnisse zu präsentieren, zeigen die Ausstellungen die Prozesse, die die Kinder durchlaufen haben, und wie sie im Alltag lernen, forschen, schaffen, spielen und Wissen aufbauen. Sie stärken auch die Partnerschaft zwischen der Kita und den Familien, die dadurch die Erfahrungen, die zur Kindheit ihrer Kinder gehören, noch besser kennen- und schätzenlernen.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Dessa forma, as Mostras Pedagógicas se tornam uma importante ferramenta de documentação, celebração e valorização das aprendizagens das crianças.',
                     it: 'In questo modo, le Mostre Pedagogiche diventano un importante strumento di documentazione, celebrazione e valorizzazione degli apprendimenti dei bambini.',
+                    de: "So werden die Pädagogischen Ausstellungen zu einem wichtigen Instrument der Dokumentation, Würdigung und Anerkennung der Lernerfolge der Kinder.",
                   })}
                 </p>
               </div>
@@ -312,7 +328,7 @@ export function NossaMetodologiaPage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={mostrasImg}
-                alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica' })}
+                alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica', de: "Pädagogische Ausstellung" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -329,6 +345,7 @@ export function NossaMetodologiaPage() {
               {t({
                 pt: 'Formação continuada dos nossos professores',
                 it: 'Formazione continua dei nostri insegnanti',
+                de: "Fortlaufende Weiterbildung unserer Lehrkräfte",
               })}
             </h2>
           </AnimatedSection>
@@ -340,12 +357,14 @@ export function NossaMetodologiaPage() {
                   {t({
                     pt: 'Entendemos que a formação continuada do professor é muito importante para o trabalho que realizamos na creche. Por isso, promovemos esse processo de forma permanente, garantindo momentos de estudo, reflexão e troca de experiências entre a equipe.',
                     it: 'Riteniamo che la formazione continua degli insegnanti sia fondamentale per il lavoro che svolgiamo nell\'asilo. Per questo, promuoviamo questo processo in modo permanente, garantendo momenti di studio, riflessione e scambio di esperienze tra il team.',
+                    de: "Wir sind überzeugt, dass die kontinuierliche Weiterbildung der Lehrkräfte grundlegend für unsere Arbeit in der Kita ist. Deshalb fördern wir diesen Prozess fortlaufend und schaffen Raum für Studium, Reflexion und Erfahrungsaustausch im Team.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Uma vez por mês, realizamos a formação continuada dos nossos professores, entendendo que o educador precisa estar sempre em processo de aprendizagem. Esses encontros fortalecem a prática pedagógica e ajudam a qualificar ainda mais o trabalho realizado com as crianças.',
                     it: 'Una volta al mese realizziamo la formazione continua dei nostri insegnanti, ritenendo che l\'educatore abbia sempre bisogno di essere in un processo di apprendimento. Questi incontri rafforzano la pratica pedagogica e contribuiscono a qualificare ulteriormente il lavoro svolto con i bambini.',
+                    de: "Einmal im Monat führen wir die Weiterbildung unserer Lehrkräfte durch, denn wir sind überzeugt, dass Erzieherinnen und Erzieher stets in einem Lernprozess bleiben sollten. Diese Treffen stärken die pädagogische Praxis und tragen dazu bei, die Arbeit mit den Kindern weiter zu qualifizieren.",
                   })}
                 </p>
               </div>
@@ -356,12 +375,14 @@ export function NossaMetodologiaPage() {
                   {t({
                     pt: 'Valorizamos um professor atento às necessidades de cada criança, que respeite seus tempos, suas formas de aprender e suas diferentes maneiras de se expressar.',
                     it: 'Valorizziamo un insegnante attento ai bisogni di ogni bambino, che rispetti i suoi tempi, le sue modalità di apprendimento e i suoi diversi modi di esprimersi.',
+                    de: "Wir legen Wert auf Lehrkräfte, die aufmerksam auf die Bedürfnisse jedes Kindes eingehen und dessen Tempo, Lernweise und unterschiedliche Ausdrucksformen respektieren.",
                   })}
                 </p>
                 <p>
                   {t({
                     pt: 'Além disso, incentivamos que os professores se encantem, sejam criativos, que planejem experiências significativas, com intencionalidade que despertam a curiosidade e favorecem a investigação, o brincar e a expressão das crianças. Dessa forma, a formação continuada contribui para um trabalho mais sensível, humano e comprometido com o desenvolvimento integral das crianças.',
                     it: 'Incoraggiamo inoltre gli insegnanti a entusiasmarsi, a essere creativi, a pianificare esperienze significative, con intenzionalità che risveglia la curiosità e favorisce l\'esplorazione, il gioco e l\'espressione dei bambini. In questo modo, la formazione continua contribuisce a un lavoro più sensibile, umano e impegnato nello sviluppo integrale dei bambini.',
+                    de: "Außerdem ermutigen wir die Lehrkräfte, sich begeistern zu lassen, kreativ zu sein und bedeutungsvolle Erfahrungen mit klarer Absicht zu planen, die die Neugier wecken und das Erkunden, Spielen und den Ausdruck der Kinder fördern. So trägt die fortlaufende Weiterbildung zu einer einfühlsameren, menschlicheren und der ganzheitlichen Entwicklung der Kinder verpflichteten Arbeit bei.",
                   })}
                 </p>
               </div>
@@ -371,7 +392,7 @@ export function NossaMetodologiaPage() {
           <AnimatedSection delay={0.3}>
             <img loading="lazy"
               src={formacaoContImg}
-              alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti' })}
+              alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti', de: "Fortlaufende Weiterbildung der Lehrkräfte" })}
               className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover"
               style={{ maxHeight: '520px' }}
             />
@@ -386,12 +407,13 @@ export function NossaMetodologiaPage() {
             <AnimatedSection delay={0.1}>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Os fundamentos teóricos', it: 'I fondamenti teorici' })}
+                  {t({ pt: 'Os fundamentos teóricos', it: 'I fondamenti teorici', de: "Die theoretischen Grundlagen" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'Nosso trabalho fundamenta-se nas contribuições de Jean Piaget e Lev Vygotsky, compreendendo que o desenvolvimento infantil acontece de forma integral, por meio da interação entre a criança, o outro e o mundo.',
                     it: 'Il nostro lavoro si fonda sui contributi di Jean Piaget e Lev Vygotsky, comprendendo che lo sviluppo infantile avviene in modo integrale, attraverso l\'interazione tra il bambino, l\'altro e il mondo.',
+                    de: "Unsere Arbeit stützt sich auf die Beiträge von Jean Piaget und Lev Vygotsky, im Verständnis, dass sich die kindliche Entwicklung ganzheitlich vollzieht, durch die Interaktion zwischen dem Kind, dem anderen und der Welt.",
                   })}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
@@ -401,6 +423,7 @@ export function NossaMetodologiaPage() {
                       {t({
                         pt: 'O desenvolvimento cognitivo ocorre por estágios, através da ação da criança sobre o ambiente.',
                         it: 'Lo sviluppo cognitivo avviene per stadi, attraverso l\'azione del bambino sull\'ambiente.',
+                        de: "Die kognitive Entwicklung verläuft in Stufen, durch das Einwirken des Kindes auf seine Umgebung.",
                       })}
                     </p>
                   </div>
@@ -410,6 +433,7 @@ export function NossaMetodologiaPage() {
                       {t({
                         pt: 'A aprendizagem acontece na interação social e na zona de desenvolvimento proximal.',
                         it: "L'apprendimento avviene nell'interazione sociale e nella zona di sviluppo prossimale.",
+                        de: "Lernen geschieht in der sozialen Interaktion und in der Zone der nächsten Entwicklung.",
                       })}
                     </p>
                   </div>
@@ -422,7 +446,7 @@ export function NossaMetodologiaPage() {
                   viewBox="0 0 500 380"
                   className="w-full h-full max-w-md"
                   role="img"
-                  aria-label={t({ pt: 'O desenvolvimento acontece na interação entre a criança, o outro e o mundo', it: 'Lo sviluppo avviene nell\'interazione tra il bambino, l\'altro e il mondo' })}
+                  aria-label={t({ pt: 'O desenvolvimento acontece na interação entre a criança, o outro e o mundo', it: 'Lo sviluppo avviene nell\'interazione tra il bambino, l\'altro e il mondo', de: "Die Entwicklung vollzieht sich in der Interaktion zwischen dem Kind, dem anderen und der Welt" })}
                 >
                   <g style={{ mixBlendMode: 'multiply' }}>
                     <circle cx="250" cy="150" r="108" fill="var(--deep-blue)" fillOpacity="0.5" stroke="var(--deep-blue)" strokeWidth="2" />
@@ -431,20 +455,20 @@ export function NossaMetodologiaPage() {
                   </g>
 
                   <text x="250" y="90" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--deep-blue)">
-                    {t({ pt: 'Criança', it: 'Bambino' })}
+                    {t({ pt: 'Criança', it: 'Bambino', de: "Kind" })}
                   </text>
                   <text x="95" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--soft-green)">
-                    {t({ pt: 'O outro', it: "L'altro" })}
+                    {t({ pt: 'O outro', it: "L'altro", de: "Der andere" })}
                   </text>
                   <text x="405" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--warm-red)">
-                    {t({ pt: 'O mundo', it: 'Il mondo' })}
+                    {t({ pt: 'O mundo', it: 'Il mondo', de: "Die Welt" })}
                   </text>
 
                   <text x="250" y="219" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
-                    {t({ pt: 'Desenvolvimento', it: 'Sviluppo' })}
+                    {t({ pt: 'Desenvolvimento', it: 'Sviluppo', de: "Entwicklung" })}
                   </text>
                   <text x="250" y="238" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
-                    {t({ pt: 'integral', it: 'integrale' })}
+                    {t({ pt: 'integral', it: 'integrale', de: "ganzheitlich" })}
                   </text>
                 </svg>
               </div>
@@ -460,25 +484,27 @@ export function NossaMetodologiaPage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img4}
-                alt={t({ pt: 'Ambiente educativo', it: 'Ambiente educativo' })}
+                alt={t({ pt: 'Ambiente educativo', it: 'Ambiente educativo', de: "Pädagogische Umgebung" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Um ambiente que acolhe e desafia', it: 'Un ambiente che accoglie e stimola' })}
+                  {t({ pt: 'Um ambiente que acolhe e desafia', it: 'Un ambiente che accoglie e stimola', de: "Eine Umgebung, die aufnimmt und anregt" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'Buscamos oferecer um ambiente acolhedor, desafiador e rico em experiências, onde cada criança possa expressar suas ideias, criar, explorar e construir conhecimentos de forma significativa.',
                     it: "Cerchiamo di offrire un ambiente accogliente, stimolante e ricco di esperienze, dove ogni bambino possa esprimere le proprie idee, creare, esplorare e costruire conoscenze in modo significativo.",
+                    de: "Wir möchten eine einladende, anregende und erfahrungsreiche Umgebung bieten, in der jedes Kind seine eigenen Ideen ausdrücken, schaffen, erkunden und auf sinnvolle Weise Wissen aufbauen kann.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
                     pt: 'São oferecidas às crianças possibilidades de construção de conhecimentos específicos relacionados aos elementos curriculares que garantem o desenvolvimento integral das crianças por meio de experiências protagonizadas por elas mesmas.',
                     it: 'Ai bambini vengono offerte possibilità di costruzione di conoscenze specifiche legate agli elementi curricolari che garantiscono lo sviluppo integrale dei bambini attraverso esperienze di cui sono loro stessi protagonisti.',
+                    de: "Den Kindern werden Möglichkeiten geboten, spezifisches Wissen im Zusammenhang mit den curricularen Elementen aufzubauen, die ihre ganzheitliche Entwicklung durch Erfahrungen sichern, deren Protagonisten sie selbst sind.",
                   })}
                 </p>
               </div>
@@ -493,23 +519,24 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza" })}
+              {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza", de: "Ein auf Erfahrung gegründetes Curriculum" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-4 text-center max-w-3xl mx-auto">
               {t({
                 pt: 'O currículo do Centro Nossa Senhora Aparecida é baseado nos direitos de aprendizagem e nos campos de experiência propostos pela BNCC. Os eixos principais são: interação, brincadeira, experiência, relação e exploração.',
                 it: "Il curriculum del Centro Nossa Senhora Aparecida è basato sui diritti di apprendimento e sui campi di esperienza proposti dalla BNCC. Gli assi principali sono: interazione, gioco, esperienza, relazione ed esplorazione.",
+                de: "Das Curriculum des Centro Nossa Senhora Aparecida basiert auf den Lernrechten und den von der BNCC vorgeschlagenen Erfahrungsbereichen. Die Hauptachsen sind: Interaktion, Spiel, Erfahrung, Beziehung und Erkundung.",
               })}
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {[
-              t({ pt: 'O eu, o outro e o nós', it: "Il sé, l'altro e il noi" }),
-              t({ pt: 'Corpo, gestos e movimentos', it: 'Corpo, gesti e movimenti' }),
-              t({ pt: 'Traços, sons, cores e formas', it: 'Tratti, suoni, colori e forme' }),
-              t({ pt: 'Escuta, palavra, pensamento e imaginação', it: 'Ascolto, parola, pensiero e immaginazione' }),
-              t({ pt: 'Espaços, tempos, quantidades, relações e transformações', it: 'Spazi, tempi, quantità, relazioni e trasformazioni' })
+              t({ pt: 'O eu, o outro e o nós', it: "Il sé, l'altro e il noi", de: "Das Ich, der andere und das Wir" }),
+              t({ pt: 'Corpo, gestos e movimentos', it: 'Corpo, gesti e movimenti', de: "Körper, Gesten und Bewegungen" }),
+              t({ pt: 'Traços, sons, cores e formas', it: 'Tratti, suoni, colori e forme', de: "Linien, Klänge, Farben und Formen" }),
+              t({ pt: 'Escuta, palavra, pensamento e imaginação', it: 'Ascolto, parola, pensiero e immaginazione', de: "Zuhören, Sprache, Denken und Vorstellungskraft" }),
+              t({ pt: 'Espaços, tempos, quantidades, relações e transformações', it: 'Spazi, tempi, quantità, relazioni e trasformazioni', de: "Räume, Zeiten, Mengen, Beziehungen und Veränderungen" })
             ].map((item, index) => (
               <AnimatedSection key={item} delay={index * 0.1}>
                 <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white rounded-2xl p-8 text-center shadow-lg h-full flex items-center justify-center">
@@ -526,12 +553,13 @@ export function NossaMetodologiaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Educar para a vida', it: 'Educare alla vita' })}
+              {t({ pt: 'Educar para a vida', it: 'Educare alla vita', de: "Erziehung zum Leben" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-12 text-center max-w-3xl mx-auto">
               {t({
                 pt: 'O trabalho educativo aborda também temas transversais importantes para o crescimento das crianças e para a construção de uma comunidade mais justa e consciente.',
                 it: 'Il lavoro educativo affronta anche temi trasversali importanti per la crescita dei bambini e per la costruzione di una comunità più giusta e consapevole.',
+                de: "Die pädagogische Arbeit greift auch fächerübergreifende Themen auf, die für das Wachstum der Kinder und den Aufbau einer gerechteren und bewussteren Gemeinschaft wichtig sind.",
               })}
             </p>
           </AnimatedSection>
@@ -540,11 +568,11 @@ export function NossaMetodologiaPage() {
             <div className="bg-[var(--beige)] rounded-2xl p-8 shadow-lg">
               <ul className="space-y-4 text-lg text-gray-700">
                 {[
-                  t({ pt: 'educação étnica e racial', it: 'educazione etnica e razziale' }),
-                  t({ pt: 'educação inclusiva', it: 'educazione inclusiva' }),
-                  t({ pt: 'atenção ao género na primeira infância', it: 'attenzione al genere nella prima infanzia' }),
-                  t({ pt: 'prevenção da violência', it: 'prevenzione della violenza' }),
-                  t({ pt: 'educação ambiental', it: 'educazione ambientale' })
+                  t({ pt: 'educação étnica e racial', it: 'educazione etnica e razziale', de: "ethnische und rassische Bildung" }),
+                  t({ pt: 'educação inclusiva', it: 'educazione inclusiva', de: "inklusive Bildung" }),
+                  t({ pt: 'atenção ao género na primeira infância', it: 'attenzione al genere nella prima infanzia', de: "Sensibilisierung für Geschlechterfragen in der frühen Kindheit" }),
+                  t({ pt: 'prevenção da violência', it: 'prevenzione della violenza', de: "Gewaltprävention" }),
+                  t({ pt: 'educação ambiental', it: 'educazione ambientale', de: "Umweltbildung" })
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <span className="inline-block w-3 h-3 rounded-full bg-[var(--soft-green)] flex-shrink-0"></span>
@@ -562,17 +590,18 @@ export function NossaMetodologiaPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Descubra mais sobre a nossa proposta', it: 'Scopri di più sulla nostra proposta' })}
+              {t({ pt: 'Descubra mais sobre a nossa proposta', it: 'Scopri di più sulla nostra proposta', de: "Erfahren Sie mehr über unser Konzept" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Nossa metodologia toma vida cada dia nos espaços, nas relações e nas atividades da creche. Descubra como se concretiza no dia a dia do Centro.',
                 it: "La nostra metodologia prende vita ogni giorno negli spazi, nelle relazioni e nelle attività dell'asilo. Scopri come si concretizza nel quotidiano del Centro.",
+                de: "Unsere Methodik wird jeden Tag in den Räumen, Beziehungen und Aktivitäten der Kita lebendig. Entdecken Sie, wie sie sich im Alltag des Centro konkret zeigt.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/atelier">
-                {t({ pt: 'O Ateliê', it: "L'Atelier" })}
+                {t({ pt: 'O Ateliê', it: "L'Atelier", de: "Das Atelier" })}
               </Button>
             </div>
           </AnimatedSection>

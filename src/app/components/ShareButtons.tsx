@@ -31,7 +31,7 @@ export function ShareButtons({ title, variant = 'light', className = '' }: Share
   return (
     <div className={`flex items-center justify-center gap-3 ${className}`}>
       <span className={`text-sm font-medium ${labelClass}`}>
-        {t({ pt: 'Compartilhar:', it: 'Condividi:' })}
+        {t({ pt: 'Compartilhar:', it: 'Condividi:', de: "Teilen:" })}
       </span>
       <a
         href={whatsappUrl}
@@ -57,7 +57,7 @@ export function ShareButtons({ title, variant = 'light', className = '' }: Share
       <button
         type="button"
         onClick={handleCopy}
-        aria-label={t({ pt: 'Copiar link', it: 'Copia link' })}
+        aria-label={t({ pt: 'Copiar link', it: 'Copia link', de: "Link kopieren" })}
         className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors ${buttonClass}`}
       >
         {copied ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}

@@ -13,20 +13,21 @@ export function Donazione() {
       <section className="py-20 lg:py-24 bg-gradient-to-br from-[var(--deep-blue)] via-[#2c5f7f] to-[#234a61] text-white">
       <AnimatedSection>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="mb-8 text-4xl drop-shadow-lg">{t({ pt: 'Ajude-nos a construir um futuro', it: 'Aiutaci a costruire un futuro' })}</h2>
+          <h2 className="mb-8 text-4xl drop-shadow-lg">{t({ pt: 'Ajude-nos a construir um futuro', it: 'Aiutaci a costruire un futuro', de: "Helfen Sie uns, eine Zukunft aufzubauen" })}</h2>
 
           <p className="text-2xl leading-relaxed mb-6 drop-shadow-md">
             {t({
               pt: 'Cada contribuição permite que esta missão continue a crescer e a acolher novas crianças.',
-              it: 'Ogni contributo permette a questa missione di continuare a crescere e accogliere nuovi bambini.'
+              it: 'Ogni contributo permette a questa missione di continuare a crescere e accogliere nuovi bambini.',
+              de: "Jeder Beitrag ermöglicht es dieser Mission, weiter zu wachsen und neue Kinder aufzunehmen."
             })}
           </p>
 
           <p className="text-xl leading-relaxed mb-12 drop-shadow-md opacity-90">
-            {t({ pt: 'Até um pequeno gesto pode fazer a diferença.', it: 'Anche un piccolo gesto può fare la differenza.' })}
+            {t({ pt: 'Até um pequeno gesto pode fazer a diferença.', it: 'Anche un piccolo gesto può fare la differenza.', de: "Auch eine kleine Geste kann einen Unterschied machen." })}
           </p>
 
-          <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora' })}</Button>
+          <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}</Button>
         </div>
       </AnimatedSection>
     </section>

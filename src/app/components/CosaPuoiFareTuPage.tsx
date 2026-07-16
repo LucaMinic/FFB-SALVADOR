@@ -18,7 +18,7 @@ export function CosaPuoiFareTuPage() {
         <div className="absolute inset-0">
           <img
             src={heroImg}
-            alt={t({ pt: 'Crianças do Centro', it: 'Bambini del Centro' })}
+            alt={t({ pt: 'Crianças do Centro', it: 'Bambini del Centro', de: "Kinder des Zentrums" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
@@ -27,14 +27,15 @@ export function CosaPuoiFareTuPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 pt-20 md:pt-0 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6 leading-tight">
-              {t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' })}
+              {t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-2xl md:text-3xl mb-6 leading-relaxed">
               {t({
                 pt: 'Cada gesto pode se tornar uma presença concreta na vida de uma criança e de uma família.',
-                it: 'Ogni gesto può diventare una presenza concreta nella vita di un bambino e di una famiglia.'
+                it: 'Ogni gesto può diventare una presenza concreta nella vita di un bambino e di una famiglia.',
+                de: "Jede Geste kann zu einer konkreten Unterstützung im Leben eines Kindes und einer Familie werden."
               })}
             </p>
           </AnimatedSection>
@@ -42,20 +43,21 @@ export function CosaPuoiFareTuPage() {
             <p className="text-xl mb-10 leading-relaxed max-w-3xl mx-auto opacity-90">
               {t({
                 pt: 'O Centro Nossa Senhora Aparecida vive todos os dias graças a relações, cuidado, educação e à proximidade de tantas pessoas que escolhem apoiar esta obra.',
-                it: 'Il Centro Nossa Senhora Aparecida vive ogni giorno grazie a relazioni, cura, educazione e alla vicinanza di tante persone che scelgono di sostenere questa opera.'
+                it: 'Il Centro Nossa Senhora Aparecida vive ogni giorno grazie a relazioni, cura, educazione e alla vicinanza di tante persone che scelgono di sostenere questa opera.',
+                de: "Das Centro Nossa Senhora Aparecida lebt jeden Tag dank Beziehungen, Fürsorge, Bildung und der Nähe vieler Menschen, die sich entscheiden, dieses Werk zu unterstützen."
               })}
             </p>
             <p className="text-xl mb-10 leading-relaxed">
-              {t({ pt: 'Você também pode fazer parte.', it: 'Anche tu puoi farne parte.' })}
+              {t({ pt: 'Você também pode fazer parte.', it: 'Anche tu puoi farne parte.', de: "Auch Sie können ein Teil davon sein." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
               <Button variant="secondary" href="#intro-section">
-                {t({ pt: 'Descubra como ajudar', it: 'Scopri cosa puoi fare' })}
+                {t({ pt: 'Descubra como ajudar', it: 'Scopri cosa puoi fare', de: "Entdecken Sie, wie Sie helfen können" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -67,20 +69,22 @@ export function CosaPuoiFareTuPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Existem muitas formas de ajudar', it: 'Ci sono molti modi per aiutare' })}
+              {t({ pt: 'Existem muitas formas de ajudar', it: 'Ci sono molti modi per aiutare', de: "Es gibt viele Möglichkeiten zu helfen" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6">
               {t({
                 pt: 'Apoiar o Centro Nossa Senhora Aparecida significa contribuir concretamente para a vida cotidiana das crianças e famílias acolhidas em Salvador da Bahia.',
-                it: 'Sostenere il Centro Nossa Senhora Aparecida significa contribuire concretamente alla vita quotidiana dei bambini e delle famiglie accolte a Salvador de Bahia.'
+                it: 'Sostenere il Centro Nossa Senhora Aparecida significa contribuire concretamente alla vita quotidiana dei bambini e delle famiglie accolte a Salvador de Bahia.',
+                de: "Das Centro Nossa Senhora Aparecida zu unterstützen bedeutet, konkret zum Alltag der Kinder und Familien beizutragen, die in Salvador de Bahia aufgenommen werden."
               })}
             </p>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
               {t({
                 pt: 'Cada contribuição, pequena ou grande, ajuda a construir continuidade, presença e futuro.',
-                it: 'Ogni contributo, piccolo o grande, aiuta a costruire continuità, presenza e futuro.'
+                it: 'Ogni contributo, piccolo o grande, aiuta a costruire continuità, presenza e futuro.',
+                de: "Jeder Beitrag, ob klein oder groß, hilft dabei, Kontinuität, Präsenz und Zukunft aufzubauen."
               })}
             </p>
           </AnimatedSection>
@@ -97,7 +101,7 @@ export function CosaPuoiFareTuPage() {
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition-all duration-500">
                 <img loading="lazy"
                   src={donationImg}
-                  alt={t({ pt: 'Doação', it: 'Donazione' })}
+                  alt={t({ pt: 'Doação', it: 'Donazione', de: "Spende" })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -107,17 +111,18 @@ export function CosaPuoiFareTuPage() {
               <div className="flex items-center gap-3 mb-6">
                 <Heart className="w-10 h-10 text-[var(--warm-orange)]" />
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)]">
-                  {t({ pt: 'Faça uma doação', it: 'Fai una donazione' })}
+                  {t({ pt: 'Faça uma doação', it: 'Fai una donazione', de: "Eine Spende tätigen" })}
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
                 {t({
                   pt: 'Com sua ajuda podemos apoiar a creche, as refeições diárias, os projetos educacionais e o crescimento do Centro.',
-                  it: 'Con il tuo aiuto possiamo sostenere l\'asilo, i pasti quotidiani, i progetti educativi e la crescita del Centro.'
+                  it: 'Con il tuo aiuto possiamo sostenere l\'asilo, i pasti quotidiani, i progetti educativi e la crescita del Centro.',
+                  de: "Mit Ihrer Hilfe können wir die Kita, die täglichen Mahlzeiten, die Bildungsprojekte und das Wachstum des Zentrums unterstützen."
                 })}
               </p>
               <Button to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </AnimatedSection>
           </div>
@@ -132,25 +137,26 @@ export function CosaPuoiFareTuPage() {
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-10 h-10 text-white" />
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-white">
-                  {t({ pt: 'Doe seu 5x1000', it: 'Dona il tuo 5x1000' })}
+                  {t({ pt: 'Doe seu 5x1000', it: 'Dona il tuo 5x1000', de: "Spenden Sie Ihr 5x1000" })}
                 </h2>
               </div>
               <p className="text-lg md:text-xl leading-relaxed mb-8 opacity-95">
                 {t({
                   pt: 'Um gesto simples que pode contribuir concretamente para os projetos educacionais e sociais da Fundação Betania ONLUS.',
-                  it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fundação Betania ONLUS.'
+                  it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fundação Betania ONLUS.',
+                  de: "Eine einfache Geste, die konkret zu den Bildungs- und Sozialprojekten der Fundação Betania ONLUS beitragen kann."
                 })}
               </p>
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mb-8">
                 <p className="text-lg mb-3 opacity-90">
-                  {t({ pt: 'Código Fiscal', it: 'Codice Fiscale' })}
+                  {t({ pt: 'Código Fiscal', it: 'Codice Fiscale', de: "Steuernummer" })}
                 </p>
                 <p className="text-3xl font-mono tracking-wider">
                   92028960378
                 </p>
               </div>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Saiba mais', it: 'Scopri di più' })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Erfahren Sie mehr" })}
               </Button>
             </AnimatedSection>
 
@@ -158,7 +164,7 @@ export function CosaPuoiFareTuPage() {
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
                 <img loading="lazy"
                   src={impactImg}
-                  alt={t({ pt: '5x1000', it: '5x1000' })}
+                  alt={t({ pt: '5x1000', it: '5x1000', de: "5x1000" })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -175,7 +181,7 @@ export function CosaPuoiFareTuPage() {
               <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)] transition-all duration-500">
                 <img loading="lazy"
                   src={supportImg}
-                  alt={t({ pt: 'Apoio à distância', it: 'Sostegno a distanza' })}
+                  alt={t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft" })}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -185,17 +191,18 @@ export function CosaPuoiFareTuPage() {
               <div className="flex items-center gap-3 mb-6">
                 <Users className="w-10 h-10 text-[var(--soft-green)]" />
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)]">
-                  {t({ pt: 'Apoio à distância', it: 'Sostegno a distanza' })}
+                  {t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft" })}
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
                 {t({
                   pt: 'Acompanhe concretamente o percurso educacional de uma criança, ajudando-a a crescer em um ambiente estável e acolhedor.',
-                  it: 'Accompagna concretamente il percorso educativo di un bambino aiutandolo a crescere in un ambiente stabile e accogliente.'
+                  it: 'Accompagna concretamente il percorso educativo di un bambino aiutandolo a crescere in un ambiente stabile e accogliente.',
+                  de: "Begleiten Sie konkret den Bildungsweg eines Kindes und helfen Sie ihm, in einem stabilen und liebevollen Umfeld aufzuwachsen."
                 })}
               </p>
               <Button to="/sostegno-a-distanza">
-                {t({ pt: 'Descubra o apoio à distância', it: 'Scopri il sostegno a distanza' })}
+                {t({ pt: 'Descubra o apoio à distância', it: 'Scopri il sostegno a distanza', de: "Entdecken Sie die Patenschaft" })}
               </Button>
             </AnimatedSection>
           </div>
@@ -210,17 +217,18 @@ export function CosaPuoiFareTuPage() {
               <div className="flex items-center gap-3 mb-6">
                 <Building2 className="w-10 h-10 text-[var(--warm-orange)]" />
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)]">
-                  {t({ pt: 'Empresas e profissionais', it: 'Aziende e professionisti' })}
+                  {t({ pt: 'Empresas e profissionais', it: 'Aziende e professionisti', de: "Unternehmen und Fachleute" })}
                 </h2>
               </div>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
                 {t({
                   pt: 'Também empresas, atividades e profissionais podem apoiar o Centro através de doações, serviços ou colaborações.',
-                  it: 'Anche aziende, attività e professionisti possono sostenere il Centro attraverso donazioni, servizi o collaborazioni.'
+                  it: 'Anche aziende, attività e professionisti possono sostenere il Centro attraverso donazioni, servizi o collaborazioni.',
+                  de: "Auch Unternehmen, Betriebe und Fachleute können das Zentrum durch Spenden, Dienstleistungen oder Kooperationen unterstützen."
                 })}
               </p>
               <Button to="/contatti">
-                {t({ pt: 'Entre em contato', it: 'Contattaci' })}
+                {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
             </AnimatedSection>
 
@@ -230,7 +238,8 @@ export function CosaPuoiFareTuPage() {
                 <p className="text-white text-lg md:text-xl leading-relaxed">
                   {t({
                     pt: 'Parceria empresarial, responsabilidade social, contribuição de serviços profissionais.',
-                    it: 'Partnership aziendale, responsabilità sociale, contributo di servizi professionali.'
+                    it: 'Partnership aziendale, responsabilità sociale, contributo di servizi professionali.',
+                    de: "Unternehmenspartnerschaft, soziale Verantwortung, Beitrag durch professionelle Dienstleistungen."
                   })}
                 </p>
               </div>
@@ -247,18 +256,19 @@ export function CosaPuoiFareTuPage() {
               <Share2 className="w-12 h-12 text-[var(--soft-green)]" />
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Ajude-nos a divulgar o Centro', it: 'Aiutaci a far conoscere il Centro' })}
+              {t({ pt: 'Ajude-nos a divulgar o Centro', it: 'Aiutaci a far conoscere il Centro', de: "Helfen Sie uns, das Zentrum bekannt zu machen" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-10">
               {t({
                 pt: 'Compartilhar esta realidade significa permitir que outras pessoas conheçam e apoiem esta obra.',
-                it: 'Condividere questa realtà significa permettere ad altre persone di incontrare e sostenere questa opera.'
+                it: 'Condividere questa realtà significa permettere ad altre persone di incontrare e sostenere questa opera.',
+                de: "Diese Realität zu teilen bedeutet, anderen Menschen die Möglichkeit zu geben, dieses Werk kennenzulernen und zu unterstützen."
               })}
             </p>
             <Button to="/il-centro">
-              {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
+              {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
             </Button>
           </AnimatedSection>
         </div>
@@ -269,7 +279,7 @@ export function CosaPuoiFareTuPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)] mb-16 text-center">
-              {t({ pt: 'Cada ajuda se torna vida cotidiana', it: 'Ogni aiuto diventa vita quotidiana' })}
+              {t({ pt: 'Cada ajuda se torna vida cotidiana', it: 'Ogni aiuto diventa vita quotidiana', de: "Jede Hilfe wird zu gelebtem Alltag" })}
             </h2>
           </AnimatedSection>
 
@@ -278,7 +288,7 @@ export function CosaPuoiFareTuPage() {
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-5xl text-[var(--warm-orange)] mb-4">100+</p>
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'crianças acolhidas', it: 'bambini accolti' })}
+                  {t({ pt: 'crianças acolhidas', it: 'bambini accolti', de: "aufgenommene Kinder" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -287,7 +297,7 @@ export function CosaPuoiFareTuPage() {
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-5xl text-[var(--soft-green)] mb-4">5</p>
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'refeições por dia', it: 'pasti al giorno' })}
+                  {t({ pt: 'refeições por dia', it: 'pasti al giorno', de: "Mahlzeiten pro Tag" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -296,7 +306,7 @@ export function CosaPuoiFareTuPage() {
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-5xl text-[var(--deep-blue)] mb-4">365</p>
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'dias de educação', it: 'giorni di educazione' })}
+                  {t({ pt: 'dias de educação', it: 'giorni di educazione', de: "Bildungstage" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -304,7 +314,7 @@ export function CosaPuoiFareTuPage() {
             <AnimatedSection delay={0.4}>
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'Apoio às famílias', it: 'Sostegno alle famiglie' })}
+                  {t({ pt: 'Apoio às famílias', it: 'Sostegno alle famiglie', de: "Unterstützung für Familien" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -312,7 +322,7 @@ export function CosaPuoiFareTuPage() {
             <AnimatedSection delay={0.5}>
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'Novos espaços educacionais', it: 'Nuovi spazi educativi' })}
+                  {t({ pt: 'Novos espaços educacionais', it: 'Nuovi spazi educativi', de: "Neue Bildungsräume" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -320,7 +330,7 @@ export function CosaPuoiFareTuPage() {
             <AnimatedSection delay={0.6}>
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <p className="text-xl text-gray-800">
-                  {t({ pt: 'Presença diária', it: 'Presenza quotidiana' })}
+                  {t({ pt: 'Presença diária', it: 'Presenza quotidiana', de: "Tägliche Präsenz" })}
                 </p>
               </div>
             </AnimatedSection>
@@ -333,7 +343,7 @@ export function CosaPuoiFareTuPage() {
         <div className="absolute inset-0">
           <img loading="lazy"
             src={impactImg}
-            alt={t({ pt: 'Centro', it: 'Centro' })}
+            alt={t({ pt: 'Centro', it: 'Centro', de: "Zentrum" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[var(--deep-blue)]/85"></div>
@@ -344,7 +354,8 @@ export function CosaPuoiFareTuPage() {
             <blockquote className="text-3xl md:text-4xl leading-relaxed italic">
               "{t({
                 pt: 'O Centro existe graças a tantas pessoas que escolhem todos os dias compartilhar esta responsabilidade e esta esperança.',
-                it: 'Il Centro esiste grazie a tante persone che scelgono ogni giorno di condividere questa responsabilità e questa speranza.'
+                it: 'Il Centro esiste grazie a tante persone che scelgono ogni giorno di condividere questa responsabilità e questa speranza.',
+                de: "Das Zentrum existiert dank vieler Menschen, die sich jeden Tag entscheiden, diese Verantwortung und diese Hoffnung zu teilen."
               })}"
             </blockquote>
           </AnimatedSection>
@@ -356,22 +367,23 @@ export function CosaPuoiFareTuPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Quer entender como ajudar?', it: 'Vuoi capire come aiutare?' })}
+              {t({ pt: 'Quer entender como ajudar?', it: 'Vuoi capire come aiutare?', de: "Möchten Sie wissen, wie Sie helfen können?" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-10">
               {t({
                 pt: 'Se você deseja apoiar o Centro ou conhecer melhor os projetos, pode entrar em contato diretamente.',
-                it: 'Se desideri sostenere il Centro o conoscere meglio i progetti, puoi contattarci direttamente.'
+                it: 'Se desideri sostenere il Centro o conoscere meglio i progetti, puoi contattarci direttamente.',
+                de: "Wenn Sie das Zentrum unterstützen oder die Projekte näher kennenlernen möchten, können Sie uns direkt kontaktieren."
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/contatti">
-                {t({ pt: 'Entre em contato', it: 'Contattaci' })}
+                {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -383,7 +395,7 @@ export function CosaPuoiFareTuPage() {
         <div className="absolute inset-0">
           <img loading="lazy"
             src={finalCtaImg}
-            alt={t({ pt: 'Faça parte desta história', it: 'Diventa parte di questa storia' })}
+            alt={t({ pt: 'Faça parte desta história', it: 'Diventa parte di questa storia', de: "Werden Sie Teil dieser Geschichte" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
@@ -392,24 +404,25 @@ export function CosaPuoiFareTuPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h2 className="text-5xl md:text-6xl mb-8">
-              {t({ pt: 'Faça parte desta história', it: 'Diventa parte di questa storia' })}
+              {t({ pt: 'Faça parte desta história', it: 'Diventa parte di questa storia', de: "Werden Sie Teil dieser Geschichte" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-2xl md:text-3xl mb-12 leading-relaxed">
               {t({
                 pt: 'Cada presença, cada ajuda e cada gesto contribuem para construir relações, educação e futuro para tantas crianças e famílias.',
-                it: 'Ogni presenza, ogni aiuto e ogni gesto contribuiscono a costruire relazioni, educazione e futuro per tanti bambini e famiglie.'
+                it: 'Ogni presenza, ogni aiuto e ogni gesto contribuiscono a costruire relazioni, educazione e futuro per tanti bambini e famiglie.',
+                de: "Jede Anwesenheit, jede Hilfe und jede Geste tragen dazu bei, Beziehungen, Bildung und Zukunft für viele Kinder und Familien aufzubauen."
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
               <Button variant="secondary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
               </Button>
             </div>
           </AnimatedSection>

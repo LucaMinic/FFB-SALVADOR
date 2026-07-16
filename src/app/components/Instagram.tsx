@@ -73,13 +73,14 @@ export function Instagram() {
             <div className="flex items-center justify-center gap-3 mb-6">
               <InstagramIcon className="w-10 h-10 text-[var(--deep-blue)]" />
               <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)]">
-                {t({ pt: 'Siga a Fundação Betânia dia a dia', it: 'Segui la Fundação Betânia giorno per giorno' })}
+                {t({ pt: 'Siga a Fundação Betânia dia a dia', it: 'Segui la Fundação Betânia giorno per giorno', de: "Begleiten Sie die Fundação Betânia Tag für Tag" })}
               </h2>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               {t({
                 pt: 'No Instagram compartilhamos momentos da vida cotidiana, atualizações da missão e pequenos sinais do que nasce todos os dias em Salvador da Bahia.',
-                it: 'Su Instagram condividiamo momenti della vita quotidiana, aggiornamenti dalla missione e piccoli segni di ciò che nasce ogni giorno a Salvador de Bahia.'
+                it: 'Su Instagram condividiamo momenti della vita quotidiana, aggiornamenti dalla missione e piccoli segni di ciò che nasce ogni giorno a Salvador de Bahia.',
+                de: "Auf Instagram teilen wir Momente aus dem Alltag, Neuigkeiten von unserer Mission und kleine Zeichen dessen, was jeden Tag in Salvador de Bahia entsteht."
               })}
             </p>
           </div>
@@ -118,7 +119,7 @@ export function Instagram() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="secondary">{t({ pt: 'Ir para o perfil do Instagram', it: 'Vai al profilo Instagram' })}</Button>
+              <Button variant="secondary">{t({ pt: 'Ir para o perfil do Instagram', it: 'Vai al profilo Instagram', de: "Zum Instagram-Profil" })}</Button>
             </a>
           </div>
         </AnimatedSection>

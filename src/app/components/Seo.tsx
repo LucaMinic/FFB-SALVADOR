@@ -54,7 +54,7 @@ export function Seo() {
     const description = meta.description[lang];
     const canonicalPath = pathname === '/' ? '' : pathname;
     const url = `${SITE_URL}${canonicalPath}`;
-    const locale = lang === 'pt' ? 'pt_BR' : 'it_IT';
+    const locale = lang === 'pt' ? 'pt_BR' : lang === 'it' ? 'it_IT' : 'de_DE';
 
     document.title = title;
     setMetaTag('name', 'description', description);

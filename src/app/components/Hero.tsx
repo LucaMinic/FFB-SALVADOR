@@ -36,31 +36,31 @@ export function Hero() {
   const images = [
     {
       src: heroImage1,
-      alt: t({ pt: 'Crianças da missão', it: 'Bambini della missione' }),
-      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.' }),
+      alt: t({ pt: 'Crianças da missão', it: 'Bambini della missione', de: "Kinder der Mission" }),
+      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.', de: "Tag für Tag wird hier das Leben gemeinsam gestaltet." }),
       focus: 'center 75%'
     },
     {
       src: heroImage2,
-      alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale' }),
-      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.' }),
+      alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale', de: "Institutioneller Besuch" }),
+      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.', de: "An diesem Ort findet jedes Kind Fürsorge, Aufmerksamkeit und eine Zukunftschance." }),
       focus: 'center 40%'
     },
     {
       src: heroImage3,
-      alt: t({ pt: 'Crianças sorrindo', it: 'Bambini sorridenti' }),
-      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.' }),
+      alt: t({ pt: 'Crianças sorrindo', it: 'Bambini sorridenti', de: "Lächelnde Kinder" }),
+      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.', de: "Aufnehmen bedeutet, an der Seite zu stehen, zu teilen und gemeinsam zu wachsen." }),
       focus: 'center 35%'
     },
     {
       src: heroImage4,
-      alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale' }),
-      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.' }),
+      alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale', de: "Institutionelle Begegnung" }),
+      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.', de: "Wo Not herrscht, entsteht eine Präsenz, die zum Zuhause wird." }),
       focus: 'center 35%'
     },
     {
       src: heroImage5,
-      alt: t({ pt: 'A fraternidade', it: 'La fraternità' }),
+      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Bruderschaft" }),
       text: '',
       focus: 'center 25%'
     },
@@ -135,14 +135,16 @@ export function Hero() {
               <p className="text-lg md:text-2xl lg:text-3xl mb-4 md:mb-8 text-gray-800 leading-relaxed">
                 {t({
                   pt: 'Aqui em Salvador da Bahia, através do Centro Nossa Senhora Aparecida, acolhemos e acompanhamos diariamente crianças e famílias em situação de vulnerabilidade.',
-                  it: 'A Salvador de Bahia, attraverso il Centro Nossa Senhora Aparecida, accogliamo e accompagniamo ogni giorno bambini e famiglie in difficoltà.'
+                  it: 'A Salvador de Bahia, attraverso il Centro Nossa Senhora Aparecida, accogliamo e accompagniamo ogni giorno bambini e famiglie in difficoltà.',
+                  de: "Hier in Salvador de Bahia nehmen wir durch das Centro Nossa Senhora Aparecida jeden Tag Kinder und Familien in schwierigen Lebenslagen auf und begleiten sie."
                 })}
               </p>
 
               <p className="text-base md:text-xl mb-6 md:mb-10 max-w-3xl mx-auto text-gray-700 leading-relaxed">
                 {t({
                   pt: 'Todos os dias partilhamos a vida com quem mais precisa, oferecendo cuidado, educação e uma oportunidade concreta de futuro.',
-                  it: 'Ogni giorno condividiamo la vita con chi ha più bisogno, offrendo cura, educazione e una possibilità concreta di futuro.'
+                  it: 'Ogni giorno condividiamo la vita con chi ha più bisogno, offrendo cura, educazione e una possibilità concreta di futuro.',
+                  de: "Jeden Tag teilen wir das Leben mit denen, die es am meisten brauchen, und schenken ihnen Fürsorge, Bildung und eine echte Zukunftschance."
                 })}
               </p>
             </div>

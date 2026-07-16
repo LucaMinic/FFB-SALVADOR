@@ -8,6 +8,16 @@ import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
 import { useLanguage, useT } from '../context/LanguageContext';
 
+function FlagGermania({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 5 3" className={className} role="img" aria-label="Deutsch">
+      <rect width="5" height="1" y="0" fill="#000000" />
+      <rect width="5" height="1" y="1" fill="#DD0000" />
+      <rect width="5" height="1" y="2" fill="#FFCE00" />
+    </svg>
+  );
+}
+
 interface SubMenuItem {
   label: string;
   href: string;
@@ -51,6 +61,19 @@ function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
         title="Italiano"
       >
         <img src={flagItalia} alt="Italiano" className="w-7 h-auto rounded-sm" />
+      </button>
+      <button
+        onClick={() => setLang('de')}
+        className={`flex items-center justify-center rounded transition-all duration-200 ${
+          lang === 'de'
+            ? 'ring-2 ring-[var(--deep-blue)] ring-offset-1 opacity-100 shadow-sm'
+            : 'opacity-35 hover:opacity-65'
+        }`}
+        aria-pressed={lang === 'de'}
+        aria-label="Deutsch"
+        title="Deutsch"
+      >
+        <FlagGermania className="w-7 h-auto rounded-sm" />
       </button>
     </div>
   );
@@ -114,15 +137,15 @@ export function Header() {
   };
 
   const menuItems: MenuItem[] = [
-    { label: t({ pt: 'Início', it: 'Home' }), href: '/', isRoute: true },
+    { label: t({ pt: 'Início', it: 'Home', de: "Startseite" }), href: '/', isRoute: true },
     {
-      label: t({ pt: 'Fundação', it: 'La Fundação' }),
+      label: t({ pt: 'Fundação', it: 'La Fundação', de: "Die Fundação" }),
       href: '/la-fundacao',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS' }), href: '/la-fundacao', isRoute: true },
-        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali' }), href: '/riconoscimenti-istituzionali', isRoute: true },
-        { label: t({ pt: 'Transparência', it: 'Trasparenza' }), href: '/trasparenza', isRoute: true }
+        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS" }), href: '/la-fundacao', isRoute: true },
+        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen" }), href: '/riconoscimenti-istituzionali', isRoute: true },
+        { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz" }), href: '/trasparenza', isRoute: true }
       ]
     },
     {
@@ -130,60 +153,60 @@ export function Header() {
       href: '/il-centro',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'O Centro', it: 'Il Centro' }), href: '/il-centro', isRoute: true },
+        { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Zentrum" }), href: '/il-centro', isRoute: true },
         {
-          label: t({ pt: 'Creche', it: 'Asilo' }),
+          label: t({ pt: 'Creche', it: 'Asilo', de: "Kita" }),
           href: '/asilo',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'A estrutura', it: 'La struttura' }), href: '/asilo', isRoute: true },
-            { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' }), href: '/nossa-metodologia', isRoute: true },
-            { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti' }), href: '/projetos-permanentes', isRoute: true },
-            { label: t({ pt: 'Relatórios', it: 'Relazioni' }), href: '/relatorios', isRoute: true },
-            { label: t({ pt: 'Laboratórios', it: 'Laboratori' }), href: '/progetti-pedagogici', isRoute: true },
+            { label: t({ pt: 'A estrutura', it: 'La struttura', de: "Die Einrichtung" }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik" }), href: '/nossa-metodologia', isRoute: true },
+            { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti', de: "Dauerhafte Projekte" }), href: '/projetos-permanentes', isRoute: true },
+            { label: t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte" }), href: '/relatorios', isRoute: true },
+            { label: t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten" }), href: '/progetti-pedagogici', isRoute: true },
           ]
         },
         {
-          label: t({ pt: 'A escola', it: 'La scuola' }),
+          label: t({ pt: 'A escola', it: 'La scuola', de: "Die Schule" }),
           href: '/progetto-scuola',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola' }), href: '/progetto-scuola', isRoute: true },
-            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori' }), href: '/avanzamento-lavori', isRoute: true }
+            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt" }), href: '/progetto-scuola', isRoute: true },
+            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt" }), href: '/avanzamento-lavori', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' }), href: '/documentari-racconti', isRoute: true },
+        { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentationen und Erzählungen" }), href: '/documentari-racconti', isRoute: true },
       ]
     },
     {
-      label: t({ pt: 'Fraternidade', it: 'Fraternità' }),
+      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Bruderschaft" }),
       href: '/la-fraternita',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania' }), href: '/la-fraternita', isRoute: true },
-        { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali' }), href: '/eventi-speciali', isRoute: true }
+        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania" }), href: '/la-fraternita', isRoute: true },
+        { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali', de: "Besondere Veranstaltungen" }), href: '/eventi-speciali', isRoute: true }
       ]
     },
     {
-      label: t({ pt: 'Apoie', it: 'Sostieni' }),
+      label: t({ pt: 'Apoie', it: 'Sostieni', de: "Unterstützen" }),
       href: '#sostieni',
       submenu: [
         {
-          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu' }),
+          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können" }),
           href: '/cosa-puoi-fare-tu',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Doar agora', it: 'Dona ora' }), href: '/dona-ora', isRoute: true },
-            { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza' }), href: '/sostegno-a-distanza', isRoute: true }
+            { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" }), href: '/dona-ora', isRoute: true },
+            { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza', de: "Patenschaft" }), href: '/sostegno-a-distanza', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Benfeitores', it: 'Benefattori' }), href: '/benefattori', isRoute: true }
+        { label: t({ pt: 'Benfeitores', it: 'Benefattori', de: "Förderer" }), href: '/benefattori', isRoute: true }
       ]
     },
-    { label: t({ pt: 'Contatos', it: 'Contatti' }), href: '/contatti', isRoute: true }
+    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt" }), href: '/contatti', isRoute: true }
   ];
 
-  const doarLabel = t({ pt: 'Doar agora', it: 'Dona ora' });
+  const doarLabel = t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" });
 
   const isSubmenuActive = (item: MenuItem): boolean => {
     return item.submenu?.some(sub =>
@@ -350,7 +373,7 @@ export function Header() {
               <SheetTrigger asChild>
                 <button
                   className="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                  aria-label={t({ pt: 'Abrir menu', it: 'Apri menu' })}
+                  aria-label={t({ pt: 'Abrir menu', it: 'Apri menu', de: "Menü öffnen" })}
                 >
                   <Menu className="w-6 h-6 text-gray-700" />
                 </button>
@@ -358,7 +381,7 @@ export function Header() {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <SheetTitle className="sr-only">Menu</SheetTitle>
                 <SheetDescription className="sr-only">
-                  {t({ pt: 'Menu de navegação principal', it: 'Menu di navigazione principale' })}
+                  {t({ pt: 'Menu de navegação principal', it: 'Menu di navigazione principale', de: "Hauptnavigationsmenü" })}
                 </SheetDescription>
                 <div className="flex flex-col gap-6 mt-8">
                   {/* Language switcher in mobile menu */}

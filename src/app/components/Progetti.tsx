@@ -18,7 +18,7 @@ export function Progetti() {
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] transition-all duration-500">
               <img loading="lazy"
                 src={progettiImage}
-                alt={t({ pt: 'Os nossos projetos', it: 'I nostri progetti' })}
+                alt={t({ pt: 'Os nossos projetos', it: 'I nostri progetti', de: "Unsere Projekte" })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -26,17 +26,18 @@ export function Progetti() {
 
           <AnimatedSection delay={0.2} direction="right">
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti' })}
+              {t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentarfilme und Erzählungen" })}
             </h2>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: 'Através de documentários, testemunhos e relatos, a vida do Centro Nossa Senhora Aparecida prende forma em histórias autênticas. Memórias, encontros e percursos que contam quem somos e o que vivemos cada dia.',
-                it: 'Attraverso documentari, testimonianze e racconti, la vita del Centro Nossa Senhora Aparecida prende forma in storie autentiche. Memorie, incontri e percorsi che raccontano chi siamo e ciò che viviamo ogni giorno.'
+                it: 'Attraverso documentari, testimonianze e racconti, la vita del Centro Nossa Senhora Aparecida prende forma in storie autentiche. Memorie, incontri e percorsi che raccontano chi siamo e ciò che viviamo ogni giorno.',
+                de: "Durch Dokumentarfilme, Zeugnisse und Erzählungen nimmt das Leben des Centro Nossa Senhora Aparecida in authentischen Geschichten Gestalt an. Erinnerungen, Begegnungen und Wege, die erzählen, wer wir sind und was wir jeden Tag erleben."
               })}
             </p>
 
-            <Button variant="secondary" to="/documentari-racconti">{t({ pt: 'Veja Documentários e Relatos', it: 'Guarda Documentari e Racconti' })}</Button>
+            <Button variant="secondary" to="/documentari-racconti">{t({ pt: 'Veja Documentários e Relatos', it: 'Guarda Documentari e Racconti', de: "Dokumentarfilme und Erzählungen ansehen" })}</Button>
           </AnimatedSection>
         </div>
       </div>

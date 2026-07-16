@@ -13,20 +13,22 @@ export function ProgettiPedagogiciPage() {
   const projects = [
     {
       id: 'auto-idea-tutti',
-      title: t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti" }),
+      title: t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti", de: "Auto: eine Idee von allen" }),
       description: t({
         pt: 'Um percurso compartilhado nascido do desejo de construir juntos possibilidades concretas de crescimento, autonomia e participação.',
-        it: 'Un percorso condiviso nato dal desiderio di costruire insieme possibilità concrete di crescita, autonomia e partecipazione.'
+        it: 'Un percorso condiviso nato dal desiderio di costruire insieme possibilità concrete di crescita, autonomia e partecipazione.',
+        de: "Ein gemeinsamer Weg, entstanden aus dem Wunsch, gemeinsam konkrete Möglichkeiten für Wachstum, Autonomie und Teilhabe zu schaffen."
       }),
       image: autoImg,
       link: '/documentari-racconti/auto-idea-tutti'
     },
     {
       id: 'ricordi-narrazioni',
-      title: t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane' }),
+      title: t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen" }),
       description: t({
         pt: 'Uma viagem entre memória, cultura e identidade através de relatos, imagens e testemunhos.',
-        it: 'Un viaggio tra memoria, cultura e identità attraverso racconti, immagini e testimonianze.'
+        it: 'Un viaggio tra memoria, cultura e identità attraverso racconti, immagini e testimonianze.',
+        de: "Eine Reise zwischen Erinnerung, Kultur und Identität durch Erzählungen, Bilder und Zeugnisse."
       }),
       image: ricordiImg,
       link: '/documentari-racconti/ricordi-narrazioni'
@@ -48,12 +50,13 @@ export function ProgettiPedagogiciPage() {
               Centro Nossa Senhora Aparecida
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Laboratórios', it: 'Laboratori' })}
+              {t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Experiências, atividades e percursos educativos que acompanham o crescimento das crianças do Centro Nossa Senhora Aparecida através do jogo, da criatividade, da relação e da aprendizagem.',
                 it: 'Esperienze, attività e percorsi educativi che accompagnano la crescita dei bambini del Centro Nossa Senhora Aparecida attraverso il gioco, la creatività, la relazione e l\'apprendimento.',
+                de: "Erfahrungen, Aktivitäten und Bildungswege, die das Wachstum der Kinder des Centro Nossa Senhora Aparecida durch Spiel, Kreativität, Beziehung und Lernen begleiten.",
               })}
             </p>
           </AnimatedSection>
@@ -63,10 +66,10 @@ export function ProgettiPedagogiciPage() {
                 href="#progetti"
                 className="px-8 py-4 bg-white text-[var(--deep-blue)] font-semibold rounded-xl shadow-lg hover:bg-white/90 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Veja os projetos', it: 'Scopri i progetti' })}
+                {t({ pt: 'Veja os projetos', it: 'Scopri i progetti', de: "Entdecken Sie die Projekte" })}
               </a>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Doe agora', it: 'Dona ora' })}
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -81,18 +84,20 @@ export function ProgettiPedagogiciPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Educar através da experiência', it: 'Educare attraverso l\'esperienza' })}
+              {t({ pt: 'Educar através da experiência', it: 'Educare attraverso l\'esperienza', de: "Erziehung durch Erfahrung" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               {t({
                 pt: 'No Centro Nossa Senhora Aparecida, a educação nasce da vida quotidiana, das relações e das experiências partilhadas entre crianças, educadores e famílias.',
                 it: 'Al Centro Nossa Senhora Aparecida, l\'educazione nasce dalla vita quotidiana, dalle relazioni e dalle esperienze condivise tra bambini, educatori e famiglie.',
+                de: "Im Centro Nossa Senhora Aparecida entsteht Bildung aus dem täglichen Leben, aus Beziehungen und aus Erfahrungen, die Kinder, Erzieherinnen und Erzieher sowie Familien gemeinsam teilen.",
               })}
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               {t({
                 pt: 'Através de projetos pedagógicos, atividades criativas e percursos de aprendizagem, cada criança é acompanhada no seu crescimento único e irrepetível.',
                 it: 'Attraverso progetti pedagogici, attività creative e percorsi di apprendimento, ogni bambino viene accompagnato nella propria crescita unica e irripetibile.',
+                de: "Durch pädagogische Projekte, kreative Aktivitäten und Lernwege wird jedes Kind in seinem einzigartigen und unwiederholbaren Wachstum begleitet.",
               })}
             </p>
           </AnimatedSection>
@@ -125,7 +130,7 @@ export function ProgettiPedagogiciPage() {
                       {project.description}
                     </p>
                     <span className="inline-flex items-center gap-2 text-[var(--warm-orange)] font-semibold text-sm uppercase tracking-wide group-hover:gap-3 transition-all duration-300">
-                      {t({ pt: 'Saiba mais', it: 'Scopri di più' })}
+                      {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
@@ -143,20 +148,21 @@ export function ProgettiPedagogiciPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Descubra a vida do Centro', it: 'Scopri la vita del Centro' })}
+              {t({ pt: 'Descubra a vida do Centro', it: 'Scopri la vita del Centro', de: "Entdecken Sie das Leben im Centro" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Cada projeto nasce de relações quotidianas, experiências partilhadas e percursos educativos vividos juntos.',
                 it: 'Ogni progetto nasce da relazioni quotidiane, esperienze condivise e percorsi educativi vissuti insieme.',
+                de: "Jedes Projekt entsteht aus alltäglichen Beziehungen, gemeinsamen Erfahrungen und gemeinsam erlebten Bildungswegen.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro" })}
               </Button>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro' })}
+                {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro', de: "Unterstützen Sie das Centro" })}
               </Button>
             </div>
           </AnimatedSection>

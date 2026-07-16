@@ -99,15 +99,15 @@ export function ImpactNumbers() {
   const items = [
     {
       number: '120+',
-      label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa' })
+      label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa', de: "Kinder, die jeden Tag in unserem Haus aufgenommen werden" })
     },
     {
       number: '5',
-      label: t({ pt: 'Refeições quentes garantidas todos os dias', it: 'Pasti caldi garantiti ogni giorno' })
+      label: t({ pt: 'Refeições quentes garantidas todos os dias', it: 'Pasti caldi garantiti ogni giorno', de: "Warme Mahlzeiten, täglich garantiert" })
     },
     {
       number: '100%',
-      label: t({ pt: 'Acesso completamente gratuito para cada família', it: 'Accesso completamente gratuito per ogni famiglia' })
+      label: t({ pt: 'Acesso completamente gratuito para cada família', it: 'Accesso completamente gratuito per ogni famiglia', de: "Vollständig kostenloser Zugang für jede Familie" })
     },
   ];
 
@@ -117,12 +117,13 @@ export function ImpactNumbers() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Este é o impacto concreto do nosso trabalho', it: "Ecco l'impatto concreto del nostro lavoro" })}
+              {t({ pt: 'Este é o impacto concreto do nosso trabalho', it: "Ecco l'impatto concreto del nostro lavoro", de: "Das ist die konkrete Wirkung unserer Arbeit" })}
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               {t({
                 pt: 'Todos os dias, pequenos gestos constroem uma mudança real na vida das crianças e de suas famílias.',
-                it: 'Ogni giorno, piccoli gesti costruiscono un cambiamento reale nella vita dei bambini e delle loro famiglie.'
+                it: 'Ogni giorno, piccoli gesti costruiscono un cambiamento reale nella vita dei bambini e delle loro famiglie.',
+                de: "Jeden Tag bewirken kleine Gesten einen echten Wandel im Leben der Kinder und ihrer Familien."
               })}
             </p>
           </div>

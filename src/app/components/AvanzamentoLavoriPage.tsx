@@ -13,7 +13,7 @@ import droneGiugno2026 from '../../imports/8_giugno_2026.mp4';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-type BilingualText = { it: string; pt: string };
+type BilingualText = { it: string; pt: string; de: string };
 type MediaType = 'image' | 'video';
 type EntryStatus = 'completed' | 'in-progress' | 'upcoming';
 
@@ -43,15 +43,17 @@ interface TimelineEntry {
 const entries: TimelineEntry[] = [
   {
     id: 'drone',
-    date: { it: '8 giugno 2026', pt: '8 de junho de 2026' },
-    phase: { it: 'Fase 2', pt: 'Fase 2' },
+    date: { it: '8 giugno 2026', pt: '8 de junho de 2026', de: "8. Juni 2026" },
+    phase: { it: 'Fase 2', pt: 'Fase 2', de: "Phase 2" },
     title: {
       it: 'Preparazione del terreno vista dal drone',
       pt: 'Preparação do terreno vista pelo drone',
+      de: "Geländevorbereitung aus der Vogelperspektive der Drohne",
     },
     description: {
       it: "Le immagini aeree mostrano le prime attività di preparazione del terreno e l'organizzazione dell'area destinata alla futura costruzione della scuola.",
       pt: 'As imagens aéreas mostram as primeiras atividades de preparação do terreno e a organização da área destinada à futura construção da escola.',
+      de: "Die Luftaufnahmen zeigen die ersten Arbeiten zur Geländevorbereitung und die Einrichtung des Bereichs für den künftigen Schulbau.",
     },
     media: [
       { type: 'video', src: droneGiugno2026, alt: 'Riprese drone – 8 giugno 2026' },
@@ -60,15 +62,17 @@ const entries: TimelineEntry[] = [
   },
   {
     id: 'sopralluogo',
-    date: { it: '2025', pt: '2025' },
-    phase: { it: 'Fase 1', pt: 'Fase 1' },
+    date: { it: '2025', pt: '2025', de: "2025" },
+    phase: { it: 'Fase 1', pt: 'Fase 1', de: "Phase 1" },
     title: {
       it: 'Sopralluogo iniziale e raccolta materiali',
       pt: 'Vistoria inicial e coleta de materiais',
+      de: "Erste Begehung und Materialsammlung",
     },
     description: {
       it: "Le prime visite sul terreno hanno permesso di raccogliere documentazione fotografica, analizzare l'area e pianificare le attività preliminari necessarie all'avvio del progetto.",
       pt: 'As primeiras visitas ao terreno permitiram reunir documentação fotográfica, analisar a área e planejar as atividades preliminares necessárias para o início do projeto.',
+      de: "Die ersten Besuche vor Ort ermöglichten es, Fotodokumentation zu sammeln, das Gelände zu analysieren und die für den Projektstart notwendigen vorbereitenden Arbeiten zu planen.",
     },
     media: [
       { type: 'video', src: cantiereVideo1, alt: 'Riprese drone – preparazione terreno' },
@@ -87,17 +91,17 @@ const statusConfig: Record<EntryStatus, { dot: string; badge: string; label: Bil
   completed: {
     dot: 'bg-[var(--soft-green)]',
     badge: 'bg-[var(--soft-green)] text-white',
-    label: { it: 'Completato', pt: 'Concluído' },
+    label: { it: 'Completato', pt: 'Concluído', de: "Abgeschlossen" },
   },
   'in-progress': {
     dot: 'bg-[var(--warm-orange)]',
     badge: 'bg-[var(--warm-orange)] text-white',
-    label: { it: 'In corso', pt: 'Em andamento' },
+    label: { it: 'In corso', pt: 'Em andamento', de: "In Arbeit" },
   },
   upcoming: {
     dot: 'bg-gray-300',
     badge: 'bg-gray-200 text-gray-600',
-    label: { it: 'Prossimamente', pt: 'Em breve' },
+    label: { it: 'Prossimamente', pt: 'Em breve', de: "Demnächst" },
   },
 };
 
@@ -124,7 +128,7 @@ export function AvanzamentoLavoriPage() {
         <div className="absolute inset-0">
           <img
             src={cantiere1}
-            alt={t({ it: 'Avanzamento lavori – cantiere scuola', pt: 'Andamento das obras – canteiro da escola' })}
+            alt={t({ it: 'Avanzamento lavori – cantiere scuola', pt: 'Andamento das obras – canteiro da escola', de: "Baufortschritt – Baustelle der Schule" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--deep-blue)]/70 via-[var(--deep-blue)]/50 to-[var(--deep-blue)]/70" />
@@ -133,10 +137,10 @@ export function AvanzamentoLavoriPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ it: 'Progetto scuola', pt: 'Projeto Escola' })}
+              {t({ it: 'Progetto scuola', pt: 'Projeto Escola', de: "Schulprojekt" })}
             </p>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ it: 'Avanzamento Lavori', pt: 'Andamento das Obras' })}
+              {t({ it: 'Avanzamento Lavori', pt: 'Andamento das Obras', de: "Baufortschritt" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -144,12 +148,13 @@ export function AvanzamentoLavoriPage() {
               {t({
                 it: 'Segui passo dopo passo la costruzione della nostra scuola. In questa pagina raccogliamo fotografie, video e aggiornamenti direttamente dal cantiere per documentare ogni fase del progetto.',
                 pt: 'Acompanhe passo a passo a construção da nossa escola. Nesta página reunimos fotos, vídeos e atualizações diretamente da obra para documentar cada etapa do projeto.',
+                de: "Verfolgen Sie Schritt für Schritt den Bau unserer Schule. Auf dieser Seite sammeln wir Fotos, Videos und Neuigkeiten direkt von der Baustelle, um jede Phase des Projekts zu dokumentieren.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <Button variant="primary" href="#diario" className="text-lg px-8 py-4">
-              {t({ it: 'Guarda gli aggiornamenti', pt: 'Ver as atualizações' })}
+              {t({ it: 'Guarda gli aggiornamenti', pt: 'Ver as atualizações', de: "Neuigkeiten ansehen" })}
             </Button>
           </AnimatedSection>
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
@@ -177,12 +182,13 @@ export function AvanzamentoLavoriPage() {
 
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-4 text-center">
-              {t({ it: 'Il diario del cantiere', pt: 'O diário da obra' })}
+              {t({ it: 'Il diario del cantiere', pt: 'O diário da obra', de: "Das Baustellentagebuch" })}
             </h2>
             <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto leading-relaxed">
               {t({
                 it: 'Ogni aggiornamento racconta un passo avanti nella costruzione della scuola.',
                 pt: 'Cada atualização conta um passo à frente na construção da escola.',
+                de: "Jede Aktualisierung erzählt von einem weiteren Schritt beim Bau der Schule.",
               })}
             </p>
           </AnimatedSection>
@@ -253,6 +259,7 @@ export function AvanzamentoLavoriPage() {
                                   {t({
                                     it: 'Il tuo browser non supporta il tag video.',
                                     pt: 'O seu navegador não suporta o elemento de vídeo.',
+                                    de: "Ihr Browser unterstützt das Video-Tag nicht.",
                                   })}
                                 </video>
                               </div>
@@ -309,20 +316,21 @@ export function AvanzamentoLavoriPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-              {t({ it: 'Segui i nostri aggiornamenti', pt: 'Acompanhe nossas atualizações' })}
+              {t({ it: 'Segui i nostri aggiornamenti', pt: 'Acompanhe nossas atualizações', de: "Folgen Sie unseren Neuigkeiten" })}
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-2xl mx-auto">
               {t({
                 it: 'Torna spesso su questa pagina: aggiungeremo nuovi aggiornamenti, fotografie e video man mano che la scuola prende forma.',
                 pt: 'Volte sempre a esta página: adicionaremos novas atualizações, fotos e vídeos à medida que a escola vai tomando forma.',
+                de: "Schauen Sie öfter auf dieser Seite vorbei: Wir fügen laufend neue Updates, Fotos und Videos hinzu, während die Schule Gestalt annimmt.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/progetto-scuola">
-                {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola' })}
+                {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola', de: "Entdecken Sie das Schulprojekt" })}
               </Button>
               <Button variant="secondary" to="/dona-ora">
-                {t({ it: 'Sostieni il progetto', pt: 'Apoie o projeto' })}
+                {t({ it: 'Sostieni il progetto', pt: 'Apoie o projeto', de: "Unterstützen Sie das Projekt" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -336,7 +344,7 @@ export function AvanzamentoLavoriPage() {
           onClose={() => setLightboxOpen(false)}
           onNext={() => setLightboxIndex(prev => (prev + 1) % lightboxImages.length)}
           onPrev={() => setLightboxIndex(prev => (prev - 1 + lightboxImages.length) % lightboxImages.length)}
-          alt={t({ it: 'Foto cantiere', pt: 'Foto da obra' })}
+          alt={t({ it: 'Foto cantiere', pt: 'Foto da obra', de: "Baustellenfoto" })}
         />
       )}
     </div>

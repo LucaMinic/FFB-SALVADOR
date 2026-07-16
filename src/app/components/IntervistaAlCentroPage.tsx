@@ -27,22 +27,23 @@ export function IntervistaAlCentroPage() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro' })}</span>
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück" })}</span>
           </Link>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Entrevista', it: 'Intervista' })}
+              {t({ pt: 'Entrevista', it: 'Intervista', de: "Interview" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro' })}
+              {t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Zentrum" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Um olhar autêntico sobre a missão e o trabalho educativo, social e comunitário em Salvador da Bahia.',
                 it: 'Uno sguardo autentico sulla missione e il lavoro educativo, sociale e comunitario a Salvador de Bahia.',
+                de: "Ein authentischer Einblick in die Mission und die Bildungs-, Sozial- und Gemeinschaftsarbeit in Salvador de Bahia.",
               })}
             </p>
           </AnimatedSection>
@@ -52,13 +53,13 @@ export function IntervistaAlCentroPage() {
                 href="#video"
                 className="px-8 py-4 bg-white text-[var(--deep-blue)] font-semibold rounded-xl shadow-lg hover:bg-white/90 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Assista à entrevista', it: "Guarda l'intervista" })}
+                {t({ pt: 'Assista à entrevista', it: "Guarda l'intervista", de: "Interview ansehen" })}
               </a>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <ShareButtons
-              title={t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro' })}
+              title={t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Zentrum" })}
               variant="dark"
               className="mt-6"
             />
@@ -74,18 +75,20 @@ export function IntervistaAlCentroPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Uma oportunidade especial', it: "Un'opportunità speciale" })}
+              {t({ pt: 'Uma oportunidade especial', it: "Un'opportunità speciale", de: "Eine besondere Gelegenheit" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               {t({
                 pt: 'Estamos felizes em compartilhar com vocês uma entrevista realizada pelo Centro Missionário de Verona por ocasião do encontro dos missionários italianos no Brasil.',
                 it: "Siamo felici di condividere con voi un'intervista realizzata dal Centro Missionario di Verona in occasione dell'incontro dei missionari italiani in Brasile.",
+                de: "Wir freuen uns, mit Ihnen ein Interview zu teilen, das vom Centro Missionario di Verona anlässlich des Treffens der italienischen Missionare in Brasilien geführt wurde.",
               })}
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               {t({
                 pt: 'Este serviço conta a missão da Fundação Betania ONLUS e do Centro Nossa Senhora Aparecida em Salvador da Bahia, oferecendo um olhar autêntico sobre o trabalho educativo, social e comunitário que acompanha diariamente crianças, famílias e território.',
                 it: 'Questo servizio racconta la missione della Fundação Betania ONLUS e del Centro Nossa Senhora Aparecida a Salvador de Bahia, offrendo uno sguardo autentico sul lavoro educativo, sociale e comunitario che accompagna quotidianamente bambini, famiglie e territorio.',
+                de: "Dieser Beitrag erzählt von der Mission der Fundação Betania ONLUS und des Centro Nossa Senhora Aparecida in Salvador de Bahia und bietet einen authentischen Einblick in die Bildungs-, Sozial- und Gemeinschaftsarbeit, die Kinder, Familien und die Region tagtäglich begleitet.",
               })}
             </p>
           </AnimatedSection>
@@ -100,7 +103,7 @@ export function IntervistaAlCentroPage() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/_SvJE_oYZso"
-                title={t({ pt: 'Entrevista ao Centro Nossa Senhora Aparecida', it: 'Intervista al Centro Nossa Senhora Aparecida' })}
+                title={t({ pt: 'Entrevista ao Centro Nossa Senhora Aparecida', it: 'Intervista al Centro Nossa Senhora Aparecida', de: "Interview mit dem Centro Nossa Senhora Aparecida" })}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -119,6 +122,7 @@ export function IntervistaAlCentroPage() {
                 &ldquo;{t({
                   pt: 'Cada história compartilhada é uma janela aberta sobre a vida real do Centro.',
                   it: 'Ogni storia condivisa è una finestra aperta sulla vita reale del Centro.',
+                  de: "Jede geteilte Geschichte ist ein offenes Fenster zum wirklichen Leben des Zentrums.",
                 })}&rdquo;
               </p>
               <footer className="text-[var(--deep-blue)]/60 text-sm font-medium tracking-wide uppercase">
@@ -136,20 +140,21 @@ export function IntervistaAlCentroPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              {t({ pt: 'Descubra e apoie o Centro', it: 'Scopri e sostieni il Centro' })}
+              {t({ pt: 'Descubra e apoie o Centro', it: 'Scopri e sostieni il Centro', de: "Entdecken und unterstützen Sie das Zentrum" })}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-10">
               {t({
                 pt: 'Conheça mais sobre o trabalho do Centro Nossa Senhora Aparecida e descubra como você pode fazer parte desta missão.',
                 it: 'Scopri di più sul lavoro del Centro Nossa Senhora Aparecida e come puoi far parte di questa missione.',
+                de: "Erfahren Sie mehr über die Arbeit des Centro Nossa Senhora Aparecida und wie Sie Teil dieser Mission werden können.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
               </Button>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro' })}
+                {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro', de: "Unterstützen Sie das Zentrum" })}
               </Button>
             </div>
           </AnimatedSection>

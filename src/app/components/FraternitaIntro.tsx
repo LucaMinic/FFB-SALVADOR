@@ -14,26 +14,29 @@ export function FraternitaIntro() {
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
               {t({
                 pt: 'Fraternidade Franciscana de Betânia',
-                it: 'Fraternità Francescana di Betania'
+                it: 'Fraternità Francescana di Betania',
+                de: "Franziskanische Bruderschaft von Betania"
               })}
             </h2>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: "Na origem da experiência da Fundação Betania ONLUS e do Centro Nossa Senhora Aparecida está a Fraternità Francescana di Betania.",
-                it: "Alla radice dell'esperienza della Fundação Betania ONLUS e del Centro Nossa Senhora Aparecida c'è la Fraternità Francescana di Betania."
+                it: "Alla radice dell'esperienza della Fundação Betania ONLUS e del Centro Nossa Senhora Aparecida c'è la Fraternità Francescana di Betania.",
+                de: "Am Ursprung der Erfahrung der Fundação Betania ONLUS und des Centro Nossa Senhora Aparecida steht die Franziskanische Bruderschaft von Betania."
               })}
             </p>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
                 pt: 'Por meio da presença missionária, da partilha da vida cotidiana e do serviço às comunidades mais vulneráveis, a Fraternità acompanha há anos um caminho humano, educativo e espiritual que continua a gerar acolhimento, relação e esperança.',
-                it: 'Attraverso la presenza missionaria, la condivisione della vita quotidiana e il servizio alle comunità più vulnerabili, la Fraternità accompagna da anni un cammino umano, educativo e spirituale che continua a generare accoglienza, relazione e speranza.'
+                it: 'Attraverso la presenza missionaria, la condivisione della vita quotidiana e il servizio alle comunità più vulnerabili, la Fraternità accompagna da anni un cammino umano, educativo e spirituale che continua a generare accoglienza, relazione e speranza.',
+                de: "Durch die missionarische Präsenz, das Teilen des Alltags und den Dienst an den verletzlichsten Gemeinschaften begleitet die Bruderschaft seit Jahren einen menschlichen, pädagogischen und geistlichen Weg, der weiterhin Aufnahme, Beziehung und Hoffnung schenkt."
               })}
             </p>
 
             <Button variant="secondary" to="/la-fraternita">
-              {t({ pt: 'Conheça a Fraternità', it: 'Scopri la Fraternità' })}
+              {t({ pt: 'Conheça a Fraternità', it: 'Scopri la Fraternità', de: "Entdecken Sie die Bruderschaft" })}
             </Button>
           </AnimatedSection>
 

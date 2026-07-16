@@ -21,28 +21,29 @@ export function RelatoriosPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida' })}
+              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida', de: "Kita des Centro Nossa Senhora Aparecida" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Relatórios', it: 'Relazioni' })}
+              {t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Documentação pedagógica transparente e acessível — o registro vivo do trabalho realizado com nossas crianças.',
                 it: 'Documentazione pedagogica trasparente e accessibile — la registrazione viva del lavoro svolto con i nostri bambini.',
+                de: "Transparente und zugängliche pädagogische Dokumentation — die lebendige Aufzeichnung der Arbeit mit unseren Kindern.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora' })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
               <a
                 href="#relatorios"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Ver relatórios', it: 'Vedi le relazioni' })}
+                {t({ pt: 'Ver relatórios', it: 'Vedi le relazioni', de: "Berichte ansehen" })}
               </a>
             </div>
           </AnimatedSection>
@@ -59,12 +60,13 @@ export function RelatoriosPage() {
             <div className="text-center mb-20">
               <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Áreas de trabalho', it: 'Aree di lavoro' })}
+                {t({ pt: 'Áreas de trabalho', it: 'Aree di lavoro', de: "Arbeitsbereiche" })}
               </h2>
               <p className="text-gray-600 text-xl leading-relaxed max-w-3xl mx-auto">
                 {t({
                   pt: 'Escolha uma área para conhecer os relatórios e o registro cuidadoso das propostas, das descobertas e do desenvolvimento das crianças.',
                   it: 'Scegli un\'area per scoprire le relazioni e il registro attento delle proposte, delle scoperte e dello sviluppo dei bambini.',
+                  de: "Wählen Sie einen Bereich, um die Berichte und die sorgfältige Dokumentation der Angebote, Entdeckungen und der Entwicklung der Kinder zu entdecken.",
                 })}
               </p>
             </div>
@@ -101,7 +103,7 @@ export function RelatoriosPage() {
                   </div>
                   <div className="px-7 py-5 flex items-center justify-between">
                     <span className="font-semibold" style={{ color: area.color }}>
-                      {t({ pt: 'Ver relatórios', it: 'Vedi le relazioni' })}
+                      {t({ pt: 'Ver relatórios', it: 'Vedi le relazioni', de: "Berichte ansehen" })}
                     </span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" style={{ color: area.color }} />
                   </div>
@@ -118,20 +120,21 @@ export function RelatoriosPage() {
           <AnimatedSection delay={0.1}>
             <FileText className="w-12 h-12 text-[var(--deep-blue)] mx-auto mb-8 opacity-60" />
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Precisa de mais informações?', it: 'Ha bisogno di ulteriori informazioni?' })}
+              {t({ pt: 'Precisa de mais informações?', it: 'Ha bisogno di ulteriori informazioni?', de: "Benötigen Sie weitere Informationen?" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Para solicitar outros relatórios ou obter mais informações sobre o trabalho pedagógico do Centro, entre em contato conosco.',
                 it: 'Per richiedere altre relazioni o ottenere maggiori informazioni sul lavoro pedagogico del Centro, contattaci.',
+                de: "Um weitere Berichte anzufordern oder mehr über die pädagogische Arbeit des Zentrums zu erfahren, kontaktieren Sie uns.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/contatti">
-                {t({ pt: 'Entre em contato', it: 'Contattaci' })}
+                {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
               <Button variant="secondary" to="/nossa-metodologia">
-                {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia' })}
+                {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik" })}
               </Button>
             </div>
           </AnimatedSection>

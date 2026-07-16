@@ -28,22 +28,23 @@ export function PosaPrimaPietraPage() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro' })}</span>
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück" })}</span>
           </Link>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Nova Escola', it: 'La Nuova Scuola' })}
+              {t({ pt: 'Nova Escola', it: 'La Nuova Scuola', de: "Die neue Schule" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra' })}
+              {t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'O início concreto de um lugar pensado para acolher, educar e acompanhar novas gerações.',
                 it: "L'inizio concreto di un luogo pensato per accogliere, educare e accompagnare nuove generazioni.",
+                de: "Der konkrete Beginn eines Ortes, der geschaffen wurde, um neue Generationen aufzunehmen, zu bilden und zu begleiten.",
               })}
             </p>
           </AnimatedSection>
@@ -53,13 +54,13 @@ export function PosaPrimaPietraPage() {
                 href="#video"
                 className="px-8 py-4 bg-white text-[var(--deep-blue)] font-semibold rounded-xl shadow-lg hover:bg-white/90 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario' })}
+                {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario', de: "Dokumentarfilm ansehen" })}
               </a>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <ShareButtons
-              title={t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra' })}
+              title={t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung" })}
               variant="dark"
               className="mt-6"
             />
@@ -75,18 +76,20 @@ export function PosaPrimaPietraPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Um momento simbólico', it: 'Un momento simbolico' })}
+              {t({ pt: 'Um momento simbólico', it: 'Un momento simbolico', de: "Ein symbolischer Moment" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               {t({
                 pt: 'Um momento simples mas profundamente simbólico: o início concreto de um lugar pensado para acolher, educar e acompanhar novas gerações.',
                 it: "Un momento semplice ma profondamente simbolico: l'inizio concreto di un luogo pensato per accogliere, educare e accompagnare nuove generazioni.",
+                de: "Ein einfacher, aber zutiefst symbolischer Moment: der konkrete Beginn eines Ortes, der geschaffen wurde, um neue Generationen aufzunehmen, zu bilden und zu begleiten.",
               })}
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               {t({
                 pt: 'O lançamento da pedra fundamental da nova escola representa um passo partilhado, construído através de relações, confiança e desejo de futuro.',
                 it: 'La posa della prima pietra della nuova scuola rappresenta un passo condiviso costruito attraverso relazioni, fiducia e desiderio di futuro.',
+                de: "Die Grundsteinlegung der neuen Schule steht für einen gemeinsamen Schritt, der auf Beziehungen, Vertrauen und dem Wunsch nach Zukunft aufbaut.",
               })}
             </p>
           </AnimatedSection>
@@ -118,6 +121,7 @@ export function PosaPrimaPietraPage() {
                 &ldquo;{t({
                   pt: 'Cada passo dado é construído através de relações, confiança e desejo de futuro.',
                   it: 'Ogni passo compiuto è costruito attraverso relazioni, fiducia e desiderio di futuro.',
+                  de: "Jeder Schritt, den wir gehen, entsteht durch Beziehungen, Vertrauen und den Wunsch nach Zukunft.",
                 })}&rdquo;
               </p>
               <footer className="text-[var(--deep-blue)]/60 text-sm font-medium tracking-wide uppercase">
@@ -135,20 +139,21 @@ export function PosaPrimaPietraPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti' })}
+              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti', de: "Weitere Geschichten entdecken" })}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-10">
               {t({
                 pt: 'Conheça outras histórias, testemunhos e projetos ligados ao Centro Nossa Senhora Aparecida.',
                 it: 'Scopri altre storie, testimonianze e progetti legati al Centro Nossa Senhora Aparecida.',
+                de: "Entdecken Sie weitere Geschichten, Zeugnisse und Projekte rund um das Centro Nossa Senhora Aparecida.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/documentari-racconti">
-                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari' })}
+                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentarfilme" })}
               </Button>
               <Button variant="secondary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro' })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
               </Button>
             </div>
           </AnimatedSection>
