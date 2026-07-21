@@ -82,7 +82,7 @@ export function Hero() {
                 <div className="absolute inset-0 hidden md:flex items-center bg-gradient-to-r from-black/50 via-black/20 to-transparent">
                   <div className="max-w-7xl mx-auto px-6 w-full">
                     <div className="max-w-2xl">
-                      <p className="text-white text-4xl leading-tight drop-shadow-2xl font-medium">
+                      <p className="text-white text-4xl lg:text-5xl xl:text-6xl leading-tight drop-shadow-2xl font-semibold">
                         {image.text}
                       </p>
                     </div>
