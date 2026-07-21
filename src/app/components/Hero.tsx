@@ -17,7 +17,7 @@ export function Hero() {
   const sliderRef = useRef<Slider>(null);
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 1,
@@ -26,7 +26,7 @@ export function Hero() {
     autoplaySpeed: 5000,
     fade: true,
     arrows: false,
-    lazyLoad: 'progressive' as const,
+    pauseOnHover: false,
   };
 
   const handleSlideClick = () => {
@@ -75,40 +75,25 @@ export function Hero() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-[380px] md:h-[650px] lg:h-[clamp(750px,40vw,950px)] object-cover"
+                className="w-full aspect-[4/3] md:aspect-auto md:h-[85vh] md:min-h-[600px] object-cover"
                 style={{ objectPosition: image.focus }}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent hidden md:flex items-center">
-                <div className="max-w-7xl mx-auto px-6 w-full">
-                  <div className="max-w-2xl">
-                    <p className="text-white text-5xl leading-tight drop-shadow-2xl font-medium">
-                      {image.text}
-                    </p>
+              {image.text && (
+                <div className="absolute inset-0 hidden md:flex items-center bg-gradient-to-r from-black/50 via-black/20 to-transparent">
+                  <div className="max-w-7xl mx-auto px-6 w-full">
+                    <div className="max-w-2xl">
+                      <p className="text-white text-4xl leading-tight drop-shadow-2xl font-medium">
+                        {image.text}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </Slider>
       </div>
 
-      <style>{`
-        .hero-slider .slick-dots {
-          bottom: 30px;
-        }
-        .hero-slider .slick-dots li button:before {
-          font-size: 12px;
-          color: white;
-          opacity: 0.5;
-        }
-        .hero-slider .slick-dots li.slick-active button:before {
-          color: white;
-          opacity: 1;
-        }
-        .hero-slider .slick-dots li button:hover:before {
-          opacity: 0.8;
-        }
-      `}</style>
 
       <div className="relative bg-gradient-to-b from-white via-[#f8f9fb] to-white pt-4 md:pt-16 lg:pt-20 pb-0 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]">

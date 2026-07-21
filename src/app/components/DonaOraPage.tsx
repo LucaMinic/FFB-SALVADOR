@@ -7,6 +7,7 @@ import heroImg from '../../imports/19.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';
 import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
+import flagEu from '../../imports/eu.svg';
 import qrPix from '../../imports/qr-pix.png.jpeg';
 
 export function DonaOraPage() {
@@ -84,15 +85,18 @@ export function DonaOraPage() {
                 href="#doni-brasile"
                 className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--soft-green)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:brightness-90 transition-all"
               >
-                <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm" />
+                <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-10 h-auto rounded shadow-sm flex-shrink-0" />
                 <span>{t({ pt: 'Se você doa do Brasil — clique aqui', it: 'Se doni dal Brasile — clicca qui', de: "Wenn Sie aus Brasilien spenden — hier klicken" })}</span>
               </a>
               <a
                 href="#doni-italia"
-                className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all"
+                className="flex items-center justify-center gap-4 px-8 py-5 bg-[var(--deep-blue)] text-white text-lg rounded-2xl shadow-lg hover:shadow-xl hover:bg-blue-800 transition-all flex-wrap sm:flex-nowrap"
               >
-                <img loading="lazy" src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
-                <span>{t({ pt: 'Se você doa da Itália — clique aqui', it: "Se doni dall'Italia — clicca qui", de: "Wenn Sie aus Italien spenden — hier klicken" })}</span>
+                <span className="flex items-center gap-1.5 flex-shrink-0">
+                  <img loading="lazy" src={flagItalia} alt="Italia" className="w-10 h-auto rounded shadow-sm" />
+                  <img loading="lazy" src={flagEu} alt="Unione Europea" className="w-10 h-auto rounded shadow-sm" />
+                </span>
+                <span>{t({ pt: 'Se você doa da Itália ou de um país da União Europeia — clique aqui', it: "Se doni dall'Italia o da un paese dell'Unione Europea — clicca qui", de: "Wenn Sie aus Italien oder einem Land der Europäischen Union spenden — hier klicken" })}</span>
               </a>
             </div>
           </AnimatedSection>
@@ -116,7 +120,7 @@ export function DonaOraPage() {
                   {/* Se doni dal Brasile */}
                   <div id="doni-brasile" className="border-l-4 border-[var(--soft-green)] pl-6 scroll-mt-32">
                     <h4 className="text-xl text-[var(--deep-blue)] mb-4 flex items-center gap-3">
-                      <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm" />
+                      <img loading="lazy" src={flagBrasil} alt="Brasil" className="w-9 h-auto rounded shadow-sm flex-shrink-0" />
                       {t({ pt: 'Se você doa do Brasil', it: 'Se doni dal Brasile', de: "Wenn Sie aus Brasilien spenden" })}
                     </h4>
                     <div className="space-y-4">
@@ -157,9 +161,12 @@ export function DonaOraPage() {
 
                   {/* Se doni dall'Italia */}
                   <div id="doni-italia" className="border-l-4 border-[var(--deep-blue)] pl-6 scroll-mt-32">
-                    <h4 className="text-xl text-[var(--deep-blue)] mb-5 flex items-center gap-3">
-                      <img loading="lazy" src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
-                      {t({ pt: 'Se você doa da Itália', it: "Se doni dall'Italia", de: "Wenn Sie aus Italien spenden" })}
+                    <h4 className="text-xl text-[var(--deep-blue)] mb-5 flex items-center gap-3 flex-wrap">
+                      <span className="flex items-center gap-1.5 flex-shrink-0">
+                        <img loading="lazy" src={flagItalia} alt="Italia" className="w-9 h-auto rounded shadow-sm" />
+                        <img loading="lazy" src={flagEu} alt="Unione Europea" className="w-9 h-auto rounded shadow-sm" />
+                      </span>
+                      {t({ pt: 'Se você doa da Itália ou de um país da União Europeia', it: "Se doni dall'Italia o da un paese dell'Unione Europea", de: "Wenn Sie aus Italien oder einem Land der Europäischen Union spenden" })}
                     </h4>
                     <div className="space-y-5">
                       <div className="bg-[var(--deep-blue)]/5 rounded-xl px-5 py-4">

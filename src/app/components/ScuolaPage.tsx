@@ -124,6 +124,17 @@ export function ScuolaPage() {
               </video>
             </div>
           </AnimatedSection>
+
+          <AnimatedSection delay={0.3}>
+            <div className="text-center">
+              <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
+                {t({ pt: 'Quer ver a que ponto estão as obras?', it: 'Vuoi vedere a che punto sono i lavori?', de: "Möchten Sie sehen, wie weit die Bauarbeiten fortgeschritten sind?" })}
+              </p>
+              <Button variant="secondary" to="/avanzamento-lavori">
+                {t({ pt: 'Veja o avanço das obras', it: "Guarda l'avanzamento lavori", de: "Baufortschritt ansehen" })}
+              </Button>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

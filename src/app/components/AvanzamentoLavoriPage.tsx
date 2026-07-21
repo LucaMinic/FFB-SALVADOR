@@ -10,6 +10,7 @@ import cantiere3 from '../../imports/5-3.jpeg';
 import cantiereVideo1 from '../../imports/2.mp4';
 import cantiereVideo2 from '../../imports/3.mp4';
 import droneGiugno2026 from '../../imports/8_giugno_2026.mp4';
+import fondamentaLuglio2026 from '../../imports/nuove/preparazione fondamenta luglio 2026.mp4';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -42,6 +43,25 @@ interface TimelineEntry {
 //
 const entries: TimelineEntry[] = [
   {
+    id: 'fondamenta',
+    date: { it: 'Luglio 2026', pt: 'Julho de 2026', de: "Juli 2026" },
+    phase: { it: 'Fase 3', pt: 'Fase 3', de: "Phase 3" },
+    title: {
+      it: 'Preparazione per le fondamenta',
+      pt: 'Preparação para as fundações',
+      de: "Vorbereitung für die Fundamente",
+    },
+    description: {
+      it: "Sul terreno sono in corso le attività di preparazione per la realizzazione delle fondamenta, un passo fondamentale in vista dell'avvio della costruzione della scuola.",
+      pt: 'No terreno estão em andamento as atividades de preparação para a construção das fundações, um passo fundamental para o início da construção da escola.',
+      de: "Auf dem Gelände laufen die Vorbereitungsarbeiten für den Bau der Fundamente – ein wichtiger Schritt vor Beginn des Schulbaus.",
+    },
+    media: [
+      { type: 'video', src: fondamentaLuglio2026, alt: 'Preparazione fondamenta – luglio 2026' },
+    ],
+    status: 'in-progress',
+  },
+  {
     id: 'drone',
     date: { it: '8 giugno 2026', pt: '8 de junho de 2026', de: "8. Juni 2026" },
     phase: { it: 'Fase 2', pt: 'Fase 2', de: "Phase 2" },
@@ -58,7 +78,7 @@ const entries: TimelineEntry[] = [
     media: [
       { type: 'video', src: droneGiugno2026, alt: 'Riprese drone – 8 giugno 2026' },
     ],
-    status: 'in-progress',
+    status: 'completed',
   },
   {
     id: 'sopralluogo',
