@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Guard against any component (e.g. the hero slider) rendering fractionally
+   wider than the viewport and dragging the whole page into horizontal
+   scroll, which can visually clip fixed/sticky elements like the header. */
+html, body {
+  overflow-x: hidden;
+}
+
 /* Prevent scroll bounce when navigating to anchor sections with animations */
 /* Extra margin compensates for sticky header + animation layout shifts */
 section[id] {
