@@ -34,7 +34,9 @@ export function AvanzamentoBanner() {
         <p className="flex-1 min-w-0 text-sm sm:text-base leading-snug">
           <span className="font-extrabold">
             {t({ it: 'News costruzione scuola:', pt: 'Notícia obra da escola:', de: 'News Schulbau:' })}
-          </span>{' '}
+          </span>
+          <br className="sm:hidden" />
+          <span className="hidden sm:inline">{' '}</span>
           <span className="font-medium">{t(latest.title)}</span>
         </p>
 

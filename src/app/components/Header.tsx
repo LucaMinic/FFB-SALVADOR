@@ -357,11 +357,12 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Mobile: Dona ora button */}
-          <div className="flex-shrink-0 xl:hidden">
+          {/* Mobile: Dona ora button + language switcher */}
+          <div className="flex items-center gap-2 flex-shrink-0 xl:hidden">
             <Link to="/dona-ora" className="px-5 py-2.5 bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white text-base font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
+            <LanguageSwitcher compact />
           </div>
 
           {/* Hamburger menu */}
@@ -381,12 +382,6 @@ export function Header() {
                   {t({ pt: 'Menu de navegação principal', it: 'Menu di navigazione principale', de: "Hauptnavigationsmenü" })}
                 </SheetDescription>
                 <div className="flex flex-col gap-6 mt-8">
-                  {/* Language switcher in mobile menu */}
-                  <div className="flex items-center gap-2 px-4">
-                    <span className="text-xs text-gray-500 font-medium">Idioma / Lingua:</span>
-                    <LanguageSwitcher compact />
-                  </div>
-
                   <nav className="flex flex-col gap-2">
                     {menuItems.map((item) => {
                       const active = isSubmenuActive(item);
