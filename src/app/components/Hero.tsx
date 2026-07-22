@@ -10,6 +10,7 @@ import heroImage4 from '../../imports/9-1.jpeg';
 import heroImage5 from '../../imports/32.jpeg';
 import logoHero from '../../imports/nuove/LOGO stretto.png';
 import { AnimatedSection } from './AnimatedSection';
+import { AvanzamentoBanner } from './AvanzamentoBanner';
 import { useT } from '../context/LanguageContext';
 
 export function Hero() {
@@ -68,6 +69,7 @@ export function Hero() {
 
   return (
     <section className="relative">
+      <AvanzamentoBanner />
       <div className="hero-slider">
         <Slider ref={sliderRef} {...sliderSettings}>
           {images.map((image, index) => (

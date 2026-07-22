@@ -11,6 +11,7 @@ import cantiereVideo1 from '../../imports/2.mp4';
 import cantiereVideo2 from '../../imports/3.mp4';
 import droneGiugno2026 from '../../imports/8_giugno_2026.mp4';
 import fondamentaLuglio2026 from '../../imports/nuove/preparazione fondamenta luglio 2026.mp4';
+import gettoFondamenta21Luglio2026 from '../../imports/nuove/21 luglio 2026 inizio del getto delle fondamenta.mp4';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -41,7 +42,26 @@ interface TimelineEntry {
 // status ('completed' | 'in-progress' | 'upcoming') and push the object to the
 // array. The timeline renders entries in the order they appear here.
 //
-const entries: TimelineEntry[] = [
+export const entries: TimelineEntry[] = [
+  {
+    id: 'getto-fondamenta',
+    date: { it: '21 luglio 2026', pt: '21 de julho de 2026', de: "21. Juli 2026" },
+    phase: { it: 'Fase 4', pt: 'Fase 4', de: "Phase 4" },
+    title: {
+      it: 'Inizio del getto delle fondamenta',
+      pt: 'Início da concretagem das fundações',
+      de: "Beginn der Betonierung der Fundamente",
+    },
+    description: {
+      it: "È iniziato il getto delle fondamenta della scuola: un passo decisivo che segna il vero e proprio avvio della costruzione dell'edificio.",
+      pt: 'Começou a concretagem das fundações da escola: um passo decisivo que marca o verdadeiro início da construção do edifício.',
+      de: "Die Betonierung der Fundamente der Schule hat begonnen – ein entscheidender Schritt, der den eigentlichen Baubeginn des Gebäudes markiert.",
+    },
+    media: [
+      { type: 'video', src: gettoFondamenta21Luglio2026, alt: 'Inizio del getto delle fondamenta – 21 luglio 2026' },
+    ],
+    status: 'in-progress',
+  },
   {
     id: 'fondamenta',
     date: { it: 'Luglio 2026', pt: 'Julho de 2026', de: "Juli 2026" },
@@ -59,7 +79,7 @@ const entries: TimelineEntry[] = [
     media: [
       { type: 'video', src: fondamentaLuglio2026, alt: 'Preparazione fondamenta – luglio 2026' },
     ],
-    status: 'in-progress',
+    status: 'completed',
   },
   {
     id: 'drone',
