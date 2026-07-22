@@ -357,13 +357,15 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Mobile: Dona ora button + utility pair (language switcher + hamburger) */}
-          <div className="flex items-center gap-1.5 flex-shrink-0 xl:hidden">
+          {/* Mobile: Dona ora centered equidistant between logo and language switcher */}
+          <div className="flex-1 flex justify-center xl:hidden">
             <Link to="/dona-ora" className="px-3 py-2 text-sm bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
+          </div>
 
-            <div className="flex items-center gap-1">
+          {/* Mobile: utility pair (language switcher + hamburger) */}
+          <div className="flex items-center gap-1 flex-shrink-0 xl:hidden">
               <LanguageSwitcher compact />
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
@@ -488,7 +490,6 @@ export function Header() {
                 </div>
               </SheetContent>
               </Sheet>
-            </div>
           </div>
         </div>
       </div>
