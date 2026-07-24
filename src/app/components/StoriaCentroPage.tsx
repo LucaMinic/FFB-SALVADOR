@@ -400,7 +400,7 @@ export function StoriaCentroPage() {
     <div className="bg-white">
 
       {/* ── HERO ──────────────────────────────────────────────────────────────── */}
-      <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-32">
         <div className="absolute inset-0">
           <img
             src={padrePancrazioImg}

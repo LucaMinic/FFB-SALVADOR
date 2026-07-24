@@ -43,10 +43,10 @@ export function ContattiPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" href="#contatti" className="text-lg px-8 py-4">
+              <Button variant="secondary" href="#contatti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Escreva-nos', it: 'Scrivici', de: "Schreiben Sie uns" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>

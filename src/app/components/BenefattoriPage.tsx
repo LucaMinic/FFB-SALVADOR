@@ -33,10 +33,10 @@ export function BenefattoriPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" href="#intro-section" className="text-lg px-8 py-4">
+              <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
@@ -229,10 +229,10 @@ export function BenefattoriPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/contatti" className="text-lg px-8 py-3">
+              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-3">
                 {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora" className="text-lg px-8 py-3">
+              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-3">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
@@ -290,10 +290,10 @@ export function BenefattoriPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" href="#diventa-benefattore" className="text-lg px-8 py-4">
+              <Button variant="secondary" href="#diventa-benefattore" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>

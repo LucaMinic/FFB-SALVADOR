@@ -68,7 +68,7 @@ export function ProgettiPedagogiciPage() {
               >
                 {t({ pt: 'Veja os projetos', it: 'Scopri i progetti', de: "Entdecken Sie die Projekte" })}
               </a>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="primary" to="/dona-ora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>

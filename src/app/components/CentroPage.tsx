@@ -42,10 +42,10 @@ export function CentroPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" href="#intro-section" className="text-lg px-8 py-4">
+              <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça o Centro', it: "Scopri il Centro", de: "Entdecken Sie das Centro" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
@@ -69,6 +69,11 @@ export function CentroPage() {
                 <p>
                   {t({ pt: 'Não é apenas um espaço, mas uma presença concreta feita de relações, acolhimento e vida partilhada.', it: 'Non è solo uno spazio, ma una presenza concreta fatta di relazioni, accoglienza e vita condivisa.', de: "Es ist nicht nur ein Ort, sondern eine konkrete Präsenz aus Beziehungen, Aufnahme und gemeinsamem Leben." })}
                 </p>
+              </div>
+              <div className="mt-8">
+                <Button variant="secondary" to="/storia-del-centro">
+                  {t({ pt: 'Conheça a história do Centro', it: 'Scopri la storia del Centro', de: "Entdecken Sie die Geschichte des Zentrums" })}
+                </Button>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>

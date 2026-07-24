@@ -93,7 +93,7 @@ export function DocumentariPage() {
               >
                 {t({ pt: 'Assista aos relatos', it: 'Guarda i racconti', de: "Geschichten ansehen" })}
               </a>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="primary" to="/dona-ora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>

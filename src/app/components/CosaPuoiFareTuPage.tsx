@@ -379,10 +379,10 @@ export function CosaPuoiFareTuPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button to="/contatti">
+              <Button variant="secondary" to="/contatti">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="primary" to="/dona-ora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
             </div>
