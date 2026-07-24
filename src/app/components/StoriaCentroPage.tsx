@@ -503,12 +503,12 @@ export function StoriaCentroPage() {
                         </div>
 
                         {entry.image && (
-                          <div className="p-8">
+                          <div className="p-4 md:p-8">
                             <div className="rounded-2xl overflow-hidden shadow-md">
                               <img loading="lazy"
                                 src={entry.image.src}
                                 alt={t(entry.image.alt)}
-                                className="w-full h-72 md:h-96 object-cover"
+                                className="w-full aspect-[3/2] md:aspect-auto md:h-96 object-cover"
                               />
                             </div>
                           </div>

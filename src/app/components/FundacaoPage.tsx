@@ -4,7 +4,7 @@ import { ImpactNumbers } from './ImpactNumbers';
 import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/nuove/33.jpeg';
-import chiSiamoImg from '../../imports/fundacao-gruppo-comunita.jpeg';
+import chiSiamoVideo from '../../imports/video_fundacao_chi_siamo.mp4';
 import mappaItaliaImg from '../../imports/mappa_Italia_mondo.jpg';
 import fraternitaLegameImg from '../../imports/fundacao-fraternita-legame.jpeg';
 
@@ -77,9 +77,13 @@ export function FundacaoPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={chiSiamoImg}
-                  alt="La Fundação Betania"
+                <video
+                  src={chiSiamoVideo}
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="w-full h-96 object-cover"
                 />
               </div>
