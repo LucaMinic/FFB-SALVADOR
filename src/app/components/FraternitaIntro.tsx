@@ -45,7 +45,7 @@ export function FraternitaIntro() {
               <img loading="lazy"
                 src={fraternitaImg}
                 alt="Fraternità Francescana di Betania"
-                className="w-full h-96 object-cover"
+                className="w-full aspect-[1200/630] md:aspect-auto md:h-96 object-cover"
               />
             </div>
           </AnimatedImage>
