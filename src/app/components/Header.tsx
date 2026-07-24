@@ -150,6 +150,7 @@ export function Header() {
       href: '/il-centro',
       isRoute: true,
       submenu: [
+        { label: t({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums" }), href: '/storia-del-centro', isRoute: true },
         { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Zentrum" }), href: '/il-centro', isRoute: true },
         {
           label: t({ pt: 'Creche', it: 'Asilo', de: "Kita" }),

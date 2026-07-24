@@ -11,6 +11,7 @@ const pages = [
   { path: '/la-fundacao', priority: '0.8', changefreq: 'monthly' },
   { path: '/la-fraternita', priority: '0.7', changefreq: 'monthly' },
   { path: '/il-centro', priority: '0.9', changefreq: 'monthly' },
+  { path: '/storia-del-centro', priority: '0.6', changefreq: 'monthly' },
   { path: '/asilo', priority: '0.9', changefreq: 'monthly' },
   { path: '/progetto-scuola', priority: '0.9', changefreq: 'monthly' },
   { path: '/dona-ora', priority: '0.9', changefreq: 'monthly' },

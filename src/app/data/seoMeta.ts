@@ -51,6 +51,14 @@ export const seoMeta: Record<string, PageMeta> = {
       de: "Das Centro Nossa Senhora Aparecida ist eine tägliche Präsenz im Herzen von Salvador de Bahia, mit Kita, Schulprojekt und Familienbegleitung.",
     },
   },
+  '/storia-del-centro': {
+    title: withSuffix({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums" }),
+    description: {
+      pt: 'Da fundação da Fraternidade Franciscana de Betânia em 1982 até o projeto da nova escola: a cronologia da missão do Centro Nossa Senhora Aparecida em Salvador da Bahia.',
+      it: 'Dalla fondazione della Fraternità Francescana di Betania nel 1982 fino al progetto della nuova scuola: la cronologia della missione del Centro Nossa Senhora Aparecida a Salvador de Bahia.',
+      de: "Von der Gründung der Franziskanischen Bruderschaft von Betania im Jahr 1982 bis zum Projekt der neuen Schule: die Chronologie der Mission des Centro Nossa Senhora Aparecida in Salvador de Bahia.",
+    },
+  },
   '/asilo': {
     title: withSuffix({ pt: 'A creche do Centro Nossa Senhora Aparecida', it: "L'asilo del Centro Nossa Senhora Aparecida", de: "Die Kita des Centro Nossa Senhora Aparecida" }),
     description: {

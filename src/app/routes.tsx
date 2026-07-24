@@ -4,6 +4,7 @@ import { FundacaoPage } from "./components/FundacaoPage";
 import { FraternitaPage } from "./components/FraternitaPage";
 import { AsiloPage } from "./components/AsiloPage";
 import { CentroPage } from "./components/CentroPage";
+import { StoriaCentroPage } from "./components/StoriaCentroPage";
 import { ScuolaPage } from "./components/ScuolaPage";
 import { DonaOraPage } from "./components/DonaOraPage";
 import { CosaPuoiFareTuPage } from "./components/CosaPuoiFareTuPage";
@@ -48,6 +49,7 @@ export const router = createBrowserRouter([
       { path: "la-fundacao", Component: FundacaoPage },
       { path: "la-fraternita", Component: FraternitaPage },
       { path: "il-centro", Component: CentroPage },
+      { path: "storia-del-centro", Component: StoriaCentroPage },
       { path: "asilo", Component: AsiloPage },
       { path: "progetto-scuola", Component: ScuolaPage },
       { path: "dona-ora", Component: DonaOraPage },

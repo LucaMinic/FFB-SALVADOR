@@ -400,7 +400,7 @@ export function NossaMetodologiaPage() {
         </div>
       </section>
 
-      {/* SECTION 3 — PIAGET E VYGOTSKY */}
+      {/* SECTION 3 — FONDAMENTI TEORICI */}
       <section className="bg-white py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -409,35 +409,13 @@ export function NossaMetodologiaPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
                   {t({ pt: 'Os fundamentos teóricos', it: 'I fondamenti teorici', de: "Die theoretischen Grundlagen" })}
                 </h2>
-                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
-                    pt: 'Nosso trabalho fundamenta-se nas contribuições de Jean Piaget e Lev Vygotsky, compreendendo que o desenvolvimento infantil acontece de forma integral, por meio da interação entre a criança, o outro e o mundo.',
-                    it: 'Il nostro lavoro si fonda sui contributi di Jean Piaget e Lev Vygotsky, comprendendo che lo sviluppo infantile avviene in modo integrale, attraverso l\'interazione tra il bambino, l\'altro e il mondo.',
-                    de: "Unsere Arbeit stützt sich auf die Beiträge von Jean Piaget und Lev Vygotsky, im Verständnis, dass sich die kindliche Entwicklung ganzheitlich vollzieht, durch die Interaktion zwischen dem Kind, dem anderen und der Welt.",
+                    pt: 'O nosso trabalho fundamenta-se numa pluralidade de referências pedagógicas — de Piaget a Vygotsky, passando por Giussani, Ferreiro e Malaguzzi — compreendendo que o desenvolvimento infantil acontece de forma integral, por meio da interação entre a criança, o outro e o mundo.',
+                    it: 'Il nostro lavoro si fonda su una pluralità di riferimenti pedagogici — da Piaget a Vygotskij, passando per Giussani, Ferreiro e Malaguzzi — comprendendo che lo sviluppo infantile avviene in modo integrale, attraverso l\'interazione tra il bambino, l\'altro e il mondo.',
+                    de: "Unsere Arbeit stützt sich auf eine Vielfalt pädagogischer Bezugspunkte — von Piaget über Vygotskij bis hin zu Giussani, Ferreiro und Malaguzzi — im Verständnis, dass sich die kindliche Entwicklung ganzheitlich vollzieht, durch die Interaktion zwischen dem Kind, dem anderen und der Welt.",
                   })}
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-                  <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                    <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Jean Piaget</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {t({
-                        pt: 'O desenvolvimento cognitivo ocorre por estágios, através da ação da criança sobre o ambiente.',
-                        it: 'Lo sviluppo cognitivo avviene per stadi, attraverso l\'azione del bambino sull\'ambiente.',
-                        de: "Die kognitive Entwicklung verläuft in Stufen, durch das Einwirken des Kindes auf seine Umgebung.",
-                      })}
-                    </p>
-                  </div>
-                  <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                    <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Lev Vygotsky</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {t({
-                        pt: 'A aprendizagem acontece na interação social e na zona de desenvolvimento proximal.',
-                        it: "L'apprendimento avviene nell'interazione sociale e nella zona di sviluppo prossimale.",
-                        de: "Lernen geschieht in der sozialen Interaktion und in der Zone der nächsten Entwicklung.",
-                      })}
-                    </p>
-                  </div>
-                </div>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
@@ -474,6 +452,61 @@ export function NossaMetodologiaPage() {
               </div>
             </AnimatedSection>
           </div>
+
+          <AnimatedSection delay={0.3} className="mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Luigi Giussani</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'Centralidade da pessoa.',
+                    it: 'Centralità della persona.',
+                    de: "Die Zentralität der Person.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Jean Piaget</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'A criança se constrói de forma evolutiva, por etapas, dentro de uma perspectiva interacionista.',
+                    it: 'Il bambino si costruisce in modo evolutivo, per tappe, all\'interno di una prospettiva interazionista.',
+                    de: "Das Kind entwickelt sich schrittweise, in Stufen, im Rahmen einer interaktionistischen Perspektive.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Lev Vygotsky</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'O conhecimento é o resultado de mediações entre o sujeito e o seu ambiente.',
+                    it: 'La conoscenza è il risultato di mediazioni tra il soggetto e il suo ambiente.',
+                    de: "Wissen ist das Ergebnis von Vermittlungsprozessen zwischen dem Subjekt und seiner Umgebung.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Emília Ferreiro</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'Cada criança atravessa quatro fases até a alfabetização: pré-silábica, silábica, silábico-alfabética e alfabética.',
+                    it: 'Ogni bambino attraversa quattro fasi fino all\'alfabetizzazione: pre-sillabica, sillabica, sillabico-alfabetica e alfabetica.',
+                    de: "Jedes Kind durchläuft vier Phasen bis zur Alphabetisierung: vor-silbisch, silbisch, silbisch-alphabetisch und alphabetisch.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Loris Malaguzzi</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'A criança é protagonista, no centro do processo.',
+                    it: 'Il bambino è protagonista, al centro del processo.',
+                    de: "Das Kind ist Protagonist, im Mittelpunkt des Prozesses.",
+                  })}
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 
