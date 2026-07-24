@@ -1,6 +1,7 @@
 import { Button } from './Button';
 import communityVideo from '../../imports/video_fundacao_chi_siamo.mp4';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
+import { LazyAutoplayVideo } from './LazyAutoplayVideo';
 import { useT } from '../context/LanguageContext';
 
 export function Missione() {
@@ -16,12 +17,8 @@ export function Missione() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <AnimatedImage>
             <div className="bg-white/70 backdrop-blur-md p-6 rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.15)] transition-all duration-500 border border-white/50">
-              <video
+              <LazyAutoplayVideo
                 src={communityVideo}
-                controls
-                autoPlay
-                muted
-                loop
                 className="w-full h-80 object-contain rounded-[1.5rem]"
               />
             </div>

@@ -1,5 +1,5 @@
 import { Button } from './Button';
-import schoolProjectVideo from '../../imports/video_progetto_scuola_nossa.mp4';
+import schoolRenderImage from '../../imports/immagine_compressa_leggera.jpg';
 import foundationCeremonyImage from '../../imports/converted.jpg';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
@@ -34,14 +34,11 @@ export function ProgettoScuola() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <AnimatedImage>
-            <div className="rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.2)] overflow-hidden border border-white/30 backdrop-blur-sm bg-white/10 hover:shadow-[0_20px_70px_rgba(0,0,0,0.3)] transition-all duration-500">
-              <video
-                src={schoolProjectVideo}
-                controls
-                autoPlay
-                muted
-                loop
-                className="w-full h-80 object-cover"
+            <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
+              <img loading="lazy"
+                src={schoolRenderImage}
+                alt={t({ pt: 'Projeto da Escola Nossa Senhora Aparecida', it: 'Progetto della Scuola Nossa Senhora Aparecida', de: "Projekt der Schule Nossa Senhora Aparecida" })}
+                className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
           </AnimatedImage>
