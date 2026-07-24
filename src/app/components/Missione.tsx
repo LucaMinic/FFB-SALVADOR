@@ -1,5 +1,5 @@
 import { Button } from './Button';
-import communityVideo from '../../imports/convento_video.mp4';
+import communityVideo from '../../imports/video_fundacao_chi_siamo.mp4';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
 

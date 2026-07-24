@@ -84,7 +84,7 @@ export function FundacaoPage() {
                   muted
                   loop
                   playsInline
-                  className="w-full h-96 object-cover"
+                  className="w-full aspect-video object-cover"
                 />
               </div>
             </AnimatedSection>
