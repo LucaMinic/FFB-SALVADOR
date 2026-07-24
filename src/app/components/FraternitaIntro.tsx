@@ -35,9 +35,11 @@ export function FraternitaIntro() {
               })}
             </p>
 
-            <Button variant="secondary" to="/la-fraternita">
-              {t({ pt: 'Conheça a Fraternità', it: 'Scopri la Fraternità', de: "Entdecken Sie die Bruderschaft" })}
-            </Button>
+            <div className="text-center md:text-left">
+              <Button variant="secondary" to="/la-fraternita">
+                {t({ pt: 'Conheça a Fraternità', it: 'Scopri la Fraternità', de: "Entdecken Sie die Bruderschaft" })}
+              </Button>
+            </div>
           </AnimatedSection>
 
           <AnimatedImage direction="right">
