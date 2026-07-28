@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown, FileText, Download } from 'lucide-react';
+import { FileText, Download } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/foto_sito_06_pagina_7.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
@@ -74,10 +74,6 @@ export function TrasparenzaPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

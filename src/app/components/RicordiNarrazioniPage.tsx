@@ -1,4 +1,4 @@
-import { ChevronDown, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
@@ -65,9 +65,6 @@ export function RicordiNarrazioniPage() {
               className="mt-6"
             />
           </AnimatedSection>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <ChevronDown className="w-8 h-8 text-white/60 animate-bounce" />
         </div>
       </section>
 

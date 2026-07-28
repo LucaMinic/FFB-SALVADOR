@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { Award, Globe, GraduationCap, ChevronDown } from 'lucide-react';
+import { Award, Globe, GraduationCap } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/21-5.jpeg';
 import educativaImg from '../../imports/13-2.jpeg';
@@ -57,10 +57,6 @@ export function RiconoscimentiPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

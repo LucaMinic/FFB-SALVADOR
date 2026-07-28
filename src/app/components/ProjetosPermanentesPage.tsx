@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { } from 'lucide-react';
 import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
@@ -97,9 +97,6 @@ export function ProjetosPermanentesPage() {
               </a>
             </div>
           </AnimatedSection>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <ChevronDown className="w-8 h-8 text-white/60 animate-bounce" />
         </div>
       </section>
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { MapPin, Mail, Phone, FileText, Copy, Check, ChevronDown, Instagram } from 'lucide-react';
+import { MapPin, Mail, Phone, FileText, Copy, Check, Instagram } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/nuove/2P9A2725.jpg';
 import finalCtaImg from '../../imports/nuove/2P9A2229.jpg';
@@ -51,10 +51,6 @@ export function ContattiPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 
@@ -211,7 +207,6 @@ export function ContattiPage() {
                 </a>
               </div>
             </AnimatedSection>
-
           </div>
         </div>
       </section>

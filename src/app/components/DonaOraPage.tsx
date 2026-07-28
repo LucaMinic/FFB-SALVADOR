@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown, Copy, Check, FileText } from 'lucide-react';
+import { Copy, Check, FileText } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/19.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';
@@ -63,10 +63,6 @@ export function DonaOraPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

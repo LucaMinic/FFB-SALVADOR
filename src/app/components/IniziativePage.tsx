@@ -1,6 +1,5 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/21.jpeg';
 import placeholderImg from '../../imports/19.jpeg';
@@ -65,10 +64,6 @@ export function IniziativePage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

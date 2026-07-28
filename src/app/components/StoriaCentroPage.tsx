@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -438,9 +438,6 @@ export function StoriaCentroPage() {
               </Button>
             </div>
           </AnimatedSection>
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 
@@ -528,7 +525,6 @@ export function StoriaCentroPage() {
               })}
             </div>
           </div>
-
         </div>
       </section>
 

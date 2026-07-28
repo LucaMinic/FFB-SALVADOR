@@ -1,7 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ImpactNumbers } from './ImpactNumbers';
-import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/nuove/33.jpeg';
 import chiSiamoVideo from '../../imports/video_fundacao_chi_siamo.mp4';
@@ -48,10 +47,6 @@ export function FundacaoPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

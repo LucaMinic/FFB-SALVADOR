@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
-import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -63,9 +62,6 @@ export function NossaMetodologiaPage() {
               </a>
             </div>
           </AnimatedSection>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <ChevronDown className="w-8 h-8 text-white/60 animate-bounce" />
         </div>
       </section>
 
@@ -140,7 +136,6 @@ export function NossaMetodologiaPage() {
               className="w-full rounded-3xl shadow-[0_24px_64px_rgba(0,0,0,0.13)] object-cover h-80 md:h-[480px]"
             />
           </AnimatedSection>
-
         </div>
       </section>
 

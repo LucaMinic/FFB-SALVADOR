@@ -1,7 +1,7 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ShareButtons } from './ShareButtons';
-import { ChevronDown, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/19.jpeg';
 import storyImg from '../../imports/21.jpeg';
@@ -56,9 +56,6 @@ export function ValentinaPage() {
               className="mt-10"
             />
           </AnimatedSection>
-          <div className="flex justify-center mt-10 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 

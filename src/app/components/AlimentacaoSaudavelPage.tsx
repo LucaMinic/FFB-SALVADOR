@@ -1,4 +1,4 @@
-import { ChevronDown, Leaf, Clock, Users, Target } from 'lucide-react';
+import { Leaf, Clock, Users, Target } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
@@ -125,9 +125,6 @@ export function AlimentacaoSaudavelPage() {
               </a>
             </div>
           </AnimatedSection>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-          <ChevronDown className="w-8 h-8 text-white/60 animate-bounce" />
         </div>
       </section>
 

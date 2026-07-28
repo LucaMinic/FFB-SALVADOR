@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { Lightbox } from './Lightbox';
-import { ChevronDown } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/immagine_compressa_leggera.jpg';
 import videoProgetto from '../../imports/video_progetto_scuola_nossa-1.mp4';
@@ -89,10 +88,6 @@ export function ScuolaPage() {
               </Button>
             </div>
           </AnimatedSection>
-
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-8 h-8 text-white/80" />
-          </div>
         </div>
       </section>
 
