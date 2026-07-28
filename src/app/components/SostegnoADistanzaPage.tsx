@@ -40,7 +40,7 @@ export function SostegnoADistanzaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6 leading-tight">
-              {t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza', de: "Patenschaft" })}
+              {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -55,10 +55,10 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" href="#come-sostenere" className="text-lg px-8 py-4">
-                {t({ pt: 'Sostegno a distanza', it: 'Sostieni ora', de: "Jetzt Pate werden" })}
+                {t({ pt: 'Apoiar agora', it: 'Sostieni ora', de: "Jetzt Pate werden" })}
               </Button>
               <Button variant="secondary" href="#cosa-e" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Scopri di più', it: 'Scopri di più', de: "Erfahren Sie mehr" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Erfahren Sie mehr" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -78,7 +78,7 @@ export function SostegnoADistanzaPage() {
               </div>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-6">
                 {t({
-                  pt: "O sostegno a distanza é uma forma direta e pessoal de acompanhar uma criança da creche que a Fraternidade Franciscana de Betânia gerencia em Salvador da Bahia.",
+                  pt: "O apoio à distância é uma forma direta e pessoal de acompanhar uma criança da creche que a Fraternidade Franciscana de Betânia gerencia em Salvador da Bahia.",
                   it: "Il sostegno a distanza è un modo diretto e personale di accompagnare un bambino dell'asilo che la Fraternità Francescana di Betania gestisce a Salvador de Bahia.",
                   de: "Die Patenschaft ist eine direkte und persönliche Art, ein Kind der Kita zu begleiten, die die Franziskanische Bruderschaft von Betania in Salvador de Bahia führt."
                 })}
@@ -91,7 +91,7 @@ export function SostegnoADistanzaPage() {
                 })}
               </p>
               <Button variant="primary" href="#come-sostenere">
-                {t({ pt: 'Come sostenere', it: 'Come sostenere', de: "So können Sie helfen" })}
+                {t({ pt: 'Como apoiar', it: 'Come sostenere', de: "So können Sie helfen" })}
               </Button>
             </AnimatedSection>
 
@@ -220,7 +220,7 @@ export function SostegnoADistanzaPage() {
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-4">
-              {t({ pt: 'Come sostenere', it: 'Come sostenere', de: "So können Sie helfen" })}
+              {t({ pt: 'Como apoiar', it: 'Come sostenere', de: "So können Sie helfen" })}
             </h2>
             <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
               {t({
@@ -365,7 +365,7 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection>
             <blockquote className="text-2xl md:text-3xl text-[var(--deep-blue)] leading-relaxed italic mb-10">
               "{t({
-                pt: 'Ogni bambino sostenuto è un percorso di vita che diventa possibile — educazione, cura e presenza concreta ogni giorno.',
+                pt: 'Cada criança apoiada é um percurso de vida que se torna possível — educação, cuidado e presença concreta todos os dias.',
                 it: 'Ogni bambino sostenuto è un percorso di vita che diventa possibile — educazione, cura e presenza concreta ogni giorno.',
                 de: "Jedes unterstützte Kind ist ein Lebensweg, der möglich wird — Bildung, Fürsorge und konkrete Präsenz, jeden Tag."
               })}"
@@ -374,7 +374,7 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection delay={0.2}>
             <p className="text-lg text-gray-600 leading-relaxed">
               {t({
-                pt: 'O teu sostegno a distanza não é só uma doação — é uma relação, um compromisso, uma presença que acompanha uma criança no crescimento.',
+                pt: 'O teu apoio à distância não é só uma doação — é uma relação, um compromisso, uma presença que acompanha uma criança no crescimento.',
                 it: "Il tuo sostegno a distanza non è solo una donazione — è una relazione, un impegno, una presenza che accompagna un bambino nella crescita.",
                 de: "Ihre Patenschaft ist mehr als eine Spende — sie ist eine Beziehung, ein Engagement, eine Präsenz, die ein Kind beim Aufwachsen begleitet."
               })}
@@ -388,13 +388,13 @@ export function SostegnoADistanzaPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Hai domande?', it: 'Hai domande?', de: "Haben Sie Fragen?" })}
+              {t({ pt: 'Tens dúvidas?', it: 'Hai domande?', de: "Haben Sie Fragen?" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-lg text-gray-700 leading-relaxed mb-10">
               {t({
-                pt: 'Per qualsiasi informazione sul sostegno a distanza puoi contattarci direttamente.',
+                pt: 'Para qualquer informação sobre a adoção à distância podes contactar-nos diretamente.',
                 it: 'Per qualsiasi informazione sul sostegno a distanza puoi contattarci direttamente.',
                 de: "Für weitere Informationen zur Patenschaft können Sie uns direkt kontaktieren."
               })}
@@ -404,7 +404,7 @@ export function SostegnoADistanzaPage() {
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
               </Button>
               <Button variant="secondary" to="/dona-ora">
-                {t({ pt: 'Altre forme di donazione', it: 'Altre forme di donazione', de: "Weitere Möglichkeiten zu spenden" })}
+                {t({ pt: 'Outras formas de doação', it: 'Altre forme di donazione', de: "Weitere Möglichkeiten zu spenden" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -431,7 +431,7 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed">
               {t({
-                pt: 'Com o teu sostegno a distanza garantes presença, cuidado e futuro a uma criança da creche em Salvador da Bahia.',
+                pt: 'Com o teu apoio à distância garantes presença, cuidado e futuro a uma criança da creche em Salvador da Bahia.',
                 it: "Con il tuo sostegno a distanza garantisci presenza, cura e futuro a un bambino dell'asilo a Salvador de Bahia.",
                 de: "Mit Ihrer Patenschaft sichern Sie einem Kita-Kind in Salvador de Bahia Präsenz, Fürsorge und Zukunft."
               })}
@@ -440,7 +440,7 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" href="#come-sostenere" className="text-lg px-8 py-4">
-                {t({ pt: 'Sostegno a distanza', it: 'Sostieni ora', de: "Jetzt Pate werden" })}
+                {t({ pt: 'Apoiar agora', it: 'Sostieni ora', de: "Jetzt Pate werden" })}
               </Button>
               <Button variant="secondary" to="/contatti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}

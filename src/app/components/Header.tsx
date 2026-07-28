@@ -195,7 +195,7 @@ export function Header() {
           isRoute: true,
           submenu: [
             { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" }), href: '/dona-ora', isRoute: true },
-            { label: t({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza', de: "Patenschaft" }), href: '/sostegno-a-distanza', isRoute: true }
+            { label: t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft" }), href: '/sostegno-a-distanza', isRoute: true }
           ]
         },
         { label: t({ pt: 'Benfeitores', it: 'Benefattori', de: "Förderer" }), href: '/benefattori', isRoute: true }

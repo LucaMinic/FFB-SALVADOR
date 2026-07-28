@@ -70,7 +70,7 @@ export function TrasparenzaPage() {
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
               </Button>
               <Button variant="secondary" href="#responsabilita" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Scopri di più', it: 'Scopri di più', de: "Mehr erfahren" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
               </Button>
             </div>
           </AnimatedSection>

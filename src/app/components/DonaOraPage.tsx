@@ -281,7 +281,7 @@ export function DonaOraPage() {
                   })}
                 </p>
                 <Button variant="primary" to="/sostegno-a-distanza" className="text-lg px-8 py-4">
-                  {t({ pt: 'Scopri il sostegno a distanza', it: 'Scopri il sostegno a distanza', de: "Mehr über die Patenschaft erfahren" })}
+                  {t({ pt: 'Descobre a adoção à distância', it: 'Scopri il sostegno a distanza', de: "Mehr über die Patenschaft erfahren" })}
                 </Button>
               </div>
             </AnimatedSection>

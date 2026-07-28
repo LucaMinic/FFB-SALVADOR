@@ -252,7 +252,7 @@ export const seoMeta: Record<string, PageMeta> = {
     },
   },
   '/sostegno-a-distanza': {
-    title: withSuffix({ pt: 'Sostegno a distanza', it: 'Sostegno a distanza', de: "Fernpatenschaft" }),
+    title: withSuffix({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Fernpatenschaft" }),
     description: {
       pt: 'Um vínculo real entre você e uma criança que cresce — educação, cuidado e nutrição todos os dias.',
       it: 'Un legame reale tra te e un bambino che cresce — educazione, cura e nutrimento ogni giorno.',
