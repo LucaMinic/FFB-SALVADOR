@@ -360,7 +360,7 @@ export function Header() {
 
           {/* Mobile: Dona ora centered equidistant between logo and language switcher */}
           <div className="flex-1 flex justify-center xl:hidden">
-            <Link to="/dona-ora" className="px-3 py-2 text-sm bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
+            <Link to="/dona-ora" className="px-3 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
           </div>
