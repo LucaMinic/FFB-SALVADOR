@@ -13,7 +13,7 @@ import oggiImg from '../../imports/33.jpeg';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-type BilingualText = { it: string; pt: string; de: string };
+type BilingualText = { it: string; pt: string; de: string; en: string };
 type EntryStatus = 'completed' | 'in-progress' | 'upcoming';
 
 interface TimelineEntry {
@@ -31,27 +31,31 @@ interface TimelineEntry {
 const entries: TimelineEntry[] = [
   {
     id: 'nascita-fraternita',
-    date: { it: '1982', pt: '1982', de: '1982' },
+    date: { it: '1982', pt: '1982', de: '1982', en: "1982" },
     title: {
       it: 'Nasce la Fraternità Francescana di Betania',
       pt: 'Nasce a Fraternidade Franciscana de Betânia',
       de: 'Die Franziskanische Bruderschaft von Betania entsteht',
+      en: "The Franciscan Fraternity of Betania is born",
     },
     paragraphs: [
       {
         it: 'Per iniziativa di fra Pancrazio Gaudioso, frate cappuccino, nasce in Italia la Fraternità Francescana di Betania.',
         pt: 'Por iniciativa de frei Pancrazio Gaudioso, frade capuchinho, nasce em Itália a Fraternidade Franciscana de Betânia.',
         de: 'Auf Initiative von Bruder Pancrazio Gaudioso, einem Kapuzinermönch, entsteht in Italien die Franziskanische Bruderschaft von Betania.',
+        en: "On the initiative of Friar Pancrazio Gaudioso, a Capuchin friar, the Franciscan Fraternity of Betania is born in Italy.",
       },
       {
         it: "Fin dalle origini la comunità sceglie di vivere il Vangelo secondo lo spirito di San Francesco d'Assisi e della casa di Betania: un luogo di accoglienza, fraternità, preghiera e condivisione.",
         pt: 'Desde as origens, a comunidade escolhe viver o Evangelho segundo o espírito de São Francisco de Assis e da casa de Betânia: um lugar de acolhimento, fraternidade, oração e partilha.',
         de: 'Von Anfang an entscheidet sich die Gemeinschaft, das Evangelium im Geist des heiligen Franziskus von Assisi und des Hauses von Betanien zu leben: ein Ort der Gastfreundschaft, der Brüderlichkeit, des Gebets und des Teilens.',
+        en: "From its origins, the community chooses to live the Gospel according to the spirit of Saint Francis of Assisi and the house of Bethany: a place of welcome, fraternity, prayer and sharing.",
       },
       {
         it: "Negli anni successivi la Fraternità si diffonde in Italia e all'estero, portando il proprio carisma nei luoghi segnati dalla povertà materiale e spirituale.",
         pt: 'Nos anos seguintes, a Fraternidade difunde-se em Itália e no exterior, levando o seu carisma aos lugares marcados pela pobreza material e espiritual.',
         de: 'In den folgenden Jahren verbreitet sich die Bruderschaft in Italien und im Ausland und trägt ihr Charisma an Orte, die von materieller und geistlicher Armut geprägt sind.',
+        en: "In the following years, the Fraternity spreads across Italy and abroad, carrying its charism to places marked by material and spiritual poverty.",
       },
     ],
     image: {
@@ -60,33 +64,38 @@ const entries: TimelineEntry[] = [
         it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania',
         pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia',
         de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Bruderschaft von Betania',
+        en: "Friar Pancrazio Gaudioso, founder of the Franciscan Fraternity of Betania",
       },
     },
     status: 'completed',
   },
   {
     id: 'arrivo-salvador',
-    date: { it: '2010', pt: '2010', de: '2010' },
+    date: { it: '2010', pt: '2010', de: '2010', en: "2010" },
     title: {
       it: "L'arrivo a Salvador de Bahia",
       pt: 'A chegada a Salvador da Bahia',
       de: 'Die Ankunft in Salvador de Bahia',
+      en: "Arrival in Salvador de Bahia",
     },
     paragraphs: [
       {
         it: 'La Fraternità apre la sua prima missione in Brasile scegliendo di stabilirsi nel quartiere di São Cristóvão, nella periferia di Salvador de Bahia.',
         pt: 'A Fraternidade abre a sua primeira missão no Brasil, escolhendo estabelecer-se no bairro de São Cristóvão, na periferia de Salvador da Bahia.',
         de: 'Die Bruderschaft eröffnet ihre erste Mission in Brasilien und lässt sich im Stadtviertel São Cristóvão am Rande von Salvador de Bahia nieder.',
+        en: "The Fraternity opens its first mission in Brazil, choosing to settle in the São Cristóvão neighbourhood, on the outskirts of Salvador de Bahia.",
       },
       {
         it: 'Non si tratta semplicemente dell\'apertura di una nuova casa religiosa, ma dell\'inizio di una presenza missionaria stabile accanto alle persone più vulnerabili.',
         pt: 'Não se trata simplesmente da abertura de uma nova casa religiosa, mas do início de uma presença missionária estável ao lado das pessoas mais vulneráveis.',
         de: 'Es handelt sich nicht einfach um die Eröffnung eines neuen Ordenshauses, sondern um den Beginn einer beständigen missionarischen Präsenz an der Seite der schwächsten Menschen.',
+        en: "This is not simply the opening of a new religious house, but the beginning of a stable missionary presence alongside the most vulnerable people.",
       },
       {
         it: "I primi fratelli e le prime sorelle vivono in strutture provvisorie, condividendo la quotidianità della popolazione locale e costruendo relazioni fondate sull'ascolto, sulla fiducia e sulla fraternità.",
         pt: 'Os primeiros irmãos e irmãs vivem em estruturas provisórias, partilhando o quotidiano da população local e construindo relações fundadas na escuta, na confiança e na fraternidade.',
         de: 'Die ersten Brüder und Schwestern leben in provisorischen Unterkünften, teilen den Alltag der örtlichen Bevölkerung und bauen Beziehungen auf, die auf Zuhören, Vertrauen und Brüderlichkeit gründen.',
+        en: "The first brothers and sisters live in temporary facilities, sharing the daily life of the local population and building relationships founded on listening, trust and fraternity.",
       },
     ],
     image: {
@@ -95,38 +104,44 @@ const entries: TimelineEntry[] = [
         it: "Dall'Italia al Brasile: l'arrivo della Fraternità a Salvador de Bahia",
         pt: 'Da Itália ao Brasil: a chegada da Fraternidade a Salvador da Bahia',
         de: 'Von Italien nach Brasilien: die Ankunft der Bruderschaft in Salvador de Bahia',
+        en: "From Italy to Brazil: the Fraternity's arrival in Salvador de Bahia",
       },
     },
     status: 'completed',
   },
   {
     id: 'nasce-centro',
-    date: { it: '2012', pt: '2012', de: '2012' },
+    date: { it: '2012', pt: '2012', de: '2012', en: "2012" },
     title: {
       it: 'Nasce il Centro Nossa Senhora Aparecida',
       pt: 'Nasce o Centro Nossa Senhora Aparecida',
       de: 'Das Centro Nossa Senhora Aparecida entsteht',
+      en: "The Centro Nossa Senhora Aparecida is born",
     },
     paragraphs: [
       {
         it: 'Dall\'ascolto delle necessità del territorio prende vita il Centro Nossa Senhora Aparecida, dedicato alla Patrona del Brasile.',
         pt: 'Da escuta das necessidades do território nasce o Centro Nossa Senhora Aparecida, dedicado à Padroeira do Brasil.',
         de: 'Aus dem Zuhören auf die Bedürfnisse des Gebiets entsteht das Centro Nossa Senhora Aparecida, das der Schutzpatronin Brasiliens gewidmet ist.',
+        en: "From listening to the needs of the local area, the Centro Nossa Senhora Aparecida is born, dedicated to the Patroness of Brazil.",
       },
       {
         it: 'Il Centro nasce per offrire ai bambini delle famiglie più fragili un ambiente sicuro, educativo e ricco di opportunità.',
         pt: 'O Centro nasce para oferecer às crianças das famílias mais frágeis um ambiente seguro, educativo e rico em oportunidades.',
         de: 'Das Zentrum entsteht, um den Kindern der bedürftigsten Familien eine sichere, bildende und chancenreiche Umgebung zu bieten.',
+        en: "The Centre is created to offer children from the most vulnerable families a safe, educational environment full of opportunities.",
       },
       {
         it: 'Fin dai primi anni accoglie oltre cento bambini provenienti dalle comunità circostanti, proponendo attività educative, formative e ricreative che coinvolgono anche le loro famiglie.',
         pt: 'Desde os primeiros anos acolhe mais de cem crianças vindas das comunidades vizinhas, propondo atividades educativas, formativas e recreativas que envolvem também as suas famílias.',
         de: 'Schon in den ersten Jahren nimmt es über hundert Kinder aus den umliegenden Gemeinschaften auf und bietet Bildungs-, Förder- und Freizeitaktivitäten an, die auch ihre Familien einbeziehen.',
+        en: "From its earliest years it welcomes more than a hundred children from the surrounding communities, offering educational, formative and recreational activities that also involve their families.",
       },
       {
         it: "L'obiettivo non è soltanto offrire assistenza, ma accompagnare ogni bambino nella propria crescita umana, culturale e spirituale, promuovendo valori di solidarietà, rispetto e responsabilità.",
         pt: 'O objetivo não é apenas oferecer assistência, mas acompanhar cada criança no seu crescimento humano, cultural e espiritual, promovendo valores de solidariedade, respeito e responsabilidade.',
         de: 'Das Ziel ist nicht nur, Unterstützung zu bieten, sondern jedes Kind in seinem menschlichen, kulturellen und geistlichen Wachstum zu begleiten und Werte wie Solidarität, Respekt und Verantwortung zu fördern.',
+        en: "The goal is not only to provide assistance, but to accompany every child in their own human, cultural and spiritual growth, promoting values of solidarity, respect and responsibility.",
       },
     ],
     image: {
@@ -135,33 +150,38 @@ const entries: TimelineEntry[] = [
         it: 'I primi anni del Centro Nossa Senhora Aparecida',
         pt: 'Os primeiros anos do Centro Nossa Senhora Aparecida',
         de: 'Die ersten Jahre des Centro Nossa Senhora Aparecida',
+        en: "The early years of the Centro Nossa Senhora Aparecida",
       },
     },
     status: 'completed',
   },
   {
     id: 'cresce-missione',
-    date: { it: '2012 – 2021', pt: '2012 – 2021', de: '2012 – 2021' },
+    date: { it: '2012 – 2021', pt: '2012 – 2021', de: '2012 – 2021', en: "2012 – 2021" },
     title: {
       it: 'Cresce la missione',
       pt: 'A missão cresce',
       de: 'Die Mission wächst',
+      en: "The mission grows",
     },
     paragraphs: [
       {
         it: "Negli anni successivi il Centro Nossa Senhora Aparecida diventa un punto di riferimento per l'intero quartiere.",
         pt: 'Nos anos seguintes, o Centro Nossa Senhora Aparecida torna-se um ponto de referência para todo o bairro.',
         de: 'In den folgenden Jahren wird das Centro Nossa Senhora Aparecida zu einem Bezugspunkt für das gesamte Viertel.',
+        en: "In the following years, the Centro Nossa Senhora Aparecida becomes a point of reference for the whole neighbourhood.",
       },
       {
         it: "Accanto alle attività dedicate all'infanzia si sviluppano iniziative di promozione umana, sostegno alle famiglie, formazione spirituale e servizi rivolti alla comunità.",
         pt: 'Ao lado das atividades dedicadas à infância desenvolvem-se iniciativas de promoção humana, apoio às famílias, formação espiritual e serviços voltados à comunidade.',
         de: 'Neben den Aktivitäten für Kinder entwickeln sich Initiativen zur menschlichen Förderung, Familienunterstützung, geistlichen Bildung und Dienste für die Gemeinschaft.',
+        en: "Alongside activities dedicated to children, initiatives for human development, family support, spiritual formation and community services are developed.",
       },
       {
         it: 'Parallelamente nasce il progetto di realizzare un convento che possa diventare il cuore della vita della Fraternità e delle opere sociali.',
         pt: 'Paralelamente, nasce o projeto de construir um convento que possa tornar-se o coração da vida da Fraternidade e das obras sociais.',
         de: 'Parallel dazu entsteht das Projekt, ein Kloster zu errichten, das zum Herzen des Lebens der Bruderschaft und der sozialen Werke werden soll.',
+        en: "At the same time, the project to build a convent that could become the heart of the Fraternity's life and social works is born.",
       },
     ],
     image: {
@@ -170,33 +190,38 @@ const entries: TimelineEntry[] = [
         it: 'La crescita delle attività del Centro',
         pt: 'O crescimento das atividades do Centro',
         de: 'Das Wachstum der Aktivitäten des Zentrums',
+        en: "The growth of the Centre's activities",
       },
     },
     status: 'completed',
   },
   {
     id: 'nuovo-convento',
-    date: { it: '2022', pt: '2022', de: '2022' },
+    date: { it: '2022', pt: '2022', de: '2022', en: "2022" },
     title: {
       it: "L'inaugurazione del nuovo convento",
       pt: 'A inauguração do novo convento',
       de: 'Die Einweihung des neuen Klosters',
+      en: "The inauguration of the new convent",
     },
     paragraphs: [
       {
         it: 'Dopo oltre dieci anni di presenza missionaria viene inaugurato il nuovo Convento della Fraternità Francescana di Betania.',
         pt: 'Depois de mais de dez anos de presença missionária, é inaugurado o novo Convento da Fraternidade Franciscana de Betânia.',
         de: 'Nach mehr als zehn Jahren missionarischer Präsenz wird das neue Kloster der Franziskanischen Bruderschaft von Betania eingeweiht.',
+        en: "After more than ten years of missionary presence, the new Convent of the Franciscan Fraternity of Betania is inaugurated.",
       },
       {
         it: 'L\'edificio è progettato come una "casa aperta", capace di accogliere la comunità religiosa e, nello stesso tempo, di offrire spazi dedicati alla preghiera, alla formazione, all\'incontro e alle attività educative.',
         pt: 'O edifício é concebido como uma "casa aberta", capaz de acolher a comunidade religiosa e, ao mesmo tempo, oferecer espaços dedicados à oração, à formação, ao encontro e às atividades educativas.',
         de: 'Das Gebäude ist als „offenes Haus" konzipiert, das die Ordensgemeinschaft aufnimmt und zugleich Räume für Gebet, Bildung, Begegnung und pädagogische Aktivitäten bietet.',
+        en: "The building is designed as an \"open house\", able to welcome the religious community while also offering spaces dedicated to prayer, formation, meetings and educational activities.",
       },
       {
         it: "Realizzato con un'architettura semplice ed essenziale, perfettamente integrata nel clima e nel territorio di Bahia, il convento rappresenta oggi il cuore spirituale e operativo della missione.",
         pt: 'Realizado com uma arquitetura simples e essencial, perfeitamente integrada ao clima e ao território da Bahia, o convento representa hoje o coração espiritual e operativo da missão.',
         de: 'Mit einer einfachen, wesentlichen Architektur errichtet, die perfekt in das Klima und das Gebiet von Bahia integriert ist, stellt das Kloster heute das geistliche und operative Herz der Mission dar.',
+        en: "Built with simple, essential architecture, perfectly integrated into the climate and landscape of Bahia, the convent today represents the spiritual and operational heart of the mission.",
       },
     ],
     image: {
@@ -205,38 +230,44 @@ const entries: TimelineEntry[] = [
         it: 'Vista aerea del Centro e del nuovo convento',
         pt: 'Vista aérea do Centro e do novo convento',
         de: 'Luftaufnahme des Zentrums und des neuen Klosters',
+        en: "Aerial view of the Centre and the new convent",
       },
     },
     status: 'completed',
   },
   {
     id: 'visita-mattarella',
-    date: { it: '2024', pt: '2024', de: '2024' },
+    date: { it: '2024', pt: '2024', de: '2024', en: "2024" },
     title: {
       it: 'La visita del Presidente della Repubblica Sergio Mattarella',
       pt: 'A visita do Presidente da República Sergio Mattarella',
       de: 'Der Besuch des Staatspräsidenten Sergio Mattarella',
+      en: "The visit of President of the Republic Sergio Mattarella",
     },
     paragraphs: [
       {
         it: 'Il 19 luglio 2024 il Presidente della Repubblica Italiana, Sergio Mattarella, visita la Fraternità Francescana di Betania e il Centro Nossa Senhora Aparecida durante la sua Visita di Stato nella Repubblica Federativa del Brasile.',
         pt: 'Em 19 de julho de 2024, o Presidente da República Italiana, Sergio Mattarella, visita a Fraternidade Franciscana de Betânia e o Centro Nossa Senhora Aparecida durante a sua Visita de Estado à República Federativa do Brasil.',
         de: 'Am 19. Juli 2024 besucht der Präsident der Italienischen Republik, Sergio Mattarella, die Franziskanische Bruderschaft von Betania und das Centro Nossa Senhora Aparecida im Rahmen seines Staatsbesuchs in der Föderativen Republik Brasilien.',
+        en: "On 19 July 2024, the President of the Italian Republic, Sergio Mattarella, visits the Franciscan Fraternity of Betania and the Centro Nossa Senhora Aparecida during his State Visit to the Federative Republic of Brazil.",
       },
       {
         it: 'La presenza del Capo dello Stato rappresenta uno dei momenti più significativi della storia della missione.',
         pt: 'A presença do Chefe de Estado representa um dos momentos mais significativos da história da missão.',
         de: 'Die Anwesenheit des Staatsoberhaupts stellt einen der bedeutendsten Momente in der Geschichte der Mission dar.',
+        en: "The presence of the Head of State represents one of the most significant moments in the history of the mission.",
       },
       {
         it: "La visita costituisce un importante riconoscimento dell'impegno educativo e sociale svolto dalla Fraternità nei confronti dei bambini e delle famiglie della periferia di Salvador de Bahia.",
         pt: 'A visita constitui um importante reconhecimento do empenho educativo e social realizado pela Fraternidade junto às crianças e às famílias da periferia de Salvador da Bahia.',
         de: 'Der Besuch ist eine wichtige Anerkennung des pädagogischen und sozialen Engagements der Bruderschaft für die Kinder und Familien am Rande von Salvador de Bahia.',
+        en: "The visit is an important recognition of the educational and social commitment carried out by the Fraternity for the children and families of the outskirts of Salvador de Bahia.",
       },
       {
         it: 'Da questo incontro prende nuovo slancio il grande progetto della futura scuola, sostenuto dalla collaborazione tra istituzioni italiane, enti internazionali e numerosi benefattori.',
         pt: 'Deste encontro nasce um novo impulso para o grande projeto da futura escola, sustentado pela colaboração entre instituições italianas, organismos internacionais e numerosos benfeitores.',
         de: 'Aus dieser Begegnung erhält das große Projekt der künftigen Schule neuen Schwung, getragen von der Zusammenarbeit italienischer Institutionen, internationaler Organisationen und zahlreicher Wohltäter.',
+        en: "This meeting gives new momentum to the great project of the future school, supported by the collaboration between Italian institutions, international organisations and numerous benefactors.",
       },
     ],
     image: {
@@ -245,47 +276,54 @@ const entries: TimelineEntry[] = [
         it: 'La visita del Presidente Sergio Mattarella al Centro Nossa Senhora Aparecida',
         pt: 'A visita do Presidente Sergio Mattarella ao Centro Nossa Senhora Aparecida',
         de: 'Der Besuch von Präsident Sergio Mattarella im Centro Nossa Senhora Aparecida',
+        en: "The visit of President Sergio Mattarella to the Centro Nossa Senhora Aparecida",
       },
     },
     cta: {
-      label: { it: 'Scopri la visita', pt: 'Conheça a visita', de: 'Entdecken Sie den Besuch' },
+      label: { it: 'Scopri la visita', pt: 'Conheça a visita', de: 'Entdecken Sie den Besuch', en: "Discover the visit" },
       to: '/documentari-racconti/visita-presidente',
     },
     status: 'completed',
   },
   {
     id: 'inizio-lavori-scuola',
-    date: { it: '2026', pt: '2026', de: '2026' },
+    date: { it: '2026', pt: '2026', de: '2026', en: "2026" },
     title: {
       it: 'Inizio dei lavori della Scuola Nossa Senhora Aparecida',
       pt: 'Início das obras da Escola Nossa Senhora Aparecida',
       de: 'Baubeginn der Schule Nossa Senhora Aparecida',
+      en: "Start of construction of the Nossa Senhora Aparecida School",
     },
     paragraphs: [
       {
         it: "Dopo anni di presenza educativa attraverso l'asilo, il Centro Nossa Senhora Aparecida compie un nuovo e decisivo passo nel proprio cammino.",
         pt: 'Depois de anos de presença educativa através da creche, o Centro Nossa Senhora Aparecida dá um novo e decisivo passo no seu caminho.',
         de: 'Nach Jahren pädagogischer Präsenz durch die Kita geht das Centro Nossa Senhora Aparecida einen neuen, entscheidenden Schritt auf seinem Weg.',
+        en: "After years of educational presence through the nursery school, the Centro Nossa Senhora Aparecida takes a new and decisive step in its journey.",
       },
       {
         it: 'Con la posa della prima pietra iniziano ufficialmente i lavori per la costruzione della Scuola Nossa Senhora Aparecida, destinata ad accompagnare bambini e ragazzi dai 6 ai 18 anni, offrendo loro un percorso educativo completo.',
         pt: 'Com o lançamento da pedra fundamental, iniciam-se oficialmente as obras de construção da Escola Nossa Senhora Aparecida, destinada a acompanhar crianças e jovens dos 6 aos 18 anos, oferecendo-lhes um percurso educativo completo.',
         de: 'Mit der Grundsteinlegung beginnen offiziell die Bauarbeiten für die Schule Nossa Senhora Aparecida, die Kinder und Jugendliche von 6 bis 18 Jahren begleiten und ihnen einen vollständigen Bildungsweg bieten soll.',
+        en: "With the laying of the first stone, construction officially begins on the Nossa Senhora Aparecida School, intended to accompany children and young people from age 6 to 18, offering them a complete educational path.",
       },
       {
         it: "La nuova scuola sorgerà accanto al Centro già esistente e potrà accogliere circa 400 studenti, garantendo gratuitamente un'istruzione di qualità unita alla formazione umana, sociale e cristiana.",
         pt: 'A nova escola será construída ao lado do Centro já existente e poderá acolher cerca de 400 estudantes, garantindo gratuitamente uma educação de qualidade aliada à formação humana, social e cristã.',
         de: 'Die neue Schule entsteht neben dem bereits bestehenden Zentrum und wird rund 400 Schülerinnen und Schüler aufnehmen können, denen kostenlos eine qualitativ hochwertige Bildung zusammen mit menschlicher, sozialer und christlicher Erziehung geboten wird.',
+        en: "The new school will be built alongside the existing Centre and will be able to welcome around 400 students, guaranteeing a free, quality education combined with human, social and Christian formation.",
       },
       {
         it: "L'opera è resa possibile grazie al sostegno della Cooperazione Italiana, del Ministero degli Affari Esteri e della Cooperazione Internazionale, dell'Organizzazione Internazionale Italo-Latino Americana (IILA) e di numerosi benefattori che hanno creduto nel progetto.",
         pt: 'A obra é possível graças ao apoio da Cooperação Italiana, do Ministério dos Negócios Estrangeiros e da Cooperação Internacional, da Organização Internacional Ítalo-Latino-Americana (IILA) e de numerosos benfeitores que acreditaram no projeto.',
         de: 'Das Werk wird möglich dank der Unterstützung der Italienischen Entwicklungszusammenarbeit, des Ministeriums für Auswärtige Angelegenheiten und Internationale Zusammenarbeit, der Italienisch-Lateinamerikanischen Internationalen Organisation (IILA) und zahlreicher Wohltäter, die an das Projekt geglaubt haben.',
+        en: "The work is made possible thanks to the support of Italian Cooperation, the Ministry of Foreign Affairs and International Cooperation, the Italo-Latin American International Organisation (IILA) and numerous benefactors who believed in the project.",
       },
       {
         it: "Con questa nuova realizzazione prende forma uno dei sogni più grandi di padre Pancrazio Gaudioso: offrire ai bambini delle periferie di Salvador non soltanto un luogo dove essere accolti nei primi anni di vita, ma un percorso educativo completo capace di accompagnarli fino alla maggiore età.",
         pt: 'Com esta nova realização toma forma um dos maiores sonhos do padre Pancrazio Gaudioso: oferecer às crianças das periferias de Salvador não apenas um lugar onde ser acolhidas nos primeiros anos de vida, mas um percurso educativo completo capaz de as acompanhar até a maioridade.',
         de: 'Mit diesem neuen Werk nimmt einer der größten Träume von Pater Pancrazio Gaudioso Gestalt an: den Kindern aus den Randgebieten von Salvador nicht nur einen Ort zu bieten, an dem sie in den ersten Lebensjahren aufgenommen werden, sondern einen vollständigen Bildungsweg, der sie bis zur Volljährigkeit begleiten kann.',
+        en: "With this new undertaking, one of Father Pancrazio Gaudioso's greatest dreams takes shape: to offer children from the outskirts of Salvador not only a place to be welcomed in their first years of life, but a complete educational path able to accompany them into adulthood.",
       },
     ],
     image: {
@@ -294,42 +332,48 @@ const entries: TimelineEntry[] = [
         it: 'La posa della prima pietra della Scuola Nossa Senhora Aparecida',
         pt: 'O lançamento da pedra fundamental da Escola Nossa Senhora Aparecida',
         de: 'Die Grundsteinlegung der Schule Nossa Senhora Aparecida',
+        en: "The laying of the first stone of the Nossa Senhora Aparecida School",
       },
     },
     cta: {
-      label: { it: "Segui l'avanzamento lavori", pt: 'Acompanhe o andamento das obras', de: 'Verfolgen Sie den Baufortschritt' },
+      label: { it: "Segui l'avanzamento lavori", pt: 'Acompanhe o andamento das obras', de: 'Verfolgen Sie den Baufortschritt', en: "Follow the construction progress" },
       to: '/avanzamento-lavori',
     },
     status: 'in-progress',
   },
   {
     id: 'oggi',
-    date: { it: 'Oggi', pt: 'Hoje', de: 'Heute' },
+    date: { it: 'Oggi', pt: 'Hoje', de: 'Heute', en: "Today" },
     title: {
       it: 'Una missione che continua a crescere',
       pt: 'Uma missão que continua a crescer',
       de: 'Eine Mission, die weiter wächst',
+      en: "A mission that continues to grow",
     },
     paragraphs: [
       {
         it: 'La Fraternità Francescana di Betania continua il proprio servizio a Salvador de Bahia con lo stesso spirito che ha animato i primi missionari arrivati nel 2010.',
         pt: 'A Fraternidade Franciscana de Betânia continua o seu serviço em Salvador da Bahia com o mesmo espírito que animou os primeiros missionários chegados em 2010.',
         de: 'Die Franziskanische Bruderschaft von Betania setzt ihren Dienst in Salvador de Bahia mit demselben Geist fort, der die ersten 2010 angekommenen Missionare beseelte.',
+        en: "The Franciscan Fraternity of Betania continues its service in Salvador de Bahia with the same spirit that inspired the first missionaries who arrived in 2010.",
       },
       {
         it: 'Ogni giorno il Centro Nossa Senhora Aparecida rappresenta un luogo di speranza per centinaia di bambini e per le loro famiglie, offrendo educazione, accoglienza, formazione e sostegno.',
         pt: 'Todos os dias o Centro Nossa Senhora Aparecida representa um lugar de esperança para centenas de crianças e para as suas famílias, oferecendo educação, acolhimento, formação e apoio.',
         de: 'Jeden Tag ist das Centro Nossa Senhora Aparecida ein Ort der Hoffnung für Hunderte von Kindern und ihre Familien und bietet Bildung, Aufnahme, Förderung und Unterstützung.',
+        en: "Every day the Centro Nossa Senhora Aparecida represents a place of hope for hundreds of children and their families, offering education, welcome, formation and support.",
       },
       {
         it: 'Il convento rimane il cuore della vita spirituale della comunità, mentre il progetto della nuova scuola apre prospettive ancora più ampie per il futuro.',
         pt: 'O convento permanece o coração da vida espiritual da comunidade, enquanto o projeto da nova escola abre perspetivas ainda mais amplas para o futuro.',
         de: 'Das Kloster bleibt das Herz des geistlichen Lebens der Gemeinschaft, während das Projekt der neuen Schule noch weitreichendere Perspektiven für die Zukunft eröffnet.',
+        en: "The convent remains the heart of the community's spiritual life, while the new school project opens up even broader prospects for the future.",
       },
       {
         it: 'La missione continua a crescere grazie alla Provvidenza, alla generosità di tanti amici e benefattori e al lavoro quotidiano dei fratelli, delle sorelle, dei volontari e di tutti coloro che condividono il sogno di costruire un futuro migliore per le nuove generazioni.',
         pt: 'A missão continua a crescer graças à Providência, à generosidade de tantos amigos e benfeitores e ao trabalho quotidiano dos irmãos, das irmãs, dos voluntários e de todos os que partilham o sonho de construir um futuro melhor para as novas gerações.',
         de: 'Die Mission wächst weiter dank der Vorsehung, der Großzügigkeit vieler Freunde und Wohltäter und der täglichen Arbeit der Brüder, Schwestern, Freiwilligen und all jener, die den Traum teilen, eine bessere Zukunft für die neuen Generationen aufzubauen.',
+        en: "The mission continues to grow thanks to Providence, the generosity of so many friends and benefactors, and the daily work of the brothers, sisters, volunteers and all those who share the dream of building a better future for new generations.",
       },
     ],
     image: {
@@ -338,33 +382,38 @@ const entries: TimelineEntry[] = [
         it: 'La vita quotidiana del Centro oggi',
         pt: 'A vida quotidiana do Centro hoje',
         de: 'Der Alltag des Zentrums heute',
+        en: "The Centre's daily life today",
       },
     },
     status: 'in-progress',
   },
   {
     id: 'futuro',
-    date: { it: 'Il futuro', pt: 'O futuro', de: 'Die Zukunft' },
+    date: { it: 'Il futuro', pt: 'O futuro', de: 'Die Zukunft', en: "The future" },
     title: {
       it: 'Uno sguardo al futuro',
       pt: 'Um olhar para o futuro',
       de: 'Ein Blick in die Zukunft',
+      en: "A look to the future",
     },
     paragraphs: [
       {
         it: 'La storia della Fraternità Francescana di Betania a Salvador de Bahia è ancora in cammino.',
         pt: 'A história da Fraternidade Franciscana de Betânia em Salvador da Bahia ainda está em caminho.',
         de: 'Die Geschichte der Franziskanischen Bruderschaft von Betania in Salvador de Bahia ist noch im Werden.',
+        en: "The story of the Franciscan Fraternity of Betania in Salvador de Bahia is still being written.",
       },
       {
         it: 'Ogni bambino accolto, ogni famiglia sostenuta, ogni progetto realizzato rappresenta un nuovo capitolo di una missione iniziata con pochi missionari e un grande sogno: rendere concreta la fraternità evangelica nelle periferie del mondo.',
         pt: 'Cada criança acolhida, cada família apoiada, cada projeto realizado representa um novo capítulo de uma missão iniciada com poucos missionários e um grande sonho: tornar concreta a fraternidade evangélica nas periferias do mundo.',
         de: 'Jedes aufgenommene Kind, jede unterstützte Familie, jedes verwirklichte Projekt ist ein neues Kapitel einer Mission, die mit wenigen Missionaren und einem großen Traum begann: die evangelische Brüderlichkeit in den Randgebieten der Welt konkret werden zu lassen.',
+        en: "Every child welcomed, every family supported, every project carried out represents a new chapter of a mission that began with a few missionaries and a great dream: to make the Gospel fraternity a concrete reality in the outskirts of the world.",
       },
       {
         it: "Con il completamento della Scuola Nossa Senhora Aparecida, la missione potrà accompagnare i giovani lungo tutto il loro percorso di crescita, offrendo non soltanto un'istruzione, ma la possibilità di costruire una vita fondata sulla dignità, sulla cultura, sulla solidarietà e sulla speranza.",
         pt: 'Com a conclusão da Escola Nossa Senhora Aparecida, a missão poderá acompanhar os jovens ao longo de todo o seu percurso de crescimento, oferecendo não apenas uma educação, mas a possibilidade de construir uma vida fundada na dignidade, na cultura, na solidariedade e na esperança.',
         de: 'Mit der Fertigstellung der Schule Nossa Senhora Aparecida wird die Mission die jungen Menschen auf ihrem gesamten Wachstumsweg begleiten können und ihnen nicht nur Bildung, sondern die Möglichkeit bieten, ein Leben auf der Grundlage von Würde, Kultur, Solidarität und Hoffnung aufzubauen.',
+        en: "With the completion of the Nossa Senhora Aparecida School, the mission will be able to accompany young people throughout their entire journey of growth, offering not only an education, but the chance to build a life founded on dignity, culture, solidarity and hope.",
       },
     ],
     status: 'upcoming',
@@ -377,17 +426,17 @@ const statusConfig: Record<EntryStatus, { dot: string; badge: string; label: Bil
   completed: {
     dot: 'bg-[var(--soft-green)]',
     badge: 'bg-[var(--soft-green)] text-white',
-    label: { it: 'Compiuto', pt: 'Concluído', de: 'Abgeschlossen' },
+    label: { it: 'Compiuto', pt: 'Concluído', de: 'Abgeschlossen', en: "Completed" },
   },
   'in-progress': {
     dot: 'bg-[var(--warm-orange)]',
     badge: 'bg-[var(--warm-orange)] text-white',
-    label: { it: 'In corso', pt: 'Em andamento', de: 'In Arbeit' },
+    label: { it: 'In corso', pt: 'Em andamento', de: 'In Arbeit', en: "In progress" },
   },
   upcoming: {
     dot: 'bg-gray-300',
     badge: 'bg-gray-200 text-gray-600',
-    label: { it: 'Domani', pt: 'Amanhã', de: 'Morgen' },
+    label: { it: 'Domani', pt: 'Amanhã', de: 'Morgen', en: "Tomorrow" },
   },
 };
 
@@ -404,7 +453,7 @@ export function StoriaCentroPage() {
         <div className="absolute inset-0">
           <img
             src={padrePancrazioImg}
-            alt={t({ it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania', pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia', de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Bruderschaft von Betania' })}
+            alt={t({ it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania', pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia', de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Bruderschaft von Betania', en: "Friar Pancrazio Gaudioso, founder of the Franciscan Fraternity of Betania" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--deep-blue)]/70 via-[var(--deep-blue)]/50 to-[var(--deep-blue)]/70" />
@@ -416,7 +465,7 @@ export function StoriaCentroPage() {
               Centro Nossa Senhora Aparecida
             </p>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ it: 'La storia del Centro', pt: 'A história do Centro', de: 'Die Geschichte des Zentrums' })}
+              {t({ it: 'La storia del Centro', pt: 'A história do Centro', de: 'Die Geschichte des Zentrums', en: "The History of the Centre" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -425,16 +474,17 @@ export function StoriaCentroPage() {
                 it: 'La storia della Fraternità Francescana di Betania a Salvador de Bahia è il racconto di un progetto nato dalla fede, cresciuto attraverso il servizio e alimentato dalla speranza. Ogni tappa rappresenta un passo concreto verso un obiettivo preciso: offrire ai bambini e alle famiglie più fragili nuove opportunità di crescita, istruzione e dignità.',
                 pt: 'A história da Fraternidade Franciscana de Betânia em Salvador da Bahia é o relato de um projeto nascido da fé, crescido através do serviço e alimentado pela esperança. Cada etapa representa um passo concreto em direção a um objetivo preciso: oferecer às crianças e às famílias mais frágeis novas oportunidades de crescimento, educação e dignidade.',
                 de: 'Die Geschichte der Franziskanischen Bruderschaft von Betania in Salvador de Bahia ist die Erzählung eines Projekts, das aus dem Glauben geboren wurde, durch den Dienst gewachsen ist und von der Hoffnung genährt wird. Jede Etappe ist ein konkreter Schritt auf ein klares Ziel hin: den bedürftigsten Kindern und Familien neue Möglichkeiten für Wachstum, Bildung und Würde zu bieten.',
+                en: "The story of the Franciscan Fraternity of Betania in Salvador de Bahia is the account of a project born of faith, grown through service and nourished by hope. Each stage represents a concrete step towards a clear goal: offering the most vulnerable children and families new opportunities for growth, education and dignity.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" href="#cronologia" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ it: 'Scopri la cronologia', pt: 'Conheça a cronologia', de: 'Entdecken Sie die Chronologie' })}
+                {t({ it: 'Scopri la cronologia', pt: 'Conheça a cronologia', de: 'Entdecken Sie die Chronologie', en: "Discover the timeline" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden' })}
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -452,13 +502,14 @@ export function StoriaCentroPage() {
 
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-4 text-center">
-              {t({ it: 'Cronologia della missione', pt: 'Cronologia da missão', de: 'Chronologie der Mission' })}
+              {t({ it: 'Cronologia della missione', pt: 'Cronologia da missão', de: 'Chronologie der Mission', en: "Timeline of the mission" })}
             </h2>
             <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto leading-relaxed">
               {t({
                 it: 'Dalla fondazione della Fraternità in Italia fino al progetto della nuova scuola: le tappe che hanno segnato il cammino del Centro.',
                 pt: 'Da fundação da Fraternidade em Itália até ao projeto da nova escola: as etapas que marcaram o caminho do Centro.',
                 de: 'Von der Gründung der Bruderschaft in Italien bis zum Projekt der neuen Schule: die Etappen, die den Weg des Zentrums geprägt haben.',
+                en: "From the founding of the Fraternity in Italy to the new school project: the stages that have marked the Centre's journey.",
               })}
             </p>
           </AnimatedSection>
@@ -543,6 +594,7 @@ export function StoriaCentroPage() {
                   it: '"Educare significa donare futuro. È questo il cuore della missione della Fraternità Francescana di Betania a Salvador de Bahia: trasformare l\'accoglienza in opportunità e la speranza in un cammino di vita."',
                   pt: '"Educar significa doar futuro. É este o coração da missão da Fraternidade Franciscana de Betânia em Salvador da Bahia: transformar o acolhimento em oportunidade e a esperança num caminho de vida."',
                   de: '"Erziehen bedeutet, Zukunft zu schenken. Das ist der Kern der Mission der Franziskanischen Bruderschaft von Betania in Salvador de Bahia: die Aufnahme in Chancen zu verwandeln und die Hoffnung in einen Lebensweg."',
+                  en: "\"Educating means giving a future. This is the heart of the mission of the Franciscan Fraternity of Betania in Salvador de Bahia: turning welcome into opportunity and hope into a life journey.\"",
                 })}
               </p>
             </div>
@@ -555,21 +607,22 @@ export function StoriaCentroPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl mb-6">
-              {t({ it: 'Fai parte anche tu di questa storia', pt: 'Faça também parte desta história', de: 'Werden Sie Teil dieser Geschichte' })}
+              {t({ it: 'Fai parte anche tu di questa storia', pt: 'Faça também parte desta história', de: 'Werden Sie Teil dieser Geschichte', en: "Be part of this story too" })}
             </h2>
             <p className="text-xl leading-relaxed mb-10 opacity-90">
               {t({
                 it: 'Il prossimo capitolo si scrive insieme a te: sostieni la costruzione della Scuola Nossa Senhora Aparecida.',
                 pt: 'O próximo capítulo escreve-se junto contigo: apoie a construção da Escola Nossa Senhora Aparecida.',
                 de: 'Das nächste Kapitel wird gemeinsam mit Ihnen geschrieben: unterstützen Sie den Bau der Schule Nossa Senhora Aparecida.',
+                en: "The next chapter is being written together with you: support the construction of the Nossa Senhora Aparecida School.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button to="/dona-ora">
-                {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden' })}
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: "Donate now" })}
               </Button>
               <Button variant="secondary" to="/progetto-scuola">
-                {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola', de: 'Entdecken Sie das Schulprojekt' })}
+                {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola', de: 'Entdecken Sie das Schulprojekt', en: "Discover the school project" })}
               </Button>
             </div>
           </AnimatedSection>

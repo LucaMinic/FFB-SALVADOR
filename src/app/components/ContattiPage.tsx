@@ -33,21 +33,21 @@ export function ContattiPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt" })}
+              {t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
-              {t({ pt: 'Para informações, colaborações ou apoio aos projetos da Fundação Betania ONLUS.', it: 'Per informazioni, collaborazioni o sostegno ai progetti della Fundação Betania ONLUS.', de: "Für Informationen, Zusammenarbeit oder Unterstützung der Projekte der Fundação Betania ONLUS." })}
+              {t({ pt: 'Para informações, colaborações ou apoio aos projetos da Fundação Betania ONLUS.', it: 'Per informazioni, collaborazioni o sostegno ai progetti della Fundação Betania ONLUS.', de: "Für Informationen, Zusammenarbeit oder Unterstützung der Projekte der Fundação Betania ONLUS.", en: "For information, collaborations or support for Fundação Betania ONLUS projects." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" href="#contatti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Escreva-nos', it: 'Scrivici', de: "Schreiben Sie uns" })}
+                {t({ pt: 'Escreva-nos', it: 'Scrivici', de: "Schreiben Sie uns", en: "Write to us" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -59,16 +59,16 @@ export function ContattiPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Fiquemos em contato', it: 'Restiamo in contatto', de: "Bleiben wir in Kontakt" })}
+              {t({ pt: 'Fiquemos em contato', it: 'Restiamo in contatto', de: "Bleiben wir in Kontakt", en: "Let's stay in touch" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed">
               <p>
-                {t({ pt: 'O Centro Nossa Senhora Aparecida vive todos os dias graças a relações, encontros e pessoas que escolhem caminhar juntas.', it: 'Il Centro Nossa Senhora Aparecida vive ogni giorno grazie a relazioni, incontri e persone che scelgono di camminare insieme.', de: "Das Centro Nossa Senhora Aparecida lebt jeden Tag dank Beziehungen, Begegnungen und Menschen, die sich entscheiden, gemeinsam zu gehen." })}
+                {t({ pt: 'O Centro Nossa Senhora Aparecida vive todos os dias graças a relações, encontros e pessoas que escolhem caminhar juntas.', it: 'Il Centro Nossa Senhora Aparecida vive ogni giorno grazie a relazioni, incontri e persone che scelgono di camminare insieme.', de: "Das Centro Nossa Senhora Aparecida lebt jeden Tag dank Beziehungen, Begegnungen und Menschen, die sich entscheiden, gemeinsam zu gehen.", en: "The Centro Nossa Senhora Aparecida lives every day thanks to relationships, encounters and people who choose to walk together." })}
               </p>
               <p>
-                {t({ pt: 'Para qualquer informação ou pedido pode contactar-nos diretamente.', it: 'Per qualsiasi informazione o richiesta puoi contattarci direttamente.', de: "Für jede Information oder Anfrage können Sie uns direkt kontaktieren." })}
+                {t({ pt: 'Para qualquer informação ou pedido pode contactar-nos diretamente.', it: 'Per qualsiasi informazione o richiesta puoi contattarci direttamente.', de: "Für jede Information oder Anfrage können Sie uns direkt kontaktieren.", en: "For any information or request, you can contact us directly." })}
               </p>
             </div>
           </AnimatedSection>
@@ -88,7 +88,7 @@ export function ContattiPage() {
                   </div>
                 </div>
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Salvador de Bahia (Brasil)', it: 'Salvador de Bahia (Brasile)', de: "Salvador de Bahia (Brasilien)" })}
+                  {t({ pt: 'Salvador de Bahia (Brasil)', it: 'Salvador de Bahia (Brasile)', de: "Salvador de Bahia (Brasilien)", en: "Salvador de Bahia (Brazil)" })}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Travessa Acalanto nº 1.672, Jardim das Margaridas<br />
@@ -120,7 +120,7 @@ export function ContattiPage() {
                   </div>
                 </div>
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Telefone / WhatsApp', it: 'Telefono / WhatsApp', de: "Telefon / WhatsApp" })}
+                  {t({ pt: 'Telefone / WhatsApp', it: 'Telefono / WhatsApp', de: "Telefon / WhatsApp", en: "Phone / WhatsApp" })}
                 </h3>
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <a
@@ -132,7 +132,7 @@ export function ContattiPage() {
                   <button
                     onClick={() => copyToClipboard('+5571824917 13', setCopiedPhone)}
                     className="p-2 bg-[#25D366]/50 text-white rounded-lg hover:bg-[#25D366]/80 transition-all"
-                    aria-label={t({ pt: 'Copiar telefone', it: 'Copia telefono', de: "Telefonnummer kopieren" })}
+                    aria-label={t({ pt: 'Copiar telefone', it: 'Copia telefono', de: "Telefonnummer kopieren", en: "Copy phone number" })}
                   >
                     {copiedPhone ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
                   </button>
@@ -143,7 +143,7 @@ export function ContattiPage() {
                   rel="noopener noreferrer"
                   className="inline-block px-6 py-3 bg-[#25D366] text-white rounded-xl font-medium hover:bg-[#128C7E] transition-all"
                 >
-                  {t({ pt: 'Abrir WhatsApp', it: 'Apri WhatsApp', de: "WhatsApp öffnen" })}
+                  {t({ pt: 'Abrir WhatsApp', it: 'Apri WhatsApp', de: "WhatsApp öffnen", en: "Open WhatsApp" })}
                 </a>
               </div>
             </AnimatedSection>
@@ -157,7 +157,7 @@ export function ContattiPage() {
                   </div>
                 </div>
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'E-mail', it: 'Email', de: "E-Mail" })}
+                  {t({ pt: 'E-mail', it: 'Email', de: "E-Mail", en: "Email" })}
                 </h3>
                 <div className="flex items-center justify-center gap-3">
                   <a
@@ -169,7 +169,7 @@ export function ContattiPage() {
                   <button
                     onClick={() => copyToClipboard('salvador@ffbetania.net', setCopiedEmail)}
                     className="p-2 bg-[var(--warm-orange)]/50 text-white rounded-lg hover:bg-[var(--warm-orange)]/80 transition-all"
-                    aria-label={t({ pt: 'Copiar e-mail', it: 'Copia email', de: "E-Mail kopieren" })}
+                    aria-label={t({ pt: 'Copiar e-mail', it: 'Copia email', de: "E-Mail kopieren", en: "Copy email" })}
                   >
                     {copiedEmail ? <Check className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
                   </button>
@@ -203,7 +203,7 @@ export function ContattiPage() {
                   className="inline-block px-6 py-3 text-white rounded-xl font-medium transition-all"
                   style={{ background: 'linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)' }}
                 >
-                  {t({ pt: 'Seguir no Instagram', it: 'Seguici su Instagram', de: "Folgen Sie uns auf Instagram" })}
+                  {t({ pt: 'Seguir no Instagram', it: 'Seguici su Instagram', de: "Folgen Sie uns auf Instagram", en: "Follow us on Instagram" })}
                 </a>
               </div>
             </AnimatedSection>
@@ -225,21 +225,21 @@ export function ContattiPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl mb-6">
-              {t({ pt: 'Obrigado pela sua proximidade', it: 'Grazie per la tua vicinanza', de: "Danke für Ihre Nähe" })}
+              {t({ pt: 'Obrigado pela sua proximidade', it: 'Grazie per la tua vicinanza', de: "Danke für Ihre Nähe", en: "Thank you for your closeness" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed">
-              {t({ pt: 'Cada mensagem, apoio ou gesto de atenção ajuda concretamente o Centro Nossa Senhora Aparecida e os seus projetos educativos.', it: 'Ogni messaggio, sostegno o gesto di attenzione aiuta concretamente il Centro Nossa Senhora Aparecida e i suoi progetti educativi.', de: "Jede Nachricht, jede Unterstützung und jede Geste der Aufmerksamkeit hilft dem Centro Nossa Senhora Aparecida und seinen Bildungsprojekten ganz konkret." })}
+              {t({ pt: 'Cada mensagem, apoio ou gesto de atenção ajuda concretamente o Centro Nossa Senhora Aparecida e os seus projetos educativos.', it: 'Ogni messaggio, sostegno o gesto di attenzione aiuta concretamente il Centro Nossa Senhora Aparecida e i suoi progetti educativi.', de: "Jede Nachricht, jede Unterstützung und jede Geste der Aufmerksamkeit hilft dem Centro Nossa Senhora Aparecida und seinen Bildungsprojekten ganz konkret.", en: "Every message, support or gesture of attention concretely helps the Centro Nossa Senhora Aparecida and its educational projects." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" to="/il-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>
           </AnimatedSection>

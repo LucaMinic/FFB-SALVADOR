@@ -27,26 +27,27 @@ export function CuraENutrizionePage() {
               Centro Nossa Senhora Aparecida
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Fürsorge und Ernährung" })}
+              {t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Fürsorge und Ernährung", en: "Care and nutrition" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Um corpo saudável é a base de qualquer aprendizagem. No Centro Nossa Senhora Aparecida, cuidar das crianças significa garantir-lhes alimentação adequada, saúde e bem-estar físico e emocional cada dia.',
                 it: 'Un corpo sano è la base di qualsiasi apprendimento. Al Centro Nossa Senhora Aparecida, prendersi cura dei bambini significa garantire loro un’alimentazione adeguata, salute e benessere fisico ed emotivo ogni giorno.',
                 de: "Ein gesunder Körper ist die Grundlage für jedes Lernen. Im Centro Nossa Senhora Aparecida bedeutet die Fürsorge für die Kinder, ihnen jeden Tag eine angemessene Ernährung sowie körperliches und emotionales Wohlbefinden zu sichern.",
+                en: "A healthy body is the foundation of all learning. At the Centro Nossa Senhora Aparecida, caring for children means guaranteeing them proper nutrition, health and physical and emotional wellbeing every day.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
                 href="#scopri"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
               </a>
             </div>
           </AnimatedSection>
@@ -60,13 +61,14 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.1}>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Nutrição como ato de cuidado', it: 'La nutrizione come atto di cura', de: "Ernährung als Akt der Fürsorge" })}
+                  {t({ pt: 'Nutrição como ato de cuidado', it: 'La nutrizione come atto di cura', de: "Ernährung als Akt der Fürsorge", en: "Nutrition as an act of care" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'Para muitas das crianças que frequentam o Centro, o repasto servido cada dia representa muito mais do que um simples momento de alimentação: é uma experiência de calor, de partilha e de dignidade.',
                     it: 'Per molti dei bambini che frequentano il Centro, il pasto servito ogni giorno rappresenta molto più di un semplice momento di alimentazione: è un’esperienza di calore, condivisione e dignità.',
                     de: "Für viele Kinder, die das Centro besuchen, bedeutet die täglich servierte Mahlzeit viel mehr als nur einen Moment der Ernährung: Sie ist eine Erfahrung von Wärme, Gemeinschaft und Würde.",
+                    en: "For many of the children who attend the Centre, the meal served every day represents much more than a simple moment of eating: it is an experience of warmth, sharing and dignity.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -74,6 +76,7 @@ export function CuraENutrizionePage() {
                     pt: 'Garantir uma alimentação equilibrada e nutritiva é uma das prioridades do Centro, convictos de que um corpo bem nutrido é condição indispensável para crescer, aprender e participar plenamente na vida do Centro.',
                     it: 'Garantire un’alimentazione equilibrata e nutriente è una delle priorità del Centro, nella convinzione che un corpo ben nutrito sia condizione indispensabile per crescere, apprendere e partecipare pienamente alla vita del Centro.',
                     de: "Eine ausgewogene und nahrhafte Ernährung sicherzustellen, ist eine der Prioritäten des Centro, in der Überzeugung, dass ein gut ernährter Körper eine unverzichtbare Voraussetzung ist, um zu wachsen, zu lernen und voll am Leben des Centro teilzuhaben.",
+                    en: "Guaranteeing a balanced and nourishing diet is one of the Centre's priorities, in the belief that a well-nourished body is an essential condition for growing, learning and taking full part in the life of the Centre.",
                   })}
                 </p>
               </div>
@@ -81,7 +84,7 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={img1}
-                alt={t({ pt: 'Nutrição no Centro', it: 'Nutrizione al Centro', de: "Ernährung im Centro" })}
+                alt={t({ pt: 'Nutrição no Centro', it: 'Nutrizione al Centro', de: "Ernährung im Centro", en: "Nutrition at the Centre" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -96,20 +99,21 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img2}
-                alt={t({ pt: 'Saúde e bem-estar', it: 'Salute e benessere', de: "Gesundheit und Wohlbefinden" })}
+                alt={t({ pt: 'Saúde e bem-estar', it: 'Salute e benessere', de: "Gesundheit und Wohlbefinden", en: "Health and wellbeing" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Saúde e bem-estar integral', it: 'Salute e benessere integrale', de: "Ganzheitliche Gesundheit und Wohlbefinden" })}
+                  {t({ pt: 'Saúde e bem-estar integral', it: 'Salute e benessere integrale', de: "Ganzheitliche Gesundheit und Wohlbefinden", en: "Health and overall wellbeing" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'A cura das crianças no Centro não se limita à alimentação. Inclui atenção ao seu bem-estar físico, emocional e relacional. Os educadores observam, escutam e respondem às necessidades de cada criança com sensibilidade e competência.',
                     it: 'La cura dei bambini al Centro non si limita all\'alimentazione. Include attenzione al loro benessere fisico, emotivo e relazionale. Gli educatori osservano, ascoltano e rispondono ai bisogni di ogni bambino con sensibilità e competenza.',
                     de: "Die Fürsorge für die Kinder im Centro beschränkt sich nicht auf die Ernährung. Sie umfasst auch die Aufmerksamkeit für ihr körperliches, emotionales und soziales Wohlbefinden. Die Erzieherinnen und Erzieher beobachten, hören zu und reagieren einfühlsam und kompetent auf die Bedürfnisse jedes Kindes.",
+                    en: "Caring for children at the Centre is not limited to nutrition. It includes attention to their physical, emotional and relational wellbeing. Educators observe, listen and respond to each child's needs with sensitivity and competence.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -117,6 +121,7 @@ export function CuraENutrizionePage() {
                     pt: 'Quando necessário, o Centro colabora com profissionais de saúde e estruturas locais para garantir a cada criança o acompanhamento adequado.',
                     it: 'Quando necessario, il Centro collabora con professionisti della salute e strutture locali per garantire a ogni bambino il supporto adeguato.',
                     de: "Bei Bedarf arbeitet das Centro mit Gesundheitsfachkräften und lokalen Einrichtungen zusammen, um jedem Kind die angemessene Unterstützung zu sichern.",
+                    en: "When necessary, the Centre works with health professionals and local facilities to ensure each child receives the appropriate support.",
                   })}
                 </p>
               </div>
@@ -132,13 +137,14 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.1}>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'O repasto como momento educativo', it: 'Il pasto come momento educativo', de: "Die Mahlzeit als Bildungsmoment" })}
+                  {t({ pt: 'O repasto como momento educativo', it: 'Il pasto come momento educativo', de: "Die Mahlzeit als Bildungsmoment", en: "Mealtime as an educational moment" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'À mesa aprende-se muito mais do que a comer. Os momentos de refeição são oportunidades para desenvolver hábitos saudáveis, cultivar a convivência, aprender a partilhar e a respeitar os outros.',
                     it: 'A tavola si impara molto più che a mangiare. I momenti di pasto sono occasioni per sviluppare abitudini sane, coltivare la convivialità, imparare a condividere e a rispettare gli altri.',
                     de: "Am Tisch lernt man weit mehr als nur zu essen. Die Mahlzeiten bieten Gelegenheit, gesunde Gewohnheiten zu entwickeln, Gemeinschaft zu pflegen und zu lernen, zu teilen und andere zu respektieren.",
+                    en: "At the table, children learn much more than how to eat. Mealtimes are opportunities to develop healthy habits, cultivate conviviality, and learn to share and respect others.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -146,6 +152,7 @@ export function CuraENutrizionePage() {
                     pt: 'No Centro, o repasto é um momento comunitário, vivido com calma e atenção, onde cada criança encontra o seu espaço e aprende a cuidar também de si mesma.',
                     it: 'Al Centro, il pasto è un momento comunitario, vissuto con calma e attenzione, dove ogni bambino trova il proprio spazio e impara a prendersi cura anche di sé stesso.',
                     de: "Im Centro ist die Mahlzeit ein gemeinschaftlicher Moment, der in Ruhe und Achtsamkeit erlebt wird, in dem jedes Kind seinen eigenen Platz findet und lernt, auch für sich selbst zu sorgen.",
+                    en: "At the Centre, mealtime is a communal moment, lived with calm and attention, where every child finds their own space and learns to also take care of themselves.",
                   })}
                 </p>
               </div>
@@ -153,7 +160,7 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={img3}
-                alt={t({ pt: 'Momentos de refeição', it: 'Momenti di pasto', de: "Gemeinsame Mahlzeiten" })}
+                alt={t({ pt: 'Momentos de refeição', it: 'Momenti di pasto', de: "Gemeinsame Mahlzeiten", en: "Mealtimes" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -168,20 +175,21 @@ export function CuraENutrizionePage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img4}
-                alt={t({ pt: 'Cuidado quotidiano', it: 'Cura quotidiana', de: "Tägliche Fürsorge" })}
+                alt={t({ pt: 'Cuidado quotidiano', it: 'Cura quotidiana', de: "Tägliche Fürsorge", en: "Daily care" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Cuidar é um gesto de amor', it: 'Prendersi cura è un gesto d\'amore', de: "Fürsorge ist eine Geste der Liebe" })}
+                  {t({ pt: 'Cuidar é um gesto de amor', it: 'Prendersi cura è un gesto d\'amore', de: "Fürsorge ist eine Geste der Liebe", en: "Caring is an act of love" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
                     pt: 'Cada gesto de cuidado — um prato de comida, uma palavra de encorajamento, um abraço no momento certo — diz a cada criança que ela é importante, que merece atenção e que não está sozinha. É neste cuidado quotidiano que se constrói a confiança e a autoestima que acompanharão cada criança para o resto da vida.',
                     it: 'Ogni gesto di cura — un piatto di cibo, una parola di incoraggiamento, un abbraccio nel momento giusto — dice a ogni bambino che è importante, che merita attenzione e che non è solo. È in questa cura quotidiana che si costruisce la fiducia e l\'autostima che accompagneranno ogni bambino per il resto della vita.',
                     de: "Jede fürsorgliche Geste — ein Teller Essen, ein ermutigendes Wort, eine Umarmung im richtigen Moment — sagt jedem Kind, dass es wichtig ist, dass es Aufmerksamkeit verdient und dass es nicht allein ist. In dieser täglichen Fürsorge entstehen das Vertrauen und das Selbstwertgefühl, die jedes Kind sein Leben lang begleiten werden.",
+                    en: "Every act of care — a plate of food, a word of encouragement, a hug at the right moment — tells every child that they matter, that they deserve attention and that they are not alone. It is in this daily care that the trust and self-esteem that will accompany every child for the rest of their life are built.",
                   })}
                 </p>
               </div>
@@ -195,13 +203,14 @@ export function CuraENutrizionePage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Ajuda-nos a cuidar de cada criança', it: 'Aiutaci a prenderci cura di ogni bambino', de: "Helfen Sie uns, für jedes Kind zu sorgen" })}
+              {t({ pt: 'Ajuda-nos a cuidar de cada criança', it: 'Aiutaci a prenderci cura di ogni bambino', de: "Helfen Sie uns, für jedes Kind zu sorgen", en: "Help us take care of every child" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Graças ao teu apoio, o Centro pode garantir cada dia alimentação, saúde e bem-estar às crianças e famílias de Salvador da Bahia que mais precisam.',
                 it: 'Grazie al tuo sostegno, il Centro può garantire ogni giorno alimentazione, salute e benessere ai bambini e alle famiglie di Salvador de Bahia che ne hanno più bisogno.',
                 de: "Dank Ihrer Unterstützung kann das Centro jeden Tag Ernährung, Gesundheit und Wohlbefinden für die Kinder und Familien in Salvador de Bahia sichern, die es am meisten brauchen.",
+                en: "Thanks to your support, the Centre can guarantee nutrition, health and wellbeing every day to the children and families of Salvador de Bahia who need it most.",
               })}
             </p>
             <Link
@@ -209,7 +218,7 @@ export function CuraENutrizionePage() {
               className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
             >
               <ArrowLeft className="w-5 h-5" />
-              {t({ pt: 'Voltar', it: 'Indietro', de: "Zurück" })}
+              {t({ pt: 'Voltar', it: 'Indietro', de: "Zurück", en: "Back" })}
             </Link>
           </AnimatedSection>
         </div>

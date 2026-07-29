@@ -20,29 +20,30 @@ export function MostrasPedagogicasPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida', de: "Kita des Centro Nossa Senhora Aparecida" })}
+              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida', de: "Kita des Centro Nossa Senhora Aparecida", en: "Nursery School of the Centro Nossa Senhora Aparecida" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche', de: "Pädagogische Ausstellungen" })}
+              {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche', de: "Pädagogische Ausstellungen", en: "Pedagogical Exhibitions" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Celebrando os processos, as descobertas e as aprendizagens das crianças junto às famílias e à comunidade.',
                 it: 'Celebrando i processi, le scoperte e gli apprendimenti dei bambini insieme alle famiglie e alla comunità.',
                 de: "Wir feiern die Prozesse, Entdeckungen und Lernerfolge der Kinder gemeinsam mit den Familien und der Gemeinschaft.",
+                en: "Celebrating the processes, discoveries and learning of the children together with families and the community.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
                 href="#conteudo"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
               </a>
             </div>
           </AnimatedSection>
@@ -54,13 +55,14 @@ export function MostrasPedagogicasPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'O que são as Mostras Pedagógicas?', it: 'Cosa sono le Mostre Pedagogiche?', de: "Was sind die Pädagogischen Ausstellungen?" })}
+              {t({ pt: 'O que são as Mostras Pedagógicas?', it: 'Cosa sono le Mostre Pedagogiche?', de: "Was sind die Pädagogischen Ausstellungen?", en: "What are the Pedagogical Exhibitions?" })}
             </h2>
             <p className="text-gray-600 text-xl leading-relaxed">
               {t({
                 pt: 'As Mostras Pedagógicas são momentos importantes em nossa proposta educativa, pois permitem compartilhar com as famílias e a comunidade as experiências, as descobertas e as aprendizagens vividas pelas crianças ao longo do ano.',
                 it: 'Le Mostre Pedagogiche sono momenti importanti nella nostra proposta educativa, poiché permettono di condividere con le famiglie e la comunità le esperienze, le scoperte e gli apprendimenti vissuti dai bambini nel corso dell\'anno.',
                 de: "Die Pädagogischen Ausstellungen sind wichtige Momente in unserem pädagogischen Konzept, da sie es ermöglichen, die Erfahrungen, Entdeckungen und Lernprozesse der Kinder im Laufe des Jahres mit den Familien und der Gemeinschaft zu teilen.",
+                en: "The Pedagogical Exhibitions are important moments in our educational approach, as they allow us to share with families and the community the experiences, discoveries and learning the children have lived throughout the year.",
               })}
             </p>
           </AnimatedSection>
@@ -78,6 +80,7 @@ export function MostrasPedagogicasPage() {
                     pt: 'Por meio de fotos, registros, produções, falas e projetos desenvolvidos pelas crianças, tornamos visível o percurso de aprendizagem de cada grupo, valorizando seus esforços, conquistas, curiosidades e formas de pensar.',
                     it: 'Attraverso foto, documentazioni, produzioni, parole e progetti sviluppati dai bambini, rendiamo visibile il percorso di apprendimento di ogni gruppo, valorizzando i loro sforzi, i traguardi, le curiosità e le modalità di pensiero.',
                     de: "Durch Fotos, Dokumentationen, Werke, Aussagen und Projekte der Kinder machen wir den Lernweg jeder Gruppe sichtbar und würdigen ihre Anstrengungen, Erfolge, Neugier und Denkweisen.",
+                    en: "Through photos, documentation, creations, words and projects developed by the children, we make visible the learning journey of each group, valuing their efforts, achievements, curiosity and ways of thinking.",
                   })}
                 </p>
                 <p>
@@ -85,6 +88,7 @@ export function MostrasPedagogicasPage() {
                     pt: 'Mais do que apresentar resultados, as mostras revelam os processos vividos pelas crianças, mostrando como aprendem, investigam, criam, brincam e constroem conhecimentos no dia a dia. Também fortalecem a parceria entre a creche e as famílias, que passam a conhecer e valorizar ainda mais as experiências que fazem parte da infância de seus filhos.',
                     it: "Più che presentare risultati, le mostre rivelano i processi vissuti dai bambini, mostrando come imparano, investigano, creano, giocano e costruiscono conoscenze nel quotidiano. Rafforzano anche la partnership tra l'asilo e le famiglie, che vengono a conoscere e valorizzare ancora di più le esperienze che fanno parte dell'infanzia dei loro figli.",
                     de: "Mehr als Ergebnisse zu präsentieren, zeigen die Ausstellungen die Prozesse, die die Kinder durchlaufen haben, und wie sie im Alltag lernen, forschen, schaffen, spielen und Wissen aufbauen. Sie stärken auch die Partnerschaft zwischen der Kita und den Familien, die dadurch die Erfahrungen, die zur Kindheit ihrer Kinder gehören, noch besser kennen- und schätzenlernen.",
+                    en: "More than presenting results, the exhibitions reveal the processes lived by the children, showing how they learn, investigate, create, play and build knowledge in everyday life. They also strengthen the partnership between the nursery school and families, who come to know and value even more the experiences that are part of their children's childhood.",
                   })}
                 </p>
               </div>
@@ -92,7 +96,7 @@ export function MostrasPedagogicasPage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={sectionImg}
-                alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica', de: "Pädagogische Ausstellung" })}
+                alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica', de: "Pädagogische Ausstellung", en: "Pedagogical exhibition" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -110,10 +114,11 @@ export function MostrasPedagogicasPage() {
                 pt: 'Dessa forma, as Mostras Pedagógicas se tornam uma importante ferramenta de documentação, celebração e valorização das aprendizagens das crianças.',
                 it: 'In questo modo, le Mostre Pedagogiche diventano un importante strumento di documentazione, celebrazione e valorizzazione degli apprendimenti dei bambini.',
                 de: "So werden die Pädagogischen Ausstellungen zu einem wichtigen Instrument der Dokumentation, Würdigung und Anerkennung der Lernerfolge der Kinder.",
+                en: "In this way, the Pedagogical Exhibitions become an important tool for documenting, celebrating and valuing children's learning.",
               })}
             </p>
             <Button variant="primary" to="/dona-ora" className="text-lg px-10 py-4">
-              {t({ pt: 'Apoie nosso trabalho', it: 'Sostieni il nostro lavoro', de: "Unterstützen Sie unsere Arbeit" })}
+              {t({ pt: 'Apoie nosso trabalho', it: 'Sostieni il nostro lavoro', de: "Unterstützen Sie unsere Arbeit", en: "Support our work" })}
             </Button>
           </AnimatedSection>
         </div>

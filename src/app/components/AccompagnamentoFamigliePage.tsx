@@ -27,26 +27,27 @@ export function AccompagnamentoFamigliePage() {
               Centro Nossa Senhora Aparecida
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Familienbegleitung" })}
+              {t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Familienbegleitung", en: "Supporting families" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Acompanhar uma criança significa também caminhar junto à sua família. No Centro Nossa Senhora Aparecida, o cuidado se estende além das paredes do Centro, alcançando as famílias nas suas realidades quotidianas.',
                 it: 'Accompagnare un bambino significa anche camminare insieme alla sua famiglia. Al Centro Nossa Senhora Aparecida, la cura si estende oltre le mura del Centro, raggiungendo le famiglie nelle loro realtà quotidiane.',
                 de: "Ein Kind zu begleiten bedeutet auch, gemeinsam mit seiner Familie zu gehen. Im Centro Nossa Senhora Aparecida reicht die Fürsorge über die Mauern des Zentrums hinaus und erreicht die Familien in ihrem Alltag.",
+                en: "Accompanying a child also means walking alongside their family. At the Centro Nossa Senhora Aparecida, care extends beyond the walls of the Centre, reaching families in their everyday lives.",
               })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
                 href="#scopri"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
               </a>
             </div>
           </AnimatedSection>
@@ -60,13 +61,14 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.1}>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'A família como primeiro educador', it: 'La famiglia come primo educatore', de: "Die Familie als erster Erzieher" })}
+                  {t({ pt: 'A família como primeiro educador', it: 'La famiglia come primo educatore', de: "Die Familie als erster Erzieher", en: "The family as the first educator" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'O Centro acredita profundamente que a família é o primeiro e mais importante ambiente educativo para cada criança. Por isso, o nosso trabalho não se limita ao tempo que as crianças passam no Centro: procuramos construir uma relação de confiança e de colaboração com os pais e os cuidadores.',
                     it: 'Il Centro crede profondamente che la famiglia sia il primo e più importante ambiente educativo per ogni bambino. Per questo, il nostro lavoro non si limita al tempo che i bambini trascorrono al Centro: cerchiamo di costruire una relazione di fiducia e di collaborazione con i genitori e i caregiver.',
                     de: "Das Zentrum glaubt fest daran, dass die Familie das erste und wichtigste erzieherische Umfeld für jedes Kind ist. Deshalb beschränkt sich unsere Arbeit nicht auf die Zeit, die die Kinder im Zentrum verbringen: Wir bemühen uns, eine vertrauensvolle und kooperative Beziehung zu den Eltern und Betreuungspersonen aufzubauen.",
+                    en: "The Centre deeply believes that the family is the first and most important educational environment for every child. That is why our work is not limited to the time children spend at the Centre: we seek to build a relationship of trust and collaboration with parents and caregivers.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -74,6 +76,7 @@ export function AccompagnamentoFamigliePage() {
                     pt: 'Quando uma família se sente acompanhada e apoiada, a criança cresce num ambiente mais estável e seguro. Este é o fundamento do nosso trabalho.',
                     it: 'Quando una famiglia si sente accompagnata e sostenuta, il bambino cresce in un ambiente più stabile e sicuro. Questo è il fondamento del nostro lavoro.',
                     de: "Wenn sich eine Familie begleitet und unterstützt fühlt, wächst das Kind in einem stabileren und sichereren Umfeld auf. Das ist die Grundlage unserer Arbeit.",
+                    en: "When a family feels accompanied and supported, the child grows in a more stable and secure environment. This is the foundation of our work.",
                   })}
                 </p>
               </div>
@@ -81,7 +84,7 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={img1}
-                alt={t({ pt: 'Famílias no Centro', it: 'Famiglie al Centro', de: "Familien im Zentrum" })}
+                alt={t({ pt: 'Famílias no Centro', it: 'Famiglie al Centro', de: "Familien im Zentrum", en: "Families at the Centre" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -96,20 +99,21 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img2}
-                alt={t({ pt: 'Escuta e apoio', it: 'Ascolto e sostegno', de: "Zuhören und Unterstützung" })}
+                alt={t({ pt: 'Escuta e apoio', it: 'Ascolto e sostegno', de: "Zuhören und Unterstützung", en: "Listening and support" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Escuta, orientação e apoio concreto', it: 'Ascolto, orientamento e sostegno concreto', de: "Zuhören, Orientierung und konkrete Unterstützung" })}
+                  {t({ pt: 'Escuta, orientação e apoio concreto', it: 'Ascolto, orientamento e sostegno concreto', de: "Zuhören, Orientierung und konkrete Unterstützung", en: "Listening, guidance and concrete support" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'Muitas das famílias que frequentam o Centro vivem situações de vulnerabilidade económica, social ou familiar. Por isso oferecemos espaços de escuta, orientação e apoio concreto para ajudar os pais a enfrentar as dificuldades quotidianas.',
                     it: 'Molte delle famiglie che frequentano il Centro vivono situazioni di vulnerabilità economica, sociale o familiare. Per questo offriamo spazi di ascolto, orientamento e sostegno concreto per aiutare i genitori ad affrontare le difficoltà quotidiane.',
                     de: "Viele der Familien, die das Zentrum besuchen, leben in wirtschaftlich, sozial oder familiär prekären Verhältnissen. Deshalb bieten wir Räume des Zuhörens, der Orientierung und der konkreten Unterstützung, um den Eltern zu helfen, die täglichen Schwierigkeiten zu bewältigen.",
+                    en: "Many of the families who attend the Centre live in situations of economic, social or family vulnerability. That is why we offer spaces for listening, guidance and concrete support to help parents face everyday difficulties.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -117,6 +121,7 @@ export function AccompagnamentoFamigliePage() {
                     pt: 'Educadores e missionários estão disponíveis para acolher cada família, sem julgamentos, com disponibilidade e proximidade humana.',
                     it: 'Educatori e missionari sono disponibili ad accogliere ogni famiglia, senza giudizi, con disponibilità e vicinanza umana.',
                     de: "Erzieher und Missionare stehen bereit, jede Familie ohne Vorurteile, mit Offenheit und menschlicher Nähe aufzunehmen.",
+                    en: "Educators and missionaries are ready to welcome every family, without judgement, with openness and human closeness.",
                   })}
                 </p>
               </div>
@@ -132,13 +137,14 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.1}>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Construir pontes entre o Centro e a família', it: 'Costruire ponti tra il Centro e la famiglia', de: "Brücken bauen zwischen dem Zentrum und der Familie" })}
+                  {t({ pt: 'Construir pontes entre o Centro e a família', it: 'Costruire ponti tra il Centro e la famiglia', de: "Brücken bauen zwischen dem Zentrum und der Familie", en: "Building bridges between the Centre and the family" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed mb-6">
                   {t({
                     pt: 'A relação entre o Centro e as famílias nasce da continuidade. Reuniões, encontros, momentos de festa e de partilha permitem construir uma comunidade onde crianças, pais e educadores se conhecem, se respeitam e caminham juntos.',
                     it: 'La relazione tra il Centro e le famiglie nasce dalla continuità. Riunioni, incontri, momenti di festa e di condivisione permettono di costruire una comunità dove bambini, genitori ed educatori si conoscono, si rispettano e camminano insieme.',
                     de: "Die Beziehung zwischen dem Zentrum und den Familien entsteht durch Kontinuität. Treffen, Begegnungen, Feste und gemeinsame Momente ermöglichen den Aufbau einer Gemeinschaft, in der Kinder, Eltern und Erzieher einander kennen, respektieren und gemeinsam gehen.",
+                    en: "The relationship between the Centre and families is built on continuity. Meetings, gatherings, celebrations and shared moments help build a community where children, parents and educators know, respect and walk alongside one another.",
                   })}
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -146,6 +152,7 @@ export function AccompagnamentoFamigliePage() {
                     pt: 'Cada encontro é uma ocasião para fortalecer a confiança mútua e criar laços que vão além do tempo passado no Centro.',
                     it: 'Ogni incontro è un\'occasione per rafforzare la fiducia reciproca e creare legami che vanno oltre il tempo trascorso al Centro.',
                     de: "Jede Begegnung ist eine Gelegenheit, das gegenseitige Vertrauen zu stärken und Bindungen zu schaffen, die über die im Zentrum verbrachte Zeit hinausgehen.",
+                    en: "Every meeting is an opportunity to strengthen mutual trust and create bonds that go beyond the time spent at the Centre.",
                   })}
                 </p>
               </div>
@@ -153,7 +160,7 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.2}>
               <img loading="lazy"
                 src={img3}
-                alt={t({ pt: 'Encontros comunitários', it: 'Incontri comunitari', de: "Gemeinschaftstreffen" })}
+                alt={t({ pt: 'Encontros comunitários', it: 'Incontri comunitari', de: "Gemeinschaftstreffen", en: "Community gatherings" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
@@ -168,20 +175,21 @@ export function AccompagnamentoFamigliePage() {
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
                 src={img4}
-                alt={t({ pt: 'Futuro em família', it: 'Futuro in famiglia', de: "Zukunft in der Familie" })}
+                alt={t({ pt: 'Futuro em família', it: 'Futuro in famiglia', de: "Zukunft in der Familie", en: "A future built together as a family" })}
                 className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
               />
             </AnimatedSection>
             <AnimatedSection delay={0.2} className="order-1 lg:order-2">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Acompanhar é criar possibilidades de futuro', it: 'Accompagnare è creare possibilità di futuro', de: "Begleiten heißt, Zukunftsmöglichkeiten schaffen" })}
+                  {t({ pt: 'Acompanhar é criar possibilidades de futuro', it: 'Accompagnare è creare possibilità di futuro', de: "Begleiten heißt, Zukunftsmöglichkeiten schaffen", en: "Supporting families means creating a future" })}
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
                     pt: 'Cada família acompanhada é uma família che cresce. Quando i genitori trovano sostegno, orientamento e fiducia, si crea un circolo virtuoso che beneficia tutta la comunità. Accompagnare le famiglie significa investire nel futuro di Salvador da Bahia.',
                     it: 'Ogni famiglia accompagnata è una famiglia che cresce. Quando i genitori trovano sostegno, orientamento e fiducia, si crea un circolo virtuoso che beneficia tutta la comunità. Accompagnare le famiglie significa investire nel futuro di Salvador de Bahia.',
                     de: "Jede begleitete Familie ist eine Familie, die wächst. Wenn Eltern Unterstützung, Orientierung und Vertrauen finden, entsteht ein positiver Kreislauf, von dem die gesamte Gemeinschaft profitiert. Familien zu begleiten bedeutet, in die Zukunft von Salvador de Bahia zu investieren.",
+                    en: "Every family that is supported is a family that grows. When parents find support, guidance and trust, a virtuous circle is created that benefits the whole community. Supporting families means investing in the future of Salvador de Bahia.",
                   })}
                 </p>
               </div>
@@ -195,13 +203,14 @@ export function AccompagnamentoFamigliePage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Ajuda-nos a caminhar ao lado das famílias', it: 'Aiutaci a camminare accanto alle famiglie', de: "Helfen Sie uns, an der Seite der Familien zu gehen" })}
+              {t({ pt: 'Ajuda-nos a caminhar ao lado das famílias', it: 'Aiutaci a camminare accanto alle famiglie', de: "Helfen Sie uns, an der Seite der Familien zu gehen", en: "Help us walk alongside families" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Graças ao teu apoio, o Centro pode continuar a oferecer escuta, acompanhamento e esperança concreta a cada família que bate à nossa porta.',
                 it: 'Grazie al tuo sostegno, il Centro può continuare a offrire ascolto, accompagnamento e speranza concreta a ogni famiglia che bussa alla nostra porta.',
                 de: "Dank Ihrer Unterstützung kann das Zentrum weiterhin jeder Familie, die an unsere Tür klopft, Zuhören, Begleitung und konkrete Hoffnung bieten.",
+                en: "Thanks to your support, the Centre can continue to offer listening, support and real hope to every family who knocks on our door.",
               })}
             </p>
             <Link
@@ -209,7 +218,7 @@ export function AccompagnamentoFamigliePage() {
               className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
             >
               <ArrowLeft className="w-5 h-5" />
-              {t({ pt: 'Voltar', it: 'Indietro', de: "Zurück" })}
+              {t({ pt: 'Voltar', it: 'Indietro', de: "Zurück", en: "Back" })}
             </Link>
           </AnimatedSection>
         </div>

@@ -20,7 +20,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Informações sobre o tratamento de dados pessoais e o uso do site.',
                 it: 'Informazioni sul trattamento dei dati personali e sull\'utilizzo del sito web.',
-                de: "Informationen zur Verarbeitung personenbezogener Daten und zur Nutzung der Website."
+                de: "Informationen zur Verarbeitung personenbezogener Daten und zur Nutzung der Website.",
+                en: "Information on the processing of personal data and the use of the website."
               })}
             </p>
           </AnimatedSection>
@@ -32,7 +33,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Responsável pelo tratamento', it: 'Titolare del trattamento', de: "Verantwortlicher für die Datenverarbeitung" })}
+              {t({ pt: 'Responsável pelo tratamento', it: 'Titolare del trattamento', de: "Verantwortlicher für die Datenverarbeitung", en: "Data controller" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -40,7 +41,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Este site é gerido pela Fundação Betania ONLUS, responsável pelo tratamento dos dados pessoais eventualmente coletados através do próprio site.',
                 it: 'Il presente sito è gestito da Fundação Betania ONLUS, responsabile del trattamento dei dati personali eventualmente raccolti attraverso il sito stesso.',
-                de: "Diese Website wird von der Fundação Betania ONLUS betrieben, die für die Verarbeitung der über die Website eventuell erhobenen personenbezogenen Daten verantwortlich ist."
+                de: "Diese Website wird von der Fundação Betania ONLUS betrieben, die für die Verarbeitung der über die Website eventuell erhobenen personenbezogenen Daten verantwortlich ist.",
+                en: "This website is managed by Fundação Betania ONLUS, responsible for the processing of any personal data collected through the website."
               })}
             </p>
 
@@ -48,7 +50,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'O site documenta e promove as atividades educativas e sociais realizadas através do Centro Nossa Senhora Aparecida, projeto operativo da Fundação Betania ONLUS em Salvador de Bahia.',
                 it: 'Il sito documenta e promuove le attività educative e sociali svolte attraverso il Centro Nossa Senhora Aparecida, progetto operativo della Fundação Betania ONLUS a Salvador de Bahia.',
-                de: "Die Website dokumentiert und fördert die Bildungs- und Sozialaktivitäten des Centro Nossa Senhora Aparecida, ein operatives Projekt der Fundação Betania ONLUS in Salvador de Bahia."
+                de: "Die Website dokumentiert und fördert die Bildungs- und Sozialaktivitäten des Centro Nossa Senhora Aparecida, ein operatives Projekt der Fundação Betania ONLUS in Salvador de Bahia.",
+                en: "The website documents and promotes the educational and social activities carried out through the Centro Nossa Senhora Aparecida, an operational project of Fundação Betania ONLUS in Salvador de Bahia."
               })}
             </p>
 
@@ -82,7 +85,7 @@ export function PrivacyPolicyPage() {
 
               <div className="pt-4 border-t border-gray-300">
                 <p className="text-sm text-gray-600">
-                  {t({ pt: 'Código fiscal / referência', it: 'Codice fiscale / riferimento', de: "Steuernummer / Referenz" })}: 05231656181
+                  {t({ pt: 'Código fiscal / referência', it: 'Codice fiscale / riferimento', de: "Steuernummer / Referenz", en: "Tax code / reference" })}: 05231656181
                 </p>
               </div>
             </div>
@@ -95,7 +98,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Dados coletados', it: 'Dati raccolti', de: "Erhobene Daten" })}
+              {t({ pt: 'Dados coletados', it: 'Dati raccolti', de: "Erhobene Daten", en: "Data collected" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -103,28 +106,29 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Este site tem finalidades exclusivamente informativas e institucionais.',
                 it: 'Questo sito ha finalità esclusivamente informative e istituzionali.',
-                de: "Diese Website dient ausschließlich Informations- und institutionellen Zwecken."
+                de: "Diese Website dient ausschließlich Informations- und institutionellen Zwecken.",
+                en: "This website has exclusively informational and institutional purposes."
               })}
             </p>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
-              {t({ pt: 'O site não prevê:', it: 'Il sito non prevede:', de: "Die Website bietet nicht:" })}
+              {t({ pt: 'O site não prevê:', it: 'Il sito non prevede:', de: "Die Website bietet nicht:", en: "The website does not provide:" })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 mb-6 ml-4">
-              <li>{t({ pt: 'registro de usuários', it: 'registrazione utenti', de: "Benutzerregistrierung" })}</li>
-              <li>{t({ pt: 'criação de contas', it: 'creazione account', de: "Erstellung von Konten" })}</li>
-              <li>{t({ pt: 'áreas reservadas', it: 'aree riservate', de: "geschützte Bereiche" })}</li>
-              <li>{t({ pt: 'formulários de inscrição', it: 'moduli di iscrizione', de: "Anmeldeformulare" })}</li>
-              <li>{t({ pt: 'newsletters automatizadas', it: 'newsletter automatizzate', de: "automatisierte Newsletter" })}</li>
+              <li>{t({ pt: 'registro de usuários', it: 'registrazione utenti', de: "Benutzerregistrierung", en: "user registration" })}</li>
+              <li>{t({ pt: 'criação de contas', it: 'creazione account', de: "Erstellung von Konten", en: "account creation" })}</li>
+              <li>{t({ pt: 'áreas reservadas', it: 'aree riservate', de: "geschützte Bereiche", en: "private areas" })}</li>
+              <li>{t({ pt: 'formulários de inscrição', it: 'moduli di iscrizione', de: "Anmeldeformulare", en: "sign-up forms" })}</li>
+              <li>{t({ pt: 'newsletters automatizadas', it: 'newsletter automatizzate', de: "automatisierte Newsletter", en: "automated newsletters" })}</li>
             </ul>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
-              {t({ pt: 'Podem ser coletados exclusivamente:', it: 'Possono essere raccolti esclusivamente:', de: "Es können ausschließlich erhoben werden:" })}
+              {t({ pt: 'Podem ser coletados exclusivamente:', it: 'Possono essere raccolti esclusivamente:', de: "Es können ausschließlich erhoben werden:", en: "The following may be collected exclusively:" })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 ml-4">
-              <li>{t({ pt: 'dados técnicos de navegação', it: 'dati tecnici di navigazione', de: "technische Navigationsdaten" })}</li>
-              <li>{t({ pt: 'informações estatísticas anônimas', it: 'informazioni statistiche anonime', de: "anonyme statistische Informationen" })}</li>
-              <li>{t({ pt: 'eventuais dados enviados espontaneamente via e-mail ou contato direto', it: 'eventuali dati inviati spontaneamente tramite email o contatto diretto', de: "eventuell freiwillig per E-Mail oder direkten Kontakt übermittelte Daten" })}</li>
+              <li>{t({ pt: 'dados técnicos de navegação', it: 'dati tecnici di navigazione', de: "technische Navigationsdaten", en: "technical browsing data" })}</li>
+              <li>{t({ pt: 'informações estatísticas anônimas', it: 'informazioni statistiche anonime', de: "anonyme statistische Informationen", en: "anonymous statistical information" })}</li>
+              <li>{t({ pt: 'eventuais dados enviados espontaneamente via e-mail ou contato direto', it: 'eventuali dati inviati spontaneamente tramite email o contatto diretto', de: "eventuell freiwillig per E-Mail oder direkten Kontakt übermittelte Daten", en: "any data sent spontaneously via email or direct contact" })}</li>
             </ul>
           </AnimatedSection>
         </div>
@@ -135,7 +139,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Finalidade do tratamento', it: 'Finalità del trattamento', de: "Zweck der Verarbeitung" })}
+              {t({ pt: 'Finalidade do tratamento', it: 'Finalità del trattamento', de: "Zweck der Verarbeitung", en: "Purposes of processing" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -143,20 +147,22 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Os dados eventualmente coletados são utilizados exclusivamente para:',
                 it: 'I dati eventualmente raccolti vengono utilizzati esclusivamente per:',
-                de: "Die eventuell erhobenen Daten werden ausschließlich verwendet, um:"
+                de: "Die eventuell erhobenen Daten werden ausschließlich verwendet, um:",
+                en: "Any data collected is used exclusively to:"
               })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 mb-6 ml-4">
-              <li>{t({ pt: 'garantir o correto funcionamento do site', it: 'garantire il corretto funzionamento del sito', de: "das ordnungsgemäße Funktionieren der Website zu gewährleisten" })}</li>
-              <li>{t({ pt: 'responder a solicitações de contato', it: 'rispondere a richieste di contatto', de: "auf Kontaktanfragen zu antworten" })}</li>
-              <li>{t({ pt: 'melhorar a navegação', it: 'migliorare la navigazione', de: "die Navigation zu verbessern" })}</li>
-              <li>{t({ pt: 'cumprir obrigações legais', it: 'adempiere ad obblighi di legge', de: "gesetzlichen Verpflichtungen nachzukommen" })}</li>
+              <li>{t({ pt: 'garantir o correto funcionamento do site', it: 'garantire il corretto funzionamento del sito', de: "das ordnungsgemäße Funktionieren der Website zu gewährleisten", en: "ensure the correct functioning of the website" })}</li>
+              <li>{t({ pt: 'responder a solicitações de contato', it: 'rispondere a richieste di contatto', de: "auf Kontaktanfragen zu antworten", en: "respond to contact requests" })}</li>
+              <li>{t({ pt: 'melhorar a navegação', it: 'migliorare la navigazione', de: "die Navigation zu verbessern", en: "improve navigation" })}</li>
+              <li>{t({ pt: 'cumprir obrigações legais', it: 'adempiere ad obblighi di legge', de: "gesetzlichen Verpflichtungen nachzukommen", en: "comply with legal obligations" })}</li>
             </ul>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Os dados não são cedidos a terceiros para fins comerciais.',
                 it: 'I dati non vengono ceduti a terzi per finalità commerciali.',
-                de: "Die Daten werden nicht zu kommerziellen Zwecken an Dritte weitergegeben."
+                de: "Die Daten werden nicht zu kommerziellen Zwecken an Dritte weitergegeben.",
+                en: "Data is not shared with third parties for commercial purposes."
               })}
             </p>
           </AnimatedSection>
@@ -168,7 +174,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Ferramentas de análise', it: 'Strumenti di analisi', de: "Analysewerkzeuge" })}
+              {t({ pt: 'Ferramentas de análise', it: 'Strumenti di analisi', de: "Analysewerkzeuge", en: "Analytics tools" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -176,14 +182,16 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'O site pode utilizar ferramentas estatísticas como Google Analytics para coletar informações agregadas e anônimas sobre o uso das páginas, a fim de melhorar a experiência de navegação e compreender o funcionamento do site.',
                 it: 'Il sito può utilizzare strumenti statistici come Google Analytics per raccogliere informazioni aggregate e anonime sull\'utilizzo delle pagine, al fine di migliorare l\'esperienza di navigazione e comprendere il funzionamento del sito.',
-                de: "Die Website kann statistische Tools wie Google Analytics verwenden, um aggregierte und anonyme Informationen über die Nutzung der Seiten zu erheben, mit dem Ziel, das Nutzererlebnis zu verbessern und die Funktionsweise der Website besser zu verstehen."
+                de: "Die Website kann statistische Tools wie Google Analytics verwenden, um aggregierte und anonyme Informationen über die Nutzung der Seiten zu erheben, mit dem Ziel, das Nutzererlebnis zu verbessern und die Funktionsweise der Website besser zu verstehen.",
+                en: "The website may use statistical tools such as Google Analytics to collect aggregated and anonymous information on the use of the pages, in order to improve the browsing experience and understand how the website works."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Os dados coletados são utilizados exclusivamente em forma estatística e não para finalidades publicitárias ou de perfilamento comercial.',
                 it: 'I dati raccolti vengono utilizzati esclusivamente in forma statistica e non per finalità pubblicitarie o di profilazione commerciale.',
-                de: "Die erhobenen Daten werden ausschließlich in statistischer Form verwendet und nicht zu Werbezwecken oder für kommerzielles Profiling."
+                de: "Die erhobenen Daten werden ausschließlich in statistischer Form verwendet und nicht zu Werbezwecken oder für kommerzielles Profiling.",
+                en: "The data collected is used exclusively in statistical form and not for advertising or commercial profiling purposes."
               })}
             </p>
           </AnimatedSection>
@@ -195,7 +203,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Conteúdos incorporados de plataformas externas', it: 'Contenuti incorporati da piattaforme esterne', de: "Eingebettete Inhalte externer Plattformen" })}
+              {t({ pt: 'Conteúdos incorporados de plataformas externas', it: 'Contenuti incorporati da piattaforme esterne', de: "Eingebettete Inhalte externer Plattformen", en: "Content embedded from external platforms" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -203,14 +211,16 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Algumas páginas do site podem incluir conteúdos incorporados de plataformas externas, como vídeos YouTube.',
                 it: 'Alcune pagine del sito possono includere contenuti incorporati da piattaforme esterne, come video YouTube.',
-                de: "Einige Seiten der Website können eingebettete Inhalte externer Plattformen enthalten, wie zum Beispiel YouTube-Videos."
+                de: "Einige Seiten der Website können eingebettete Inhalte externer Plattformen enthalten, wie zum Beispiel YouTube-Videos.",
+                en: "Some pages of the website may include content embedded from external platforms, such as YouTube videos."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Estes serviços podem coletar dados técnicos de navegação ou instalar cookies de acordo com as respectivas políticas dos serviços utilizados.',
                 it: 'Questi servizi potrebbero raccogliere dati tecnici di navigazione o installare cookie secondo le rispettive policy dei servizi utilizzati.',
-                de: "Diese Dienste können technische Navigationsdaten erheben oder Cookies gemäß den jeweiligen Richtlinien der genutzten Dienste installieren."
+                de: "Diese Dienste können technische Navigationsdaten erheben oder Cookies gemäß den jeweiligen Richtlinien der genutzten Dienste installieren.",
+                en: "These services may collect technical browsing data or install cookies according to the respective policies of the services used."
               })}
             </p>
           </AnimatedSection>
@@ -222,7 +232,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Imagens, fotografias e conteúdos relativos a menores', it: 'Immagini, fotografie e contenuti relativi ai minori', de: "Bilder, Fotografien und Inhalte in Bezug auf Minderjährige" })}
+              {t({ pt: 'Imagens, fotografias e conteúdos relativos a menores', it: 'Immagini, fotografie e contenuti relativi ai minori', de: "Bilder, Fotografien und Inhalte in Bezug auf Minderjährige", en: "Images, photographs and content relating to minors" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -230,7 +240,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'No âmbito das atividades educativas, sociais e institucionais promovidas pelo Centro Nossa Senhora Aparecida e pela Fundação Betania ONLUS, o site pode publicar fotografias, vídeos e conteúdos multimídia que documentam a vida cotidiana do Centro, da creche, da escola e das iniciativas educativas e sociais realizadas no território.',
                 it: 'Nell\'ambito delle attività educative, sociali e istituzionali promosse dal Centro Nossa Senhora Aparecida e dalla Fundação Betania ONLUS, il sito può pubblicare fotografie, video e contenuti multimediali che documentano la vita quotidiana del Centro, dell\'asilo, della scuola e delle iniziative educative e sociali realizzate sul territorio.',
-                de: "Im Rahmen der Bildungs-, Sozial- und institutionellen Aktivitäten des Centro Nossa Senhora Aparecida und der Fundação Betania ONLUS kann die Website Fotografien, Videos und multimediale Inhalte veröffentlichen, die den Alltag des Zentrums, der Kita, der Schule sowie der vor Ort durchgeführten Bildungs- und Sozialinitiativen dokumentieren."
+                de: "Im Rahmen der Bildungs-, Sozial- und institutionellen Aktivitäten des Centro Nossa Senhora Aparecida und der Fundação Betania ONLUS kann die Website Fotografien, Videos und multimediale Inhalte veröffentlichen, die den Alltag des Zentrums, der Kita, der Schule sowie der vor Ort durchgeführten Bildungs- und Sozialinitiativen dokumentieren.",
+                en: "As part of the educational, social and institutional activities promoted by the Centro Nossa Senhora Aparecida and Fundação Betania ONLUS, the website may publish photographs, videos and multimedia content documenting the daily life of the Centre, the nursery school, the school and the educational and social initiatives carried out in the local area."
               })}
             </p>
 
@@ -238,7 +249,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'A publicação de imagens reconhecíveis de menores ocorre exclusivamente mediante autorização e consentimento expresso dos pais ou tutores legais, coletado de acordo com os procedimentos adotados pela entidade.',
                 it: 'La pubblicazione di immagini riconoscibili di minori avviene esclusivamente previa autorizzazione e consenso espresso dei genitori o dei tutori legali, raccolto secondo le procedure adottate dall\'ente.',
-                de: "Die Veröffentlichung erkennbarer Bilder von Minderjährigen erfolgt ausschließlich nach vorheriger Genehmigung und ausdrücklicher Einwilligung der Eltern oder gesetzlichen Vertreter, die gemäß den von der Organisation angewandten Verfahren eingeholt wird."
+                de: "Die Veröffentlichung erkennbarer Bilder von Minderjährigen erfolgt ausschließlich nach vorheriger Genehmigung und ausdrücklicher Einwilligung der Eltern oder gesetzlichen Vertreter, die gemäß den von der Organisation angewandten Verfahren eingeholt wird.",
+                en: "The publication of recognisable images of minors takes place exclusively with the prior authorisation and express consent of parents or legal guardians, obtained according to the procedures adopted by the organisation."
               })}
             </p>
 
@@ -246,22 +258,24 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'As imagens e os conteúdos audiovisuais são utilizados exclusivamente para as seguintes finalidades:',
                 it: 'Le immagini e i contenuti audiovisivi vengono utilizzati esclusivamente per finalità di:',
-                de: "Die Bilder und audiovisuellen Inhalte werden ausschließlich zu folgenden Zwecken verwendet:"
+                de: "Die Bilder und audiovisuellen Inhalte werden ausschließlich zu folgenden Zwecken verwendet:",
+                en: "Images and audiovisual content are used exclusively for the purposes of:"
               })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 mb-6 ml-4">
-              <li>{t({ pt: 'documentação das atividades educativas e sociais', it: 'documentazione delle attività educative e sociali', de: "Dokumentation der Bildungs- und Sozialaktivitäten" })}</li>
-              <li>{t({ pt: 'comunicação institucional', it: 'comunicazione istituzionale', de: "institutionelle Kommunikation" })}</li>
-              <li>{t({ pt: 'valorização dos projetos do Centro Nossa Senhora Aparecida', it: 'valorizzazione dei progetti del Centro Nossa Senhora Aparecida', de: "Aufwertung der Projekte des Centro Nossa Senhora Aparecida" })}</li>
-              <li>{t({ pt: 'sensibilização e informação sobre as atividades da Fundação Betania ONLUS', it: 'sensibilizzazione e informazione sulle attività della Fundação Betania ONLUS', de: "Sensibilisierung und Information über die Aktivitäten der Fundação Betania ONLUS" })}</li>
-              <li>{t({ pt: 'arrecadação de fundos e apoio aos projetos educativos e sociais', it: 'raccolta fondi e sostegno ai progetti educativi e sociali', de: "Spendensammlung und Unterstützung der Bildungs- und Sozialprojekte" })}</li>
+              <li>{t({ pt: 'documentação das atividades educativas e sociais', it: 'documentazione delle attività educative e sociali', de: "Dokumentation der Bildungs- und Sozialaktivitäten", en: "documenting educational and social activities" })}</li>
+              <li>{t({ pt: 'comunicação institucional', it: 'comunicazione istituzionale', de: "institutionelle Kommunikation", en: "institutional communication" })}</li>
+              <li>{t({ pt: 'valorização dos projetos do Centro Nossa Senhora Aparecida', it: 'valorizzazione dei progetti del Centro Nossa Senhora Aparecida', de: "Aufwertung der Projekte des Centro Nossa Senhora Aparecida", en: "showcasing the projects of the Centro Nossa Senhora Aparecida" })}</li>
+              <li>{t({ pt: 'sensibilização e informação sobre as atividades da Fundação Betania ONLUS', it: 'sensibilizzazione e informazione sulle attività della Fundação Betania ONLUS', de: "Sensibilisierung und Information über die Aktivitäten der Fundação Betania ONLUS", en: "raising awareness and providing information about the activities of Fundação Betania ONLUS" })}</li>
+              <li>{t({ pt: 'arrecadação de fundos e apoio aos projetos educativos e sociais', it: 'raccolta fondi e sostegno ai progetti educativi e sociali', de: "Spendensammlung und Unterstützung der Bildungs- und Sozialprojekte", en: "fundraising and support for educational and social projects" })}</li>
             </ul>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-6">
               {t({
                 pt: 'Particular atenção é dedicada à tutela da dignidade, da segurança e da privacidade dos menores envolvidos.',
                 it: 'Particolare attenzione viene posta alla tutela della dignità, della sicurezza e della riservatezza dei minori coinvolti.',
-                de: "Besondere Aufmerksamkeit gilt dem Schutz der Würde, der Sicherheit und der Privatsphäre der beteiligten Minderjährigen."
+                de: "Besondere Aufmerksamkeit gilt dem Schutz der Würde, der Sicherheit und der Privatsphäre der beteiligten Minderjährigen.",
+                en: "Particular attention is paid to protecting the dignity, safety and privacy of the minors involved."
               })}
             </p>
 
@@ -269,7 +283,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Não são publicadas informações pessoais desnecessárias que possam permitir a identificação detalhada dos menores ou a divulgação de dados sensíveis relativos à sua situação pessoal ou familiar.',
                 it: 'Non vengono pubblicate informazioni personali non necessarie che possano consentire l\'identificazione dettagliata dei minori o la divulgazione di dati sensibili relativi alla loro situazione personale o familiare.',
-                de: "Es werden keine nicht erforderlichen persönlichen Informationen veröffentlicht, die eine detaillierte Identifizierung der Minderjährigen ermöglichen oder sensible Daten zu ihrer persönlichen oder familiären Situation preisgeben könnten."
+                de: "Es werden keine nicht erforderlichen persönlichen Informationen veröffentlicht, die eine detaillierte Identifizierung der Minderjährigen ermöglichen oder sensible Daten zu ihrer persönlichen oder familiären Situation preisgeben könnten.",
+                en: "No unnecessary personal information is published that could allow the detailed identification of minors or the disclosure of sensitive data relating to their personal or family situation."
               })}
             </p>
 
@@ -277,7 +292,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Os pais ou tutores que tenham prestado o consentimento podem a qualquer momento solicitar a remoção de imagens ou conteúdos que dizem respeito ao menor entrando em contato com a Fundação Betania ONLUS através dos contatos indicados na presente informativa.',
                 it: 'I genitori o tutori che abbiano prestato il consenso possono in qualsiasi momento richiedere la rimozione di immagini o contenuti che riguardano il minore contattando la Fundação Betania ONLUS ai recapiti indicati nella presente informativa.',
-                de: "Eltern oder gesetzliche Vertreter, die ihre Einwilligung erteilt haben, können jederzeit die Entfernung von Bildern oder Inhalten verlangen, die den Minderjährigen betreffen, indem sie die Fundação Betania ONLUS über die in dieser Datenschutzerklärung angegebenen Kontaktdaten kontaktieren."
+                de: "Eltern oder gesetzliche Vertreter, die ihre Einwilligung erteilt haben, können jederzeit die Entfernung von Bildern oder Inhalten verlangen, die den Minderjährigen betreffen, indem sie die Fundação Betania ONLUS über die in dieser Datenschutzerklärung angegebenen Kontaktdaten kontaktieren.",
+                en: "Parents or guardians who have given consent may, at any time, request the removal of images or content concerning the minor by contacting Fundação Betania ONLUS at the contact details provided in this notice."
               })}
             </p>
 
@@ -285,7 +301,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'A Fundação Betania ONLUS compromete-se a avaliar prontamente cada solicitação e a adotar as medidas apropriadas no respeito das normativas aplicáveis.',
                 it: 'La Fundação Betania ONLUS si impegna a valutare tempestivamente ogni richiesta e ad adottare le misure appropriate nel rispetto delle normative applicabili.',
-                de: "Die Fundação Betania ONLUS verpflichtet sich, jede Anfrage zeitnah zu prüfen und unter Einhaltung der geltenden Vorschriften geeignete Maßnahmen zu ergreifen."
+                de: "Die Fundação Betania ONLUS verpflichtet sich, jede Anfrage zeitnah zu prüfen und unter Einhaltung der geltenden Vorschriften geeignete Maßnahmen zu ergreifen.",
+                en: "Fundação Betania ONLUS is committed to promptly evaluating every request and adopting appropriate measures in compliance with applicable regulations."
               })}
             </p>
           </AnimatedSection>
@@ -297,7 +314,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Cookies e ferramentas técnicas', it: 'Cookie e strumenti tecnici', de: "Cookies und technische Hilfsmittel" })}
+              {t({ pt: 'Cookies e ferramentas técnicas', it: 'Cookie e strumenti tecnici', de: "Cookies und technische Hilfsmittel", en: "Cookies and technical tools" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -305,16 +322,17 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'O site pode utilizar cookies técnicos necessários para o correto funcionamento das páginas, cookies estatísticos anonimizados e cookies de terceiros relacionados a conteúdos incorporados.',
                 it: 'Il sito può utilizzare cookie tecnici necessari al corretto funzionamento delle pagine, cookie statistici anonimizzati e cookie di terze parti relativi a contenuti incorporati.',
-                de: "Die Website kann technische Cookies verwenden, die für das ordnungsgemäße Funktionieren der Seiten notwendig sind, anonymisierte statistische Cookies sowie Cookies Dritter im Zusammenhang mit eingebetteten Inhalten."
+                de: "Die Website kann technische Cookies verwenden, die für das ordnungsgemäße Funktionieren der Seiten notwendig sind, anonymisierte statistische Cookies sowie Cookies Dritter im Zusammenhang mit eingebetteten Inhalten.",
+                en: "The website may use technical cookies necessary for the correct functioning of the pages, anonymised statistical cookies and third-party cookies related to embedded content."
               })}
             </p>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
-              {t({ pt: 'Não são utilizados:', it: 'Non vengono utilizzati:', de: "Nicht verwendet werden:" })}
+              {t({ pt: 'Não são utilizados:', it: 'Non vengono utilizzati:', de: "Nicht verwendet werden:", en: "The following are not used:" })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 mb-6 ml-4">
-              <li>{t({ pt: 'sistemas de perfilamento publicitário', it: 'sistemi di profilazione pubblicitaria', de: "Systeme zur Werbeprofilerstellung" })}</li>
-              <li>{t({ pt: 'cookies de marketing avançados', it: 'cookie marketing avanzati', de: "erweiterte Marketing-Cookies" })}</li>
+              <li>{t({ pt: 'sistemas de perfilamento publicitário', it: 'sistemi di profilazione pubblicitaria', de: "Systeme zur Werbeprofilerstellung", en: "advertising profiling systems" })}</li>
+              <li>{t({ pt: 'cookies de marketing avançados', it: 'cookie marketing avanzati', de: "erweiterte Marketing-Cookies", en: "advanced marketing cookies" })}</li>
             </ul>
 
             <div className="bg-[var(--beige)] rounded-xl p-6">
@@ -322,7 +340,8 @@ export function PrivacyPolicyPage() {
                 {t({
                   pt: 'Para mais informações sobre cookies, consulte nossa Cookie Policy.',
                   it: 'Per maggiori informazioni sui cookie, consultare la nostra Cookie Policy.',
-                  de: "Weitere Informationen zu Cookies finden Sie in unserer Cookie-Richtlinie."
+                  de: "Weitere Informationen zu Cookies finden Sie in unserer Cookie-Richtlinie.",
+                  en: "For more information on cookies, please see our Cookie Policy."
                 })}
               </p>
             </div>
@@ -335,7 +354,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Conservação dos dados', it: 'Conservazione dei dati', de: "Datenspeicherung" })}
+              {t({ pt: 'Conservação dos dados', it: 'Conservazione dei dati', de: "Datenspeicherung", en: "Data retention" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -343,7 +362,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Os eventuais dados transmitidos através de contato direto são conservados pelo tempo estritamente necessário à gestão das solicitações e no respeito das normativas aplicáveis.',
                 it: 'Gli eventuali dati trasmessi tramite contatto diretto vengono conservati per il tempo strettamente necessario alla gestione delle richieste e nel rispetto delle normative applicabili.',
-                de: "Eventuell über den direkten Kontakt übermittelte Daten werden nur so lange gespeichert, wie es für die Bearbeitung der Anfragen unbedingt erforderlich ist, und unter Einhaltung der geltenden Vorschriften."
+                de: "Eventuell über den direkten Kontakt übermittelte Daten werden nur so lange gespeichert, wie es für die Bearbeitung der Anfragen unbedingt erforderlich ist, und unter Einhaltung der geltenden Vorschriften.",
+                en: "Any data transmitted through direct contact is retained only for the time strictly necessary to handle the requests and in compliance with applicable regulations."
               })}
             </p>
           </AnimatedSection>
@@ -355,7 +375,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Direitos do usuário', it: 'Diritti dell\'utente', de: "Rechte der Nutzer" })}
+              {t({ pt: 'Direitos do usuário', it: 'Diritti dell\'utente', de: "Rechte der Nutzer", en: "User rights" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -363,21 +383,23 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'Os usuários podem solicitar a qualquer momento:',
                 it: 'Gli utenti possono richiedere in qualsiasi momento:',
-                de: "Die Nutzer können jederzeit Folgendes verlangen:"
+                de: "Die Nutzer können jederzeit Folgendes verlangen:",
+                en: "Users may request at any time:"
               })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 mb-6 ml-4">
-              <li>{t({ pt: 'acesso aos próprios dados', it: 'accesso ai propri dati', de: "Zugang zu ihren eigenen Daten" })}</li>
-              <li>{t({ pt: 'retificação', it: 'rettifica', de: "Berichtigung" })}</li>
-              <li>{t({ pt: 'cancelamento', it: 'cancellazione', de: "Löschung" })}</li>
-              <li>{t({ pt: 'limitação do tratamento', it: 'limitazione del trattamento', de: "Einschränkung der Verarbeitung" })}</li>
-              <li>{t({ pt: 'informações sobre o tratamento efetuado', it: 'informazioni sul trattamento effettuato', de: "Informationen über die durchgeführte Verarbeitung" })}</li>
+              <li>{t({ pt: 'acesso aos próprios dados', it: 'accesso ai propri dati', de: "Zugang zu ihren eigenen Daten", en: "access to their data" })}</li>
+              <li>{t({ pt: 'retificação', it: 'rettifica', de: "Berichtigung", en: "rectification" })}</li>
+              <li>{t({ pt: 'cancelamento', it: 'cancellazione', de: "Löschung", en: "erasure" })}</li>
+              <li>{t({ pt: 'limitação do tratamento', it: 'limitazione del trattamento', de: "Einschränkung der Verarbeitung", en: "restriction of processing" })}</li>
+              <li>{t({ pt: 'informações sobre o tratamento efetuado', it: 'informazioni sul trattamento effettuato', de: "Informationen über die durchgeführte Verarbeitung", en: "information on the processing carried out" })}</li>
             </ul>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'As solicitações podem ser enviadas através dos contatos indicados nesta página.',
                 it: 'Le richieste possono essere inviate tramite i recapiti indicati in questa pagina.',
-                de: "Anfragen können über die auf dieser Seite angegebenen Kontaktdaten gesendet werden."
+                de: "Anfragen können über die auf dieser Seite angegebenen Kontaktdaten gesendet werden.",
+                en: "Requests can be sent using the contact details provided on this page."
               })}
             </p>
           </AnimatedSection>
@@ -389,7 +411,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt" })}
+              {t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -432,7 +454,7 @@ export function PrivacyPolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Atualizações da privacy policy', it: 'Aggiornamenti della privacy policy', de: "Aktualisierungen der Datenschutzerklärung" })}
+              {t({ pt: 'Atualizações da privacy policy', it: 'Aggiornamenti della privacy policy', de: "Aktualisierungen der Datenschutzerklärung", en: "Updates to the privacy policy" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -440,7 +462,8 @@ export function PrivacyPolicyPage() {
               {t({
                 pt: 'A presente informativa pode ser atualizada ao longo do tempo em função de modificações normativas ou técnicas relativas ao site.',
                 it: 'La presente informativa può essere aggiornata nel tempo in funzione di modifiche normative o tecniche relative al sito.',
-                de: "Diese Datenschutzerklärung kann im Laufe der Zeit aufgrund rechtlicher oder technischer Änderungen der Website aktualisiert werden."
+                de: "Diese Datenschutzerklärung kann im Laufe der Zeit aufgrund rechtlicher oder technischer Änderungen der Website aktualisiert werden.",
+                en: "This notice may be updated over time due to regulatory or technical changes relating to the website."
               })}
             </p>
           </AnimatedSection>

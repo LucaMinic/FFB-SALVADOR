@@ -13,10 +13,10 @@ export function Impatto() {
   const t = useT();
 
   const points = [
-    { text: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung" }), image: accoglienzaImg, href: '/accoglienza-quotidiana' },
-    { text: t({ pt: 'Educação', it: 'Educazione', de: "Bildung" }), image: educazioneImg, href: '/educazione' },
-    { text: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Pflege und Ernährung" }), image: curaImg, href: '/cura-e-nutrizione' },
-    { text: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien" }), image: accompagnamentoImg, href: '/accompagnamento-famiglie' }
+    { text: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung", en: "Daily care" }), image: accoglienzaImg, href: '/accoglienza-quotidiana' },
+    { text: t({ pt: 'Educação', it: 'Educazione', de: "Bildung", en: "Education" }), image: educazioneImg, href: '/educazione' },
+    { text: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Pflege und Ernährung", en: "Care and nutrition" }), image: curaImg, href: '/cura-e-nutrizione' },
+    { text: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting families" }), image: accompagnamentoImg, href: '/accompagnamento-famiglie' }
   ];
 
   return (
@@ -28,13 +28,13 @@ export function Impatto() {
               <div className="overflow-hidden">
                 <img loading="lazy"
                   src={dailyLifeImage}
-                  alt={t({ pt: 'Creche', it: 'Asilo', de: "Kita" })}
+                  alt={t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white p-8 text-center">
-                <p className="text-2xl font-medium mb-2">{t({ pt: 'Creche', it: 'Asilo', de: "Kita" })}</p>
-                <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}</p>
+                <p className="text-2xl font-medium mb-2">{t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" })}</p>
+                <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}</p>
               </div>
             </Link>
           </AnimatedSection>
@@ -43,13 +43,13 @@ export function Impatto() {
               <div className="overflow-hidden">
                 <img loading="lazy"
                   src={educationImage}
-                  alt={t({ pt: 'Projeto Escola', it: 'Progetto Scuola', de: "Schulprojekt" })}
+                  alt={t({ pt: 'Projeto Escola', it: 'Progetto Scuola', de: "Schulprojekt", en: "School Project" })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white p-8 text-center">
-                <p className="text-2xl font-medium mb-2">{t({ pt: 'Projeto Escola', it: 'Progetto Scuola', de: "Schulprojekt" })}</p>
-                <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}</p>
+                <p className="text-2xl font-medium mb-2">{t({ pt: 'Projeto Escola', it: 'Progetto Scuola', de: "Schulprojekt", en: "School Project" })}</p>
+                <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}</p>
               </div>
             </Link>
           </AnimatedSection>
@@ -66,7 +66,8 @@ export function Impatto() {
               {t({
                 pt: '«Quando compreendi que rezar é amar, então tudo se tornou oração, tudo se tornou amor»',
                 it: '«Quando ho compreso che pregare è amare, allora tutto è diventato preghiera, tutto è diventato amore»',
-                de: "«Als ich verstand, dass Beten Lieben bedeutet, wurde alles zum Gebet, alles zur Liebe»"
+                de: "«Als ich verstand, dass Beten Lieben bedeutet, wurde alles zum Gebet, alles zur Liebe»",
+                en: "«When I understood that praying is loving, then everything became prayer, everything became love»"
               })}
             </blockquote>
             <p className="text-sm md:text-base text-[var(--deep-blue)] font-semibold tracking-wide">
@@ -78,13 +79,14 @@ export function Impatto() {
         <AnimatedSection>
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] font-bold tracking-tight mb-3">
-              {t({ pt: 'Nossos pilares', it: 'I nostri pilastri', de: "Unsere Säulen" })}
+              {t({ pt: 'Nossos pilares', it: 'I nostri pilastri', de: "Unsere Säulen", en: "Our pillars" })}
             </h2>
             <p className="text-base md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
               {t({
                 pt: 'Quatro dimensões que orientam diariamente o nosso compromisso junto às crianças e às famílias.',
                 it: 'Quattro dimensioni che ogni giorno guidano il nostro impegno accanto ai bambini e alle famiglie.',
-                de: "Vier Dimensionen, die unser tägliches Engagement für die Kinder und Familien leiten."
+                de: "Vier Dimensionen, die unser tägliches Engagement für die Kinder und Familien leiten.",
+                en: "Four dimensions that guide our commitment to children and families every day."
               })}
             </p>
           </div>
@@ -105,7 +107,7 @@ export function Impatto() {
                   index % 2 === 0 ? 'bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a]' : 'bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)]'
                 } text-white p-8 text-center`}>
                   <p className="text-2xl font-medium mb-2">{point.text}</p>
-                  <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren" })}</p>
+                  <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}</p>
                 </div>
               </Link>
             </AnimatedSection>

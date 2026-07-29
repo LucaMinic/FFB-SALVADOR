@@ -33,7 +33,7 @@ export function AvanzamentoBanner() {
 
         <p className="flex-1 min-w-0 text-sm sm:text-base leading-snug">
           <span className="font-extrabold">
-            {t({ it: 'News costruzione scuola:', pt: 'Notícia obra da escola:', de: 'News Schulbau:' })}
+            {t({ it: 'News costruzione scuola:', pt: 'Notícia obra da escola:', de: 'News Schulbau:', en: "School construction news:" })}
           </span>
           <br className="sm:hidden" />
           <span className="hidden sm:inline">{' '}</span>
@@ -43,16 +43,16 @@ export function AvanzamentoBanner() {
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0 mt-0.5 sm:mt-0">
           <Link
             to="/avanzamento-lavori"
-            aria-label={t({ it: 'Scopri di più', pt: 'Saiba mais', de: 'Mehr erfahren' })}
+            aria-label={t({ it: 'Scopri di più', pt: 'Saiba mais', de: 'Mehr erfahren', en: "Learn more" })}
             className="flex-shrink-0 flex items-center justify-center gap-1.5 w-8 h-8 sm:w-auto sm:h-auto text-xs sm:text-sm font-bold text-[var(--warm-orange)] bg-white rounded-full whitespace-nowrap shadow-sm hover:shadow-md hover:-translate-y-px transition-all sm:px-4 sm:py-1.5"
           >
-            <span className="hidden sm:inline">{t({ it: 'Scopri di più', pt: 'Saiba mais', de: 'Mehr erfahren' })}</span>
+            <span className="hidden sm:inline">{t({ it: 'Scopri di più', pt: 'Saiba mais', de: 'Mehr erfahren', en: "Learn more" })}</span>
             <ArrowRight className="w-4 h-4 sm:hidden" />
           </Link>
 
           <button
             onClick={handleDismiss}
-            aria-label={t({ it: 'Chiudi', pt: 'Fechar', de: 'Schließen' })}
+            aria-label={t({ it: 'Chiudi', pt: 'Fechar', de: 'Schließen', en: "Close" })}
             className="flex-shrink-0 p-1 rounded-full hover:bg-white/20 transition-colors"
           >
             <X className="w-4 h-4" />

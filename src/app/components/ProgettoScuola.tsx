@@ -17,16 +17,17 @@ export function ProgettoScuola() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl text-white mb-6">
-              {t({ pt: 'O projeto escola', it: 'Il progetto scuola', de: "Das Schulprojekt" })}
+              {t({ pt: 'O projeto escola', it: 'Il progetto scuola', de: "Das Schulprojekt", en: "The school project" })}
             </h2>
 
-            <h3 className="mb-8 text-3xl drop-shadow-lg font-light">{t({ pt: 'Construímos uma escola, construímos um futuro', it: 'Costruiamo una scuola, costruiamo un futuro', de: "Wir bauen eine Schule, wir bauen eine Zukunft" })}</h3>
+            <h3 className="mb-8 text-3xl drop-shadow-lg font-light">{t({ pt: 'Construímos uma escola, construímos um futuro', it: 'Costruiamo una scuola, costruiamo un futuro', de: "Wir bauen eine Schule, wir bauen eine Zukunft", en: "We are building a school, we are building a future" })}</h3>
 
             <p className="text-lg leading-relaxed max-w-3xl mx-auto drop-shadow-md">
               {t({
                 pt: 'O projeto da escola nasce para oferecer um percurso educativo completo, gratuito e em tempo integral, acompanhando as crianças dos 6 aos 18 anos em seu crescimento humano, educativo e relacional.',
                 it: 'Il progetto della scuola nasce per offrire un percorso educativo completo, gratuito e a tempo pieno, accompagnando i bambini dai 6 ai 18 anni nella loro crescita umana, educativa e relazionale.',
-                de: "Das Schulprojekt entsteht, um einen vollständigen, kostenlosen Ganztags-Bildungsweg anzubieten, der Kinder von 6 bis 18 Jahren in ihrer menschlichen, schulischen und sozialen Entwicklung begleitet."
+                de: "Das Schulprojekt entsteht, um einen vollständigen, kostenlosen Ganztags-Bildungsweg anzubieten, der Kinder von 6 bis 18 Jahren in ihrer menschlichen, schulischen und sozialen Entwicklung begleitet.",
+                en: "The school project was created to offer a complete, free and full-time educational journey, accompanying children from 6 to 18 years old in their human, educational and relational growth."
               })}
             </p>
           </div>
@@ -37,7 +38,7 @@ export function ProgettoScuola() {
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
               <img loading="lazy"
                 src={schoolRenderImage}
-                alt={t({ pt: 'Projeto da Escola Nossa Senhora Aparecida', it: 'Progetto della Scuola Nossa Senhora Aparecida', de: "Projekt der Schule Nossa Senhora Aparecida" })}
+                alt={t({ pt: 'Projeto da Escola Nossa Senhora Aparecida', it: 'Progetto della Scuola Nossa Senhora Aparecida', de: "Projekt der Schule Nossa Senhora Aparecida", en: "Nossa Senhora Aparecida School Project" })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -46,7 +47,7 @@ export function ProgettoScuola() {
             <div className="group overflow-hidden rounded-[2rem] shadow-[0_10px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_70px_rgba(0,0,0,0.3)] transition-all duration-500 border border-white/30">
               <img loading="lazy"
                 src={foundationCeremonyImage}
-                alt={t({ pt: 'Cerimônia de fundação', it: 'Cerimonia di fondazione', de: "Gründungszeremonie" })}
+                alt={t({ pt: 'Cerimônia de fundação', it: 'Cerimonia di fondazione', de: "Gründungszeremonie", en: "Foundation ceremony" })}
                 className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -55,7 +56,7 @@ export function ProgettoScuola() {
 
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <Button to="/progetto-scuola">{t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola', de: "Entdecken Sie das Schulprojekt" })}</Button>
+            <Button to="/progetto-scuola">{t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola', de: "Entdecken Sie das Schulprojekt", en: "Discover the school project" })}</Button>
           </div>
         </AnimatedSection>
       </div>

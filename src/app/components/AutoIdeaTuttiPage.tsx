@@ -28,23 +28,24 @@ export function AutoIdeaTuttiPage() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück" })}</span>
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück", en: "Back" })}</span>
           </Link>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Documentário', it: 'Documentario', de: "Dokumentarfilm" })}
+              {t({ pt: 'Documentário', it: 'Documentario', de: "Dokumentarfilm", en: "Documentary" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti", de: "Auto: eine Idee von allen" })}
+              {t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti", de: "Auto: eine Idee von allen", en: "Auto: everyone's idea" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Um percurso compartilhado nascido do desejo de construir juntos possibilidades concretas de crescimento, autonomia e participação.',
                 it: 'Un percorso condiviso nato dal desiderio di costruire insieme possibilità concrete di crescita, autonomia e partecipazione.',
                 de: "Ein gemeinsamer Weg, entstanden aus dem Wunsch, gemeinsam konkrete Möglichkeiten für Wachstum, Selbstständigkeit und Teilhabe zu schaffen.",
+                en: "A shared journey born from the desire to build together concrete opportunities for growth, autonomy and participation.",
               })}
             </p>
           </AnimatedSection>
@@ -54,13 +55,13 @@ export function AutoIdeaTuttiPage() {
                 href="#video"
                 className="px-8 py-4 bg-white text-[var(--deep-blue)] font-semibold rounded-xl shadow-lg hover:bg-white/90 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario', de: "Dokumentarfilm ansehen" })}
+                {t({ pt: 'Assista ao documentário', it: 'Guarda il documentario', de: "Dokumentarfilm ansehen", en: "Watch the documentary" })}
               </a>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <ShareButtons
-              title={t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti", de: "Auto: eine Idee von allen" })}
+              title={t({ pt: 'Auto: uma ideia de todos', it: "Auto: un'idea di tutti", de: "Auto: eine Idee von allen", en: "Auto: everyone's idea" })}
               variant="dark"
               className="mt-6"
             />
@@ -73,13 +74,14 @@ export function AutoIdeaTuttiPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Construir juntos', it: 'Costruire insieme', de: "Gemeinsam bauen" })}
+              {t({ pt: 'Construir juntos', it: 'Costruire insieme', de: "Gemeinsam bauen", en: "Building together" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               {t({
                 pt: 'Um percurso compartilhado nascido do desejo de construir juntos possibilidades concretas de crescimento, autonomia e participação.',
                 it: 'Un percorso condiviso nato dal desiderio di costruire insieme possibilità concrete di crescita, autonomia e partecipazione.',
                 de: "Ein gemeinsamer Weg, entstanden aus dem Wunsch, gemeinsam konkrete Möglichkeiten für Wachstum, Selbstständigkeit und Teilhabe zu schaffen.",
+                en: "A shared journey born from the desire to build together concrete opportunities for growth, autonomy and participation.",
               })}
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -87,6 +89,7 @@ export function AutoIdeaTuttiPage() {
                 pt: 'Este documentário conta uma história de colaboração, confiança e projetos partilhados que nascem da vida quotidiana do Centro.',
                 it: 'Questo documentario racconta una storia di collaborazione, fiducia e progetti condivisi che nascono dalla vita quotidiana del Centro.',
                 de: "Dieser Dokumentarfilm erzählt eine Geschichte von Zusammenarbeit, Vertrauen und gemeinsamen Projekten, die aus dem Alltag des Centro entstehen.",
+                en: "This documentary tells a story of collaboration, trust and shared projects born from the daily life of the Centre.",
               })}
             </p>
           </AnimatedSection>
@@ -120,6 +123,7 @@ export function AutoIdeaTuttiPage() {
                   pt: 'Cada ideia nasce da escuta, da partilha e do desejo de construir juntos.',
                   it: 'Ogni idea nasce dall\'ascolto, dalla condivisione e dal desiderio di costruire insieme.',
                   de: "Jede Idee entsteht aus Zuhören, Teilen und dem Wunsch, gemeinsam zu bauen.",
+                  en: "Every idea is born from listening, sharing and the desire to build together.",
                 })}&rdquo;
               </p>
               <footer className="text-[var(--deep-blue)]/60 text-sm font-medium tracking-wide uppercase">
@@ -137,21 +141,22 @@ export function AutoIdeaTuttiPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti', de: "Entdecken Sie weitere Erzählungen" })}
+              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti', de: "Entdecken Sie weitere Erzählungen", en: "Discover other stories" })}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-10">
               {t({
                 pt: 'Conheça outras histórias, testemunhos e projetos ligados ao Centro Nossa Senhora Aparecida.',
                 it: 'Scopri altre storie, testimonianze e progetti legati al Centro Nossa Senhora Aparecida.',
                 de: "Entdecken Sie weitere Geschichten, Zeugnisse und Projekte rund um das Centro Nossa Senhora Aparecida.",
+                en: "Discover other stories, testimonies and projects related to the Centro Nossa Senhora Aparecida.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/documentari-racconti">
-                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentarfilme" })}
+                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentarfilme", en: "All documentaries" })}
               </Button>
               <Button variant="secondary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro" })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
             </div>
           </AnimatedSection>

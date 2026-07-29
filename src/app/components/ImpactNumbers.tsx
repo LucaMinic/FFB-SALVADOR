@@ -99,15 +99,15 @@ export function ImpactNumbers() {
   const items = [
     {
       number: '120+',
-      label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa', de: "Kinder, die jeden Tag in unserem Haus aufgenommen werden" })
+      label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa', de: "Kinder, die jeden Tag in unserem Haus aufgenommen werden", en: "Children welcomed every day in our home" })
     },
     {
       number: '5',
-      label: t({ pt: 'Refeições quentes garantidas todos os dias', it: 'Pasti caldi garantiti ogni giorno', de: "Warme Mahlzeiten, täglich garantiert" })
+      label: t({ pt: 'Refeições quentes garantidas todos os dias', it: 'Pasti caldi garantiti ogni giorno', de: "Warme Mahlzeiten, täglich garantiert", en: "Hot meals guaranteed every day" })
     },
     {
       number: '100%',
-      label: t({ pt: 'Acesso completamente gratuito para cada família', it: 'Accesso completamente gratuito per ogni famiglia', de: "Vollständig kostenloser Zugang für jede Familie" })
+      label: t({ pt: 'Acesso completamente gratuito para cada família', it: 'Accesso completamente gratuito per ogni famiglia', de: "Vollständig kostenloser Zugang für jede Familie", en: "Completely free access for every family" })
     },
   ];
 
@@ -117,13 +117,14 @@ export function ImpactNumbers() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Este é o impacto concreto do nosso trabalho', it: "Ecco l'impatto concreto del nostro lavoro", de: "Das ist die konkrete Wirkung unserer Arbeit" })}
+              {t({ pt: 'Este é o impacto concreto do nosso trabalho', it: "Ecco l'impatto concreto del nostro lavoro", de: "Das ist die konkrete Wirkung unserer Arbeit", en: "Here is the concrete impact of our work" })}
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               {t({
                 pt: 'Todos os dias, pequenos gestos constroem uma mudança real na vida das crianças e de suas famílias.',
                 it: 'Ogni giorno, piccoli gesti costruiscono un cambiamento reale nella vita dei bambini e delle loro famiglie.',
-                de: "Jeden Tag bewirken kleine Gesten einen echten Wandel im Leben der Kinder und ihrer Familien."
+                de: "Jeden Tag bewirken kleine Gesten einen echten Wandel im Leben der Kinder und ihrer Familien.",
+                en: "Every day, small gestures build real change in the lives of children and their families."
               })}
             </p>
           </div>

@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-export type Lang = 'pt' | 'it' | 'de';
+export type Lang = 'pt' | 'it' | 'de' | 'en';
 
 interface LanguageContextType {
   lang: Lang;
@@ -15,7 +15,7 @@ const LanguageContext = createContext<LanguageContextType>({
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(() => {
     const saved = localStorage.getItem('lang') as Lang;
-    return saved === 'it' || saved === 'de' ? saved : 'pt';
+    return saved === 'it' || saved === 'de' || saved === 'en' ? saved : 'pt';
   });
 
   const setLang = (newLang: Lang) => {
@@ -24,7 +24,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   useEffect(() => {
-    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'it' ? 'it' : 'de';
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'it' ? 'it' : lang === 'de' ? 'de' : 'en';
   }, [lang]);
 
   return (
@@ -40,5 +40,5 @@ export function useLanguage() {
 
 export function useT() {
   const { lang } = useLanguage();
-  return (obj: { pt: string; it: string; de: string }) => obj[lang];
+  return (obj: { pt: string; it: string; de: string; en: string }) => obj[lang];
 }

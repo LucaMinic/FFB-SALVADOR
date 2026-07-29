@@ -30,10 +30,10 @@ export function RelatorioAreaPage() {
               className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors text-sm font-medium mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
-              {t({ pt: 'Todas as áreas', it: 'Tutte le aree', de: "Alle Bereiche" })}
+              {t({ pt: 'Todas as áreas', it: 'Tutte le aree', de: "Alle Bereiche", en: "All areas" })}
             </Link>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida', de: "Kita des Centro Nossa Senhora Aparecida" })}
+              {t({ pt: 'Creche do Centro Nossa Senhora Aparecida', it: 'Asilo del Centro Nossa Senhora Aparecida', de: "Kita des Centro Nossa Senhora Aparecida", en: "Nursery School of the Centro Nossa Senhora Aparecida" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {t(area.name)}
@@ -52,13 +52,14 @@ export function RelatorioAreaPage() {
             <div className="text-center mb-20">
               <div className="w-16 h-1 mx-auto mb-8 rounded-full" style={{ backgroundColor: area.color }} />
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Documentos disponíveis', it: 'Documenti disponibili', de: "Verfügbare Dokumente" })}
+                {t({ pt: 'Documentos disponíveis', it: 'Documenti disponibili', de: "Verfügbare Dokumente", en: "Available documents" })}
               </h2>
               <p className="text-gray-600 text-xl leading-relaxed max-w-3xl mx-auto">
                 {t({
                   pt: 'Cada relatório é um registro cuidadoso das propostas, das descobertas e do desenvolvimento das crianças. Faça o download e conheça em profundidade o trabalho realizado.',
                   it: "Ogni relazione è un registro attento delle proposte, delle scoperte e dello sviluppo dei bambini. Scarica e conosci in profondità il lavoro svolto.",
                   de: "Jeder Bericht ist eine sorgfältige Dokumentation der Angebote, Entdeckungen und der Entwicklung der Kinder. Laden Sie ihn herunter und lernen Sie die geleistete Arbeit im Detail kennen.",
+                  en: "Each report is a careful record of the activities, discoveries and development of the children. Download it and learn more about the work carried out.",
                 })}
               </p>
             </div>
@@ -104,7 +105,7 @@ export function RelatorioAreaPage() {
                       style={{ backgroundColor: report.color }}
                     >
                       <Download className="w-4 h-4" />
-                      {t({ pt: 'Download relatório completo', it: 'Scarica la relazione completa', de: "Vollständigen Bericht herunterladen" })}
+                      {t({ pt: 'Download relatório completo', it: 'Scarica la relazione completa', de: "Vollständigen Bericht herunterladen", en: "Download the full report" })}
                     </a>
                   </div>
                 </div>
@@ -120,21 +121,22 @@ export function RelatorioAreaPage() {
           <AnimatedSection delay={0.1}>
             <FileText className="w-12 h-12 text-[var(--deep-blue)] mx-auto mb-8 opacity-60" />
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Precisa de mais informações?', it: 'Ha bisogno di ulteriori informazioni?', de: "Benötigen Sie weitere Informationen?" })}
+              {t({ pt: 'Precisa de mais informações?', it: 'Ha bisogno di ulteriori informazioni?', de: "Benötigen Sie weitere Informationen?", en: "Need more information?" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               {t({
                 pt: 'Para solicitar outros relatórios ou obter mais informações sobre o trabalho pedagógico do Centro, entre em contato conosco.',
                 it: 'Per richiedere altre relazioni o ottenere maggiori informazioni sul lavoro pedagogico del Centro, contattaci.',
                 de: "Um weitere Berichte anzufordern oder mehr über die pädagogische Arbeit des Centro zu erfahren, kontaktieren Sie uns.",
+                en: "To request other reports or learn more about the Centre's pedagogical work, contact us.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/contatti">
-                {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
+                {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
               <Button variant="secondary" to="/nossa-metodologia">
-                {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik" })}
+                {t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik", en: "Our methodology" })}
               </Button>
             </div>
           </AnimatedSection>

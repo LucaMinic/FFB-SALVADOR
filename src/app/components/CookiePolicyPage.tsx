@@ -21,7 +21,8 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Informações sobre o uso de cookies e tecnologias similares neste site.',
                 it: 'Informazioni sull\'uso di cookie e tecnologie simili su questo sito.',
-                de: "Informationen über die Verwendung von Cookies und ähnlichen Technologien auf dieser Website."
+                de: "Informationen über die Verwendung von Cookies und ähnlichen Technologien auf dieser Website.",
+                en: "Information on the use of cookies and similar technologies on this website."
               })}
             </p>
           </AnimatedSection>
@@ -35,7 +36,7 @@ export function CookiePolicyPage() {
             <div className="flex items-center gap-3 mb-6">
               <Cookie className="w-10 h-10 text-[var(--warm-orange)]" />
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)]">
-                {t({ pt: 'O que são cookies', it: 'Cosa sono i cookie', de: "Was sind Cookies" })}
+                {t({ pt: 'O que são cookies', it: 'Cosa sono i cookie', de: "Was sind Cookies", en: "What cookies are" })}
               </h2>
             </div>
           </AnimatedSection>
@@ -44,14 +45,16 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Os cookies são pequenos arquivos de texto que os sites visitados enviam ao terminal do usuário (geralmente ao navegador), onde são armazenados para serem retransmitidos aos mesmos sites na próxima visita.',
                 it: 'I cookie sono piccoli file di testo che i siti visitati inviano al terminale dell\'utente (solitamente al browser), dove vengono memorizzati per essere poi ritrasmessi agli stessi siti alla successiva visita.',
-                de: "Cookies sind kleine Textdateien, die von den besuchten Websites an das Endgerät des Nutzers (in der Regel an den Browser) gesendet werden, wo sie gespeichert werden, um bei einem erneuten Besuch an dieselben Websites zurückübermittelt zu werden."
+                de: "Cookies sind kleine Textdateien, die von den besuchten Websites an das Endgerät des Nutzers (in der Regel an den Browser) gesendet werden, wo sie gespeichert werden, um bei einem erneuten Besuch an dieselben Websites zurückübermittelt zu werden.",
+                en: "Cookies are small text files that the websites visited send to the user's device (usually to the browser), where they are stored to be sent back to the same websites on the next visit."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Os cookies são usados para diferentes finalidades: execução de autenticações informáticas, monitoramento de sessões, armazenamento de informações sobre configurações específicas relativas aos usuários que acessam o servidor, etc.',
                 it: 'I cookie sono utilizzati per diverse finalità: esecuzione di autenticazioni informatiche, monitoraggio di sessioni, memorizzazione di informazioni su specifiche configurazioni riguardanti gli utenti che accedono al server, etc.',
-                de: "Cookies werden für verschiedene Zwecke verwendet: Durchführung von EDV-Authentifizierungen, Sitzungsüberwachung, Speicherung von Informationen zu spezifischen Einstellungen der Nutzer, die auf den Server zugreifen, usw."
+                de: "Cookies werden für verschiedene Zwecke verwendet: Durchführung von EDV-Authentifizierungen, Sitzungsüberwachung, Speicherung von Informationen zu spezifischen Einstellungen der Nutzer, die auf den Server zugreifen, usw.",
+                en: "Cookies are used for various purposes: performing computer authentications, monitoring sessions, storing information on specific configurations regarding users who access the server, etc."
               })}
             </p>
           </AnimatedSection>
@@ -65,7 +68,7 @@ export function CookiePolicyPage() {
             <div className="flex items-center gap-3 mb-6">
               <Info className="w-10 h-10 text-[var(--soft-green)]" />
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)]">
-                {t({ pt: 'Tipos de cookies utilizados', it: 'Tipologie di cookie utilizzati', de: "Arten der verwendeten Cookies" })}
+                {t({ pt: 'Tipos de cookies utilizados', it: 'Tipologie di cookie utilizzati', de: "Arten der verwendeten Cookies", en: "Types of cookies used" })}
               </h2>
             </div>
           </AnimatedSection>
@@ -74,20 +77,22 @@ export function CookiePolicyPage() {
               {/* Technical Cookies */}
               <div className="bg-[var(--beige)] rounded-2xl p-8">
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Cookies técnicos', it: 'Cookie tecnici', de: "Technische Cookies" })}
+                  {t({ pt: 'Cookies técnicos', it: 'Cookie tecnici', de: "Technische Cookies", en: "Technical cookies" })}
                 </h3>
                 <p className="text-lg text-gray-800 leading-relaxed mb-4">
                   {t({
                     pt: 'Este site utiliza cookies técnicos necessários para o correto funcionamento das páginas e para fornecer o serviço solicitado pelo usuário.',
                     it: 'Questo sito utilizza cookie tecnici necessari al corretto funzionamento delle pagine e per fornire il servizio richiesto dall\'utente.',
-                    de: "Diese Website verwendet technische Cookies, die für die einwandfreie Funktion der Seiten und zur Bereitstellung des vom Nutzer angeforderten Dienstes notwendig sind."
+                    de: "Diese Website verwendet technische Cookies, die für die einwandfreie Funktion der Seiten und zur Bereitstellung des vom Nutzer angeforderten Dienstes notwendig sind.",
+                    en: "This website uses technical cookies necessary for the correct functioning of the pages and to provide the service requested by the user."
                   })}
                 </p>
                 <p className="text-lg text-gray-800 leading-relaxed">
                   {t({
                     pt: 'Estes cookies não requerem consentimento prévio do usuário, pois são estritamente necessários para o funcionamento do site.',
                     it: 'Questi cookie non richiedono il consenso preventivo dell\'utente in quanto strettamente necessari al funzionamento del sito.',
-                    de: "Für diese Cookies ist keine vorherige Einwilligung des Nutzers erforderlich, da sie für den Betrieb der Website unbedingt notwendig sind."
+                    de: "Für diese Cookies ist keine vorherige Einwilligung des Nutzers erforderlich, da sie für den Betrieb der Website unbedingt notwendig sind.",
+                    en: "These cookies do not require the user's prior consent as they are strictly necessary for the website to function."
                   })}
                 </p>
               </div>
@@ -95,13 +100,14 @@ export function CookiePolicyPage() {
               {/* Analytics Cookies */}
               <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Cookies analíticos', it: 'Cookie analitici', de: "Analyse-Cookies" })}
+                  {t({ pt: 'Cookies analíticos', it: 'Cookie analitici', de: "Analyse-Cookies", en: "Analytics cookies" })}
                 </h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
                   {t({
                     pt: 'O site pode utilizar cookies analíticos para coletar informações estatísticas anônimas sobre o uso do site, com o objetivo de melhorar a navegação e os serviços oferecidos.',
                     it: 'Il sito può utilizzare cookie analitici per raccogliere informazioni statistiche anonime sull\'utilizzo del sito, al fine di migliorare la navigazione e i servizi offerti.',
-                    de: "Die Website kann Analyse-Cookies verwenden, um anonyme statistische Informationen über die Nutzung der Website zu erheben, mit dem Ziel, die Navigation und die angebotenen Dienste zu verbessern."
+                    de: "Die Website kann Analyse-Cookies verwenden, um anonyme statistische Informationen über die Nutzung der Website zu erheben, mit dem Ziel, die Navigation und die angebotenen Dienste zu verbessern.",
+                    en: "The website may use analytics cookies to collect anonymous statistical information on the use of the website, in order to improve navigation and the services offered."
                   })}
                 </p>
               </div>
@@ -109,13 +115,14 @@ export function CookiePolicyPage() {
               {/* Third-party Cookies */}
               <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Cookies de terceiros', it: 'Cookie di terze parti', de: "Cookies von Drittanbietern" })}
+                  {t({ pt: 'Cookies de terceiros', it: 'Cookie di terze parti', de: "Cookies von Drittanbietern", en: "Third-party cookies" })}
                 </h3>
                 <p className="text-lg text-gray-800 leading-relaxed">
                   {t({
                     pt: 'O site pode utilizar cookies de terceiros relacionados a conteúdos incorporados, como vídeos YouTube. Estes cookies são gerenciados diretamente pelas plataformas externas.',
                     it: 'Il sito può utilizzare cookie di terze parti relativi a contenuti incorporati, come video YouTube. Questi cookie sono gestiti direttamente dalle piattaforme esterne.',
-                    de: "Die Website kann Cookies von Drittanbietern verwenden, die mit eingebetteten Inhalten wie YouTube-Videos zusammenhängen. Diese Cookies werden direkt von den externen Plattformen verwaltet."
+                    de: "Die Website kann Cookies von Drittanbietern verwenden, die mit eingebetteten Inhalten wie YouTube-Videos zusammenhängen. Diese Cookies werden direkt von den externen Plattformen verwaltet.",
+                    en: "The website may use third-party cookies related to embedded content, such as YouTube videos. These cookies are managed directly by the external platforms."
                   })}
                 </p>
               </div>
@@ -129,7 +136,7 @@ export function CookiePolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Informações sobre o site', it: 'Informazioni sul sito', de: "Informationen über die Website" })}
+              {t({ pt: 'Informações sobre o site', it: 'Informazioni sul sito', de: "Informationen über die Website", en: "Information about the website" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -137,14 +144,16 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'O site documenta e promove as atividades educativas e sociais realizadas através do Centro Nossa Senhora Aparecida, projeto operativo da Fundação Betania ONLUS em Salvador de Bahia.',
                 it: 'Il sito documenta e promuove le attività educative e sociali svolte attraverso il Centro Nossa Senhora Aparecida, progetto operativo della Fundação Betania ONLUS a Salvador de Bahia.',
-                de: "Die Website dokumentiert und fördert die pädagogischen und sozialen Aktivitäten, die im Rahmen des Centro Nossa Senhora Aparecida durchgeführt werden, dem operativen Projekt der Fundação Betania ONLUS in Salvador de Bahia."
+                de: "Die Website dokumentiert und fördert die pädagogischen und sozialen Aktivitäten, die im Rahmen des Centro Nossa Senhora Aparecida durchgeführt werden, dem operativen Projekt der Fundação Betania ONLUS in Salvador de Bahia.",
+                en: "The website documents and promotes the educational and social activities carried out through the Centro Nossa Senhora Aparecida, an operational project of Fundação Betania ONLUS in Salvador de Bahia."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'A utilização dos cookies e das tecnologias descritas na presente Cookie Policy ocorre exclusivamente no âmbito das finalidades institucionais, informativas e de comunicação das atividades do Centro e da Fundação Betania ONLUS.',
                 it: 'L\'utilizzo dei cookie e delle tecnologie descritte nella presente Cookie Policy avviene esclusivamente nell\'ambito delle finalità istituzionali, informative e di comunicazione delle attività del Centro e della Fundação Betania ONLUS.',
-                de: "Die Verwendung der in dieser Cookie-Richtlinie beschriebenen Cookies und Technologien erfolgt ausschließlich im Rahmen der institutionellen, informativen und kommunikativen Zwecke der Tätigkeiten des Centro und der Fundação Betania ONLUS."
+                de: "Die Verwendung der in dieser Cookie-Richtlinie beschriebenen Cookies und Technologien erfolgt ausschließlich im Rahmen der institutionellen, informativen und kommunikativen Zwecke der Tätigkeiten des Centro und der Fundação Betania ONLUS.",
+                en: "The use of the cookies and technologies described in this Cookie Policy takes place exclusively within the institutional, informational and communication purposes of the activities of the Centro and Fundação Betania ONLUS."
               })}
             </p>
           </AnimatedSection>
@@ -164,14 +173,16 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'O site pode utilizar Google Analytics para coletar dados estatísticos agregados e anônimos relativos ao uso do site e ao tráfego das páginas.',
                 it: 'Il sito può utilizzare Google Analytics per raccogliere dati statistici aggregati e anonimi relativi all\'utilizzo del sito e al traffico delle pagine.',
-                de: "Die Website kann Google Analytics verwenden, um aggregierte und anonyme statistische Daten zur Nutzung der Website und zum Seitenverkehr zu erheben."
+                de: "Die Website kann Google Analytics verwenden, um aggregierte und anonyme statistische Daten zur Nutzung der Website und zum Seitenverkehr zu erheben.",
+                en: "The website may use Google Analytics to collect aggregated and anonymous statistical data regarding the use of the website and page traffic."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'As informações coletadas são utilizadas exclusivamente para melhorar os conteúdos e a experiência de navegação.',
                 it: 'Le informazioni raccolte vengono utilizzate esclusivamente per migliorare i contenuti e l\'esperienza di navigazione.',
-                de: "Die erhobenen Informationen werden ausschließlich zur Verbesserung der Inhalte und des Nutzererlebnisses verwendet."
+                de: "Die erhobenen Informationen werden ausschließlich zur Verbesserung der Inhalte und des Nutzererlebnisses verwendet.",
+                en: "The information collected is used exclusively to improve the content and browsing experience."
               })}
             </p>
           </AnimatedSection>
@@ -183,7 +194,7 @@ export function CookiePolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Vídeos YouTube incorporados', it: 'Video YouTube incorporati', de: "Eingebettete YouTube-Videos" })}
+              {t({ pt: 'Vídeos YouTube incorporados', it: 'Video YouTube incorporati', de: "Eingebettete YouTube-Videos", en: "Embedded YouTube videos" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -191,21 +202,24 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Algumas páginas do site incorporam vídeos provenientes de YouTube relativos às atividades do Centro Nossa Senhora Aparecida, aos projetos educativos, às iniciativas sociais, aos documentários e aos testemunhos publicados pela Fundação Betania ONLUS.',
                 it: 'Alcune pagine del sito incorporano video provenienti da YouTube relativi alle attività del Centro Nossa Senhora Aparecida, ai progetti educativi, alle iniziative sociali, ai documentari e alle testimonianze pubblicate dalla Fundação Betania ONLUS.',
-                de: "Einige Seiten der Website enthalten eingebettete YouTube-Videos zu den Aktivitäten des Centro Nossa Senhora Aparecida, zu Bildungsprojekten, sozialen Initiativen, Dokumentationen und Erfahrungsberichten, die von der Fundação Betania ONLUS veröffentlicht wurden."
+                de: "Einige Seiten der Website enthalten eingebettete YouTube-Videos zu den Aktivitäten des Centro Nossa Senhora Aparecida, zu Bildungsprojekten, sozialen Initiativen, Dokumentationen und Erfahrungsberichten, die von der Fundação Betania ONLUS veröffentlicht wurden.",
+                en: "Some pages of the website embed videos from YouTube related to the activities of the Centro Nossa Senhora Aparecida, educational projects, social initiatives, documentaries and testimonies published by Fundação Betania ONLUS."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed mb-6">
               {t({
                 pt: 'A visualização de tais conteúdos pode comportar a instalação de cookies técnicos ou de terceiros gerenciados diretamente por Google/YouTube de acordo com as respectivas políticas.',
                 it: 'La visualizzazione di tali contenuti può comportare l\'installazione di cookie tecnici o di terze parti gestiti direttamente da Google/YouTube secondo le rispettive policy.',
-                de: "Die Anzeige solcher Inhalte kann die Installation von technischen Cookies oder Cookies von Drittanbietern zur Folge haben, die direkt von Google/YouTube gemäß den jeweiligen Richtlinien verwaltet werden."
+                de: "Die Anzeige solcher Inhalte kann die Installation von technischen Cookies oder Cookies von Drittanbietern zur Folge haben, die direkt von Google/YouTube gemäß den jeweiligen Richtlinien verwaltet werden.",
+                en: "Viewing this content may involve the installation of technical or third-party cookies managed directly by Google/YouTube according to their respective policies."
               })}
             </p>
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Para mais informações sobre o tratamento dos dados efetuado por Google e YouTube, convidamos a consultar as respectivas informativas de privacy e cookies disponíveis nos sites dos respectivos fornecedores.',
                 it: 'Per maggiori informazioni sul trattamento dei dati effettuato da Google e YouTube si invita a consultare le relative informative privacy e cookie disponibili sui siti dei rispettivi fornitori.',
-                de: "Für weitere Informationen zur Datenverarbeitung durch Google und YouTube wird empfohlen, die entsprechenden Datenschutz- und Cookie-Hinweise auf den Websites der jeweiligen Anbieter einzusehen."
+                de: "Für weitere Informationen zur Datenverarbeitung durch Google und YouTube wird empfohlen, die entsprechenden Datenschutz- und Cookie-Hinweise auf den Websites der jeweiligen Anbieter einzusehen.",
+                en: "For more information on the data processing carried out by Google and YouTube, please refer to the relevant privacy and cookie notices available on the websites of the respective providers."
               })}
             </p>
           </AnimatedSection>
@@ -219,7 +233,7 @@ export function CookiePolicyPage() {
             <div className="flex items-center gap-3 mb-6">
               <Shield className="w-10 h-10 text-[var(--deep-blue)]" />
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)]">
-                {t({ pt: 'O que não utilizamos', it: 'Cosa non utilizziamo', de: "Was wir nicht verwenden" })}
+                {t({ pt: 'O que não utilizamos', it: 'Cosa non utilizziamo', de: "Was wir nicht verwenden", en: "What we do not use" })}
               </h2>
             </div>
           </AnimatedSection>
@@ -228,13 +242,14 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Este site NÃO utiliza:',
                 it: 'Questo sito NON utilizza:',
-                de: "Diese Website verwendet KEINE:"
+                de: "Diese Website verwendet KEINE:",
+                en: "This website does NOT use:"
               })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 ml-4 mb-6">
-              <li>{t({ pt: 'cookies de perfilamento publicitário', it: 'cookie di profilazione pubblicitaria', de: "Cookies zur Werbeprofilierung" })}</li>
-              <li>{t({ pt: 'sistemas de marketing automatizado', it: 'sistemi di marketing automatizzato', de: "automatisierte Marketingsysteme" })}</li>
-              <li>{t({ pt: 'sistemas avançados de profilamento de usuários', it: 'sistemi avanzati di profilazione utenti', de: "fortschrittliche Systeme zur Nutzerprofilierung" })}</li>
+              <li>{t({ pt: 'cookies de perfilamento publicitário', it: 'cookie di profilazione pubblicitaria', de: "Cookies zur Werbeprofilierung", en: "advertising profiling cookies" })}</li>
+              <li>{t({ pt: 'sistemas de marketing automatizado', it: 'sistemi di marketing automatizzato', de: "automatisierte Marketingsysteme", en: "automated marketing systems" })}</li>
+              <li>{t({ pt: 'sistemas avançados de profilamento de usuários', it: 'sistemi avanzati di profilazione utenti', de: "fortschrittliche Systeme zur Nutzerprofilierung", en: "advanced user profiling systems" })}</li>
             </ul>
           </AnimatedSection>
         </div>
@@ -247,7 +262,7 @@ export function CookiePolicyPage() {
             <div className="flex items-center gap-3 mb-6">
               <Settings className="w-10 h-10 text-[var(--warm-orange)]" />
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)]">
-                {t({ pt: 'Gestão de cookies', it: 'Gestione dei cookie', de: "Verwaltung der Cookies" })}
+                {t({ pt: 'Gestão de cookies', it: 'Gestione dei cookie', de: "Verwaltung der Cookies", en: "Managing cookies" })}
               </h2>
             </div>
           </AnimatedSection>
@@ -256,7 +271,8 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'O usuário pode gerenciar ou desabilitar os cookies diretamente através das configurações do navegador.',
                 it: 'L\'utente può gestire o disabilitare i cookie direttamente attraverso le impostazioni del proprio browser.',
-                de: "Der Nutzer kann Cookies direkt über die Einstellungen seines Browsers verwalten oder deaktivieren."
+                de: "Der Nutzer kann Cookies direkt über die Einstellungen seines Browsers verwalten oder deaktivieren.",
+                en: "The user can manage or disable cookies directly through their browser settings."
               })}
             </p>
 
@@ -265,7 +281,8 @@ export function CookiePolicyPage() {
                 {t({
                   pt: 'Como gerenciar cookies nos principais navegadores:',
                   it: 'Come gestire i cookie nei principali browser:',
-                  de: "So verwalten Sie Cookies in den gängigsten Browsern:"
+                  de: "So verwalten Sie Cookies in den gängigsten Browsern:",
+                  en: "How to manage cookies in the main browsers:"
                 })}
               </p>
 
@@ -273,22 +290,26 @@ export function CookiePolicyPage() {
                 <p><strong>Google Chrome:</strong> {t({
                   pt: 'Configurações → Privacidade e segurança → Cookies e outros dados do site',
                   it: 'Impostazioni → Privacy e sicurezza → Cookie e altri dati dei siti',
-                  de: "Einstellungen → Datenschutz und Sicherheit → Cookies und andere Websitedaten"
+                  de: "Einstellungen → Datenschutz und Sicherheit → Cookies und andere Websitedaten",
+                  en: "Settings → Privacy and security → Cookies and other site data"
                 })}</p>
                 <p><strong>Mozilla Firefox:</strong> {t({
                   pt: 'Opções → Privacidade e segurança → Cookies e dados de sites',
                   it: 'Opzioni → Privacy e sicurezza → Cookie e dati dei siti',
-                  de: "Optionen → Datenschutz & Sicherheit → Cookies und Website-Daten"
+                  de: "Optionen → Datenschutz & Sicherheit → Cookies und Website-Daten",
+                  en: "Options → Privacy and security → Cookies and site data"
                 })}</p>
                 <p><strong>Safari:</strong> {t({
                   pt: 'Preferências → Privacidade → Cookies e dados de websites',
                   it: 'Preferenze → Privacy → Cookie e dati dei siti web',
-                  de: "Einstellungen → Datenschutz → Cookies und Website-Daten"
+                  de: "Einstellungen → Datenschutz → Cookies und Website-Daten",
+                  en: "Preferences → Privacy → Cookies and website data"
                 })}</p>
                 <p><strong>Microsoft Edge:</strong> {t({
                   pt: 'Configurações → Cookies e permissões do site',
                   it: 'Impostazioni → Cookie e autorizzazioni sito',
-                  de: "Einstellungen → Cookies und Websiteberechtigungen"
+                  de: "Einstellungen → Cookies und Websiteberechtigungen",
+                  en: "Settings → Cookies and site permissions"
                 })}</p>
               </div>
             </div>
@@ -297,7 +318,8 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'A desativação dos cookies técnicos pode comprometer o correto funcionamento de algumas funcionalidades do site.',
                 it: 'La disattivazione dei cookie tecnici potrebbe compromettere il corretto funzionamento di alcune funzionalità del sito.',
-                de: "Die Deaktivierung technischer Cookies kann die einwandfreie Funktion einiger Funktionen der Website beeinträchtigen."
+                de: "Die Deaktivierung technischer Cookies kann die einwandfreie Funktion einiger Funktionen der Website beeinträchtigen.",
+                en: "Disabling technical cookies may compromise the correct functioning of some features of the website."
               })}
             </p>
           </AnimatedSection>
@@ -309,7 +331,7 @@ export function CookiePolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Duração dos cookies', it: 'Durata dei cookie', de: "Speicherdauer der Cookies" })}
+              {t({ pt: 'Duração dos cookies', it: 'Durata dei cookie', de: "Speicherdauer der Cookies", en: "Cookie duration" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -317,33 +339,36 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Os cookies utilizados podem ser:',
                 it: 'I cookie utilizzati possono essere:',
-                de: "Die verwendeten Cookies können sein:"
+                de: "Die verwendeten Cookies können sein:",
+                en: "The cookies used may be:"
               })}
             </p>
 
             <div className="space-y-6">
               <div className="border-l-4 border-[var(--soft-green)] pl-6">
                 <h3 className="text-xl text-[var(--deep-blue)] mb-2">
-                  {t({ pt: 'Cookies de sessão', it: 'Cookie di sessione', de: "Sitzungs-Cookies" })}
+                  {t({ pt: 'Cookies de sessão', it: 'Cookie di sessione', de: "Sitzungs-Cookies", en: "Session cookies" })}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   {t({
                     pt: 'São eliminados automaticamente quando o navegador é fechado.',
                     it: 'Vengono eliminati automaticamente alla chiusura del browser.',
-                    de: "Sie werden automatisch gelöscht, sobald der Browser geschlossen wird."
+                    de: "Sie werden automatisch gelöscht, sobald der Browser geschlossen wird.",
+                    en: "They are automatically deleted when the browser is closed."
                   })}
                 </p>
               </div>
 
               <div className="border-l-4 border-[var(--warm-orange)] pl-6">
                 <h3 className="text-xl text-[var(--deep-blue)] mb-2">
-                  {t({ pt: 'Cookies persistentes', it: 'Cookie persistenti', de: "Permanente Cookies" })}
+                  {t({ pt: 'Cookies persistentes', it: 'Cookie persistenti', de: "Permanente Cookies", en: "Persistent cookies" })}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   {t({
                     pt: 'Permanecem armazenados no dispositivo até a data de expiração ou até serem eliminados manualmente pelo usuário.',
                     it: 'Rimangono memorizzati sul dispositivo fino alla data di scadenza o fino a quando non vengono eliminati manualmente dall\'utente.',
-                    de: "Sie bleiben bis zum Ablaufdatum oder bis zur manuellen Löschung durch den Nutzer auf dem Gerät gespeichert."
+                    de: "Sie bleiben bis zum Ablaufdatum oder bis zur manuellen Löschung durch den Nutzer auf dem Gerät gespeichert.",
+                    en: "They remain stored on the device until their expiry date or until they are manually deleted by the user."
                   })}
                 </p>
               </div>
@@ -357,7 +382,7 @@ export function CookiePolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Direitos do usuário', it: 'Diritti dell\'utente', de: "Rechte des Nutzers" })}
+              {t({ pt: 'Direitos do usuário', it: 'Diritti dell\'utente', de: "Rechte des Nutzers", en: "User rights" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -365,21 +390,23 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'O usuário tem o direito de:',
                 it: 'L\'utente ha il diritto di:',
-                de: "Der Nutzer hat das Recht:"
+                de: "Der Nutzer hat das Recht:",
+                en: "The user has the right to:"
               })}
             </p>
             <ul className="list-disc list-inside space-y-2 text-lg text-gray-700 ml-4 mb-6">
-              <li>{t({ pt: 'aceitar ou recusar o uso de cookies', it: 'accettare o rifiutare l\'uso dei cookie', de: "die Verwendung von Cookies zu akzeptieren oder abzulehnen" })}</li>
-              <li>{t({ pt: 'modificar as preferências a qualquer momento', it: 'modificare le preferenze in qualsiasi momento', de: "die Einstellungen jederzeit zu ändern" })}</li>
-              <li>{t({ pt: 'eliminar os cookies armazenados no navegador', it: 'eliminare i cookie memorizzati nel browser', de: "die im Browser gespeicherten Cookies zu löschen" })}</li>
-              <li>{t({ pt: 'solicitar informações sobre os cookies utilizados', it: 'richiedere informazioni sui cookie utilizzati', de: "Informationen über die verwendeten Cookies anzufordern" })}</li>
+              <li>{t({ pt: 'aceitar ou recusar o uso de cookies', it: 'accettare o rifiutare l\'uso dei cookie', de: "die Verwendung von Cookies zu akzeptieren oder abzulehnen", en: "accept or refuse the use of cookies" })}</li>
+              <li>{t({ pt: 'modificar as preferências a qualquer momento', it: 'modificare le preferenze in qualsiasi momento', de: "die Einstellungen jederzeit zu ändern", en: "change their preferences at any time" })}</li>
+              <li>{t({ pt: 'eliminar os cookies armazenados no navegador', it: 'eliminare i cookie memorizzati nel browser', de: "die im Browser gespeicherten Cookies zu löschen", en: "delete cookies stored in the browser" })}</li>
+              <li>{t({ pt: 'solicitar informações sobre os cookies utilizados', it: 'richiedere informazioni sui cookie utilizzati', de: "Informationen über die verwendeten Cookies anzufordern", en: "request information about the cookies used" })}</li>
             </ul>
 
             <p className="text-lg text-gray-800 leading-relaxed">
               {t({
                 pt: 'Para qualquer dúvida ou solicitação relacionada ao uso de cookies, entre em contato através dos dados indicados na página Privacy Policy.',
                 it: 'Per qualsiasi dubbio o richiesta relativa all\'utilizzo dei cookie, è possibile contattarci tramite i recapiti indicati nella pagina Privacy Policy.',
-                de: "Bei Fragen oder Anliegen zur Verwendung von Cookies können Sie uns über die auf der Seite Datenschutzerklärung angegebenen Kontaktdaten erreichen."
+                de: "Bei Fragen oder Anliegen zur Verwendung von Cookies können Sie uns über die auf der Seite Datenschutzerklärung angegebenen Kontaktdaten erreichen.",
+                en: "For any doubts or requests regarding the use of cookies, you can contact us through the details provided on the Privacy Policy page."
               })}
             </p>
           </AnimatedSection>
@@ -391,7 +418,7 @@ export function CookiePolicyPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'Atualizações da Cookie Policy', it: 'Aggiornamenti della Cookie Policy', de: "Aktualisierungen der Cookie-Richtlinie" })}
+              {t({ pt: 'Atualizações da Cookie Policy', it: 'Aggiornamenti della Cookie Policy', de: "Aktualisierungen der Cookie-Richtlinie", en: "Updates to the Cookie Policy" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
@@ -399,7 +426,8 @@ export function CookiePolicyPage() {
               {t({
                 pt: 'Esta política de cookies pode ser atualizada periodicamente. Recomendamos verificar esta página regularmente para estar sempre informado sobre como utilizamos os cookies.',
                 it: 'Questa cookie policy può essere aggiornata periodicamente. Si consiglia di verificare regolarmente questa pagina per essere sempre informati su come utilizziamo i cookie.',
-                de: "Diese Cookie-Richtlinie kann regelmäßig aktualisiert werden. Wir empfehlen, diese Seite regelmäßig zu überprüfen, um stets darüber informiert zu sein, wie wir Cookies verwenden."
+                de: "Diese Cookie-Richtlinie kann regelmäßig aktualisiert werden. Wir empfehlen, diese Seite regelmäßig zu überprüfen, um stets darüber informiert zu sein, wie wir Cookies verwenden.",
+                en: "This cookie policy may be updated periodically. We recommend checking this page regularly to stay informed about how we use cookies."
               })}
             </p>
 
@@ -408,7 +436,8 @@ export function CookiePolicyPage() {
                 {t({
                   pt: 'Para mais informações sobre o tratamento de dados pessoais, consulte nossa',
                   it: 'Per maggiori informazioni sul trattamento dei dati personali, consultare la nostra',
-                  de: "Für weitere Informationen zur Verarbeitung personenbezogener Daten lesen Sie bitte unsere"
+                  de: "Für weitere Informationen zur Verarbeitung personenbezogener Daten lesen Sie bitte unsere",
+                  en: "For more information on the processing of personal data, please refer to our"
                 })}
               </p>
               <Link

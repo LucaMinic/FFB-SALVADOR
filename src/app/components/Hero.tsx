@@ -37,31 +37,31 @@ export function Hero() {
   const images = [
     {
       src: heroImage1,
-      alt: t({ pt: 'Crianças da missão', it: 'Bambini della missione', de: "Kinder der Mission" }),
-      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.', de: "Tag für Tag wird hier das Leben gemeinsam gestaltet." }),
+      alt: t({ pt: 'Crianças da missão', it: 'Bambini della missione', de: "Kinder der Mission", en: "Children of the mission" }),
+      text: t({ pt: 'A cada dia, aqui, a vida se constrói juntos.', it: 'Ogni giorno, qui, la vita si costruisce insieme.', de: "Tag für Tag wird hier das Leben gemeinsam gestaltet.", en: "Every day, here, life is built together." }),
       focus: 'center 75%'
     },
     {
       src: heroImage2,
-      alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale', de: "Institutioneller Besuch" }),
-      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.', de: "An diesem Ort findet jedes Kind Fürsorge, Aufmerksamkeit und eine Zukunftschance." }),
+      alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale', de: "Institutioneller Besuch", en: "Institutional visit" }),
+      text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.', de: "An diesem Ort findet jedes Kind Fürsorge, Aufmerksamkeit und eine Zukunftschance.", en: "In this place, every child finds care, attention and a chance for the future." }),
       focus: 'center 40%'
     },
     {
       src: heroImage3,
-      alt: t({ pt: 'Crianças sorrindo', it: 'Bambini sorridenti', de: "Lächelnde Kinder" }),
-      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.', de: "Aufnehmen bedeutet, an der Seite zu stehen, zu teilen und gemeinsam zu wachsen." }),
+      alt: t({ pt: 'Crianças sorrindo', it: 'Bambini sorridenti', de: "Lächelnde Kinder", en: "Smiling children" }),
+      text: t({ pt: 'Acolher significa estar ao lado, compartilhar e crescer juntos.', it: 'Accogliere significa stare accanto, condividere e crescere insieme.', de: "Aufnehmen bedeutet, an der Seite zu stehen, zu teilen und gemeinsam zu wachsen.", en: "Welcoming means being close, sharing and growing together." }),
       focus: 'center 35%'
     },
     {
       src: heroImage4,
-      alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale', de: "Institutionelle Begegnung" }),
-      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.', de: "Wo Not herrscht, entsteht eine Präsenz, die zum Zuhause wird." }),
+      alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale', de: "Institutionelle Begegnung", en: "Institutional meeting" }),
+      text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.', de: "Wo Not herrscht, entsteht eine Präsenz, die zum Zuhause wird.", en: "Where there is need, a presence is born that becomes home." }),
       focus: 'center 35%'
     },
     {
       src: heroImage5,
-      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Bruderschaft" }),
+      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Bruderschaft", en: "The fraternity" }),
       text: '',
       focus: 'center 25%'
     },
@@ -123,7 +123,8 @@ export function Hero() {
                 {t({
                   pt: 'Aqui em Salvador da Bahia, através do Centro Nossa Senhora Aparecida, acolhemos e acompanhamos diariamente crianças e famílias em situação de vulnerabilidade.',
                   it: 'A Salvador de Bahia, attraverso il Centro Nossa Senhora Aparecida, accogliamo e accompagniamo ogni giorno bambini e famiglie in difficoltà.',
-                  de: "Hier in Salvador de Bahia nehmen wir durch das Centro Nossa Senhora Aparecida jeden Tag Kinder und Familien in schwierigen Lebenslagen auf und begleiten sie."
+                  de: "Hier in Salvador de Bahia nehmen wir durch das Centro Nossa Senhora Aparecida jeden Tag Kinder und Familien in schwierigen Lebenslagen auf und begleiten sie.",
+                  en: "In Salvador de Bahia, through the Centro Nossa Senhora Aparecida, we welcome and accompany children and families in difficulty every day."
                 })}
               </p>
 
@@ -131,7 +132,8 @@ export function Hero() {
                 {t({
                   pt: 'Todos os dias partilhamos a vida com quem mais precisa, oferecendo cuidado, educação e uma oportunidade concreta de futuro.',
                   it: 'Ogni giorno condividiamo la vita con chi ha più bisogno, offrendo cura, educazione e una possibilità concreta di futuro.',
-                  de: "Jeden Tag teilen wir das Leben mit denen, die es am meisten brauchen, und schenken ihnen Fürsorge, Bildung und eine echte Zukunftschance."
+                  de: "Jeden Tag teilen wir das Leben mit denen, die es am meisten brauchen, und schenken ihnen Fürsorge, Bildung und eine echte Zukunftschance.",
+                  en: "Every day we share life with those most in need, offering care, education and a real chance for the future."
                 })}
               </p>
             </div>

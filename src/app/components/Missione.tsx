@@ -33,11 +33,12 @@ export function Missione() {
               {t({
                 pt: 'A Fundação Betânia Onlus está presente em Salvador da Bahia para compartilhar a vida com os menores e com suas famílias, construindo relações e acompanhando cada pessoa em seu próprio caminho de crescimento.',
                 it: 'La Fundação Betânia Onlus è presente a Salvador de Bahia per condividere la vita con i più piccoli e con le loro famiglie, costruendo relazioni e accompagnando ogni persona nel proprio cammino di crescita.',
-                de: "Die Fundação Betânia Onlus ist in Salvador de Bahia präsent, um das Leben mit den Kleinsten und ihren Familien zu teilen, Beziehungen aufzubauen und jeden Menschen auf seinem Weg des Wachsens zu begleiten."
+                de: "Die Fundação Betânia Onlus ist in Salvador de Bahia präsent, um das Leben mit den Kleinsten und ihren Familien zu teilen, Beziehungen aufzubauen und jeden Menschen auf seinem Weg des Wachsens zu begleiten.",
+                en: "Fundação Betânia Onlus is present in Salvador de Bahia to share life with the little ones and their families, building relationships and accompanying each person on their own path of growth."
               })}
             </p>
 
-            <Button variant="secondary" to="/la-fundacao">{t({ pt: 'Conheça a Fundação Betânia', it: 'Scopri la Fundação Betânia', de: "Entdecken Sie die Fundação Betânia" })}</Button>
+            <Button variant="secondary" to="/la-fundacao">{t({ pt: 'Conheça a Fundação Betânia', it: 'Scopri la Fundação Betânia', de: "Entdecken Sie die Fundação Betânia", en: "Discover Fundação Betânia" })}</Button>
           </AnimatedSection>
         </div>
       </div>

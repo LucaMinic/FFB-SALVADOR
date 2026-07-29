@@ -26,32 +26,32 @@ export function ValentinaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina', de: "Wir helfen Valentina" })}
+              {t({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina', de: "Wir helfen Valentina", en: "Let's Help Valentina" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-2xl md:text-3xl mb-6 leading-relaxed">
-              {t({ pt: 'Uma história concreta de fragilidade, cuidado e esperança em Salvador de Bahia.', it: 'Una storia concreta di fragilità, cura e speranza a Salvador de Bahia.', de: "Eine wahre Geschichte von Not, Fürsorge und Hoffnung in Salvador de Bahia." })}
+              {t({ pt: 'Uma história concreta de fragilidade, cuidado e esperança em Salvador de Bahia.', it: 'Una storia concreta di fragilità, cura e speranza a Salvador de Bahia.', de: "Eine wahre Geschichte von Not, Fürsorge und Hoffnung in Salvador de Bahia.", en: "A real story of vulnerability, care and hope in Salvador de Bahia." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <p className="text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto opacity-90">
-              {t({ pt: 'Uma pequena iniciativa nascida para ajudar Valentina e a sua família a viver em condições mais seguras e dignas.', it: 'Una piccola iniziativa nata per aiutare Valentina e la sua famiglia a vivere in condizioni più sicure e dignitose.', de: "Eine kleine Initiative, die entstand, um Valentina und ihrer Familie zu helfen, unter sichereren und würdigeren Bedingungen zu leben." })}
+              {t({ pt: 'Uma pequena iniciativa nascida para ajudar Valentina e a sua família a viver em condições mais seguras e dignas.', it: 'Una piccola iniziativa nata per aiutare Valentina e la sua famiglia a vivere in condizioni più sicure e dignitose.', de: "Eine kleine Initiative, die entstand, um Valentina und ihrer Familie zu helfen, unter sichereren und würdigeren Bedingungen zu leben.", en: "A small initiative created to help Valentina and her family live in safer, more dignified conditions." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" to="/il-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.5}>
             <ShareButtons
-              title={t({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina', de: "Wir helfen Valentina" })}
+              title={t({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina', de: "Wir helfen Valentina", en: "Let's Help Valentina" })}
               variant="dark"
               className="mt-10"
             />
@@ -67,7 +67,7 @@ export function ValentinaPage() {
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img loading="lazy"
                   src={storyImg}
-                  alt={t({ pt: 'Valentina e a sua família', it: 'Valentina e la sua famiglia', de: "Valentina und ihre Familie" })}
+                  alt={t({ pt: 'Valentina e a sua família', it: 'Valentina e la sua famiglia', de: "Valentina und ihre Familie", en: "Valentina and her family" })}
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -76,23 +76,23 @@ export function ValentinaPage() {
             <AnimatedSection delay={0.2}>
               <div>
                 <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-                  {t({ pt: 'A história de Valentina', it: 'La storia di Valentina', de: "Die Geschichte von Valentina" })}
+                  {t({ pt: 'A história de Valentina', it: 'La storia di Valentina', de: "Die Geschichte von Valentina", en: "Valentina's story" })}
                 </h2>
                 <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    {t({ pt: 'Valentina é uma menina de um ano que frequenta a nossa creche em Salvador de Bahia desde quando tinha cinco meses.', it: 'Valentina è una bambina di un anno che frequenta il nostro asilo a Salvador de Bahia sin da quando aveva cinque mesi.', de: "Valentina ist ein einjähriges Mädchen, das seit ihrem fünften Lebensmonat unsere Kita in Salvador de Bahia besucht." })}
+                    {t({ pt: 'Valentina é uma menina de um ano que frequenta a nossa creche em Salvador de Bahia desde quando tinha cinco meses.', it: 'Valentina è una bambina di un anno che frequenta il nostro asilo a Salvador de Bahia sin da quando aveva cinque mesi.', de: "Valentina ist ein einjähriges Mädchen, das seit ihrem fünften Lebensmonat unsere Kita in Salvador de Bahia besucht.", en: "Valentina is a one-year-old girl who has attended our nursery school in Salvador de Bahia since she was five months old." })}
                   </p>
                   <p>
-                    {t({ pt: 'Vive com a sua família numa situação de forte fragilidade social.', it: 'Vive con la sua famiglia in una situazione di forte fragilità sociale.', de: "Sie lebt mit ihrer Familie in einer Situation großer sozialer Vulnerabilität." })}
+                    {t({ pt: 'Vive com a sua família numa situação de forte fragilidade social.', it: 'Vive con la sua famiglia in una situazione di forte fragilità sociale.', de: "Sie lebt mit ihrer Familie in einer Situation großer sozialer Vulnerabilität.", en: "She lives with her family in a situation of severe social vulnerability." })}
                   </p>
                   <p>
-                    {t({ pt: 'Nos últimos meses foi internada várias vezes no hospital por broncopneumonia.', it: 'Negli ultimi mesi è stata ricoverata più volte in ospedale per broncopolmonite.', de: "In den letzten Monaten musste sie mehrmals wegen einer Bronchopneumonie ins Krankenhaus eingeliefert werden." })}
+                    {t({ pt: 'Nos últimos meses foi internada várias vezes no hospital por broncopneumonia.', it: 'Negli ultimi mesi è stata ricoverata più volte in ospedale per broncopolmonite.', de: "In den letzten Monaten musste sie mehrmals wegen einer Bronchopneumonie ins Krankenhaus eingeliefert werden.", en: "In recent months she has been hospitalised several times for bronchopneumonia." })}
                   </p>
                   <p>
-                    {t({ pt: 'Durante algumas visitas domiciliárias, as irmãs e os educadores do Centro descobriram que a família cozinhava diariamente no fogo aceso perto de casa, porque não tinha possibilidade de comprar as botijas de gás.', it: 'Durante alcune visite domiciliari, le sorelle e gli educatori del Centro hanno scoperto che la famiglia cucinava quotidianamente sul fuoco acceso vicino alla casa, perché non aveva la possibilità di acquistare le bombole del gas.', de: "Bei einigen Hausbesuchen entdeckten die Schwestern und Erzieher des Zentrums, dass die Familie täglich auf einem offenen Feuer nahe dem Haus kochte, weil sie sich keine Gasflaschen leisten konnte." })}
+                    {t({ pt: 'Durante algumas visitas domiciliárias, as irmãs e os educadores do Centro descobriram que a família cozinhava diariamente no fogo aceso perto de casa, porque não tinha possibilidade de comprar as botijas de gás.', it: 'Durante alcune visite domiciliari, le sorelle e gli educatori del Centro hanno scoperto che la famiglia cucinava quotidianamente sul fuoco acceso vicino alla casa, perché non aveva la possibilità di acquistare le bombole del gas.', de: "Bei einigen Hausbesuchen entdeckten die Schwestern und Erzieher des Zentrums, dass die Familie täglich auf einem offenen Feuer nahe dem Haus kochte, weil sie sich keine Gasflaschen leisten konnte.", en: "During some home visits, the Centre's sisters and educators discovered that the family cooked every day over an open fire near the house, because they could not afford to buy gas cylinders." })}
                   </p>
                   <p>
-                    {t({ pt: 'A fumaça constante e as condições ambientais estavam a comprometer seriamente a saúde da menina.', it: 'Il fumo costante e le condizioni ambientali stavano compromettendo seriamente la salute della bambina.', de: "Der ständige Rauch und die Umweltbedingungen gefährdeten ernsthaft die Gesundheit des kleinen Mädchens." })}
+                    {t({ pt: 'A fumaça constante e as condições ambientais estavam a comprometer seriamente a saúde da menina.', it: 'Il fumo costante e le condizioni ambientali stavano compromettendo seriamente la salute della bambina.', de: "Der ständige Rauch und die Umweltbedingungen gefährdeten ernsthaft die Gesundheit des kleinen Mädchens.", en: "The constant smoke and the living conditions were seriously affecting the child's health." })}
                   </p>
                 </div>
               </div>
@@ -106,26 +106,26 @@ export function ValentinaPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-10">
-              {t({ pt: 'Uma ajuda concreta nascida da escuta', it: "Un aiuto concreto nato dall'ascolto", de: "Konkrete Hilfe, entstanden aus dem Zuhören" })}
+              {t({ pt: 'Uma ajuda concreta nascida da escuta', it: "Un aiuto concreto nato dall'ascolto", de: "Konkrete Hilfe, entstanden aus dem Zuhören", en: "Concrete help born from listening" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-12">
               <p>
-                {t({ pt: 'Desta situação concreta nasceu a iniciativa "Ajudamos Valentina".', it: 'Da questa situazione concreta è nata l\'iniziativa "Aiutiamo Valentina".', de: "Aus dieser konkreten Situation entstand die Initiative \"Wir helfen Valentina\"." })}
+                {t({ pt: 'Desta situação concreta nasceu a iniciativa "Ajudamos Valentina".', it: 'Da questa situazione concreta è nata l\'iniziativa "Aiutiamo Valentina".', de: "Aus dieser konkreten Situation entstand die Initiative \"Wir helfen Valentina\".", en: "This specific situation gave rise to the \"Let's Help Valentina\" initiative." })}
               </p>
               <p>
-                {t({ pt: 'O objetivo era simples mas fundamental: permitir à família cozinhar de forma segura, evitando a fumaça do fogo aceso perto de casa.', it: 'L\'obiettivo era semplice ma fondamentale: permettere alla famiglia di cucinare in modo sicuro, evitando il fumo del fuoco acceso vicino alla casa.', de: "Das Ziel war einfach, aber grundlegend: der Familie ein sicheres Kochen zu ermöglichen und den Rauch des offenen Feuers nahe dem Haus zu vermeiden." })}
+                {t({ pt: 'O objetivo era simples mas fundamental: permitir à família cozinhar de forma segura, evitando a fumaça do fogo aceso perto de casa.', it: 'L\'obiettivo era semplice ma fondamentale: permettere alla famiglia di cucinare in modo sicuro, evitando il fumo del fuoco acceso vicino alla casa.', de: "Das Ziel war einfach, aber grundlegend: der Familie ein sicheres Kochen zu ermöglichen und den Rauch des offenen Feuers nahe dem Haus zu vermeiden.", en: "The goal was simple but essential: to allow the family to cook safely, avoiding the smoke from the open fire near the house." })}
               </p>
               <p>
-                {t({ pt: 'Graças à generosidade de tantas pessoas, foi possível apoiar a família através da compra das botijas de gás e, posteriormente, de um novo fogão.', it: 'Grazie alla generosità di tante persone, è stato possibile sostenere la famiglia attraverso l\'acquisto delle bombole del gas e successivamente di una nuova cucina.', de: "Dank der Großzügigkeit vieler Menschen konnte die Familie durch den Kauf von Gasflaschen und später eines neuen Herds unterstützt werden." })}
+                {t({ pt: 'Graças à generosidade de tantas pessoas, foi possível apoiar a família através da compra das botijas de gás e, posteriormente, de um novo fogão.', it: 'Grazie alla generosità di tante persone, è stato possibile sostenere la famiglia attraverso l\'acquisto delle bombole del gas e successivamente di una nuova cucina.', de: "Dank der Großzügigkeit vieler Menschen konnte die Familie durch den Kauf von Gasflaschen und später eines neuen Herds unterstützt werden.", en: "Thanks to the generosity of so many people, it was possible to support the family by buying gas cylinders and later a new cooker." })}
               </p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="bg-gradient-to-br from-[var(--beige)] to-white p-10 rounded-2xl border-l-4 border-[var(--warm-orange)] shadow-lg">
               <p className="text-2xl text-[var(--deep-blue)] italic text-center">
-                {t({ pt: '"Cada pequeno gesto pode mudar concretamente a vida de uma família."', it: '"Ogni piccolo gesto può cambiare concretamente la vita di una famiglia."', de: "\"Jede kleine Geste kann das Leben einer Familie ganz konkret verändern.\"" })}
+                {t({ pt: '"Cada pequeno gesto pode mudar concretamente a vida de uma família."', it: '"Ogni piccolo gesto può cambiare concretamente la vita di una famiglia."', de: "\"Jede kleine Geste kann das Leben einer Familie ganz konkret verändern.\"", en: "\"Every small gesture can concretely change a family's life.\"" })}
               </p>
             </div>
           </AnimatedSection>
@@ -151,18 +151,18 @@ export function ValentinaPage() {
               <div className="p-8">
                 {/* Title */}
                 <h3 className="text-3xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Ajudamos Valentina – Salvador de Bahia', it: 'Aiutiamo Valentina – Salvador de Bahia', de: "Wir helfen Valentina – Salvador de Bahia" })}
+                  {t({ pt: 'Ajudamos Valentina – Salvador de Bahia', it: 'Aiutiamo Valentina – Salvador de Bahia', de: "Wir helfen Valentina – Salvador de Bahia", en: "Let's Help Valentina – Salvador de Bahia" })}
                 </h3>
 
                 {/* Subtitle */}
                 <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                  {t({ pt: 'Ajudamos Valentina a estar bem', it: 'Aiutiamo Valentina a stare bene', de: "Wir helfen Valentina, damit es ihr gut geht" })}
+                  {t({ pt: 'Ajudamos Valentina a estar bem', it: 'Aiutiamo Valentina a stare bene', de: "Wir helfen Valentina, damit es ihr gut geht", en: "Let's help Valentina thrive" })}
                 </p>
 
                 {/* Progress Bar */}
                 <div className="mb-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-600">{t({ pt: 'Progresso', it: 'Progresso', de: "Fortschritt" })}</span>
+                    <span className="text-sm text-gray-600">{t({ pt: 'Progresso', it: 'Progresso', de: "Fortschritt", en: "Progress" })}</span>
                     <span className="text-lg font-medium text-white bg-green-600 px-3 py-1 rounded">
                       177%
                     </span>
@@ -181,26 +181,26 @@ export function ValentinaPage() {
                     <p className="text-3xl text-[var(--deep-blue)] mb-2">
                       €1.770
                     </p>
-                    <p className="text-sm text-gray-600">{t({ pt: 'Arrecadados', it: 'Raccolti', de: "Gesammelt" })}</p>
+                    <p className="text-sm text-gray-600">{t({ pt: 'Arrecadados', it: 'Raccolti', de: "Gesammelt", en: "Raised" })}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-3xl text-[var(--deep-blue)] mb-2">
                       €1.000
                     </p>
-                    <p className="text-sm text-gray-600">{t({ pt: 'Objetivo', it: 'Obiettivo', de: "Ziel" })}</p>
+                    <p className="text-sm text-gray-600">{t({ pt: 'Objetivo', it: 'Obiettivo', de: "Ziel", en: "Goal" })}</p>
                   </div>
                   <div className="text-center">
                     <p className="text-xl text-green-600 mb-2">
-                      {t({ pt: 'Concluída', it: 'Conclusa', de: "Abgeschlossen" })}
+                      {t({ pt: 'Concluída', it: 'Conclusa', de: "Abgeschlossen", en: "Completed" })}
                     </p>
-                    <p className="text-sm text-gray-600">{t({ pt: 'Estado', it: 'Stato', de: "Status" })}</p>
+                    <p className="text-sm text-gray-600">{t({ pt: 'Estado', it: 'Stato', de: "Status", en: "Status" })}</p>
                   </div>
                 </div>
 
                 {/* Success Message */}
                 <div className="mt-6 bg-green-50 border border-green-200 p-4 rounded-xl">
                   <p className="text-green-800 text-center">
-                    {t({ pt: '✓ Objetivo atingido e superado! Obrigado a todos os que contribuíram.', it: '✓ Obiettivo raggiunto e superato! Grazie a tutti coloro che hanno contribuito.', de: "✓ Ziel erreicht und übertroffen! Danke an alle, die dazu beigetragen haben." })}
+                    {t({ pt: '✓ Objetivo atingido e superado! Obrigado a todos os que contribuíram.', it: '✓ Obiettivo raggiunto e superato! Grazie a tutti coloro che hanno contribuito.', de: "✓ Ziel erreicht und übertroffen! Danke an alle, die dazu beigetragen haben.", en: "✓ Goal reached and exceeded! Thank you to everyone who contributed." })}
                   </p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export function ValentinaPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Atualizações', it: 'Aggiornamenti', de: "Aktuelles" })}
+              {t({ pt: 'Atualizações', it: 'Aggiornamenti', de: "Aktuelles", en: "Updates" })}
             </h2>
           </AnimatedSection>
 
@@ -229,13 +229,13 @@ export function ValentinaPage() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-[var(--deep-blue)] font-medium mb-2">
-                    {t({ pt: '14 de novembro de 2023', it: '14 novembre 2023', de: "14. November 2023" })}
+                    {t({ pt: '14 de novembro de 2023', it: '14 novembre 2023', de: "14. November 2023", en: "14 November 2023" })}
                   </p>
                   <div className="bg-white p-6 rounded-2xl shadow-lg">
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      {t({ pt: 'Graças à generosidade de muitos, em poucos dias conseguimos recolher o necessário para ajudar Valentina e a sua família.', it: 'Grazie alla generosità di molti, in pochi giorni siamo riusciti a raccogliere quanto necessario per aiutare Valentina e la sua famiglia.', de: "Dank der Großzügigkeit vieler haben wir es in wenigen Tagen geschafft, die nötige Summe zu sammeln, um Valentina und ihrer Familie zu helfen." })}
+                      {t({ pt: 'Graças à generosidade de muitos, em poucos dias conseguimos recolher o necessário para ajudar Valentina e a sua família.', it: 'Grazie alla generosità di molti, in pochi giorni siamo riusciti a raccogliere quanto necessario per aiutare Valentina e la sua famiglia.', de: "Dank der Großzügigkeit vieler haben wir es in wenigen Tagen geschafft, die nötige Summe zu sammeln, um Valentina und ihrer Familie zu helfen.", en: "Thanks to the generosity of many, in just a few days we managed to raise what was needed to help Valentina and her family." })}
                       <br /><br />
-                      {t({ pt: 'Muito obrigado a todos os que apoiaram e partilharam esta iniciativa.', it: 'Grazie di cuore a tutti coloro che hanno sostenuto e condiviso questa iniziativa.', de: "Von Herzen danke an alle, die diese Initiative unterstützt und geteilt haben." })}
+                      {t({ pt: 'Muito obrigado a todos os que apoiaram e partilharam esta iniciativa.', it: 'Grazie di cuore a tutti coloro che hanno sostenuto e condiviso questa iniziativa.', de: "Von Herzen danke an alle, die diese Initiative unterstützt und geteilt haben.", en: "Heartfelt thanks to everyone who supported and shared this initiative." })}
                     </p>
                   </div>
                 </div>
@@ -252,11 +252,11 @@ export function ValentinaPage() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-[var(--deep-blue)] font-medium mb-2">
-                    {t({ pt: '27 de novembro de 2023', it: '27 novembre 2023', de: "27. November 2023" })}
+                    {t({ pt: '27 de novembro de 2023', it: '27 novembre 2023', de: "27. November 2023", en: "27 November 2023" })}
                   </p>
                   <div className="bg-white p-6 rounded-2xl shadow-lg">
                     <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                      {t({ pt: 'Mensagem de Salvador de Bahia', it: 'Messaggio da Salvador de Bahia', de: "Botschaft aus Salvador de Bahia" })}
+                      {t({ pt: 'Mensagem de Salvador de Bahia', it: 'Messaggio da Salvador de Bahia', de: "Botschaft aus Salvador de Bahia", en: "Message from Salvador de Bahia" })}
                     </p>
                     <div className="rounded-xl overflow-hidden">
                       <video
@@ -280,13 +280,13 @@ export function ValentinaPage() {
                 </div>
                 <div className="flex-1">
                   <p className="text-sm text-[var(--deep-blue)] font-medium mb-2">
-                    {t({ pt: 'Abril de 2024', it: 'Aprile 2024', de: "April 2024" })}
+                    {t({ pt: 'Abril de 2024', it: 'Aprile 2024', de: "April 2024", en: "April 2024" })}
                   </p>
                   <div className="bg-white p-6 rounded-2xl shadow-lg">
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      {t({ pt: 'Durante as festas de Páscoa foi entregue o novo fogão à família de Valentina.', it: 'Durante le feste di Pasqua è stata consegnata la nuova cucina alla famiglia di Valentina.', de: "Während der Osterfeiertage wurde der neue Herd an Valentinas Familie übergeben." })}
+                      {t({ pt: 'Durante as festas de Páscoa foi entregue o novo fogão à família de Valentina.', it: 'Durante le feste di Pasqua è stata consegnata la nuova cucina alla famiglia di Valentina.', de: "Während der Osterfeiertage wurde der neue Herd an Valentinas Familie übergeben.", en: "During the Easter holidays, the new cooker was delivered to Valentina's family." })}
                       <br /><br />
-                      {t({ pt: 'Obrigado a todos os que tornaram possível este gesto concreto de proximidade.', it: 'Grazie a tutti coloro che hanno reso possibile questo gesto concreto di vicinanza.', de: "Danke an alle, die diese konkrete Geste der Nähe möglich gemacht haben." })}
+                      {t({ pt: 'Obrigado a todos os que tornaram possível este gesto concreto de proximidade.', it: 'Grazie a tutti coloro che hanno reso possibile questo gesto concreto di vicinanza.', de: "Danke an alle, die diese konkrete Geste der Nähe möglich gemacht haben.", en: "Thank you to everyone who made this concrete gesture of closeness possible." })}
                     </p>
                   </div>
                 </div>
@@ -301,22 +301,22 @@ export function ValentinaPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Uma presença cotidiana ao lado das famílias', it: 'Una presenza quotidiana accanto alle famiglie', de: "Eine tägliche Präsenz an der Seite der Familien" })}
+              {t({ pt: 'Uma presença cotidiana ao lado das famílias', it: 'Una presenza quotidiana accanto alle famiglie', de: "Eine tägliche Präsenz an der Seite der Familien", en: "A daily presence alongside families" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-10">
               <p>
-                {t({ pt: 'A história de Valentina conta a forma como o Centro Nossa Senhora Aparecida vive a sua missão: através de relações cotidianas, escuta e proximidade concreta às famílias mais frágeis.', it: 'La storia di Valentina racconta il modo in cui il Centro Nossa Senhora Aparecida vive la propria missione: attraverso relazioni quotidiane, ascolto e vicinanza concreta alle famiglie più fragili.', de: "Die Geschichte von Valentina zeigt, wie das Centro Nossa Senhora Aparecida seine Mission lebt: durch tägliche Beziehungen, Zuhören und konkrete Nähe zu den bedürftigsten Familien." })}
+                {t({ pt: 'A história de Valentina conta a forma como o Centro Nossa Senhora Aparecida vive a sua missão: através de relações cotidianas, escuta e proximidade concreta às famílias mais frágeis.', it: 'La storia di Valentina racconta il modo in cui il Centro Nossa Senhora Aparecida vive la propria missione: attraverso relazioni quotidiane, ascolto e vicinanza concreta alle famiglie più fragili.', de: "Die Geschichte von Valentina zeigt, wie das Centro Nossa Senhora Aparecida seine Mission lebt: durch tägliche Beziehungen, Zuhören und konkrete Nähe zu den bedürftigsten Familien.", en: "Valentina's story tells how the Centro Nossa Senhora Aparecida lives out its mission: through daily relationships, listening and real closeness to the most vulnerable families." })}
               </p>
               <p>
-                {t({ pt: 'Muitas iniciativas nascem precisamente do encontro direto com situações reais vividas pelas crianças acolhidas todos os dias no Centro.', it: 'Molte iniziative nascono proprio dall\'incontro diretto con situazioni reali vissute dai bambini accolti ogni giorno al Centro.', de: "Viele Initiativen entstehen genau aus der direkten Begegnung mit realen Situationen, die die täglich im Zentrum aufgenommenen Kinder erleben." })}
+                {t({ pt: 'Muitas iniciativas nascem precisamente do encontro direto com situações reais vividas pelas crianças acolhidas todos os dias no Centro.', it: 'Molte iniziative nascono proprio dall\'incontro diretto con situazioni reali vissute dai bambini accolti ogni giorno al Centro.', de: "Viele Initiativen entstehen genau aus der direkten Begegnung mit realen Situationen, die die täglich im Zentrum aufgenommenen Kinder erleben.", en: "Many initiatives are born precisely from direct encounters with real situations experienced by the children welcomed every day at the Centre." })}
               </p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <Button variant="primary" to="/il-centro" className="text-lg px-8 py-3">
-              {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
+              {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
             </Button>
           </AnimatedSection>
         </div>
@@ -327,7 +327,7 @@ export function ValentinaPage() {
         <div className="absolute inset-0">
           <img loading="lazy"
             src={finalCtaImg}
-            alt={t({ pt: 'Obrigado', it: 'Grazie', de: "Danke" })}
+            alt={t({ pt: 'Obrigado', it: 'Grazie', de: "Danke", en: "Thank you" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
@@ -336,21 +336,21 @@ export function ValentinaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl mb-6">
-              {t({ pt: 'Obrigado por ter ajudado Valentina', it: 'Grazie per aver aiutato Valentina', de: "Danke, dass Sie Valentina geholfen haben" })}
+              {t({ pt: 'Obrigado por ter ajudado Valentina', it: 'Grazie per aver aiutato Valentina', de: "Danke, dass Sie Valentina geholfen haben", en: "Thank you for helping Valentina" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed">
-              {t({ pt: 'Esta iniciativa foi possível graças à generosidade de tantas pessoas que escolheram partilhar um gesto concreto de proximidade.', it: 'Questa iniziativa è stata possibile grazie alla generosità di tante persone che hanno scelto di condividere un gesto concreto di vicinanza.', de: "Diese Initiative wurde durch die Großzügigkeit vieler Menschen möglich, die sich entschieden haben, eine konkrete Geste der Nähe zu teilen." })}
+              {t({ pt: 'Esta iniciativa foi possível graças à generosidade de tantas pessoas que escolheram partilhar um gesto concreto de proximidade.', it: 'Questa iniziativa è stata possibile grazie alla generosità di tante persone che hanno scelto di condividere un gesto concreto di vicinanza.', de: "Diese Initiative wurde durch die Großzügigkeit vieler Menschen möglich, die sich entschieden haben, eine konkrete Geste der Nähe zu teilen.", en: "This initiative was made possible by the generosity of so many people who chose to share a concrete gesture of closeness." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" to="/iniziative" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Conheça outras iniciativas', it: 'Scopri altre iniziative', de: "Entdecken Sie weitere Initiativen" })}
+                {t({ pt: 'Conheça outras iniciativas', it: 'Scopri altre iniziative', de: "Entdecken Sie weitere Initiativen", en: "Discover other initiatives" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>

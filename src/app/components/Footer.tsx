@@ -50,15 +50,15 @@ export function Footer() {
   };
 
   const menuItems: MenuItem[] = [
-    { label: t({ pt: 'Início', it: 'Home', de: "Startseite" }), href: '/', isRoute: true },
+    { label: t({ pt: 'Início', it: 'Home', de: "Startseite", en: "Home" }), href: '/', isRoute: true },
     {
-      label: t({ pt: 'Fundação', it: 'La Fundação', de: "Die Fundação" }),
+      label: t({ pt: 'Fundação', it: 'La Fundação', de: "Die Fundação", en: "The Fundação" }),
       href: '/la-fundacao',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS" }), href: '/la-fundacao', isRoute: true },
-        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen" }), href: '/riconoscimenti-istituzionali', isRoute: true },
-        { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz" }), href: '/trasparenza', isRoute: true }
+        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS", en: "The Fundação Betania ONLUS" }), href: '/la-fundacao', isRoute: true },
+        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen", en: "Institutional Recognitions" }), href: '/riconoscimenti-istituzionali', isRoute: true },
+        { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz", en: "Transparency" }), href: '/trasparenza', isRoute: true }
       ]
     },
     {
@@ -66,70 +66,70 @@ export function Footer() {
       href: '/il-centro',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Centro" }), href: '/il-centro', isRoute: true },
+        { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Centro", en: "The Centre" }), href: '/il-centro', isRoute: true },
         {
-          label: t({ pt: 'Creche', it: 'Asilo', de: "Kita" }),
+          label: t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" }),
           href: '/asilo',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'A estrutura', it: 'La struttura', de: "Die Einrichtung" }), href: '/asilo', isRoute: true },
-            { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik" }), href: '/nossa-metodologia', isRoute: true },
-            { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti', de: "Dauerprojekte" }), href: '/projetos-permanentes', isRoute: true },
-            { label: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana', de: "Gesunde Ernährung" }), href: '/alimentacao-saudavel', isRoute: true },
-            { label: t({ pt: 'Ateliê', it: 'Atelier', de: "Atelier" }), href: '/atelier', isRoute: true },
-            { label: t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte" }), href: '/relatorios', isRoute: true },
-            { label: t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten" }), href: '/progetti-pedagogici', isRoute: true },
+            { label: t({ pt: 'A estrutura', it: 'La struttura', de: "Die Einrichtung", en: "The Facility" }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik", en: "Our Methodology" }), href: '/nossa-metodologia', isRoute: true },
+            { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti', de: "Dauerprojekte", en: "Permanent Projects" }), href: '/projetos-permanentes', isRoute: true },
+            { label: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana', de: "Gesunde Ernährung", en: "Healthy Eating" }), href: '/alimentacao-saudavel', isRoute: true },
+            { label: t({ pt: 'Ateliê', it: 'Atelier', de: "Atelier", en: "Atelier" }), href: '/atelier', isRoute: true },
+            { label: t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte", en: "Reports" }), href: '/relatorios', isRoute: true },
+            { label: t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" }), href: '/progetti-pedagogici', isRoute: true },
           ]
         },
         {
-          label: t({ pt: 'A escola', it: 'La scuola', de: "Die Schule" }),
+          label: t({ pt: 'A escola', it: 'La scuola', de: "Die Schule", en: "The School" }),
           href: '/progetto-scuola',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt" }), href: '/progetto-scuola', isRoute: true },
-            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt" }), href: '/avanzamento-lavori', isRoute: true }
+            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt", en: "School Project" }), href: '/progetto-scuola', isRoute: true },
+            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt", en: "Construction Progress" }), href: '/avanzamento-lavori', isRoute: true }
           ]
         },
         {
-          label: t({ pt: 'Nossos pilares', it: 'I nostri pilastri', de: "Unsere Grundpfeiler" }),
+          label: t({ pt: 'Nossos pilares', it: 'I nostri pilastri', de: "Unsere Grundpfeiler", en: "Our Pillars" }),
           href: '#i-nostri-pilastri',
           submenu: [
-            { label: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Aufnahme" }), href: '/accoglienza-quotidiana', isRoute: true },
-            { label: t({ pt: 'Educação', it: 'Educazione', de: "Bildung" }), href: '/educazione', isRoute: true },
-            { label: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Fürsorge und Ernährung" }), href: '/cura-e-nutrizione', isRoute: true },
-            { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien" }), href: '/accompagnamento-famiglie', isRoute: true }
+            { label: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Aufnahme", en: "Daily Care" }), href: '/accoglienza-quotidiana', isRoute: true },
+            { label: t({ pt: 'Educação', it: 'Educazione', de: "Bildung", en: "Education" }), href: '/educazione', isRoute: true },
+            { label: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Fürsorge und Ernährung", en: "Care and Nutrition" }), href: '/cura-e-nutrizione', isRoute: true },
+            { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting Families" }), href: '/accompagnamento-famiglie', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentationen und Erzählungen" }), href: '/documentari-racconti', isRoute: true },
-        { label: t({ pt: 'Iniciativas', it: 'Iniziative', de: "Initiativen" }), href: '/iniziative', isRoute: true }
+        { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentationen und Erzählungen", en: "Documentaries and Stories" }), href: '/documentari-racconti', isRoute: true },
+        { label: t({ pt: 'Iniciativas', it: 'Iniziative', de: "Initiativen", en: "Initiatives" }), href: '/iniziative', isRoute: true }
       ]
     },
     {
-      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Bruderschaft" }),
+      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Bruderschaft", en: "Fraternity" }),
       href: '/la-fraternita',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania" }), href: '/la-fraternita', isRoute: true },
-        { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali', de: "Besondere Veranstaltungen" }), href: '/eventi-speciali', isRoute: true }
+        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
+        { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali', de: "Besondere Veranstaltungen", en: "Special Events" }), href: '/eventi-speciali', isRoute: true }
       ]
     },
     {
-      label: t({ pt: 'Apoie', it: 'Sostieni', de: "Unterstützen" }),
+      label: t({ pt: 'Apoie', it: 'Sostieni', de: "Unterstützen", en: "Support Us" }),
       href: '#sostieni',
       submenu: [
         {
-          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können" }),
+          label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können", en: "What You Can Do" }),
           href: '/cosa-puoi-fare-tu',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" }), href: '/dona-ora', isRoute: true },
-            { label: t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft" }), href: '/sostegno-a-distanza', isRoute: true }
+            { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" }), href: '/dona-ora', isRoute: true },
+            { label: t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Benfeitores', it: 'Benefattori', de: "Wohltäter" }), href: '/benefattori', isRoute: true }
+        { label: t({ pt: 'Benfeitores', it: 'Benefattori', de: "Wohltäter", en: "Benefactors" }), href: '/benefattori', isRoute: true }
       ]
     },
-    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt" }), href: '/contatti', isRoute: true }
+    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true }
   ];
 
   return (
@@ -229,7 +229,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4">{t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt" })}</h3>
+            <h3 className="mb-4">{t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" })}</h3>
             <p className="text-sm text-gray-300 mb-4">
               Travessa Acalanto nº 1.672<br />
               Jardim das Margaridas · CEP 41.502-135<br />
@@ -257,7 +257,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/20 pt-8 flex justify-center items-center mb-8">
-          <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}</Button>
+          <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
         </div>
 
         <div className="border-t border-white/10 pt-6 text-center">
@@ -275,11 +275,11 @@ export function Footer() {
           </p>
           <div className="flex justify-center gap-4">
             <Link to="/privacy-policy" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
-              {t({ pt: 'Política de Privacidade', it: 'Privacy Policy', de: "Datenschutzerklärung" })}
+              {t({ pt: 'Política de Privacidade', it: 'Privacy Policy', de: "Datenschutzerklärung", en: "Privacy Policy" })}
             </Link>
             <span className="text-xs text-gray-600">·</span>
             <Link to="/cookie-policy" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
-              {t({ pt: 'Política de Cookies', it: 'Cookie Policy', de: "Cookie-Richtlinie" })}
+              {t({ pt: 'Política de Cookies', it: 'Cookie Policy', de: "Cookie-Richtlinie", en: "Cookie Policy" })}
             </Link>
           </div>
         </div>

@@ -61,7 +61,7 @@ export function EventiSpecialiPage() {
         <div className="absolute inset-0">
           <img
             src={heroImg}
-            alt={t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse" })}
+            alt={t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
@@ -70,27 +70,27 @@ export function EventiSpecialiPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse" })}
+              {t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
-              {t({ pt: 'Momentos, encontros e visitas que marcaram o caminho do Centro Nossa Senhora Aparecida.', it: 'Momenti, incontri e visite che hanno segnato il cammino del Centro Nossa Senhora Aparecida.', de: "Momente, Begegnungen und Besuche, die den Weg des Centro Nossa Senhora Aparecida geprägt haben." })}
+              {t({ pt: 'Momentos, encontros e visitas que marcaram o caminho do Centro Nossa Senhora Aparecida.', it: 'Momenti, incontri e visite che hanno segnato il cammino del Centro Nossa Senhora Aparecida.', de: "Momente, Begegnungen und Besuche, die den Weg des Centro Nossa Senhora Aparecida geprägt haben.", en: "Moments, encounters and visits that have marked the journey of the Centro Nossa Senhora Aparecida." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Erfahren Sie mehr" })}
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Erfahren Sie mehr", en: "Learn more" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <ShareButtons
-              title={t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse" })}
+              title={t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
               variant="dark"
               className="mt-10"
             />
@@ -103,16 +103,16 @@ export function EventiSpecialiPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-10">
-              {t({ pt: 'Momentos que contam uma história', it: 'Momenti che raccontano una storia', de: "Momente, die eine Geschichte erzählen" })}
+              {t({ pt: 'Momentos que contam uma história', it: 'Momenti che raccontano una storia', de: "Momente, die eine Geschichte erzählen", en: "Moments that tell a story" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed">
               <p>
-                {t({ pt: 'Ao longo do tempo, o Centro Nossa Senhora Aparecida viveu encontros e momentos especiais que representaram sinais concretos de proximidade, reconhecimento e partilha.', it: 'Nel tempo, il Centro Nossa Senhora Aparecida ha vissuto incontri e momenti speciali che hanno rappresentato segni concreti di vicinanza, riconoscimento e condivisione.', de: "Im Laufe der Zeit hat das Centro Nossa Senhora Aparecida Begegnungen und besondere Momente erlebt, die konkrete Zeichen der Nähe, Anerkennung und des Miteinanders waren." })}
+                {t({ pt: 'Ao longo do tempo, o Centro Nossa Senhora Aparecida viveu encontros e momentos especiais que representaram sinais concretos de proximidade, reconhecimento e partilha.', it: 'Nel tempo, il Centro Nossa Senhora Aparecida ha vissuto incontri e momenti speciali che hanno rappresentato segni concreti di vicinanza, riconoscimento e condivisione.', de: "Im Laufe der Zeit hat das Centro Nossa Senhora Aparecida Begegnungen und besondere Momente erlebt, die konkrete Zeichen der Nähe, Anerkennung und des Miteinanders waren.", en: "Over time, the Centro Nossa Senhora Aparecida has experienced encounters and special moments that have been concrete signs of closeness, recognition and sharing." })}
               </p>
               <p>
-                {t({ pt: 'Cada visita, cada evento e cada encontro tornam-se parte da história cotidiana do Centro e das pessoas que o vivem.', it: 'Ogni visita, ogni evento e ogni incontro diventano parte della storia quotidiana del Centro e delle persone che lo vivono.', de: "Jeder Besuch, jede Veranstaltung und jede Begegnung wird Teil der alltäglichen Geschichte des Zentrums und der Menschen, die es Tag für Tag erleben." })}
+                {t({ pt: 'Cada visita, cada evento e cada encontro tornam-se parte da história cotidiana do Centro e das pessoas que o vivem.', it: 'Ogni visita, ogni evento e ogni incontro diventano parte della storia quotidiana del Centro e delle persone che lo vivono.', de: "Jeder Besuch, jede Veranstaltung und jede Begegnung wird Teil der alltäglichen Geschichte des Zentrums und der Menschen, die es Tag für Tag erleben.", en: "Every visit, every event and every encounter becomes part of the everyday story of the Centre and the people who live it." })}
               </p>
             </div>
           </AnimatedSection>
@@ -127,7 +127,7 @@ export function EventiSpecialiPage() {
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img loading="lazy"
                   src={presidentImg}
-                  alt={t({ pt: 'Visita do Presidente da República Italiana', it: 'Visita del Presidente della Repubblica Italiana', de: "Besuch des Präsidenten der Italienischen Republik" })}
+                  alt={t({ pt: 'Visita do Presidente da República Italiana', it: 'Visita del Presidente della Repubblica Italiana', de: "Besuch des Präsidenten der Italienischen Republik", en: "Visit of the President of the Italian Republic" })}
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -136,23 +136,23 @@ export function EventiSpecialiPage() {
             <AnimatedSection delay={0.2}>
               <div>
                 <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'A visita do Presidente da República Italiana', it: 'La visita del Presidente della Repubblica Italiana', de: "Der Besuch des Präsidenten der Italienischen Republik" })}
+                  {t({ pt: 'A visita do Presidente da República Italiana', it: 'La visita del Presidente della Repubblica Italiana', de: "Der Besuch des Präsidenten der Italienischen Republik", en: "The visit of the President of the Italian Republic" })}
                 </h2>
                 <p className="text-xl text-gray-600 mb-8 italic">
-                  {t({ pt: 'Um momento de grande valor humano e institucional para o Centro Nossa Senhora Aparecida.', it: 'Un momento di grande valore umano e istituzionale per il Centro Nossa Senhora Aparecida.', de: "Ein Moment von großem menschlichem und institutionellem Wert für das Centro Nossa Senhora Aparecida." })}
+                  {t({ pt: 'Um momento de grande valor humano e institucional para o Centro Nossa Senhora Aparecida.', it: 'Un momento di grande valore umano e istituzionale per il Centro Nossa Senhora Aparecida.', de: "Ein Moment von großem menschlichem und institutionellem Wert für das Centro Nossa Senhora Aparecida.", en: "A moment of great human and institutional value for the Centro Nossa Senhora Aparecida." })}
                 </p>
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    {t({ pt: 'A visita do Presidente da República Italiana representou um momento profundamente significativo para a Fundação Betania ONLUS e para toda a comunidade do Centro Nossa Senhora Aparecida.', it: 'La visita del Presidente della Repubblica Italiana ha rappresentato un momento profondamente significativo per la Fundação Betania ONLUS e per tutta la comunità del Centro Nossa Senhora Aparecida.', de: "Der Besuch des Präsidenten der Italienischen Republik war ein zutiefst bedeutsamer Moment für die Fundação Betania ONLUS und die gesamte Gemeinschaft des Centro Nossa Senhora Aparecida." })}
+                    {t({ pt: 'A visita do Presidente da República Italiana representou um momento profundamente significativo para a Fundação Betania ONLUS e para toda a comunidade do Centro Nossa Senhora Aparecida.', it: 'La visita del Presidente della Repubblica Italiana ha rappresentato un momento profondamente significativo per la Fundação Betania ONLUS e per tutta la comunità del Centro Nossa Senhora Aparecida.', de: "Der Besuch des Präsidenten der Italienischen Republik war ein zutiefst bedeutsamer Moment für die Fundação Betania ONLUS und die gesamte Gemeinschaft des Centro Nossa Senhora Aparecida.", en: "The visit of the President of the Italian Republic was a deeply significant moment for Fundação Betania ONLUS and for the whole community of the Centro Nossa Senhora Aparecida." })}
                   </p>
                   <p>
-                    {t({ pt: "Durante o encontro, o Presidente pôde conhecer de perto a realidade do Centro, encontrar crianças, educadores, famílias e membros da Fraternidade Franciscana de Betânia que todos os dias vivem esta presença educativa e social em Salvador de Bahia.", it: "Durante l'incontro, il Presidente ha potuto conoscere da vicino la realtà del Centro, incontrare bambini, educatori, famiglie e membri della Fraternità Francescana di Betania che ogni giorno vivono questa presenza educativa e sociale a Salvador de Bahia.", de: "Während der Begegnung konnte der Präsident die Wirklichkeit des Zentrums aus der Nähe kennenlernen und Kinder, Erzieher, Familien sowie Mitglieder der Franziskanischen Bruderschaft von Betania treffen, die diese pädagogische und soziale Präsenz Tag für Tag in Salvador de Bahia leben." })}
+                    {t({ pt: "Durante o encontro, o Presidente pôde conhecer de perto a realidade do Centro, encontrar crianças, educadores, famílias e membros da Fraternidade Franciscana de Betânia que todos os dias vivem esta presença educativa e social em Salvador de Bahia.", it: "Durante l'incontro, il Presidente ha potuto conoscere da vicino la realtà del Centro, incontrare bambini, educatori, famiglie e membri della Fraternità Francescana di Betania che ogni giorno vivono questa presenza educativa e sociale a Salvador de Bahia.", de: "Während der Begegnung konnte der Präsident die Wirklichkeit des Zentrums aus der Nähe kennenlernen und Kinder, Erzieher, Familien sowie Mitglieder der Franziskanischen Bruderschaft von Betania treffen, die diese pädagogische und soziale Präsenz Tag für Tag in Salvador de Bahia leben.", en: "During the visit, the President was able to see the Centre's reality up close, meeting children, educators, families and members of the Franciscan Fraternity of Betania who live this educational and social presence in Salvador de Bahia every day." })}
                   </p>
                   <p>
-                    {t({ pt: 'A visita representou um importante reconhecimento do valor humano, educativo e social do trabalho realizado ao lado das crianças e das famílias mais frágeis.', it: 'La visita ha rappresentato un importante riconoscimento del valore umano, educativo e sociale del lavoro svolto accanto ai bambini e alle famiglie più fragili.', de: "Der Besuch war eine bedeutende Anerkennung des menschlichen, pädagogischen und sozialen Wertes der Arbeit, die an der Seite der bedürftigsten Kinder und Familien geleistet wird." })}
+                    {t({ pt: 'A visita representou um importante reconhecimento do valor humano, educativo e social do trabalho realizado ao lado das crianças e das famílias mais frágeis.', it: 'La visita ha rappresentato un importante riconoscimento del valore umano, educativo e sociale del lavoro svolto accanto ai bambini e alle famiglie più fragili.', de: "Der Besuch war eine bedeutende Anerkennung des menschlichen, pädagogischen und sozialen Wertes der Arbeit, die an der Seite der bedürftigsten Kinder und Familien geleistet wird.", en: "The visit represented an important recognition of the human, educational and social value of the work carried out alongside the most vulnerable children and families." })}
                   </p>
                   <p>
-                    {t({ pt: 'Este momento permanece um sinal concreto de proximidade institucional e de atenção para com uma realidade que continua todos os dias a construir relações, educação e esperança.', it: 'Questo momento rimane un segno concreto di vicinanza istituzionale e di attenzione verso una realtà che continua ogni giorno a costruire relazioni, educazione e speranza.', de: "Dieser Moment bleibt ein konkretes Zeichen institutioneller Nähe und Aufmerksamkeit für eine Wirklichkeit, die Tag für Tag weiterhin Beziehungen, Bildung und Hoffnung aufbaut." })}
+                    {t({ pt: 'Este momento permanece um sinal concreto de proximidade institucional e de atenção para com uma realidade que continua todos os dias a construir relações, educação e esperança.', it: 'Questo momento rimane un segno concreto di vicinanza istituzionale e di attenzione verso una realtà che continua ogni giorno a costruire relazioni, educazione e speranza.', de: "Dieser Moment bleibt ein konkretes Zeichen institutioneller Nähe und Aufmerksamkeit für eine Wirklichkeit, die Tag für Tag weiterhin Beziehungen, Bildung und Hoffnung aufbaut.", en: "This moment remains a concrete sign of institutional closeness and attention to a reality that continues, every day, to build relationships, education and hope." })}
                   </p>
                 </div>
                 <div className="mt-8">
@@ -161,7 +161,7 @@ export function EventiSpecialiPage() {
                     href="https://www.youtube.com/watch?si=H_6_xvm9Rj4nXch9&v=CzXoQBaOHis&feature=youtu.be"
                     className="text-lg px-8 py-4"
                   >
-                    {t({ pt: 'Assista ao vídeo da visita do Presidente da República Italiana', it: 'Guarda il video della visita del Presidente della Repubblica Italiana', de: "Sehen Sie sich das Video des Besuchs des Präsidenten der Italienischen Republik an" })}
+                    {t({ pt: 'Assista ao vídeo da visita do Presidente da República Italiana', it: 'Guarda il video della visita del Presidente della Repubblica Italiana', de: "Sehen Sie sich das Video des Besuchs des Präsidenten der Italienischen Republik an", en: "Watch the video of the visit of the President of the Italian Republic" })}
                   </Button>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export function EventiSpecialiPage() {
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-[var(--beige)] to-white p-12 rounded-3xl border-l-4 border-[var(--deep-blue)] shadow-lg">
                 <p className="text-2xl md:text-3xl text-[var(--deep-blue)] italic text-center leading-relaxed">
-                  {t({ pt: '"Um encontro que deu valor e visibilidade a uma presença construída cotidianamente ao lado das crianças e das famílias."', it: '"Un incontro che ha dato valore e visibilità a una presenza costruita quotidianamente accanto ai bambini e alle famiglie."', de: "\"Eine Begegnung, die einer Präsenz, die Tag für Tag an der Seite von Kindern und Familien aufgebaut wird, Wert und Sichtbarkeit verliehen hat.\"" })}
+                  {t({ pt: '"Um encontro que deu valor e visibilidade a uma presença construída cotidianamente ao lado das crianças e das famílias."', it: '"Un incontro che ha dato valore e visibilità a una presenza costruita quotidianamente accanto ai bambini e alle famiglie."', de: "\"Eine Begegnung, die einer Präsenz, die Tag für Tag an der Seite von Kindern und Familien aufgebaut wird, Wert und Sichtbarkeit verliehen hat.\"", en: "\"A meeting that gave value and visibility to a presence built daily alongside children and families.\"" })}
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export function EventiSpecialiPage() {
         <div className="max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Imagens do encontro', it: "Immagini dell'incontro", de: "Bilder der Begegnung" })}
+              {t({ pt: 'Imagens do encontro', it: "Immagini dell'incontro", de: "Bilder der Begegnung", en: "Images of the meeting" })}
             </h2>
           </AnimatedSection>
 
@@ -224,7 +224,7 @@ export function EventiSpecialiPage() {
               onClose={closeLightbox}
               onNext={nextImage}
               onPrev={prevImage}
-              alt={t({ pt: 'Visita do Presidente', it: 'Visita del Presidente', de: "Besuch des Präsidenten" })}
+              alt={t({ pt: 'Visita do Presidente', it: 'Visita del Presidente', de: "Besuch des Präsidenten", en: "Visit of the President" })}
             />
           )}
         </div>
@@ -235,7 +235,7 @@ export function EventiSpecialiPage() {
         <div className="absolute inset-0">
           <img loading="lazy"
             src={finalCtaImg}
-            alt={t({ pt: 'Cada encontro torna-se parte da história do Centro', it: 'Ogni incontro diventa parte della storia del Centro', de: "Jede Begegnung wird Teil der Geschichte des Zentrums" })}
+            alt={t({ pt: 'Cada encontro torna-se parte da história do Centro', it: 'Ogni incontro diventa parte della storia del Centro', de: "Jede Begegnung wird Teil der Geschichte des Zentrums", en: "Every meeting becomes part of the Centre's story" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
@@ -244,21 +244,21 @@ export function EventiSpecialiPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl mb-6">
-              {t({ pt: 'Cada encontro torna-se parte da história do Centro', it: 'Ogni incontro diventa parte della storia del Centro', de: "Jede Begegnung wird Teil der Geschichte des Zentrums" })}
+              {t({ pt: 'Cada encontro torna-se parte da história do Centro', it: 'Ogni incontro diventa parte della storia del Centro', de: "Jede Begegnung wird Teil der Geschichte des Zentrums", en: "Every meeting becomes part of the Centre's story" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed">
-              {t({ pt: 'A vida do Centro Nossa Senhora Aparecida continua através de relações, encontros e pessoas que escolhem caminhar juntas.', it: 'La vita del Centro Nossa Senhora Aparecida continua attraverso relazioni, incontri e persone che scelgono di camminare insieme.', de: "Das Leben des Centro Nossa Senhora Aparecida geht weiter durch Beziehungen, Begegnungen und Menschen, die sich entscheiden, gemeinsam zu gehen." })}
+              {t({ pt: 'A vida do Centro Nossa Senhora Aparecida continua através de relações, encontros e pessoas que escolhem caminhar juntas.', it: 'La vita del Centro Nossa Senhora Aparecida continua attraverso relazioni, incontri e persone che scelgono di camminare insieme.', de: "Das Leben des Centro Nossa Senhora Aparecida geht weiter durch Beziehungen, Begegnungen und Menschen, die sich entscheiden, gemeinsam zu gehen.", en: "The life of the Centro Nossa Senhora Aparecida continues through relationships, encounters and people who choose to walk together." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" to="/iniziative" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Conheça as iniciativas', it: 'Scopri le iniziative', de: "Entdecken Sie die Initiativen" })}
+                {t({ pt: 'Conheça as iniciativas', it: 'Scopri le iniziative', de: "Entdecken Sie die Initiativen", en: "Discover the initiatives" })}
               </Button>
             </div>
           </AnimatedSection>

@@ -28,23 +28,24 @@ export function RicordiNarrazioniPage() {
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück" })}</span>
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: "Zurück", en: "Back" })}</span>
           </Link>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Relato', it: 'Racconto', de: "Erzählung" })}
+              {t({ pt: 'Relato', it: 'Racconto', de: "Erzählung", en: "Story" })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen" })}
+              {t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen", en: "African memories and stories" })}
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
               {t({
                 pt: 'Uma viagem entre memória, cultura e identidade através de relatos, imagens e testemunhos.',
                 it: 'Un viaggio tra memoria, cultura e identità attraverso racconti, immagini e testimonianze.',
                 de: "Eine Reise durch Erinnerung, Kultur und Identität anhand von Erzählungen, Bildern und Zeugnissen.",
+                en: "A journey through memory, culture and identity through stories, images and testimonies.",
               })}
             </p>
           </AnimatedSection>
@@ -54,13 +55,13 @@ export function RicordiNarrazioniPage() {
                 href="#video"
                 className="px-8 py-4 bg-white text-[var(--deep-blue)] font-semibold rounded-xl shadow-lg hover:bg-white/90 transition-all duration-200 text-base"
               >
-                {t({ pt: 'Assista ao relato', it: 'Guarda il racconto', de: "Erzählung ansehen" })}
+                {t({ pt: 'Assista ao relato', it: 'Guarda il racconto', de: "Erzählung ansehen", en: "Watch the story" })}
               </a>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <ShareButtons
-              title={t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen" })}
+              title={t({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen", en: "African memories and stories" })}
               variant="dark"
               className="mt-6"
             />
@@ -73,13 +74,14 @@ export function RicordiNarrazioniPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Memória, cultura e identidade', it: 'Memoria, cultura e identità', de: "Erinnerung, Kultur und Identität" })}
+              {t({ pt: 'Memória, cultura e identidade', it: 'Memoria, cultura e identità', de: "Erinnerung, Kultur und Identität", en: "Memory, culture and identity" })}
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               {t({
                 pt: 'Um projeto que reúne memórias, relatos e imagens capazes de preservar identidade, relações e cultura.',
                 it: 'Un progetto che raccoglie memorie, racconti e immagini capaci di custodire identità, relazioni e cultura.',
                 de: "Ein Projekt, das Erinnerungen, Erzählungen und Bilder sammelt, die Identität, Beziehungen und Kultur bewahren.",
+                en: "A project that gathers memories, stories and images capable of preserving identity, relationships and culture.",
               })}
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
@@ -87,6 +89,7 @@ export function RicordiNarrazioniPage() {
                 pt: 'Este relato é uma viagem entre histórias pessoais, testemunhos e raízes culturais que ligam o presente ao passado.',
                 it: 'Questo racconto è un viaggio tra storie personali, testimonianze e radici culturali che legano il presente al passato.',
                 de: "Diese Erzählung ist eine Reise durch persönliche Geschichten, Zeugnisse und kulturelle Wurzeln, die die Gegenwart mit der Vergangenheit verbinden.",
+                en: "This story is a journey through personal stories, testimonies and cultural roots that link the present to the past.",
               })}
             </p>
           </AnimatedSection>
@@ -120,6 +123,7 @@ export function RicordiNarrazioniPage() {
                   pt: 'Cada memória preservada é uma ponte entre passado, presente e futuro.',
                   it: 'Ogni memoria custodita è un ponte tra passato, presente e futuro.',
                   de: "Jede bewahrte Erinnerung ist eine Brücke zwischen Vergangenheit, Gegenwart und Zukunft.",
+                  en: "Every memory preserved is a bridge between past, present and future.",
                 })}&rdquo;
               </p>
               <footer className="text-[var(--deep-blue)]/60 text-sm font-medium tracking-wide uppercase">
@@ -137,21 +141,22 @@ export function RicordiNarrazioniPage() {
         <div className="relative z-10 max-w-3xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti', de: "Weitere Erzählungen entdecken" })}
+              {t({ pt: 'Descubra outros relatos', it: 'Scopri altri racconti', de: "Weitere Erzählungen entdecken", en: "Discover other stories" })}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-10">
               {t({
                 pt: 'Conheça outras histórias, testemunhos e projetos ligados ao Centro Nossa Senhora Aparecida.',
                 it: 'Scopri altre storie, testimonianze e progetti legati al Centro Nossa Senhora Aparecida.',
                 de: "Entdecken Sie weitere Geschichten, Zeugnisse und Projekte rund um das Centro Nossa Senhora Aparecida.",
+                en: "Discover other stories, testimonies and projects related to the Centro Nossa Senhora Aparecida.",
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" to="/documentari-racconti">
-                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentationen" })}
+                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentationen", en: "All documentaries" })}
               </Button>
               <Button variant="secondary" to="/il-centro">
-                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum" })}
+                {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>
           </AnimatedSection>

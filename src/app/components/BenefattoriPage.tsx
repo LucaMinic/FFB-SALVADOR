@@ -22,21 +22,21 @@ export function BenefattoriPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6">
-              {t({ pt: 'Obrigado a quem caminha conosco', it: 'Grazie a chi cammina con noi', de: "Danke an alle, die mit uns gehen" })}
+              {t({ pt: 'Obrigado a quem caminha conosco', it: 'Grazie a chi cammina con noi', de: "Danke an alle, die mit uns gehen", en: "Thank You to Those Who Walk With Us" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
-              {t({ pt: 'Cada gesto de apoio contribui concretamente para o crescimento do Centro Nossa Senhora Aparecida e dos seus projetos educativos.', it: 'Ogni gesto di sostegno contribuisce concretamente alla crescita del Centro Nossa Senhora Aparecida e dei suoi progetti educativi.', de: "Jede Geste der Unterstützung trägt konkret zum Wachstum des Centro Nossa Senhora Aparecida und seiner Bildungsprojekte bei." })}
+              {t({ pt: 'Cada gesto de apoio contribui concretamente para o crescimento do Centro Nossa Senhora Aparecida e dos seus projetos educativos.', it: 'Ogni gesto di sostegno contribuisce concretamente alla crescita del Centro Nossa Senhora Aparecida e dei suoi progetti educativi.', de: "Jede Geste der Unterstützung trägt konkret zum Wachstum des Centro Nossa Senhora Aparecida und seiner Bildungsprojekte bei.", en: "Every act of support contributes concretely to the growth of the Centro Nossa Senhora Aparecida and its educational projects." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer" })}
+                {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer", en: "Become a benefactor" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -48,19 +48,19 @@ export function BenefattoriPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-10">
-              {t({ pt: 'Uma rede de pessoas e realidades que torna tudo isso possível', it: 'Una rete di persone e realtà che rende possibile tutto questo', de: "Ein Netzwerk von Menschen und Organisationen, das all das möglich macht" })}
+              {t({ pt: 'Uma rede de pessoas e realidades que torna tudo isso possível', it: 'Una rete di persone e realtà che rende possibile tutto questo', de: "Ein Netzwerk von Menschen und Organisationen, das all das möglich macht", en: "A network of people and organisations that makes all of this possible" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed text-center">
               <p>
-                {t({ pt: 'Ao longo dos anos, empresas, associações, fundações, voluntários e pessoas individuais escolheram apoiar o Centro Nossa Senhora Aparecida.', it: 'Negli anni, aziende, associazioni, fondazioni, volontari e singole persone hanno scelto di sostenere il Centro Nossa Senhora Aparecida.', de: "Im Laufe der Jahre haben sich Unternehmen, Vereine, Stiftungen, Freiwillige und Einzelpersonen dafür entschieden, das Centro Nossa Senhora Aparecida zu unterstützen." })}
+                {t({ pt: 'Ao longo dos anos, empresas, associações, fundações, voluntários e pessoas individuais escolheram apoiar o Centro Nossa Senhora Aparecida.', it: 'Negli anni, aziende, associazioni, fondazioni, volontari e singole persone hanno scelto di sostenere il Centro Nossa Senhora Aparecida.', de: "Im Laufe der Jahre haben sich Unternehmen, Vereine, Stiftungen, Freiwillige und Einzelpersonen dafür entschieden, das Centro Nossa Senhora Aparecida zu unterstützen.", en: "Over the years, companies, associations, foundations, volunteers and individuals have chosen to support the Centro Nossa Senhora Aparecida." })}
               </p>
               <p>
-                {t({ pt: 'Cada contribuição, grande ou pequena, ajudou a construir espaços, apoiar atividades educativas, acompanhar famílias e criar novas possibilidades para tantas crianças.', it: 'Ogni contributo, grande o piccolo, ha aiutato a costruire spazi, sostenere attività educative, accompagnare famiglie e creare nuove possibilità per tanti bambini.', de: "Jeder Beitrag, ob groß oder klein, hat geholfen, Räume zu bauen, Bildungsaktivitäten zu unterstützen, Familien zu begleiten und neue Möglichkeiten für viele Kinder zu schaffen." })}
+                {t({ pt: 'Cada contribuição, grande ou pequena, ajudou a construir espaços, apoiar atividades educativas, acompanhar famílias e criar novas possibilidades para tantas crianças.', it: 'Ogni contributo, grande o piccolo, ha aiutato a costruire spazi, sostenere attività educative, accompagnare famiglie e creare nuove possibilità per tanti bambini.', de: "Jeder Beitrag, ob groß oder klein, hat geholfen, Räume zu bauen, Bildungsaktivitäten zu unterstützen, Familien zu begleiten und neue Möglichkeiten für viele Kinder zu schaffen.", en: "Every contribution, large or small, has helped build spaces, support educational activities, accompany families and create new opportunities for many children." })}
               </p>
               <p className="text-[var(--deep-blue)] italic">
-                {t({ pt: 'Esta página é um sinal de gratidão para quem continua a acreditar neste caminho.', it: 'Questa pagina è un segno di gratitudine verso chi continua a credere in questo cammino.', de: "Diese Seite ist ein Zeichen der Dankbarkeit an alle, die weiterhin an diesen Weg glauben." })}
+                {t({ pt: 'Esta página é um sinal de gratidão para quem continua a acreditar neste caminho.', it: 'Questa pagina è un segno di gratitudine verso chi continua a credere in questo cammino.', de: "Diese Seite ist ein Zeichen der Dankbarkeit an alle, die weiterhin an diesen Weg glauben.", en: "This page is a sign of gratitude to those who continue to believe in this journey." })}
               </p>
             </div>
           </AnimatedSection>
@@ -72,7 +72,7 @@ export function BenefattoriPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Quem apoia o projeto', it: 'Chi sostiene il progetto', de: "Wer das Projekt unterstützt" })}
+              {t({ pt: 'Quem apoia o projeto', it: 'Chi sostiene il progetto', de: "Wer das Projekt unterstützt", en: "Who supports the project" })}
             </h2>
           </AnimatedSection>
 
@@ -98,10 +98,10 @@ export function BenefattoriPage() {
           <AnimatedSection delay={0.4}>
             <div className="bg-gradient-to-br from-[var(--beige)] to-white p-10 rounded-2xl text-center border-2 border-dashed border-[var(--deep-blue)]/20">
               <p className="text-2xl text-gray-700 mb-6 italic">
-                {t({ pt: 'O seu logo poderia estar aqui.', it: 'Il tuo logo potrebbe essere qui.', de: "Ihr Logo könnte hier stehen." })}
+                {t({ pt: 'O seu logo poderia estar aqui.', it: 'Il tuo logo potrebbe essere qui.', de: "Ihr Logo könnte hier stehen.", en: "Your logo could be here." })}
               </p>
               <Button variant="primary" to="/dona-ora">
-                {t({ pt: 'Descubra como apoiar o projeto', it: 'Scopri come sostenere il progetto', de: "Erfahren Sie, wie Sie das Projekt unterstützen können" })}
+                {t({ pt: 'Descubra como apoiar o projeto', it: 'Scopri come sostenere il progetto', de: "Erfahren Sie, wie Sie das Projekt unterstützen können", en: "Discover how to support the project" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -113,27 +113,27 @@ export function BenefattoriPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Palavras de quem escolheu ajudar', it: 'Parole di chi ha scelto di aiutare', de: "Worte von Menschen, die sich entschieden haben zu helfen" })}
+              {t({ pt: 'Palavras de quem escolheu ajudar', it: 'Parole di chi ha scelto di aiutare', de: "Worte von Menschen, die sich entschieden haben zu helfen", en: "Words from those who chose to help" })}
             </h2>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                quote: t({ pt: 'Escolhemos apoiar o Centro porque aqui encontramos uma presença concreta e autêntica ao lado das crianças e das famílias.', it: 'Abbiamo scelto di sostenere il Centro perché qui abbiamo trovato una presenza concreta e autentica accanto ai bambini e alle famiglie.', de: "Wir haben uns entschieden, das Zentrum zu unterstützen, weil wir hier eine konkrete und authentische Präsenz an der Seite der Kinder und Familien gefunden haben." }),
-                author: t({ pt: 'Empresa parceira', it: 'Azienda partner', de: "Partnerunternehmen" })
+                quote: t({ pt: 'Escolhemos apoiar o Centro porque aqui encontramos uma presença concreta e autêntica ao lado das crianças e das famílias.', it: 'Abbiamo scelto di sostenere il Centro perché qui abbiamo trovato una presenza concreta e autentica accanto ai bambini e alle famiglie.', de: "Wir haben uns entschieden, das Zentrum zu unterstützen, weil wir hier eine konkrete und authentische Präsenz an der Seite der Kinder und Familien gefunden haben.", en: "We chose to support the Centre because here we found a real and authentic presence alongside children and families." }),
+                author: t({ pt: 'Empresa parceira', it: 'Azienda partner', de: "Partnerunternehmen", en: "Partner company" })
               },
               {
-                quote: t({ pt: 'Não é apenas um projeto educativo, mas uma comunidade viva que constrói relações e futuro.', it: 'Non è solo un progetto educativo, ma una comunità viva che costruisce relazioni e futuro.', de: "Es ist nicht nur ein Bildungsprojekt, sondern eine lebendige Gemeinschaft, die Beziehungen und Zukunft aufbaut." }),
-                author: t({ pt: 'Benfeitor', it: 'Benefattore', de: "Förderer" })
+                quote: t({ pt: 'Não é apenas um projeto educativo, mas uma comunidade viva que constrói relações e futuro.', it: 'Non è solo un progetto educativo, ma una comunità viva che costruisce relazioni e futuro.', de: "Es ist nicht nur ein Bildungsprojekt, sondern eine lebendige Gemeinschaft, die Beziehungen und Zukunft aufbaut.", en: "It is not just an educational project, but a living community that builds relationships and a future." }),
+                author: t({ pt: 'Benfeitor', it: 'Benefattore', de: "Förderer", en: "Benefactor" })
               },
               {
-                quote: t({ pt: 'Cada vez que visitamos o Centro, sentimos que o nosso apoio tem um impacto real na vida de tantas crianças.', it: 'Ogni volta che visitiamo il Centro, sentiamo che il nostro sostegno ha un impatto reale nella vita di tanti bambini.', de: "Jedes Mal, wenn wir das Zentrum besuchen, spüren wir, dass unsere Unterstützung einen echten Einfluss auf das Leben vieler Kinder hat." }),
-                author: t({ pt: 'Fundação apoiadora', it: 'Fondazione sostenitrice', de: "Fördernde Stiftung" })
+                quote: t({ pt: 'Cada vez que visitamos o Centro, sentimos que o nosso apoio tem um impacto real na vida de tantas crianças.', it: 'Ogni volta che visitiamo il Centro, sentiamo che il nostro sostegno ha un impatto reale nella vita di tanti bambini.', de: "Jedes Mal, wenn wir das Zentrum besuchen, spüren wir, dass unsere Unterstützung einen echten Einfluss auf das Leben vieler Kinder hat.", en: "Every time we visit the Centre, we feel that our support has a real impact on the lives of so many children." }),
+                author: t({ pt: 'Fundação apoiadora', it: 'Fondazione sostenitrice', de: "Fördernde Stiftung", en: "Supporting foundation" })
               },
               {
-                quote: t({ pt: 'Apoiar este projeto significa fazer parte de algo que vai além da simples doação: é partilha de valores e esperança.', it: 'Sostenere questo progetto significa essere parte di qualcosa che va oltre la semplice donazione: è condivisione di valori e speranza.', de: "Dieses Projekt zu unterstützen bedeutet, Teil von etwas zu sein, das über die reine Spende hinausgeht: Es bedeutet, Werte und Hoffnung zu teilen." }),
-                author: t({ pt: 'Voluntário', it: 'Volontario', de: "Freiwilliger" })
+                quote: t({ pt: 'Apoiar este projeto significa fazer parte de algo que vai além da simples doação: é partilha de valores e esperança.', it: 'Sostenere questo progetto significa essere parte di qualcosa che va oltre la semplice donazione: è condivisione di valori e speranza.', de: "Dieses Projekt zu unterstützen bedeutet, Teil von etwas zu sein, das über die reine Spende hinausgeht: Es bedeutet, Werte und Hoffnung zu teilen.", en: "Supporting this project means being part of something that goes beyond a simple donation: it is a sharing of values and hope." }),
+                author: t({ pt: 'Voluntário', it: 'Volontario', de: "Freiwilliger", en: "Volunteer" })
               }
             ].map((testimonial, index) => (
               <AnimatedSection key={index} delay={0.1 * index}>
@@ -158,21 +158,21 @@ export function BenefattoriPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-10">
-              {t({ pt: 'Uma ajuda que gera impacto', it: 'Un aiuto che genera impatto', de: "Eine Hilfe, die etwas bewirkt" })}
+              {t({ pt: 'Uma ajuda que gera impacto', it: 'Un aiuto che genera impatto', de: "Eine Hilfe, die etwas bewirkt", en: "Support that creates impact" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <p className="text-xl text-gray-700 text-center mb-16 leading-relaxed">
-              {t({ pt: 'Graças ao apoio recebido é possível:', it: 'Grazie al sostegno ricevuto è possibile:', de: "Dank der erhaltenen Unterstützung ist es möglich:" })}
+              {t({ pt: 'Graças ao apoio recebido é possível:', it: 'Grazie al sostegno ricevuto è possibile:', de: "Dank der erhaltenen Unterstützung ist es möglich:", en: "Thanks to the support received, it is possible to:" })}
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
-              { number: '100+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti', de: "aufgenommene Kinder" }) },
-              { number: '5', label: t({ pt: 'refeições cotidianas', it: 'pasti quotidiani', de: "tägliche Mahlzeiten" }) },
-              { number: '1', label: t({ pt: 'nova escola em construção', it: 'nuova scuola in costruzione', de: "neue Schule im Bau" }) },
-              { number: '365', label: t({ pt: 'dias de apoio contínuo às famílias', it: 'giorni di sostegno continuo alle famiglie', de: "Tage kontinuierlicher Unterstützung für Familien" }) }
+              { number: '100+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti', de: "aufgenommene Kinder", en: "children cared for" }) },
+              { number: '5', label: t({ pt: 'refeições cotidianas', it: 'pasti quotidiani', de: "tägliche Mahlzeiten", en: "daily meals" }) },
+              { number: '1', label: t({ pt: 'nova escola em construção', it: 'nuova scuola in costruzione', de: "neue Schule im Bau", en: "new school under construction" }) },
+              { number: '365', label: t({ pt: 'dias de apoio contínuo às famílias', it: 'giorni di sostegno continuo alle famiglie', de: "Tage kontinuierlicher Unterstützung für Familien", en: "days of continuous support for families" }) }
             ].map((item, index) => (
               <AnimatedSection key={index} delay={0.1 * index}>
                 <div className="text-center p-8 bg-gradient-to-br from-white to-[var(--beige)] rounded-2xl shadow-lg">
@@ -188,11 +188,11 @@ export function BenefattoriPage() {
           <AnimatedSection delay={0.4}>
             <div className="max-w-3xl mx-auto space-y-3">
               {[
-                t({ pt: 'acolher todos os dias mais de 100 crianças', it: 'accogliere ogni giorno oltre 100 bambini', de: "täglich über 100 Kinder aufzunehmen" }),
-                t({ pt: 'garantir refeições cotidianas', it: 'garantire pasti quotidiani', de: "tägliche Mahlzeiten zu gewährleisten" }),
-                t({ pt: 'apoiar famílias em dificuldade', it: 'sostenere famiglie in difficoltà', de: "Familien in Schwierigkeiten zu unterstützen" }),
-                t({ pt: 'desenvolver novos projetos educativos', it: 'sviluppare nuovi progetti educativi', de: "neue Bildungsprojekte zu entwickeln" }),
-                t({ pt: 'construir a nova escola', it: 'costruire la nuova scuola', de: "die neue Schule zu bauen" })
+                t({ pt: 'acolher todos os dias mais de 100 crianças', it: 'accogliere ogni giorno oltre 100 bambini', de: "täglich über 100 Kinder aufzunehmen", en: "welcome more than 100 children every day" }),
+                t({ pt: 'garantir refeições cotidianas', it: 'garantire pasti quotidiani', de: "tägliche Mahlzeiten zu gewährleisten", en: "guarantee daily meals" }),
+                t({ pt: 'apoiar famílias em dificuldade', it: 'sostenere famiglie in difficoltà', de: "Familien in Schwierigkeiten zu unterstützen", en: "support families in difficulty" }),
+                t({ pt: 'desenvolver novos projetos educativos', it: 'sviluppare nuovi progetti educativi', de: "neue Bildungsprojekte zu entwickeln", en: "develop new educational projects" }),
+                t({ pt: 'construir a nova escola', it: 'costruire la nuova scuola', de: "die neue Schule zu bauen", en: "build the new school" })
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3 text-lg text-gray-700">
                   <span className="w-2 h-2 bg-[var(--warm-orange)] rounded-full flex-shrink-0"></span>
@@ -209,26 +209,26 @@ export function BenefattoriPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Faça parte deste caminho', it: 'Diventa parte di questo cammino', de: "Werden Sie Teil dieses Weges" })}
+              {t({ pt: 'Faça parte deste caminho', it: 'Diventa parte di questo cammino', de: "Werden Sie Teil dieses Weges", en: "Become part of this journey" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-10">
               <p>
-                {t({ pt: 'Também empresas, associações e pessoas individuais podem contribuir concretamente para o crescimento do Centro Nossa Senhora Aparecida.', it: 'Anche aziende, associazioni e singole persone possono contribuire concretamente alla crescita del Centro Nossa Senhora Aparecida.', de: "Auch Unternehmen, Vereine und Einzelpersonen können konkret zum Wachstum des Centro Nossa Senhora Aparecida beitragen." })}
+                {t({ pt: 'Também empresas, associações e pessoas individuais podem contribuir concretamente para o crescimento do Centro Nossa Senhora Aparecida.', it: 'Anche aziende, associazioni e singole persone possono contribuire concretamente alla crescita del Centro Nossa Senhora Aparecida.', de: "Auch Unternehmen, Vereine und Einzelpersonen können konkret zum Wachstum des Centro Nossa Senhora Aparecida beitragen.", en: "Companies, associations and individuals can also contribute concretely to the growth of the Centro Nossa Senhora Aparecida." })}
               </p>
               <p>
-                {t({ pt: 'Cada apoio torna-se parte de uma história partilhada feita de educação, relações e futuro.', it: 'Ogni sostegno diventa parte di una storia condivisa fatta di educazione, relazioni e futuro.', de: "Jede Unterstützung wird Teil einer gemeinsamen Geschichte aus Bildung, Beziehungen und Zukunft." })}
+                {t({ pt: 'Cada apoio torna-se parte de uma história partilhada feita de educação, relações e futuro.', it: 'Ogni sostegno diventa parte di una storia condivisa fatta di educazione, relazioni e futuro.', de: "Jede Unterstützung wird Teil einer gemeinsamen Geschichte aus Bildung, Beziehungen und Zukunft.", en: "Every act of support becomes part of a shared story made of education, relationships and the future." })}
               </p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" to="/contatti" className="text-lg px-8 py-3">
-                {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns" })}
+                {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-3">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
@@ -240,22 +240,22 @@ export function BenefattoriPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Uma relação fundada na confiança', it: 'Un rapporto fondato sulla fiducia', de: "Eine auf Vertrauen gegründete Beziehung" })}
+              {t({ pt: 'Uma relação fundada na confiança', it: 'Un rapporto fondato sulla fiducia', de: "Eine auf Vertrauen gegründete Beziehung", en: "A relationship built on trust" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-8">
               <p>
-                {t({ pt: 'Cada contribuição recebida é acolhida com gratidão e utilizada para apoiar concretamente as atividades educativas e sociais do Centro.', it: 'Ogni contributo ricevuto viene accolto con gratitudine e utilizzato per sostenere concretamente le attività educative e sociali del Centro.', de: "Jeder erhaltene Beitrag wird mit Dankbarkeit angenommen und dient dazu, die Bildungs- und Sozialaktivitäten des Zentrums konkret zu unterstützen." })}
+                {t({ pt: 'Cada contribuição recebida é acolhida com gratidão e utilizada para apoiar concretamente as atividades educativas e sociais do Centro.', it: 'Ogni contributo ricevuto viene accolto con gratitudine e utilizzato per sostenere concretamente le attività educative e sociali del Centro.', de: "Jeder erhaltene Beitrag wird mit Dankbarkeit angenommen und dient dazu, die Bildungs- und Sozialaktivitäten des Zentrums konkret zu unterstützen.", en: "Every contribution received is welcomed with gratitude and used to concretely support the Centre's educational and social activities." })}
               </p>
               <p>
-                {t({ pt: 'A Fundação Betania ONLUS promove uma relação transparente e contínua com todos os benfeitores e apoiadores.', it: 'La Fundação Betania ONLUS promuove un rapporto trasparente e continuativo con tutti i benefattori e sostenitori.', de: "Die Fundação Betania ONLUS pflegt eine transparente und kontinuierliche Beziehung zu allen Förderern und Unterstützern." })}
+                {t({ pt: 'A Fundação Betania ONLUS promove uma relação transparente e contínua com todos os benfeitores e apoiadores.', it: 'La Fundação Betania ONLUS promuove un rapporto trasparente e continuativo con tutti i benefattori e sostenitori.', de: "Die Fundação Betania ONLUS pflegt eine transparente und kontinuierliche Beziehung zu allen Förderern und Unterstützern.", en: "Fundação Betania ONLUS promotes a transparent and ongoing relationship with all benefactors and supporters." })}
               </p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <Button variant="secondary" to="/trasparenza" className="text-base px-6 py-2">
-              {t({ pt: 'Ir à transparência', it: 'Vai alla trasparenza', de: "Zur Transparenz" })}
+              {t({ pt: 'Ir à transparência', it: 'Vai alla trasparenza', de: "Zur Transparenz", en: "Go to transparency" })}
             </Button>
           </AnimatedSection>
         </div>
@@ -275,21 +275,21 @@ export function BenefattoriPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl mb-6">
-              {t({ pt: 'Obrigado por fazer parte desta história', it: 'Grazie per essere parte di questa storia', de: "Danke, dass Sie Teil dieser Geschichte sind" })}
+              {t({ pt: 'Obrigado por fazer parte desta história', it: 'Grazie per essere parte di questa storia', de: "Danke, dass Sie Teil dieser Geschichte sind", en: "Thank you for being part of this story" })}
             </h2>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <p className="text-xl md:text-2xl mb-10 leading-relaxed">
-              {t({ pt: 'Cada gesto de apoio torna possível continuar este caminho ao lado das crianças e das famílias.', it: 'Ogni gesto di sostegno rende possibile continuare questo cammino accanto ai bambini e alle famiglie.', de: "Jede Geste der Unterstützung macht es möglich, diesen Weg an der Seite der Kinder und Familien fortzusetzen." })}
+              {t({ pt: 'Cada gesto de apoio torna possível continuar este caminho ao lado das crianças e das famílias.', it: 'Ogni gesto di sostegno rende possibile continuare questo cammino accanto ai bambini e alle famiglie.', de: "Jede Geste der Unterstützung macht es möglich, diesen Weg an der Seite der Kinder und Familien fortzusetzen.", en: "Every act of support makes it possible to continue this journey alongside children and families." })}
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" href="#diventa-benefattore" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
-                {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer" })}
+                {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer", en: "Become a benefactor" })}
               </Button>
               <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
-                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden" })}
+                {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
           </AnimatedSection>
