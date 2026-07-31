@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, redirect } from "react-router";
 import { HomePage } from "./pages/HomePage";
 import { RootLayout } from "./layouts/RootLayout";
 
@@ -17,7 +17,8 @@ export const router = createBrowserRouter([
       // Temporaneo: pagina "dona ora" nascosta, mostra il sito esterno in iframe. Per ripristinare: import da "./components/DonaOraPage" con m.DonaOraPage.
       { path: "dona-ora", lazy: () => import("./components/DonaOraExternalPage").then((m) => ({ Component: m.DonaOraExternalPage })) },
       { path: "cosa-puoi-fare-tu", lazy: () => import("./components/CosaPuoiFareTuPage").then((m) => ({ Component: m.CosaPuoiFareTuPage })) },
-      { path: "benefattori", lazy: () => import("./components/BenefattoriPage").then((m) => ({ Component: m.BenefattoriPage })) },
+      // Temporaneo: pagina "benefattori" nascosta, redirect alla home. Per ripristinare: rimettere il lazy import di "./components/BenefattoriPage" (m.BenefattoriPage) e i link in Header/Footer.
+      { path: "benefattori", loader: () => redirect("/") },
       { path: "contatti", lazy: () => import("./components/ContattiPage").then((m) => ({ Component: m.ContattiPage })) },
       { path: "riconoscimenti-istituzionali", lazy: () => import("./components/RiconoscimentiPage").then((m) => ({ Component: m.RiconoscimentiPage })) },
       { path: "iniziative", lazy: () => import("./components/IniziativePage").then((m) => ({ Component: m.IniziativePage })) },

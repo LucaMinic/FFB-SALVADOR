@@ -125,8 +125,7 @@ export function Footer() {
             { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" }), href: '/dona-ora', isRoute: true },
             { label: t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
           ]
-        },
-        { label: t({ pt: 'Benfeitores', it: 'Benefattori', de: "Wohltäter", en: "Benefactors" }), href: '/benefattori', isRoute: true }
+        }
       ]
     },
     { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true }

@@ -16,7 +16,6 @@ const pages = [
   { path: '/progetto-scuola', priority: '0.9', changefreq: 'monthly' },
   { path: '/dona-ora', priority: '0.9', changefreq: 'monthly' },
   { path: '/cosa-puoi-fare-tu', priority: '0.8', changefreq: 'monthly' },
-  { path: '/benefattori', priority: '0.5', changefreq: 'monthly' },
   { path: '/contatti', priority: '0.7', changefreq: 'yearly' },
   { path: '/riconoscimenti-istituzionali', priority: '0.5', changefreq: 'monthly' },
   { path: '/iniziative', priority: '0.6', changefreq: 'monthly' },
