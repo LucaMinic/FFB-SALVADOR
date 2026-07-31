@@ -14,7 +14,8 @@ export const router = createBrowserRouter([
       { path: "storia-del-centro", lazy: () => import("./components/StoriaCentroPage").then((m) => ({ Component: m.StoriaCentroPage })) },
       { path: "asilo", lazy: () => import("./components/AsiloPage").then((m) => ({ Component: m.AsiloPage })) },
       { path: "progetto-scuola", lazy: () => import("./components/ScuolaPage").then((m) => ({ Component: m.ScuolaPage })) },
-      { path: "dona-ora", lazy: () => import("./components/DonaOraPage").then((m) => ({ Component: m.DonaOraPage })) },
+      // Temporaneo: pagina "dona ora" nascosta, mostra il sito esterno in iframe. Per ripristinare: import da "./components/DonaOraPage" con m.DonaOraPage.
+      { path: "dona-ora", lazy: () => import("./components/DonaOraExternalPage").then((m) => ({ Component: m.DonaOraExternalPage })) },
       { path: "cosa-puoi-fare-tu", lazy: () => import("./components/CosaPuoiFareTuPage").then((m) => ({ Component: m.CosaPuoiFareTuPage })) },
       { path: "benefattori", lazy: () => import("./components/BenefattoriPage").then((m) => ({ Component: m.BenefattoriPage })) },
       { path: "contatti", lazy: () => import("./components/ContattiPage").then((m) => ({ Component: m.ContattiPage })) },
