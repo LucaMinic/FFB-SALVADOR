@@ -89,7 +89,7 @@ export function VisitaPresidentePage() {
               {t({
                 pt: 'No dia 19 de julho de 2024, o Centro Nossa Senhora Aparecida e a Fraternidade Franciscana de Betânia acolheram uma visita particularmente significativa: a do Presidente da República Italiana, Sergio Mattarella.',
                 it: 'Il 19 luglio 2024 il Centro Nossa Senhora Aparecida e la Fraternità Francescana di Betania hanno accolto una visita particolarmente significativa: quella del Presidente della Repubblica Italiana, Sergio Mattarella.',
-                de: "Am 19. Juli 2024 empfingen das Centro Nossa Senhora Aparecida und die Franziskanische Bruderschaft von Betania einen besonders bedeutsamen Besuch: den des Präsidenten der Italienischen Republik, Sergio Mattarella.",
+                de: "Am 19. Juli 2024 empfingen das Centro Nossa Senhora Aparecida und die Franziskanische Gemeinschaft von Betania einen besonders bedeutsamen Besuch: den des Präsidenten der Italienischen Republik, Sergio Mattarella.",
                 en: "On 19 July 2024 the Centro Nossa Senhora Aparecida and the Franciscan Fraternity of Betania welcomed a particularly significant visit: that of the President of the Italian Republic, Sergio Mattarella.",
               })}
             </p>
@@ -152,7 +152,7 @@ export function VisitaPresidentePage() {
               {t({
                 pt: 'Como etapa final de seu percurso, escolheu visitar também a nossa Fraternidade e o Centro Nossa Senhora Aparecida, encontrando crianças, educadores, missionários e colaboradores.',
                 it: 'Come tappa conclusiva del suo percorso, ha scelto di visitare anche la nostra Fraternità e il Centro Nossa Senhora Aparecida, incontrando bambini, educatori, missionari e collaboratori.',
-                de: "Als letzte Station seiner Reise entschied er sich, auch unsere Bruderschaft und das Centro Nossa Senhora Aparecida zu besuchen, wo er Kinder, Erzieher, Missionare und Mitarbeiter traf.",
+                de: "Als letzte Station seiner Reise entschied er sich, auch unsere Gemeinschaft und das Centro Nossa Senhora Aparecida zu besuchen, wo er Kinder, Erzieher, Missionare und Mitarbeiter traf.",
                 en: "As the final stop of his visit, he chose to also visit our Fraternity and the Centro Nossa Senhora Aparecida, meeting children, educators, missionaries and staff.",
               })}
             </p>

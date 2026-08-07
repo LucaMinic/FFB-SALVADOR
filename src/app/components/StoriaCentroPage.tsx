@@ -35,14 +35,14 @@ const entries: TimelineEntry[] = [
     title: {
       it: 'Nasce la Fraternità Francescana di Betania',
       pt: 'Nasce a Fraternidade Franciscana de Betânia',
-      de: 'Die Franziskanische Bruderschaft von Betania entsteht',
+      de: 'Die Franziskanische Gemeinschaft von Betania entsteht',
       en: "The Franciscan Fraternity of Betania is born",
     },
     paragraphs: [
       {
         it: 'Per iniziativa di fra Pancrazio Gaudioso, frate cappuccino, nasce in Italia la Fraternità Francescana di Betania.',
         pt: 'Por iniciativa de frei Pancrazio Gaudioso, frade capuchinho, nasce em Itália a Fraternidade Franciscana de Betânia.',
-        de: 'Auf Initiative von Bruder Pancrazio Gaudioso, einem Kapuzinermönch, entsteht in Italien die Franziskanische Bruderschaft von Betania.',
+        de: 'Auf Initiative von Bruder Pancrazio Gaudioso, einem Kapuzinermönch, entsteht in Italien die Franziskanische Gemeinschaft von Betania.',
         en: "On the initiative of Friar Pancrazio Gaudioso, a Capuchin friar, the Franciscan Fraternity of Betania is born in Italy.",
       },
       {
@@ -54,7 +54,7 @@ const entries: TimelineEntry[] = [
       {
         it: "Negli anni successivi la Fraternità si diffonde in Italia e all'estero, portando il proprio carisma nei luoghi segnati dalla povertà materiale e spirituale.",
         pt: 'Nos anos seguintes, a Fraternidade difunde-se em Itália e no exterior, levando o seu carisma aos lugares marcados pela pobreza material e espiritual.',
-        de: 'In den folgenden Jahren verbreitet sich die Bruderschaft in Italien und im Ausland und trägt ihr Charisma an Orte, die von materieller und geistlicher Armut geprägt sind.',
+        de: 'In den folgenden Jahren verbreitet sich die Gemeinschaft in Italien und im Ausland und trägt ihr Charisma an Orte, die von materieller und geistlicher Armut geprägt sind.',
         en: "In the following years, the Fraternity spreads across Italy and abroad, carrying its charism to places marked by material and spiritual poverty.",
       },
     ],
@@ -63,7 +63,7 @@ const entries: TimelineEntry[] = [
       alt: {
         it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania',
         pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia',
-        de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Bruderschaft von Betania',
+        de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Gemeinschaft von Betania',
         en: "Friar Pancrazio Gaudioso, founder of the Franciscan Fraternity of Betania",
       },
     },
@@ -82,7 +82,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'La Fraternità apre la sua prima missione in Brasile scegliendo di stabilirsi nel quartiere di São Cristóvão, nella periferia di Salvador de Bahia.',
         pt: 'A Fraternidade abre a sua primeira missão no Brasil, escolhendo estabelecer-se no bairro de São Cristóvão, na periferia de Salvador da Bahia.',
-        de: 'Die Bruderschaft eröffnet ihre erste Mission in Brasilien und lässt sich im Stadtviertel São Cristóvão am Rande von Salvador de Bahia nieder.',
+        de: 'Die Gemeinschaft eröffnet ihre erste Mission in Brasilien und lässt sich im Stadtviertel São Cristóvão am Rande von Salvador de Bahia nieder.',
         en: "The Fraternity opens its first mission in Brazil, choosing to settle in the São Cristóvão neighbourhood, on the outskirts of Salvador de Bahia.",
       },
       {
@@ -103,7 +103,7 @@ const entries: TimelineEntry[] = [
       alt: {
         it: "Dall'Italia al Brasile: l'arrivo della Fraternità a Salvador de Bahia",
         pt: 'Da Itália ao Brasil: a chegada da Fraternidade a Salvador da Bahia',
-        de: 'Von Italien nach Brasilien: die Ankunft der Bruderschaft in Salvador de Bahia',
+        de: 'Von Italien nach Brasilien: die Ankunft der Gemeinschaft in Salvador de Bahia',
         en: "From Italy to Brazil: the Fraternity's arrival in Salvador de Bahia",
       },
     },
@@ -180,7 +180,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'Parallelamente nasce il progetto di realizzare un convento che possa diventare il cuore della vita della Fraternità e delle opere sociali.',
         pt: 'Paralelamente, nasce o projeto de construir um convento que possa tornar-se o coração da vida da Fraternidade e das obras sociais.',
-        de: 'Parallel dazu entsteht das Projekt, ein Kloster zu errichten, das zum Herzen des Lebens der Bruderschaft und der sozialen Werke werden soll.',
+        de: 'Parallel dazu entsteht das Projekt, ein Kloster zu errichten, das zum Herzen des Lebens der Gemeinschaft und der sozialen Werke werden soll.',
         en: "At the same time, the project to build a convent that could become the heart of the Fraternity's life and social works is born.",
       },
     ],
@@ -208,7 +208,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'Dopo oltre dieci anni di presenza missionaria viene inaugurato il nuovo Convento della Fraternità Francescana di Betania.',
         pt: 'Depois de mais de dez anos de presença missionária, é inaugurado o novo Convento da Fraternidade Franciscana de Betânia.',
-        de: 'Nach mehr als zehn Jahren missionarischer Präsenz wird das neue Kloster der Franziskanischen Bruderschaft von Betania eingeweiht.',
+        de: 'Nach mehr als zehn Jahren missionarischer Präsenz wird das neue Kloster der Franziskanischen Gemeinschaft von Betania eingeweiht.',
         en: "After more than ten years of missionary presence, the new Convent of the Franciscan Fraternity of Betania is inaugurated.",
       },
       {
@@ -248,7 +248,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'Il 19 luglio 2024 il Presidente della Repubblica Italiana, Sergio Mattarella, visita la Fraternità Francescana di Betania e il Centro Nossa Senhora Aparecida durante la sua Visita di Stato nella Repubblica Federativa del Brasile.',
         pt: 'Em 19 de julho de 2024, o Presidente da República Italiana, Sergio Mattarella, visita a Fraternidade Franciscana de Betânia e o Centro Nossa Senhora Aparecida durante a sua Visita de Estado à República Federativa do Brasil.',
-        de: 'Am 19. Juli 2024 besucht der Präsident der Italienischen Republik, Sergio Mattarella, die Franziskanische Bruderschaft von Betania und das Centro Nossa Senhora Aparecida im Rahmen seines Staatsbesuchs in der Föderativen Republik Brasilien.',
+        de: 'Am 19. Juli 2024 besucht der Präsident der Italienischen Republik, Sergio Mattarella, die Franziskanische Gemeinschaft von Betania und das Centro Nossa Senhora Aparecida im Rahmen seines Staatsbesuchs in der Föderativen Republik Brasilien.',
         en: "On 19 July 2024, the President of the Italian Republic, Sergio Mattarella, visits the Franciscan Fraternity of Betania and the Centro Nossa Senhora Aparecida during his State Visit to the Federative Republic of Brazil.",
       },
       {
@@ -260,7 +260,7 @@ const entries: TimelineEntry[] = [
       {
         it: "La visita costituisce un importante riconoscimento dell'impegno educativo e sociale svolto dalla Fraternità nei confronti dei bambini e delle famiglie della periferia di Salvador de Bahia.",
         pt: 'A visita constitui um importante reconhecimento do empenho educativo e social realizado pela Fraternidade junto às crianças e às famílias da periferia de Salvador da Bahia.',
-        de: 'Der Besuch ist eine wichtige Anerkennung des pädagogischen und sozialen Engagements der Bruderschaft für die Kinder und Familien am Rande von Salvador de Bahia.',
+        de: 'Der Besuch ist eine wichtige Anerkennung des pädagogischen und sozialen Engagements der Gemeinschaft für die Kinder und Familien am Rande von Salvador de Bahia.',
         en: "The visit is an important recognition of the educational and social commitment carried out by the Fraternity for the children and families of the outskirts of Salvador de Bahia.",
       },
       {
@@ -354,7 +354,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'La Fraternità Francescana di Betania continua il proprio servizio a Salvador de Bahia con lo stesso spirito che ha animato i primi missionari arrivati nel 2010.',
         pt: 'A Fraternidade Franciscana de Betânia continua o seu serviço em Salvador da Bahia com o mesmo espírito que animou os primeiros missionários chegados em 2010.',
-        de: 'Die Franziskanische Bruderschaft von Betania setzt ihren Dienst in Salvador de Bahia mit demselben Geist fort, der die ersten 2010 angekommenen Missionare beseelte.',
+        de: 'Die Franziskanische Gemeinschaft von Betania setzt ihren Dienst in Salvador de Bahia mit demselben Geist fort, der die ersten 2010 angekommenen Missionare beseelte.',
         en: "The Franciscan Fraternity of Betania continues its service in Salvador de Bahia with the same spirit that inspired the first missionaries who arrived in 2010.",
       },
       {
@@ -400,7 +400,7 @@ const entries: TimelineEntry[] = [
       {
         it: 'La storia della Fraternità Francescana di Betania a Salvador de Bahia è ancora in cammino.',
         pt: 'A história da Fraternidade Franciscana de Betânia em Salvador da Bahia ainda está em caminho.',
-        de: 'Die Geschichte der Franziskanischen Bruderschaft von Betania in Salvador de Bahia ist noch im Werden.',
+        de: 'Die Geschichte der Franziskanischen Gemeinschaft von Betania in Salvador de Bahia ist noch im Werden.',
         en: "The story of the Franciscan Fraternity of Betania in Salvador de Bahia is still being written.",
       },
       {
@@ -453,7 +453,7 @@ export function StoriaCentroPage() {
         <div className="absolute inset-0">
           <img
             src={padrePancrazioImg}
-            alt={t({ it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania', pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia', de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Bruderschaft von Betania', en: "Friar Pancrazio Gaudioso, founder of the Franciscan Fraternity of Betania" })}
+            alt={t({ it: 'Fra Pancrazio Gaudioso, fondatore della Fraternità Francescana di Betania', pt: 'Frei Pancrazio Gaudioso, fundador da Fraternidade Franciscana de Betânia', de: 'Bruder Pancrazio Gaudioso, Gründer der Franziskanischen Gemeinschaft von Betania', en: "Friar Pancrazio Gaudioso, founder of the Franciscan Fraternity of Betania" })}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[var(--deep-blue)]/70 via-[var(--deep-blue)]/50 to-[var(--deep-blue)]/70" />
@@ -473,7 +473,7 @@ export function StoriaCentroPage() {
               {t({
                 it: 'La storia della Fraternità Francescana di Betania a Salvador de Bahia è il racconto di un progetto nato dalla fede, cresciuto attraverso il servizio e alimentato dalla speranza. Ogni tappa rappresenta un passo concreto verso un obiettivo preciso: offrire ai bambini e alle famiglie più fragili nuove opportunità di crescita, istruzione e dignità.',
                 pt: 'A história da Fraternidade Franciscana de Betânia em Salvador da Bahia é o relato de um projeto nascido da fé, crescido através do serviço e alimentado pela esperança. Cada etapa representa um passo concreto em direção a um objetivo preciso: oferecer às crianças e às famílias mais frágeis novas oportunidades de crescimento, educação e dignidade.',
-                de: 'Die Geschichte der Franziskanischen Bruderschaft von Betania in Salvador de Bahia ist die Erzählung eines Projekts, das aus dem Glauben geboren wurde, durch den Dienst gewachsen ist und von der Hoffnung genährt wird. Jede Etappe ist ein konkreter Schritt auf ein klares Ziel hin: den bedürftigsten Kindern und Familien neue Möglichkeiten für Wachstum, Bildung und Würde zu bieten.',
+                de: 'Die Geschichte der Franziskanischen Gemeinschaft von Betania in Salvador de Bahia ist die Erzählung eines Projekts, das aus dem Glauben geboren wurde, durch den Dienst gewachsen ist und von der Hoffnung genährt wird. Jede Etappe ist ein konkreter Schritt auf ein klares Ziel hin: den bedürftigsten Kindern und Familien neue Möglichkeiten für Wachstum, Bildung und Würde zu bieten.',
                 en: "The story of the Franciscan Fraternity of Betania in Salvador de Bahia is the account of a project born of faith, grown through service and nourished by hope. Each stage represents a concrete step towards a clear goal: offering the most vulnerable children and families new opportunities for growth, education and dignity.",
               })}
             </p>
@@ -508,7 +508,7 @@ export function StoriaCentroPage() {
               {t({
                 it: 'Dalla fondazione della Fraternità in Italia fino al progetto della nuova scuola: le tappe che hanno segnato il cammino del Centro.',
                 pt: 'Da fundação da Fraternidade em Itália até ao projeto da nova escola: as etapas que marcaram o caminho do Centro.',
-                de: 'Von der Gründung der Bruderschaft in Italien bis zum Projekt der neuen Schule: die Etappen, die den Weg des Zentrums geprägt haben.',
+                de: 'Von der Gründung der Gemeinschaft in Italien bis zum Projekt der neuen Schule: die Etappen, die den Weg des Zentrums geprägt haben.',
                 en: "From the founding of the Fraternity in Italy to the new school project: the stages that have marked the Centre's journey.",
               })}
             </p>
@@ -593,7 +593,7 @@ export function StoriaCentroPage() {
                 {t({
                   it: '"Educare significa donare futuro. È questo il cuore della missione della Fraternità Francescana di Betania a Salvador de Bahia: trasformare l\'accoglienza in opportunità e la speranza in un cammino di vita."',
                   pt: '"Educar significa doar futuro. É este o coração da missão da Fraternidade Franciscana de Betânia em Salvador da Bahia: transformar o acolhimento em oportunidade e a esperança num caminho de vida."',
-                  de: '"Erziehen bedeutet, Zukunft zu schenken. Das ist der Kern der Mission der Franziskanischen Bruderschaft von Betania in Salvador de Bahia: die Aufnahme in Chancen zu verwandeln und die Hoffnung in einen Lebensweg."',
+                  de: '"Erziehen bedeutet, Zukunft zu schenken. Das ist der Kern der Mission der Franziskanischen Gemeinschaft von Betania in Salvador de Bahia: die Aufnahme in Chancen zu verwandeln und die Hoffnung in einen Lebensweg."',
                   en: "\"Educating means giving a future. This is the heart of the mission of the Franciscan Fraternity of Betania in Salvador de Bahia: turning welcome into opportunity and hope into a life journey.\"",
                 })}
               </p>

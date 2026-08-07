@@ -244,7 +244,7 @@ export function DonaOraPage() {
                   {t({
                     pt: 'Um gesto simples que pode contribuir concretamente para os projetos educativos e sociais da Fraternidade Franciscana de Betânia.',
                     it: 'Un gesto semplice che può contribuire concretamente ai progetti educativi e sociali della Fraternità Francescana di Betania.',
-                    de: "Eine einfache Geste, die konkret zu den Bildungs- und Sozialprojekten der Franziskanischen Bruderschaft von Betania beitragen kann.",
+                    de: "Eine einfache Geste, die konkret zu den Bildungs- und Sozialprojekten der Franziskanischen Gemeinschaft von Betania beitragen kann.",
                     en: "A simple gesture that can concretely contribute to the educational and social projects of the Franciscan Fraternity of Betania."
                   })}
                 </p>

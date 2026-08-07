@@ -81,7 +81,7 @@ export function SostegnoADistanzaPage() {
                 {t({
                   pt: "O apoio à distância é uma forma direta e pessoal de acompanhar uma criança da creche que a Fraternidade Franciscana de Betânia gerencia em Salvador da Bahia.",
                   it: "Il sostegno a distanza è un modo diretto e personale di accompagnare un bambino dell'asilo che la Fraternità Francescana di Betania gestisce a Salvador de Bahia.",
-                  de: "Die Patenschaft ist eine direkte und persönliche Art, ein Kind der Kita zu begleiten, die die Franziskanische Bruderschaft von Betania in Salvador de Bahia führt.",
+                  de: "Die Patenschaft ist eine direkte und persönliche Art, ein Kind der Kita zu begleiten, die die Franziskanische Gemeinschaft von Betania in Salvador de Bahia führt.",
                   en: "Distance sponsorship is a direct and personal way of accompanying a child from the nursery school run by the Franciscan Fraternity of Betania in Salvador de Bahia."
                 })}
               </p>

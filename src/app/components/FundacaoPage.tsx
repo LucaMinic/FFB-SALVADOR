@@ -258,7 +258,7 @@ export function FundacaoPage() {
                 <br />
                 {t({ pt: 'O Centro representa a presença viva da fundação no território e o lugar em que a missão se torna experiência concreta.', it: 'Il Centro rappresenta la presenza viva della fondazione nel territorio e il luogo in cui la missione diventa esperienza concreta.', de: "Das Zentrum ist die lebendige Präsenz der Stiftung vor Ort und der Ort, an dem die Mission zu konkreter Erfahrung wird.", en: "The Centre represents the foundation's living presence in the local area and the place where the mission becomes concrete experience." })}
               </p>
-              <Button variant="secondary" to="/#il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}</Button>
+              <Button variant="secondary" to="/il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -275,7 +275,7 @@ export function FundacaoPage() {
         <div className="max-w-4xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-4 text-center">
-              {t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania", en: "The Franciscan Fraternity of Betania" })}
+              {t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" })}
             </h2>
             <p className="text-2xl text-gray-700 mb-8 text-center font-light">
               {t({ pt: 'Um vínculo que garante continuidade', it: 'Un legame che garantisce continuità', de: "Eine Verbindung, die Kontinuität garantiert", en: "A bond that guarantees continuity" })}
@@ -283,13 +283,13 @@ export function FundacaoPage() {
             <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
               <img loading="lazy"
                 src={fraternitaLegameImg}
-                alt={t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania", en: "The Franciscan Fraternity of Betania" })}
+                alt={t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" })}
                 className="w-full h-auto object-cover"
               />
             </div>
             <div className="bg-white rounded-2xl p-10 shadow-md">
               <p className="text-xl text-gray-700 leading-relaxed mb-8 text-center">
-                {t({ pt: 'A Fundação está estreitamente ligada à Fraternidade Franciscana de Betânia.', it: 'La Fundação è strettamente legata alla Fraternità Francescana di Betania.', de: "Die Fundação ist eng mit der Franziskanischen Bruderschaft von Betania verbunden.", en: "The Fundação is closely linked to the Franciscan Fraternity of Betania." })}
+                {t({ pt: 'A Fundação está estreitamente ligada à Fraternidade Franciscana de Betânia.', it: 'La Fundação è strettamente legata alla Fraternità Francescana di Betania.', de: "Die Fundação ist eng mit der Franziskanischen Gemeinschaft von Betania verbunden.", en: "The Fundação is closely linked to the Franciscan Fraternity of Betania." })}
               </p>
               <p className="text-lg text-gray-700 mb-6">{t({ pt: 'Este vínculo garante:', it: 'Questo legame garantisce:', de: "Diese Verbindung garantiert:", en: "This bond guarantees:" })}</p>
               <ul className="space-y-3 text-lg text-gray-700">
@@ -310,7 +310,7 @@ export function FundacaoPage() {
                 {t({ pt: 'A dimensão relacional e espiritual é parte integrante da ação.', it: "La dimensione relazionale e spirituale è parte integrante dell'azione.", de: "Die zwischenmenschliche und geistliche Dimension ist fester Bestandteil des Handelns.", en: "The relational and spiritual dimension is an integral part of the work." })}
               </p>
               <div className="text-center mt-8">
-                <Button variant="secondary" to="/la-fraternita">{t({ pt: 'Conheça a Fraternidade Franciscana de Betânia', it: 'Scopri la Fraternità Francescana di Betania', de: "Entdecken Sie die Franziskanische Bruderschaft von Betania", en: "Discover the Franciscan Fraternity of Betania" })}</Button>
+                <Button variant="secondary" to="/la-fraternita">{t({ pt: 'Conheça a Fraternidade Franciscana de Betânia', it: 'Scopri la Fraternità Francescana di Betania', de: "Entdecken Sie die Franziskanische Gemeinschaft von Betania", en: "Discover the Franciscan Fraternity of Betania" })}</Button>
               </div>
             </div>
           </AnimatedSection>

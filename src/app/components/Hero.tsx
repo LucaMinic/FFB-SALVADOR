@@ -61,7 +61,7 @@ export function Hero() {
     },
     {
       src: heroImage5,
-      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Bruderschaft", en: "The fraternity" }),
+      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Gemeinschaft", en: "The fraternity" }),
       text: '',
       focus: 'center 25%'
     },

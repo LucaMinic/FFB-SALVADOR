@@ -47,7 +47,7 @@ export function FundacaoIntro() {
               {t({
                 pt: 'Uma obra inspirada pela experiência da Fraternidade Franciscana de Betânia e sustentada diariamente por uma rede de pessoas que acreditam no valor da educação, da presença e da partilha.',
                 it: 'Un\'opera ispirata dall\'esperienza della Fraternità Francescana di Betania e sostenuta ogni giorno da una rete di persone che credono nel valore dell\'educazione, della presenza e della condivisione.',
-                de: "Ein Werk, inspiriert von der Erfahrung der Franziskanischen Bruderschaft von Betania und getragen von einem täglichen Netzwerk von Menschen, die an den Wert von Bildung, Präsenz und Gemeinschaft glauben.",
+                de: "Ein Werk, inspiriert von der Erfahrung der Franziskanischen Gemeinschaft von Betania und getragen von einem täglichen Netzwerk von Menschen, die an den Wert von Bildung, Präsenz und Gemeinschaft glauben.",
                 en: "A work inspired by the experience of the Franciscan Fraternity of Betania and sustained every day by a network of people who believe in the value of education, presence and sharing."
               })}
             </p>

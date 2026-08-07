@@ -300,7 +300,7 @@ export function RiconoscimentiPage() {
                 {t({
                   pt: 'Ao longo dos anos, a missão da Fraternidade Franciscana de Betânia e do Centro Nossa Senhora Aparecida foi narrada também por realidades externas que escolheram aprofundar o trabalho realizado ao lado das crianças, famílias e comunidades mais vulneráveis de Salvador da Bahia.',
                   it: 'Nel corso degli anni, la missione della Fraternità Francescana di Betania e del Centro Nossa Senhora Aparecida è stata raccontata anche da realtà esterne che hanno scelto di approfondire il lavoro svolto accanto ai bambini, alle famiglie e alle comunità più vulnerabili di Salvador de Bahia.',
-                  de: "Im Laufe der Jahre wurde die Mission der Franziskanischen Bruderschaft von Betania und des Centro Nossa Senhora Aparecida auch von externen Medien beschrieben, die sich eingehender mit der Arbeit für die Kinder, Familien und die schutzbedürftigsten Gemeinschaften von Salvador de Bahia befasst haben.",
+                  de: "Im Laufe der Jahre wurde die Mission der Franziskanischen Gemeinschaft von Betania und des Centro Nossa Senhora Aparecida auch von externen Medien beschrieben, die sich eingehender mit der Arbeit für die Kinder, Familien und die schutzbedürftigsten Gemeinschaften von Salvador de Bahia befasst haben.",
                   en: "Over the years, the mission of the Franciscan Fraternity of Betania and the Centro Nossa Senhora Aparecida has also been told by outside sources that chose to take a closer look at the work carried out alongside the most vulnerable children, families and communities of Salvador de Bahia."
                 })}
               </p>
@@ -328,7 +328,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'A fraternidade ajuda os pobres entre os mais pobres',
                       it: 'La fraternità aiuta i poveri tra i più poveri',
-                      de: "Die Bruderschaft hilft den Ärmsten der Armen",
+                      de: "Die Gemeinschaft hilft den Ärmsten der Armen",
                       en: "The fraternity helps the poorest of the poor"
                     })}
                   </h3>
@@ -336,7 +336,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'A revista Interris dedicou um aprofundamento à missão da Fraternidade Franciscana de Betânia no Brasil, narrando o trabalho realizado ao lado das comunidades mais vulneráveis de Salvador da Bahia e o compromisso quotidiano em favor das crianças e famílias acolhidas pelo Centro Nossa Senhora Aparecida.',
                       it: "La rivista Interris ha dedicato un approfondimento alla missione della Fraternità Francescana di Betania in Brasile, raccontando il lavoro svolto accanto alle comunità più vulnerabili di Salvador de Bahia e l'impegno quotidiano a favore dei bambini e delle famiglie accolte dal Centro Nossa Senhora Aparecida.",
-                      de: "Die Zeitschrift Interris hat der Mission der Franziskanischen Bruderschaft von Betania in Brasilien eine ausführliche Reportage gewidmet und dabei die Arbeit für die schutzbedürftigsten Gemeinschaften von Salvador de Bahia sowie das tägliche Engagement für die vom Centro Nossa Senhora Aparecida aufgenommenen Kinder und Familien beschrieben.",
+                      de: "Die Zeitschrift Interris hat der Mission der Franziskanischen Gemeinschaft von Betania in Brasilien eine ausführliche Reportage gewidmet und dabei die Arbeit für die schutzbedürftigsten Gemeinschaften von Salvador de Bahia sowie das tägliche Engagement für die vom Centro Nossa Senhora Aparecida aufgenommenen Kinder und Familien beschrieben.",
                       en: "The magazine Interris dedicated an in-depth feature to the mission of the Franciscan Fraternity of Betania in Brazil, telling the story of the work carried out alongside the most vulnerable communities of Salvador de Bahia and the daily commitment to the children and families welcomed by the Centro Nossa Senhora Aparecida."
                     })}
                   </p>
@@ -371,7 +371,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'Salvador de Bahia, inaugurado o primeiro convento da Fraternidade Franciscana de Betânia',
                       it: 'Salvador de Bahia, inaugurato il primo convento della Fraternità Francescana di Betania',
-                      de: "Salvador de Bahia: Einweihung des ersten Klosters der Franziskanischen Bruderschaft von Betania",
+                      de: "Salvador de Bahia: Einweihung des ersten Klosters der Franziskanischen Gemeinschaft von Betania",
                       en: "Salvador de Bahia: the first convent of the Franciscan Fraternity of Betania inaugurated"
                     })}
                   </h3>
@@ -379,7 +379,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'Sky TG24 narrou a inauguração do primeiro convento da Fraternidade em São Cristóvão, um dos bairros mais pobres de Salvador, projetado pelo estúdio romano Mixtura com arquitetura sustentável: ventilação natural, painéis fotovoltaicos e captação de água da chuva.',
                       it: "Sky TG24 ha raccontato l'inaugurazione del primo convento della Fraternità a São Cristóvão, uno dei quartieri più poveri di Salvador, progettato dallo studio romano Mixtura con architettura sostenibile: ventilazione naturale, pannelli fotovoltaici e raccolta dell'acqua piovana.",
-                      de: "Sky TG24 berichtete über die Einweihung des ersten Klosters der Bruderschaft in São Cristóvão, einem der ärmsten Viertel Salvadors, das vom römischen Architekturbüro Mixtura nachhaltig geplant wurde: natürliche Belüftung, Photovoltaikanlagen und Regenwassernutzung.",
+                      de: "Sky TG24 berichtete über die Einweihung des ersten Klosters der Gemeinschaft in São Cristóvão, einem der ärmsten Viertel Salvadors, das vom römischen Architekturbüro Mixtura nachhaltig geplant wurde: natürliche Belüftung, Photovoltaikanlagen und Regenwassernutzung.",
                       en: "Sky TG24 reported on the inauguration of the Fraternity's first convent in São Cristóvão, one of the poorest neighbourhoods of Salvador, designed by the Rome-based studio Mixtura with sustainable architecture: natural ventilation, photovoltaic panels and rainwater harvesting."
                     })}
                   </p>
@@ -420,7 +420,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'A Diocese de Molfetta narrou a visita pastoral do Bispo Domenico a Salvador da Bahia, que incluiu um encontro com a Fraternidade Franciscana de Betânia e uma celebração em honra do fundador padre Pancrazio, reconhecido como artífice da missão brasileira da comunidade.',
                       it: "La Diocesi di Molfetta ha narrato la visita pastorale del Vescovo Domenico a Salvador de Bahia, che ha incluso un incontro con la Fraternità Francescana di Betania e una celebrazione in onore del fondatore padre Pancrazio, riconosciuto come artefice della missione brasiliana della comunità.",
-                      de: "Die Diözese Molfetta berichtete über den pastoralen Besuch von Bischof Domenico in Salvador de Bahia, der eine Begegnung mit der Franziskanischen Bruderschaft von Betania sowie eine Feier zu Ehren des Gründers Pater Pancrazio umfasste, der als Wegbereiter der brasilianischen Mission der Gemeinschaft gilt.",
+                      de: "Die Diözese Molfetta berichtete über den pastoralen Besuch von Bischof Domenico in Salvador de Bahia, der eine Begegnung mit der Franziskanischen Gemeinschaft von Betania sowie eine Feier zu Ehren des Gründers Pater Pancrazio umfasste, der als Wegbereiter der brasilianischen Mission der Gemeinschaft gilt.",
                       en: "The Diocese of Molfetta recounted Bishop Domenico's pastoral visit to Salvador de Bahia, which included a meeting with the Franciscan Fraternity of Betania and a celebration in honour of the founder, Father Pancrazio, recognised as the architect of the community's Brazilian mission."
                     })}
                   </p>
@@ -455,7 +455,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'Mattarella visita a Fraternidade Franciscana de Salvador de Bahia, onde os meninos de rua são salvos',
                       it: 'Mattarella in visita alla Fraternità Francescana di Salvador de Bahia, dove i meninos de rua vengono salvati',
-                      de: "Mattarella besucht die Franziskanische Bruderschaft von Salvador de Bahia, wo Straßenkinder gerettet werden",
+                      de: "Mattarella besucht die Franziskanische Gemeinschaft von Salvador de Bahia, wo Straßenkinder gerettet werden",
                       en: "Mattarella visits the Franciscan Fraternity of Salvador de Bahia, where the meninos de rua are saved"
                     })}
                   </h3>
@@ -463,7 +463,7 @@ export function RiconoscimentiPage() {
                     {t({
                       pt: 'O Corriere della Sera narrou a visita do Presidente da República Italiana Sergio Mattarella à Fraternidade Franciscana de Betânia em Salvador da Bahia, destacando a missão de acolhimento das crianças de rua e o trabalho quotidiano da comunidade ao lado das famílias mais vulneráveis.',
                       it: "Il Corriere della Sera ha raccontato la visita del Presidente della Repubblica Italiana Sergio Mattarella alla Fraternità Francescana di Betania a Salvador de Bahia, mettendo in luce la missione di accoglienza dei bambini di strada e il lavoro quotidiano della comunità accanto alle famiglie più vulnerabili.",
-                      de: "Der Corriere della Sera berichtete über den Besuch des italienischen Staatspräsidenten Sergio Mattarella bei der Franziskanischen Bruderschaft von Betania in Salvador de Bahia und hob dabei die Aufnahme von Straßenkindern sowie die tägliche Arbeit der Gemeinschaft für die schutzbedürftigsten Familien hervor.",
+                      de: "Der Corriere della Sera berichtete über den Besuch des italienischen Staatspräsidenten Sergio Mattarella bei der Franziskanischen Gemeinschaft von Betania in Salvador de Bahia und hob dabei die Aufnahme von Straßenkindern sowie die tägliche Arbeit der Gemeinschaft für die schutzbedürftigsten Familien hervor.",
                       en: "Il Corriere della Sera reported on the visit of the President of the Italian Republic, Sergio Mattarella, to the Franciscan Fraternity of Betania in Salvador de Bahia, highlighting the mission of caring for street children and the community's daily work alongside the most vulnerable families."
                     })}
                   </p>

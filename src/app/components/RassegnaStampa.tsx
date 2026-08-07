@@ -39,7 +39,7 @@ export function RassegnaStampa() {
                   {t({
                     pt: 'Mattarella visita a Fraternidade Franciscana de Salvador de Bahia, onde os meninos de rua são salvos',
                     it: 'Mattarella in visita alla Fraternità Francescana di Salvador de Bahia, dove i meninos de rua vengono salvati',
-                    de: "Mattarella zu Besuch bei der Franziskanischen Bruderschaft von Salvador de Bahia, wo die meninos de rua gerettet werden",
+                    de: "Mattarella zu Besuch bei der Franziskanischen Gemeinschaft von Salvador de Bahia, wo die meninos de rua gerettet werden",
                     en: "Mattarella visits the Franciscan Fraternity of Salvador de Bahia, where the meninos de rua are saved"
                   })}
                 </h3>
@@ -47,7 +47,7 @@ export function RassegnaStampa() {
                   {t({
                     pt: 'O Corriere della Sera narrou a visita do Presidente Sergio Mattarella à Fraternidade Franciscana de Betânia em Salvador, destacando a missão de acolhimento das crianças de rua.',
                     it: "Il Corriere della Sera ha raccontato la visita del Presidente Sergio Mattarella alla Fraternità Francescana di Betania a Salvador, mettendo in luce la missione di accoglienza dei bambini di strada.",
-                    de: "Der Corriere della Sera berichtete über den Besuch von Präsident Sergio Mattarella bei der Franziskanischen Bruderschaft von Betania in Salvador und hob die Aufnahmemission für Straßenkinder hervor.",
+                    de: "Der Corriere della Sera berichtete über den Besuch von Präsident Sergio Mattarella bei der Franziskanischen Gemeinschaft von Betania in Salvador und hob die Aufnahmemission für Straßenkinder hervor.",
                     en: "Il Corriere della Sera reported on the visit of President Sergio Mattarella to the Franciscan Fraternity of Betania in Salvador, highlighting the mission of caring for street children."
                   })}
                 </p>
@@ -78,7 +78,7 @@ export function RassegnaStampa() {
                   {t({
                     pt: 'Salvador de Bahia, inaugurado o primeiro convento da Fraternidade Franciscana de Betânia',
                     it: 'Salvador de Bahia, inaugurato il primo convento della Fraternità Francescana di Betania',
-                    de: "Salvador de Bahia: Einweihung des ersten Konvents der Franziskanischen Bruderschaft von Betania",
+                    de: "Salvador de Bahia: Einweihung des ersten Konvents der Franziskanischen Gemeinschaft von Betania",
                     en: "Salvador de Bahia: the first convent of the Franciscan Fraternity of Betania inaugurated"
                   })}
                 </h3>

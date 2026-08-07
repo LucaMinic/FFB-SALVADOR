@@ -34,16 +34,16 @@ export const seoMeta: Record<string, PageMeta> = {
     description: {
       pt: 'A Fundação Betania ONLUS é uma presença ao lado das crianças e das famílias mais vulneráveis de Salvador da Bahia, nascida da Fraternidade Franciscana de Betânia.',
       it: 'La Fundação Betania ONLUS è un\'organizzazione al servizio dei bambini e delle famiglie più fragili di Salvador de Bahia, nata dalla Fraternità Francescana di Betania.',
-      de: "Die Fundação Betania ONLUS ist eine Organisation im Dienst der bedürftigsten Kinder und Familien von Salvador de Bahia, entstanden aus der Franziskanischen Bruderschaft von Betania.",
+      de: "Die Fundação Betania ONLUS ist eine Organisation im Dienst der bedürftigsten Kinder und Familien von Salvador de Bahia, entstanden aus der Franziskanischen Gemeinschaft von Betania.",
       en: "Fundação Betania ONLUS is an organisation serving the most vulnerable children and families of Salvador de Bahia, born from the Franciscan Fraternity of Betania.",
     },
   },
   '/la-fraternita': {
-    title: withSuffix({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania", en: "The Franciscan Fraternity of Betania" }),
+    title: withSuffix({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }),
     description: {
       pt: 'Uma vida partilhada entre oração, acolhimento e fraternidade: conheça a Fraternidade Franciscana de Betânia em Salvador da Bahia.',
       it: 'Una vita condivisa tra preghiera, accoglienza e fraternità: scopri la Fraternità Francescana di Betania a Salvador de Bahia.',
-      de: "Ein gemeinsames Leben aus Gebet, Aufnahme und Brüderlichkeit: entdecken Sie die Franziskanische Bruderschaft von Betania in Salvador de Bahia.",
+      de: "Ein gemeinsames Leben aus Gebet, Aufnahme und Brüderlichkeit: entdecken Sie die Franziskanische Gemeinschaft von Betania in Salvador de Bahia.",
       en: "A life shared between prayer, welcome and fraternity: discover the Franciscan Fraternity of Betania in Salvador de Bahia.",
     },
   },
@@ -61,7 +61,7 @@ export const seoMeta: Record<string, PageMeta> = {
     description: {
       pt: 'Da fundação da Fraternidade Franciscana de Betânia em 1982 até o projeto da nova escola: a cronologia da missão do Centro Nossa Senhora Aparecida em Salvador da Bahia.',
       it: 'Dalla fondazione della Fraternità Francescana di Betania nel 1982 fino al progetto della nuova scuola: la cronologia della missione del Centro Nossa Senhora Aparecida a Salvador de Bahia.',
-      de: "Von der Gründung der Franziskanischen Bruderschaft von Betania im Jahr 1982 bis zum Projekt der neuen Schule: die Chronologie der Mission des Centro Nossa Senhora Aparecida in Salvador de Bahia.",
+      de: "Von der Gründung der Franziskanischen Gemeinschaft von Betania im Jahr 1982 bis zum Projekt der neuen Schule: die Chronologie der Mission des Centro Nossa Senhora Aparecida in Salvador de Bahia.",
       en: "From the founding of the Franciscan Fraternity of Betania in 1982 to the new school project: the timeline of the mission of the Centro Nossa Senhora Aparecida in Salvador de Bahia.",
     },
   },

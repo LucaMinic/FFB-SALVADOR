@@ -105,11 +105,11 @@ export function Footer() {
       ]
     },
     {
-      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Bruderschaft", en: "Fraternity" }),
+      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Gemeinschaft", en: "Fraternity" }),
       href: '/la-fraternita',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Bruderschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
+        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
         { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali', de: "Besondere Veranstaltungen", en: "Special Events" }), href: '/eventi-speciali', isRoute: true }
       ]
     },
