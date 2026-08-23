@@ -209,7 +209,7 @@ export function Header() {
       submenu: [
         { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können", en: "What You Can Do" }), href: '/cosa-puoi-fare-tu', isRoute: true },
         { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" }), href: '/dona-ora', isRoute: true },
-        { label: t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
+        { label: t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
       ]
     },
     { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true }
