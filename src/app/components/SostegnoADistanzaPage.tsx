@@ -279,19 +279,19 @@ export function SostegnoADistanzaPage() {
               {
                 color: 'bg-[var(--soft-green)]',
                 label: t({ pt: 'Uma parte', it: 'Una parte', de: "Ein Teil", en: "One part" }),
-                price: t({ pt: '40 € por mês', it: '40 € al mese', de: "40 € pro Monat", en: "€40 a month" }),
+                price: t({ pt: 'R$ 240 por mês', it: 'R$ 240 al mese', de: "R$ 240 pro Monat", en: "R$ 240 a month" }),
                 desc: t({ pt: 'Contribuis com 1/3 do custo mensal.', it: 'Contribuisci a 1/3 del costo mensile.', de: "Sie tragen 1/3 der monatlichen Kosten.", en: "You contribute 1/3 of the monthly cost." })
               },
               {
                 color: 'bg-[var(--warm-orange)]',
                 label: t({ pt: 'Duas partes', it: 'Due parti', de: "Zwei Teile", en: "Two parts" }),
-                price: t({ pt: '80 € por mês', it: '80 € al mese', de: "80 € pro Monat", en: "€80 a month" }),
+                price: t({ pt: 'R$ 480 por mês', it: 'R$ 480 al mese', de: "R$ 480 pro Monat", en: "R$ 480 a month" }),
                 desc: t({ pt: 'Contribuis com 2/3 do custo mensal.', it: 'Contribuisci a 2/3 del costo mensile.', de: "Sie tragen 2/3 der monatlichen Kosten.", en: "You contribute 2/3 of the monthly cost." })
               },
               {
                 color: 'bg-[var(--deep-blue)]',
                 label: t({ pt: 'Apoio completo', it: 'Sostegno completo', de: "Vollständige Patenschaft", en: "Full sponsorship" }),
-                price: t({ pt: '120 € por mês', it: '120 € al mese', de: "120 € pro Monat", en: "€120 a month" }),
+                price: t({ pt: 'R$ 720 por mês', it: 'R$ 720 al mese', de: "R$ 720 pro Monat", en: "R$ 720 a month" }),
                 desc: t({ pt: 'Cobres o custo mensal completo.', it: "Copri l'intero costo mensile.", de: "Sie decken die gesamten monatlichen Kosten.", en: "You cover the full monthly cost." })
               }
             ].map((item, index) => (
@@ -348,7 +348,7 @@ export function SostegnoADistanzaPage() {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-700 mb-4 list-disc list-inside">
                 <li>{t({ pt: 'nome e sobrenome', it: 'nome e cognome', de: "Vor- und Nachname", en: "first and last name" })}</li>
                 <li>{t({ pt: 'e-mail e/ou número de telefone', it: 'e-mail e/o numero di telefono', de: "E-Mail und/oder Telefonnummer", en: "email and/or phone number" })}</li>
-                <li>{t({ pt: 'modalidade de apoio escolhida (40 €, 80 € ou 120 € por mês)', it: 'formula di sostegno scelta (40 €, 80 € o 120 € al mese)', de: "gewählte Unterstützungsform (40 €, 80 € oder 120 € pro Monat)", en: "chosen sponsorship plan (€40, €80 or €120 a month)" })}</li>
+                <li>{t({ pt: 'modalidade de apoio escolhida (R$ 240, R$ 480 ou R$ 720 por mês)', it: 'formula di sostegno scelta (R$ 240, R$ 480 o R$ 720 al mese)', de: "gewählte Unterstützungsform (R$ 240, R$ 480 oder R$ 720 pro Monat)", en: "chosen sponsorship plan (R$ 240, R$ 480 or R$ 720 a month)" })}</li>
                 <li>{t({ pt: 'endereço', it: 'indirizzo', de: "Adresse", en: "address" })}</li>
                 <li>{t({ pt: 'data', it: 'data', de: "Datum", en: "date" })}</li>
                 <li>{t({ pt: 'data de início do apoio', it: 'data di inizio del sostegno', de: "Startdatum der Patenschaft", en: "sponsorship start date" })}</li>
