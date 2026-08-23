@@ -11,6 +11,7 @@ import cantiereVideo2 from '../../imports/3.mp4';
 import droneGiugno2026 from '../../imports/8_giugno_2026.mp4';
 import fondamentaLuglio2026 from '../../imports/nuove/preparazione fondamenta luglio 2026.mp4';
 import gettoFondamenta21Luglio2026 from '../../imports/nuove/21 luglio 2026 inizio del getto delle fondamenta.mp4';
+import colonnePortanti23Agosto2026 from '../../imports/nuove/23 agosto 2026 preparazione colonne portanti.mp4';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -43,6 +44,27 @@ interface TimelineEntry {
 //
 export const entries: TimelineEntry[] = [
   {
+    id: 'colonne-portanti',
+    date: { it: '23 agosto 2026', pt: '23 de agosto de 2026', de: "23. August 2026", en: "23 August 2026" },
+    phase: { it: 'Fase 5', pt: 'Fase 5', de: "Phase 5", en: "Phase 5" },
+    title: {
+      it: 'Preparazione delle colonne portanti',
+      pt: 'Preparação das colunas de sustentação',
+      de: "Vorbereitung der tragenden Säulen",
+      en: "Preparing the load-bearing columns",
+    },
+    description: {
+      it: "Dopo il getto delle fondamenta, il cantiere procede con la preparazione delle colonne portanti, la struttura verticale che sosterrà l'intero edificio della scuola.",
+      pt: 'Após a concretagem das fundações, a obra avança com a preparação das colunas de sustentação, a estrutura vertical que irá sustentar todo o edifício da escola.',
+      de: "Nach der Betonierung der Fundamente geht es auf der Baustelle mit der Vorbereitung der tragenden Säulen weiter – der vertikalen Struktur, die das gesamte Schulgebäude tragen wird.",
+      en: "After the foundation pour, work on site continues with the preparation of the load-bearing columns, the vertical structure that will support the entire school building.",
+    },
+    media: [
+      { type: 'video', src: colonnePortanti23Agosto2026, alt: 'Preparazione delle colonne portanti – 23 agosto 2026' },
+    ],
+    status: 'in-progress',
+  },
+  {
     id: 'getto-fondamenta',
     date: { it: '21 luglio 2026', pt: '21 de julho de 2026', de: "21. Juli 2026", en: "21 July 2026" },
     phase: { it: 'Fase 4', pt: 'Fase 4', de: "Phase 4", en: "Phase 4" },
@@ -61,7 +83,7 @@ export const entries: TimelineEntry[] = [
     media: [
       { type: 'video', src: gettoFondamenta21Luglio2026, alt: 'Inizio del getto delle fondamenta – 21 luglio 2026' },
     ],
-    status: 'in-progress',
+    status: 'completed',
   },
   {
     id: 'fondamenta',

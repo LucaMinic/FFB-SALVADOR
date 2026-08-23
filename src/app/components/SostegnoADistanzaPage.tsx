@@ -40,7 +40,7 @@ export function SostegnoADistanzaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
             <h1 className="text-5xl md:text-6xl mb-6 leading-tight">
-              {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
+              {t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
             </h1>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
@@ -185,7 +185,7 @@ export function SostegnoADistanzaPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {[
               { icon: '📷', label: t({ pt: 'Foto da criança e da sua turma', it: 'Foto del bambino e della sua classe', de: "Foto des Kindes und seiner Klasse", en: "A photo of the child and their class" }) },
-              { icon: '📜', label: t({ pt: 'Certificado de adoção à distância', it: 'Attestato del sostegno a distanza', de: "Urkunde der Patenschaft", en: "A distance sponsorship certificate" }) },
+              { icon: '📜', label: t({ pt: 'Certificado de apoio à distância', it: 'Attestato del sostegno a distanza', de: "Urkunde der Patenschaft", en: "A distance sponsorship certificate" }) },
               { icon: '📋', label: t({ pt: 'Relatório anual', it: 'Rapporto annuale', de: "Jahresbericht", en: "An annual report" }) },
               { icon: '🔔', label: t({ pt: 'Atualizações sobre o projeto', it: 'Aggiornamenti sul progetto', de: "Updates zum Projekt", en: "Updates on the project" }) },
               { icon: '🧾', label: t({ pt: 'Certificado fiscal (a pedido)', it: 'Attestato fiscale (su richiesta)', de: "Steuerbescheinigung (auf Anfrage)", en: "A tax certificate (on request)" }) }
@@ -346,10 +346,10 @@ export function SostegnoADistanzaPage() {
                 {t({ pt: 'indicando:', it: 'indicando:', de: "und geben Sie Folgendes an:", en: "indicating:" })}
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-700 mb-4 list-disc list-inside">
-                <li>{t({ pt: 'nome e apelido', it: 'nome e cognome', de: "Vor- und Nachname", en: "first and last name" })}</li>
+                <li>{t({ pt: 'nome e sobrenome', it: 'nome e cognome', de: "Vor- und Nachname", en: "first and last name" })}</li>
                 <li>{t({ pt: 'e-mail e/ou número de telefone', it: 'e-mail e/o numero di telefono', de: "E-Mail und/oder Telefonnummer", en: "email and/or phone number" })}</li>
                 <li>{t({ pt: 'modalidade de apoio escolhida (40 €, 80 € ou 120 € por mês)', it: 'formula di sostegno scelta (40 €, 80 € o 120 € al mese)', de: "gewählte Unterstützungsform (40 €, 80 € oder 120 € pro Monat)", en: "chosen sponsorship plan (€40, €80 or €120 a month)" })}</li>
-                <li>{t({ pt: 'morada', it: 'indirizzo', de: "Adresse", en: "address" })}</li>
+                <li>{t({ pt: 'endereço', it: 'indirizzo', de: "Adresse", en: "address" })}</li>
                 <li>{t({ pt: 'data', it: 'data', de: "Datum", en: "date" })}</li>
                 <li>{t({ pt: 'data de início do apoio', it: 'data di inizio del sostegno', de: "Startdatum der Patenschaft", en: "sponsorship start date" })}</li>
               </ul>
@@ -391,7 +391,7 @@ export function SostegnoADistanzaPage() {
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-4xl">🤝</span>
                 <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)]">
-                  {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
+                  {t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
                 </h3>
               </div>
 
@@ -474,7 +474,7 @@ export function SostegnoADistanzaPage() {
                     <div className="bg-[var(--deep-blue)]/5 border border-[var(--deep-blue)]/15 rounded-xl px-5 py-4">
                       <p className="text-sm text-gray-500 mb-2">{t({ pt: 'Motivo da transferência:', it: 'Causale:', de: "Verwendungszweck:", en: "Reference:" })}</p>
                       <p className="text-[var(--deep-blue)] font-medium italic text-base mb-3">
-                        {t({ pt: 'Adoção à distância — Nome e Sobrenome (do doador)', it: 'Sostegno a distanza — nome e cognome (del donatore)', de: "Patenschaft — Vor- und Nachname (des Spenders)", en: "Distance sponsorship — first and last name (of the donor)" })}
+                        {t({ pt: 'Apoio à distância — Nome e Sobrenome (do doador)', it: 'Sostegno a distanza — nome e cognome (del donatore)', de: "Patenschaft — Vor- und Nachname (des Spenders)", en: "Distance sponsorship — first and last name (of the donor)" })}
                       </p>
                       <p className="text-sm text-gray-500 leading-relaxed">
                         {t({
@@ -530,7 +530,7 @@ export function SostegnoADistanzaPage() {
           <AnimatedSection delay={0.1}>
             <p className="text-lg text-gray-700 leading-relaxed mb-10">
               {t({
-                pt: 'Para qualquer informação sobre a adoção à distância podes contactar-nos diretamente.',
+                pt: 'Para qualquer informação sobre o apoio à distância podes contactar-nos diretamente.',
                 it: 'Per qualsiasi informazione sul sostegno a distanza puoi contattarci direttamente.',
                 de: "Für weitere Informationen zur Patenschaft können Sie uns direkt kontaktieren.",
                 en: "For any information about distance sponsorship, you can contact us directly."
