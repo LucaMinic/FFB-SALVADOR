@@ -12,6 +12,9 @@ import flagItalia from '../../imports/italia.png';
 import flagEu from '../../imports/eu.svg';
 import qrPix from '../../imports/qr-pix.png.jpeg';
 
+// Sezione donazioni Brasile/Italia-UE temporaneamente nascosta su richiesta (non cancellare, potrebbe tornare visibile in futuro)
+const SHOW_DONATION_COUNTRY_METHODS = false;
+
 export function SostegnoADistanzaPage() {
   const t = useT();
   const [copiedIbanSostegnoIt, setCopiedIbanSostegnoIt] = useState(false);
@@ -257,60 +260,6 @@ export function SostegnoADistanzaPage() {
         </div>
       </section>
 
-      {/* FORMULE DI SOSTEGNO */}
-      <section className="py-24 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-[var(--deep-blue)] text-center mb-4">
-              {t({ pt: 'Escolhe a modalidade de apoio', it: 'Scegli la formula di sostegno', de: "Wählen Sie Ihre Unterstützungsform", en: "Choose your sponsorship plan" })}
-            </h2>
-            <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-16">
-              {t({
-                pt: 'Podes optar por cobrir todo o custo mensal ou partilhá-lo, apoiando apenas uma parte.',
-                it: "Puoi scegliere di coprire l'intero costo mensile oppure condividerlo, sostenendone una parte.",
-                de: "Sie können die gesamten monatlichen Kosten übernehmen oder sich einen Teil davon teilen.",
-                en: "You can cover the full monthly cost or share it by contributing a part."
-              })}
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                color: 'bg-[var(--soft-green)]',
-                label: t({ pt: 'Uma parte', it: 'Una parte', de: "Ein Teil", en: "One part" }),
-                price: t({ pt: 'R$ 240 por mês', it: 'R$ 240 al mese', de: "R$ 240 pro Monat", en: "R$ 240 a month" }),
-                desc: t({ pt: 'Contribuis com 1/3 do custo mensal.', it: 'Contribuisci a 1/3 del costo mensile.', de: "Sie tragen 1/3 der monatlichen Kosten.", en: "You contribute 1/3 of the monthly cost." })
-              },
-              {
-                color: 'bg-[var(--warm-orange)]',
-                label: t({ pt: 'Duas partes', it: 'Due parti', de: "Zwei Teile", en: "Two parts" }),
-                price: t({ pt: 'R$ 480 por mês', it: 'R$ 480 al mese', de: "R$ 480 pro Monat", en: "R$ 480 a month" }),
-                desc: t({ pt: 'Contribuis com 2/3 do custo mensal.', it: 'Contribuisci a 2/3 del costo mensile.', de: "Sie tragen 2/3 der monatlichen Kosten.", en: "You contribute 2/3 of the monthly cost." })
-              },
-              {
-                color: 'bg-[var(--deep-blue)]',
-                label: t({ pt: 'Apoio completo', it: 'Sostegno completo', de: "Vollständige Patenschaft", en: "Full sponsorship" }),
-                price: t({ pt: 'R$ 720 por mês', it: 'R$ 720 al mese', de: "R$ 720 pro Monat", en: "R$ 720 a month" }),
-                desc: t({ pt: 'Cobres o custo mensal completo.', it: "Copri l'intero costo mensile.", de: "Sie decken die gesamten monatlichen Kosten.", en: "You cover the full monthly cost." })
-              }
-            ].map((item, index) => (
-              <AnimatedSection key={index} delay={0.1 * index}>
-                <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all h-full overflow-hidden">
-                  <div className={`${item.color} text-white text-center py-3 px-4`}>
-                    <p className="text-lg font-semibold uppercase tracking-wide">{item.label}</p>
-                  </div>
-                  <div className="p-8 text-center">
-                    <p className="text-3xl text-[var(--deep-blue)] font-bold mb-4">{item.price}</p>
-                    <p className="text-gray-600 leading-relaxed">{item.desc}</p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* COME SOSTENERE - IBANs */}
       <section id="come-sostenere" className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white scroll-mt-24">
         <div className="max-w-5xl mx-auto px-6">
@@ -318,14 +267,16 @@ export function SostegnoADistanzaPage() {
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-4">
               {t({ pt: 'Como apoiar', it: 'Come sostenere', de: "So können Sie helfen", en: "How to support" })}
             </h2>
-            <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
-              {t({
-                pt: 'Escolhe a modalidade de doação de acordo com o teu país de residência.',
-                it: 'Scegli la modalità di donazione in base al tuo paese di residenza.',
-                de: "Wählen Sie die Spendenmethode entsprechend Ihrem Wohnsitzland.",
-                en: "Choose the donation method based on your country of residence."
-              })}
-            </p>
+            {SHOW_DONATION_COUNTRY_METHODS && (
+              <p className="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                {t({
+                  pt: 'Escolhe a modalidade de doação de acordo com o teu país de residência.',
+                  it: 'Scegli la modalità di donazione in base al tuo paese di residenza.',
+                  de: "Wählen Sie die Spendenmethode entsprechend Ihrem Wohnsitzland.",
+                  en: "Choose the donation method based on your country of residence."
+                })}
+              </p>
+            )}
           </AnimatedSection>
 
           <AnimatedSection delay={0.05}>
@@ -333,27 +284,22 @@ export function SostegnoADistanzaPage() {
               <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
                 {t({ pt: 'Para ativar o apoio', it: 'Per attivare il sostegno', de: "So aktivieren Sie die Patenschaft", en: "To activate your sponsorship" })}
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 {t({
-                  pt: 'Para ativar o apoio, escreve para',
-                  it: 'Per attivare il sostegno, scrivi a',
-                  de: "Um die Patenschaft zu aktivieren, schreiben Sie an",
-                  en: "To activate your sponsorship, write to"
-                })}{' '}
-                <a href="mailto:segretariato.missioni@ffbetania.net" className="text-[var(--deep-blue)] font-semibold hover:underline">
-                  segretariato.missioni@ffbetania.net
-                </a>{' '}
-                {t({ pt: 'indicando:', it: 'indicando:', de: "und geben Sie Folgendes an:", en: "indicating:" })}
+                  pt: 'Para ativar o apoio é necessário escrever um e-mail. Vais receber todas as instruções sobre como proceder.',
+                  it: 'Per attivare il sostegno è necessario scrivere una mail. Riceverai tutte le istruzioni su come procedere.',
+                  de: "Um die Patenschaft zu aktivieren, müssen Sie eine E-Mail schreiben. Sie erhalten dann alle Anweisungen zum weiteren Vorgehen.",
+                  en: "To activate your sponsorship you need to send an email. You will receive all the instructions on how to proceed."
+                })}
               </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-700 mb-4 list-disc list-inside">
-                <li>{t({ pt: 'nome e sobrenome', it: 'nome e cognome', de: "Vor- und Nachname", en: "first and last name" })}</li>
-                <li>{t({ pt: 'e-mail e/ou número de telefone', it: 'e-mail e/o numero di telefono', de: "E-Mail und/oder Telefonnummer", en: "email and/or phone number" })}</li>
-                <li>{t({ pt: 'modalidade de apoio escolhida (R$ 240, R$ 480 ou R$ 720 por mês)', it: 'formula di sostegno scelta (R$ 240, R$ 480 o R$ 720 al mese)', de: "gewählte Unterstützungsform (R$ 240, R$ 480 oder R$ 720 pro Monat)", en: "chosen sponsorship plan (R$ 240, R$ 480 or R$ 720 a month)" })}</li>
-                <li>{t({ pt: 'endereço', it: 'indirizzo', de: "Adresse", en: "address" })}</li>
-                <li>{t({ pt: 'data', it: 'data', de: "Datum", en: "date" })}</li>
-                <li>{t({ pt: 'data de início do apoio', it: 'data di inizio del sostegno', de: "Startdatum der Patenschaft", en: "sponsorship start date" })}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed italic">
+              <a
+                href="mailto:segretariato.missioni@ffbetania.net"
+                className="flex flex-col sm:flex-row items-center justify-center gap-3 text-center px-6 py-6 bg-[var(--deep-blue)] text-white text-xl md:text-2xl font-semibold rounded-2xl shadow-lg hover:bg-blue-800 hover:shadow-xl transition-all mb-4 break-all sm:break-normal"
+              >
+                <Heart className="w-7 h-7 flex-shrink-0" />
+                segretariato.missioni@ffbetania.net
+              </a>
+              <p className="text-gray-600 leading-relaxed italic text-center">
                 {t({
                   pt: 'Um dos nossos irmãos ou irmãs irá contactar-te para te acompanhar na ativação do apoio.',
                   it: 'Un nostro fratello o una nostra sorella ti contatterà per accompagnarti nell\'attivazione del sostegno.',
@@ -364,6 +310,8 @@ export function SostegnoADistanzaPage() {
             </div>
           </AnimatedSection>
 
+          {SHOW_DONATION_COUNTRY_METHODS && (
+          <>
           <AnimatedSection delay={0.1}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
@@ -490,6 +438,8 @@ export function SostegnoADistanzaPage() {
               </div>
             </div>
           </AnimatedSection>
+          </>
+          )}
         </div>
       </section>
 

@@ -273,7 +273,7 @@ export function DonaOraPage() {
               <div className="bg-gradient-to-br from-[var(--soft-green)]/10 to-white p-8 md:p-10 rounded-2xl shadow-xl border-2 border-[var(--soft-green)]/30 text-center">
                 <span className="text-5xl mb-5 block">🤝</span>
                 <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-4">
-                  {t({ pt: 'Adoção à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
+                  {t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" })}
                 </h3>
                 <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto">
                   {t({
@@ -284,7 +284,7 @@ export function DonaOraPage() {
                   })}
                 </p>
                 <Button variant="primary" to="/sostegno-a-distanza" className="text-lg px-8 py-4">
-                  {t({ pt: 'Descobre a adoção à distância', it: 'Scopri il sostegno a distanza', de: "Mehr über die Patenschaft erfahren", en: "Discover distance sponsorship" })}
+                  {t({ pt: 'Descobre o apoio à distância', it: 'Scopri il sostegno a distanza', de: "Mehr über die Patenschaft erfahren", en: "Discover distance sponsorship" })}
                 </Button>
               </div>
             </AnimatedSection>
