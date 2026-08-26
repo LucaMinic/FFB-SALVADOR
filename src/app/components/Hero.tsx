@@ -7,8 +7,8 @@ import heroImage1 from '../../imports/nuove/IMG_2360.JPG';
 import heroImage2 from '../../imports/14-1.jpeg';
 import heroImage3 from '../../imports/34.jpeg';
 import heroImage4 from '../../imports/9-1.jpeg';
-import heroImage5 from '../../imports/32.jpeg';
 import logoHero from '../../imports/nuove/LOGO stretto.png';
+import logoFundacaoIcon from '../../imports/logo_ok.png';
 import { AnimatedSection } from './AnimatedSection';
 import { AvanzamentoBanner } from './AvanzamentoBanner';
 import { useT } from '../context/LanguageContext';
@@ -59,12 +59,6 @@ export function Hero() {
       text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.', de: "Wo Not herrscht, entsteht eine Präsenz, die zum Zuhause wird.", en: "Where there is need, a presence is born that becomes home." }),
       focus: 'center 35%'
     },
-    {
-      src: heroImage5,
-      alt: t({ pt: 'A fraternidade', it: 'La fraternità', de: "Die Gemeinschaft", en: "The fraternity" }),
-      text: '',
-      focus: 'center 25%'
-    },
   ];
 
   return (
@@ -110,9 +104,17 @@ export function Hero() {
 
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <AnimatedSection immediate>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6 md:mb-10">
+              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-14 sm:h-16 md:h-20 w-auto" />
+              <span className="w-px h-10 sm:h-12 md:h-14 bg-gray-300" />
+              <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-14 sm:h-16 md:h-20 w-auto" />
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection immediate>
             <div className="mb-6 md:mb-12">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-[var(--deep-blue)] font-bold leading-tight text-center tracking-tight">
-                Fundação Betania ONLUS
+                Centro Nossa Senhora Aparecida
               </h1>
             </div>
           </AnimatedSection>
@@ -136,15 +138,6 @@ export function Hero() {
                   en: "Every day we share life with those most in need, offering care, education and a real chance for the future."
                 })}
               </p>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.3}>
-            <div className="mt-4 md:mt-6 mb-8 md:mb-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-20 md:h-28 w-auto" />
-              <span className="text-2xl md:text-3xl text-[var(--deep-blue)] font-semibold tracking-tight">
-                Centro Nossa Senhora Aparecida
-              </span>
             </div>
           </AnimatedSection>
         </div>

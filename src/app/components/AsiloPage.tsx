@@ -1,6 +1,7 @@
+import { Link } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { Instagram, Heart, Globe, Users, Award, Sparkles, HeartHandshake, Apple, PlayCircle, Home } from 'lucide-react';
+import { Instagram, Heart, Globe, Users, Award, Sparkles, HeartHandshake, Apple, PlayCircle, Home, ArrowRight } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -460,41 +461,62 @@ export function AsiloPage() {
               {
                 img: atelieImg,
                 color: 'var(--warm-orange)',
+                link: '/atelier',
                 title: t({ pt: 'Ateliê', it: 'Atelier', de: "Atelier", en: "Atelier" }),
                 desc: t({ pt: 'Criatividade, exploração e múltiplas linguagens através dos materiais.', it: 'Creatività, esplorazione e linguaggi multipli attraverso i materiali.', de: "Kreativität, Erkundung und vielfältige Ausdrucksformen durch Materialien.", en: "Creativity, exploration and multiple languages through materials." })
               },
               {
                 img: alimentacaoProjImg,
                 color: 'var(--soft-green)',
+                link: '/alimentacao-saudavel',
                 title: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana', de: "Gesunde Ernährung", en: "Healthy Eating" }),
                 desc: t({ pt: 'Refeições como momentos de aprendizagem, convivência e autonomia.', it: 'Pasti come momenti di apprendimento, convivenza e autonomia.', de: "Mahlzeiten als Momente des Lernens, des Miteinanders und der Selbstständigkeit.", en: "Meals as moments of learning, togetherness and autonomy." })
               },
               {
                 img: hortaImg,
                 color: 'var(--warm-red)',
+                link: null,
                 title: t({ pt: 'Horta', it: 'Orto', de: "Garten", en: "Vegetable Garden" }),
                 desc: t({ pt: 'Contato direto com a natureza, o plantio e o cuidado com a vida.', it: 'Contatto diretto con la natura, la semina e la cura della vita.', de: "Direkter Kontakt mit der Natur, dem Säen und der Pflege des Lebens.", en: "Direct contact with nature, planting and caring for life." })
               },
               {
                 img: formacaoReligiosaImg,
                 color: 'var(--deep-blue)',
+                link: '/la-fraternita',
                 title: t({ pt: 'Formação Religiosa', it: 'Formazione Religiosa', de: "Religiöse Bildung", en: "Religious Education" }),
                 desc: t({ pt: 'Valores humanos e cristãos cultivados no quotidiano.', it: 'Valori umani e cristiani coltivati nel quotidiano.', de: "Menschliche und christliche Werte, die im Alltag gepflegt werden.", en: "Human and Christian values cultivated in everyday life." })
               }
-            ].map((project, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
+            ].map((project, i) => {
+              const cardContent = (
+                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col group">
                   <div className="relative h-36 flex-shrink-0 overflow-hidden">
-                    <img loading="lazy" src={project.img} alt={project.title} className="w-full h-full object-cover" />
+                    <img loading="lazy" src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
                     <div className="absolute inset-0" style={{ backgroundColor: `${project.color}33` }} />
                   </div>
-                  <div className="p-5 bg-[var(--beige)] flex-1" style={{ borderTop: `4px solid ${project.color}` }}>
+                  <div className="p-5 bg-[var(--beige)] flex-1 flex flex-col" style={{ borderTop: `4px solid ${project.color}` }}>
                     <p className="font-semibold text-base mb-2" style={{ color: project.color }}>{project.title}</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{project.desc}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed flex-1">{project.desc}</p>
+                    {project.link && (
+                      <p className="mt-3 text-sm font-semibold inline-flex items-center gap-1 transition-transform duration-200 group-hover:translate-x-1" style={{ color: project.color }}>
+                        {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </p>
+                    )}
                   </div>
                 </div>
-              </AnimatedSection>
-            ))}
+              );
+              return (
+                <AnimatedSection key={i} delay={i * 0.1}>
+                  {project.link ? (
+                    <Link to={project.link} className="block h-full">
+                      {cardContent}
+                    </Link>
+                  ) : (
+                    cardContent
+                  )}
+                </AnimatedSection>
+              );
+            })}
           </div>
 
           <AnimatedSection delay={0.2}>

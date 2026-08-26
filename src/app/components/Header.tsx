@@ -4,7 +4,8 @@ import { Button } from './Button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Menu, ChevronDown, ChevronRight } from 'lucide-react';
-import logo from '../../imports/logo_fundacao-2.png';
+import logoCentro from '../../imports/nuove/LOGO stretto.png';
+import logoFundacaoIcon from '../../imports/logo_ok.png';
 import flagBrasil from '../../imports/brasil.png';
 import flagItalia from '../../imports/italia.png';
 import { useLanguage, useT, type Lang } from '../context/LanguageContext';
@@ -230,9 +231,25 @@ export function Header() {
         <div className="flex items-center justify-between gap-2 sm:gap-3">
           {/* Logo */}
           <div className="flex items-center gap-8 flex-shrink-0">
-            <Link to="/">
-              <img src={logo} alt="Fundação Betânia Onlus" className="h-12 sm:h-16 xl:h-20 w-auto" />
-            </Link>
+            <div className="flex items-center gap-2.5 sm:gap-3.5">
+              <Link to="/" className="flex items-center gap-2 sm:gap-2.5">
+                <img src={logoCentro} alt="Centro Nossa Senhora Aparecida" className="h-11 sm:h-14 xl:h-16 w-auto" />
+                <span className="hidden sm:flex flex-col leading-tight">
+                  <span className="text-sm md:text-base xl:text-lg font-bold text-[var(--deep-blue)]">Centro</span>
+                  <span className="text-sm md:text-base xl:text-lg font-bold text-[var(--deep-blue)]">Nossa Senhora</span>
+                  <span className="text-sm md:text-base xl:text-lg font-bold text-[var(--deep-blue)]">Aparecida</span>
+                </span>
+              </Link>
+              <span className="w-px h-8 sm:h-10 xl:h-12 bg-gray-200 flex-shrink-0" />
+              <Link to="/la-fundacao" className="flex items-center gap-2 sm:gap-2.5 flex-shrink-0">
+                <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-8 sm:h-10 xl:h-12 w-auto" />
+                <span className="hidden sm:flex flex-col leading-tight">
+                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Fundação</span>
+                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Betânia</span>
+                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Onlus</span>
+                </span>
+              </Link>
+            </div>
 
             {/* Desktop nav */}
             <nav ref={desktopNavRef} className="hidden xl:flex gap-4 items-center">

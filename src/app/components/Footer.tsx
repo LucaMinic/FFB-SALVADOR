@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router';
 import { Button } from './Button';
 import { Instagram, ChevronDown } from 'lucide-react';
-import logo from '../../imports/logo_ok.png';
+import logoFundacaoIcon from '../../imports/logo_ok.png';
+import logoCentro from '../../imports/nuove/LOGO stretto.png';
 import { useT } from '../context/LanguageContext';
 
 interface SubMenuItem {
@@ -136,12 +137,24 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
-            <Link to="/">
-              <img loading="lazy" src={logo} alt="Fundação Betânia Onlus" className="h-14 w-auto mb-6" />
-            </Link>
-            <p className="text-sm text-gray-300">
-              Fundação Betânia Onlus
-            </p>
+            <div className="flex flex-col gap-5">
+              <Link to="/il-centro" className="flex items-center gap-3">
+                <img loading="lazy" src={logoCentro} alt="Centro Nossa Senhora Aparecida" className="h-12 w-auto flex-shrink-0" />
+                <span className="flex flex-col leading-tight text-white font-semibold">
+                  <span>Centro</span>
+                  <span>Nossa Senhora</span>
+                  <span>Aparecida</span>
+                </span>
+              </Link>
+              <Link to="/la-fundacao" className="flex items-center gap-3">
+                <img loading="lazy" src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-12 w-auto flex-shrink-0" />
+                <span className="flex flex-col leading-tight text-white font-semibold">
+                  <span>Fundação</span>
+                  <span>Betânia</span>
+                  <span>Onlus</span>
+                </span>
+              </Link>
+            </div>
           </div>
 
           <div>

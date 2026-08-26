@@ -9,6 +9,12 @@ import educativaImg from '../../imports/13-2.jpeg';
 import finalCtaImg from '../../imports/21.jpeg';
 import municipioLogo from '../../imports/municipio_salvador.jpg';
 import emblemItaly from '../../imports/Emblem_of_Italy.png';
+import rotaryLogo from '../../imports/loghi sostegno istituzioni/Rotary.jpeg';
+import bahiaSemFomeLogo from '../../imports/loghi sostegno istituzioni/bahia sem home.jpeg';
+import limiarLogo from '../../imports/loghi sostegno istituzioni/limiar.jpeg';
+import maisInfanciaLogo from '../../imports/loghi sostegno istituzioni/mais infancia.jpeg';
+import sescMesaBrasilLogo from '../../imports/loghi sostegno istituzioni/seso.jpeg';
+import voluntariasSociaisLogo from '../../imports/loghi sostegno istituzioni/sociais.jpeg';
 
 export function RiconoscimentiPage() {
   const t = useT();
@@ -90,108 +96,90 @@ export function RiconoscimentiPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Card 1 - Presidenza Repubblica Italiana */}
-            <AnimatedSection>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[var(--deep-blue)] h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-20 h-20 flex items-center justify-center flex-shrink-0 bg-white rounded-lg">
-                    <img loading="lazy" src={emblemItaly} alt={t({ pt: 'Emblema da República Italiana', it: 'Emblema della Repubblica Italiana', de: "Emblem der Italienischen Republik", en: "Emblem of the Italian Republic" })} className="w-full h-full object-contain" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              {
+                logo: emblemItaly,
+                name: t({ pt: 'Presidência da República Italiana', it: 'Presidenza della Repubblica Italiana', de: "Präsidentschaft der Italienischen Republik", en: "Presidency of the Italian Republic" }),
+                border: 'border-[var(--deep-blue)]'
+              },
+              {
+                logo: municipioLogo,
+                name: t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia', de: "Stadtverwaltung von Salvador de Bahia", en: "Municipality of Salvador de Bahia" }),
+                border: 'border-[var(--soft-green)]'
+              },
+              {
+                icon: <GraduationCap className="w-8 h-8 text-white" />,
+                iconBg: 'from-[var(--warm-orange)] to-orange-300',
+                name: 'SMED – Secretaria Municipal da Educação',
+                border: 'border-[var(--warm-orange)]'
+              },
+              {
+                icon: <Award className="w-8 h-8 text-white" />,
+                iconBg: 'from-purple-500 to-purple-300',
+                name: 'FUNDEB',
+                border: 'border-purple-500'
+              },
+              {
+                icon: <Globe className="w-8 h-8 text-white" />,
+                iconBg: 'from-amber-500 to-amber-300',
+                name: t({ pt: 'IILA – Organização Internacional Ítalo-Latino Americana', it: 'IILA – Organizzazione Internazionale Italo-Latino Americana', de: "IILA – Italienisch-Lateinamerikanische Internationale Organisation", en: "IILA – Italo-Latin American International Organisation" }),
+                border: 'border-amber-500'
+              },
+              {
+                icon: <Globe className="w-8 h-8 text-white" />,
+                iconBg: 'from-blue-500 to-blue-300',
+                name: t({ pt: 'Ministério dos Negócios Estrangeiros e da Cooperação Internacional', it: 'Ministero degli Affari Esteri e della Cooperazione Internazionale', de: "Ministerium für Auswärtige Angelegenheiten und Internationale Zusammenarbeit", en: "Ministry of Foreign Affairs and International Cooperation" }),
+                border: 'border-blue-500'
+              },
+              {
+                logo: rotaryLogo,
+                name: 'Rotary International',
+                border: 'border-orange-500'
+              },
+              {
+                logo: bahiaSemFomeLogo,
+                name: 'Bahia Sem Fome',
+                border: 'border-teal-500'
+              },
+              {
+                logo: limiarLogo,
+                name: 'Limiar',
+                border: 'border-green-600'
+              },
+              {
+                logo: maisInfanciaLogo,
+                name: 'Mais Infância',
+                border: 'border-pink-400'
+              },
+              {
+                logo: sescMesaBrasilLogo,
+                name: 'SESC Mesa Brasil',
+                border: 'border-indigo-500'
+              },
+              {
+                logo: voluntariasSociaisLogo,
+                name: 'Voluntárias Sociais da Bahia',
+                border: 'border-rose-500'
+              }
+            ].map((item, index) => (
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <div className={`bg-white p-6 rounded-2xl shadow-lg border-t-4 ${item.border} h-full flex flex-col items-center text-center gap-4`}>
+                  <div className="w-20 h-20 flex items-center justify-center flex-shrink-0">
+                    {item.logo ? (
+                      <img loading="lazy" src={item.logo} alt={item.name} className="w-full h-full object-contain" />
+                    ) : (
+                      <div className={`w-16 h-16 bg-gradient-to-br ${item.iconBg} rounded-full flex items-center justify-center`}>
+                        {item.icon}
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    {t({ pt: 'Presidência da República Italiana', it: 'Presidenza della Repubblica Italiana', de: "Präsidentschaft der Italienischen Republik", en: "Presidency of the Italian Republic" })}
+                  <h3 className="text-lg text-[var(--deep-blue)]">
+                    {item.name}
                   </h3>
                 </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Reconhecimento moral e institucional pelo valor humano, educativo e social da obra levada adiante no Brasil.', it: 'Riconoscimento morale e istituzionale per il valore umano, educativo e sociale dell\'opera portata avanti in Brasile.', de: "Moralische und institutionelle Anerkennung für den menschlichen, pädagogischen und sozialen Wert der in Brasilien geleisteten Arbeit.", en: "Moral and institutional recognition for the human, educational and social value of the work carried out in Brazil." })}
-                </p>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 2 - Municipio Salvador */}
-            <AnimatedSection delay={0.1}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[var(--soft-green)] h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-20 h-20 flex items-center justify-center flex-shrink-0 bg-white rounded-lg">
-                    <img loading="lazy" src={municipioLogo} alt={t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia', de: "Stadtverwaltung von Salvador de Bahia", en: "Municipality of Salvador de Bahia" })} className="w-full h-full object-contain" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    {t({ pt: 'Município de Salvador de Bahia', it: 'Municipio di Salvador de Bahia', de: "Stadtverwaltung von Salvador de Bahia", en: "Municipality of Salvador de Bahia" })}
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Colaboração ativa através da convenção educativa com a SMED – Secretaria Municipal da Educação – para o apoio à creche e à educação da primeira infância.', it: "Collaborazione attiva attraverso la convenzione educativa con la SMED – Segreteria Municipale dell'Educazione – per il sostegno alla creche e all'educazione della prima infanzia.", de: "Aktive Zusammenarbeit durch die Bildungsvereinbarung mit der SMED – Städtisches Sekretariat für Bildung – zur Unterstützung der Kita und der frühkindlichen Bildung.", en: "Active collaboration through the educational agreement with SMED – the Municipal Department of Education – to support the creche and early childhood education." })}
-                </p>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 3 - SMED */}
-            <AnimatedSection delay={0.2}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-[var(--warm-orange)] h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[var(--warm-orange)] to-orange-300 rounded-full flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    SMED – Secretaria Municipal da Educação
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Colaboração educativa e institucional no âmbito da educação da primeira infância e dos serviços educativos do Centro.', it: "Collaborazione educativa e istituzionale nell'ambito dell'educazione della prima infanzia e dei servizi educativi del Centro.", de: "Pädagogische und institutionelle Zusammenarbeit im Bereich der frühkindlichen Bildung und der Bildungsangebote des Centro.", en: "Educational and institutional collaboration in the field of early childhood education and the Centre's educational services." })}
-                </p>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 4 - FUNDEB */}
-            <AnimatedSection delay={0.3}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-500 h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-300 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Award className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    FUNDEB
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Fundo nacional brasileiro para o apoio à instrução pública e à educação de base, através do qual é apoiada parte das atividades educativas da creche.', it: "Fondo nazionale brasiliano per il sostegno all'istruzione pubblica e all'educazione di base, attraverso il quale viene sostenuta parte delle attività educative della creche.", de: "Brasilianischer Nationalfonds zur Förderung der öffentlichen Bildung und der Grundschulbildung, durch den ein Teil der pädagogischen Aktivitäten der Kita unterstützt wird.", en: "Brazilian national fund for supporting public education and basic schooling, through which part of the creche's educational activities is supported." })}
-                </p>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 5 - IILA */}
-            <AnimatedSection delay={0.4}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-amber-500 h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-amber-300 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Globe className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    {t({ pt: 'IILA – Organização Internacional Ítalo-Latino Americana', it: 'IILA – Organizzazione Internazionale Italo-Latino Americana', de: "IILA – Italienisch-Lateinamerikanische Internationale Organisation", en: "IILA – Italo-Latin American International Organisation" })}
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Apoio ao projeto da nova escola através de programas de cooperação internacional.', it: 'Sostegno al progetto della nuova scuola attraverso programmi di cooperazione internazionale.', de: "Unterstützung des neuen Schulprojekts durch internationale Kooperationsprogramme.", en: "Support for the new school project through international cooperation programmes." })}
-                </p>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 6 - Ministero Affari Esteri */}
-            <AnimatedSection delay={0.5}>
-              <div className="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500 h-full">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-300 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Globe className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl text-[var(--deep-blue)] flex-1">
-                    {t({ pt: 'Ministério dos Negócios Estrangeiros e da Cooperação Internacional', it: 'Ministero degli Affari Esteri e della Cooperazione Internazionale', de: "Ministerium für Auswärtige Angelegenheiten und Internationale Zusammenarbeit", en: "Ministry of Foreign Affairs and International Cooperation" })}
-                  </h3>
-                </div>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {t({ pt: 'Apoio e financiamento ao projeto da nova escola através de iniciativas de cooperação internacional.', it: 'Sostegno e finanziamento al progetto della nuova scuola attraverso iniziative di cooperazione internazionale.', de: "Unterstützung und Finanzierung des neuen Schulprojekts durch Initiativen der internationalen Zusammenarbeit.", en: "Support and funding for the new school project through international cooperation initiatives." })}
-                </p>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            ))}
           </div>
         </div>
       </section>

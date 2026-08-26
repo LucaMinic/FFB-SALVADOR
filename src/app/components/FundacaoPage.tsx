@@ -2,7 +2,7 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { ImpactNumbers } from './ImpactNumbers';
 import { useT } from '../context/LanguageContext';
-import heroImg from '../../imports/nuove/33.jpeg';
+import heroImg from '../../imports/32.jpeg';
 import chiSiamoVideo from '../../imports/video_fundacao_chi_siamo.mp4';
 import mappaItaliaImg from '../../imports/mappa_Italia_mondo.jpg';
 import fraternitaLegameImg from '../../imports/fundacao-fraternita-legame.jpeg';
