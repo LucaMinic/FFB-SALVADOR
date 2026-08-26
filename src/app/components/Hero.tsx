@@ -104,14 +104,6 @@ export function Hero() {
 
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <AnimatedSection immediate>
-            <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6 md:mb-10">
-              <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-14 sm:h-16 md:h-20 w-auto" />
-              <span className="w-px h-10 sm:h-12 md:h-14 bg-gray-300" />
-              <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-14 sm:h-16 md:h-20 w-auto" />
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection immediate>
             <div className="mb-6 md:mb-12">
               <h1 className="text-4xl md:text-5xl lg:text-6xl text-[var(--deep-blue)] font-bold leading-tight text-center tracking-tight">
                 Centro Nossa Senhora Aparecida
@@ -138,6 +130,28 @@ export function Hero() {
                   en: "Every day we share life with those most in need, offering care, education and a real chance for the future."
                 })}
               </p>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.2}>
+            <div className="mt-2 md:mt-4 pb-10 md:pb-14 flex flex-row items-center justify-center gap-3 sm:gap-10">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <img src={logoHero} alt="Centro Nossa Senhora Aparecida" className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain flex-shrink-0" />
+                <span className="flex flex-col text-left leading-[1.15] sm:leading-tight text-[11px] sm:text-lg md:text-xl text-[var(--deep-blue)] font-semibold">
+                  <span>Centro</span>
+                  <span>Nossa Senhora</span>
+                  <span>Aparecida</span>
+                </span>
+              </div>
+              <span className="block w-px h-8 sm:h-12 bg-gray-300 flex-shrink-0" />
+              <div className="flex items-center gap-2 sm:gap-3">
+                <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-10 w-10 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain flex-shrink-0" />
+                <span className="flex flex-col text-left leading-[1.15] sm:leading-tight text-[11px] sm:text-lg md:text-xl text-[var(--deep-blue)] font-semibold">
+                  <span>Fundação</span>
+                  <span>Betânia</span>
+                  <span>Onlus</span>
+                </span>
+              </div>
             </div>
           </AnimatedSection>
         </div>

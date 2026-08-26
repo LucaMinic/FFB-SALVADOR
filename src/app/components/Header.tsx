@@ -241,13 +241,8 @@ export function Header() {
                 </span>
               </Link>
               <span className="w-px h-8 sm:h-10 xl:h-12 bg-gray-200 flex-shrink-0" />
-              <Link to="/la-fundacao" className="flex items-center gap-2 sm:gap-2.5 flex-shrink-0">
+              <Link to="/la-fundacao" className="flex-shrink-0" aria-label="Fundação Betânia Onlus">
                 <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-8 sm:h-10 xl:h-12 w-auto" />
-                <span className="hidden sm:flex flex-col leading-tight">
-                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Fundação</span>
-                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Betânia</span>
-                  <span className="text-xs md:text-sm xl:text-base font-bold text-[var(--deep-blue)]">Onlus</span>
-                </span>
               </Link>
             </div>
 
