@@ -12,6 +12,12 @@ import droneGiugno2026 from '../../imports/8_giugno_2026.mp4';
 import fondamentaLuglio2026 from '../../imports/nuove/preparazione fondamenta luglio 2026.mp4';
 import gettoFondamenta21Luglio2026 from '../../imports/nuove/21 luglio 2026 inizio del getto delle fondamenta.mp4';
 import colonnePortanti23Agosto2026 from '../../imports/nuove/23 agosto 2026 preparazione colonne portanti.mp4';
+import strutturaPortante27Agosto2026 from '../../imports/nuove/27 agosto 2026 avanzamento struttura portante.mp4';
+import thumbStrutturaPortante from '../../imports/nuove/thumbnails/struttura-portante.jpg';
+import thumbColonnePortanti from '../../imports/nuove/thumbnails/colonne-portanti.jpg';
+import thumbGettoFondamenta from '../../imports/nuove/thumbnails/getto-fondamenta.jpg';
+import thumbFondamenta from '../../imports/nuove/thumbnails/fondamenta.jpg';
+import thumbDrone from '../../imports/nuove/thumbnails/drone.jpg';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -33,16 +39,42 @@ interface TimelineEntry {
   description: BilingualText;
   media: TimelineMedia[];
   status: EntryStatus;
+  thumbnail?: string;
 }
 
 // ─── Timeline data ─────────────────────────────────────────────────────────────
 //
 // To add a new update: copy one of the entry objects below, assign a unique id,
 // fill in title/description in both languages, add the media files, set the
-// status ('completed' | 'in-progress' | 'upcoming') and push the object to the
-// array. The timeline renders entries in the order they appear here.
+// status ('completed' | 'in-progress' | 'upcoming'), add a square thumbnail
+// (extract a frame with ffmpeg, e.g. `-vf "crop=in_w:in_w,scale=160:160"`, or
+// reuse an existing image) and push the object to the array. The timeline
+// renders entries in the order they appear here; entries[0] also feeds the
+// homepage banner (AvanzamentoBanner.tsx).
 //
 export const entries: TimelineEntry[] = [
+  {
+    id: 'struttura-portante',
+    date: { it: '27 agosto 2026', pt: '27 de agosto de 2026', de: "27. August 2026", en: "27 August 2026" },
+    phase: { it: 'Fase 6', pt: 'Fase 6', de: "Phase 6", en: "Phase 6" },
+    title: {
+      it: 'La scuola prende forma – avanzamento della struttura portante',
+      pt: 'A escola toma forma – avanço da estrutura de sustentação',
+      de: "Die Schule nimmt Gestalt an – Fortschritt der tragenden Struktur",
+      en: "The school takes shape – progress on the load-bearing structure",
+    },
+    description: {
+      it: "La struttura portante della scuola continua a crescere: le colonne sono ormai visibili e danno per la prima volta un'idea concreta delle forme e degli spazi del futuro edificio.",
+      pt: 'A estrutura de sustentação da escola continua a crescer: as colunas já são visíveis e dão, pela primeira vez, uma ideia concreta das formas e dos espaços do futuro edifício.',
+      de: "Die tragende Struktur der Schule wächst weiter: Die Säulen sind nun sichtbar und vermitteln zum ersten Mal einen konkreten Eindruck von den Formen und Räumen des künftigen Gebäudes.",
+      en: "The school's load-bearing structure keeps growing: the columns are now visible, giving for the first time a concrete sense of the shapes and spaces of the future building.",
+    },
+    media: [
+      { type: 'video', src: strutturaPortante27Agosto2026, alt: "La scuola prende forma – avanzamento della struttura portante – 27 agosto 2026" },
+    ],
+    status: 'in-progress',
+    thumbnail: thumbStrutturaPortante,
+  },
   {
     id: 'colonne-portanti',
     date: { it: '23 agosto 2026', pt: '23 de agosto de 2026', de: "23. August 2026", en: "23 August 2026" },
@@ -62,7 +94,8 @@ export const entries: TimelineEntry[] = [
     media: [
       { type: 'video', src: colonnePortanti23Agosto2026, alt: 'Preparazione delle colonne portanti – 23 agosto 2026' },
     ],
-    status: 'in-progress',
+    status: 'completed',
+    thumbnail: thumbColonnePortanti,
   },
   {
     id: 'getto-fondamenta',
@@ -84,6 +117,7 @@ export const entries: TimelineEntry[] = [
       { type: 'video', src: gettoFondamenta21Luglio2026, alt: 'Inizio del getto delle fondamenta – 21 luglio 2026' },
     ],
     status: 'completed',
+    thumbnail: thumbGettoFondamenta,
   },
   {
     id: 'fondamenta',
@@ -105,6 +139,7 @@ export const entries: TimelineEntry[] = [
       { type: 'video', src: fondamentaLuglio2026, alt: 'Preparazione fondamenta – luglio 2026' },
     ],
     status: 'completed',
+    thumbnail: thumbFondamenta,
   },
   {
     id: 'drone',
@@ -126,6 +161,7 @@ export const entries: TimelineEntry[] = [
       { type: 'video', src: droneGiugno2026, alt: 'Riprese drone – 8 giugno 2026' },
     ],
     status: 'completed',
+    thumbnail: thumbDrone,
   },
   {
     id: 'sopralluogo',
@@ -151,6 +187,7 @@ export const entries: TimelineEntry[] = [
       { type: 'image', src: cantiere3, alt: 'Sopralluogo iniziale – vista 3' },
     ],
     status: 'completed',
+    thumbnail: cantiere1,
   },
 ];
 

@@ -31,6 +31,15 @@ export function AvanzamentoBanner() {
           <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white" />
         </span>
 
+        {latest.thumbnail && (
+          <img
+            src={latest.thumbnail}
+            alt=""
+            aria-hidden="true"
+            className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-lg object-cover ring-2 ring-white/30"
+          />
+        )}
+
         <p className="flex-1 min-w-0 text-sm sm:text-base leading-snug">
           <span className="font-extrabold">
             {t({ it: 'News costruzione scuola:', pt: 'Notícia obra da escola:', de: 'News Schulbau:', en: "School construction news:" })}
