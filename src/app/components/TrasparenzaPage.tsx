@@ -77,29 +77,8 @@ export function TrasparenzaPage() {
         </div>
       </section>
 
-      {/* SECTION 2 - INTRO */}
-      <section id="responsabilita" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-10">
-              {t({ pt: 'Responsabilidade e confiança', it: 'Responsabilità e fiducia', de: "Verantwortung und Vertrauen", en: "Accountability and trust" })}
-            </h2>
-          </AnimatedSection>
-          <AnimatedSection delay={0.1}>
-            <div className="space-y-6 text-xl text-gray-700 leading-relaxed">
-              <p>
-                {t({ pt: 'A Fundação Betania ONLUS acredita que a transparência é parte fundamental da relação com quem escolhe apoiar o Centro Nossa Senhora Aparecida e os seus projetos educativos.', it: 'La Fundação Betania ONLUS crede che la trasparenza sia parte fondamentale della relazione con chi sceglie di sostenere il Centro Nossa Senhora Aparecida e i suoi progetti educativi.', de: "Die Fundação Betania ONLUS ist davon überzeugt, dass Transparenz ein grundlegender Bestandteil der Beziehung zu allen ist, die sich entscheiden, das Centro Nossa Senhora Aparecida und seine Bildungsprojekte zu unterstützen.", en: "Fundação Betania ONLUS believes that transparency is a fundamental part of the relationship with those who choose to support the Centro Nossa Senhora Aparecida and its educational projects." })}
-              </p>
-              <p>
-                {t({ pt: 'Por isso partilhamos documentos, números e informações úteis para contar de forma clara o trabalho realizado todos os dias.', it: 'Per questo condividiamo documenti, numeri e informazioni utili a raccontare in modo chiaro il lavoro svolto ogni giorno.', de: "Deshalb teilen wir Dokumente, Zahlen und nützliche Informationen, um die tägliche Arbeit klar und verständlich darzustellen.", en: "That is why we share documents, figures and information to clearly explain the work carried out every day." })}
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* SECTION 3 - COME VENGONO UTILIZZATE LE DONAZIONI */}
-      <section className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white">
+      <section id="responsabilita" className="py-20 bg-gradient-to-b from-[#f8f9fb] to-white">
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
@@ -109,12 +88,12 @@ export function TrasparenzaPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { label: t({ pt: 'Educação e atividades pedagógicas', it: 'Educazione e attività pedagogiche', de: "Bildung und pädagogische Aktivitäten", en: "Education and pedagogical activities" }), percentage: '35%', color: 'from-[var(--deep-blue)] to-blue-400' },
-              { label: t({ pt: 'Alimentação das crianças', it: 'Alimentazione dei bambini', de: "Ernährung der Kinder", en: "Feeding the children" }), percentage: '25%', color: 'from-[var(--warm-orange)] to-orange-300' },
-              { label: t({ pt: 'Apoio às famílias', it: 'Sostegno alle famiglie', de: "Unterstützung für Familien", en: "Support for families" }), percentage: '15%', color: 'from-[var(--soft-green)] to-green-300' },
-              { label: t({ pt: 'Estruturas e manutenção', it: 'Strutture e manutenzione', de: "Einrichtungen und Instandhaltung", en: "Facilities and maintenance" }), percentage: '10%', color: 'from-purple-500 to-purple-300' },
-              { label: t({ pt: 'Novos projetos educativos', it: 'Nuovi progetti educativi', de: "Neue Bildungsprojekte", en: "New educational projects" }), percentage: '10%', color: 'from-amber-500 to-amber-300' },
-              { label: t({ pt: 'Formação e pessoal', it: 'Formazione e personale', de: "Ausbildung und Personal", en: "Training and staff" }), percentage: '5%', color: 'from-pink-500 to-pink-300' }
+              { label: t({ pt: 'Despesas com pessoal', it: 'Spese per il personale', de: "Personalkosten", en: "Staff expenses" }), percentage: '35%', color: 'from-[var(--deep-blue)] to-blue-400' },
+              { label: t({ pt: 'Alimentação', it: 'Alimentazione', de: "Ernährung", en: "Food" }), percentage: '20%', color: 'from-[var(--warm-orange)] to-orange-300' },
+              { label: t({ pt: 'Apoio às famílias', it: 'Sostegno alle famiglie', de: "Unterstützung für Familien", en: "Support for families" }), percentage: '5%', color: 'from-[var(--soft-green)] to-green-300' },
+              { label: t({ pt: 'Manutenção e outras despesas', it: 'Manutenzione e altre spese', de: "Instandhaltung und sonstige Ausgaben", en: "Maintenance and other expenses" }), percentage: '25%', color: 'from-purple-500 to-purple-300' },
+              { label: t({ pt: 'Materiais permanentes e pedagógicos', it: 'Materiali permanenti e didattici', de: "Dauerhafte und pädagogische Materialien", en: "Permanent and pedagogical materials" }), percentage: '10%', color: 'from-amber-500 to-amber-300' },
+              { label: t({ pt: 'Capacitação profissional / formação continuada', it: 'Formazione professionale / aggiornamento continuo', de: "Berufliche Qualifizierung / kontinuierliche Weiterbildung", en: "Professional training / continuing education" }), percentage: '5%', color: 'from-pink-500 to-pink-300' }
             ].map((item, index) => (
               <AnimatedSection key={index} delay={0.1 * (index % 3)}>
                 <div className={`bg-gradient-to-br ${item.color} text-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all h-full flex flex-col justify-between`}>
@@ -139,9 +118,9 @@ export function TrasparenzaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
               { number: '100+', label: t({ pt: 'crianças acolhidas todos os dias', it: 'bambini accolti ogni giorno', de: "täglich betreute Kinder", en: "children cared for every day" }) },
-              { number: '5', label: t({ pt: 'refeições cotidianas garantidas', it: 'pasti quotidiani garantiti', de: "garantierte tägliche Mahlzeiten", en: "daily meals guaranteed" }) },
-              { number: '22', label: t({ pt: 'colaboradores envolvidos', it: 'collaboratori coinvolti', de: "beteiligte Mitarbeiter", en: "staff members involved" }) },
-              { number: '365', label: t({ pt: 'dias de presença educativa contínua', it: 'giorni di presenza educativa continua', de: "Tage kontinuierlicher pädagogischer Betreuung", en: "days of continuous educational presence" }) }
+              { number: '5', label: t({ pt: 'refeições diárias', it: 'pasti giornalieri', de: "tägliche Mahlzeiten", en: "daily meals" }) },
+              { number: '30', label: t({ pt: 'colaboradores envolvidos', it: 'collaboratori coinvolti', de: "beteiligte Mitarbeiter", en: "staff members involved" }) },
+              { number: '100', label: t({ pt: 'famílias atendidas', it: 'famiglie assistite', de: "betreute Familien", en: "families supported" }) }
             ].map((item, index) => (
               <AnimatedSection key={index} delay={0.1 * index}>
                 <div className="text-center p-8 bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl shadow-lg">
@@ -167,7 +146,7 @@ export function TrasparenzaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] text-center mb-16">
-              {t({ pt: 'Documentos disponíveis', it: 'Documenti disponibili', de: "Verfügbare Dokumente", en: "Available documents" })}
+              {t({ pt: 'Projetos/Ações', it: 'Progetti/Azioni', de: "Projekte/Maßnahmen", en: "Projects/Actions" })}
             </h2>
           </AnimatedSection>
 

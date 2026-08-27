@@ -61,13 +61,13 @@ export function FundacaoPage() {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  {t({ pt: 'A Fundação Betania ONLUS é uma entidade criada para perseguir finalidades de solidariedade social em favor de crianças e jovens que vivem dificuldades materiais, familiares e espirituais.', it: 'La Fundação Betania ONLUS è un ente nato per perseguire finalità di solidarietà sociale a favore di bambini e giovani che vivono difficoltà materiali, familiari e spirituali.', de: "Die Fundação Betania ONLUS ist eine Organisation, die gegründet wurde, um Ziele der sozialen Solidarität zugunsten von Kindern und Jugendlichen zu verfolgen, die materielle, familiäre und spirituelle Schwierigkeiten erleben.", en: "Fundação Betania ONLUS is an organisation created to pursue goals of social solidarity for children and young people facing material, family and spiritual difficulties." })}
+                  {t({ pt: 'A Fundação Betania ONLUS é uma entidade constituída com a finalidade de promover a solidariedade social, contribuindo para a proteção, o desenvolvimento integral e a promoção da dignidade de crianças, adolescentes e jovens que vivenciam situações de vulnerabilidade social, familiar e espiritual.', it: "La Fundação Betania ONLUS è un'entità costituita con la finalità di promuovere la solidarietà sociale, contribuendo alla protezione, allo sviluppo integrale e alla promozione della dignità di bambini, adolescenti e giovani che vivono situazioni di vulnerabilità sociale, familiare e spirituale.", de: "Die Fundação Betania ONLUS ist eine Organisation, die mit dem Ziel gegründet wurde, die soziale Solidarität zu fördern und zum Schutz, zur ganzheitlichen Entwicklung und zur Förderung der Würde von Kindern, Jugendlichen und jungen Menschen beizutragen, die sich in Situationen sozialer, familiärer und spiritueller Verwundbarkeit befinden.", en: "Fundação Betania ONLUS is an organisation established to promote social solidarity, contributing to the protection, integral development and promotion of the dignity of children, adolescents and young people experiencing situations of social, family and spiritual vulnerability." })}
                 </p>
                 <p>
-                  {t({ pt: 'É expressão de uma experiência nascida na Itália e desenvolvida concretamente no Brasil, com uma presença estável em Salvador da Bahia.', it: "È espressione di un'esperienza nata in Italia e sviluppata concretamente in Brasile, con una presenza stabile a Salvador de Bahia.", de: "Sie ist Ausdruck einer Erfahrung, die in Italien entstanden und in Brasilien konkret gewachsen ist, mit einer festen Präsenz in Salvador de Bahia.", en: "It is the expression of an experience born in Italy and developed concretely in Brazil, with a stable presence in Salvador de Bahia." })}
+                  {t({ pt: 'Sua história nasce de uma experiência iniciada na Itália e concretizada no Brasil, onde mantém presença ativa e atuação contínua em Salvador, Bahia. A Fundação vem desenvolvendo ações comprometidas com a realidade do território e com as necessidades das crianças, adolescentes e suas famílias.', it: "La sua storia nasce da un'esperienza iniziata in Italia e concretizzata in Brasile, dove mantiene una presenza attiva e un'azione continua a Salvador, Bahia. La Fondazione sviluppa azioni impegnate con la realtà del territorio e con le necessità dei bambini, degli adolescenti e delle loro famiglie.", de: "Ihre Geschichte entstand aus einer Erfahrung, die in Italien begann und sich konkret in Brasilien entwickelte, wo sie eine aktive Präsenz und kontinuierliche Arbeit in Salvador, Bahia, unterhält. Die Stiftung entwickelt fortlaufend Maßnahmen, die sich an der Realität des Gebiets sowie den Bedürfnissen der Kinder, Jugendlichen und ihrer Familien orientieren.", en: "Its history began with an experience that started in Italy and took concrete shape in Brazil, where it maintains an active presence and ongoing work in Salvador, Bahia. The Foundation has been developing actions committed to the reality of the local area and to the needs of children, adolescents and their families." })}
                 </p>
                 <p>
-                  {t({ pt: 'A fundação atua para oferecer percursos de crescimento através de educação, acompanhamento e apoio concreto.', it: 'La fondazione opera per offrire percorsi di crescita attraverso educazione, accompagnamento e sostegno concreto.', de: "Die Stiftung setzt sich dafür ein, Wachstumswege durch Bildung, Begleitung und konkrete Unterstützung zu ermöglichen.", en: "The foundation works to offer paths of growth through education, support and concrete help." })}
+                  {t({ pt: 'Por meio da educação, do acompanhamento integral, da convivência, da formação humana e do apoio às famílias, busca oferecer oportunidades de crescimento e desenvolvimento de potencialidades, fortalecendo vínculos, autonomia, dignidade e valores de solidariedade, fraternidade e cuidado com o próximo.', it: "Attraverso l'educazione, l'accompagnamento integrale, la convivenza, la formazione umana e il sostegno alle famiglie, cerca di offrire opportunità di crescita e sviluppo delle potenzialità, rafforzando legami, autonomia, dignità e valori di solidarietà, fraternità e cura del prossimo.", de: "Durch Bildung, ganzheitliche Begleitung, Gemeinschaft, menschliche Bildung und Unterstützung der Familien möchte sie Chancen für Wachstum und die Entfaltung von Potenzialen bieten und dabei Bindungen, Autonomie, Würde sowie Werte der Solidarität, Brüderlichkeit und Nächstenliebe stärken.", en: "Through education, comprehensive support, community life, human formation and support for families, it seeks to offer opportunities for growth and the development of potential, strengthening bonds, autonomy, dignity and values of solidarity, fraternity and care for others." })}
                 </p>
               </div>
             </AnimatedSection>
@@ -96,7 +96,7 @@ export function FundacaoPage() {
               {t({ pt: 'As finalidades da Fundação', it: 'Le finalità della Fundação', de: "Die Ziele der Fundação", en: "The Fundação's aims" })}
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-              {t({ pt: 'A fundação atua para melhorar as condições de vida das crianças e dos jovens, sobretudo nos contextos mais frágeis.', it: 'La fondazione opera per migliorare le condizioni di vita dei bambini e dei giovani, soprattutto nei contesti più fragili.', de: "Die Stiftung setzt sich dafür ein, die Lebensbedingungen von Kindern und Jugendlichen zu verbessern, insbesondere in den schwächsten Lebensverhältnissen.", en: "The foundation works to improve the living conditions of children and young people, especially in the most vulnerable contexts." })}
+              {t({ pt: 'Para cumprir sua missão e seus objetivos, a Fundação desenvolve e mantém ações educativas, voltadas às crianças e adolescentes, promovendo oportunidades de desenvolvimento integral.', it: 'Per adempiere alla sua missione e ai suoi obiettivi, la Fundação sviluppa e sostiene azioni educative rivolte a bambini e adolescenti, promuovendo opportunità di sviluppo integrale.', de: "Um ihre Mission und Ziele zu erfüllen, entwickelt und unterhält die Fundação Bildungsmaßnahmen für Kinder und Jugendliche und fördert damit Möglichkeiten zur ganzheitlichen Entwicklung.", en: "To fulfil its mission and objectives, the Foundation develops and maintains educational actions aimed at children and adolescents, promoting opportunities for integral development." })}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
@@ -129,7 +129,7 @@ export function FundacaoPage() {
               <ul className="space-y-3 text-lg text-gray-700">
                 <li className="flex items-start">
                   <span className="text-[var(--soft-green)] mr-3 text-2xl">•</span>
-                  <span>{t({ pt: 'Serviços educativos', it: 'Servizi educativi', de: "Bildungsangebote", en: "Educational services" })}</span>
+                  <span>{t({ pt: 'Serviços cotidiano', it: 'Servizi quotidiani', de: "Alltägliche Dienste", en: "Daily services" })}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[var(--soft-green)] mr-3 text-2xl">•</span>
@@ -153,7 +153,7 @@ export function FundacaoPage() {
                 </li>
               </ul>
               <p className="text-lg text-gray-600 mt-6 italic">
-                {t({ pt: 'Em alguns contextos contribui também para a melhoria das condições sanitárias.', it: 'In alcuni contesti contribuisce anche al miglioramento delle condizioni sanitarie.', de: "In manchen Zusammenhängen trägt sie auch zur Verbesserung der gesundheitlichen Bedingungen bei.", en: "In some contexts it also contributes to improving health conditions." })}
+                {t({ pt: 'Em alguns contextos contribui também para a melhoria das condições de saúde.', it: 'In alcuni contesti contribuisce anche al miglioramento delle condizioni di salute.', de: "In manchen Zusammenhängen trägt sie auch zur Verbesserung der gesundheitlichen Bedingungen bei.", en: "In some contexts it also contributes to improving health conditions." })}
               </p>
             </div>
           </AnimatedSection>
@@ -186,7 +186,7 @@ export function FundacaoPage() {
               ))}
             </div>
             <p className="text-lg text-gray-600 mt-10 text-center italic">
-              {t({ pt: 'O objetivo é acompanhar percursos de crescimento duradouros.', it: "L'obiettivo è accompagnare percorsi di crescita duraturi.", de: "Das Ziel ist es, dauerhafte Wachstumswege zu begleiten.", en: "The goal is to accompany lasting paths of growth." })}
+              {t({ pt: 'O objetivo é acompanhar percursos de crescimento contínuos.', it: "L'obiettivo è accompagnare percorsi di crescita continui.", de: "Das Ziel ist es, kontinuierliche Wachstumswege zu begleiten.", en: "The goal is to accompany continuous paths of growth." })}
             </p>
           </AnimatedSection>
         </div>
@@ -248,15 +248,10 @@ export function FundacaoPage() {
                 {t({ pt: 'Uma presença concreta no território', it: 'Una presenza concreta sul territorio', de: "Eine konkrete Präsenz vor Ort", en: "A concrete presence in the local area" })}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                {t({ pt: 'As atividades da Fundação Betania ONLUS tomam forma concreta no:', it: 'Le attività della Fundação Betania ONLUS prendono forma concreta nel:', de: "Die Aktivitäten der Fundação Betania ONLUS nehmen konkrete Gestalt an im:", en: "The activities of Fundação Betania ONLUS take concrete shape at the:" })}
+                {t({ pt: 'A missão toma forma concreta no:', it: 'La missione prende forma concreta nel:', de: "Die Mission nimmt konkrete Gestalt an im:", en: "The mission takes concrete shape at the:" })}
               </p>
               <p className="text-2xl font-semibold text-[var(--deep-blue)] mb-6">
                 Centro Nossa Senhora Aparecida
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                {t({ pt: 'É aqui que cada dia se realizam acolhimento, educação e acompanhamento.', it: 'È qui che ogni giorno si realizzano accoglienza, educazione e accompagnamento.', de: "Hier finden jeden Tag Aufnahme, Bildung und Begleitung statt.", en: "It is here that welcome, education and support are carried out every day." })}
-                <br />
-                {t({ pt: 'O Centro representa a presença viva da fundação no território e o lugar em que a missão se torna experiência concreta.', it: 'Il Centro rappresenta la presenza viva della fondazione nel territorio e il luogo in cui la missione diventa esperienza concreta.', de: "Das Zentrum ist die lebendige Präsenz der Stiftung vor Ort und der Ort, an dem die Mission zu konkreter Erfahrung wird.", en: "The Centre represents the foundation's living presence in the local area and the place where the mission becomes concrete experience." })}
               </p>
               <Button variant="secondary" to="/il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}</Button>
             </div>
@@ -331,14 +326,8 @@ export function FundacaoPage() {
               {t({ pt: 'Responsabilidade e transparência', it: 'Responsabilità e trasparenza', de: "Verantwortung und Transparenz", en: "Accountability and transparency" })}
             </h2>
             <div className="bg-white rounded-2xl p-10 shadow-md text-center">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                {t({ pt: 'A Fundação adota práticas de gestão responsáveis para garantir um uso correto dos recursos.', it: 'La Fundação adotta pratiche di gestione responsabili per garantire un uso corretto delle risorse.', de: "Die Fundação wendet verantwortungsvolle Managementpraktiken an, um den korrekten Einsatz der Mittel zu gewährleisten.", en: "The Fundação adopts responsible management practices to ensure the correct use of resources." })}
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                {t({ pt: 'Cada atividade é orientada exclusivamente ao bem das crianças e das famílias.', it: 'Ogni attività è orientata esclusivamente al bene dei bambini e delle famiglie.', de: "Jede Aktivität ist ausschließlich am Wohl der Kinder und Familien ausgerichtet.", en: "Every activity is aimed exclusively at the good of children and families." })}
-              </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-8 italic">
-                {t({ pt: 'A transparência é um elemento fundamental da relação de confiança.', it: 'La trasparenza è un elemento fondamentale del rapporto di fiducia.', de: "Transparenz ist ein grundlegendes Element des Vertrauensverhältnisses.", en: "Transparency is a fundamental element of the relationship of trust." })}
+                {t({ pt: 'PARA A FUNDAÇÃO RESPONSABILIDADE E TRANSPARÊNCIA SÃO ELEMENTOS FUNDAMENTAIS NA RELAÇÃO DE CONFIANÇA.', it: 'PER LA FUNDAÇÃO, RESPONSABILITÀ E TRASPARENZA SONO ELEMENTI FONDAMENTALI NEL RAPPORTO DI FIDUCIA.', de: "FÜR DIE FUNDAÇÃO SIND VERANTWORTUNG UND TRANSPARENZ GRUNDLEGENDE ELEMENTE DES VERTRAUENSVERHÄLTNISSES.", en: "FOR THE FOUNDATION, ACCOUNTABILITY AND TRANSPARENCY ARE FUNDAMENTAL ELEMENTS OF THE RELATIONSHIP OF TRUST." })}
               </p>
               <Button variant="secondary">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
             </div>
