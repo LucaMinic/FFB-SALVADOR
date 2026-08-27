@@ -248,7 +248,7 @@ export function FundacaoPage() {
                 {t({ pt: 'Uma presença concreta no território', it: 'Una presenza concreta sul territorio', de: "Eine konkrete Präsenz vor Ort", en: "A concrete presence in the local area" })}
               </h2>
               <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                {t({ pt: 'A missão toma forma concreta no:', it: 'La missione prende forma concreta nel:', de: "Die Mission nimmt konkrete Gestalt an im:", en: "The mission takes concrete shape at the:" })}
+                {t({ pt: 'A missão da Fundação Betania ONLUS se torna realidade no:', it: 'La missione della Fundação Betania ONLUS diventa realtà nel:', de: "Die Mission der Fundação Betania ONLUS wird Wirklichkeit im:", en: "The mission of Fundação Betania ONLUS becomes reality at the:" })}
               </p>
               <p className="text-2xl font-semibold text-[var(--deep-blue)] mb-6">
                 Centro Nossa Senhora Aparecida
@@ -327,7 +327,7 @@ export function FundacaoPage() {
             </h2>
             <div className="bg-white rounded-2xl p-10 shadow-md text-center">
               <p className="text-lg text-gray-600 leading-relaxed mb-8 italic">
-                {t({ pt: 'PARA A FUNDAÇÃO RESPONSABILIDADE E TRANSPARÊNCIA SÃO ELEMENTOS FUNDAMENTAIS NA RELAÇÃO DE CONFIANÇA.', it: 'PER LA FUNDAÇÃO, RESPONSABILITÀ E TRASPARENZA SONO ELEMENTI FONDAMENTALI NEL RAPPORTO DI FIDUCIA.', de: "FÜR DIE FUNDAÇÃO SIND VERANTWORTUNG UND TRANSPARENZ GRUNDLEGENDE ELEMENTE DES VERTRAUENSVERHÄLTNISSES.", en: "FOR THE FOUNDATION, ACCOUNTABILITY AND TRANSPARENCY ARE FUNDAMENTAL ELEMENTS OF THE RELATIONSHIP OF TRUST." })}
+                {t({ pt: 'Para a Fundação, responsabilidade e transparência são elementos fundamentais na relação de confiança.', it: 'Per la Fundação, responsabilità e trasparenza sono elementi fondamentali nel rapporto di fiducia.', de: "Für die Fundação sind Verantwortung und Transparenz grundlegende Elemente des Vertrauensverhältnisses.", en: "For the Foundation, accountability and transparency are fundamental elements of the relationship of trust." })}
               </p>
               <Button variant="secondary">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
             </div>
