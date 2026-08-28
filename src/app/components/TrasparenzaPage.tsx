@@ -1,42 +1,18 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { FileText, Download } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
+import { Link } from 'react-router';
 import heroImg from '../../imports/foto_sito_06_pagina_7.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
+import alimentoQueAcolheImg from '../../imports/diego/capa do projeto alimento que acolhe.png';
 
 export function TrasparenzaPage() {
   const t = useT();
-  const documents = [
+  const projects = [
     {
-      title: t({ pt: 'Balanço social 2024', it: 'Bilancio sociale 2024', de: "Sozialbilanz 2024", en: "2024 Social Report" }),
-      description: t({ pt: 'Relatório anual das atividades e do balanço social', it: 'Relazione annuale delle attività e del bilancio sociale', de: "Jahresbericht über die Aktivitäten und die Sozialbilanz", en: "Annual report on activities and social accounting" }),
-      icon: FileText
-    },
-    {
-      title: t({ pt: 'Balanço social 2023', it: 'Bilancio sociale 2023', de: "Sozialbilanz 2023", en: "2023 Social Report" }),
-      description: t({ pt: 'Relatório anual das atividades e do balanço social', it: 'Relazione annuale delle attività e del bilancio sociale', de: "Jahresbericht über die Aktivitäten und die Sozialbilanz", en: "Annual report on activities and social accounting" }),
-      icon: FileText
-    },
-    {
-      title: t({ pt: 'Relatório de atividades', it: 'Relazione attività', de: "Tätigkeitsbericht", en: "Activity Report" }),
-      description: t({ pt: 'Relatório detalhado das atividades educativas e sociais', it: 'Report dettagliato delle attività educative e sociali', de: "Detaillierter Bericht über die pädagogischen und sozialen Aktivitäten", en: "Detailed report on educational and social activities" }),
-      icon: FileText
-    },
-    {
-      title: t({ pt: 'Estatuto Fundação', it: 'Statuto Fundação', de: "Satzung der Fundação", en: "Fundação Statute" }),
-      description: t({ pt: 'Estatuto oficial da Fundação Betania ONLUS', it: 'Statuto ufficiale della Fundação Betania ONLUS', de: "Offizielle Satzung der Fundação Betania ONLUS", en: "Official statute of Fundação Betania ONLUS" }),
-      icon: FileText
-    },
-    {
-      title: t({ pt: 'Documentação ETS', it: 'Documentazione ETS', de: "Dokumentation ETS", en: "Nonprofit Status Documentation" }),
-      description: t({ pt: 'Documentação Entidade do Terceiro Setor', it: 'Documentazione Ente del Terzo Settore', de: "Dokumentation der gemeinnützigen Organisation (Ente del Terzo Settore)", en: "Third Sector Organisation Documentation" }),
-      icon: FileText
-    },
-    {
-      title: t({ pt: 'Projeto escola', it: 'Progetto scuola', de: "Schulprojekt", en: "School project" }),
-      description: t({ pt: 'Documentação do projeto da nova escola', it: 'Documentazione del progetto della nuova scuola', de: "Dokumentation des Projekts der neuen Schule", en: "Documentation for the new school project" }),
-      icon: FileText
+      title: t({ pt: 'Alimento que acolhe', it: 'Un cibo che accoglie', de: "Nahrung, die willkommen heißt", en: "Food that welcomes" }),
+      image: alimentoQueAcolheImg,
+      href: '/alimento-que-acolhe'
     }
   ];
 
@@ -151,23 +127,23 @@ export function TrasparenzaPage() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {documents.map((doc, index) => (
-              <AnimatedSection key={index} delay={0.1 * (index % 3)}>
-                <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all h-full flex flex-col">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[var(--deep-blue)] to-blue-400 rounded-full flex items-center justify-center mb-4">
-                    <doc.icon className="w-8 h-8 text-white" />
+            {projects.map((project, index) => (
+              <AnimatedSection key={project.href} delay={0.1 * (index % 3)}>
+                <Link to={project.href} className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
+                  <div className="overflow-hidden">
+                    <img loading="lazy"
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
-                  <h3 className="text-xl text-[var(--deep-blue)] mb-3">
-                    {doc.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 flex-1">
-                    {doc.description}
-                  </p>
-                  <button className="flex items-center gap-2 text-[var(--deep-blue)] hover:text-blue-700 transition-colors font-medium">
-                    <Download className="w-5 h-5" />
-                    <span>{t({ pt: 'Baixar PDF', it: 'Scarica PDF', de: "PDF herunterladen", en: "Download PDF" })}</span>
-                  </button>
-                </div>
+                  <div className={`${
+                    index % 2 === 0 ? 'bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a]' : 'bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)]'
+                  } text-white p-8 text-center`}>
+                    <p className="text-2xl font-medium mb-2">{project.title}</p>
+                    <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}</p>
+                  </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>

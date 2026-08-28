@@ -155,6 +155,15 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Every contribution is turned into a real presence, education and support for children and families: discover our commitment to transparency.",
     },
   },
+  '/alimento-que-acolhe': {
+    title: withSuffix({ pt: 'Alimento que Acolhe', it: 'Un cibo che accoglie', de: "Nahrung, die willkommen heißt", en: "Food that welcomes" }),
+    description: {
+      pt: 'Um projeto da Fundação Betânia Onlus que transforma solidariedade em alimento e cuidado para famílias em situação de vulnerabilidade em Salvador da Bahia.',
+      it: 'Un progetto della Fundação Betânia Onlus che trasforma la solidarietà in cibo e cura per le famiglie in situazione di vulnerabilità a Salvador de Bahia.',
+      de: "Ein Projekt der Fundação Betânia Onlus, das Solidarität in Nahrung und Fürsorge für Familien in prekären Lebenslagen in Salvador de Bahia verwandelt.",
+      en: "A project by Fundação Betânia Onlus that turns solidarity into food and care for families in vulnerable situations in Salvador de Bahia.",
+    },
+  },
   '/eventi-speciali': {
     title: withSuffix({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" }),
     description: {
