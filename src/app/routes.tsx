@@ -25,6 +25,7 @@ export const router = createBrowserRouter([
       { path: "aiutiamo-valentina", lazy: () => import("./components/ValentinaPage").then((m) => ({ Component: m.ValentinaPage })) },
       { path: "trasparenza", lazy: () => import("./components/TrasparenzaPage").then((m) => ({ Component: m.TrasparenzaPage })) },
       { path: "alimento-que-acolhe", lazy: () => import("./components/AlimentoQueAcolhePage").then((m) => ({ Component: m.AlimentoQueAcolhePage })) },
+      { path: "rota-solidaria", lazy: () => import("./components/RotaSolidariaPage").then((m) => ({ Component: m.RotaSolidariaPage })) },
       { path: "eventi-speciali", lazy: () => import("./components/EventiSpecialiPage").then((m) => ({ Component: m.EventiSpecialiPage })) },
       { path: "privacy-policy", lazy: () => import("./components/PrivacyPolicyPage").then((m) => ({ Component: m.PrivacyPolicyPage })) },
       { path: "cookie-policy", lazy: () => import("./components/CookiePolicyPage").then((m) => ({ Component: m.CookiePolicyPage })) },

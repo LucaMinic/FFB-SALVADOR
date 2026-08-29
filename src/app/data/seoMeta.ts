@@ -164,6 +164,15 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A project by Fundação Betânia Onlus that turns solidarity into food and care for families in vulnerable situations in Salvador de Bahia.",
     },
   },
+  '/rota-solidaria': {
+    title: withSuffix({ pt: 'Rota Solidária', it: 'Rota Solidária', de: "Rota Solidária", en: "Rota Solidária" }),
+    description: {
+      pt: 'Um projeto que garante o transporte de 15 crianças em situação de vulnerabilidade até a creche, com o apoio solidário dos benfeitores italianos.',
+      it: "Un progetto che garantisce il trasporto di 15 bambini in situazione di vulnerabilità fino all'asilo, grazie al sostegno solidale dei benefattori italiani.",
+      de: "Ein Projekt, das den Transport von 15 Kindern in prekären Lebenslagen zur Kita sichert, dank der solidarischen Unterstützung italienischer Wohltäter.",
+      en: "A project that guarantees transport to nursery school for 15 children in vulnerable situations, with the solidary support of Italian benefactors.",
+    },
+  },
   '/eventi-speciali': {
     title: withSuffix({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" }),
     description: {

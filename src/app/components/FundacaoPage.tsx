@@ -133,7 +133,7 @@ export function FundacaoPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[var(--soft-green)] mr-3 text-2xl">•</span>
-                  <span>{t({ pt: 'Acolhimento quotidiano', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung", en: "Daily care" })}</span>
+                  <span>{t({ pt: 'Acolhimento cotidiano', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung", en: "Daily care" })}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[var(--soft-green)] mr-3 text-2xl">•</span>
@@ -175,7 +175,7 @@ export function FundacaoPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                t({ pt: 'Presença quotidiana no território', it: 'Presenza quotidiana sul territorio', de: "Tägliche Präsenz vor Ort", en: "A daily presence in the local area" }),
+                t({ pt: 'Presença cotidiana no território', it: 'Presenza quotidiana sul territorio', de: "Tägliche Präsenz vor Ort", en: "A daily presence in the local area" }),
                 t({ pt: 'Relações diretas com as famílias', it: 'Relazioni dirette con le famiglie', de: "Direkter Kontakt mit den Familien", en: "Direct relationships with families" }),
                 t({ pt: 'Colaboração com educadores e voluntários', it: 'Collaborazione con educatori e volontari', de: "Zusammenarbeit mit Erziehern und Freiwilligen", en: "Collaboration with educators and volunteers" }),
                 t({ pt: 'Continuidade no tempo', it: 'Continuità nel tempo', de: "Kontinuität über die Zeit", en: "Continuity over time" })
@@ -329,7 +329,7 @@ export function FundacaoPage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8 italic">
                 {t({ pt: 'Para a Fundação, responsabilidade e transparência são elementos fundamentais na relação de confiança.', it: 'Per la Fundação, responsabilità e trasparenza sono elementi fondamentali nel rapporto di fiducia.', de: "Für die Fundação sind Verantwortung und Transparenz grundlegende Elemente des Vertrauensverhältnisses.", en: "For the Foundation, accountability and transparency are fundamental elements of the relationship of trust." })}
               </p>
-              <Button variant="secondary">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
+              <Button variant="secondary" to="/trasparenza">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
             </div>
           </AnimatedSection>
         </div>

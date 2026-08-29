@@ -1,0 +1,205 @@
+import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router';
+import { useT } from '../context/LanguageContext';
+import { AnimatedSection } from './AnimatedSection';
+import { Button } from './Button';
+import heroImg from '../../imports/diego/rota-solidaria-capa.jpg';
+import img1 from '../../imports/diego/rota-solidaria-criancas-carro.jpg';
+import img2 from '../../imports/diego/rota-solidaria-menino-sorrindo.jpg';
+import closingImg from '../../imports/diego/rota-solidaria-menino-janela.jpg';
+
+export function RotaSolidariaPage() {
+  const t = useT();
+
+  return (
+    <>
+      {/* HERO */}
+      <section
+        className="relative flex flex-col items-center justify-center text-center overflow-hidden"
+        style={{ minHeight: 'clamp(70vh, 85vh, 100vh)' }}
+      >
+        <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
+          <AnimatedSection delay={0.1}>
+            <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
+              {t({ pt: 'Fundação Betânia Onlus', it: 'Fundação Betânia Onlus', de: "Fundação Betânia Onlus", en: "Fundação Betânia Onlus" })}
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              {t({ pt: 'Rota Solidária', it: 'Rota Solidária', de: "Rota Solidária", en: "Rota Solidária" })}
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+              {t({
+                pt: 'Um projeto que garante o transporte de crianças em situação de vulnerabilidade até a creche, com o apoio solidário dos benfeitores italianos.',
+                it: 'Un progetto che garantisce il trasporto dei bambini in situazione di vulnerabilità fino all\'asilo, grazie al sostegno solidale dei benefattori italiani.',
+                de: "Ein Projekt, das den Transport von Kindern in prekären Lebenslagen zur Kita sichert, dank der solidarischen Unterstützung italienischer Wohltäter.",
+                en: "A project that guarantees transport to nursery school for children in vulnerable situations, with the solidary support of Italian benefactors.",
+              })}
+            </p>
+          </AnimatedSection>
+          <AnimatedSection delay={0.3}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+              <Button variant="primary" to="/dona-ora">
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
+              </Button>
+              <a
+                href="#scopri"
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-200 text-base"
+              >
+                {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
+              </a>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* SECTION 1 - SOBRE O PROJETO */}
+      <section id="scopri" className="bg-white py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimatedSection delay={0.1}>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
+                  {t({ pt: 'Sobre o projeto', it: 'Il progetto', de: "Über das Projekt", en: "About the project" })}
+                </h2>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  {t({
+                    pt: 'A Fundação Betania é a única instituição do território que oferta atendimento em berçário, atendendo crianças de 6 meses a 6 anos em situação de vulnerabilidade social, com educação infantil de qualidade, cuidados integrais e alimentação adequada.',
+                    it: "La Fundação Betania è l'unica istituzione del territorio che offre assistenza in asilo nido, accogliendo bambini da 6 mesi a 6 anni in situazione di vulnerabilità sociale, con un'educazione infantile di qualità, cure integrali e un'alimentazione adeguata.",
+                    de: "Die Fundação Betania ist die einzige Einrichtung des Gebiets, die eine Krippenbetreuung anbietet, für Kinder von 6 Monaten bis 6 Jahren in sozial prekären Lebenslagen, mit hochwertiger frühkindlicher Bildung, ganzheitlicher Fürsorge und angemessener Ernährung.",
+                    en: "Fundação Betania is the only institution in the area that offers nursery care, serving children from 6 months to 6 years old in situations of social vulnerability, with quality early childhood education, comprehensive care and adequate nutrition.",
+                  })}
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  {t({
+                    pt: 'Muitas famílias buscam a matrícula, porém a distância da residência até a instituição e a falta de recursos para deslocamento tornam-se barreiras que impedem a permanência das crianças.',
+                    it: "Molte famiglie cercano l'iscrizione, ma la distanza tra la residenza e l'istituzione e la mancanza di risorse per gli spostamenti diventano barriere che impediscono la permanenza dei bambini.",
+                    de: "Viele Familien suchen um Aufnahme an, doch die Entfernung zwischen Wohnort und Einrichtung sowie fehlende Mittel für die Fahrten werden zu Hindernissen, die den Verbleib der Kinder verhindern.",
+                    en: "Many families seek enrolment, but the distance between their home and the institution, along with the lack of resources for transport, become barriers that prevent children from staying enrolled.",
+                  })}
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  {t({
+                    pt: 'Sabemos que para as crianças pequenas, especialmente as do berçário, a presença contínua é essencial para saúde, alimentação, segurança e desenvolvimento integral.',
+                    it: "Sappiamo che per i bambini piccoli, specialmente quelli dell'asilo nido, la presenza continua è essenziale per la salute, l'alimentazione, la sicurezza e lo sviluppo integrale.",
+                    de: "Wir wissen, dass für kleine Kinder, besonders die der Krippe, die durchgehende Anwesenheit für Gesundheit, Ernährung, Sicherheit und ganzheitliche Entwicklung unerlässlich ist.",
+                    en: "We know that for young children, especially those in the nursery, continuous attendance is essential for health, nutrition, safety and overall development.",
+                  })}
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  {t({
+                    pt: 'Com o apoio solidário dos benfeitores italianos, este projeto garante o transporte para 15 crianças, eliminando a distância como motivo de afastamento da creche.',
+                    it: "Con il sostegno solidale dei benefattori italiani, questo progetto garantisce il trasporto per 15 bambini, eliminando la distanza come motivo di abbandono dell'asilo.",
+                    de: "Mit der solidarischen Unterstützung der italienischen Wohltäter sichert dieses Projekt den Transport für 15 Kinder und beseitigt so die Entfernung als Grund für den Abbruch des Kitabesuchs.",
+                    en: "With the solidary support of Italian benefactors, this project guarantees transport for 15 children, removing distance as a reason for leaving the nursery school.",
+                  })}
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <img loading="lazy"
+                src={img1}
+                alt={t({ pt: 'Rota Solidária', it: 'Rota Solidária', de: "Rota Solidária", en: "Rota Solidária" })}
+                className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
+              />
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2 - OBJETIVOS */}
+      <section className="bg-[var(--beige)] py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimatedSection delay={0.1} className="order-2 lg:order-1">
+              <img loading="lazy"
+                src={img2}
+                alt={t({ pt: 'Objetivos do projeto', it: 'Obiettivi del progetto', de: "Ziele des Projekts", en: "Project objectives" })}
+                className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
+              />
+            </AnimatedSection>
+            <AnimatedSection delay={0.2} className="order-1 lg:order-2">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
+                  {t({ pt: 'Objetivos', it: 'Obiettivi', de: "Ziele", en: "Objectives" })}
+                </h2>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  {t({
+                    pt: 'Garantir acesso e permanência contínua na creche para 15 crianças em situação de vulnerabilidade, por meio de auxílio-transporte seguro e digno, assegurando-lhes cuidados, alimentação e educação.',
+                    it: "Garantire l'accesso e la permanenza continua all'asilo per 15 bambini in situazione di vulnerabilità, attraverso un aiuto al trasporto sicuro e dignitoso, assicurando loro cure, alimentazione ed educazione.",
+                    de: "Den Zugang und den kontinuierlichen Verbleib in der Kita für 15 Kinder in prekären Lebenslagen sichern, durch eine sichere und würdevolle Transporthilfe, die ihnen Fürsorge, Ernährung und Bildung gewährleistet.",
+                    en: "Guarantee access and continuous attendance at the nursery school for 15 children in vulnerable situations, through safe and dignified transport assistance, ensuring them care, nutrition and education.",
+                  })}
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  {t({
+                    pt: 'A parceria com os benfeitores italianos demonstra que a solidariedade não tem fronteiras, e que juntos podemos transformar realidades e garantir que nenhuma criança fique para trás por falta de condições.',
+                    it: "La collaborazione con i benefattori italiani dimostra che la solidarietà non ha confini, e che insieme possiamo trasformare le realtà e garantire che nessun bambino resti indietro per mancanza di condizioni.",
+                    de: "Die Partnerschaft mit den italienischen Wohltätern zeigt, dass Solidarität keine Grenzen kennt und dass wir gemeinsam Realitäten verändern und sicherstellen können, dass kein Kind aus Mangel an Mitteln zurückbleibt.",
+                    en: "The partnership with the Italian benefactors shows that solidarity has no borders, and that together we can transform realities and ensure that no child is left behind for lack of means.",
+                  })}
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING STATEMENT */}
+      <section className="relative py-32 overflow-hidden">
+        <div className="absolute inset-0">
+          <img loading="lazy"
+            src={closingImg}
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 75%' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
+          <AnimatedSection>
+            <p className="text-2xl md:text-3xl leading-relaxed italic">
+              {t({
+                pt: 'A Fundação Betânia reafirma seu compromisso com a transparência, o zelo e a dedicação na aplicação de cada recurso recebido.',
+                it: "La Fundação Betânia riafferma il suo impegno per la trasparenza, la cura e la dedizione nell'utilizzo di ogni risorsa ricevuta.",
+                de: "Die Fundação Betânia bekräftigt ihr Engagement für Transparenz, Sorgfalt und Hingabe bei der Verwendung jeder erhaltenen Ressource.",
+                en: "Fundação Betânia reaffirms its commitment to transparency, care and dedication in the use of every resource received.",
+              })}
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
+              {t({ pt: 'Ajuda-nos a levar cada criança até a creche', it: 'Aiutaci a portare ogni bambino fino all\'asilo', de: "Hilf uns, jedes Kind zur Kita zu bringen", en: "Help us take every child to nursery school" })}
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+              {t({
+                pt: 'Graças ao teu apoio, a Rota Solidária pode continuar a garantir o transporte seguro e a permanência das crianças de Salvador da Bahia na creche.',
+                it: 'Grazie al tuo sostegno, la Rota Solidária può continuare a garantire il trasporto sicuro e la permanenza dei bambini di Salvador de Bahia all\'asilo.',
+                de: "Dank Ihrer Unterstützung kann Rota Solidária weiterhin den sicheren Transport und den Verbleib der Kinder aus Salvador de Bahia in der Kita sichern.",
+                en: "Thanks to your support, Rota Solidária can keep guaranteeing safe transport and continuous nursery attendance for children in Salvador de Bahia.",
+              })}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+              <Button variant="primary" to="/dona-ora">
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
+              </Button>
+            </div>
+            <Link
+              to="/trasparenza#documenti"
+              className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              {t({ pt: 'Voltar', it: 'Indietro', de: "Zurück", en: "Back" })}
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  );
+}

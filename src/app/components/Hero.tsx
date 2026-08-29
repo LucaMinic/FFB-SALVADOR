@@ -4,9 +4,9 @@ import { useRef } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import heroImage1 from '../../imports/nuove/IMG_2360.JPG';
-import heroImage2 from '../../imports/14-1.jpeg';
+import heroImage2 from '../../imports/diego/hero-criancas-correndo.jpg';
 import heroImage3 from '../../imports/34.jpeg';
-import heroImage4 from '../../imports/9-1.jpeg';
+import heroImage4 from '../../imports/diego/hero-criancas-abraco.jpg';
 import logoHero from '../../imports/nuove/LOGO stretto.png';
 import logoFundacaoIcon from '../../imports/logo_ok.png';
 import { AnimatedSection } from './AnimatedSection';
@@ -43,9 +43,9 @@ export function Hero() {
     },
     {
       src: heroImage2,
-      alt: t({ pt: 'Visita institucional', it: 'Visita istituzionale', de: "Institutioneller Besuch", en: "Institutional visit" }),
+      alt: t({ pt: 'Crianças brincando no pátio', it: 'Bambini che giocano nel cortile', de: "Kinder spielen im Hof", en: "Children playing in the yard" }),
       text: t({ pt: 'Neste lugar, cada criança encontra cuidado, atenção e uma possibilidade de futuro.', it: 'In questo luogo, ogni bambino trova cura, attenzione e una possibilità di futuro.', de: "An diesem Ort findet jedes Kind Fürsorge, Aufmerksamkeit und eine Zukunftschance.", en: "In this place, every child finds care, attention and a chance for the future." }),
-      focus: 'center 40%'
+      focus: 'center 60%'
     },
     {
       src: heroImage3,
@@ -55,9 +55,9 @@ export function Hero() {
     },
     {
       src: heroImage4,
-      alt: t({ pt: 'Encontro institucional', it: 'Incontro istituzionale', de: "Institutionelle Begegnung", en: "Institutional meeting" }),
+      alt: t({ pt: 'Amizade entre as crianças', it: 'Amicizia tra i bambini', de: "Freundschaft zwischen den Kindern", en: "Friendship between the children" }),
       text: t({ pt: 'Onde há necessidade, nasce uma presença que se torna lar.', it: 'Dove c\'è bisogno, nasce una presenza che diventa casa.', de: "Wo Not herrscht, entsteht eine Präsenz, die zum Zuhause wird.", en: "Where there is need, a presence is born that becomes home." }),
-      focus: 'center 35%'
+      focus: 'center 42%'
     },
   ];
 

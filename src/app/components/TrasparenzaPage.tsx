@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
@@ -5,14 +7,30 @@ import { Link } from 'react-router';
 import heroImg from '../../imports/foto_sito_06_pagina_7.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
 import alimentoQueAcolheImg from '../../imports/diego/capa do projeto alimento que acolhe.png';
+import rotaSolidariaImg from '../../imports/diego/rota-solidaria-capa.jpg';
 
 export function TrasparenzaPage() {
   const t = useT();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) return;
+    const id = hash.replace('#', '');
+    const el = document.getElementById(id);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  }, [hash]);
   const projects = [
     {
       title: t({ pt: 'Alimento que acolhe', it: 'Un cibo che accoglie', de: "Nahrung, die willkommen heißt", en: "Food that welcomes" }),
       image: alimentoQueAcolheImg,
       href: '/alimento-que-acolhe'
+    },
+    {
+      title: t({ pt: 'Rota Solidária', it: 'Rota Solidária', de: "Rota Solidária", en: "Rota Solidária" }),
+      image: rotaSolidariaImg,
+      href: '/rota-solidaria'
     }
   ];
 

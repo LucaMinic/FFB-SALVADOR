@@ -1,20 +1,39 @@
-import { ArrowLeft } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowLeft, Expand } from 'lucide-react';
 import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { Lightbox } from './Lightbox';
 import heroImg from '../../imports/diego/capa do projeto alimento que acolhe.png';
-import img1 from '../../imports/nuove/r4.jpg';
-import img2 from '../../imports/nuove/2P9A9067.jpg';
-import gallery1 from '../../imports/nuove/r3.jpg';
-import gallery2 from '../../imports/16-3.jpeg';
-import gallery3 from '../../imports/3-1.jpeg';
-import gallery4 from '../../imports/2.jpeg';
+import img1 from '../../imports/diego/alimento-doacao-comunidade.jpg';
+import img2 from '../../imports/diego/alimento-rede-solidariedade.jpg';
+import gallery1 from '../../imports/diego/alimento-preparacao-cestas.jpg';
+import gallery2 from '../../imports/diego/alimento-organizacao-doacoes.jpg';
+import gallery3 from '../../imports/diego/alimento-entrega-familias.jpg';
+import gallery4 from '../../imports/diego/alimento-transporte-alimentos.jpg';
 
 export function AlimentoQueAcolhePage() {
   const t = useT();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const gallery = [gallery1, gallery2, gallery3, gallery4];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % gallery.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
+  };
 
   return (
     <>
@@ -164,16 +183,33 @@ export function AlimentoQueAcolhePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {gallery.map((image, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
-                <div className="group aspect-square overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-500">
+                <div
+                  className="group aspect-square overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-500 cursor-pointer relative"
+                  onClick={() => openLightbox(index)}
+                >
                   <img loading="lazy"
                     src={image}
                     alt={t({ pt: `Alimento que acolhe ${index + 1}`, it: `Un cibo che accoglie ${index + 1}`, de: `Nahrung, die willkommen heißt ${index + 1}`, en: `Food that welcomes ${index + 1}` })}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                    <Expand className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
+
+          {lightboxOpen && (
+            <Lightbox
+              images={gallery}
+              currentIndex={currentImageIndex}
+              onClose={closeLightbox}
+              onNext={nextImage}
+              onPrev={prevImage}
+              alt={t({ pt: 'Alimento que acolhe', it: 'Un cibo che accoglie', de: "Nahrung, die willkommen heißt", en: "Food that welcomes" })}
+            />
+          )}
         </div>
       </section>
 
