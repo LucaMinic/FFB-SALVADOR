@@ -6,6 +6,9 @@ import { Link } from 'react-router';
 import heroImg from '../../imports/nuove/_DSF1736.jpg';
 import autoImg from '../../imports/Patricia.jpg';
 import ricordiImg from '../../imports/narrazioni_africane_ok.jpg';
+import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
+import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
+import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
 
 export function ProgettiPedagogiciPage() {
   const t = useT();
@@ -80,8 +83,9 @@ export function ProgettiPedagogiciPage() {
       </section>
 
       {/* INTRO */}
-      <section id="progetti" className="bg-white py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section id="progetti" className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
               {t({ pt: 'Educar através da experiência', it: 'Educare attraverso l\'esperienza', de: "Erziehung durch Erfahrung", en: "Educating through experience" })}
@@ -107,8 +111,9 @@ export function ProgettiPedagogiciPage() {
       </section>
 
       {/* PROJECT GALLERY */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {projects.map((project, index) => (
               <AnimatedSection key={project.id} delay={index * 0.15}>
@@ -146,8 +151,9 @@ export function ProgettiPedagogiciPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
               {t({ pt: 'Descubra a vida do Centro', it: 'Scopri la vita del Centro', de: "Entdecken Sie das Leben im Centro", en: "Discover the life of the Centre" })}

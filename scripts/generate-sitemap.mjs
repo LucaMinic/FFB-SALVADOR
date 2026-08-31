@@ -23,6 +23,7 @@ const pages = [
   { path: '/trasparenza', priority: '0.6', changefreq: 'monthly' },
   { path: '/alimento-que-acolhe', priority: '0.6', changefreq: 'monthly' },
   { path: '/rota-solidaria', priority: '0.6', changefreq: 'monthly' },
+  { path: '/jovens-de-betania', priority: '0.6', changefreq: 'monthly' },
   { path: '/eventi-speciali', priority: '0.5', changefreq: 'monthly' },
   { path: '/documentari-racconti', priority: '0.6', changefreq: 'monthly' },
   { path: '/progetti-pedagogici', priority: '0.6', changefreq: 'monthly' },

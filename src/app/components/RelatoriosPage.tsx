@@ -5,6 +5,8 @@ import { Button } from './Button';
 import { Link } from 'react-router';
 import heroImg from '../../imports/nuove/r6bis.jpg';
 import { relatorioAreas } from '../data/relatoriosData';
+import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
+import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
 
 export function RelatoriosPage() {
   const t = useT();
@@ -52,8 +54,9 @@ export function RelatoriosPage() {
       </section>
 
       {/* INTRO */}
-      <section id="relatorios" className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="relatorios" className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <div className="text-center mb-20">
               <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
@@ -114,8 +117,9 @@ export function RelatoriosPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <FileText className="w-12 h-12 text-[var(--deep-blue)] mx-auto mb-8 opacity-60" />
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">

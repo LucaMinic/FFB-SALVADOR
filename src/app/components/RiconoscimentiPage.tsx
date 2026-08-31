@@ -310,48 +310,6 @@ export function RiconoscimentiPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
                 <div className="p-8 md:p-10">
-                  <div className="mb-4">
-                    <span className="inline-block px-4 py-1.5 bg-[var(--deep-blue)]/10 text-[var(--deep-blue)] text-sm font-semibold rounded-full uppercase tracking-wide">
-                      Interris
-                    </span>
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-[var(--deep-blue)] mb-4">
-                    {t({
-                      pt: 'A fraternidade ajuda os pobres entre os mais pobres',
-                      it: 'La fraternità aiuta i poveri tra i più poveri',
-                      de: "Die Gemeinschaft hilft den Ärmsten der Armen",
-                      en: "The fraternity helps the poorest of the poor"
-                    })}
-                  </h3>
-                  <p className="text-base text-gray-600 leading-relaxed mb-6">
-                    {t({
-                      pt: 'A revista Interris dedicou um aprofundamento à missão da Fraternidade Franciscana de Betânia no Brasil, narrando o trabalho realizado ao lado das comunidades mais vulneráveis de Salvador da Bahia e o compromisso quotidiano em favor das crianças e famílias acolhidas pelo Centro Nossa Senhora Aparecida.',
-                      it: "La rivista Interris ha dedicato un approfondimento alla missione della Fraternità Francescana di Betania in Brasile, raccontando il lavoro svolto accanto alle comunità più vulnerabili di Salvador de Bahia e l'impegno quotidiano a favore dei bambini e delle famiglie accolte dal Centro Nossa Senhora Aparecida.",
-                      de: "Die Zeitschrift Interris hat der Mission der Franziskanischen Gemeinschaft von Betania in Brasilien eine ausführliche Reportage gewidmet und dabei die Arbeit für die schutzbedürftigsten Gemeinschaften von Salvador de Bahia sowie das tägliche Engagement für die vom Centro Nossa Senhora Aparecida aufgenommenen Kinder und Familien beschrieben.",
-                      en: "The magazine Interris dedicated an in-depth feature to the mission of the Franciscan Fraternity of Betania in Brazil, telling the story of the work carried out alongside the most vulnerable communities of Salvador de Bahia and the daily commitment to the children and families welcomed by the Centro Nossa Senhora Aparecida."
-                    })}
-                  </p>
-                  <a
-                    href="https://www.interris.it/la-voce-degli-ultimi/fraternita-aiuta-poveri-tra-piu-poveri/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--deep-blue)] text-white font-semibold rounded-xl hover:bg-[#4d6374] transition-all duration-300 shadow-md hover:shadow-lg"
-                  >
-                    {t({
-                      pt: 'Leia a matéria no Interris',
-                      it: "Leggi l'articolo su Interris",
-                      de: "Artikel auf Interris lesen",
-                      en: "Read the article on Interris"
-                    })}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </article>
-
-              <article className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
-                <div className="p-8 md:p-10">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="inline-block px-4 py-1.5 bg-[var(--warm-orange)]/10 text-[var(--warm-orange)] text-sm font-semibold rounded-full uppercase tracking-wide">
                       Sky TG24

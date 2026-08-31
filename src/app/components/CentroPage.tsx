@@ -8,6 +8,8 @@ import giornataImg1 from '../../imports/centro-giornata-relazione.jpeg';
 import giornataImg2 from '../../imports/centro-giornata-brincadeira.jpeg';
 import documentariImg from '../../imports/centro-documentari-racconti.jpeg';
 import iniziativeImg from '../../imports/2.jpeg';
+import futuraScuolaImg from '../../imports/immagine_compressa_leggera.jpg';
+import crecheImg from '../../imports/nuove/ambiente.jpg';
 
 export function CentroPage() {
   const t = useT();
@@ -56,31 +58,62 @@ export function CentroPage() {
       {/* SECTION 1B - INTRO TEXT */}
       <section id="intro-section" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({ pt: 'O Centro Nossa Senhora Aparecida é o lugar em que cada dia a Fundação Betania ONLUS está presente ao lado das crianças e das famílias.', it: 'Il Centro Nossa Senhora Aparecida è il luogo in cui ogni giorno la Fundação Betania ONLUS è presente accanto ai bambini e alle famiglie.', de: "Das Centro Nossa Senhora Aparecida ist der Ort, an dem die Fundação Betania ONLUS jeden Tag an der Seite der Kinder und Familien präsent ist.", en: "The Centro Nossa Senhora Aparecida is the place where, every day, Fundação Betania ONLUS is present alongside children and families." })}
-                </p>
-                <p>
-                  {t({ pt: 'Não é apenas um espaço, mas uma presença concreta feita de relações, acolhimento e vida partilhada.', it: 'Non è solo uno spazio, ma una presenza concreta fatta di relazioni, accoglienza e vita condivisa.', de: "Es ist nicht nur ein Ort, sondern eine konkrete Präsenz aus Beziehungen, Aufnahme und gemeinsamem Leben.", en: "It is not just a space, but a real presence made of relationships, welcome and shared life." })}
-                </p>
-              </div>
-              <div className="mt-8">
-                <Button variant="secondary" to="/storia-del-centro">
-                  {t({ pt: 'Conheça a história do Centro', it: 'Scopri la storia del Centro', de: "Entdecken Sie die Geschichte des Zentrums", en: "Discover the history of the Centre" })}
-                </Button>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
+          <AnimatedSection>
+            <div className="max-w-3xl mx-auto text-center space-y-4 text-lg text-gray-700 leading-relaxed">
+              <p>
+                {t({ pt: 'O Centro Nossa Senhora Aparecida é o lugar em que cada dia a Fundação Betania ONLUS está presente ao lado das crianças e das famílias.', it: 'Il Centro Nossa Senhora Aparecida è il luogo in cui ogni giorno la Fundação Betania ONLUS è presente accanto ai bambini e alle famiglie.', de: "Das Centro Nossa Senhora Aparecida ist der Ort, an dem die Fundação Betania ONLUS jeden Tag an der Seite der Kinder und Familien präsent ist.", en: "The Centro Nossa Senhora Aparecida is the place where, every day, Fundação Betania ONLUS is present alongside children and families." })}
+              </p>
+              <p>
+                {t({ pt: 'Não é apenas um espaço, mas uma presença concreta feita de relações, acolhimento e vida partilhada.', it: 'Non è solo uno spazio, ma una presenza concreta fatta di relazioni, accoglienza e vita condivisa.', de: "Es ist nicht nur ein Ort, sondern eine konkrete Präsenz aus Beziehungen, Aufnahme und gemeinsamem Leben.", en: "It is not just a space, but a real presence made of relationships, welcome and shared life." })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
+            <AnimatedSection delay={0.1}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img loading="lazy"
                   src={centroImg}
                   alt="Centro Nossa Senhora Aparecida"
-                  className="w-full h-96 object-cover"
+                  className="w-full aspect-video object-cover"
                 />
               </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-[var(--deep-blue)] mt-6 text-center">
+                {t({ pt: 'O Convento', it: 'Il Convento', de: "Das Kloster", en: "The Convent" })}
+              </h3>
             </AnimatedSection>
+
+            <AnimatedSection delay={0.2}>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img loading="lazy"
+                  src={crecheImg}
+                  alt="Struttura della creche e pré-escola"
+                  className="w-full aspect-video object-cover"
+                />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-[var(--deep-blue)] mt-6 text-center">
+                {t({ pt: 'Creche e Pré-escola', it: 'Creche e Pré-escola', de: "Creche e Pré-escola", en: "Creche e Pré-escola" })}
+              </h3>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.3}>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img loading="lazy"
+                  src={futuraScuolaImg}
+                  alt="Render della futura Scuola"
+                  className="w-full aspect-video object-cover"
+                />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-[var(--deep-blue)] mt-6 text-center">
+                {t({ pt: 'A futura Escola', it: 'La futura Scuola', de: "Die zukünftige Schule", en: "The future School" })}
+              </h3>
+            </AnimatedSection>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button variant="secondary" to="/storia-del-centro">
+              {t({ pt: 'Conheça a história do Centro', it: 'Scopri la storia del Centro', de: "Entdecken Sie die Geschichte des Zentrums", en: "Discover the history of the Centre" })}
+            </Button>
           </div>
         </div>
       </section>
@@ -99,33 +132,33 @@ export function CentroPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <AnimatedSection delay={0.1}>
-              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 h-full">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-4">
+              <div className="bg-gradient-to-br from-[var(--deep-blue)] to-[#4d6374] rounded-2xl p-8 h-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                <h3 className="text-xl font-bold text-white mb-4">
                   {t({ pt: 'Pessoas, não números', it: 'Persone, non numeri', de: "Menschen, keine Zahlen", en: "People, not numbers" })}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   {t({ pt: 'No Centro, cada jornada começa com a chegada das crianças e das famílias. Cada criança é conhecida, cada família é acompanhada, cada situação é ouvida.', it: 'Nel Centro, ogni giornata inizia con l\'arrivo dei bambini e delle famiglie. Ogni bambino è conosciuto, ogni famiglia è accompagnata, ogni situazione è ascoltata.', de: "Im Centro beginnt jeder Tag mit der Ankunft der Kinder und Familien. Jedes Kind wird gekannt, jede Familie wird begleitet, jede Situation wird angehört.", en: "At the Centre, every day begins with the arrival of children and families. Every child is known, every family is accompanied, every situation is listened to." })}
                 </p>
               </div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.2}>
-              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 h-full">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-4">
+              <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] rounded-2xl p-8 h-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                <h3 className="text-xl font-bold text-white mb-4">
                   {t({ pt: 'Presença contínua', it: 'Presenza continua', de: "Kontinuierliche Präsenz", en: "A continuous presence" })}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   {t({ pt: 'Não é uma intervenção temporária, mas uma presença estável, construída dia após dia. Esta continuidade é o que permite uma mudança real.', it: 'Non è un intervento temporaneo, ma una presenza stabile, costruita giorno dopo giorno. Questa continuità è ciò che permette un cambiamento reale.', de: "Es ist kein vorübergehender Einsatz, sondern eine stabile Präsenz, die Tag für Tag aufgebaut wird. Diese Kontinuität ist es, die einen echten Wandel ermöglicht.", en: "It is not a temporary intervention, but a stable presence, built day after day. This continuity is what allows real change." })}
                 </p>
               </div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.3}>
-              <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 h-full">
-                <h3 className="text-xl font-bold text-[var(--deep-blue)] mb-4">
+              <div className="bg-gradient-to-br from-[var(--warm-orange)] to-[var(--warm-orange-light)] rounded-2xl p-8 h-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                <h3 className="text-xl font-bold text-white mb-4">
                   {t({ pt: 'Um modo de viver', it: 'Un modo di vivere', de: "Eine Art zu leben", en: "A way of life" })}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-white/90 leading-relaxed">
                   {t({ pt: 'É um espaço aberto, vivo, onde as pessoas não são usuários mas rostos, histórias, relações. O acolhimento não é um serviço, mas um modo de viver.', it: 'È uno spazio aperto, vivo, dove le persone non sono utenti ma volti, storie, relazioni. L\'accoglienza non è un servizio, ma un modo di vivere.', de: "Es ist ein offener, lebendiger Ort, an dem Menschen nicht Nutzer sind, sondern Gesichter, Geschichten, Beziehungen. Aufnahme ist kein Dienst, sondern eine Art zu leben.", en: "It is an open, living space, where people are not users but faces, stories, relationships. Welcoming is not a service, but a way of life." })}
                 </p>
               </div>

@@ -8,6 +8,9 @@ import atelieImg from '../../imports/nuove/FOTO VIDEO/asilo/6.jpeg';
 import alimentacaoImg from '../../imports/nuove/r4.jpg';
 import hortaImg from '../../imports/10.jpeg';
 import formacaoImg from '../../imports/nuove/FOTO VIDEO/asilo/20.jpeg';
+import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
+import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
+import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
 
 export function ProjetosPermanentesPage() {
   const t = useT();
@@ -106,8 +109,9 @@ export function ProjetosPermanentesPage() {
       </section>
 
       {/* INTRO */}
-      <section id="projetos" className="bg-white py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section id="projetos" className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8">
               {t({ pt: 'Projetos que fazem parte da rotina', it: 'Progetti parte della routine', de: "Projekte, die zum Alltag gehören", en: "Projects that are part of the routine" })}
@@ -125,8 +129,9 @@ export function ProjetosPermanentesPage() {
       </section>
 
       {/* PROGETTI — 2x2 GRID */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
@@ -161,8 +166,9 @@ export function ProjetosPermanentesPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white py-20">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden bg-white py-20">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
               {t({ pt: 'Apoie nossos projetos', it: 'Sostieni i nostri progetti', de: "Unterstützen Sie unsere Projekte", en: "Support our projects" })}

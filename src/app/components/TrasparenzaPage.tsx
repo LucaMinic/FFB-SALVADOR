@@ -4,10 +4,11 @@ import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
 import { Link } from 'react-router';
-import heroImg from '../../imports/foto_sito_06_pagina_7.jpg';
+import heroImg from '../../imports/diego/trasparenza.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
 import alimentoQueAcolheImg from '../../imports/diego/capa do projeto alimento que acolhe.png';
 import rotaSolidariaImg from '../../imports/diego/rota-solidaria-capa.jpg';
+import jovensDeBetaniaImg from '../../imports/diego/jovens-betania-card.jpg';
 
 export function TrasparenzaPage() {
   const t = useT();
@@ -31,6 +32,11 @@ export function TrasparenzaPage() {
       title: t({ pt: 'Rota Solidária', it: 'Rota Solidária', de: "Rota Solidária", en: "Rota Solidária" }),
       image: rotaSolidariaImg,
       href: '/rota-solidaria'
+    },
+    {
+      title: t({ pt: 'Jovens de Betânia', it: 'Jovens de Betânia', de: "Jovens de Betânia", en: "Jovens de Betânia" }),
+      image: jovensDeBetaniaImg,
+      href: '/jovens-de-betania'
     }
   ];
 

@@ -173,6 +173,15 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A project that guarantees transport to nursery school for 15 children in vulnerable situations, with the solidary support of Italian benefactors.",
     },
   },
+  '/jovens-de-betania': {
+    title: withSuffix({ pt: 'Jovens de Betânia', it: 'Jovens de Betânia', de: "Jovens de Betânia", en: "Jovens de Betânia" }),
+    description: {
+      pt: 'O acolhimento e o acompanhamento de 60 jovens, entre 11 e 25 anos, num caminho de formação humana e espiritual da Fundação Betânia Onlus.',
+      it: "L'accoglienza e l'accompagnamento di 60 giovani, dagli 11 ai 25 anni, in un cammino di formazione umana e spirituale della Fundação Betânia Onlus.",
+      de: "Die Aufnahme und Begleitung von 60 Jugendlichen im Alter von 11 bis 25 Jahren auf einem Weg der menschlichen und geistlichen Bildung der Fundação Betânia Onlus.",
+      en: "The welcoming and accompaniment of 60 young people, aged 11 to 25, on a path of human and spiritual formation with Fundação Betânia Onlus.",
+    },
+  },
   '/eventi-speciali': {
     title: withSuffix({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" }),
     description: {

@@ -28,6 +28,12 @@ import instagramPost6 from '../../imports/2-2.jpeg';
 import instagramPost7 from '../../imports/3-1.jpeg';
 import instagramPost8 from '../../imports/16-3.jpeg';
 import instagramPost9 from '../../imports/13-4.jpeg';
+import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
+import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
+import cerchiFamiglieImg from '../../imports/diego/asilo-cerchi-famiglie.png';
+import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
+import cerchiOndeImg from '../../imports/diego/asilo-cerchi-onde.png';
+import cerchiPiccoloImg from '../../imports/diego/asilo-cerchi-piccolo.png';
 
 export function AsiloPage() {
   const t = useT();
@@ -74,8 +80,9 @@ export function AsiloPage() {
       </section>
 
       {/* SECTION 1B - INTRO TEXT */}
-      <section id="intro-section" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="intro-section" className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
@@ -147,8 +154,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION MISSIONE E VALORI */}
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
 
           {/* Missione — card hero con immagine */}
           <AnimatedSection>
@@ -225,8 +233,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 2 - LA NOSTRA METODOLOGIA (panoramica) */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <AnimatedSection>
               <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
@@ -323,8 +332,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 6 - CRITERI DI ACCOGLIENZA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
               {t({ pt: 'Acolher quem mais precisa', it: 'Criteri di selezione', de: "Aufnahmekriterien", en: "Selection criteria" })}
@@ -385,8 +395,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 2A - MOSTRE PEDAGOGICHE */}
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
@@ -437,8 +448,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 2B - PROGETTI PERMANENTI */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
               {t({ pt: 'Durante todo o ano letivo', it: "Durante tutto l'anno scolastico", de: "Während des gesamten Schuljahres", en: "Throughout the school year" })}
@@ -534,8 +546,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 2C - RELATÓRIOS */}
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
               {t({ pt: 'Documentação transparente', it: 'Documentazione trasparente', de: "Transparente Dokumentation", en: "Transparent documentation" })}
@@ -639,8 +652,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION - PROGETTI PEDAGOGICI */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.07)] p-10 md:p-14 text-center">
               <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
@@ -678,8 +692,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 5 - CHI ANIMA L'ASILO */}
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
               {t({ pt: 'Uma comunidade educativa', it: 'Una comunità educativa', de: "Eine Bildungsgemeinschaft", en: "An educational community" })}
@@ -787,8 +802,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 3 - IL SERVIZIO */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-12 text-center">
               {t({ pt: 'Educação em tempo integral', it: 'Educazione a tempo pieno', de: "Ganztägige Bildung", en: "Full-time education" })}
@@ -842,8 +858,9 @@ export function AsiloPage() {
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
       </svg>
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
               {t({ pt: 'As crianças acolhidas', it: 'I bambini accolti', de: "Die aufgenommenen Kinder", en: "The children we welcome" })}
@@ -882,8 +899,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 7 - COME AVVIENE L'ISCRIZIONE */}
-      <section className="py-20 bg-[var(--beige)]">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
               {t({ pt: 'Um percurso de escuta e avaliação', it: 'Un percorso di ascolto e valutazione', de: "Ein Weg des Zuhörens und der Bewertung", en: "A process of listening and assessment" })}
@@ -931,8 +949,9 @@ export function AsiloPage() {
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiFamiglieImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
@@ -966,8 +985,9 @@ export function AsiloPage() {
       </section>
 
       {/* SECTION 17 - INSTAGRAM */}
-      <section className="py-24 bg-gradient-to-b from-white to-[var(--beige)]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative overflow-hidden py-24 bg-gradient-to-b from-white to-[var(--beige)]">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <AnimatedSection>
             <div className="text-center mb-16">
               <div className="flex items-center justify-center gap-3 mb-6">
@@ -1074,8 +1094,9 @@ export function AsiloPage() {
       </svg>
 
       {/* SECTION 18 - CTA FINALE */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden py-20 bg-white">
+        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
               {t({ pt: 'Apoie a creche', it: "Sostieni l'asilo", de: "Unterstützen Sie die Kita", en: "Support the nursery school" })}

@@ -10,6 +10,12 @@ import img4 from '../../imports/1.jpeg';
 import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
 import formacaoContImg from '../../imports/17-1.jpeg';
 import reggioImg from '../../imports/nuove/_DSF1797.jpg';
+import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
+import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
+import cerchiFamiglieImg from '../../imports/diego/asilo-cerchi-famiglie.png';
+import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
+import cerchiOndeImg from '../../imports/diego/asilo-cerchi-onde.png';
+import cerchiPiccoloImg from '../../imports/diego/asilo-cerchi-piccolo.png';
 
 export function NossaMetodologiaPage() {
   const t = useT();
@@ -67,8 +73,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION 1 — ABORDAGEM SOCIOINTERACIONISTA */}
-      <section id="scopri" className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="scopri" className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
 
           {/* Titolo */}
           <AnimatedSection delay={0.1}>
@@ -147,8 +154,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION PILASTRI */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-4">
@@ -206,8 +214,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION REGGIO EMILIA */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1}>
               <img loading="lazy"
@@ -253,8 +262,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION 2 — PEDAGOGIAS PARTICIPATIVAS */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
@@ -291,8 +301,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION MOSTRAS PEDAGÓGICAS */}
-      <section id="mostras-pedagogicas" className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section id="mostras-pedagogicas" className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-8 text-center">
               {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche', de: "Pädagogische Ausstellungen", en: "Pedagogical Exhibitions" })}
@@ -348,8 +359,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SEZIONE FORMAÇÃO CONTINUADA */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <div className="w-16 h-1 bg-[var(--warm-orange)] mb-10 rounded-full" />
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-16">
@@ -417,8 +429,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION 3 — FONDAMENTI TEORICI */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1}>
               <div>
@@ -533,8 +546,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* SECTION 4 — AMBIENTE E EXPERIÊNCIAS */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection delay={0.1} className="order-2 lg:order-1">
               <img loading="lazy"
@@ -572,8 +586,9 @@ export function NossaMetodologiaPage() {
 
 
       {/* CURRICULUM BNCC */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
               {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza", de: "Ein auf Erfahrung gegründetes Curriculum", en: "A curriculum founded on experience" })}
@@ -607,8 +622,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* TEMI TRASVERSALI */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
               {t({ pt: 'Educar para a vida', it: 'Educare alla vita', de: "Erziehung zum Leben", en: "Educating for life" })}
@@ -645,8 +661,9 @@ export function NossaMetodologiaPage() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-[var(--beige)] py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiFamiglieImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <AnimatedSection delay={0.1}>
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
               {t({ pt: 'Descubra mais sobre a nossa proposta', it: 'Scopri di più sulla nostra proposta', de: "Erfahren Sie mehr über unser Konzept", en: "Learn more about our approach" })}
