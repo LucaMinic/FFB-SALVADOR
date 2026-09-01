@@ -49,6 +49,8 @@ const pages = [
   { path: '/relatorios/identita-e-cultura', priority: '0.6', changefreq: 'monthly' },
   { path: '/relatorios/mondo-in-movimento', priority: '0.6', changefreq: 'monthly' },
   { path: '/relatorios/piccoli-animali-e-natura', priority: '0.6', changefreq: 'monthly' },
+  { path: '/noticias', priority: '0.7', changefreq: 'weekly' },
+  { path: '/noticias/tonelada-de-amor', priority: '0.4', changefreq: 'yearly' },
 ];
 
 const urlEntries = pages

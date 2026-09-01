@@ -1,0 +1,212 @@
+import { useState } from 'react';
+import { ArrowLeft, Expand } from 'lucide-react';
+import { Link } from 'react-router';
+import { useT } from '../context/LanguageContext';
+import { AnimatedSection } from './AnimatedSection';
+import { Button } from './Button';
+import { ShareButtons } from './ShareButtons';
+import { Lightbox } from './Lightbox';
+import heroImg from '../../imports/diego/noticia-tonelada-amor-capa.jpg';
+import onibusImg from '../../imports/diego/noticia-tonelada-amor-onibus.jpg';
+import criancasImg from '../../imports/diego/noticia-tonelada-amor-criancas.jpg';
+
+export function ToneladaDeAmorPage() {
+  const t = useT();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const gallery = [onibusImg, criancasImg];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % gallery.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + gallery.length) % gallery.length);
+  };
+
+  return (
+    <>
+      {/* HERO */}
+      <section
+        className="relative flex flex-col items-center justify-center text-center overflow-hidden"
+        style={{ minHeight: 'clamp(70vh, 85vh, 100vh)' }}
+      >
+        <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 30%' }} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+
+        {/* Back button */}
+        <div className="absolute top-8 left-8 z-20">
+          <Link
+            to="/noticias"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: 'Zurück', en: 'Back' })}</span>
+          </Link>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
+          <AnimatedSection delay={0.1}>
+            <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
+              {t({ pt: 'Notícia', it: 'Notizia', de: 'Nachricht', en: 'News' })} · {t({ pt: '27 de agosto de 2026', it: '27 agosto 2026', de: '27. August 2026', en: 'August 27, 2026' })}
+            </p>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              Tonelada de Amor
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+              {t({
+                pt: 'O Colégio Antônio Vieira transformou solidariedade em mais de uma tonelada de alimentos para as famílias atendidas pelo Centro Nossa Senhora Aparecida.',
+                it: 'Il Colégio Antônio Vieira ha trasformato la solidarietà in più di una tonnellata di alimenti per le famiglie seguite dal Centro Nossa Senhora Aparecida.',
+                de: 'Das Colégio Antônio Vieira verwandelte Solidarität in mehr als eine Tonne Lebensmittel für die vom Centro Nossa Senhora Aparecida betreuten Familien.',
+                en: 'The Colégio Antônio Vieira turned solidarity into more than a ton of food for the families supported by the Centro Nossa Senhora Aparecida.',
+              })}
+            </p>
+          </AnimatedSection>
+          <AnimatedSection delay={0.3}>
+            <ShareButtons title="Tonelada de Amor" variant="dark" />
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ARTICLE BODY */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="max-w-3xl mx-auto px-6">
+          <AnimatedSection delay={0.1}>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {t({
+                pt: 'O Centro Nossa Senhora recebeu mais de uma tonelada de alimentos através de uma campanha solidária intitulada "Tonelada de Amor", promovida pelo Colégio Antônio Vieira.',
+                it: 'Il Centro Nossa Senhora ha ricevuto più di una tonnellata di alimenti grazie a una campagna solidale intitolata "Tonnellata d\'Amore", promossa dal Colégio Antônio Vieira.',
+                de: 'Das Centro Nossa Senhora erhielt über eine Tonne Lebensmittel im Rahmen einer Solidaritätskampagne mit dem Titel „Tonne der Liebe“, die vom Colégio Antônio Vieira organisiert wurde.',
+                en: 'The Centro Nossa Senhora received more than a ton of food through a solidarity campaign called "Ton of Love", promoted by the Colégio Antônio Vieira.',
+              })}
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {t({
+                pt: 'O nosso muito obrigado a todos os alunos voluntários do Colégio Antônio Vieira pela linda participação na Campanha Tonelada de Amor!',
+                it: 'Il nostro grazie di cuore a tutti gli studenti volontari del Colégio Antônio Vieira per la bellissima partecipazione alla Campagna Tonnellata d\'Amore!',
+                de: 'Unser herzlicher Dank gilt allen freiwilligen Schülerinnen und Schülern des Colégio Antônio Vieira für ihre wunderbare Teilnahme an der Kampagne Tonne der Liebe!',
+                en: 'Our heartfelt thanks to all the volunteer students of the Colégio Antônio Vieira for their wonderful participation in the Ton of Love Campaign!',
+              })}
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              {t({
+                pt: 'Foram arrecadados mais de uma tonelada de alimentos, fruto de muito empenho, dedicação e solidariedade aos mais necessitados.',
+                it: 'Sono state raccolte più di una tonnellata di alimenti, frutto di grande impegno, dedizione e solidarietà verso chi ha più bisogno.',
+                de: 'Es wurde mehr als eine Tonne Lebensmittel gesammelt, das Ergebnis großen Engagements, großer Hingabe und Solidarität mit den Bedürftigsten.',
+                en: 'More than a ton of food was collected, the result of great commitment, dedication and solidarity with those most in need.',
+              })}
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              {t({
+                pt: 'Cada alimento arrecadado representa mais do que uma doação: é o tempo e o compromisso em fazer o bem ao próximo.',
+                it: 'Ogni alimento raccolto rappresenta più di una donazione: è il tempo e l\'impegno nel fare del bene al prossimo.',
+                de: 'Jedes gesammelte Lebensmittel steht für mehr als eine Spende: Es ist die Zeit und der Einsatz, dem Nächsten Gutes zu tun.',
+                en: 'Every item of food collected represents more than a donation: it is the time and commitment to doing good for others.',
+              })}
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section className="bg-[var(--beige)] py-24 md:py-32">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimatedSection delay={0.1}>
+            <div className="text-center mb-16">
+              <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
+              <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)]">
+                {t({ pt: 'Um dia de generosidade', it: 'Una giornata di generosità', de: 'Ein Tag der Großzügigkeit', en: 'A day of generosity' })}
+              </h2>
+            </div>
+          </AnimatedSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {gallery.map((image, index) => (
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <div
+                  className="group aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] transition-all duration-500 cursor-pointer relative"
+                  onClick={() => openLightbox(index)}
+                >
+                  <img loading="lazy"
+                    src={image}
+                    alt="Tonelada de Amor"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                    <Expand className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          {lightboxOpen && (
+            <Lightbox
+              images={gallery}
+              currentIndex={currentImageIndex}
+              onClose={closeLightbox}
+              onNext={nextImage}
+              onPrev={prevImage}
+              alt="Tonelada de Amor"
+            />
+          )}
+        </div>
+      </section>
+
+      {/* QUOTE */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection delay={0.1}>
+            <blockquote>
+              <p className="text-2xl md:text-3xl italic font-medium leading-relaxed text-[var(--deep-blue)] mb-8">
+                &ldquo;{t({
+                  pt: 'Que este gesto de caridade continue crescendo em cada coração, servindo de exemplo de solidariedade e fraternidade. Vocês fizeram a diferença!',
+                  it: 'Che questo gesto di carità continui a crescere in ogni cuore, come esempio di solidarietà e fraternità. Avete fatto la differenza!',
+                  de: 'Möge diese Geste der Nächstenliebe in jedem Herzen weiterwachsen und als Beispiel für Solidarität und Brüderlichkeit dienen. Ihr habt den Unterschied gemacht!',
+                  en: 'May this act of charity continue to grow in every heart, serving as an example of solidarity and fraternity. You made the difference!',
+                })}&rdquo;
+              </p>
+              <footer className="text-[var(--warm-orange)] text-sm font-bold tracking-[0.2em] uppercase">
+                {t({ pt: 'GRATIDÃO', it: 'GRATITUDINE', de: 'DANKBARKEIT', en: 'GRATITUDE' })}
+              </footer>
+            </blockquote>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="bg-[var(--beige)] py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
+              {t({ pt: 'Descubra outras notícias', it: 'Scopri altre notizie', de: 'Weitere Neuigkeiten entdecken', en: 'Discover other news' })}
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+              {t({
+                pt: 'Acompanhe as campanhas, histórias e momentos que marcam a vida do Centro Nossa Senhora Aparecida.',
+                it: 'Segui le campagne, le storie e i momenti che segnano la vita del Centro Nossa Senhora Aparecida.',
+                de: 'Verfolgen Sie die Kampagnen, Geschichten und Momente, die das Leben des Centro Nossa Senhora Aparecida prägen.',
+                en: 'Follow the campaigns, stories and moments that mark the life of the Centro Nossa Senhora Aparecida.',
+              })}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="primary" to="/noticias">
+                {t({ pt: 'Todas as notícias', it: 'Tutte le notizie', de: 'Alle Neuigkeiten', en: 'All news' })}
+              </Button>
+              <Button variant="secondary" to="/dona-ora">
+                {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: 'Donate now' })}
+              </Button>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+    </>
+  );
+}

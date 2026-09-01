@@ -5,7 +5,6 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import { Lightbox } from './Lightbox';
-import heroImg from '../../imports/diego/jovens-betania-capa.jpg';
 import img1 from '../../imports/diego/jovens-betania-grupo-capela.jpg';
 import img2 from '../../imports/diego/jovens-betania-torre.jpg';
 import img3 from '../../imports/diego/jovens-betania-museu.jpg';
@@ -21,13 +20,17 @@ import gallery8 from '../../imports/diego/jovens-betania-gal-11.jpg';
 import gallery9 from '../../imports/diego/jovens-betania-capa.jpg';
 import gallery10 from '../../imports/diego/jovens-betania-abraco.jpg';
 import gallery11 from '../../imports/diego/jovens-betania-grupo-capela.jpg';
+import gallery12 from '../../imports/diego/jovens-betania-gal-12.jpg';
+import gallery13 from '../../imports/diego/jovens-betania-gal-13.jpg';
+import gallery14 from '../../imports/diego/jovens-betania-gal-14.jpg';
+import gallery15 from '../../imports/diego/jovens-betania-gal-15.jpg';
 
 export function JovensDeBetaniaPage() {
   const t = useT();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, gallery9, gallery10, gallery11];
+  const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, gallery9, gallery10, gallery11, gallery12, gallery13, gallery14, gallery15];
 
   const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
@@ -99,7 +102,7 @@ export function JovensDeBetaniaPage() {
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
         style={{ minHeight: 'clamp(70vh, 85vh, 100vh)' }}
       >
-        <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 20%' }} />
+        <img src={img1} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 20%' }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>

@@ -213,6 +213,7 @@ export function Header() {
         { label: t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
       ]
     },
+    { label: t({ pt: 'Notícias', it: 'Notizie', de: "Neuigkeiten", en: "News" }), href: '/noticias', isRoute: true },
     { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true }
   ];
 

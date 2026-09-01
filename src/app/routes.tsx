@@ -51,6 +51,8 @@ export const router = createBrowserRouter([
       { path: "alimentacao-saudavel", lazy: () => import("./components/AlimentacaoSaudavelPage").then((m) => ({ Component: m.AlimentacaoSaudavelPage })) },
       { path: "relatorios", lazy: () => import("./components/RelatoriosPage").then((m) => ({ Component: m.RelatoriosPage })) },
       { path: "relatorios/:area", lazy: () => import("./components/RelatorioAreaPage").then((m) => ({ Component: m.RelatorioAreaPage })) },
+      { path: "noticias", lazy: () => import("./components/NoticiasPage").then((m) => ({ Component: m.NoticiasPage })) },
+      { path: "noticias/tonelada-de-amor", lazy: () => import("./components/ToneladaDeAmorPage").then((m) => ({ Component: m.ToneladaDeAmorPage })) },
       { path: "*", Component: HomePage },
     ],
   },

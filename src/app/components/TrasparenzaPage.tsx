@@ -8,7 +8,7 @@ import heroImg from '../../imports/diego/trasparenza.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
 import alimentoQueAcolheImg from '../../imports/diego/capa do projeto alimento que acolhe.png';
 import rotaSolidariaImg from '../../imports/diego/rota-solidaria-capa.jpg';
-import jovensDeBetaniaImg from '../../imports/diego/jovens-betania-card.jpg';
+import jovensDeBetaniaImg from '../../imports/diego/jovens-betania-transparencia-card.jpg';
 
 export function TrasparenzaPage() {
   const t = useT();
@@ -158,7 +158,7 @@ export function TrasparenzaPage() {
                     <img loading="lazy"
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-64 object-cover hover:scale-105 transition-transform duration-700"
+                      className="w-full aspect-square object-cover hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                   <div className={`${

@@ -371,4 +371,22 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Transparent and accessible pedagogical documentation — a living record of the work carried out with the children of the Centro Nossa Senhora Aparecida.",
     },
   },
+  '/noticias': {
+    title: withSuffix({ pt: 'Notícias', it: 'Notizie', de: "Neuigkeiten", en: "News" }),
+    description: {
+      pt: 'Acompanhe as últimas novidades, campanhas e momentos vividos no Centro Nossa Senhora Aparecida e na Fundação Betânia Onlus.',
+      it: 'Segui le ultime novità, le campagne e i momenti vissuti al Centro Nossa Senhora Aparecida e nella Fundação Betânia Onlus.',
+      de: "Verfolgen Sie die neuesten Nachrichten, Kampagnen und Momente aus dem Centro Nossa Senhora Aparecida und der Fundação Betânia Onlus.",
+      en: "Follow the latest news, campaigns and moments from the Centro Nossa Senhora Aparecida and Fundação Betânia Onlus.",
+    },
+  },
+  '/noticias/tonelada-de-amor': {
+    title: withSuffix({ pt: 'Tonelada de Amor', it: 'Tonelada de Amor', de: "Tonelada de Amor", en: "Tonelada de Amor" }),
+    description: {
+      pt: 'O Centro Nossa Senhora Aparecida recebeu mais de uma tonelada de alimentos doados pelos alunos do Colégio Antônio Vieira, na campanha "Tonelada de Amor".',
+      it: 'Il Centro Nossa Senhora Aparecida ha ricevuto più di una tonnellata di alimenti donati dagli studenti del Colégio Antônio Vieira, nella campagna "Tonnellata d\'Amore".',
+      de: "Das Centro Nossa Senhora Aparecida erhielt über eine Tonne Lebensmittel, die von den Schülerinnen und Schülern des Colégio Antônio Vieira gespendet wurden.",
+      en: "The Centro Nossa Senhora Aparecida received over a ton of food donated by students of the Colégio Antônio Vieira as part of the \"Ton of Love\" campaign.",
+    },
+  },
 };
