@@ -57,7 +57,9 @@ export function Footer() {
       href: '/la-fundacao',
       isRoute: true,
       submenu: [
+        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
         { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS", en: "The Fundação Betania ONLUS" }), href: '/la-fundacao', isRoute: true },
+        { label: t({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums", en: "The History of the Centre" }), href: '/storia-del-centro', isRoute: true },
         { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen", en: "Institutional Recognitions" }), href: '/riconoscimenti-istituzionali', isRoute: true },
         { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz", en: "Transparency" }), href: '/trasparenza', isRoute: true }
       ]
@@ -69,7 +71,7 @@ export function Footer() {
       submenu: [
         { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Centro", en: "The Centre" }), href: '/il-centro', isRoute: true },
         {
-          label: t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" }),
+          label: t({ pt: 'Creche e pré-escola', it: "Asilo e scuola dell'infanzia", de: "Kita und Vorschule", en: "Nursery and Pre-school" }),
           href: '/asilo',
           isRoute: true,
           submenu: [
@@ -83,7 +85,7 @@ export function Footer() {
           ]
         },
         {
-          label: t({ pt: 'A escola', it: 'La scuola', de: "Die Schule", en: "The School" }),
+          label: t({ pt: 'Escola', it: 'Scuola', de: "Schule", en: "School" }),
           href: '/progetto-scuola',
           isRoute: true,
           submenu: [
@@ -101,17 +103,7 @@ export function Footer() {
             { label: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting Families" }), href: '/accompagnamento-famiglie', isRoute: true }
           ]
         },
-        { label: t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentationen und Erzählungen", en: "Documentaries and Stories" }), href: '/documentari-racconti', isRoute: true },
         { label: t({ pt: 'Iniciativas', it: 'Iniziative', de: "Initiativen", en: "Initiatives" }), href: '/iniziative', isRoute: true }
-      ]
-    },
-    {
-      label: t({ pt: 'Fraternidade', it: 'Fraternità', de: "Gemeinschaft", en: "Fraternity" }),
-      href: '/la-fraternita',
-      isRoute: true,
-      submenu: [
-        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
-        { label: t({ pt: 'Eventos especiais', it: 'Eventi speciali', de: "Besondere Veranstaltungen", en: "Special Events" }), href: '/eventi-speciali', isRoute: true }
       ]
     },
     {
@@ -129,7 +121,8 @@ export function Footer() {
         }
       ]
     },
-    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true }
+    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true },
+    { label: t({ pt: 'Notícias', it: 'Notizie', de: "Neuigkeiten", en: "News" }), href: '/noticias', isRoute: true }
   ];
 
   return (

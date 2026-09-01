@@ -212,7 +212,7 @@ export function VisitaPresidentePage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/eventi-speciali">
+              <Button variant="primary" to="/noticias/eventos-especiais">
                 {t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
               </Button>
               <Button variant="secondary" to="/il-centro">

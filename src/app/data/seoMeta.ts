@@ -182,7 +182,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "The welcoming and accompaniment of 60 young people, aged 11 to 25, on a path of human and spiritual formation with Fundação Betânia Onlus.",
     },
   },
-  '/eventi-speciali': {
+  '/noticias/eventos-especiais': {
     title: withSuffix({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" }),
     description: {
       pt: 'Momentos, encontros e visitas que marcaram o caminho do Centro Nossa Senhora Aparecida.',

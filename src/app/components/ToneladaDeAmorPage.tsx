@@ -56,7 +56,7 @@ export function ToneladaDeAmorPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
-              {t({ pt: 'Notícia', it: 'Notizia', de: 'Nachricht', en: 'News' })} · {t({ pt: '27 de agosto de 2026', it: '27 agosto 2026', de: '27. August 2026', en: 'August 27, 2026' })}
+              {t({ pt: 'Notícia', it: 'Notizia', de: 'Nachricht', en: 'News' })}
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Tonelada de Amor

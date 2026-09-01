@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
+import { ArrowLeft } from 'lucide-react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { Lightbox } from './Lightbox';
@@ -65,6 +67,16 @@ export function EventiSpecialiPage() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        </div>
+
+        <div className="absolute top-8 left-8 z-20">
+          <Link
+            to="/noticias"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-sm font-medium">{t({ pt: 'Voltar', it: 'Torna indietro', de: 'Zurück', en: 'Back' })}</span>
+          </Link>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">

@@ -3,15 +3,27 @@ import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import { Link } from 'react-router';
 import heroImg from '../../imports/diego/noticia-tonelada-amor-capa.jpg';
+import eventoPresidenteImg from '../../imports/21-4.jpeg';
 
 export function NoticiasPage() {
   const t = useT();
 
   const noticias = [
     {
+      id: 'eventos-especiais',
+      title: t({ pt: 'Visita do Presidente da República Italiana', it: 'Visita del Presidente della Repubblica Italiana', de: 'Besuch des Präsidenten der Italienischen Republik', en: 'Visit of the President of the Italian Republic' }),
+      description: t({
+        pt: 'O Centro Nossa Senhora Aparecida e a Fraternidade Franciscana de Betânia acolheram a visita do Presidente da República Italiana, Sergio Mattarella, um momento de grande valor humano e institucional.',
+        it: 'Il Centro Nossa Senhora Aparecida e la Fraternità Francescana di Betania hanno accolto la visita del Presidente della Repubblica Italiana, Sergio Mattarella, un momento di grande valore umano e istituzionale.',
+        de: 'Das Centro Nossa Senhora Aparecida und die Franziskanische Gemeinschaft von Betania empfingen den Präsidenten der Italienischen Republik, Sergio Mattarella, zu einem Besuch von großem menschlichem und institutionellem Wert.',
+        en: 'The Centro Nossa Senhora Aparecida and the Franciscan Fraternity of Betania welcomed a visit from the President of the Italian Republic, Sergio Mattarella, a moment of great human and institutional value.',
+      }),
+      image: eventoPresidenteImg,
+      link: '/noticias/eventos-especiais',
+    },
+    {
       id: 'tonelada-de-amor',
       title: 'Tonelada de Amor',
-      date: t({ pt: '27 de agosto de 2026', it: '27 agosto 2026', de: '27. August 2026', en: 'August 27, 2026' }),
       description: t({
         pt: 'O Centro Nossa Senhora Aparecida recebeu mais de uma tonelada de alimentos doados pelos alunos do Colégio Antônio Vieira, na campanha "Tonelada de Amor".',
         it: 'Il Centro Nossa Senhora Aparecida ha ricevuto più di una tonnellata di alimenti donati dagli studenti del Colégio Antônio Vieira, nell\'ambito della campagna "Tonnellata d\'Amore".',
@@ -30,7 +42,7 @@ export function NoticiasPage() {
         className="relative flex flex-col items-center justify-center text-center overflow-hidden"
         style={{ minHeight: 'clamp(70vh, 85vh, 100vh)' }}
       >
-        <img src={heroImg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 30%' }} />
+        <img src={eventoPresidenteImg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 30%' }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 flex flex-col items-center gap-8">
           <AnimatedSection delay={0.1}>
@@ -103,9 +115,6 @@ export function NoticiasPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                   </div>
                   <div className="p-8">
-                    <p className="text-[var(--warm-orange)] text-sm font-semibold uppercase tracking-wide mb-3">
-                      {noticia.date}
-                    </p>
                     <h3 className="text-2xl font-bold text-[var(--deep-blue)] mb-4 group-hover:text-[var(--warm-orange)] transition-colors duration-300">
                       {noticia.title}
                     </h3>
