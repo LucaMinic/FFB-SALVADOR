@@ -191,15 +191,6 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Moments, encounters and visits that have marked the journey of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/documentari-racconti': {
-    title: withSuffix({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentationen und Erzählungen", en: "Documentaries and Stories" }),
-    description: {
-      pt: 'Histórias, memórias e percursos que contam a vida do Centro Nossa Senhora Aparecida através de imagens, encontros e relações.',
-      it: 'Storie, memorie e percorsi che raccontano la vita del Centro Nossa Senhora Aparecida attraverso immagini, incontri e relazioni.',
-      de: "Geschichten, Erinnerungen und Wege, die das Leben des Centro Nossa Senhora Aparecida durch Bilder, Begegnungen und Beziehungen erzählen.",
-      en: "Stories, memories and journeys that tell the life of the Centro Nossa Senhora Aparecida through images, encounters and relationships.",
-    },
-  },
   '/progetti-pedagogici': {
     title: withSuffix({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" }),
     description: {
@@ -245,7 +236,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Accompanying a child also means walking alongside their family: care that extends beyond the walls of the Centre.",
     },
   },
-  '/documentari-racconti/intervista-centro': {
+  '/noticias/intervista-centro': {
     title: withSuffix({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Zentrum", en: "Interview at the Centre" }),
     description: {
       pt: 'Um olhar autêntico sobre a missão e o trabalho educativo, social e comunitário do Centro Nossa Senhora Aparecida em Salvador da Bahia.',
@@ -254,7 +245,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "An authentic look at the mission and the educational, social and community work of the Centro Nossa Senhora Aparecida in Salvador de Bahia.",
     },
   },
-  '/documentari-racconti/visita-presidente': {
+  '/noticias/visita-presidente': {
     title: withSuffix({ pt: 'A visita do Presidente da República Italiana', it: 'La visita del Presidente della Repubblica Italiana', de: "Der Besuch des Präsidenten der Italienischen Republik", en: "The visit of the President of the Italian Republic" }),
     description: {
       pt: 'Um momento histórico de encontro, reconhecimento e proximidade à missão educativa e social do Centro Nossa Senhora Aparecida.',
@@ -263,7 +254,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A historic moment of encounter, recognition and closeness to the educational and social mission of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/documentari-racconti/dieci-anni-creche': {
+  '/noticias/dieci-anni-creche': {
     title: withSuffix({ pt: 'Dez anos da Creche', it: 'Dieci anni della Creche', de: "Zehn Jahre Kita", en: "Ten Years of the Creche" }),
     description: {
       pt: 'Dez anos de acolhimento, educação e crescimento compartilhado junto às crianças, famílias e comunidade de Salvador da Bahia.',
@@ -272,7 +263,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Ten years of care, education and growth shared with children, families and the community of Salvador de Bahia.",
     },
   },
-  '/documentari-racconti/posa-prima-pietra': {
+  '/noticias/posa-prima-pietra': {
     title: withSuffix({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung", en: "Laying of the First Stone" }),
     description: {
       pt: 'O início concreto de um lugar pensado para acolher, educar e acompanhar novas gerações: o lançamento da pedra fundamental do Projeto Escola.',

@@ -28,12 +28,12 @@ export function Impatto() {
               <div className="overflow-hidden">
                 <img loading="lazy"
                   src={dailyLifeImage}
-                  alt={t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" })}
+                  alt={t({ pt: 'Creche e Pré-escola', it: 'Asilo', de: "Kita", en: "Nursery School" })}
                   className="w-full h-80 object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white p-8 text-center">
-                <p className="text-2xl font-medium mb-2">{t({ pt: 'Creche', it: 'Asilo', de: "Kita", en: "Nursery School" })}</p>
+                <p className="text-2xl font-medium mb-2">{t({ pt: 'Creche e Pré-escola', it: 'Asilo', de: "Kita", en: "Nursery School" })}</p>
                 <p className="text-sm opacity-90">{t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}</p>
               </div>
             </Link>

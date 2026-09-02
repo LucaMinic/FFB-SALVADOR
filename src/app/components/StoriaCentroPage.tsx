@@ -281,7 +281,7 @@ const entries: TimelineEntry[] = [
     },
     cta: {
       label: { it: 'Scopri la visita', pt: 'Conheça a visita', de: 'Entdecken Sie den Besuch', en: "Discover the visit" },
-      to: '/documentari-racconti/visita-presidente',
+      to: '/noticias/visita-presidente',
     },
     status: 'completed',
   },

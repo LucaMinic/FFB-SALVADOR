@@ -25,16 +25,11 @@ const pages = [
   { path: '/rota-solidaria', priority: '0.6', changefreq: 'monthly' },
   { path: '/jovens-de-betania', priority: '0.6', changefreq: 'monthly' },
   { path: '/noticias/eventos-especiais', priority: '0.5', changefreq: 'monthly' },
-  { path: '/documentari-racconti', priority: '0.6', changefreq: 'monthly' },
   { path: '/progetti-pedagogici', priority: '0.6', changefreq: 'monthly' },
   { path: '/accoglienza-quotidiana', priority: '0.6', changefreq: 'monthly' },
   { path: '/educazione', priority: '0.6', changefreq: 'monthly' },
   { path: '/cura-e-nutrizione', priority: '0.6', changefreq: 'monthly' },
   { path: '/accompagnamento-famiglie', priority: '0.6', changefreq: 'monthly' },
-  { path: '/documentari-racconti/intervista-centro', priority: '0.4', changefreq: 'yearly' },
-  { path: '/documentari-racconti/visita-presidente', priority: '0.4', changefreq: 'yearly' },
-  { path: '/documentari-racconti/dieci-anni-creche', priority: '0.4', changefreq: 'yearly' },
-  { path: '/documentari-racconti/posa-prima-pietra', priority: '0.4', changefreq: 'yearly' },
   { path: '/documentari-racconti/auto-idea-tutti', priority: '0.4', changefreq: 'yearly' },
   { path: '/documentari-racconti/ricordi-narrazioni', priority: '0.4', changefreq: 'yearly' },
   { path: '/avanzamento-lavori', priority: '0.6', changefreq: 'weekly' },
@@ -51,6 +46,10 @@ const pages = [
   { path: '/relatorios/piccoli-animali-e-natura', priority: '0.6', changefreq: 'monthly' },
   { path: '/noticias', priority: '0.7', changefreq: 'weekly' },
   { path: '/noticias/tonelada-de-amor', priority: '0.4', changefreq: 'yearly' },
+  { path: '/noticias/intervista-centro', priority: '0.4', changefreq: 'yearly' },
+  { path: '/noticias/visita-presidente', priority: '0.4', changefreq: 'yearly' },
+  { path: '/noticias/dieci-anni-creche', priority: '0.4', changefreq: 'yearly' },
+  { path: '/noticias/posa-prima-pietra', priority: '0.4', changefreq: 'yearly' },
 ];
 
 const urlEntries = pages

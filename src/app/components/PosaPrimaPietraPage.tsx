@@ -24,7 +24,7 @@ export function PosaPrimaPietraPage() {
         {/* Back button */}
         <div className="absolute top-8 left-8 z-20">
           <Link
-            to="/documentari-racconti"
+            to="/noticias"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -151,8 +151,8 @@ export function PosaPrimaPietraPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/documentari-racconti">
-                {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentarfilme", en: "All documentaries" })}
+              <Button variant="primary" to="/noticias">
+                {t({ pt: 'Todas as Notícias', it: 'Tutte le Notizie', de: "Alle Neuigkeiten", en: "All News" })}
               </Button>
               <Button variant="secondary" to="/il-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}

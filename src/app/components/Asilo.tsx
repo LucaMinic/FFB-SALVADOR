@@ -13,7 +13,7 @@ export function Asilo() {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-6">
-              {t({ pt: 'A Creche', it: "L'Asilo", de: "Die Kita", en: "The Nursery School" })}
+              {t({ pt: 'Creche e Pré-escola', it: "L'Asilo", de: "Die Kita", en: "The Nursery School" })}
             </h2>
 
             <h3 className="mb-8 text-3xl text-gray-700 font-light">{t({ pt: 'Um lugar para crescer todos os dias', it: 'Un luogo dove crescere ogni giorno', de: "Ein Ort zum täglichen Wachsen", en: "A place to grow every day" })}</h3>

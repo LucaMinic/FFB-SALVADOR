@@ -26,19 +26,19 @@ export function Progetti() {
 
           <AnimatedSection delay={0.2} direction="right">
             <h2 className="text-4xl md:text-5xl text-[var(--deep-blue)] mb-8">
-              {t({ pt: 'Documentários e Relatos', it: 'Documentari e Racconti', de: "Dokumentarfilme und Erzählungen", en: "Documentaries and Stories" })}
+              {t({ pt: 'Notícias', it: 'Notizie', de: "Neuigkeiten", en: "News" })}
             </h2>
 
             <p className="text-lg text-gray-800 leading-relaxed mb-10 font-light">
               {t({
-                pt: 'Através de documentários, testemunhos e relatos, a vida do Centro Nossa Senhora Aparecida prende forma em histórias autênticas. Memórias, encontros e percursos que contam quem somos e o que vivemos cada dia.',
-                it: 'Attraverso documentari, testimonianze e racconti, la vita del Centro Nossa Senhora Aparecida prende forma in storie autentiche. Memorie, incontri e percorsi che raccontano chi siamo e ciò che viviamo ogni giorno.',
-                de: "Durch Dokumentarfilme, Zeugnisse und Erzählungen nimmt das Leben des Centro Nossa Senhora Aparecida in authentischen Geschichten Gestalt an. Erinnerungen, Begegnungen und Wege, die erzählen, wer wir sind und was wir jeden Tag erleben.",
-                en: "Through documentaries, testimonies and stories, the life of the Centro Nossa Senhora Aparecida takes shape in authentic accounts. Memories, encounters and journeys that tell who we are and what we experience every day."
+                pt: 'Através de notícias, testemunhos e relatos, a vida do Centro Nossa Senhora Aparecida prende forma em histórias autênticas. Memórias, encontros e percursos que contam quem somos e o que vivemos cada dia.',
+                it: 'Attraverso notizie, testimonianze e racconti, la vita del Centro Nossa Senhora Aparecida prende forma in storie autentiche. Memorie, incontri e percorsi che raccontano chi siamo e ciò che viviamo ogni giorno.',
+                de: "Durch Neuigkeiten, Zeugnisse und Erzählungen nimmt das Leben des Centro Nossa Senhora Aparecida in authentischen Geschichten Gestalt an. Erinnerungen, Begegnungen und Wege, die erzählen, wer wir sind und was wir jeden Tag erleben.",
+                en: "Through news, testimonies and stories, the life of the Centro Nossa Senhora Aparecida takes shape in authentic accounts. Memories, encounters and journeys that tell who we are and what we experience every day."
               })}
             </p>
 
-            <Button variant="secondary" to="/documentari-racconti">{t({ pt: 'Veja Documentários e Relatos', it: 'Guarda Documentari e Racconti', de: "Dokumentarfilme und Erzählungen ansehen", en: "Watch Documentaries and Stories" })}</Button>
+            <Button variant="secondary" to="/noticias">{t({ pt: 'Veja as Notícias', it: 'Vedi le Notizie', de: "Neuigkeiten ansehen", en: "See the News" })}</Button>
           </AnimatedSection>
         </div>
       </div>

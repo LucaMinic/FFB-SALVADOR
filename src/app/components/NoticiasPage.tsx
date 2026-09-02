@@ -4,6 +4,9 @@ import { Button } from './Button';
 import { Link } from 'react-router';
 import heroImg from '../../imports/diego/noticia-tonelada-amor-capa.jpg';
 import eventoPresidenteImg from '../../imports/21-4.jpeg';
+import intervistaImg from '../../imports/Suor_Mariangela.jpg';
+import dieciAnniImg from '../../imports/33.jpeg';
+import primaPietraImg from '../../imports/converted-3.jpg';
 
 export function NoticiasPage() {
   const t = useT();
@@ -32,6 +35,42 @@ export function NoticiasPage() {
       }),
       image: heroImg,
       link: '/noticias/tonelada-de-amor',
+    },
+    {
+      id: 'intervista-centro',
+      title: t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Centro", en: "Interview at the Centre" }),
+      description: t({
+        pt: 'Estamos felizes em compartilhar com vocês uma entrevista realizada pelo Centro Missionário de Verona por ocasião do encontro dos missionários italianos no Brasil. Este serviço conta a nossa missão e o trabalho que realizamos em Salvador da Bahia, oferecendo uma oportunidade especial para conhecer mais de perto a nossa realidade e o caminho que percorremos todos os dias ao lado das comunidades locais. Boa visualização!',
+        it: "Siamo felici di condividere con voi un'intervista realizzata dal Centro Missionario di Verona in occasione dell'incontro dei missionari italiani in Brasile. Questo servizio racconta la nostra missione e il lavoro che svolgiamo a Salvador de Bahia, offrendo un'opportunità speciale per conoscere più da vicino la nostra realtà e il cammino che percorriamo ogni giorno al fianco delle comunità locali. Buona visione!",
+        de: "Wir freuen uns, mit Ihnen ein Interview zu teilen, das vom Centro Missionario di Verona anlässlich des Treffens italienischer Missionare in Brasilien geführt wurde. Dieser Beitrag erzählt von unserer Mission und der Arbeit, die wir in Salvador de Bahia leisten, und bietet eine besondere Gelegenheit, unsere Wirklichkeit und den Weg, den wir jeden Tag an der Seite der örtlichen Gemeinschaften zurücklegen, näher kennenzulernen. Viel Vergnügen beim Anschauen!",
+        en: "We are happy to share with you an interview conducted by the Centro Missionario di Verona on the occasion of the meeting of Italian missionaries in Brazil. This piece tells the story of our mission and the work we carry out in Salvador de Bahia, offering a special opportunity to get to know our reality more closely and the journey we walk every day alongside the local communities. Enjoy!"
+      }),
+      image: intervistaImg,
+      link: '/noticias/intervista-centro',
+    },
+    {
+      id: 'dieci-anni-creche',
+      title: t({ pt: 'Dez anos da Creche', it: 'Dieci anni della Creche', de: "Zehn Jahre Kita", en: "Ten years of the Creche" }),
+      description: t({
+        pt: 'O Centro Nossa Senhora Aparecida completou 10 anos. Dez anos de acolhimento, educação e crescimento compartilhado junto às crianças, famílias e comunidade de Salvador da Bahia. Um aniversário que conta uma história feita de relações, esperança e futuro.',
+        it: 'Il Centro Nossa Senhora Aparecida ha compiuto 10 anni. Dieci anni di accoglienza, educazione e crescita condivisa insieme ai bambini, alle famiglie e alla comunità di Salvador de Bahia. Un anniversario che racconta una storia fatta di relazioni, speranza e futuro.',
+        de: "Das Centro Nossa Senhora Aparecida ist 10 Jahre alt geworden. Zehn Jahre der Aufnahme, Bildung und gemeinsamen Entwicklung zusammen mit den Kindern, Familien und der Gemeinschaft von Salvador de Bahia. Ein Jubiläum, das eine Geschichte aus Beziehungen, Hoffnung und Zukunft erzählt.",
+        en: "The Centro Nossa Senhora Aparecida has turned 10 years old. Ten years of care, education and growth shared with children, families and the community of Salvador de Bahia. An anniversary that tells a story made of relationships, hope and the future."
+      }),
+      image: dieciAnniImg,
+      link: '/noticias/dieci-anni-creche',
+    },
+    {
+      id: 'posa-prima-pietra',
+      title: t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung", en: "Laying of the first stone" }),
+      description: t({
+        pt: 'O relato do início da nova escola e do momento simbólico que marcou o início de um percurso construído juntos.',
+        it: "Il racconto dell'inizio della nuova scuola e del momento simbolico che ha segnato l'avvio di un percorso costruito insieme.",
+        de: "Die Geschichte vom Beginn der neuen Schule und dem symbolischen Moment, der den Start eines gemeinsam beschrittenen Weges markierte.",
+        en: "The story of the beginning of the new school and the symbolic moment that marked the start of a journey built together."
+      }),
+      image: primaPietraImg,
+      link: '/noticias/posa-prima-pietra',
     },
   ];
 

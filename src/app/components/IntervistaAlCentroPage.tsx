@@ -23,7 +23,7 @@ export function IntervistaAlCentroPage() {
         {/* Back button */}
         <div className="absolute top-8 left-8 z-20">
           <Link
-            to="/documentari-racconti"
+            to="/noticias"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />

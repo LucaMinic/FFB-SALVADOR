@@ -98,16 +98,16 @@ export function ImpactNumbers() {
 
   const items = [
     {
-      number: '120+',
-      label: t({ pt: 'Crianças acolhidas todos os dias em nossa casa', it: 'Bambini accolti ogni giorno nella nostra casa', de: "Kinder, die jeden Tag in unserem Haus aufgenommen werden", en: "Children welcomed every day in our home" })
+      number: '100+',
+      label: t({ pt: 'crianças acolhidas todos os dias', it: 'bambini accolti ogni giorno', de: "täglich betreute Kinder", en: "children cared for every day" })
     },
     {
       number: '5',
-      label: t({ pt: 'Refeições quentes garantidas todos os dias', it: 'Pasti caldi garantiti ogni giorno', de: "Warme Mahlzeiten, täglich garantiert", en: "Hot meals guaranteed every day" })
+      label: t({ pt: 'refeições diárias', it: 'pasti giornalieri', de: "tägliche Mahlzeiten", en: "daily meals" })
     },
     {
-      number: '100%',
-      label: t({ pt: 'Acesso completamente gratuito para cada família', it: 'Accesso completamente gratuito per ogni famiglia', de: "Vollständig kostenloser Zugang für jede Familie", en: "Completely free access for every family" })
+      number: '100',
+      label: t({ pt: 'famílias atendidas', it: 'famiglie assistite', de: "betreute Familien", en: "families supported" })
     },
   ];
 
