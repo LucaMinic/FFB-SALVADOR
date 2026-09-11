@@ -3,13 +3,12 @@ import { useLocation } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import heroImg from '../../imports/nuove/_DSF1797.jpg';
+import heroImg from '../../imports/diego/nossametodologia-hero-optimized.jpg';
 import img1 from '../../imports/4-1.jpeg';
 import img2 from '../../imports/nuove/_DSF1859.jpg';
-import img4 from '../../imports/1.jpeg';
 import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
 import formacaoContImg from '../../imports/17-1.jpeg';
-import reggioImg from '../../imports/nuove/_DSF1797.jpg';
+import reggioImg from '../../imports/diego/nossametodologia-reggio-optimized.jpg';
 import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
 import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
 import cerchiFamiglieImg from '../../imports/diego/asilo-cerchi-famiglie.png';
@@ -88,22 +87,6 @@ export function NossaMetodologiaPage() {
           <AnimatedSection delay={0.2}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div className="space-y-5 text-gray-600 text-lg leading-relaxed">
-                <p>
-                  {t({
-                    pt: 'Nossa metodologia é baseada em uma proposta sociointeracionista, que reconhece a criança como protagonista do seu processo de aprendizagem.',
-                    it: 'La nostra metodologia si basa su una proposta socio-interazionista, che riconosce il bambino come protagonista del proprio processo di apprendimento.',
-                    de: "Unsere Methodik basiert auf einem sozio-interaktionistischen Ansatz, der das Kind als Protagonisten seines eigenen Lernprozesses anerkennt.",
-                    en: "Our methodology is based on a socio-interactionist approach, which recognises the child as the protagonist of their own learning process.",
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Acreditamos que as crianças aprendem por meio das interações, das brincadeiras, das experiências e das relações que constroem com os colegas, os professores e o ambiente ao seu redor.',
-                    it: "Crediamo che i bambini imparino attraverso le interazioni, i giochi, le esperienze e le relazioni che costruiscono con i compagni, gli insegnanti e l'ambiente circostante.",
-                    de: "Wir glauben, dass Kinder durch Interaktionen, Spiele, Erfahrungen und Beziehungen lernen, die sie mit Gleichaltrigen, Lehrkräften und ihrer Umgebung aufbauen.",
-                    en: "We believe children learn through the interactions, games, experiences and relationships they build with their peers, teachers and surrounding environment.",
-                  })}
-                </p>
                 <p>
                   {t({
                     pt: 'Nossa metodologia é inspirada nas Pedagogias Participativas e na abordagem de Reggio Emília, pois valorizam a criança como protagonista da aprendizagem e garantem que as crianças aprendem por meio das brincadeiras, das experiências, das interações e das descobertas que fazem no dia a dia.',
@@ -251,7 +234,12 @@ export function NossaMetodologiaPage() {
                 </p>
                 <blockquote className="border-l-4 border-[var(--soft-green)] pl-6 mb-10">
                   <p className="text-gray-500 text-lg italic leading-relaxed">
-                    "Fare una scuola amabile, operosa, inventosa, vivibile, documentabile e comunicabile."
+                    "{t({
+                      pt: 'Fazer uma escola amável, trabalhadora, inventiva, vivível, documentável e comunicável.',
+                      it: 'Fare una scuola amabile, operosa, inventosa, vivibile, documentabile e comunicabile.',
+                      de: "Eine Schule schaffen, die liebenswert, fleißig, erfinderisch, lebendig, dokumentierbar und kommunizierbar ist.",
+                      en: "To make a school that is lovable, hardworking, inventive, livable, documentable and communicable.",
+                    })}"
                   </p>
                   <cite className="text-[var(--deep-blue)] font-semibold text-sm not-italic mt-2 block">— Loris Malaguzzi</cite>
                 </blockquote>
@@ -544,46 +532,6 @@ export function NossaMetodologiaPage() {
           </AnimatedSection>
         </div>
       </section>
-
-      {/* SECTION 4 — AMBIENTE E EXPERIÊNCIAS */}
-      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
-        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection delay={0.1} className="order-2 lg:order-1">
-              <img loading="lazy"
-                src={img4}
-                alt={t({ pt: 'Ambiente educativo', it: 'Ambiente educativo', de: "Pädagogische Umgebung", en: "Educational environment" })}
-                className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
-              />
-            </AnimatedSection>
-            <AnimatedSection delay={0.2} className="order-1 lg:order-2">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Um ambiente que acolhe e desafia', it: 'Un ambiente che accoglie e stimola', de: "Eine Umgebung, die aufnimmt und anregt", en: "An environment that welcomes and stimulates" })}
-                </h2>
-                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  {t({
-                    pt: 'Buscamos oferecer um ambiente acolhedor, desafiador e rico em experiências, onde cada criança possa expressar suas ideias, criar, explorar e construir conhecimentos de forma significativa.',
-                    it: "Cerchiamo di offrire un ambiente accogliente, stimolante e ricco di esperienze, dove ogni bambino possa esprimere le proprie idee, creare, esplorare e costruire conoscenze in modo significativo.",
-                    de: "Wir möchten eine einladende, anregende und erfahrungsreiche Umgebung bieten, in der jedes Kind seine eigenen Ideen ausdrücken, schaffen, erkunden und auf sinnvolle Weise Wissen aufbauen kann.",
-                    en: "We seek to offer a welcoming, stimulating environment rich in experiences, where every child can express their own ideas, create, explore and build knowledge in a meaningful way.",
-                  })}
-                </p>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  {t({
-                    pt: 'São oferecidas às crianças possibilidades de construção de conhecimentos específicos relacionados aos elementos curriculares que garantem o desenvolvimento integral das crianças por meio de experiências protagonizadas por elas mesmas.',
-                    it: 'Ai bambini vengono offerte possibilità di costruzione di conoscenze specifiche legate agli elementi curricolari che garantiscono lo sviluppo integrale dei bambini attraverso esperienze di cui sono loro stessi protagonisti.',
-                    de: "Den Kindern werden Möglichkeiten geboten, spezifisches Wissen im Zusammenhang mit den curricularen Elementen aufzubauen, die ihre ganzheitliche Entwicklung durch Erfahrungen sichern, deren Protagonisten sie selbst sind.",
-                    en: "Children are offered opportunities to build specific knowledge linked to the curricular elements that ensure their overall development, through experiences in which they themselves are the protagonists.",
-                  })}
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
 
       {/* CURRICULUM BNCC */}
       <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">

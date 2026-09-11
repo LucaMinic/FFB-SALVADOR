@@ -1,24 +1,14 @@
-import { Link } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { Instagram, Heart, Globe, Users, Award, Sparkles, HeartHandshake, Apple, PlayCircle, Home, ArrowRight } from 'lucide-react';
+import { Instagram, Heart, Globe, Users, Award } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import heroImg from '../../imports/3-4.jpeg';
-import famiglieImg from '../../imports/2-2.jpeg';
-import pastiImg from '../../imports/nuove/r4bis.jpg';
-import educazioneImg from '../../imports/11-2.jpeg';
+import { LazyAutoplayVideo } from './LazyAutoplayVideo';
+import heroImg from '../../imports/diego/asilo-hero-optimized.jpg';
+import crecheVideo from '../../imports/diego/asilo-creche-video.mp4';
 import comunitaImg from '../../imports/13-4.jpeg';
-import missioneImg from '../../imports/nuove/IMG_5464.JPG';
-import metodologiaImg from '../../imports/nuove/IMG_3050.JPG';
-import formacaoContImg from '../../imports/17-1.jpeg';
-import atelieImg from '../../imports/6-1.jpeg';
-import alimentacaoProjImg from '../../imports/nuove/r4.jpg';
-import hortaImg from '../../imports/10.jpeg';
-import formacaoReligiosaImg from '../../imports/21-1.jpeg';
-import mostrasImg from '../../imports/nuove/r6bis.jpg';
 import instagramPost1 from '../../imports/3-4.jpeg';
 import instagramPost2 from '../../imports/4-1.jpeg';
 import instagramPost3 from '../../imports/5-4.jpeg';
@@ -30,7 +20,6 @@ import instagramPost8 from '../../imports/16-3.jpeg';
 import instagramPost9 from '../../imports/13-4.jpeg';
 import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
 import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
-import cerchiFamiglieImg from '../../imports/diego/asilo-cerchi-famiglie.png';
 import cerchiValoriImg from '../../imports/diego/asilo-cerchi-valori.png';
 import cerchiOndeImg from '../../imports/diego/asilo-cerchi-onde.png';
 import cerchiPiccoloImg from '../../imports/diego/asilo-cerchi-piccolo.png';
@@ -109,40 +98,10 @@ export function AsiloPage() {
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/2Sg-SVqwCCQ?autoplay=0&playsinline=1&rel=0"
-                    title={t({ pt: 'A creche do Centro Nossa Senhora Aparecida', it: "L'asilo del Centro Nossa Senhora Aparecida", de: "Die Kita des Centro Nossa Senhora Aparecida", en: "The nursery school of the Centro Nossa Senhora Aparecida" })}
-                    frameBorder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
-            <AnimatedSection>
-              <div className="order-2 md:order-1 rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={pastiImg}
-                  alt={t({ pt: 'Refeições na creche', it: "I pasti all'asilo", de: "Die Mahlzeiten in der Kita", en: "Meals at the nursery school" })}
+                <LazyAutoplayVideo
+                  src={crecheVideo}
                   className="w-full h-auto object-cover"
                 />
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="order-1 md:order-2 space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({
-                    pt: 'Um dos pontos importantes do nosso trabalho é a alimentação, oferecida em cinco refeições diárias, pensadas com cuidado para atender às necessidades das crianças ao longo do dia. São elas: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar. Essas refeições são planejadas para garantir uma alimentação equilibrada, nutritiva e saudável, contribuindo para o crescimento, o desenvolvimento e o bem-estar das crianças. Além disso, os momentos das refeições também são educativos, ajudando as crianças a criarem bons hábitos alimentares, aprenderem sobre autonomia, convivência e cuidado com o próprio corpo.',
-                    it: "Uno degli aspetti importanti del nostro lavoro è l'alimentazione, offerta in cinque pasti giornalieri, pensati con cura per rispondere alle esigenze dei bambini nel corso della giornata. Questi sono: colazione, merenda del mattino, pranzo, merenda del pomeriggio e cena. I pasti sono pianificati per garantire un'alimentazione equilibrata, nutriente e sana, contribuendo alla crescita, allo sviluppo e al benessere dei bambini. Inoltre, i momenti dei pasti sono anche educativi, aiutando i bambini a costruire buone abitudini alimentari, ad imparare sull'autonomia, la convivenza e la cura del proprio corpo.",
-                    de: "Ein wichtiger Bestandteil unserer Arbeit ist die Ernährung, die in Form von fünf täglichen Mahlzeiten angeboten wird, sorgfältig auf die Bedürfnisse der Kinder im Tagesverlauf abgestimmt. Diese sind: Frühstück, Vormittagssnack, Mittagessen, Nachmittagssnack und Abendessen. Die Mahlzeiten sind so geplant, dass sie eine ausgewogene, nahrhafte und gesunde Ernährung sicherstellen und so zum Wachstum, zur Entwicklung und zum Wohlbefinden der Kinder beitragen. Darüber hinaus sind die Mahlzeiten auch pädagogische Momente: Sie helfen den Kindern, gute Essgewohnheiten zu entwickeln und Selbstständigkeit, Miteinander und die Achtsamkeit für den eigenen Körper zu erlernen.",
-                    en: "One of the important aspects of our work is nutrition, provided through five daily meals, carefully designed to meet children's needs throughout the day. These are: breakfast, morning snack, lunch, afternoon snack and dinner. Meals are planned to guarantee balanced, nourishing and healthy nutrition, contributing to the children's growth, development and wellbeing. Mealtimes are also educational, helping children build good eating habits and learn about autonomy, coexistence and caring for their own bodies."
-                  })}
-                </p>
               </div>
             </AnimatedSection>
           </div>
@@ -158,16 +117,14 @@ export function AsiloPage() {
         <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
         <div className="relative z-10 max-w-6xl mx-auto px-6">
 
-          {/* Missione — card hero con immagine */}
+          {/* Missione */}
           <AnimatedSection>
-            <div className="relative rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center">
-              <img loading="lazy" src={missioneImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-[var(--deep-blue)]/72" />
-              <div className="relative z-10 px-8 md:px-16 py-12 max-w-3xl">
-                <h2 className="text-3xl md:text-5xl text-white mb-5">
+            <div className="rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center bg-white">
+              <div className="px-8 md:px-16 py-12 max-w-3xl">
+                <h2 className="text-3xl md:text-5xl text-[var(--deep-blue)] mb-5">
                   {t({ pt: 'Nossa Missão', it: 'La nostra missione', de: "Unsere Mission", en: "Our mission" })}
                 </h2>
-                <p className="text-white/90 text-lg leading-relaxed">
+                <p className="text-gray-700 text-lg leading-relaxed">
                   {t({
                     pt: 'Promover o desenvolvimento integral de crianças em situação de vulnerabilidade social, oferecendo oportunidades de aprendizagem, cuidado, proteção, formação humana e espiritual. Buscamos contribuir para que cada criança construa seu projeto de vida com dignidade, autonomia, esperança e oportunidades, fortalecendo vínculos familiares e comunitários, preparando-se para um futuro mais justo, participativo e promissor.',
                     it: 'Promuovere lo sviluppo integrale di bambini in situazione di vulnerabilità sociale, offrendo opportunità di apprendimento, cura, protezione, formazione umana e spirituale. Cerchiamo di contribuire affinché ogni bambino costruisca il proprio progetto di vita con dignità, autonomia, speranza e opportunità, rafforzando i legami familiari e comunitari, preparandosi a un futuro più giusto, partecipativo e promettente.',
@@ -232,105 +189,6 @@ export function AsiloPage() {
         <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
 
-      {/* SECTION 2 - LA NOSTRA METODOLOGIA (panoramica) */}
-      <section className="relative overflow-hidden py-20 bg-white">
-        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <AnimatedSection>
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
-                {t({ pt: 'A criança no centro', it: 'Il bambino al centro', de: "Das Kind im Mittelpunkt", en: "The child at the centre" })}
-              </p>
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Nossa metodologia educativa', it: 'La nostra metodologia educativa', de: "Unsere pädagogische Methodik", en: "Our educational methodology" })}
-              </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({
-                    pt: 'Cada dia na creche nasce de uma visão precisa do desenvolvimento infantil: uma abordagem sócio-interacionista, inspirada no Reggio Emilia Approach e nas Pedagogias Participativas, na qual a criança é protagonista da sua própria aprendizagem.',
-                    it: "Ogni giornata all'asilo nasce da una visione precisa dello sviluppo infantile: un approccio socio-interazionista, ispirato al Reggio Emilia Approach e alle Pedagogie Partecipative, in cui il bambino è protagonista del proprio apprendimento.",
-                    de: "Jeder Tag in der Kita basiert auf einem klaren Verständnis der kindlichen Entwicklung: einem sozial-interaktionistischen Ansatz, inspiriert vom Reggio-Emilia-Ansatz und den partizipativen Pädagogiken, in dem das Kind Protagonist seines eigenen Lernens ist.",
-                    en: "Every day at the nursery school is shaped by a clear vision of child development: a socio-interactionist approach, inspired by the Reggio Emilia Approach and Participatory Pedagogies, in which the child is the protagonist of their own learning."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Brincadeira, relação, escuta e ambiente tornam-se os instrumentos quotidianos com que acompanhamos cada criança na descoberta de si mesma e do mundo, dentro de um currículo fundado nos campos de experiência da BNCC.',
-                    it: "Gioco, relazione, ascolto e ambiente diventano gli strumenti quotidiani con cui accompagniamo ogni bambino nella scoperta di sé e del mondo, all'interno di un curriculum fondato sui campi di esperienza della BNCC.",
-                    de: "Spiel, Beziehung, Zuhören und Umgebung werden zu den täglichen Werkzeugen, mit denen wir jedes Kind bei der Entdeckung seiner selbst und der Welt begleiten, innerhalb eines Curriculums, das auf den Erfahrungsfeldern der BNCC beruht.",
-                    en: "Play, relationship, listening and environment become the everyday tools with which we accompany every child in the discovery of themselves and the world, within a curriculum founded on the BNCC's fields of experience."
-                  })}
-                </p>
-              </div>
-              <div className="mt-8">
-                <Button variant="primary" to="/nossa-metodologia">
-                  {t({ pt: 'Descubra nossa metodologia', it: 'Scopri la nostra metodologia', de: "Unsere Methodik entdecken", en: "Discover our methodology" })}
-                </Button>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={metodologiaImg}
-                  alt={t({ pt: 'Ambiente educativo da creche', it: "Ambiente educativo dell'asilo", de: "Die pädagogische Umgebung der Kita", en: "Educational environment of the nursery school" })}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <AnimatedSection>
-            <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Nossos pilares', it: 'I nostri pilastri', de: "Unsere Grundpfeiler", en: "Our pillars" })}
-            </h3>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {[
-              {
-                icon: Sparkles,
-                color: 'var(--deep-blue)',
-                title: t({ pt: 'Criança Protagonista', it: 'Bambino Protagonista', de: "Das Kind als Protagonist", en: "The Child as Protagonist" })
-              },
-              {
-                icon: HeartHandshake,
-                color: 'var(--soft-green)',
-                title: t({ pt: 'Relações de Cuidado, Afeto e Pertencimento', it: 'Relazioni di Cura, Affetto e Appartenenza', de: "Beziehungen von Fürsorge, Zuneigung und Zugehörigkeit", en: "Relationships of Care, Affection and Belonging" })
-              },
-              {
-                icon: Apple,
-                color: 'var(--warm-orange)',
-                title: t({ pt: 'Alimentação Saudável e Bem-Estar', it: 'Alimentazione Sana e Benessere', de: "Gesunde Ernährung und Wohlbefinden", en: "Healthy Eating and Wellbeing" })
-              },
-              {
-                icon: PlayCircle,
-                color: 'var(--warm-red)',
-                title: t({ pt: 'Aprendizagem pela Experiência e pelo Brincar', it: "Apprendimento attraverso l'Esperienza e il Gioco", de: "Lernen durch Erfahrung und Spiel", en: "Learning through Experience and Play" })
-              },
-              {
-                icon: Home,
-                color: 'var(--warm-orange-light)',
-                title: t({ pt: 'Ambiente que Educa', it: 'Ambiente che Educa', de: "Eine Umgebung, die bildet", en: "An Environment that Educates" })
-              }
-            ].map((item, i) => (
-              <AnimatedSection key={i} delay={i * 0.1}>
-                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
-                  <div className="h-40 flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: item.color }}>
-                    <item.icon className="w-16 h-16 text-white" strokeWidth={1.5} />
-                  </div>
-                  <div className="p-5 bg-white flex-1 flex items-center justify-center" style={{ borderTop: `4px solid ${item.color}` }}>
-                    <p className="font-semibold text-base text-center" style={{ color: item.color }}>{item.title}</p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="#ffffff" />
-      </svg>
-
       {/* SECTION 6 - CRITERI DI ACCOGLIENZA */}
       <section className="relative overflow-hidden py-20 bg-white">
         <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
@@ -341,10 +199,12 @@ export function AsiloPage() {
             </h2>
             <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-8 text-center">
               <p>
-                {t({ pt: 'O critério principal para o acolhimento das crianças é a vulnerabilidade social.', it: 'Il criterio principale per l\'accoglienza dei bambini è la vulnerabilità sociale.', de: "Das wichtigste Kriterium für die Aufnahme der Kinder ist die soziale Vulnerabilität.", en: "The main criterion for admitting children is social vulnerability." })}
-              </p>
-              <p>
-                {t({ pt: 'A Creche nasce para acolher crianças que, por razões diversas, vivem condições capazes de comprometer o seu desenvolvimento físico, psicológico, emocional ou relacional.', it: "L'asilo nasce per accogliere bambini che, per ragioni diverse, vivono condizioni capaci di compromettere il loro sviluppo fisico, psicologico, emotivo o relazionale.", de: "Die Kita wurde ins Leben gerufen, um Kinder aufzunehmen, die aus unterschiedlichen Gründen in Verhältnissen leben, die ihre körperliche, psychische, emotionale oder soziale Entwicklung beeinträchtigen können.", en: "The nursery school was created to welcome children who, for various reasons, live in conditions that could compromise their physical, psychological, emotional or relational development." })}
+                {t({
+                  pt: 'A Creche nasce para acolher crianças que, por razões diversas, vivem condições capazes de comprometer o seu desenvolvimento físico, psicológico, emocional ou relacional. Por esse motivo a chegada das crianças na creche passa por critérios avaliativos que assegurem a oportunidade a este público em especial.',
+                  it: "L'asilo nasce per accogliere bambini che, per ragioni diverse, vivono condizioni capaci di compromettere il loro sviluppo fisico, psicologico, emotivo o relazionale. Per questo motivo, l'ingresso dei bambini nell'asilo passa attraverso criteri di valutazione che garantiscano l'opportunità a questo pubblico in particolare.",
+                  de: "Die Kita wurde ins Leben gerufen, um Kinder aufzunehmen, die aus unterschiedlichen Gründen in Verhältnissen leben, die ihre körperliche, psychische, emotionale oder soziale Entwicklung beeinträchtigen können. Aus diesem Grund durchläuft die Aufnahme der Kinder in der Kita Bewertungskriterien, die diesem besonderen Personenkreis die Chance sichern.",
+                  en: "The nursery school was created to welcome children who, for various reasons, live in conditions that could compromise their physical, psychological, emotional or relational development. For this reason, children's admission to the nursery school goes through evaluation criteria that ensure the opportunity for this particular group."
+                })}
               </p>
             </div>
           </AnimatedSection>
@@ -390,303 +250,6 @@ export function AsiloPage() {
           </div>
         </div>
       </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-
-      {/* SECTION 2A - MOSTRE PEDAGOGICHE */}
-      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
-        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
-                {t({ pt: 'Um ano de descobertas partilhadas', it: 'Un anno di scoperte condivise', de: "Ein Jahr gemeinsamer Entdeckungen", en: "A year of shared discoveries" })}
-              </p>
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Mostras Pedagógicas', it: 'Mostre Pedagogiche', de: "Pädagogische Ausstellungen", en: "Pedagogical Exhibitions" })}
-              </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({
-                    pt: 'As Mostras Pedagógicas são momentos importantes da nossa proposta educativa: através de fotos, registros e projetos desenvolvidos pelas crianças, tornamos visível o percurso de aprendizagem de cada grupo, partilhando-o com as famílias e a comunidade.',
-                    it: 'Le Mostre Pedagogiche sono momenti importanti della nostra proposta educativa: attraverso foto, documentazioni e progetti realizzati dai bambini, rendiamo visibile il percorso di apprendimento di ogni gruppo, condividendolo con le famiglie e la comunità.',
-                    de: "Die Pädagogischen Ausstellungen sind wichtige Momente unseres Bildungsangebots: Anhand von Fotos, Dokumentationen und von den Kindern gestalteten Projekten machen wir den Lernweg jeder Gruppe sichtbar und teilen ihn mit den Familien und der Gemeinschaft.",
-                    en: "The Pedagogical Exhibitions are important moments in our educational approach: through photos, documentation and projects created by the children, we make visible the learning journey of each group, sharing it with families and the community."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Mais do que apresentar resultados, revelam os processos vividos pelas crianças — como aprendem, investigam, criam e brincam — fortalecendo a parceria entre a creche e as famílias e tornando-se uma preciosa ferramenta de documentação e celebração das aprendizagens.',
-                    it: 'Più che mostrare risultati, rivelano i processi vissuti dai bambini — come imparano, investigano, creano e giocano — rafforzando la collaborazione tra asilo e famiglie e diventando un prezioso strumento di documentazione e celebrazione degli apprendimenti.',
-                    de: "Mehr als Ergebnisse zu zeigen, offenbaren sie die Prozesse, die die Kinder durchlaufen – wie sie lernen, forschen, gestalten und spielen – und stärken so die Zusammenarbeit zwischen Kita und Familien. Sie werden zu einem wertvollen Instrument der Dokumentation und des Feierns des Gelernten.",
-                    en: "More than showing results, they reveal the processes lived by the children — how they learn, investigate, create and play — strengthening the partnership between the nursery school and families and becoming a valuable tool for documenting and celebrating learning."
-                  })}
-                </p>
-              </div>
-              <div className="mt-8">
-                <Button variant="primary" to="/nossa-metodologia#mostras-pedagogicas">
-                  {t({ pt: 'Descubra as Mostras Pedagógicas', it: 'Scopri le Mostre Pedagogiche', de: "Die Pädagogischen Ausstellungen entdecken", en: "Discover the Pedagogical Exhibitions" })}
-                </Button>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={mostrasImg}
-                  alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica', de: "Pädagogische Ausstellung", en: "Pedagogical exhibition" })}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION 2B - PROGETTI PERMANENTI */}
-      <section className="relative overflow-hidden py-20 bg-white">
-        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
-              {t({ pt: 'Durante todo o ano letivo', it: "Durante tutto l'anno scolastico", de: "Während des gesamten Schuljahres", en: "Throughout the school year" })}
-            </p>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti', de: "Dauerhafte Projekte", en: "Permanent Projects" })}
-            </h2>
-            <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center mb-14">
-              {t({
-                pt: 'Alguns projetos acompanham as crianças ao longo de todo o ano letivo e se entrelaçam com a vida quotidiana da creche, fortalecendo a curiosidade, a autonomia e o protagonismo de cada criança.',
-                it: "Alcuni progetti attraversano l'intero anno scolastico e si intrecciano con la vita quotidiana dell'asilo, rafforzando la curiosità, l'autonomia e il protagonismo di ogni bambino.",
-                de: "Manche Projekte begleiten das gesamte Schuljahr und sind eng mit dem Alltag der Kita verwoben. Sie stärken die Neugier, die Selbstständigkeit und die aktive Rolle jedes Kindes.",
-                en: "Some projects run throughout the whole school year and are woven into the daily life of the nursery school, strengthening the curiosity, autonomy and leading role of every child."
-              })}
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              {
-                img: atelieImg,
-                color: 'var(--warm-orange)',
-                link: '/atelier',
-                title: t({ pt: 'Ateliê', it: 'Atelier', de: "Atelier", en: "Atelier" }),
-                desc: t({ pt: 'Criatividade, exploração e múltiplas linguagens através dos materiais.', it: 'Creatività, esplorazione e linguaggi multipli attraverso i materiali.', de: "Kreativität, Erkundung und vielfältige Ausdrucksformen durch Materialien.", en: "Creativity, exploration and multiple languages through materials." })
-              },
-              {
-                img: alimentacaoProjImg,
-                color: 'var(--soft-green)',
-                link: '/alimentacao-saudavel',
-                title: t({ pt: 'Alimentação Saudável', it: 'Alimentazione Sana', de: "Gesunde Ernährung", en: "Healthy Eating" }),
-                desc: t({ pt: 'Refeições como momentos de aprendizagem, convivência e autonomia.', it: 'Pasti come momenti di apprendimento, convivenza e autonomia.', de: "Mahlzeiten als Momente des Lernens, des Miteinanders und der Selbstständigkeit.", en: "Meals as moments of learning, togetherness and autonomy." })
-              },
-              {
-                img: hortaImg,
-                color: 'var(--warm-red)',
-                link: null,
-                title: t({ pt: 'Horta', it: 'Orto', de: "Garten", en: "Vegetable Garden" }),
-                desc: t({ pt: 'Contato direto com a natureza, o plantio e o cuidado com a vida.', it: 'Contatto diretto con la natura, la semina e la cura della vita.', de: "Direkter Kontakt mit der Natur, dem Säen und der Pflege des Lebens.", en: "Direct contact with nature, planting and caring for life." })
-              },
-              {
-                img: formacaoReligiosaImg,
-                color: 'var(--deep-blue)',
-                link: '/la-fraternita',
-                title: t({ pt: 'Formação Religiosa', it: 'Formazione Religiosa', de: "Religiöse Bildung", en: "Religious Education" }),
-                desc: t({ pt: 'Valores humanos e cristãos cultivados no quotidiano.', it: 'Valori umani e cristiani coltivati nel quotidiano.', de: "Menschliche und christliche Werte, die im Alltag gepflegt werden.", en: "Human and Christian values cultivated in everyday life." })
-              }
-            ].map((project, i) => {
-              const cardContent = (
-                <div className="rounded-2xl overflow-hidden shadow-lg h-full flex flex-col group">
-                  <div className="relative h-36 flex-shrink-0 overflow-hidden">
-                    <img loading="lazy" src={project.img} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                    <div className="absolute inset-0" style={{ backgroundColor: `${project.color}33` }} />
-                  </div>
-                  <div className="p-5 bg-[var(--beige)] flex-1 flex flex-col" style={{ borderTop: `4px solid ${project.color}` }}>
-                    <p className="font-semibold text-base mb-2" style={{ color: project.color }}>{project.title}</p>
-                    <p className="text-gray-600 text-sm leading-relaxed flex-1">{project.desc}</p>
-                    {project.link && (
-                      <p className="mt-3 text-sm font-semibold inline-flex items-center gap-1 transition-transform duration-200 group-hover:translate-x-1" style={{ color: project.color }}>
-                        {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </p>
-                    )}
-                  </div>
-                </div>
-              );
-              return (
-                <AnimatedSection key={i} delay={i * 0.1}>
-                  {project.link ? (
-                    <Link to={project.link} className="block h-full">
-                      {cardContent}
-                    </Link>
-                  ) : (
-                    cardContent
-                  )}
-                </AnimatedSection>
-              );
-            })}
-          </div>
-
-          <AnimatedSection delay={0.2}>
-            <div className="text-center">
-              <Button variant="primary" to="/projetos-permanentes">
-                {t({ pt: 'Descubra todos os projetos permanentes', it: 'Scopri tutti i progetti permanenti', de: "Alle dauerhaften Projekte entdecken", en: "Discover all the permanent projects" })}
-              </Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-
-      {/* SECTION 2C - RELATÓRIOS */}
-      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
-        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <p className="text-sm uppercase tracking-[0.2em] text-[var(--warm-orange)] font-semibold mb-4 text-center">
-              {t({ pt: 'Documentação transparente', it: 'Documentazione trasparente', de: "Transparente Dokumentation", en: "Transparent documentation" })}
-            </p>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte", en: "Reports" })}
-            </h2>
-            <p className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed text-center mb-14">
-              {t({
-                pt: 'Publicamos periodicamente relatórios pedagógicos que contam as propostas, as descobertas e os avanços das crianças: um registro vivo e transparente do trabalho quotidiano realizado na creche.',
-                it: 'Pubblichiamo periodicamente relazioni pedagogiche che raccontano le proposte, le scoperte e i progressi dei bambini: un registro vivo e trasparente del lavoro quotidiano svolto nell\'asilo.',
-                de: "Wir veröffentlichen regelmäßig pädagogische Berichte, die von den Angeboten, Entdeckungen und Fortschritten der Kinder erzählen: eine lebendige und transparente Aufzeichnung der täglichen Arbeit in der Kita.",
-                en: "We periodically publish pedagogical reports that describe the activities, discoveries and progress of the children: a living, transparent record of the daily work carried out at the nursery school."
-              })}
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.1}>
-            <div className="max-w-3xl mx-auto rounded-2xl shadow-lg mb-12 bg-white p-6 md:p-10">
-              <svg
-                viewBox="0 0 860 300"
-                className="w-full h-auto"
-                role="img"
-                aria-label={t({ pt: 'Relatórios pedagógicos periódicos: propostas, descobertas, avanços e registro transparente', it: 'Relazioni pedagogiche periodiche: proposte, scoperte, progressi e registro trasparente', de: "Regelmäßige pädagogische Berichte: Angebote, Entdeckungen, Fortschritte und transparente Aufzeichnung", en: "Periodic pedagogical reports: activities, discoveries, progress and a transparent record" })}
-              >
-                <line x1="90" y1="260" x2="770" y2="260" stroke="#cdd2c4" strokeWidth="2" strokeDasharray="4 7" />
-
-                {[
-                  { x: 50, color: 'var(--deep-blue)', tint: 'var(--deep-blue)', label: t({ pt: 'Propostas', it: 'Proposte', de: "Angebote", en: "Activities" }), icon: 'bulb' },
-                  { x: 250, color: 'var(--soft-green)', tint: 'var(--soft-green)', label: t({ pt: 'Descobertas', it: 'Scoperte', de: "Entdeckungen", en: "Discoveries" }), icon: 'search' },
-                  { x: 450, color: 'var(--warm-orange)', tint: 'var(--warm-orange)', label: t({ pt: 'Avanços', it: 'Progressi', de: "Fortschritte", en: "Progress" }), icon: 'bars' },
-                  { x: 650, color: 'var(--warm-red)', tint: 'var(--warm-red)', label: t({ pt: 'Registro', it: 'Registro', de: "Aufzeichnung", en: "Record" }), icon: 'doc' },
-                ].map((c, i) => (
-                  <g key={i}>
-                    <line x1={c.x + 80} y1="220" x2={c.x + 80} y2="258" stroke="#cdd2c4" strokeWidth="2" />
-                    <circle cx={c.x + 80} cy="260" r="5" fill="#fff" stroke={c.color} strokeWidth="2.5" />
-
-                    <clipPath id={`card-clip-${i}`}>
-                      <rect x={c.x} y="40" width="160" height="180" rx="16" />
-                    </clipPath>
-                    <rect x={c.x} y="40" width="160" height="180" rx="16" fill="#ffffff" stroke="#e8ddd3" strokeWidth="2" />
-                    <g clipPath={`url(#card-clip-${i})`}>
-                      <rect x={c.x} y="40" width="160" height="8" fill={c.color} />
-                    </g>
-
-                    <circle cx={c.x + 80} cy="92" r="26" fill={c.tint} fillOpacity="0.12" />
-
-                    {c.icon === 'bulb' && (
-                      <g stroke={c.color} strokeWidth="3" strokeLinecap="round" fill="none">
-                        <circle cx={c.x + 80} cy="86" r="13" fill={c.tint} fillOpacity="0.18" />
-                        <rect x={c.x + 74} y="97" width="12" height="6" rx="2" fill={c.color} stroke="none" />
-                        <line x1={c.x + 68} y1="74" x2={c.x + 64} y2="69" />
-                        <line x1={c.x + 80} y1="70" x2={c.x + 80} y2="64" />
-                        <line x1={c.x + 92} y1="74" x2={c.x + 96} y2="69" />
-                      </g>
-                    )}
-                    {c.icon === 'search' && (
-                      <g stroke={c.color} strokeWidth="3" strokeLinecap="round" fill="none">
-                        <circle cx={c.x + 76} cy="84" r="12" />
-                        <line x1={c.x + 85} y1="93" x2={c.x + 94} y2="102" strokeWidth="4" />
-                        <line x1={c.x + 94} y1="67" x2={c.x + 94} y2="77" strokeWidth="2" />
-                        <line x1={c.x + 89} y1="72" x2={c.x + 99} y2="72" strokeWidth="2" />
-                      </g>
-                    )}
-                    {c.icon === 'bars' && (
-                      <g fill={c.color}>
-                        <rect x={c.x + 64} y="92" width="10" height="14" rx="2" />
-                        <rect x={c.x + 76} y="82" width="10" height="24" rx="2" />
-                        <rect x={c.x + 88} y="72" width="10" height="34" rx="2" />
-                      </g>
-                    )}
-                    {c.icon === 'doc' && (
-                      <g>
-                        <rect x={c.x + 68} y="68" width="24" height="32" rx="3" fill={c.tint} fillOpacity="0.18" stroke={c.color} strokeWidth="2.5" />
-                        <polyline points={`${c.x + 73},86 ${c.x + 78},91 ${c.x + 87},78`} fill="none" stroke={c.color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                      </g>
-                    )}
-
-                    <text x={c.x + 80} y="140" textAnchor="middle" fontSize="15" fontWeight="700" fill={c.color}>{c.label}</text>
-                    <rect x={c.x + 24} y="156" width="112" height="6" rx="3" fill="#e8ddd3" />
-                    <rect x={c.x + 24} y="170" width="90" height="6" rx="3" fill="#e8ddd3" />
-                    <rect x={c.x + 24} y="184" width="68" height="6" rx="3" fill="#e8ddd3" />
-                  </g>
-                ))}
-              </svg>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <div className="text-center">
-              <Button variant="primary" to="/relatorios">
-                {t({ pt: 'Veja todos os relatórios', it: 'Scopri tutte le relazioni', de: "Alle Berichte entdecken", en: "Discover all the reports" })}
-              </Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION - PROGETTI PEDAGOGICI */}
-      <section className="relative overflow-hidden py-20 bg-white">
-        <img src={cerchiMetodologiaImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6">
-          <AnimatedSection>
-            <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.07)] p-10 md:p-14 text-center">
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--soft-green)] font-semibold mb-4">
-                {t({ pt: 'Dentro da Creche', it: "All'interno dell'Asilo", de: "Im Inneren der Kita", en: "Inside the Nursery School" })}
-              </p>
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" })}
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-2xl mx-auto">
-                {t({
-                  pt: 'A vida quotidiana da Creche é animada por percursos educativos pensados para acompanhar cada criança na descoberta de si mesma e do mundo.',
-                  it: "La vita quotidiana dell'Asilo è animata da percorsi educativi pensati per accompagnare ogni bambino nella scoperta di sé e del mondo.",
-                  de: "Der Alltag der Kita wird von pädagogischen Wegen geprägt, die darauf ausgerichtet sind, jedes Kind bei der Entdeckung seiner selbst und der Welt zu begleiten.",
-                  en: "The daily life of the nursery school is shaped by educational journeys designed to accompany every child in the discovery of themselves and the world."
-                })}
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-10 max-w-2xl mx-auto">
-                {t({
-                  pt: 'Jogo, criatividade, expressão, relação: os projetos pedagógicos nascem da convicção de que cada criança aprende melhor quando se sente valorizada, livre e acompanhada.',
-                  it: 'Gioco, creatività, espressione, relazione: i progetti pedagogici nascono dalla convinzione che ogni bambino apprenda meglio quando si sente valorizzato, libero e accompagnato.',
-                  de: "Spiel, Kreativität, Ausdruck, Beziehung: Die pädagogischen Projekte entstehen aus der Überzeugung, dass jedes Kind besser lernt, wenn es sich wertgeschätzt, frei und begleitet fühlt.",
-                  en: "Play, creativity, expression, relationship: the pedagogical projects are born from the belief that every child learns best when they feel valued, free and accompanied."
-                })}
-              </p>
-              <Button to="/progetti-pedagogici">
-                {t({ pt: 'Descubra os laboratórios', it: 'Scopri i laboratori', de: "Die Werkstätten entdecken", en: "Discover the workshops" })}
-              </Button>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
       </svg>
@@ -738,126 +301,10 @@ export function AsiloPage() {
               />
             </div>
           </AnimatedSection>
-
-          {/* FORMAÇÃO CONTINUADA DOS PROFESSORES */}
-          <AnimatedSection>
-            <div className="w-16 h-1 bg-[var(--warm-orange)] mx-auto mb-8 rounded-full" />
-            <h3 className="text-2xl md:text-3xl text-[var(--deep-blue)] mb-10 text-center">
-              {t({ pt: 'Formação continuada dos nossos professores', it: 'Formazione continua dei nostri insegnanti', de: "Kontinuierliche Weiterbildung unserer Lehrkräfte", en: "Ongoing training for our teachers" })}
-            </h3>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedSection delay={0.1}>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({
-                    pt: 'Entendemos que a formação continuada do professor é muito importante para o trabalho que realizamos na creche. Por isso, promovemos esse processo de forma permanente, garantindo momentos de estudo, reflexão e troca de experiências entre a equipe.',
-                    it: "Riteniamo che la formazione continua degli insegnanti sia fondamentale per il lavoro che svolgiamo nell'asilo. Per questo, promuoviamo questo processo in modo permanente, garantendo momenti di studio, riflessione e scambio di esperienze tra il team.",
-                    de: "Wir sind überzeugt, dass die kontinuierliche Weiterbildung der Lehrkräfte für unsere Arbeit in der Kita von grundlegender Bedeutung ist. Deshalb fördern wir diesen Prozess fortlaufend und schaffen Momente des Lernens, der Reflexion und des Erfahrungsaustauschs im Team.",
-                    en: "We believe that ongoing teacher training is fundamental to the work we carry out at the nursery school. That is why we promote this process on a permanent basis, ensuring moments of study, reflection and exchange of experience within the team."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Uma vez por mês, realizamos a formação continuada dos nossos professores, entendendo que o educador precisa estar sempre em processo de aprendizagem. Esses encontros fortalecem a prática pedagógica e ajudam a qualificar ainda mais o trabalho realizado com as crianças.',
-                    it: "Una volta al mese realizziamo la formazione continua dei nostri insegnanti, ritenendo che l'educatore abbia sempre bisogno di essere in un processo di apprendimento. Questi incontri rafforzano la pratica pedagogica e contribuiscono a qualificare ulteriormente il lavoro svolto con i bambini.",
-                    de: "Einmal im Monat führen wir die kontinuierliche Weiterbildung unserer Lehrkräfte durch, denn wir sind überzeugt, dass Erzieherinnen und Erzieher stets selbst im Lernprozess bleiben sollten. Diese Treffen stärken die pädagogische Praxis und tragen dazu bei, die Arbeit mit den Kindern weiter zu qualifizieren.",
-                    en: "Once a month we hold ongoing training for our teachers, believing that educators always need to be in a process of learning. These sessions strengthen pedagogical practice and help further improve the work carried out with the children."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Valorizamos um professor atento às necessidades de cada criança, que respeite seus tempos, suas formas de aprender e suas diferentes maneiras de se expressar.',
-                    it: "Valorizziamo un insegnante attento ai bisogni di ogni bambino, che rispetti i suoi tempi, le sue modalità di apprendimento e i suoi diversi modi di esprimersi.",
-                    de: "Wir legen Wert auf Lehrkräfte, die aufmerksam auf die Bedürfnisse jedes Kindes eingehen und sein eigenes Tempo, seine Lernweisen und seine unterschiedlichen Ausdrucksformen respektieren.",
-                    en: "We value a teacher who is attentive to the needs of every child, respecting their pace, their ways of learning and their different ways of expressing themselves."
-                  })}
-                </p>
-                <p>
-                  {t({
-                    pt: 'Além disso, incentivamos que os professores se encantem, sejam criativos, que planejem experiências significativas, com intencionalidade que despertam a curiosidade e favorecem a investigação, o brincar e a expressão das crianças. Dessa forma, a formação continuada contribui para um trabalho mais sensível, humano e comprometido com o desenvolvimento integral das crianças.',
-                    it: "Incoraggiamo inoltre gli insegnanti a entusiasmarsi, a essere creativi, a pianificare esperienze significative, con intenzionalità che risveglia la curiosità e favorisce l'esplorazione, il gioco e l'espressione dei bambini. In questo modo, la formazione continua contribuisce a un lavoro più sensibile, umano e impegnato nello sviluppo integrale dei bambini.",
-                    de: "Darüber hinaus ermutigen wir die Lehrkräfte, sich begeistern zu lassen, kreativ zu sein und bedeutungsvolle Erfahrungen mit klarer Absicht zu planen, die die Neugier wecken und die Erkundung, das Spiel und den Ausdruck der Kinder fördern. So trägt die kontinuierliche Weiterbildung zu einer einfühlsameren, menschlicheren und der ganzheitlichen Entwicklung der Kinder verpflichteten Arbeit bei.",
-                    en: "We also encourage teachers to be enthusiastic and creative, to plan meaningful experiences with intentionality that awakens curiosity and encourages children's exploration, play and expression. In this way, ongoing training contributes to work that is more sensitive, human and committed to children's overall development."
-                  })}
-                </p>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={formacaoContImg}
-                  alt={t({ pt: 'Formação continuada dos professores', it: 'Formazione continua degli insegnanti', de: "Kontinuierliche Weiterbildung der Lehrkräfte", en: "Ongoing teacher training" })}
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
-      </svg>
-
-      {/* SECTION 3 - IL SERVIZIO */}
-      <section className="relative overflow-hidden py-20 bg-white">
-        <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-12 text-center">
-              {t({ pt: 'Educação em tempo integral', it: 'Educazione a tempo pieno', de: "Ganztägige Bildung", en: "Full-time education" })}
-            </h2>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
-            <AnimatedSection>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({ pt: 'A creche oferece um serviço de educação da primeira infância para crianças de 5 meses a 6 anos, em tempo integral, das 7h30 às 17h.', it: "L'asilo offre un servizio di educazione della prima infanzia per bambini da 5 mesi a 6 anni, a tempo pieno, dalle 7.30 alle 17.", de: "Die Kita bietet frühkindliche Bildung für Kinder von 5 Monaten bis 6 Jahren, ganztägig von 7:30 bis 17:00 Uhr.", en: "The nursery school offers an early childhood education service for children from 5 months to 6 years old, full-time, from 7:30am to 5pm." })}
-                </p>
-                <p>
-                  {t({ pt: 'Cada dia as crianças recebem cinco refeições: café da manhã, lanche da manhã, almoço, lanche da tarde e jantar.', it: 'Ogni giorno i bambini ricevono cinque pasti: colazione, merenda della mattina, pranzo, merenda del pomeriggio e cena.', de: "Jeden Tag erhalten die Kinder fünf Mahlzeiten: Frühstück, Vormittagssnack, Mittagessen, Nachmittagssnack und Abendessen.", en: "Every day the children receive five meals: breakfast, morning snack, lunch, afternoon snack and dinner." })}
-                </p>
-                <p>
-                  {t({ pt: 'Isto permite garantir não apenas educação, mas também cuidado, nutrição, rotina e estabilidade.', it: 'Questo permette di garantire non solo educazione, ma anche cura, nutrizione, routine e stabilità.', de: "Das ermöglicht es, nicht nur Bildung, sondern auch Fürsorge, Ernährung, feste Abläufe und Stabilität zu gewährleisten.", en: "This makes it possible to guarantee not only education, but also care, nutrition, routine and stability." })}
-                </p>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={educazioneImg}
-                  alt="Educazione a tempo pieno"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { number: '120+', label: t({ pt: 'crianças acolhidas', it: 'bambini accolti', de: "aufgenommene Kinder", en: "children cared for" }) },
-              { number: '5', label: t({ pt: 'refeições por dia', it: 'pasti al giorno', de: "Mahlzeiten pro Tag", en: "meals a day" }) },
-              { number: '7.30–17', label: t({ pt: 'tempo integral', it: 'tempo pieno', de: "Ganztagsbetreuung", en: "full-time" }) },
-              { number: '100%', label: t({ pt: 'gratuito', it: 'gratuito', de: "kostenlos", en: "free" }) }
-            ].map((item, index) => (
-              <AnimatedSection key={item.label} delay={index * 0.1}>
-                <div className="bg-[var(--beige)] rounded-2xl p-8 text-center shadow-lg">
-                  <div className={`${item.number === '7.30–17' ? 'text-2xl' : 'text-4xl'} font-bold text-[var(--deep-blue)] mb-2`}>{item.number}</div>
-                  <div className="text-sm text-gray-600">{item.label}</div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* SECTION 4 - I GRUPPI EDUCATIVI */}
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
       <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
         <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
         <div className="relative z-10 max-w-6xl mx-auto px-6">
@@ -867,10 +314,12 @@ export function AsiloPage() {
             </h2>
             <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12 text-center">
               <p>
-                {t({ pt: 'A Creche acolhe cerca de 120 crianças, dos 5 meses aos 6 anos, divididas em grupos educativos de acordo com a idade.', it: "L'asilo accoglie circa 120 bambini, dai 5 mesi ai 6 anni, suddivisi in gruppi educativi in base all'età.", de: "Die Kita nimmt rund 120 Kinder im Alter von 5 Monaten bis 6 Jahren auf, die nach Alter in Bildungsgruppen aufgeteilt sind.", en: "The nursery school welcomes around 120 children, from 5 months to 6 years old, divided into educational groups by age." })}
-              </p>
-              <p className="mt-4">
-                {t({ pt: 'Em 2021 foi ativado também o Grupo 0, o berçário, dedicado às crianças mais pequenas.', it: 'Dal 2021 è stato attivato anche il Gruppo 0, il berçário, dedicato ai bambini più piccoli.', de: "Seit 2021 gibt es zudem die Gruppe 0, die Krippe, die den jüngsten Kindern gewidmet ist.", en: "Since 2021, Group 0, the infant nursery, has also been active, dedicated to the youngest children." })}
+                {t({
+                  pt: 'A creche tem capacidade para atender aproximadamente 100 (cem) crianças com idade entre 0 e 5 anos, organizadas em seis grupos, que compreendem: um grupo de Berçário, um grupo 01, um grupo 02, um grupo 03, um grupo 04 e um grupo 5.',
+                  it: "L'asilo ha una capacità di accoglienza di circa 100 (cento) bambini di età compresa tra 0 e 5 anni, organizzati in sei gruppi: un gruppo Nido, un gruppo 01, un gruppo 02, un gruppo 03, un gruppo 04 e un gruppo 5.",
+                  de: "Die Kita hat eine Kapazität für etwa 100 (hundert) Kinder im Alter von 0 bis 5 Jahren, aufgeteilt in sechs Gruppen: eine Krippengruppe, eine Gruppe 01, eine Gruppe 02, eine Gruppe 03, eine Gruppe 04 und eine Gruppe 5.",
+                  en: "The nursery school has capacity for approximately 100 (one hundred) children aged 0 to 5 years, organised into six groups: one Nursery group, group 01, group 02, group 03, group 04 and group 5."
+                })}
               </p>
             </div>
           </AnimatedSection>
@@ -945,44 +394,9 @@ export function AsiloPage() {
         </div>
       </section>
 
-      {/* SECTION 8 - RELAZIONE CON LE FAMIGLIE */}
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="#ffffff" />
       </svg>
-      <section className="relative overflow-hidden py-20 bg-white">
-        <img src={cerchiFamiglieImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <AnimatedSection>
-              <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-6">
-                {t({ pt: 'Ao lado das famílias', it: 'Accanto alle famiglie', de: "An der Seite der Familien", en: "Alongside families" })}
-              </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  {t({ pt: 'A creche atribui grande importância ao diálogo com as famílias, acolhendo e respeitando culturas, histórias e estruturas familiares diversas.', it: "L'asilo attribuisce grande importanza al dialogo con le famiglie, accogliendo e rispettando culture, storie e strutture familiari diverse.", de: "Die Kita legt großen Wert auf den Dialog mit den Familien und nimmt unterschiedliche Kulturen, Lebensgeschichten und Familienstrukturen respektvoll auf.", en: "The nursery school places great importance on dialogue with families, welcoming and respecting different cultures, backgrounds and family structures." })}
-                </p>
-                <p>
-                  {t({ pt: 'O apoio pode tornar-se também muito concreto: cerca de 15 famílias recebem ajudas alimentares e, quando necessário, um acompanhamento mais específico.', it: 'Il sostegno può diventare anche molto concreto: circa 15 famiglie ricevono aiuti alimentari e, quando necessario, un accompagnamento più specifico.', de: "Die Unterstützung kann auch ganz konkret werden: Rund 15 Familien erhalten Nahrungsmittelhilfen und bei Bedarf eine gezieltere Begleitung.", en: "Support can also become very concrete: around 15 families receive food assistance and, when necessary, more specific support." })}
-                </p>
-              </div>
-              <div className="mt-8">
-                <Button variant="primary" to="/accompagnamento-famiglie">
-                  {t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting families" })}
-                </Button>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img loading="lazy"
-                  src={famiglieImg}
-                  alt="Famiglie e asilo"
-                  className="w-full h-auto"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
 
       {/* SECTION 17 - INSTAGRAM */}
       <section className="relative overflow-hidden py-24 bg-gradient-to-b from-white to-[var(--beige)]">
@@ -1102,7 +516,7 @@ export function AsiloPage() {
               {t({ pt: 'Apoie a creche', it: "Sostieni l'asilo", de: "Unterstützen Sie die Kita", en: "Support the nursery school" })}
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-10">
-              {t({ pt: 'A sua ajuda permite continuar a acolher, educar, nutrir e acompanhar crianças e famílias que vivem situações de fragilidade.', it: 'Il tuo aiuto permette di continuare ad accogliere, educare, nutrire e accompagnare bambini e famiglie che vivono situazioni di fragilità.', de: "Ihre Hilfe ermöglicht es, weiterhin Kinder und Familien in schwierigen Lebenssituationen aufzunehmen, zu bilden, zu ernähren und zu begleiten.", en: "Your help makes it possible to keep welcoming, educating, nourishing and supporting children and families living in vulnerable situations." })}
+              {t({ pt: 'A sua ajuda permite continuar a acolher, educar, nutrir e acompanhar crianças e famílias que vivem situações de vulnerabilidade.', it: 'Il tuo aiuto permette di continuare ad accogliere, educare, nutrire e accompagnare bambini e famiglie che vivono situazioni di vulnerabilità.', de: "Ihre Hilfe ermöglicht es, weiterhin Kinder und Familien in schwierigen Lebenssituationen aufzunehmen, zu bilden, zu ernähren und zu begleiten.", en: "Your help makes it possible to keep welcoming, educating, nourishing and supporting children and families living in vulnerable situations." })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
