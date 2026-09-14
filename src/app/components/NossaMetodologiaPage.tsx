@@ -4,7 +4,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import heroImg from '../../imports/diego/nossametodologia-hero-optimized.jpg';
-import img1 from '../../imports/4-1.jpeg';
+import img1 from '../../imports/diego/nossametodologia-socio-optimized.jpg';
 import img2 from '../../imports/nuove/_DSF1859.jpg';
 import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
 import formacaoContImg from '../../imports/17-1.jpeg';
