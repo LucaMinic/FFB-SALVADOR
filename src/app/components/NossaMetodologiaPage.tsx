@@ -7,7 +7,7 @@ import heroImg from '../../imports/diego/nossametodologia-hero-optimized.jpg';
 import img1 from '../../imports/diego/nossametodologia-socio-optimized.jpg';
 import img2 from '../../imports/nuove/_DSF1859.jpg';
 import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
-import formacaoContImg from '../../imports/17-1.jpeg';
+import formacaoContImg from '../../imports/diego/nossametodologia-formacao-optimized.jpg';
 import reggioImg from '../../imports/diego/nossametodologia-reggio-optimized.jpg';
 import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
 import cerchiMetodologiaImg from '../../imports/diego/asilo-cerchi-metodologia.png';
@@ -276,7 +276,7 @@ export function NossaMetodologiaPage() {
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {t({
-                    pt: 'A criança não é um destinatário passivo: é escutada, valorizada e convidada a participar ativamente na construção das próprias experiências educativas.',
+                    pt: 'A criança não é passiva: é escutada, valorizada e convidada a participar ativamente na construção das próprias experiências educativas.',
                     it: 'Il bambino non è un destinatario passivo: è ascoltato, valorizzato e invitato a partecipare attivamente alla costruzione delle proprie esperienze educative.',
                     de: "Das Kind ist kein passiver Empfänger: Es wird angehört, wertgeschätzt und eingeladen, aktiv an der Gestaltung seiner eigenen Bildungserfahrungen mitzuwirken.",
                     en: "The child is not a passive recipient: they are listened to, valued and invited to actively take part in building their own educational experiences.",
