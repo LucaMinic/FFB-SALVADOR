@@ -119,8 +119,8 @@ export function AsiloPage() {
 
           {/* Missione */}
           <AnimatedSection>
-            <div className="rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center bg-white">
-              <div className="px-8 md:px-16 py-12 max-w-3xl">
+            <div className="rounded-3xl overflow-hidden mb-16 min-h-[300px] flex items-center justify-center bg-sky-50">
+              <div className="px-8 md:px-16 py-12 max-w-3xl text-center">
                 <h2 className="text-3xl md:text-5xl text-[var(--deep-blue)] mb-5">
                   {t({ pt: 'Nossa Missão', it: 'La nostra missione', de: "Unsere Mission", en: "Our mission" })}
                 </h2>
@@ -178,6 +178,100 @@ export function AsiloPage() {
                     <p className="font-semibold text-base mb-2" style={{ color: value.color }}>{value.title}</p>
                     <p className="text-gray-600 text-sm leading-relaxed">{value.desc}</p>
                   </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
+        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="var(--beige)" />
+      </svg>
+
+      {/* SECTION 5 - CHI ANIMA L'ASILO */}
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Uma comunidade educativa', it: 'Una comunità educativa', de: "Eine Bildungsgemeinschaft", en: "An educational community" })}
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
+              <p>
+                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: "Oggi l'asilo vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali.", de: "Heute lebt die Kita von der täglichen Arbeit von rund 22 Menschen: Leitung, pädagogisches Team, Lehrkräfte, Assistentinnen, Verwaltungspersonal, Küche und allgemeine Dienste.", en: "Today the nursery school runs thanks to the daily work of around 22 people, including management, the pedagogical team, teachers, teaching assistants, administrative staff, kitchen and general services staff." })}
+              </p>
+              <p>
+                {t({ pt: 'A gestão pedagógica é partilhada por uma equipe que coordena a formação, organiza as atividades e avalia o trabalho realizado.', it: 'La gestione pedagogica è condivisa da una équipe che coordina la formazione, organizza le attività e valuta il lavoro svolto.', de: "Die pädagogische Leitung liegt bei einem Team, das die Weiterbildung koordiniert, die Aktivitäten organisiert und die geleistete Arbeit auswertet.", en: "Pedagogical management is shared by a team that coordinates training, organises activities and evaluates the work carried out." })}
+              </p>
+              <p>
+                {t({ pt: 'Cada turma tem uma professora formada em pedagogia e uma auxiliar de turma. Ao lado delas trabalham pessoas dedicadas à cozinha, à secretaria, ao cuidado dos espaços e ao apoio quotidiano.', it: "Ogni classe ha una professoressa laureata in pedagogia e un'ausiliare di classe. Accanto a loro lavorano persone dedicate alla cucina, alla segreteria, alla cura degli spazi e al supporto quotidiano.", de: "Jede Klasse hat eine Lehrerin mit einem Abschluss in Pädagogik und eine Klassenassistentin. An ihrer Seite arbeiten Menschen, die sich der Küche, dem Sekretariat, der Pflege der Räumlichkeiten und der täglichen Unterstützung widmen.", en: "Each class has a teacher with a degree in education and a classroom assistant. Alongside them work people dedicated to the kitchen, administration, the upkeep of the spaces and day-to-day support." })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+            {[
+              t({ pt: 'Diretora', it: 'Direttrice', de: "Leiterin", en: "Director" }),
+              t({ pt: 'Equipe pedagógica', it: 'Équipe pedagogica', de: "Pädagogisches Team", en: "Pedagogical team" }),
+              t({ pt: 'Atelierista', it: 'Atelierista', de: "Atelierista", en: "Atelierista" }),
+              t({ pt: 'Professoras', it: 'Professoresse', de: "Lehrerinnen", en: "Teachers" }),
+              t({ pt: 'Auxiliares de turma', it: 'Ausiliarie di classe', de: "Klassenassistentinnen", en: "Classroom assistants" }),
+              t({ pt: 'Cozinha e serviços gerais', it: 'Cucina e servizi generali', de: "Küche und allgemeine Dienste", en: "Kitchen and general services" })
+            ].map((item, index) => (
+              <AnimatedSection key={item} delay={index * 0.1}>
+                <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl p-6 text-center shadow-lg">
+                  <p className="text-lg font-medium">{item}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-16">
+              <img loading="lazy"
+                src={comunitaImg}
+                alt="Uma comunidade educativa"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* SECTION 4 - I GRUPPI EDUCATIVI */}
+      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
+        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
+              {t({ pt: 'Os Grupos', it: 'I gruppi', de: "Die Gruppen", en: "The groups" })}
+            </h2>
+            <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12 text-center">
+              <p>
+                {t({
+                  pt: 'A creche tem capacidade para atender aproximadamente 100 (cem) crianças com idade entre 0 e 5 anos, organizadas em seis grupos, que compreendem: um grupo de Berçário, um grupo 01, um grupo 02, um grupo 03, um grupo 04 e um grupo 5.',
+                  it: "L'asilo ha una capacità di accoglienza di circa 100 (cento) bambini di età compresa tra 0 e 5 anni, organizzati in sei gruppi: un gruppo Nido, un gruppo 01, un gruppo 02, un gruppo 03, un gruppo 04 e un gruppo 5.",
+                  de: "Die Kita hat eine Kapazität für etwa 100 (hundert) Kinder im Alter von 0 bis 5 Jahren, aufgeteilt in sechs Gruppen: eine Krippengruppe, eine Gruppe 01, eine Gruppe 02, eine Gruppe 03, eine Gruppe 04 und eine Gruppe 5.",
+                  en: "The nursery school has capacity for approximately 100 (one hundred) children aged 0 to 5 years, organised into six groups: one Nursery group, group 01, group 02, group 03, group 04 and group 5."
+                })}
+              </p>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { group: 'Grupo 0 / Berçário', age: t({ pt: '5 meses – 11 meses', it: '5 mesi – 11 mesi', de: "5 Monate – 11 Monate", en: "5 months – 11 months" }) },
+              { group: 'Grupo 1 / Creche', age: t({ pt: '1 – 2 anos', it: '1 – 2 anni', de: "1 – 2 Jahre", en: "1 – 2 years" }) },
+              { group: 'Grupo 2 / Creche', age: t({ pt: '2 – 3 anos', it: '2 – 3 anni', de: "2 – 3 Jahre", en: "2 – 3 years" }) },
+              { group: 'Grupo 3 / Creche', age: t({ pt: '3 – 4 anos', it: '3 – 4 anni', de: "3 – 4 Jahre", en: "3 – 4 years" }) },
+              { group: 'Grupo 4 / Pré-escola', age: t({ pt: '4 – 5 anos', it: '4 – 5 anni', de: "4 – 5 Jahre", en: "4 – 5 years" }) },
+              { group: 'Grupo 5 / Pré-escola', age: t({ pt: '5 – 6 anos', it: '5 – 6 anni', de: "5 – 6 Jahre", en: "5 – 6 years" }) }
+            ].map((item, index) => (
+              <AnimatedSection key={item.group} delay={index * 0.1}>
+                <div className="bg-white rounded-2xl p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-[var(--deep-blue)] mb-2">{item.group}</h3>
+                  <p className="text-gray-600">{item.age}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -252,99 +346,6 @@ export function AsiloPage() {
       </section>
       <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
         <path d="M0,50 C300,10 600,90 900,50 C1050,30 1150,50 1200,50 L1200,0 L0,0 Z" fill="var(--beige)" />
-      </svg>
-
-      {/* SECTION 5 - CHI ANIMA L'ASILO */}
-      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
-        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'Uma comunidade educativa', it: 'Una comunità educativa', de: "Eine Bildungsgemeinschaft", en: "An educational community" })}
-            </h2>
-            <div className="max-w-3xl mx-auto space-y-4 text-lg text-gray-700 leading-relaxed mb-12 text-center">
-              <p>
-                {t({ pt: 'Hoje a creche vive graças ao trabalho quotidiano de cerca de 22 pessoas entre direção, equipe pedagógica, professoras, auxiliares, pessoal administrativo, cozinha e serviços gerais.', it: "Oggi l'asilo vive grazie al lavoro quotidiano di circa 22 persone tra direzione, équipe pedagogica, insegnanti, ausiliarie, personale amministrativo, cucina e servizi generali.", de: "Heute lebt die Kita von der täglichen Arbeit von rund 22 Menschen: Leitung, pädagogisches Team, Lehrkräfte, Assistentinnen, Verwaltungspersonal, Küche und allgemeine Dienste.", en: "Today the nursery school runs thanks to the daily work of around 22 people, including management, the pedagogical team, teachers, teaching assistants, administrative staff, kitchen and general services staff." })}
-              </p>
-              <p>
-                {t({ pt: 'A gestão pedagógica é partilhada por uma equipe que coordena a formação, organiza as atividades e avalia o trabalho realizado.', it: 'La gestione pedagogica è condivisa da una équipe che coordina la formazione, organizza le attività e valuta il lavoro svolto.', de: "Die pädagogische Leitung liegt bei einem Team, das die Weiterbildung koordiniert, die Aktivitäten organisiert und die geleistete Arbeit auswertet.", en: "Pedagogical management is shared by a team that coordinates training, organises activities and evaluates the work carried out." })}
-              </p>
-              <p>
-                {t({ pt: 'Cada turma tem uma professora formada em pedagogia e uma auxiliar de turma. Ao lado delas trabalham pessoas dedicadas à cozinha, à secretaria, ao cuidado dos espaços e ao apoio quotidiano.', it: "Ogni classe ha una professoressa laureata in pedagogia e un'ausiliare di classe. Accanto a loro lavorano persone dedicate alla cucina, alla segreteria, alla cura degli spazi e al supporto quotidiano.", de: "Jede Klasse hat eine Lehrerin mit einem Abschluss in Pädagogik und eine Klassenassistentin. An ihrer Seite arbeiten Menschen, die sich der Küche, dem Sekretariat, der Pflege der Räumlichkeiten und der täglichen Unterstützung widmen.", en: "Each class has a teacher with a degree in education and a classroom assistant. Alongside them work people dedicated to the kitchen, administration, the upkeep of the spaces and day-to-day support." })}
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            {[
-              t({ pt: 'Diretora', it: 'Direttrice', de: "Leiterin", en: "Director" }),
-              t({ pt: 'Equipe pedagógica', it: 'Équipe pedagogica', de: "Pädagogisches Team", en: "Pedagogical team" }),
-              t({ pt: 'Atelierista', it: 'Atelierista', de: "Atelierista", en: "Atelierista" }),
-              t({ pt: 'Professoras', it: 'Professoresse', de: "Lehrerinnen", en: "Teachers" }),
-              t({ pt: 'Auxiliares de turma', it: 'Ausiliarie di classe', de: "Klassenassistentinnen", en: "Classroom assistants" }),
-              t({ pt: 'Cozinha e serviços gerais', it: 'Cucina e servizi generali', de: "Küche und allgemeine Dienste", en: "Kitchen and general services" })
-            ].map((item, index) => (
-              <AnimatedSection key={item} delay={index * 0.1}>
-                <div className="bg-gradient-to-br from-[var(--soft-green)] to-[#7ab89a] text-white rounded-2xl p-6 text-center shadow-lg">
-                  <p className="text-lg font-medium">{item}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection>
-            <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg mb-16">
-              <img loading="lazy"
-                src={comunitaImg}
-                alt="Uma comunidade educativa"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* SECTION 4 - I GRUPPI EDUCATIVI */}
-      <section className="relative overflow-hidden py-20 bg-[var(--beige)]">
-        <img src={cerchiIntroImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl text-[var(--deep-blue)] mb-8 text-center">
-              {t({ pt: 'As crianças acolhidas', it: 'I bambini accolti', de: "Die aufgenommenen Kinder", en: "The children we welcome" })}
-            </h2>
-            <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-12 text-center">
-              <p>
-                {t({
-                  pt: 'A creche tem capacidade para atender aproximadamente 100 (cem) crianças com idade entre 0 e 5 anos, organizadas em seis grupos, que compreendem: um grupo de Berçário, um grupo 01, um grupo 02, um grupo 03, um grupo 04 e um grupo 5.',
-                  it: "L'asilo ha una capacità di accoglienza di circa 100 (cento) bambini di età compresa tra 0 e 5 anni, organizzati in sei gruppi: un gruppo Nido, un gruppo 01, un gruppo 02, un gruppo 03, un gruppo 04 e un gruppo 5.",
-                  de: "Die Kita hat eine Kapazität für etwa 100 (hundert) Kinder im Alter von 0 bis 5 Jahren, aufgeteilt in sechs Gruppen: eine Krippengruppe, eine Gruppe 01, eine Gruppe 02, eine Gruppe 03, eine Gruppe 04 und eine Gruppe 5.",
-                  en: "The nursery school has capacity for approximately 100 (one hundred) children aged 0 to 5 years, organised into six groups: one Nursery group, group 01, group 02, group 03, group 04 and group 5."
-                })}
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { group: 'Grupo 0 / Berçário', age: t({ pt: '5 meses – 11 meses', it: '5 mesi – 11 mesi', de: "5 Monate – 11 Monate", en: "5 months – 11 months" }) },
-              { group: 'Grupo 1 / Creche', age: t({ pt: '1 – 2 anos', it: '1 – 2 anni', de: "1 – 2 Jahre", en: "1 – 2 years" }) },
-              { group: 'Grupo 2 / Creche', age: t({ pt: '2 – 3 anos', it: '2 – 3 anni', de: "2 – 3 Jahre", en: "2 – 3 years" }) },
-              { group: 'Grupo 3 / Creche', age: t({ pt: '3 – 4 anos', it: '3 – 4 anni', de: "3 – 4 Jahre", en: "3 – 4 years" }) },
-              { group: 'Grupo 4 / Pré-escola', age: t({ pt: '4 – 5 anos', it: '4 – 5 anni', de: "4 – 5 Jahre", en: "4 – 5 years" }) },
-              { group: 'Grupo 5 / Pré-escola', age: t({ pt: '5 – 6 anos', it: '5 – 6 anni', de: "5 – 6 Jahre", en: "5 – 6 years" }) }
-            ].map((item, index) => (
-              <AnimatedSection key={item.group} delay={index * 0.1}>
-                <div className="bg-white rounded-2xl p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-[var(--deep-blue)] mb-2">{item.group}</h3>
-                  <p className="text-gray-600">{item.age}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-16 md:h-24" style={{ display: 'block', marginTop: '-1px' }}>
-        <path d="M0,50 C300,90 600,10 900,50 C1050,70 1150,50 1200,50 L1200,120 L0,120 Z" fill="var(--beige)" />
       </svg>
 
       {/* SECTION 7 - COME AVVIENE L'ISCRIZIONE */}
