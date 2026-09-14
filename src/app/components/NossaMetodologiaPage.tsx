@@ -3,10 +3,11 @@ import { useLocation } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
+import { LazyAutoplayVideo } from './LazyAutoplayVideo';
 import heroImg from '../../imports/diego/nossametodologia-hero-optimized.jpg';
 import img1 from '../../imports/diego/nossametodologia-socio-optimized.jpg';
 import img2 from '../../imports/nuove/_DSF1859.jpg';
-import mostrasImg from '../../imports/nuove/2P9A2229.jpg';
+import mostrasVideo from '../../imports/diego/mostras-pedagogicas-optimized.mp4';
 import formacaoContImg from '../../imports/diego/nossametodologia-formacao-optimized.jpg';
 import reggioImg from '../../imports/diego/nossametodologia-reggio-optimized.jpg';
 import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';
@@ -489,11 +490,12 @@ export function NossaMetodologiaPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection delay={0.2}>
-              <img loading="lazy"
-                src={mostrasImg}
-                alt={t({ pt: 'Mostra pedagógica', it: 'Mostra pedagogica', de: "Pädagogische Ausstellung", en: "Pedagogical exhibition" })}
-                className="w-full rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] object-cover h-80 lg:h-96"
-              />
+              <div className="rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+                <LazyAutoplayVideo
+                  src={mostrasVideo}
+                  className="w-full object-cover h-80 lg:h-96"
+                />
+              </div>
             </AnimatedSection>
           </div>
         </div>
