@@ -136,6 +136,123 @@ export function NossaMetodologiaPage() {
         </div>
       </section>
 
+      {/* SECTION 3 — FONDAMENTI TEORICI */}
+      <section className="relative overflow-hidden bg-white py-24 md:py-32">
+        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <AnimatedSection delay={0.1}>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
+                  {t({ pt: 'Os fundamentos teóricos', it: 'I fondamenti teorici', de: "Die theoretischen Grundlagen", en: "The theoretical foundations" })}
+                </h2>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  {t({
+                    pt: 'O nosso trabalho fundamenta-se numa pluralidade de referências pedagógicas — de Piaget a Vygotsky, passando por Giussani, Ferreiro e Malaguzzi — compreendendo que o desenvolvimento infantil acontece de forma integral, por meio da interação entre a criança, o outro e o mundo.',
+                    it: 'Il nostro lavoro si fonda su una pluralità di riferimenti pedagogici — da Piaget a Vygotskij, passando per Giussani, Ferreiro e Malaguzzi — comprendendo che lo sviluppo infantile avviene in modo integrale, attraverso l\'interazione tra il bambino, l\'altro e il mondo.',
+                    de: "Unsere Arbeit stützt sich auf eine Vielfalt pädagogischer Bezugspunkte — von Piaget über Vygotskij bis hin zu Giussani, Ferreiro und Malaguzzi — im Verständnis, dass sich die kindliche Entwicklung ganzheitlich vollzieht, durch die Interaktion zwischen dem Kind, dem anderen und der Welt.",
+                    en: "Our work is based on a plurality of pedagogical references — from Piaget to Vygotsky, as well as Giussani, Ferreiro and Malaguzzi — understanding that child development happens holistically, through the interaction between the child, others and the world.",
+                  })}
+                </p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <div className="w-full h-80 lg:h-96 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] bg-white flex items-center justify-center p-6">
+                <svg
+                  viewBox="0 0 500 380"
+                  className="w-full h-full max-w-md"
+                  role="img"
+                  aria-label={t({ pt: 'O desenvolvimento acontece na interação entre a criança, o outro e o mundo', it: 'Lo sviluppo avviene nell\'interazione tra il bambino, l\'altro e il mondo', de: "Die Entwicklung vollzieht sich in der Interaktion zwischen dem Kind, dem anderen und der Welt", en: "Development happens through the interaction between the child, others and the world" })}
+                >
+                  <g style={{ mixBlendMode: 'multiply' }}>
+                    <circle cx="250" cy="150" r="108" fill="var(--deep-blue)" fillOpacity="0.5" stroke="var(--deep-blue)" strokeWidth="2" />
+                    <circle cx="180" cy="255" r="108" fill="var(--soft-green)" fillOpacity="0.5" stroke="var(--soft-green)" strokeWidth="2" />
+                    <circle cx="320" cy="255" r="108" fill="var(--warm-orange)" fillOpacity="0.5" stroke="var(--warm-orange)" strokeWidth="2" />
+                  </g>
+
+                  <text x="250" y="90" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--deep-blue)">
+                    {t({ pt: 'Criança', it: 'Bambino', de: "Kind", en: "Child" })}
+                  </text>
+                  <text x="95" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--soft-green)">
+                    {t({ pt: 'O outro', it: "L'altro", de: "Der andere", en: "Others" })}
+                  </text>
+                  <text x="405" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--warm-red)">
+                    {t({ pt: 'O mundo', it: 'Il mondo', de: "Die Welt", en: "The World" })}
+                  </text>
+
+                  <text x="250" y="219" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
+                    {t({ pt: 'Desenvolvimento', it: 'Sviluppo', de: "Entwicklung", en: "Development" })}
+                  </text>
+                  <text x="250" y="238" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
+                    {t({ pt: 'integral', it: 'integrale', de: "ganzheitlich", en: "overall" })}
+                  </text>
+                </svg>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          <AnimatedSection delay={0.3} className="mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Luigi Giussani</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'Centralidade da pessoa.',
+                    it: 'Centralità della persona.',
+                    de: "Die Zentralität der Person.",
+                    en: "Centrality of the person.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Jean Piaget</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'A criança se constrói de forma evolutiva, por etapas, dentro de uma perspectiva interacionista.',
+                    it: 'Il bambino si costruisce in modo evolutivo, per tappe, all\'interno di una prospettiva interazionista.',
+                    de: "Das Kind entwickelt sich schrittweise, in Stufen, im Rahmen einer interaktionistischen Perspektive.",
+                    en: "The child develops gradually, in stages, within an interactionist perspective.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Lev Vygotsky</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'O conhecimento é o resultado de mediações entre o sujeito e o seu ambiente.',
+                    it: 'La conoscenza è il risultato di mediazioni tra il soggetto e il suo ambiente.',
+                    de: "Wissen ist das Ergebnis von Vermittlungsprozessen zwischen dem Subjekt und seiner Umgebung.",
+                    en: "Knowledge is the result of mediation between the subject and their environment.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Emília Ferreiro</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'Cada criança atravessa quatro fases até a alfabetização: pré-silábica, silábica, silábico-alfabética e alfabética.',
+                    it: 'Ogni bambino attraversa quattro fasi fino all\'alfabetizzazione: pre-sillabica, sillabica, sillabico-alfabetica e alfabetica.',
+                    de: "Jedes Kind durchläuft vier Phasen bis zur Alphabetisierung: vor-silbisch, silbisch, silbisch-alphabetisch und alphabetisch.",
+                    en: "Every child goes through four stages on the way to literacy: pre-syllabic, syllabic, syllabic-alphabetic and alphabetic.",
+                  })}
+                </p>
+              </div>
+              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
+                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Loris Malaguzzi</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t({
+                    pt: 'A criança é protagonista, no centro do processo.',
+                    it: 'Il bambino è protagonista, al centro del processo.',
+                    de: "Das Kind ist Protagonist, im Mittelpunkt des Prozesses.",
+                    en: "The child is the protagonist, at the centre of the process.",
+                  })}
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* SECTION PILASTRI */}
       <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
         <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
@@ -288,6 +405,42 @@ export function NossaMetodologiaPage() {
         </div>
       </section>
 
+      {/* CURRICULUM BNCC */}
+      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
+        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <AnimatedSection delay={0.1}>
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
+              {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza", de: "Ein auf Erfahrung gegründetes Curriculum", en: "A curriculum founded on experience" })}
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4 text-center max-w-3xl mx-auto">
+              {t({
+                pt: 'O currículo do Centro Nossa Senhora Aparecida é baseado nos direitos de aprendizagem e nos campos de experiência propostos pela BNCC. Os eixos principais são: interação, brincadeira, experiência, relação e exploração.',
+                it: "Il curriculum del Centro Nossa Senhora Aparecida è basato sui diritti di apprendimento e sui campi di esperienza proposti dalla BNCC. Gli assi principali sono: interazione, gioco, esperienza, relazione ed esplorazione.",
+                de: "Das Curriculum des Centro Nossa Senhora Aparecida basiert auf den Lernrechten und den von der BNCC vorgeschlagenen Erfahrungsbereichen. Die Hauptachsen sind: Interaktion, Spiel, Erfahrung, Beziehung und Erkundung.",
+                en: "The curriculum of the Centro Nossa Senhora Aparecida is based on the learning rights and fields of experience proposed by the BNCC. The main axes are: interaction, play, experience, relationship and exploration.",
+              })}
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {[
+              t({ pt: 'O eu, o outro e o nós', it: "Il sé, l'altro e il noi", de: "Das Ich, der andere und das Wir", en: "The self, others and us" }),
+              t({ pt: 'Corpo, gestos e movimentos', it: 'Corpo, gesti e movimenti', de: "Körper, Gesten und Bewegungen", en: "Body, gestures and movements" }),
+              t({ pt: 'Traços, sons, cores e formas', it: 'Tratti, suoni, colori e forme', de: "Linien, Klänge, Farben und Formen", en: "Traits, sounds, colours and shapes" }),
+              t({ pt: 'Escuta, palavra, pensamento e imaginação', it: 'Ascolto, parola, pensiero e immaginazione', de: "Zuhören, Sprache, Denken und Vorstellungskraft", en: "Listening, speech, thought and imagination" }),
+              t({ pt: 'Espaços, tempos, quantidades, relações e transformações', it: 'Spazi, tempi, quantità, relazioni e trasformazioni', de: "Räume, Zeiten, Mengen, Beziehungen und Veränderungen", en: "Spaces, times, quantities, relationships and transformations" })
+            ].map((item, index) => (
+              <AnimatedSection key={item} delay={index * 0.1}>
+                <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white rounded-2xl p-8 text-center shadow-lg h-full flex items-center justify-center">
+                  <p className="text-lg font-medium">{item}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SECTION MOSTRAS PEDAGÓGICAS */}
       <section id="mostras-pedagogicas" className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
         <img src={cerchiPiccoloImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
@@ -413,159 +566,6 @@ export function NossaMetodologiaPage() {
               style={{ maxHeight: '520px' }}
             />
           </AnimatedSection>
-        </div>
-      </section>
-
-      {/* SECTION 3 — FONDAMENTI TEORICI */}
-      <section className="relative overflow-hidden bg-white py-24 md:py-32">
-        <img src={cerchiValoriImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection delay={0.1}>
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6">
-                  {t({ pt: 'Os fundamentos teóricos', it: 'I fondamenti teorici', de: "Die theoretischen Grundlagen", en: "The theoretical foundations" })}
-                </h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  {t({
-                    pt: 'O nosso trabalho fundamenta-se numa pluralidade de referências pedagógicas — de Piaget a Vygotsky, passando por Giussani, Ferreiro e Malaguzzi — compreendendo que o desenvolvimento infantil acontece de forma integral, por meio da interação entre a criança, o outro e o mundo.',
-                    it: 'Il nostro lavoro si fonda su una pluralità di riferimenti pedagogici — da Piaget a Vygotskij, passando per Giussani, Ferreiro e Malaguzzi — comprendendo che lo sviluppo infantile avviene in modo integrale, attraverso l\'interazione tra il bambino, l\'altro e il mondo.',
-                    de: "Unsere Arbeit stützt sich auf eine Vielfalt pädagogischer Bezugspunkte — von Piaget über Vygotskij bis hin zu Giussani, Ferreiro und Malaguzzi — im Verständnis, dass sich die kindliche Entwicklung ganzheitlich vollzieht, durch die Interaktion zwischen dem Kind, dem anderen und der Welt.",
-                    en: "Our work is based on a plurality of pedagogical references — from Piaget to Vygotsky, as well as Giussani, Ferreiro and Malaguzzi — understanding that child development happens holistically, through the interaction between the child, others and the world.",
-                  })}
-                </p>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="w-full h-80 lg:h-96 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)] bg-white flex items-center justify-center p-6">
-                <svg
-                  viewBox="0 0 500 380"
-                  className="w-full h-full max-w-md"
-                  role="img"
-                  aria-label={t({ pt: 'O desenvolvimento acontece na interação entre a criança, o outro e o mundo', it: 'Lo sviluppo avviene nell\'interazione tra il bambino, l\'altro e il mondo', de: "Die Entwicklung vollzieht sich in der Interaktion zwischen dem Kind, dem anderen und der Welt", en: "Development happens through the interaction between the child, others and the world" })}
-                >
-                  <g style={{ mixBlendMode: 'multiply' }}>
-                    <circle cx="250" cy="150" r="108" fill="var(--deep-blue)" fillOpacity="0.5" stroke="var(--deep-blue)" strokeWidth="2" />
-                    <circle cx="180" cy="255" r="108" fill="var(--soft-green)" fillOpacity="0.5" stroke="var(--soft-green)" strokeWidth="2" />
-                    <circle cx="320" cy="255" r="108" fill="var(--warm-orange)" fillOpacity="0.5" stroke="var(--warm-orange)" strokeWidth="2" />
-                  </g>
-
-                  <text x="250" y="90" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--deep-blue)">
-                    {t({ pt: 'Criança', it: 'Bambino', de: "Kind", en: "Child" })}
-                  </text>
-                  <text x="95" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--soft-green)">
-                    {t({ pt: 'O outro', it: "L'altro", de: "Der andere", en: "Others" })}
-                  </text>
-                  <text x="405" y="300" textAnchor="middle" fontSize="19" fontWeight="700" fill="var(--warm-red)">
-                    {t({ pt: 'O mundo', it: 'Il mondo', de: "Die Welt", en: "The World" })}
-                  </text>
-
-                  <text x="250" y="219" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
-                    {t({ pt: 'Desenvolvimento', it: 'Sviluppo', de: "Entwicklung", en: "Development" })}
-                  </text>
-                  <text x="250" y="238" textAnchor="middle" fontSize="15" fontWeight="700" fill="#ffffff">
-                    {t({ pt: 'integral', it: 'integrale', de: "ganzheitlich", en: "overall" })}
-                  </text>
-                </svg>
-              </div>
-            </AnimatedSection>
-          </div>
-
-          <AnimatedSection delay={0.3} className="mt-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Luigi Giussani</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t({
-                    pt: 'Centralidade da pessoa.',
-                    it: 'Centralità della persona.',
-                    de: "Die Zentralität der Person.",
-                    en: "Centrality of the person.",
-                  })}
-                </p>
-              </div>
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Jean Piaget</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t({
-                    pt: 'A criança se constrói de forma evolutiva, por etapas, dentro de uma perspectiva interacionista.',
-                    it: 'Il bambino si costruisce in modo evolutivo, per tappe, all\'interno di una prospettiva interazionista.',
-                    de: "Das Kind entwickelt sich schrittweise, in Stufen, im Rahmen einer interaktionistischen Perspektive.",
-                    en: "The child develops gradually, in stages, within an interactionist perspective.",
-                  })}
-                </p>
-              </div>
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Lev Vygotsky</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t({
-                    pt: 'O conhecimento é o resultado de mediações entre o sujeito e o seu ambiente.',
-                    it: 'La conoscenza è il risultato di mediazioni tra il soggetto e il suo ambiente.',
-                    de: "Wissen ist das Ergebnis von Vermittlungsprozessen zwischen dem Subjekt und seiner Umgebung.",
-                    en: "Knowledge is the result of mediation between the subject and their environment.",
-                  })}
-                </p>
-              </div>
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Emília Ferreiro</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t({
-                    pt: 'Cada criança atravessa quatro fases até a alfabetização: pré-silábica, silábica, silábico-alfabética e alfabética.',
-                    it: 'Ogni bambino attraversa quattro fasi fino all\'alfabetizzazione: pre-sillabica, sillabica, sillabico-alfabetica e alfabetica.',
-                    de: "Jedes Kind durchläuft vier Phasen bis zur Alphabetisierung: vor-silbisch, silbisch, silbisch-alphabetisch und alphabetisch.",
-                    en: "Every child goes through four stages on the way to literacy: pre-syllabic, syllabic, syllabic-alphabetic and alphabetic.",
-                  })}
-                </p>
-              </div>
-              <div className="bg-gradient-to-br from-[var(--beige)] to-white rounded-2xl p-6 shadow-md">
-                <p className="text-[var(--deep-blue)] font-bold text-lg mb-2">Loris Malaguzzi</p>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {t({
-                    pt: 'A criança é protagonista, no centro do processo.',
-                    it: 'Il bambino è protagonista, al centro del processo.',
-                    de: "Das Kind ist Protagonist, im Mittelpunkt des Prozesses.",
-                    en: "The child is the protagonist, at the centre of the process.",
-                  })}
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* CURRICULUM BNCC */}
-      <section className="relative overflow-hidden bg-[var(--beige)] py-24 md:py-32">
-        <img src={cerchiOndeImg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none" />
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
-          <AnimatedSection delay={0.1}>
-            <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)] mb-6 text-center">
-              {t({ pt: 'Um currículo fundado na experiência', it: "Un curriculum fondato sull'esperienza", de: "Ein auf Erfahrung gegründetes Curriculum", en: "A curriculum founded on experience" })}
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-4 text-center max-w-3xl mx-auto">
-              {t({
-                pt: 'O currículo do Centro Nossa Senhora Aparecida é baseado nos direitos de aprendizagem e nos campos de experiência propostos pela BNCC. Os eixos principais são: interação, brincadeira, experiência, relação e exploração.',
-                it: "Il curriculum del Centro Nossa Senhora Aparecida è basato sui diritti di apprendimento e sui campi di esperienza proposti dalla BNCC. Gli assi principali sono: interazione, gioco, esperienza, relazione ed esplorazione.",
-                de: "Das Curriculum des Centro Nossa Senhora Aparecida basiert auf den Lernrechten und den von der BNCC vorgeschlagenen Erfahrungsbereichen. Die Hauptachsen sind: Interaktion, Spiel, Erfahrung, Beziehung und Erkundung.",
-                en: "The curriculum of the Centro Nossa Senhora Aparecida is based on the learning rights and fields of experience proposed by the BNCC. The main axes are: interaction, play, experience, relationship and exploration.",
-              })}
-            </p>
-          </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-            {[
-              t({ pt: 'O eu, o outro e o nós', it: "Il sé, l'altro e il noi", de: "Das Ich, der andere und das Wir", en: "The self, others and us" }),
-              t({ pt: 'Corpo, gestos e movimentos', it: 'Corpo, gesti e movimenti', de: "Körper, Gesten und Bewegungen", en: "Body, gestures and movements" }),
-              t({ pt: 'Traços, sons, cores e formas', it: 'Tratti, suoni, colori e forme', de: "Linien, Klänge, Farben und Formen", en: "Traits, sounds, colours and shapes" }),
-              t({ pt: 'Escuta, palavra, pensamento e imaginação', it: 'Ascolto, parola, pensiero e immaginazione', de: "Zuhören, Sprache, Denken und Vorstellungskraft", en: "Listening, speech, thought and imagination" }),
-              t({ pt: 'Espaços, tempos, quantidades, relações e transformações', it: 'Spazi, tempi, quantità, relazioni e trasformazioni', de: "Räume, Zeiten, Mengen, Beziehungen und Veränderungen", en: "Spaces, times, quantities, relationships and transformations" })
-            ].map((item, index) => (
-              <AnimatedSection key={item} delay={index * 0.1}>
-                <div className="bg-gradient-to-br from-[var(--warm-orange-light)] to-[var(--warm-orange)] text-white rounded-2xl p-8 text-center shadow-lg h-full flex items-center justify-center">
-                  <p className="text-lg font-medium">{item}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
         </div>
       </section>
 
