@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
@@ -283,12 +284,12 @@ export function FraternitaPage() {
               {t({ pt: 'Trata-se de pessoas que, de modos diferentes, participam da vida e do carisma da Fraternidade, partilhando o seu Espiritualidade na vida quotidiana.', it: 'Si tratta di persone che, in modi diversi, partecipano alla vita e al carisma della Fraternità, condividendone lo spirito nella vita quotidiana.', de: "Es handelt sich um Menschen, die auf unterschiedliche Weise am Leben und am Charisma der Gemeinschaft teilhaben und deren Geist im Alltag mittragen.", en: "These are people who, in different ways, take part in the life and charism of the Fraternity, sharing its spirit in daily life." })}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white p-8 rounded-xl shadow-md">
+              <Link to="/jovens-de-betania" className="block bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <h3 className="text-xl font-semibold text-[var(--deep-blue)] mb-4">{t({ pt: 'Jovens de Betânia', it: 'Giovani di Betania', de: "Jugendliche von Betania", en: "Youth of Betania" })}</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
                   {t({ pt: 'Jovens que se encontram periodicamente para viver uma experiência de fé e levar este caminho para a sua vida quotidiana.', it: "Giovani che si incontrano periodicamente per vivere un'esperienza di fede e portare questo cammino nella loro vita quotidiana.", de: "Jugendliche, die sich regelmäßig treffen, um eine Glaubenserfahrung zu leben und diesen Weg in ihren Alltag zu tragen.", en: "Young people who meet regularly to live an experience of faith and carry this journey into their daily lives." })}
                 </p>
-              </div>
+              </Link>
               <div className="bg-white p-8 rounded-xl shadow-md">
                 <h3 className="text-xl font-semibold text-[var(--deep-blue)] mb-4">{t({ pt: 'Famílias', it: 'Famiglie', de: "Familien", en: "Families" })}</h3>
                 <p className="text-base text-gray-700 leading-relaxed">
