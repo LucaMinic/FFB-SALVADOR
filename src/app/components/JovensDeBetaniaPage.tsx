@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Expand } from 'lucide-react';
+import { ArrowLeft, Expand, Instagram } from 'lucide-react';
 import { Link } from 'react-router';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
@@ -347,6 +347,37 @@ export function JovensDeBetaniaPage() {
                 en: "Father Pancrazio Nicola Gaudioso, founder of the Franciscan Fraternity of Betania",
               })}
             </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* INSTAGRAM CTA */}
+      <section className="bg-[var(--beige)] py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <AnimatedSection>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Instagram className="w-9 h-9 text-[var(--deep-blue)]" />
+              <h2 className="text-3xl md:text-4xl font-bold text-[var(--deep-blue)]">
+                {t({ pt: 'Acompanhe os Jovens de Betânia no Instagram', it: 'Segui i Jovens de Betânia su Instagram', de: "Folgen Sie den Jovens de Betânia auf Instagram", en: "Follow Jovens de Betânia on Instagram" })}
+              </h2>
+            </div>
+            <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+              {t({
+                pt: 'Siga-nos para acompanhar de perto os encontros, as atividades e os momentos de partilha dos Jovens de Betânia.',
+                it: 'Seguici per rimanere aggiornato sugli incontri, le attività e i momenti di condivisione dei Jovens de Betânia.',
+                de: "Folgen Sie uns, um die Treffen, Aktivitäten und gemeinsamen Momente der Jovens de Betânia hautnah mitzuerleben.",
+                en: "Follow us to keep up with the gatherings, activities and shared moments of the Jovens de Betânia.",
+              })}
+            </p>
+            <a
+              href="https://www.instagram.com/jovensbetaniabr?stkn=Z3pqejZ0Y2hvdTBs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="secondary">
+                {t({ pt: 'Seguir no Instagram', it: 'Segui su Instagram', de: "Auf Instagram folgen", en: "Follow on Instagram" })}
+              </Button>
+            </a>
           </AnimatedSection>
         </div>
       </section>
