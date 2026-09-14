@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
 import padrePancrazioImg from '../../imports/PadrePancrazio.jpg';
-import mappaImg from '../../imports/mappa_Italia_mondo.jpg';
+import chegadaSalvadorImg from '../../imports/chegada-salvador-1910.jpg';
 import nasceCentroImg from '../../imports/centro-giornata-relazione.jpeg';
 import cresceMissioneImg from '../../imports/centro-missao-cresce.jpeg';
 import conventoImg from '../../imports/centro-convento-aereo.jpeg';
@@ -57,7 +57,7 @@ const entries: TimelineEntry[] = [
       },
     ],
     image: {
-      src: mappaImg,
+      src: chegadaSalvadorImg,
       alt: {
         it: "Dall'Italia al Brasile: l'arrivo della Fraternità a Salvador de Bahia",
         pt: 'Da Itália ao Brasil: a chegada da Fraternidade a Salvador da Bahia',
