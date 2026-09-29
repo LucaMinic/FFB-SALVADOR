@@ -36,6 +36,7 @@ export function VisitaPresidentePage() {
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
               {t({ pt: 'Visita Institucional', it: 'Visita Istituzionale', de: "Institutioneller Besuch", en: "Institutional Visit" })}
             </p>
+            <time dateTime="2024-07-19" className="block text-white/60 text-sm mb-4">19/07/2024</time>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {t({
                 pt: 'A visita do Presidente da República Italiana',

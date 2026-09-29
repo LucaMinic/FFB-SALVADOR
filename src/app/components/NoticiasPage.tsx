@@ -14,6 +14,7 @@ export function NoticiasPage() {
   const noticias = [
     {
       id: 'eventos-especiais',
+      date: '2024-07-19',
       title: t({ pt: 'Visita do Presidente da República Italiana', it: 'Visita del Presidente della Repubblica Italiana', de: 'Besuch des Präsidenten der Italienischen Republik', en: 'Visit of the President of the Italian Republic' }),
       description: t({
         pt: 'O Centro Nossa Senhora Aparecida e a Fraternidade Franciscana de Betânia acolheram a visita do Presidente da República Italiana, Sergio Mattarella, um momento de grande valor humano e institucional.',
@@ -26,6 +27,7 @@ export function NoticiasPage() {
     },
     {
       id: 'tonelada-de-amor',
+      date: '2026-08-27',
       title: 'Tonelada de Amor',
       description: t({
         pt: 'O Centro Nossa Senhora Aparecida recebeu mais de uma tonelada de alimentos doados pelos alunos do Colégio Antônio Vieira, na campanha "Tonelada de Amor".',
@@ -38,6 +40,7 @@ export function NoticiasPage() {
     },
     {
       id: 'intervista-centro',
+      date: '2025-01-25',
       title: t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Centro", en: "Interview at the Centre" }),
       description: t({
         pt: 'Estamos felizes em compartilhar com vocês uma entrevista realizada pelo Centro Missionário de Verona por ocasião do encontro dos missionários italianos no Brasil. Este serviço conta a nossa missão e o trabalho que realizamos em Salvador da Bahia, oferecendo uma oportunidade especial para conhecer mais de perto a nossa realidade e o caminho que percorremos todos os dias ao lado das comunidades locais. Boa visualização!',
@@ -50,6 +53,7 @@ export function NoticiasPage() {
     },
     {
       id: 'dieci-anni-creche',
+      date: '2024-10-12',
       title: t({ pt: 'Dez anos da Creche', it: 'Dieci anni della Creche', de: "Zehn Jahre Kita", en: "Ten years of the Creche" }),
       description: t({
         pt: 'O Centro Nossa Senhora Aparecida completou 10 anos. Dez anos de acolhimento, educação e crescimento compartilhado junto às crianças, famílias e comunidade de Salvador da Bahia. Um aniversário que conta uma história feita de relações, esperança e futuro.',
@@ -62,6 +66,7 @@ export function NoticiasPage() {
     },
     {
       id: 'posa-prima-pietra',
+      date: '2026-03-19',
       title: t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung", en: "Laying of the first stone" }),
       description: t({
         pt: 'O relato do início da nova escola e do momento simbólico que marcou o início de um percurso construído juntos.',
@@ -72,7 +77,9 @@ export function NoticiasPage() {
       image: primaPietraImg,
       link: '/noticias/posa-prima-pietra',
     },
-  ];
+  ].sort((a, b) => b.date.localeCompare(a.date));
+
+  const formatDate = (iso: string) => iso.split('-').reverse().join('/');
 
   return (
     <>
@@ -154,6 +161,9 @@ export function NoticiasPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
                   </div>
                   <div className="p-8">
+                    <time dateTime={noticia.date} className="block text-sm text-gray-400 mb-2">
+                      {formatDate(noticia.date)}
+                    </time>
                     <h3 className="text-2xl font-bold text-[var(--deep-blue)] mb-4 group-hover:text-[var(--warm-orange)] transition-colors duration-300">
                       {noticia.title}
                     </h3>

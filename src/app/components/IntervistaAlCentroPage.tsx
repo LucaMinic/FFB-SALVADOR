@@ -36,6 +36,7 @@ export function IntervistaAlCentroPage() {
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
               {t({ pt: 'Entrevista', it: 'Intervista', de: "Interview", en: "Interview" })}
             </p>
+            <time dateTime="2025-01-25" className="block text-white/60 text-sm mb-4">25/01/2025</time>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {t({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Zentrum", en: "Interview at the Centre" })}
             </h1>

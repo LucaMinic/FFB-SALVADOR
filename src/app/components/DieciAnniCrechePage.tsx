@@ -36,6 +36,7 @@ export function DieciAnniCrechePage() {
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
               {t({ pt: 'Aniversário', it: 'Anniversario', de: "Jubiläum", en: "Anniversary" })}
             </p>
+            <time dateTime="2024-10-12" className="block text-white/60 text-sm mb-4">12/10/2024</time>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {t({ pt: 'Dez anos da Creche', it: 'Dieci anni della Creche', de: "Zehn Jahre Kita", en: "Ten years of the Creche" })}
             </h1>

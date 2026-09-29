@@ -37,6 +37,7 @@ export function PosaPrimaPietraPage() {
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
               {t({ pt: 'Nova Escola', it: 'La Nuova Scuola', de: "Die neue Schule", en: "The New School" })}
             </p>
+            <time dateTime="2026-03-19" className="block text-white/60 text-sm mb-4">19/03/2026</time>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               {t({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung", en: "Laying of the first stone" })}
             </h1>

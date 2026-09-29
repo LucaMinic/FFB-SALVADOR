@@ -188,23 +188,24 @@ export function ContattiPage() {
                 <h3 className="text-2xl text-[var(--deep-blue)] mb-4">
                   Instagram
                 </h3>
-                <a
-                  href="https://www.instagram.com/ffbetania.salvador"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg text-[var(--deep-blue)] hover:underline block mb-4"
-                >
-                  @ffbetania.salvador
-                </a>
-                <a
-                  href="https://www.instagram.com/ffbetania.salvador"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 text-white rounded-xl font-medium transition-all"
-                  style={{ background: 'linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)' }}
-                >
-                  {t({ pt: 'Seguir no Instagram', it: 'Seguici su Instagram', de: "Folgen Sie uns auf Instagram", en: "Follow us on Instagram" })}
-                </a>
+                <div className="flex flex-col gap-4">
+                  {[
+                    { label: 'Fundação Betânia', handle: 'ffbetania.salvador' },
+                    { label: 'Creche Nossa Senhora Aparecida', handle: 'crecheaparecida' },
+                  ].map((account) => (
+                    <div key={account.handle}>
+                      <p className="text-sm text-gray-500 mb-1">{account.label}</p>
+                      <a
+                        href={`https://www.instagram.com/${account.handle}/`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg text-[var(--deep-blue)] hover:underline"
+                      >
+                        @{account.handle}
+                      </a>
+                    </div>
+                  ))}
+                </div>
               </div>
             </AnimatedSection>
           </div>

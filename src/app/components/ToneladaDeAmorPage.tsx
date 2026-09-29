@@ -58,6 +58,7 @@ export function ToneladaDeAmorPage() {
             <p className="text-white/70 uppercase tracking-[0.2em] text-sm font-medium mb-4">
               {t({ pt: 'Notícia', it: 'Notizia', de: 'Nachricht', en: 'News' })}
             </p>
+            <time dateTime="2026-08-27" className="block text-white/60 text-sm mb-4">27/08/2026</time>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Tonelada de Amor
             </h1>

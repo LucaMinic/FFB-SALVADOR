@@ -81,6 +81,7 @@ export function EventiSpecialiPage() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
           <AnimatedSection>
+            <time dateTime="2024-07-19" className="block text-white/60 text-sm mb-4">19/07/2024</time>
             <h1 className="text-5xl md:text-6xl mb-6">
               {t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
             </h1>

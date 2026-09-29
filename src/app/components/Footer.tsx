@@ -249,15 +249,24 @@ export function Footer() {
               05231656181<br />
               +5571 82491713
             </p>
-            <a
-              href="https://www.instagram.com/ffbetania.salvador"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors inline-flex items-center gap-2"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-6 h-6" />
-            </a>
+            <div className="flex flex-col gap-2">
+              {[
+                { label: 'Fundação', handle: 'ffbetania.salvador' },
+                { label: 'Creche', handle: 'crecheaparecida' },
+              ].map((account) => (
+                <a
+                  key={account.handle}
+                  href={`https://www.instagram.com/${account.handle}/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-300 hover:text-white transition-colors inline-flex items-center gap-2"
+                  aria-label={`Instagram ${account.label}`}
+                >
+                  <Instagram className="w-5 h-5 shrink-0" />
+                  <span>{account.label} · @{account.handle}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
