@@ -51,8 +51,24 @@ const jobs = pages.flatMap((p) => LANGS.map((l) => ({ path: p.path, prefix: l.pr
 const failures = [];
 let done = 0;
 
-async function render({ path, prefix }) {
-  const url = `${origin}${prefix}${path === '/' ? (prefix ? '' : '/') : path}`;
+// With several pages in parallel one can occasionally time out: retry before giving up.
+async function render(job) {
+  const url = `${origin}${job.prefix}${job.path === '/' ? (job.prefix ? '' : '/') : job.path}`;
+  for (let attempt = 1; ; attempt++) {
+    try {
+      await renderOnce(url, job);
+      break;
+    } catch (e) {
+      if (attempt < 3) continue;
+      failures.push(`${url}: ${e.message}`);
+      break;
+    }
+  }
+  done++;
+  if (done % 20 === 0 || done === jobs.length) console.log(`prerender: ${done}/${jobs.length}`);
+}
+
+async function renderOnce(url, { path, prefix }) {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
@@ -73,12 +89,8 @@ async function render({ path, prefix }) {
     const file = join(outDir, outputFile(prefix, path));
     mkdirSync(dirname(file), { recursive: true });
     writeFileSync(file, html);
-  } catch (e) {
-    failures.push(`${url}: ${e.message}`);
   } finally {
     await page.close();
-    done++;
-    if (done % 20 === 0 || done === jobs.length) console.log(`prerender: ${done}/${jobs.length}`);
   }
 }
 
