@@ -28,7 +28,7 @@ export function Donazione() {
             {t({ pt: 'Até um pequeno gesto pode fazer a diferença.', it: 'Anche un piccolo gesto può fare la differenza.', de: "Auch eine kleine Geste kann einen Unterschied machen.", en: "Even a small gesture can make a difference." })}
           </p>
 
-          <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
+          <Button to="/doe-agora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
         </div>
       </AnimatedSection>
     </section>

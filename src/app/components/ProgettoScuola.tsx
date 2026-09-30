@@ -56,7 +56,7 @@ export function ProgettoScuola() {
 
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <Button to="/progetto-scuola">{t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola', de: "Entdecken Sie das Schulprojekt", en: "Discover the school project" })}</Button>
+            <Button to="/projeto-escola">{t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola', de: "Entdecken Sie das Schulprojekt", en: "Discover the school project" })}</Button>
           </div>
         </AnimatedSection>
       </div>

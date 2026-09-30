@@ -44,7 +44,7 @@ export function FraternitaPage() {
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça a Fraternidade', it: 'Scopri la Fraternità', de: "Entdecken Sie die Gemeinschaft", en: "Discover the Fraternity" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -330,7 +330,7 @@ export function FraternitaPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {t({ pt: 'É neste contexto que nasce o Centro Nossa Senhora Aparecida', it: 'È in questo contesto che nasce la Fundação Betânia Onlus.', de: "In diesem Zusammenhang entstand die Fundação Betânia Onlus.", en: "It is in this context that Fundação Betânia Onlus was born." })}
               </p>
-              <Button variant="secondary" to="/il-centro">{t({ pt: 'Conheça o centro', it: 'Scopri la Fundação Betânia Onlus', de: "Entdecken Sie die Fundação Betânia Onlus", en: "Discover Fundação Betânia Onlus" })}</Button>
+              <Button variant="secondary" to="/o-centro">{t({ pt: 'Conheça o centro', it: 'Scopri la Fundação Betânia Onlus', de: "Entdecken Sie die Fundação Betânia Onlus", en: "Discover Fundação Betânia Onlus" })}</Button>
             </div>
           </AnimatedSection>
         </div>

@@ -39,7 +39,7 @@ const base = import.meta.env.BASE_URL;
 
 export const relatorioAreas: RelatorioArea[] = [
   {
-    slug: 'alimentazione-sana',
+    slug: 'alimentacao-saudavel',
     cardImage: areaAlimentacaoImg,
     color: 'var(--warm-orange)',
     name: { pt: 'Alimentação Saudável', it: 'Alimentazione Sana', de: "Gesunde Ernährung", en: "Healthy Eating" },
@@ -144,7 +144,7 @@ export const relatorioAreas: RelatorioArea[] = [
     ],
   },
   {
-    slug: 'identita-e-cultura',
+    slug: 'identidade-e-cultura',
     cardImage: africaImg,
     color: 'var(--warm-red)',
     name: { pt: 'Identidade e Cultura', it: 'Identità e Cultura', de: "Identität und Kultur", en: "Identity and Culture" },
@@ -171,7 +171,7 @@ export const relatorioAreas: RelatorioArea[] = [
     ],
   },
   {
-    slug: 'mondo-in-movimento',
+    slug: 'mundo-em-movimento',
     cardImage: transporteImg,
     color: 'var(--deep-blue)',
     name: { pt: 'Mundo em Movimento', it: 'Mondo in Movimento', de: "Welt in Bewegung", en: "A World in Motion" },
@@ -198,7 +198,7 @@ export const relatorioAreas: RelatorioArea[] = [
     ],
   },
   {
-    slug: 'piccoli-animali-e-natura',
+    slug: 'pequenos-animais-e-natureza',
     cardImage: miudoImg,
     color: 'var(--soft-green)',
     name: { pt: 'Pequenos Animais e Natureza', it: 'Piccoli Animali e Natura', de: "Kleine Tiere und Natur", en: "Small Animals and Nature" },

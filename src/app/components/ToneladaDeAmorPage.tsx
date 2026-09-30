@@ -201,7 +201,7 @@ export function ToneladaDeAmorPage() {
               <Button variant="primary" to="/noticias">
                 {t({ pt: 'Todas as notícias', it: 'Tutte le notizie', de: 'Alle Neuigkeiten', en: 'All news' })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: 'Donate now' })}
               </Button>
             </div>

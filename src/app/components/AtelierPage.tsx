@@ -39,7 +39,7 @@ export function AtelierPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -285,7 +285,7 @@ export function AtelierPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/asilo">
+              <Button variant="primary" to="/creche">
                 {t({ pt: 'Voltar à Creche', it: "Torna all'Asilo", de: "Zurück zur Kita", en: "Back to the Nursery School" })}
               </Button>
             </div>

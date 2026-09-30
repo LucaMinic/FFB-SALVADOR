@@ -24,7 +24,7 @@ export function ProgettiPedagogiciPage() {
         en: "A shared journey born from the desire to build together concrete opportunities for growth, autonomy and participation."
       }),
       image: autoImg,
-      link: '/documentari-racconti/auto-idea-tutti'
+      link: '/laboratorios/auto-uma-ideia-de-todos'
     },
     {
       id: 'ricordi-narrazioni',
@@ -36,7 +36,7 @@ export function ProgettiPedagogiciPage() {
         en: "A journey through memory, culture and identity through stories, images and testimonies."
       }),
       image: ricordiImg,
-      link: '/documentari-racconti/ricordi-narrazioni'
+      link: '/laboratorios/memorias-e-narrativas-africanas'
     }
   ];
 
@@ -74,7 +74,7 @@ export function ProgettiPedagogiciPage() {
               >
                 {t({ pt: 'Veja os projetos', it: 'Scopri i progetti', de: "Entdecken Sie die Projekte", en: "Discover the projects" })}
               </a>
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -167,10 +167,10 @@ export function ProgettiPedagogiciPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/il-centro">
+              <Button variant="primary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro', de: "Unterstützen Sie das Centro", en: "Support the Centre" })}
               </Button>
             </div>

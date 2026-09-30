@@ -35,7 +35,7 @@ export function CentroPage() {
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça o Centro', it: "Scopri il Centro", de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -99,7 +99,7 @@ export function CentroPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button variant="secondary" to="/storia-del-centro">
+            <Button variant="secondary" to="/historia-do-centro">
               {t({ pt: 'Conheça a história do Centro', it: 'Scopri la storia del Centro', de: "Entdecken Sie die Geschichte des Zentrums", en: "Discover the history of the Centre" })}
             </Button>
           </div>
@@ -261,7 +261,7 @@ export function CentroPage() {
                   {t({ pt: 'Um serviço educativo para a primeira infância, ativo cada dia.', it: 'Un servizio educativo per la prima infanzia, attivo ogni giorno.', de: "Ein pädagogisches Angebot für die frühe Kindheit, jeden Tag aktiv.", en: "An early childhood education service, active every day." })}
                 </p>
                 <Link
-                  to="/asilo"
+                  to="/creche"
                   className="inline-block px-8 py-3 bg-white text-[var(--soft-green)] rounded-xl font-medium hover:shadow-lg transition-all"
                 >
                   {t({ pt: 'Conheça a creche', it: "Scopri l'asilo", de: "Entdecken Sie die Kita", en: "Discover the nursery school" })}
@@ -276,7 +276,7 @@ export function CentroPage() {
                   {t({ pt: 'Um percurso em desenvolvimento para acompanhar as crianças também nos anos seguintes.', it: 'Un percorso in sviluppo per accompagnare i bambini anche negli anni successivi.', de: "Ein sich entwickelnder Weg, um die Kinder auch in den folgenden Jahren zu begleiten.", en: "A developing project to accompany children in the years that follow too." })}
                 </p>
                 <Link
-                  to="/progetto-scuola"
+                  to="/projeto-escola"
                   className="inline-block px-8 py-3 bg-white text-[var(--warm-orange)] rounded-xl font-medium hover:shadow-lg transition-all"
                 >
                   {t({ pt: 'Conheça o projeto escola', it: 'Scopri il progetto scuola', de: "Entdecken Sie das Schulprojekt", en: "Discover the school project" })}
@@ -298,8 +298,8 @@ export function CentroPage() {
               {t({ pt: 'A sua ajuda permite continuar esta presença cotidiano e alcançar cada vez mais crianças e famílias.', it: 'Il tuo aiuto permette di continuare questa presenza quotidiana e raggiungere sempre più bambini e famiglie.', de: "Ihre Hilfe ermöglicht es, diese tägliche Präsenz fortzuführen und immer mehr Kinder und Familien zu erreichen.", en: "Your help makes it possible to continue this daily presence and reach more and more children and families." })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
-              <Button variant="secondary" to="/cosa-puoi-fare-tu">{t({ pt: 'Saiba como ajudar', it: 'Scopri come aiutare', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
+              <Button to="/doe-agora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
+              <Button variant="secondary" to="/como-ajudar">{t({ pt: 'Saiba como ajudar', it: 'Scopri come aiutare', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
             </div>
           </AnimatedSection>
         </div>

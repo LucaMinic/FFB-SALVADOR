@@ -283,7 +283,7 @@ export function DonaOraPage() {
                     en: "Concretely accompany the educational journey of a child at the nursery school, helping them grow up in a stable and welcoming environment."
                   })}
                 </p>
-                <Button variant="primary" to="/sostegno-a-distanza" className="text-lg px-8 py-4">
+                <Button variant="primary" to="/apoio-a-distancia" className="text-lg px-8 py-4">
                   {t({ pt: 'Descobre o apoio à distância', it: 'Scopri il sostegno a distanza', de: "Mehr über die Patenschaft erfahren", en: "Discover distance sponsorship" })}
                 </Button>
               </div>
@@ -388,7 +388,7 @@ export function DonaOraPage() {
             </p>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <Button variant="secondary" to="/trasparenza" className="text-lg px-8 py-3">
+            <Button variant="secondary" to="/transparencia" className="text-lg px-8 py-3">
               {t({ pt: 'Ir à seção transparência', it: 'Vai alla sezione trasparenza', de: "Zum Bereich Transparenz", en: "Go to the transparency section" })}
             </Button>
           </AnimatedSection>
@@ -486,7 +486,7 @@ export function DonaOraPage() {
               <Button variant="primary" href="#come-donare" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="secondary" to="/contatos" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
             </div>

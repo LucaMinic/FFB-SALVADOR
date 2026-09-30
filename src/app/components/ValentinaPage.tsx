@@ -41,10 +41,10 @@ export function ValentinaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/il-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="secondary" to="/o-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>
@@ -315,7 +315,7 @@ export function ValentinaPage() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <Button variant="primary" to="/il-centro" className="text-lg px-8 py-3">
+            <Button variant="primary" to="/o-centro" className="text-lg px-8 py-3">
               {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
             </Button>
           </AnimatedSection>
@@ -346,10 +346,10 @@ export function ValentinaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" to="/iniziative" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="secondary" to="/iniciativas" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça outras iniciativas', it: 'Scopri altre iniziative', de: "Entdecken Sie weitere Initiativen", en: "Discover other initiatives" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>

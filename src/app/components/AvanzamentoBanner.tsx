@@ -51,7 +51,7 @@ export function AvanzamentoBanner() {
 
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0 mt-0.5 sm:mt-0">
           <Link
-            to="/avanzamento-lavori"
+            to="/andamento-das-obras"
             aria-label={t({ it: 'Scopri di più', pt: 'Saiba mais', de: 'Mehr erfahren', en: "Learn more" })}
             className="flex-shrink-0 flex items-center justify-center gap-1.5 w-8 h-8 sm:w-auto sm:h-auto text-xs sm:text-sm font-bold text-[var(--warm-orange)] bg-white rounded-full whitespace-nowrap shadow-sm hover:shadow-md hover:-translate-y-px transition-all sm:px-4 sm:py-1.5"
           >

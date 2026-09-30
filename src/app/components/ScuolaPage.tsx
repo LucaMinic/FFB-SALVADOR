@@ -81,7 +81,7 @@ export function ScuolaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" href="#il-progetto" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
@@ -126,7 +126,7 @@ export function ScuolaPage() {
               <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-3xl mx-auto">
                 {t({ pt: 'Quer ver a que ponto estão as obras?', it: 'Vuoi vedere a che punto sono i lavori?', de: "Möchten Sie sehen, wie weit die Bauarbeiten fortgeschritten sind?", en: "Want to see how the works are progressing?" })}
               </p>
-              <Button variant="secondary" to="/avanzamento-lavori">
+              <Button variant="secondary" to="/andamento-das-obras">
                 {t({ pt: 'Veja o avanço das obras', it: "Guarda l'avanzamento lavori", de: "Baufortschritt ansehen", en: "See the construction progress" })}
               </Button>
             </div>
@@ -575,7 +575,7 @@ export function ScuolaPage() {
 
           <AnimatedSection>
             <div className="text-center">
-              <Button variant="secondary" to="/avanzamento-lavori">{t({ pt: 'Acompanhe as atualizações', it: 'Segui gli aggiornamenti', de: "Bleiben Sie auf dem Laufenden", en: "Follow the updates" })}</Button>
+              <Button variant="secondary" to="/andamento-das-obras">{t({ pt: 'Acompanhe as atualizações', it: 'Segui gli aggiornamenti', de: "Bleiben Sie auf dem Laufenden", en: "Follow the updates" })}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -659,8 +659,8 @@ export function ScuolaPage() {
 
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
-              <Button variant="secondary" to="/dona-ora">{t({ pt: 'Saiba como apoiar', it: 'Scopri come sostenere', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
+              <Button to="/doe-agora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
+              <Button variant="secondary" to="/doe-agora">{t({ pt: 'Saiba como apoiar', it: 'Scopri come sostenere', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
             </div>
           </AnimatedSection>
         </div>

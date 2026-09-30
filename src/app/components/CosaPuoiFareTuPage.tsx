@@ -55,7 +55,7 @@ export function CosaPuoiFareTuPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button to="/dona-ora">
+              <Button to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" href="#intro-section">
@@ -126,7 +126,7 @@ export function CosaPuoiFareTuPage() {
                   en: "With your help we can support the nursery school, daily meals, educational projects and the Centre's growth."
                 })}
               </p>
-              <Button to="/dona-ora">
+              <Button to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </AnimatedSection>
@@ -161,7 +161,7 @@ export function CosaPuoiFareTuPage() {
                   92028960378
                 </p>
               </div>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Erfahren Sie mehr", en: "Learn more" })}
               </Button>
             </AnimatedSection>
@@ -208,7 +208,7 @@ export function CosaPuoiFareTuPage() {
                   en: "Concretely accompany a child's educational journey, helping them grow up in a stable and welcoming environment."
                 })}
               </p>
-              <Button to="/sostegno-a-distanza">
+              <Button to="/apoio-a-distancia">
                 {t({ pt: 'Descubra o apoio à distância', it: 'Scopri il sostegno a distanza', de: "Entdecken Sie die Patenschaft", en: "Discover distance sponsorship" })}
               </Button>
             </AnimatedSection>
@@ -235,7 +235,7 @@ export function CosaPuoiFareTuPage() {
                   en: "Companies, businesses and professionals can also support the Centre through donations, services or partnerships."
                 })}
               </p>
-              <Button to="/contatti">
+              <Button to="/contatos">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
             </AnimatedSection>
@@ -277,7 +277,7 @@ export function CosaPuoiFareTuPage() {
                 en: "Sharing this reality means allowing other people to encounter and support this work."
               })}
             </p>
-            <Button to="/il-centro">
+            <Button to="/o-centro">
               {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
             </Button>
           </AnimatedSection>
@@ -391,10 +391,10 @@ export function CosaPuoiFareTuPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" to="/contatti">
+              <Button variant="secondary" to="/contatos">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -431,10 +431,10 @@ export function CosaPuoiFareTuPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button to="/dona-ora">
+              <Button to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/il-centro">
+              <Button variant="secondary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>

@@ -441,7 +441,7 @@ export function CookiePolicyPage() {
                 })}
               </p>
               <Link
-                to="/privacy-policy"
+                to="/politica-de-privacidade"
                 className="inline-block px-8 py-3 bg-white text-[var(--deep-blue)] rounded-xl font-medium hover:bg-gray-100 transition-colors"
               >
                 Privacy Policy

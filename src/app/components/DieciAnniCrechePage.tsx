@@ -185,10 +185,10 @@ export function DieciAnniCrechePage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/il-centro">
+              <Button variant="primary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ pt: 'Apoie o Centro', it: 'Sostieni il Centro', de: "Unterstützen Sie das Zentrum", en: "Support the Centre" })}
               </Button>
             </div>

@@ -66,7 +66,7 @@ export function TrasparenzaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" href="#responsabilita" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
@@ -206,7 +206,7 @@ export function TrasparenzaPage() {
 
           <AnimatedSection delay={0.3}>
             <div className="text-center">
-              <Button variant="secondary" to="/riconoscimenti-istituzionali" className="text-lg px-8 py-3">
+              <Button variant="secondary" to="/reconhecimentos-institucionais" className="text-lg px-8 py-3">
                 {t({ pt: 'Ir aos reconhecimentos institucionais', it: 'Vai ai riconoscimenti istituzionali', de: "Zu den institutionellen Anerkennungen", en: "Go to institutional recognitions" })}
               </Button>
             </div>
@@ -254,10 +254,10 @@ export function TrasparenzaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-3">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-3">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-3">
+              <Button variant="secondary" to="/contatos" className="text-lg px-8 py-3">
                 {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
             </div>

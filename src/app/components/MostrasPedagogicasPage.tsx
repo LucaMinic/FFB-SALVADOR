@@ -36,7 +36,7 @@ export function MostrasPedagogicasPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -117,7 +117,7 @@ export function MostrasPedagogicasPage() {
                 en: "In this way, the Pedagogical Exhibitions become an important tool for documenting, celebrating and valuing children's learning.",
               })}
             </p>
-            <Button variant="primary" to="/dona-ora" className="text-lg px-10 py-4">
+            <Button variant="primary" to="/doe-agora" className="text-lg px-10 py-4">
               {t({ pt: 'Apoie nosso trabalho', it: 'Sostieni il nostro lavoro', de: "Unterstützen Sie unsere Arbeit", en: "Support our work" })}
             </Button>
           </AnimatedSection>

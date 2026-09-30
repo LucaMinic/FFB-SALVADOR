@@ -209,7 +209,7 @@ const entries: TimelineEntry[] = [
     },
     cta: {
       label: { it: "Segui l'avanzamento lavori", pt: 'Acompanhe o andamento das obras', de: 'Verfolgen Sie den Baufortschritt', en: "Follow the construction progress" },
-      to: '/avanzamento-lavori',
+      to: '/andamento-das-obras',
     },
     status: 'in-progress',
   },
@@ -278,7 +278,7 @@ export function StoriaCentroPage() {
               <Button variant="secondary" href="#cronologia" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ it: 'Scopri la cronologia', pt: 'Conheça a cronologia', de: 'Entdecken Sie die Chronologie', en: "Discover the timeline" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: "Donate now" })}
               </Button>
             </div>
@@ -413,10 +413,10 @@ export function StoriaCentroPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button to="/dona-ora">
+              <Button to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/progetto-scuola">
+              <Button variant="secondary" to="/projeto-escola">
                 {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola', de: 'Entdecken Sie das Schulprojekt', en: "Discover the school project" })}
               </Button>
             </div>

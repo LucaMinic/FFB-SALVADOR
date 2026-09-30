@@ -63,7 +63,7 @@ export function AlimentoQueAcolhePage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -253,12 +253,12 @@ export function AlimentoQueAcolhePage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
             <Link
-              to="/trasparenza#documenti"
+              to="/transparencia#documenti"
               className="inline-flex items-center gap-2 text-[var(--deep-blue)] font-semibold text-lg hover:gap-3 hover:text-[var(--warm-orange)] transition-all duration-300"
             >
               <ArrowLeft className="w-5 h-5" />

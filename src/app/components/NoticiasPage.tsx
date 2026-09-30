@@ -49,7 +49,7 @@ export function NoticiasPage() {
         en: "We are happy to share with you an interview conducted by the Centro Missionario di Verona on the occasion of the meeting of Italian missionaries in Brazil. This piece tells the story of our mission and the work we carry out in Salvador de Bahia, offering a special opportunity to get to know our reality more closely and the journey we walk every day alongside the local communities. Enjoy!"
       }),
       image: intervistaImg,
-      link: '/noticias/intervista-centro',
+      link: '/noticias/entrevista-ao-centro',
     },
     {
       id: 'dieci-anni-creche',
@@ -62,7 +62,7 @@ export function NoticiasPage() {
         en: "The Centro Nossa Senhora Aparecida has turned 10 years old. Ten years of care, education and growth shared with children, families and the community of Salvador de Bahia. An anniversary that tells a story made of relationships, hope and the future."
       }),
       image: dieciAnniImg,
-      link: '/noticias/dieci-anni-creche',
+      link: '/noticias/dez-anos-da-creche',
     },
     {
       id: 'posa-prima-pietra',
@@ -75,7 +75,7 @@ export function NoticiasPage() {
         en: "The story of the beginning of the new school and the symbolic moment that marked the start of a journey built together."
       }),
       image: primaPietraImg,
-      link: '/noticias/posa-prima-pietra',
+      link: '/noticias/pedra-fundamental',
     },
   ].sort((a, b) => b.date.localeCompare(a.date));
 
@@ -115,7 +115,7 @@ export function NoticiasPage() {
               >
                 {t({ pt: 'Veja as notícias', it: 'Vedi le notizie', de: 'Nachrichten ansehen', en: 'See the news' })}
               </a>
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: 'Donate now' })}
               </Button>
             </div>
@@ -200,10 +200,10 @@ export function NoticiasPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: 'Jetzt spenden', en: 'Donate now' })}
               </Button>
-              <Button variant="secondary" to="/il-centro">
+              <Button variant="secondary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: 'Entdecken Sie das Centro', en: 'Discover the Centre' })}
               </Button>
             </div>

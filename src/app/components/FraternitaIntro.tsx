@@ -39,7 +39,7 @@ export function FraternitaIntro() {
             </p>
 
             <div className="text-center md:text-left">
-              <Button variant="secondary" to="/la-fraternita">
+              <Button variant="secondary" to="/a-fraternidade">
                 {t({ pt: 'Conheça a Fraternità', it: 'Scopri la Fraternità', de: "Entdecken Sie die Gemeinschaft", en: "Discover the Fraternity" })}
               </Button>
             </div>

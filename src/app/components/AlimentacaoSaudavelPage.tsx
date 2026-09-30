@@ -114,7 +114,7 @@ export function AlimentacaoSaudavelPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -335,7 +335,7 @@ export function AlimentacaoSaudavelPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Apoie nosso trabalho', it: 'Sostieni il nostro lavoro', de: "Unterstützen Sie unsere Arbeit", en: "Support our work" })}
               </Button>
               <Button variant="secondary" to="/projetos-permanentes">

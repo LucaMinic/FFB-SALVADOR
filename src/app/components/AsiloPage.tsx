@@ -57,7 +57,7 @@ export function AsiloPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
@@ -520,8 +520,8 @@ export function AsiloPage() {
               {t({ pt: 'A sua ajuda permite continuar a acolher, educar, nutrir e acompanhar crianças e famílias que vivem situações de vulnerabilidade.', it: 'Il tuo aiuto permette di continuare ad accogliere, educare, nutrire e accompagnare bambini e famiglie che vivono situazioni di vulnerabilità.', de: "Ihre Hilfe ermöglicht es, weiterhin Kinder und Familien in schwierigen Lebenssituationen aufzunehmen, zu bilden, zu ernähren und zu begleiten.", en: "Your help makes it possible to keep welcoming, educating, nourishing and supporting children and families living in vulnerable situations." })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
-              <Button variant="secondary" to="/dona-ora">{t({ pt: 'Saiba como apoiar', it: 'Scopri come sostenere', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
+              <Button to="/doe-agora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
+              <Button variant="secondary" to="/doe-agora">{t({ pt: 'Saiba como apoiar', it: 'Scopri come sostenere', de: "Erfahren Sie, wie Sie helfen können", en: "Discover how to help" })}</Button>
             </div>
           </AnimatedSection>
         </div>

@@ -13,10 +13,10 @@ export function Impatto() {
   const t = useT();
 
   const points = [
-    { text: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung", en: "Daily care" }), image: accoglienzaImg, href: '/accoglienza-quotidiana' },
-    { text: t({ pt: 'Educação', it: 'Educazione', de: "Bildung", en: "Education" }), image: educazioneImg, href: '/educazione' },
-    { text: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Pflege und Ernährung", en: "Care and nutrition" }), image: curaImg, href: '/cura-e-nutrizione' },
-    { text: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting families" }), image: accompagnamentoImg, href: '/accompagnamento-famiglie' }
+    { text: t({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Betreuung", en: "Daily care" }), image: accoglienzaImg, href: '/acolhimento-diario' },
+    { text: t({ pt: 'Educação', it: 'Educazione', de: "Bildung", en: "Education" }), image: educazioneImg, href: '/educacao' },
+    { text: t({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Pflege und Ernährung", en: "Care and nutrition" }), image: curaImg, href: '/cuidado-e-nutricao' },
+    { text: t({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Begleitung der Familien", en: "Supporting families" }), image: accompagnamentoImg, href: '/acompanhamento-das-familias' }
   ];
 
   return (
@@ -24,7 +24,7 @@ export function Impatto() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           <AnimatedSection delay={0}>
-            <Link to="/asilo" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
+            <Link to="/creche" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
                 <img loading="lazy"
                   src={dailyLifeImage}
@@ -39,7 +39,7 @@ export function Impatto() {
             </Link>
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
-            <Link to="/progetto-scuola" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
+            <Link to="/projeto-escola" className="block overflow-hidden rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)] hover:-translate-y-2 transition-all duration-500">
               <div className="overflow-hidden">
                 <img loading="lazy"
                   src={educationImage}

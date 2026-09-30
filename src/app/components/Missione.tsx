@@ -38,7 +38,7 @@ export function Missione() {
               })}
             </p>
 
-            <Button variant="secondary" to="/la-fundacao">{t({ pt: 'Conheça a Fundação Betânia', it: 'Scopri la Fundação Betânia', de: "Entdecken Sie die Fundação Betânia", en: "Discover Fundação Betânia" })}</Button>
+            <Button variant="secondary" to="/a-fundacao">{t({ pt: 'Conheça a Fundação Betânia', it: 'Scopri la Fundação Betânia', de: "Entdecken Sie die Fundação Betânia", en: "Discover Fundação Betânia" })}</Button>
           </AnimatedSection>
         </div>
       </div>

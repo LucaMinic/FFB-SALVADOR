@@ -19,7 +19,7 @@ export function ProjetosPermanentesPage() {
     {
       img: atelieImg,
       color: 'var(--warm-orange)',
-      link: '/atelier',
+      link: '/atelie',
       title: t({ pt: 'Ateliê', it: 'Atelier', de: "Atelier", en: "Atelier" }),
       desc: t({
         pt: 'O ateliê é um espaço de criação, pesquisa e expressão, onde as crianças exploram diferentes materiais, desenvolvem a criatividade, comunicam ideias e descobrem novas formas de aprender por meio das múltiplas linguagens.',
@@ -55,7 +55,7 @@ export function ProjetosPermanentesPage() {
     {
       img: formacaoImg,
       color: 'var(--deep-blue)',
-      link: '/la-fraternita',
+      link: '/a-fraternidade',
       title: t({ pt: 'Formação Religiosa', it: 'Formazione Religiosa', de: "Religiöse Bildung", en: "Religious Education" }),
       desc: t({
         pt: 'Favorece o desenvolvimento de valores humanos e cristãos, como respeito, solidariedade, fraternidade, gratidão e amor ao próximo, contribuindo para a formação ética e espiritual das crianças.',
@@ -94,7 +94,7 @@ export function ProjetosPermanentesPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -181,7 +181,7 @@ export function ProjetosPermanentesPage() {
                 en: "With your support we can continue to offer rich and meaningful experiences for the children.",
               })}
             </p>
-            <Button variant="primary" to="/dona-ora" className="text-lg px-10 py-4">
+            <Button variant="primary" to="/doe-agora" className="text-lg px-10 py-4">
               {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
             </Button>
           </AnimatedSection>

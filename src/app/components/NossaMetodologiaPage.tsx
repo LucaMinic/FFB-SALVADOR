@@ -58,7 +58,7 @@ export function NossaMetodologiaPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <a
@@ -627,7 +627,7 @@ export function NossaMetodologiaPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/atelier">
+              <Button variant="primary" to="/atelie">
                 {t({ pt: 'O Ateliê', it: "L'Atelier", de: "Das Atelier", en: "The Atelier" })}
               </Button>
             </div>

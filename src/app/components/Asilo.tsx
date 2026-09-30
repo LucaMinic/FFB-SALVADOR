@@ -61,7 +61,7 @@ export function Asilo() {
 
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <Button variant="secondary" to="/asilo">{t({ pt: 'Conheça a creche', it: "Scopri l'asilo", de: "Entdecken Sie die Kita", en: "Discover the nursery school" })}</Button>
+            <Button variant="secondary" to="/creche">{t({ pt: 'Conheça a creche', it: "Scopri l'asilo", de: "Entdecken Sie die Kita", en: "Discover the nursery school" })}</Button>
           </div>
         </AnimatedSection>
       </div>

@@ -49,7 +49,7 @@ export function Credibilita() {
             <Button variant="secondary" to="/noticias/eventos-especiais">{t({ pt: 'Conheça os eventos especiais', it: 'Scopri gli eventi speciali', de: "Entdecken Sie die besonderen Ereignisse", en: "Discover the special events" })}</Button>
           </div>
           <div className="flex justify-center mt-4">
-            <Button variant="primary" to="/riconoscimenti-istituzionali">{t({ pt: 'Conheça os reconhecimentos institucionais', it: 'Scopri i riconoscimenti istituzionali', de: "Entdecken Sie die institutionellen Anerkennungen", en: "Discover the institutional recognitions" })}</Button>
+            <Button variant="primary" to="/reconhecimentos-institucionais">{t({ pt: 'Conheça os reconhecimentos institucionais', it: 'Scopri i riconoscimenti istituzionali', de: "Entdecken Sie die institutionellen Anerkennungen", en: "Discover the institutional recognitions" })}</Button>
           </div>
         </AnimatedSection>
       </div>

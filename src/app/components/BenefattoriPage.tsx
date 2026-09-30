@@ -35,7 +35,7 @@ export function BenefattoriPage() {
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer", en: "Become a benefactor" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -100,7 +100,7 @@ export function BenefattoriPage() {
               <p className="text-2xl text-gray-700 mb-6 italic">
                 {t({ pt: 'O seu logo poderia estar aqui.', it: 'Il tuo logo potrebbe essere qui.', de: "Ihr Logo könnte hier stehen.", en: "Your logo could be here." })}
               </p>
-              <Button variant="primary" to="/dona-ora">
+              <Button variant="primary" to="/doe-agora">
                 {t({ pt: 'Descubra como apoiar o projeto', it: 'Scopri come sostenere il progetto', de: "Erfahren Sie, wie Sie das Projekt unterstützen können", en: "Discover how to support the project" })}
               </Button>
             </div>
@@ -224,10 +224,10 @@ export function BenefattoriPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-3">
+              <Button variant="secondary" to="/contatos" className="text-lg px-8 py-3">
                 {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-3">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-3">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -254,7 +254,7 @@ export function BenefattoriPage() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <Button variant="secondary" to="/trasparenza" className="text-base px-6 py-2">
+            <Button variant="secondary" to="/transparencia" className="text-base px-6 py-2">
               {t({ pt: 'Ir à transparência', it: 'Vai alla trasparenza', de: "Zur Transparenz", en: "Go to transparency" })}
             </Button>
           </AnimatedSection>
@@ -288,7 +288,7 @@ export function BenefattoriPage() {
               <Button variant="secondary" href="#diventa-benefattore" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Torne-se benfeitor', it: 'Diventa benefattore', de: "Werden Sie Förderer", en: "Become a benefactor" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>

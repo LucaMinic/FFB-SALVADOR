@@ -29,7 +29,7 @@ const withSuffix = (b: Bilingual): Bilingual => ({ pt: b.pt + suffix.pt, it: b.i
 
 export const seoMeta: Record<string, PageMeta> = {
   '/': defaultMeta,
-  '/la-fundacao': {
+  '/a-fundacao': {
     title: withSuffix({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS", en: "Fundação Betania ONLUS" }),
     description: {
       pt: 'A Fundação Betania ONLUS é uma presença ao lado das crianças e das famílias mais vulneráveis de Salvador da Bahia, nascida da Fraternidade Franciscana de Betânia.',
@@ -38,7 +38,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Fundação Betania ONLUS is an organisation serving the most vulnerable children and families of Salvador de Bahia, born from the Franciscan Fraternity of Betania.",
     },
   },
-  '/la-fraternita': {
+  '/a-fraternidade': {
     title: withSuffix({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }),
     description: {
       pt: 'Uma vida partilhada entre oração, acolhimento e fraternidade: conheça a Fraternidade Franciscana de Betânia em Salvador da Bahia.',
@@ -47,7 +47,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A life shared between prayer, welcome and fraternity: discover the Franciscan Fraternity of Betania in Salvador de Bahia.",
     },
   },
-  '/il-centro': {
+  '/o-centro': {
     title: withSuffix({ pt: 'O Centro Nossa Senhora Aparecida', it: 'Il Centro Nossa Senhora Aparecida', de: "Das Centro Nossa Senhora Aparecida", en: "The Centro Nossa Senhora Aparecida" }),
     description: {
       pt: 'O Centro Nossa Senhora Aparecida é uma presença diária no coração de Salvador da Bahia, com creche, projeto escola e acompanhamento das famílias.',
@@ -56,7 +56,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "The Centro Nossa Senhora Aparecida is a daily presence in the heart of Salvador de Bahia, with a nursery school, school project and support for families.",
     },
   },
-  '/storia-del-centro': {
+  '/historia-do-centro': {
     title: withSuffix({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums", en: "The History of the Centre" }),
     description: {
       pt: 'Da fundação da Fraternidade Franciscana de Betânia em 1982 até o projeto da nova escola: a cronologia da missão do Centro Nossa Senhora Aparecida em Salvador da Bahia.',
@@ -65,7 +65,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "From the founding of the Franciscan Fraternity of Betania in 1982 to the new school project: the timeline of the mission of the Centro Nossa Senhora Aparecida in Salvador de Bahia.",
     },
   },
-  '/asilo': {
+  '/creche': {
     title: withSuffix({ pt: 'A creche do Centro Nossa Senhora Aparecida', it: "L'asilo del Centro Nossa Senhora Aparecida", de: "Die Kita des Centro Nossa Senhora Aparecida", en: "The nursery school of the Centro Nossa Senhora Aparecida" }),
     description: {
       pt: 'Acolhendo e transformando futuros: conheça a creche do Centro Nossa Senhora Aparecida, um serviço educativo diário para a primeira infância em Salvador da Bahia.',
@@ -74,7 +74,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Welcoming today, building the future: discover the nursery school of the Centro Nossa Senhora Aparecida, a daily early childhood education service in Salvador de Bahia.",
     },
   },
-  '/progetto-scuola': {
+  '/projeto-escola': {
     title: withSuffix({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt", en: "School project" }),
     description: {
       pt: 'Juntos construímos uma escola e um futuro para as crianças de Salvador da Bahia: conheça o Projeto Escola do Centro Nossa Senhora Aparecida.',
@@ -83,7 +83,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Together we are building a school and a future for the children of Salvador de Bahia: discover the School Project of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/dona-ora': {
+  '/doe-agora': {
     title: withSuffix({ pt: 'Apoie o Centro Nossa Senhora Aparecida', it: 'Sostieni il Centro Nossa Senhora Aparecida', de: "Unterstützen Sie das Centro Nossa Senhora Aparecida", en: "Support the Centro Nossa Senhora Aparecida" }),
     description: {
       pt: 'Cada contribuição ajuda concretamente crianças e famílias a viver um percurso de educação, cuidado e crescimento. Doe agora.',
@@ -92,7 +92,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Every contribution concretely helps children and families live a journey of education, care and growth. Donate now.",
     },
   },
-  '/cosa-puoi-fare-tu': {
+  '/como-ajudar': {
     title: withSuffix({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können", en: "What You Can Do" }),
     description: {
       pt: 'Cada gesto pode se tornar uma presença concreta na vida de uma criança e de uma família: descubra como pode ajudar.',
@@ -101,7 +101,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Every gesture can become a real presence in the life of a child and a family: discover how you can help.",
     },
   },
-  '/benefattori': {
+  '/benfeitores': {
     title: withSuffix({ pt: 'Obrigado a quem caminha conosco', it: 'Grazie a chi cammina con noi', de: "Danke an alle, die mit uns gehen", en: "Thank You to Those Who Walk With Us" }),
     description: {
       pt: 'Cada gesto de apoio contribui concretamente para o crescimento do Centro Nossa Senhora Aparecida e dos seus projetos educativos.',
@@ -110,7 +110,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Every act of support contributes concretely to the growth of the Centro Nossa Senhora Aparecida and its educational projects.",
     },
   },
-  '/contatti': {
+  '/contatos': {
     title: withSuffix({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }),
     description: {
       pt: 'Para informações, colaborações ou apoio aos projetos da Fundação Betania ONLUS em Salvador da Bahia, entre em contato conosco.',
@@ -119,7 +119,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "For information, collaborations or support for the projects of Fundação Betania ONLUS in Salvador de Bahia, contact us.",
     },
   },
-  '/riconoscimenti-istituzionali': {
+  '/reconhecimentos-institucionais': {
     title: withSuffix({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen", en: "Institutional Recognitions" }),
     description: {
       pt: 'Um caminho reconhecido e apoiado por instituições, entidades públicas e realidades internacionais.',
@@ -128,7 +128,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A journey recognised and supported by institutions, public bodies and international organisations.",
     },
   },
-  '/iniziative': {
+  '/iniciativas': {
     title: withSuffix({ pt: 'Iniciativas', it: 'Iniziative', de: "Initiativen", en: "Initiatives" }),
     description: {
       pt: 'Projetos concretos para apoiar o Centro Nossa Senhora Aparecida e as suas crianças.',
@@ -137,7 +137,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Concrete projects to support the Centro Nossa Senhora Aparecida and its children.",
     },
   },
-  '/aiutiamo-valentina': {
+  '/ajudamos-valentina': {
     title: withSuffix({ pt: 'Ajudamos Valentina', it: 'Aiutiamo Valentina', de: "Wir helfen Valentina", en: "Let's Help Valentina" }),
     description: {
       pt: 'Uma história concreta de fragilidade, cuidado e esperança em Salvador da Bahia: uma iniciativa nascida para ajudar Valentina e a sua família.',
@@ -146,7 +146,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A real story of vulnerability, care and hope in Salvador de Bahia: an initiative created to help Valentina and her family.",
     },
   },
-  '/trasparenza': {
+  '/transparencia': {
     title: withSuffix({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz", en: "Transparency" }),
     description: {
       pt: 'Cada contribuição é transformada em presença concreta, educação e apoio para crianças e famílias: conheça o nosso compromisso com a transparência.',
@@ -191,7 +191,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Moments, encounters and visits that have marked the journey of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/progetti-pedagogici': {
+  '/laboratorios': {
     title: withSuffix({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" }),
     description: {
       pt: 'Experiências, atividades e percursos educativos que acompanham o crescimento das crianças do Centro Nossa Senhora Aparecida.',
@@ -200,7 +200,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Experiences, activities and educational journeys that accompany the growth of the children of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/accoglienza-quotidiana': {
+  '/acolhimento-diario': {
     title: withSuffix({ pt: 'Acolhimento diário', it: 'Accoglienza quotidiana', de: "Tägliche Aufnahme", en: "Daily Care" }),
     description: {
       pt: 'Cada criança precisa sentir-se acolhida, escutada e reconhecida. No Centro Nossa Senhora Aparecida, o acolhimento é o modo como vivemos cada dia.',
@@ -209,7 +209,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Every child needs to feel welcomed, listened to and recognised. At the Centro Nossa Senhora Aparecida, welcoming is the way we live every day.",
     },
   },
-  '/educazione': {
+  '/educacao': {
     title: withSuffix({ pt: 'Educação', it: 'Educazione', de: "Bildung", en: "Education" }),
     description: {
       pt: 'Educar é acompanhar cada criança na descoberta de si mesma, do mundo e das suas possibilidades: a missão educativa do Centro Nossa Senhora Aparecida.',
@@ -218,7 +218,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Educating means accompanying every child in the discovery of themselves, the world and their own possibilities: the educational mission of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/cura-e-nutrizione': {
+  '/cuidado-e-nutricao': {
     title: withSuffix({ pt: 'Cuidado e nutrição', it: 'Cura e nutrizione', de: "Fürsorge und Ernährung", en: "Care and Nutrition" }),
     description: {
       pt: 'Um corpo saudável é a base de qualquer aprendizagem: como o Centro Nossa Senhora Aparecida garante alimentação, saúde e bem-estar às crianças.',
@@ -227,7 +227,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A healthy body is the foundation of all learning: how the Centro Nossa Senhora Aparecida guarantees nutrition, health and wellbeing for children.",
     },
   },
-  '/accompagnamento-famiglie': {
+  '/acompanhamento-das-familias': {
     title: withSuffix({ pt: 'Acompanhamento das famílias', it: 'Accompagnamento delle famiglie', de: "Familienbegleitung", en: "Supporting Families" }),
     description: {
       pt: 'Acompanhar uma criança significa também caminhar junto à sua família: o cuidado que se estende além das paredes do Centro.',
@@ -236,7 +236,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Accompanying a child also means walking alongside their family: care that extends beyond the walls of the Centre.",
     },
   },
-  '/noticias/intervista-centro': {
+  '/noticias/entrevista-ao-centro': {
     title: withSuffix({ pt: 'Entrevista ao Centro', it: 'Intervista al Centro', de: "Interview mit dem Zentrum", en: "Interview at the Centre" }),
     description: {
       pt: 'Um olhar autêntico sobre a missão e o trabalho educativo, social e comunitário do Centro Nossa Senhora Aparecida em Salvador da Bahia.',
@@ -245,7 +245,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "An authentic look at the mission and the educational, social and community work of the Centro Nossa Senhora Aparecida in Salvador de Bahia.",
     },
   },
-  '/noticias/visita-presidente': {
+  '/noticias/visita-do-presidente': {
     title: withSuffix({ pt: 'A visita do Presidente da República Italiana', it: 'La visita del Presidente della Repubblica Italiana', de: "Der Besuch des Präsidenten der Italienischen Republik", en: "The visit of the President of the Italian Republic" }),
     description: {
       pt: 'Um momento histórico de encontro, reconhecimento e proximidade à missão educativa e social do Centro Nossa Senhora Aparecida.',
@@ -254,7 +254,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A historic moment of encounter, recognition and closeness to the educational and social mission of the Centro Nossa Senhora Aparecida.",
     },
   },
-  '/noticias/dieci-anni-creche': {
+  '/noticias/dez-anos-da-creche': {
     title: withSuffix({ pt: 'Dez anos da Creche', it: 'Dieci anni della Creche', de: "Zehn Jahre Kita", en: "Ten Years of the Creche" }),
     description: {
       pt: 'Dez anos de acolhimento, educação e crescimento compartilhado junto às crianças, famílias e comunidade de Salvador da Bahia.',
@@ -263,7 +263,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Ten years of care, education and growth shared with children, families and the community of Salvador de Bahia.",
     },
   },
-  '/noticias/posa-prima-pietra': {
+  '/noticias/pedra-fundamental': {
     title: withSuffix({ pt: 'Lançamento da pedra fundamental', it: 'Posa della prima pietra', de: "Grundsteinlegung", en: "Laying of the First Stone" }),
     description: {
       pt: 'O início concreto de um lugar pensado para acolher, educar e acompanhar novas gerações: o lançamento da pedra fundamental do Projeto Escola.',
@@ -272,7 +272,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "The concrete beginning of a place designed to welcome, educate and accompany new generations: the laying of the first stone of the School Project.",
     },
   },
-  '/documentari-racconti/auto-idea-tutti': {
+  '/laboratorios/auto-uma-ideia-de-todos': {
     title: withSuffix({ pt: 'Auto: uma ideia de todos', it: 'Auto: un\'idea di tutti', de: "Auto: eine Idee von allen", en: "Auto: Everyone's Idea" }),
     description: {
       pt: 'Um percurso compartilhado nascido do desejo de construir juntos possibilidades concretas de crescimento, autonomia e participação.',
@@ -281,7 +281,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A shared journey born from the desire to build together concrete opportunities for growth, autonomy and participation.",
     },
   },
-  '/documentari-racconti/ricordi-narrazioni': {
+  '/laboratorios/memorias-e-narrativas-africanas': {
     title: withSuffix({ pt: 'Memórias e narrativas africanas', it: 'Ricordi e narrazioni africane', de: "Afrikanische Erinnerungen und Erzählungen", en: "African Memories and Stories" }),
     description: {
       pt: 'Uma viagem entre memória, cultura e identidade através de relatos, imagens e testemunhos.',
@@ -290,7 +290,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A journey through memory, culture and identity through stories, images and testimonies.",
     },
   },
-  '/avanzamento-lavori': {
+  '/andamento-das-obras': {
     title: withSuffix({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt", en: "Construction Progress" }),
     description: {
       pt: 'Acompanhe o andamento das obras do Projeto Escola do Centro Nossa Senhora Aparecida, com fotos e vídeos do canteiro.',
@@ -299,7 +299,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "Follow the construction progress of the School Project of the Centro Nossa Senhora Aparecida, with photos and videos from the building site.",
     },
   },
-  '/sostegno-a-distanza': {
+  '/apoio-a-distancia': {
     title: withSuffix({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Fernpatenschaft", en: "Distance Sponsorship" }),
     description: {
       pt: 'Um vínculo real entre você e uma criança que cresce — educação, cuidado e nutrição todos os dias.',
@@ -308,7 +308,7 @@ export const seoMeta: Record<string, PageMeta> = {
       en: "A real bond between you and a growing child — education, care and nourishment every day.",
     },
   },
-  '/atelier': {
+  '/atelie': {
     title: withSuffix({ pt: 'Ateliê', it: 'Atelier', de: "Atelier", en: "Atelier" }),
     description: {
       pt: 'Um espaço onde as crianças exploram, investigam e se exprimem através de materiais, cores e linguagens diversas.',

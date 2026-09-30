@@ -155,7 +155,7 @@ export function PosaPrimaPietraPage() {
               <Button variant="primary" to="/noticias">
                 {t({ pt: 'Todas as Notícias', it: 'Tutte le Notizie', de: "Alle Neuigkeiten", en: "All News" })}
               </Button>
-              <Button variant="secondary" to="/il-centro">
+              <Button variant="secondary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}
               </Button>
             </div>

@@ -52,7 +52,7 @@ export function FundacaoIntro() {
               })}
             </p>
 
-            <Button variant="secondary" to="/la-fundacao">
+            <Button variant="secondary" to="/a-fundacao">
               {t({ pt: 'Conheça a Fundação', it: 'Scopri la Fondazione', de: "Entdecken Sie die Stiftung", en: "Discover the Foundation" })}
             </Button>
           </AnimatedSection>

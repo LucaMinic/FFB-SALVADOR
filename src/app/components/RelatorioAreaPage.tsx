@@ -133,7 +133,7 @@ export function RelatorioAreaPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/contatti">
+              <Button variant="primary" to="/contatos">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
               <Button variant="secondary" to="/nossa-metodologia">

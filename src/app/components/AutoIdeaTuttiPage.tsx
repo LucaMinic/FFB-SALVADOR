@@ -24,7 +24,7 @@ export function AutoIdeaTuttiPage() {
         {/* Back button */}
         <div className="absolute top-8 left-8 z-20">
           <Link
-            to="/documentari-racconti"
+            to="/noticias"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -152,10 +152,10 @@ export function AutoIdeaTuttiPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/documentari-racconti">
+              <Button variant="primary" to="/noticias">
                 {t({ pt: 'Todos os documentários', it: 'Tutti i documentari', de: "Alle Dokumentarfilme", en: "All documentaries" })}
               </Button>
-              <Button variant="secondary" to="/il-centro">
+              <Button variant="secondary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
             </div>

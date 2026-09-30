@@ -159,41 +159,41 @@ export function Header() {
     { label: t({ pt: 'Início', it: 'Home', de: "Startseite", en: "Home" }), href: '/', isRoute: true },
     {
       label: t({ pt: 'Fundação', it: 'La Fundação', de: "Die Fundação", en: "The Fundação" }),
-      href: '/la-fundacao',
+      href: '/a-fundacao',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/la-fraternita', isRoute: true },
-        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS", en: "The Fundação Betania ONLUS" }), href: '/la-fundacao', isRoute: true },
-        { label: t({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums", en: "The History of the Centre" }), href: '/storia-del-centro', isRoute: true },
-        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen", en: "Institutional Recognitions" }), href: '/riconoscimenti-istituzionali', isRoute: true },
-        { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz", en: "Transparency" }), href: '/trasparenza', isRoute: true }
+        { label: t({ pt: 'A Fraternidade Franciscana de Betânia', it: 'La Fraternità Francescana di Betania', de: "Die Franziskanische Gemeinschaft von Betania", en: "The Franciscan Fraternity of Betania" }), href: '/a-fraternidade', isRoute: true },
+        { label: t({ pt: 'A Fundação Betania ONLUS', it: 'La Fundação Betania ONLUS', de: "Die Fundação Betania ONLUS", en: "The Fundação Betania ONLUS" }), href: '/a-fundacao', isRoute: true },
+        { label: t({ pt: 'A história do Centro', it: 'La Storia del Centro', de: "Die Geschichte des Zentrums", en: "The History of the Centre" }), href: '/historia-do-centro', isRoute: true },
+        { label: t({ pt: 'Reconhecimentos institucionais', it: 'Riconoscimenti istituzionali', de: "Institutionelle Anerkennungen", en: "Institutional Recognitions" }), href: '/reconhecimentos-institucionais', isRoute: true },
+        { label: t({ pt: 'Transparência', it: 'Trasparenza', de: "Transparenz", en: "Transparency" }), href: '/transparencia', isRoute: true }
       ]
     },
     {
       label: 'Centro Nossa Senhora Aparecida',
-      href: '/il-centro',
+      href: '/o-centro',
       isRoute: true,
       submenu: [
-        { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Zentrum", en: "The Centre" }), href: '/il-centro', isRoute: true },
+        { label: t({ pt: 'O Centro', it: 'Il Centro', de: "Das Zentrum", en: "The Centre" }), href: '/o-centro', isRoute: true },
         {
           label: t({ pt: 'Creche e pré-escola', it: "Asilo e scuola dell'infanzia", de: "Kita und Vorschule", en: "Nursery and Pre-school" }),
-          href: '/asilo',
+          href: '/creche',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'A estrutura', it: 'La struttura', de: "Die Einrichtung", en: "The Facility" }), href: '/asilo', isRoute: true },
+            { label: t({ pt: 'A estrutura', it: 'La struttura', de: "Die Einrichtung", en: "The Facility" }), href: '/creche', isRoute: true },
             { label: t({ pt: 'Nossa metodologia', it: 'La nostra metodologia', de: "Unsere Methodik", en: "Our Methodology" }), href: '/nossa-metodologia', isRoute: true },
             { label: t({ pt: 'Projetos Permanentes', it: 'Progetti Permanenti', de: "Dauerhafte Projekte", en: "Permanent Projects" }), href: '/projetos-permanentes', isRoute: true },
             { label: t({ pt: 'Relatórios', it: 'Relazioni', de: "Berichte", en: "Reports" }), href: '/relatorios', isRoute: true },
-            { label: t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" }), href: '/progetti-pedagogici', isRoute: true },
+            { label: t({ pt: 'Laboratórios', it: 'Laboratori', de: "Werkstätten", en: "Workshops" }), href: '/laboratorios', isRoute: true },
           ]
         },
         {
           label: t({ pt: 'Escola', it: 'Scuola', de: "Schule", en: "School" }),
-          href: '/progetto-scuola',
+          href: '/projeto-escola',
           isRoute: true,
           submenu: [
-            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt", en: "School Project" }), href: '/progetto-scuola', isRoute: true },
-            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt", en: "Construction Progress" }), href: '/avanzamento-lavori', isRoute: true }
+            { label: t({ pt: 'Projeto Escola', it: 'Progetto scuola', de: "Schulprojekt", en: "School Project" }), href: '/projeto-escola', isRoute: true },
+            { label: t({ pt: 'Andamento das Obras', it: 'Avanzamento Lavori', de: "Baufortschritt", en: "Construction Progress" }), href: '/andamento-das-obras', isRoute: true }
           ]
         },
       ]
@@ -202,12 +202,12 @@ export function Header() {
       label: t({ pt: 'Apoie', it: 'Sostieni', de: "Unterstützen", en: "Support Us" }),
       href: '#sostieni',
       submenu: [
-        { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können", en: "What You Can Do" }), href: '/cosa-puoi-fare-tu', isRoute: true },
-        { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" }), href: '/dona-ora', isRoute: true },
-        { label: t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/sostegno-a-distanza', isRoute: true }
+        { label: t({ pt: 'O que você pode fazer', it: 'Cosa puoi fare tu', de: "Was Sie tun können", en: "What You Can Do" }), href: '/como-ajudar', isRoute: true },
+        { label: t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" }), href: '/doe-agora', isRoute: true },
+        { label: t({ pt: 'Apoio à distância', it: 'Sostegno a distanza', de: "Patenschaft", en: "Distance Sponsorship" }), href: '/apoio-a-distancia', isRoute: true }
       ]
     },
-    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatti', isRoute: true },
+    { label: t({ pt: 'Contatos', it: 'Contatti', de: "Kontakt", en: "Contact" }), href: '/contatos', isRoute: true },
     { label: t({ pt: 'Notícias', it: 'Notizie', de: "Neuigkeiten", en: "News" }), href: '/noticias', isRoute: true }
   ];
 
@@ -236,7 +236,7 @@ export function Header() {
                 </span>
               </Link>
               <span className="w-px h-8 sm:h-10 xl:h-12 bg-gray-200 flex-shrink-0" />
-              <Link to="/la-fundacao" className="flex-shrink-0" aria-label="Fundação Betânia Onlus">
+              <Link to="/a-fundacao" className="flex-shrink-0" aria-label="Fundação Betânia Onlus">
                 <img src={logoFundacaoIcon} alt="Fundação Betânia Onlus" className="h-8 sm:h-10 xl:h-12 w-auto" />
               </Link>
             </div>
@@ -371,14 +371,14 @@ export function Header() {
           {/* Desktop right side: language switcher + Dona ora */}
           <div className="hidden xl:flex items-center gap-3 flex-shrink-0">
             <LanguageSwitcher />
-            <Link to="/dona-ora" className="px-5 py-2.5 bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white text-base font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
+            <Link to="/doe-agora" className="px-5 py-2.5 bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white text-base font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
           </div>
 
           {/* Mobile: Dona ora centered equidistant between logo and language switcher */}
           <div className="flex-1 flex justify-center xl:hidden">
-            <Link to="/dona-ora" className="px-3 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
+            <Link to="/doe-agora" className="px-3 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base bg-gradient-to-br from-[#f5b942] via-[#f7c968] to-[#f5b942] text-white font-medium rounded-xl whitespace-nowrap shadow-md hover:shadow-lg transition-all inline-block">
               {doarLabel}
             </Link>
           </div>

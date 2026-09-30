@@ -108,7 +108,7 @@ export function RassegnaStampa() {
 
         <AnimatedSection delay={0.3}>
           <div className="text-center">
-            <Button variant="secondary" to="/riconoscimenti-istituzionali#rassegna-stampa">
+            <Button variant="secondary" to="/reconhecimentos-institucionais#rassegna-stampa">
               {t({ pt: 'Veja todos os artigos', it: 'Vedi tutti gli articoli', de: "Alle Artikel ansehen", en: "See all articles" })}
             </Button>
           </div>

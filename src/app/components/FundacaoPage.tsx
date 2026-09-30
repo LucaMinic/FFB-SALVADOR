@@ -43,7 +43,7 @@ export function FundacaoPage() {
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça a Fundação', it: 'Scopri la Fundação', de: "Entdecken Sie die Fundação", en: "Discover the Fundação" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doe agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -253,7 +253,7 @@ export function FundacaoPage() {
               <p className="text-2xl font-semibold text-[var(--deep-blue)] mb-6">
                 Centro Nossa Senhora Aparecida
               </p>
-              <Button variant="secondary" to="/il-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}</Button>
+              <Button variant="secondary" to="/o-centro">{t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Zentrum", en: "Discover the Centre" })}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -305,7 +305,7 @@ export function FundacaoPage() {
                 {t({ pt: 'A dimensão relacional e espiritual é parte integrante da ação.', it: "La dimensione relazionale e spirituale è parte integrante dell'azione.", de: "Die zwischenmenschliche und geistliche Dimension ist fester Bestandteil des Handelns.", en: "The relational and spiritual dimension is an integral part of the work." })}
               </p>
               <div className="text-center mt-8">
-                <Button variant="secondary" to="/la-fraternita">{t({ pt: 'Conheça a Fraternidade Franciscana de Betânia', it: 'Scopri la Fraternità Francescana di Betania', de: "Entdecken Sie die Franziskanische Gemeinschaft von Betania", en: "Discover the Franciscan Fraternity of Betania" })}</Button>
+                <Button variant="secondary" to="/a-fraternidade">{t({ pt: 'Conheça a Fraternidade Franciscana de Betânia', it: 'Scopri la Fraternità Francescana di Betania', de: "Entdecken Sie die Franziskanische Gemeinschaft von Betania", en: "Discover the Franciscan Fraternity of Betania" })}</Button>
               </div>
             </div>
           </AnimatedSection>
@@ -329,7 +329,7 @@ export function FundacaoPage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8 italic">
                 {t({ pt: 'Para a Fundação, responsabilidade e transparência são elementos fundamentais na relação de confiança.', it: 'Per la Fundação, responsabilità e trasparenza sono elementi fondamentali nel rapporto di fiducia.', de: "Für die Fundação sind Verantwortung und Transparenz grundlegende Elemente des Vertrauensverhältnisses.", en: "For the Foundation, accountability and transparency are fundamental elements of the relationship of trust." })}
               </p>
-              <Button variant="secondary" to="/trasparenza">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
+              <Button variant="secondary" to="/transparencia">{t({ pt: 'Ver Transparência', it: 'Vai alla Trasparenza', de: "Zur Transparenz", en: "Go to Transparency" })}</Button>
             </div>
           </AnimatedSection>
         </div>
@@ -353,7 +353,7 @@ export function FundacaoPage() {
             <p className="text-xl leading-relaxed mb-10 opacity-90">
               {t({ pt: 'A sua ajuda permite continuar estas atividades e apoiar cada vez mais crianças e famílias.', it: 'Il tuo aiuto permette di continuare queste attività e sostenere sempre più bambini e famiglie.', de: "Ihre Hilfe ermöglicht es, diese Aktivitäten fortzusetzen und immer mehr Kinder und Familien zu unterstützen.", en: "Your help makes it possible to continue these activities and support more and more children and families." })}
             </p>
-            <Button to="/dona-ora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
+            <Button to="/doe-agora">{t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}</Button>
           </AnimatedSection>
         </div>
       </section>

@@ -431,10 +431,10 @@ export function AvanzamentoLavoriPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button to="/progetto-scuola">
+              <Button to="/projeto-escola">
                 {t({ it: 'Scopri il progetto scuola', pt: 'Conheça o projeto escola', de: "Entdecken Sie das Schulprojekt", en: "Discover the school project" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ it: 'Sostieni il progetto', pt: 'Apoie o projeto', de: "Unterstützen Sie das Projekt", en: "Support the project" })}
               </Button>
             </div>

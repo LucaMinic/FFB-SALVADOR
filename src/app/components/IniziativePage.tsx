@@ -56,7 +56,7 @@ export function IniziativePage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
@@ -167,9 +167,9 @@ export function IniziativePage() {
                         variant={initiative.status === t({ pt: 'Em curso', it: 'In corso', de: "Laufend", en: "In progress" }) ? 'primary' : 'secondary'}
                         to={
                           initiative.title === t({ pt: 'Ajudamos Valentina – Salvador de Bahia', it: 'Aiutiamo Valentina – Salvador de Bahia', de: "Wir helfen Valentina – Salvador de Bahia", en: "Let's Help Valentina – Salvador de Bahia" })
-                            ? '/aiutiamo-valentina'
+                            ? '/ajudamos-valentina'
                             : initiative.status === t({ pt: 'Em curso', it: 'In corso', de: "Laufend", en: "In progress" })
-                            ? '/dona-ora'
+                            ? '/doe-agora'
                             : '#'
                         }
                         className="w-full"
@@ -200,10 +200,10 @@ export function IniziativePage() {
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-3">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-3">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-3">
+              <Button variant="secondary" to="/contatos" className="text-lg px-8 py-3">
                 {t({ pt: 'Contate-nos', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
             </div>

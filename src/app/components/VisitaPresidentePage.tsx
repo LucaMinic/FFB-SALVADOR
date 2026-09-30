@@ -216,7 +216,7 @@ export function VisitaPresidentePage() {
               <Button variant="primary" to="/noticias/eventos-especiais">
                 {t({ pt: 'Eventos Especiais', it: 'Eventi Speciali', de: "Besondere Ereignisse", en: "Special Events" })}
               </Button>
-              <Button variant="secondary" to="/il-centro">
+              <Button variant="secondary" to="/o-centro">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
             </div>

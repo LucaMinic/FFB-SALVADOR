@@ -487,10 +487,10 @@ export function SostegnoADistanzaPage() {
               })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/contatti">
+              <Button variant="primary" to="/contatos">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
-              <Button variant="secondary" to="/dona-ora">
+              <Button variant="secondary" to="/doe-agora">
                 {t({ pt: 'Outras formas de doação', it: 'Altre forme di donazione', de: "Weitere Möglichkeiten zu spenden", en: "Other ways to donate" })}
               </Button>
             </div>
@@ -530,7 +530,7 @@ export function SostegnoADistanzaPage() {
               <Button variant="primary" href="#come-sostenere" className="text-lg px-8 py-4">
                 {t({ pt: 'Apoiar agora', it: 'Sostieni ora', de: "Jetzt Pate werden", en: "Sponsor now" })}
               </Button>
-              <Button variant="secondary" to="/contatti" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="secondary" to="/contatos" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Entre em contato', it: 'Contattaci', de: "Kontaktieren Sie uns", en: "Contact us" })}
               </Button>
             </div>

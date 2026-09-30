@@ -58,7 +58,7 @@ export function RiconoscimentiPage() {
               <Button variant="secondary" href="#intro-section" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Saiba mais', it: 'Scopri di più', de: "Mehr erfahren", en: "Learn more" })}
               </Button>
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
             </div>
@@ -272,7 +272,7 @@ export function RiconoscimentiPage() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.2}>
-            <Button variant="secondary" to="/trasparenza" className="text-lg px-8 py-3">
+            <Button variant="secondary" to="/transparencia" className="text-lg px-8 py-3">
               {t({ pt: 'Ir à transparência', it: 'Vai alla trasparenza', de: "Zur Transparenz", en: "Go to transparency" })}
             </Button>
           </AnimatedSection>
@@ -463,10 +463,10 @@ export function RiconoscimentiPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" to="/dona-ora" className="text-lg px-8 py-4">
+              <Button variant="primary" to="/doe-agora" className="text-lg px-8 py-4">
                 {t({ pt: 'Doar agora', it: 'Dona ora', de: "Jetzt spenden", en: "Donate now" })}
               </Button>
-              <Button variant="secondary" to="/il-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
+              <Button variant="secondary" to="/o-centro" className="text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border-white hover:bg-white/20">
                 {t({ pt: 'Conheça o Centro', it: 'Scopri il Centro', de: "Entdecken Sie das Centro", en: "Discover the Centre" })}
               </Button>
             </div>
