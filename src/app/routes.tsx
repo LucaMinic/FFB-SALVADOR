@@ -1,66 +1,77 @@
-import { createBrowserRouter, redirect } from "react-router";
+import { createBrowserRouter, redirect, type LoaderFunctionArgs, type RouteObject } from "react-router";
 import { HomePage } from "./pages/HomePage";
 import { RootLayout } from "./layouts/RootLayout";
+import { PREFIXED_LANGS, langFromPath, localizePath } from "./i18n/localePaths";
+
+// Redirect that keeps the language prefix of the requested URL (/it/eventi-speciali -> /it/noticias/eventos-especiais).
+const langRedirect = (to: string) => ({ request }: LoaderFunctionArgs) => {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+  const pathname = new URL(request.url).pathname.slice(base.length) || "/";
+  return redirect(localizePath(to, langFromPath(pathname)));
+};
+
+// Pages shared by every language; mounted at the root (pt) and under /it, /de, /en.
+const pageRoutes: RouteObject[] = [
+  { index: true, Component: HomePage },
+  { path: "la-fundacao", lazy: () => import("./components/FundacaoPage").then((m) => ({ Component: m.FundacaoPage })) },
+  { path: "la-fraternita", lazy: () => import("./components/FraternitaPage").then((m) => ({ Component: m.FraternitaPage })) },
+  { path: "il-centro", lazy: () => import("./components/CentroPage").then((m) => ({ Component: m.CentroPage })) },
+  { path: "storia-del-centro", lazy: () => import("./components/StoriaCentroPage").then((m) => ({ Component: m.StoriaCentroPage })) },
+  { path: "asilo", lazy: () => import("./components/AsiloPage").then((m) => ({ Component: m.AsiloPage })) },
+  { path: "progetto-scuola", lazy: () => import("./components/ScuolaPage").then((m) => ({ Component: m.ScuolaPage })) },
+  // Temporaneo: pagina "dona ora" nascosta, mostra il sito esterno in iframe. Per ripristinare: import da "./components/DonaOraPage" con m.DonaOraPage.
+  { path: "dona-ora", lazy: () => import("./components/DonaOraExternalPage").then((m) => ({ Component: m.DonaOraExternalPage })) },
+  { path: "cosa-puoi-fare-tu", lazy: () => import("./components/CosaPuoiFareTuPage").then((m) => ({ Component: m.CosaPuoiFareTuPage })) },
+  // Temporaneo: pagina "benefattori" nascosta, redirect alla home. Per ripristinare: rimettere il lazy import di "./components/BenefattoriPage" (m.BenefattoriPage) e i link in Header/Footer.
+  { path: "benefattori", loader: langRedirect("/") },
+  { path: "contatti", lazy: () => import("./components/ContattiPage").then((m) => ({ Component: m.ContattiPage })) },
+  { path: "riconoscimenti-istituzionali", lazy: () => import("./components/RiconoscimentiPage").then((m) => ({ Component: m.RiconoscimentiPage })) },
+  { path: "iniziative", lazy: () => import("./components/IniziativePage").then((m) => ({ Component: m.IniziativePage })) },
+  { path: "aiutiamo-valentina", lazy: () => import("./components/ValentinaPage").then((m) => ({ Component: m.ValentinaPage })) },
+  { path: "trasparenza", lazy: () => import("./components/TrasparenzaPage").then((m) => ({ Component: m.TrasparenzaPage })) },
+  { path: "alimento-que-acolhe", lazy: () => import("./components/AlimentoQueAcolhePage").then((m) => ({ Component: m.AlimentoQueAcolhePage })) },
+  { path: "rota-solidaria", lazy: () => import("./components/RotaSolidariaPage").then((m) => ({ Component: m.RotaSolidariaPage })) },
+  { path: "jovens-de-betania", lazy: () => import("./components/JovensDeBetaniaPage").then((m) => ({ Component: m.JovensDeBetaniaPage })) },
+  { path: "noticias/eventos-especiais", lazy: () => import("./components/EventiSpecialiPage").then((m) => ({ Component: m.EventiSpecialiPage })) },
+  // Vecchio URL "eventi-speciali": ora fa parte delle Notícias.
+  { path: "eventi-speciali", loader: langRedirect("/noticias/eventos-especiais") },
+  { path: "privacy-policy", lazy: () => import("./components/PrivacyPolicyPage").then((m) => ({ Component: m.PrivacyPolicyPage })) },
+  { path: "cookie-policy", lazy: () => import("./components/CookiePolicyPage").then((m) => ({ Component: m.CookiePolicyPage })) },
+  // Vecchio URL "documentari-racconti": i contenuti sono confluiti in Notícias.
+  { path: "documentari-racconti", loader: langRedirect("/noticias") },
+  { path: "documentari-racconti/intervista-centro", loader: langRedirect("/noticias/intervista-centro") },
+  { path: "documentari-racconti/visita-presidente", loader: langRedirect("/noticias/visita-presidente") },
+  { path: "documentari-racconti/dieci-anni-creche", loader: langRedirect("/noticias/dieci-anni-creche") },
+  { path: "documentari-racconti/posa-prima-pietra", loader: langRedirect("/noticias/posa-prima-pietra") },
+  { path: "progetti-pedagogici", lazy: () => import("./components/ProgettiPedagogiciPage").then((m) => ({ Component: m.ProgettiPedagogiciPage })) },
+  { path: "accoglienza-quotidiana", lazy: () => import("./components/AccoglienzaQuotidianaPage").then((m) => ({ Component: m.AccoglienzaQuotidianaPage })) },
+  { path: "educazione", lazy: () => import("./components/EducazionePage").then((m) => ({ Component: m.EducazionePage })) },
+  { path: "cura-e-nutrizione", lazy: () => import("./components/CuraENutrizionePage").then((m) => ({ Component: m.CuraENutrizionePage })) },
+  { path: "accompagnamento-famiglie", lazy: () => import("./components/AccompagnamentoFamigliePage").then((m) => ({ Component: m.AccompagnamentoFamigliePage })) },
+  { path: "noticias/intervista-centro", lazy: () => import("./components/IntervistaAlCentroPage").then((m) => ({ Component: m.IntervistaAlCentroPage })) },
+  { path: "noticias/visita-presidente", lazy: () => import("./components/VisitaPresidentePage").then((m) => ({ Component: m.VisitaPresidentePage })) },
+  { path: "noticias/dieci-anni-creche", lazy: () => import("./components/DieciAnniCrechePage").then((m) => ({ Component: m.DieciAnniCrechePage })) },
+  { path: "noticias/posa-prima-pietra", lazy: () => import("./components/PosaPrimaPietraPage").then((m) => ({ Component: m.PosaPrimaPietraPage })) },
+  { path: "documentari-racconti/auto-idea-tutti", lazy: () => import("./components/AutoIdeaTuttiPage").then((m) => ({ Component: m.AutoIdeaTuttiPage })) },
+  { path: "documentari-racconti/ricordi-narrazioni", lazy: () => import("./components/RicordiNarrazioniPage").then((m) => ({ Component: m.RicordiNarrazioniPage })) },
+  { path: "avanzamento-lavori", lazy: () => import("./components/AvanzamentoLavoriPage").then((m) => ({ Component: m.AvanzamentoLavoriPage })) },
+  { path: "sostegno-a-distanza", lazy: () => import("./components/SostegnoADistanzaPage").then((m) => ({ Component: m.SostegnoADistanzaPage })) },
+  { path: "atelier", lazy: () => import("./components/AtelierPage").then((m) => ({ Component: m.AtelierPage })) },
+  { path: "nossa-metodologia", lazy: () => import("./components/NossaMetodologiaPage").then((m) => ({ Component: m.NossaMetodologiaPage })) },
+  { path: "projetos-permanentes", lazy: () => import("./components/ProjetosPermanentesPage").then((m) => ({ Component: m.ProjetosPermanentesPage })) },
+  { path: "mostras-pedagogicas", lazy: () => import("./components/MostrasPedagogicasPage").then((m) => ({ Component: m.MostrasPedagogicasPage })) },
+  { path: "alimentacao-saudavel", lazy: () => import("./components/AlimentacaoSaudavelPage").then((m) => ({ Component: m.AlimentacaoSaudavelPage })) },
+  { path: "relatorios", lazy: () => import("./components/RelatoriosPage").then((m) => ({ Component: m.RelatoriosPage })) },
+  { path: "relatorios/:area", lazy: () => import("./components/RelatorioAreaPage").then((m) => ({ Component: m.RelatorioAreaPage })) },
+  { path: "noticias", lazy: () => import("./components/NoticiasPage").then((m) => ({ Component: m.NoticiasPage })) },
+  { path: "noticias/tonelada-de-amor", lazy: () => import("./components/ToneladaDeAmorPage").then((m) => ({ Component: m.ToneladaDeAmorPage })) },
+  { path: "*", Component: HomePage },
+];
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
-    children: [
-      { index: true, Component: HomePage },
-      { path: "la-fundacao", lazy: () => import("./components/FundacaoPage").then((m) => ({ Component: m.FundacaoPage })) },
-      { path: "la-fraternita", lazy: () => import("./components/FraternitaPage").then((m) => ({ Component: m.FraternitaPage })) },
-      { path: "il-centro", lazy: () => import("./components/CentroPage").then((m) => ({ Component: m.CentroPage })) },
-      { path: "storia-del-centro", lazy: () => import("./components/StoriaCentroPage").then((m) => ({ Component: m.StoriaCentroPage })) },
-      { path: "asilo", lazy: () => import("./components/AsiloPage").then((m) => ({ Component: m.AsiloPage })) },
-      { path: "progetto-scuola", lazy: () => import("./components/ScuolaPage").then((m) => ({ Component: m.ScuolaPage })) },
-      // Temporaneo: pagina "dona ora" nascosta, mostra il sito esterno in iframe. Per ripristinare: import da "./components/DonaOraPage" con m.DonaOraPage.
-      { path: "dona-ora", lazy: () => import("./components/DonaOraExternalPage").then((m) => ({ Component: m.DonaOraExternalPage })) },
-      { path: "cosa-puoi-fare-tu", lazy: () => import("./components/CosaPuoiFareTuPage").then((m) => ({ Component: m.CosaPuoiFareTuPage })) },
-      // Temporaneo: pagina "benefattori" nascosta, redirect alla home. Per ripristinare: rimettere il lazy import di "./components/BenefattoriPage" (m.BenefattoriPage) e i link in Header/Footer.
-      { path: "benefattori", loader: () => redirect("/") },
-      { path: "contatti", lazy: () => import("./components/ContattiPage").then((m) => ({ Component: m.ContattiPage })) },
-      { path: "riconoscimenti-istituzionali", lazy: () => import("./components/RiconoscimentiPage").then((m) => ({ Component: m.RiconoscimentiPage })) },
-      { path: "iniziative", lazy: () => import("./components/IniziativePage").then((m) => ({ Component: m.IniziativePage })) },
-      { path: "aiutiamo-valentina", lazy: () => import("./components/ValentinaPage").then((m) => ({ Component: m.ValentinaPage })) },
-      { path: "trasparenza", lazy: () => import("./components/TrasparenzaPage").then((m) => ({ Component: m.TrasparenzaPage })) },
-      { path: "alimento-que-acolhe", lazy: () => import("./components/AlimentoQueAcolhePage").then((m) => ({ Component: m.AlimentoQueAcolhePage })) },
-      { path: "rota-solidaria", lazy: () => import("./components/RotaSolidariaPage").then((m) => ({ Component: m.RotaSolidariaPage })) },
-      { path: "jovens-de-betania", lazy: () => import("./components/JovensDeBetaniaPage").then((m) => ({ Component: m.JovensDeBetaniaPage })) },
-      { path: "noticias/eventos-especiais", lazy: () => import("./components/EventiSpecialiPage").then((m) => ({ Component: m.EventiSpecialiPage })) },
-      // Vecchio URL "eventi-speciali": ora fa parte delle Notícias.
-      { path: "eventi-speciali", loader: () => redirect("/noticias/eventos-especiais") },
-      { path: "privacy-policy", lazy: () => import("./components/PrivacyPolicyPage").then((m) => ({ Component: m.PrivacyPolicyPage })) },
-      { path: "cookie-policy", lazy: () => import("./components/CookiePolicyPage").then((m) => ({ Component: m.CookiePolicyPage })) },
-      // Vecchio URL "documentari-racconti": i contenuti sono confluiti in Notícias.
-      { path: "documentari-racconti", loader: () => redirect("/noticias") },
-      { path: "documentari-racconti/intervista-centro", loader: () => redirect("/noticias/intervista-centro") },
-      { path: "documentari-racconti/visita-presidente", loader: () => redirect("/noticias/visita-presidente") },
-      { path: "documentari-racconti/dieci-anni-creche", loader: () => redirect("/noticias/dieci-anni-creche") },
-      { path: "documentari-racconti/posa-prima-pietra", loader: () => redirect("/noticias/posa-prima-pietra") },
-      { path: "progetti-pedagogici", lazy: () => import("./components/ProgettiPedagogiciPage").then((m) => ({ Component: m.ProgettiPedagogiciPage })) },
-      { path: "accoglienza-quotidiana", lazy: () => import("./components/AccoglienzaQuotidianaPage").then((m) => ({ Component: m.AccoglienzaQuotidianaPage })) },
-      { path: "educazione", lazy: () => import("./components/EducazionePage").then((m) => ({ Component: m.EducazionePage })) },
-      { path: "cura-e-nutrizione", lazy: () => import("./components/CuraENutrizionePage").then((m) => ({ Component: m.CuraENutrizionePage })) },
-      { path: "accompagnamento-famiglie", lazy: () => import("./components/AccompagnamentoFamigliePage").then((m) => ({ Component: m.AccompagnamentoFamigliePage })) },
-      { path: "noticias/intervista-centro", lazy: () => import("./components/IntervistaAlCentroPage").then((m) => ({ Component: m.IntervistaAlCentroPage })) },
-      { path: "noticias/visita-presidente", lazy: () => import("./components/VisitaPresidentePage").then((m) => ({ Component: m.VisitaPresidentePage })) },
-      { path: "noticias/dieci-anni-creche", lazy: () => import("./components/DieciAnniCrechePage").then((m) => ({ Component: m.DieciAnniCrechePage })) },
-      { path: "noticias/posa-prima-pietra", lazy: () => import("./components/PosaPrimaPietraPage").then((m) => ({ Component: m.PosaPrimaPietraPage })) },
-      { path: "documentari-racconti/auto-idea-tutti", lazy: () => import("./components/AutoIdeaTuttiPage").then((m) => ({ Component: m.AutoIdeaTuttiPage })) },
-      { path: "documentari-racconti/ricordi-narrazioni", lazy: () => import("./components/RicordiNarrazioniPage").then((m) => ({ Component: m.RicordiNarrazioniPage })) },
-      { path: "avanzamento-lavori", lazy: () => import("./components/AvanzamentoLavoriPage").then((m) => ({ Component: m.AvanzamentoLavoriPage })) },
-      { path: "sostegno-a-distanza", lazy: () => import("./components/SostegnoADistanzaPage").then((m) => ({ Component: m.SostegnoADistanzaPage })) },
-      { path: "atelier", lazy: () => import("./components/AtelierPage").then((m) => ({ Component: m.AtelierPage })) },
-      { path: "nossa-metodologia", lazy: () => import("./components/NossaMetodologiaPage").then((m) => ({ Component: m.NossaMetodologiaPage })) },
-      { path: "projetos-permanentes", lazy: () => import("./components/ProjetosPermanentesPage").then((m) => ({ Component: m.ProjetosPermanentesPage })) },
-      { path: "mostras-pedagogicas", lazy: () => import("./components/MostrasPedagogicasPage").then((m) => ({ Component: m.MostrasPedagogicasPage })) },
-      { path: "alimentacao-saudavel", lazy: () => import("./components/AlimentacaoSaudavelPage").then((m) => ({ Component: m.AlimentacaoSaudavelPage })) },
-      { path: "relatorios", lazy: () => import("./components/RelatoriosPage").then((m) => ({ Component: m.RelatoriosPage })) },
-      { path: "relatorios/:area", lazy: () => import("./components/RelatorioAreaPage").then((m) => ({ Component: m.RelatorioAreaPage })) },
-      { path: "noticias", lazy: () => import("./components/NoticiasPage").then((m) => ({ Component: m.NoticiasPage })) },
-      { path: "noticias/tonelada-de-amor", lazy: () => import("./components/ToneladaDeAmorPage").then((m) => ({ Component: m.ToneladaDeAmorPage })) },
-      { path: "*", Component: HomePage },
-    ],
+    children: [...PREFIXED_LANGS.map((lang) => ({ path: lang, children: pageRoutes })), ...pageRoutes],
   },
 ], { basename: import.meta.env.BASE_URL });

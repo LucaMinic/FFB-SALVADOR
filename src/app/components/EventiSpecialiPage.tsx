@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';

@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
 import { ShareButtons } from './ShareButtons';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/narrazioni_africane_ok.jpg';
 import videoRicordi from '../../imports/Ricordi_e_narrazioni_africane.mp4';
 import finalCtaImg from '../../imports/14.jpeg';

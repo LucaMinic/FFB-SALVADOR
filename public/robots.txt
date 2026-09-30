@@ -1,7 +1,7 @@
 # Provisional GitHub Pages deployment — kept fully closed to crawlers on purpose.
-# When the site goes live on its final domain: change Disallow to just the paths
-# that should stay out of the index (if any), remove the noindex meta tag in
-# index.html, and uncomment the Sitemap line below (updated to the final domain).
+# When the site goes live on its final domain: set VITE_SITE_URL in .env, remove the
+# noindex meta tag in index.html, replace "Disallow: /" below with an empty
+# "Disallow:" and uncomment the Sitemap line (updated to the final domain).
 User-agent: *
 Disallow: /
 

@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { Link, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
+import { Link } from './LocalizedLink';
+import { stripLang } from '../i18n/localePaths';
 import { Button } from './Button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from './ui/sheet';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
@@ -102,6 +104,7 @@ export function Header() {
   const [desktopOpenNested, setDesktopOpenNested] = useState<string | null>(null);
   const desktopNavRef = useRef<HTMLElement>(null);
   const location = useLocation();
+  const basePath = stripLang(location.pathname);
   const t = useT();
 
   const closeDesktopMenus = () => {
@@ -212,8 +215,8 @@ export function Header() {
 
   const isSubmenuActive = (item: MenuItem): boolean => {
     return item.submenu?.some(sub =>
-      (sub.isRoute && location.pathname === sub.href) ||
-      sub.submenu?.some(nested => nested.isRoute && location.pathname === nested.href)
+      (sub.isRoute && basePath === sub.href) ||
+      sub.submenu?.some(nested => nested.isRoute && basePath === nested.href)
     ) ?? false;
   };
 
@@ -259,7 +262,7 @@ export function Header() {
                       }
                       aria-expanded={isMenuOpen}
                       className={`transition-colors font-semibold flex items-center gap-1 ${
-                        active || (item.isRoute && location.pathname === item.href)
+                        active || (item.isRoute && basePath === item.href)
                           ? 'text-[var(--deep-blue)]'
                           : 'text-gray-700 hover:text-[var(--deep-blue)]'
                       }`}>
@@ -275,7 +278,7 @@ export function Header() {
                           /* Item with nested flyout */
                           <div key={subitem.href} className="relative group/nested">
                             <div className={`flex items-center justify-between px-4 py-2 transition-colors font-semibold ${
-                              location.pathname === subitem.href || subitem.submenu.some(n => location.pathname === n.href)
+                              basePath === subitem.href || subitem.submenu.some(n => basePath === n.href)
                                 ? 'text-[var(--deep-blue)] bg-gray-50'
                                 : 'text-gray-700 hover:text-[var(--deep-blue)] hover:bg-gray-50'
                             }`}>
@@ -303,7 +306,7 @@ export function Header() {
                                     to={nested.href}
                                     onClick={closeDesktopMenus}
                                     className={`block px-4 py-2 transition-colors font-semibold ${
-                                      location.pathname === nested.href
+                                      basePath === nested.href
                                         ? 'text-[var(--deep-blue)] bg-gray-50'
                                         : 'text-gray-700 hover:text-[var(--deep-blue)] hover:bg-gray-50'
                                     }`}
@@ -320,7 +323,7 @@ export function Header() {
                             to={subitem.href}
                             onClick={closeDesktopMenus}
                             className={`block px-4 py-2 transition-colors font-semibold ${
-                              location.pathname === subitem.href
+                              basePath === subitem.href
                                 ? 'text-[var(--deep-blue)] bg-gray-50'
                                 : 'text-gray-700 hover:text-[var(--deep-blue)] hover:bg-gray-50'
                             }`}
@@ -345,7 +348,7 @@ export function Header() {
                     key={item.href}
                     to={item.href}
                     className={`transition-colors font-semibold ${
-                      location.pathname === item.href
+                      basePath === item.href
                         ? 'text-[var(--deep-blue)]'
                         : 'text-gray-700 hover:text-[var(--deep-blue)]'
                     }`}
@@ -406,7 +409,7 @@ export function Header() {
                           <button
                             onClick={() => toggleSubmenu(item.label)}
                             className={`w-full text-left transition-colors py-2 px-4 hover:bg-gray-50 rounded-lg font-semibold flex items-center justify-between ${
-                              active || (item.isRoute && location.pathname === item.href)
+                              active || (item.isRoute && basePath === item.href)
                                 ? 'text-[var(--deep-blue)]'
                                 : 'text-gray-700 hover:text-[var(--deep-blue)]'
                             }`}
@@ -423,7 +426,7 @@ export function Header() {
                                     <button
                                       onClick={() => toggleSubmenu(`${item.label}__${subitem.label}`)}
                                       className={`w-full text-left flex items-center justify-between transition-colors py-2 px-4 hover:bg-gray-50 rounded-lg ${
-                                        location.pathname === subitem.href || subitem.submenu.some(n => location.pathname === n.href)
+                                        basePath === subitem.href || subitem.submenu.some(n => basePath === n.href)
                                           ? 'text-[var(--deep-blue)]'
                                           : 'text-gray-600 hover:text-[var(--deep-blue)]'
                                       }`}
@@ -440,7 +443,7 @@ export function Header() {
                                               to={nested.href}
                                               onClick={() => setIsOpen(false)}
                                               className={`transition-colors py-2 px-4 hover:bg-gray-50 rounded-lg block ${
-                                                location.pathname === nested.href
+                                                basePath === nested.href
                                                   ? 'text-[var(--deep-blue)]'
                                                   : 'text-gray-500 hover:text-[var(--deep-blue)]'
                                               }`}
@@ -458,7 +461,7 @@ export function Header() {
                                     to={subitem.href}
                                     onClick={() => setIsOpen(false)}
                                     className={`transition-colors py-2 px-4 hover:bg-gray-50 rounded-lg block ${
-                                      location.pathname === subitem.href
+                                      basePath === subitem.href
                                         ? 'text-[var(--deep-blue)]'
                                         : 'text-gray-600 hover:text-[var(--deep-blue)]'
                                     }`}
@@ -484,7 +487,7 @@ export function Header() {
                           to={item.href}
                           onClick={() => setIsOpen(false)}
                           className={`transition-colors py-2 px-4 hover:bg-gray-50 rounded-lg font-semibold ${
-                            location.pathname === item.href
+                            basePath === item.href
                               ? 'text-[var(--deep-blue)]'
                               : 'text-gray-700 hover:text-[var(--deep-blue)]'
                           }`}

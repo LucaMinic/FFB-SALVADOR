@@ -1,6 +1,6 @@
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { useT } from '../context/LanguageContext';
 import heroImg from '../../imports/centro-hero-creche2.jpg';
 import crecheCardImg from '../../imports/centro-creche-hero.jpg';

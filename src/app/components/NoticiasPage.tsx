@@ -1,7 +1,7 @@
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/diego/noticia-tonelada-amor-capa.jpg';
 import eventoPresidenteImg from '../../imports/21-4.jpeg';
 import intervistaImg from '../../imports/Suor_Mariangela.jpg';

@@ -6,7 +6,7 @@ import curaImg from '../../imports/16-3.jpeg';
 import accompagnamentoImg from '../../imports/2.jpeg';
 import padrePancrazioImg from '../../imports/nuove/padre Pancrazio2.jfif';
 import { AnimatedSection } from './AnimatedSection';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { useT } from '../context/LanguageContext';
 
 export function Impatto() {

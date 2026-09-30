@@ -1,6 +1,8 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useEffect, ReactNode } from 'react';
+import { useLocation, useNavigate } from 'react-router';
+import { HTML_LANG, langFromPath, localizePath, type Lang } from '../i18n/localePaths';
 
-export type Lang = 'pt' | 'it' | 'de' | 'en';
+export type { Lang };
 
 interface LanguageContextType {
   lang: Lang;
@@ -12,19 +14,37 @@ const LanguageContext = createContext<LanguageContextType>({
   setLang: () => {},
 });
 
+// The language comes from the URL (/it/..., /de/..., /en/..., root = pt);
+// switching language navigates to the same page under the new prefix.
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => {
-    const saved = localStorage.getItem('lang') as Lang;
-    return saved === 'it' || saved === 'de' || saved === 'en' ? saved : 'pt';
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const lang = langFromPath(location.pathname);
 
   const setLang = (newLang: Lang) => {
-    setLangState(newLang);
-    localStorage.setItem('lang', newLang);
+    if (newLang === lang) return;
+    try {
+      localStorage.setItem('lang', newLang);
+    } catch {}
+    navigate({ pathname: localizePath(location.pathname, newLang), search: location.search, hash: location.hash });
   };
 
+  // A visitor who previously picked another language and lands on a Portuguese URL
+  // is sent to their language once. Only an explicit earlier choice triggers this
+  // (never the browser language), so crawlers always see every version as-is.
   useEffect(() => {
-    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'it' ? 'it' : lang === 'de' ? 'de' : 'en';
+    let saved: string | null = null;
+    try {
+      saved = localStorage.getItem('lang');
+    } catch {}
+    if (lang === 'pt' && (saved === 'it' || saved === 'de' || saved === 'en')) {
+      navigate({ pathname: localizePath(location.pathname, saved), search: location.search, hash: location.hash }, { replace: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = HTML_LANG[lang];
   }, [lang]);
 
   return (

@@ -1,5 +1,6 @@
 import { Download, FileText, ArrowLeft } from 'lucide-react';
-import { useParams, Navigate, Link } from 'react-router';
+import { useParams } from 'react-router';
+import { Navigate, Link } from './LocalizedLink';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';

@@ -2,7 +2,7 @@ import { FileText, ArrowRight } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/nuove/r6bis.jpg';
 import { relatorioAreas } from '../data/relatoriosData';
 import cerchiIntroImg from '../../imports/diego/asilo-cerchi-intro.png';

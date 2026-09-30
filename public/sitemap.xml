@@ -1,217 +1,1722 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/la-fundacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/la-fundacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/la-fundacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/la-fundacao</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fundacao"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fundacao"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/la-fraternita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/la-fraternita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/la-fraternita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/la-fraternita</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/la-fraternita"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/la-fraternita"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/il-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/il-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/il-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/il-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/il-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/il-centro"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/storia-del-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/storia-del-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/storia-del-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/storia-del-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/storia-del-centro"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/asilo</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/asilo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/asilo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/asilo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/asilo</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/asilo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/asilo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/asilo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/asilo</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/asilo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/asilo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/asilo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/asilo</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/asilo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/asilo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/asilo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/asilo"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/progetto-scuola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/progetto-scuola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/progetto-scuola</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetto-scuola"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetto-scuola"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/dona-ora</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/dona-ora</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/dona-ora</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/dona-ora</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/dona-ora"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/dona-ora"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/cosa-puoi-fare-tu</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/cosa-puoi-fare-tu</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/cosa-puoi-fare-tu</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cosa-puoi-fare-tu"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cosa-puoi-fare-tu"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/contatti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/contatti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/contatti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/contatti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/contatti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/contatti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/contatti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/contatti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/contatti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/contatti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/contatti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/contatti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/contatti"/>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/riconoscimenti-istituzionali</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/riconoscimenti-istituzionali</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/riconoscimenti-istituzionali</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/riconoscimenti-istituzionali"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/riconoscimenti-istituzionali"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/iniziative</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/iniziative</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/iniziative</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/iniziative</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/iniziative"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/iniziative"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/aiutiamo-valentina</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/aiutiamo-valentina</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/aiutiamo-valentina</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/aiutiamo-valentina"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/aiutiamo-valentina"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/trasparenza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/trasparenza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/trasparenza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/trasparenza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/trasparenza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/trasparenza"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/alimento-que-acolhe</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/alimento-que-acolhe</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/alimento-que-acolhe</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimento-que-acolhe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimento-que-acolhe"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/rota-solidaria</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/rota-solidaria</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/rota-solidaria</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/rota-solidaria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/rota-solidaria"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/jovens-de-betania</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/jovens-de-betania</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/jovens-de-betania</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/jovens-de-betania"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/jovens-de-betania"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/eventos-especiais</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/eventos-especiais</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/eventos-especiais</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/eventos-especiais"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/eventos-especiais"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/progetti-pedagogici</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/progetti-pedagogici</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/progetti-pedagogici</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/progetti-pedagogici"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/progetti-pedagogici"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/accoglienza-quotidiana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/accoglienza-quotidiana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/accoglienza-quotidiana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accoglienza-quotidiana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accoglienza-quotidiana"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/educazione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/educazione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/educazione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/educazione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/educazione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/educazione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/educazione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/educazione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/educazione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/educazione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/educazione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/educazione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/educazione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/educazione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/educazione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/educazione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/educazione"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/cura-e-nutrizione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/cura-e-nutrizione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/cura-e-nutrizione</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/cura-e-nutrizione"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/cura-e-nutrizione"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/accompagnamento-famiglie</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/accompagnamento-famiglie</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/accompagnamento-famiglie</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/accompagnamento-famiglie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/accompagnamento-famiglie"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/auto-idea-tutti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/auto-idea-tutti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/auto-idea-tutti</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/auto-idea-tutti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/auto-idea-tutti"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/ricordi-narrazioni</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/ricordi-narrazioni</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/ricordi-narrazioni</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/documentari-racconti/ricordi-narrazioni"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/documentari-racconti/ricordi-narrazioni"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/avanzamento-lavori</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/avanzamento-lavori</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/avanzamento-lavori</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/avanzamento-lavori"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/avanzamento-lavori"/>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/sostegno-a-distanza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/sostegno-a-distanza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/sostegno-a-distanza</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/sostegno-a-distanza"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/sostegno-a-distanza"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/atelier</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/atelier"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/atelier"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/atelier"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/atelier</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/atelier"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/atelier"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/atelier"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/atelier</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/atelier"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/atelier"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/atelier"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/atelier</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/atelier"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/atelier"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/atelier"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/atelier"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/nossa-metodologia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/nossa-metodologia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/nossa-metodologia</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/nossa-metodologia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/nossa-metodologia"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/projetos-permanentes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/projetos-permanentes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/projetos-permanentes</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/projetos-permanentes"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/projetos-permanentes"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/mostras-pedagogicas</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/mostras-pedagogicas</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/mostras-pedagogicas</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/mostras-pedagogicas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/mostras-pedagogicas"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/alimentacao-saudavel</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/alimentacao-saudavel</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/alimentacao-saudavel</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/alimentacao-saudavel"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/alimentacao-saudavel"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/relatorios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/relatorios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/relatorios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/relatorios</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/alimentazione-sana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/alimentazione-sana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/alimentazione-sana</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/alimentazione-sana"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/alimentazione-sana"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/identita-e-cultura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/identita-e-cultura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/identita-e-cultura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/identita-e-cultura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/identita-e-cultura"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/mondo-in-movimento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/mondo-in-movimento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/mondo-in-movimento</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/mondo-in-movimento"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/mondo-in-movimento"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/piccoli-animali-e-natura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/piccoli-animali-e-natura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/piccoli-animali-e-natura</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/relatorios/piccoli-animali-e-natura"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/relatorios/piccoli-animali-e-natura"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias"/>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/tonelada-de-amor</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/tonelada-de-amor</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/tonelada-de-amor</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/tonelada-de-amor"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/tonelada-de-amor"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/intervista-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/intervista-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/intervista-centro</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/intervista-centro"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/intervista-centro"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/visita-presidente</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/visita-presidente</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/visita-presidente</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/visita-presidente"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/visita-presidente"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/dieci-anni-creche</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/dieci-anni-creche</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/dieci-anni-creche</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/dieci-anni-creche"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/dieci-anni-creche"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/it/noticias/posa-prima-pietra</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/de/noticias/posa-prima-pietra</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://lucaminic.github.io/FFB-SALVADOR/en/noticias/posa-prima-pietra</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaminic.github.io/FFB-SALVADOR/it/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaminic.github.io/FFB-SALVADOR/de/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaminic.github.io/FFB-SALVADOR/en/noticias/posa-prima-pietra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaminic.github.io/FFB-SALVADOR/noticias/posa-prima-pietra"/>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { ArrowRight, X } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { entries } from './AvanzamentoLavoriPage';

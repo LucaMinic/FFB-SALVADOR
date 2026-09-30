@@ -1,7 +1,7 @@
 import { AnimatedSection } from './AnimatedSection';
 import { Cookie, Info, Shield, Settings } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 
 export function CookiePolicyPage() {
   const t = useT();

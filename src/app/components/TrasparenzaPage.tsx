@@ -3,7 +3,7 @@ import { useLocation } from 'react-router';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/diego/trasparenza.jpg';
 import emotionalImg from '../../imports/trasparenza-impegno-quotidiano.jpeg';
 import alimentoQueAcolheImg from '../../imports/diego/capa do projeto alimento que acolhe.png';

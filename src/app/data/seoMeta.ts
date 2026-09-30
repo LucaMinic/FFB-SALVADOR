@@ -5,8 +5,8 @@ export interface PageMeta {
   description: Bilingual;
 }
 
-// Update this when the final domain is live (also used for canonical/OG URLs and sitemap.xml).
-export const SITE_URL = 'https://lucaminic.github.io/FFB-SALVADOR';
+// Public site URL, set in .env (VITE_SITE_URL); used for canonical, hreflang and OG URLs.
+export const SITE_URL: string = import.meta.env.VITE_SITE_URL.replace(/\/$/, '');
 export const SITE_NAME = 'Fundação Betania ONLUS';
 
 export const defaultMeta: PageMeta = {

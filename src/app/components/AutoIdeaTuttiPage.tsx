@@ -3,7 +3,7 @@ import { useT } from '../context/LanguageContext';
 import { AnimatedSection, AnimatedImage } from './AnimatedSection';
 import { Button } from './Button';
 import { ShareButtons } from './ShareButtons';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/Patricia.jpg';
 import videoAuto from '../../imports/Auto_un_idea_di_tutti.mp4';
 import finalCtaImg from '../../imports/21.jpeg';

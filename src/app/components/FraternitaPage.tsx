@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { Button } from './Button';
 import { AnimatedSection } from './AnimatedSection';
 import { useT } from '../context/LanguageContext';

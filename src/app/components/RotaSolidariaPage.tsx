@@ -1,5 +1,5 @@
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import { Button } from './Button';
 import { Instagram, ChevronDown } from 'lucide-react';
 import logoFundacaoIcon from '../../imports/logo_ok.png';

@@ -2,7 +2,7 @@ import { } from 'lucide-react';
 import { useT } from '../context/LanguageContext';
 import { AnimatedSection } from './AnimatedSection';
 import { Button } from './Button';
-import { Link } from 'react-router';
+import { Link } from './LocalizedLink';
 import heroImg from '../../imports/nuove/_DSF1736.jpg';
 import autoImg from '../../imports/Patricia.jpg';
 import ricordiImg from '../../imports/narrazioni_africane_ok.jpg';
